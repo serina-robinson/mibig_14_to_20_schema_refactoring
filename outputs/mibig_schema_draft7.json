@@ -3,9 +3,6 @@
     "description": "Please fill out this form to submit MIBiG-compliant annotation data on a biosynthetic gene cluster.",
     "type": "object",
     "properties": {
-        "version": {
-            "type": "string"
-        },
         "personal": {
             "type": "object",
             "title": "Personal data",
@@ -50,25 +47,26 @@
                     "items": {
                         "type": "string",
                         "enum": [
-                            "RiPP",
-                            "NRP",
                             "Other",
-                            "Polyketide",
-                            "Saccharide",
+                            "NRP",
+                            "RiPP",
                             "Alkaloid",
-                            "Terpene"
+                            "Terpene",
+                            "Polyketide",
+                            "Saccharide"
                         ]
                     },
-                    "description": "Hold ctrl or cmd key to select multiple classes in the case of a hybrid gene cluster. Select all categories that apply: e.g., a polyketide with sugar monomers attached should be both 'Polyketide' and 'Saccharide'."
+                    "description": "Hold ctrl or cmd key to select multiple classes in the case of a hybrid gene cluster. Select all categories that apply: e.g., a polyketide with sugar monomers attached should be both 'Polyketide' and 'Saccharide'.",
+                    "minItems": 1
                 },
                 "publications": {
                     "type": "array",
                     "title": "Key publications associated with this gene cluster, pathway or molecule",
                     "items": {
-                        "type": "string",
-                        "pattern": "[0-9]{1,}"
+                        "type": "string"
                     },
-                    "description": "Publications describing experiments on this pathway. Please input PubMed IDs (PMIDs, not PMCIDs!), separated by commas: e.g., '12000953,8843436'. Only enter numeric characters and commas. If a PMID is not available, a DOI can be entered instead (without the designation 'DOI' itself, e.g. '10.1039/c4sc01927j')"
+                    "description": "Publications describing experiments on this pathway. Please input PubMed IDs (PMIDs, not PMCIDs!), separated by commas: e.g., '12000953,8843436'. Only enter numeric characters and commas. If a PMID is not available, a DOI can be entered instead (without the designation 'DOI' itself, e.g. '10.1039/c4sc01927j')",
+                    "minItems": 1
                 },
                 "loci": {
                     "type": "object",
@@ -79,9 +77,9 @@
                             "title": "Complete gene cluster sequence?",
                             "type": "string",
                             "enum": [
-                                "incomplete",
                                 "complete",
-                                "unknown"
+                                "unknown",
+                                "incomplete"
                             ]
                         },
                         "nucl_acc": {
@@ -91,11 +89,6 @@
                                 "type": "object",
                                 "title": "Genomic locus",
                                 "properties": {
-                                    "Accession": {
-                                        "title": "GenBank nucleotide accession number",
-                                        "type": "string",
-                                        "description": "E.g., AL645882. Only use GenBank accessions, not RefSeq accessions or GI numbers."
-                                    },
                                     "mixs_compliant": {
                                         "description": "Whether the GBK/EMBL/DDBJ is annotated with metadata according to the MIxS standard (Yilmaz et al. Nat Biotechnol 29: 415\u2013420). If unknown, leave unticked."
                                     },
@@ -109,33 +102,40 @@
                                         "type": "integer",
                                         "description": "Insert numeric characters only. May be left empty if gene cluster covers entire GenBank nucleotide record."
                                     },
-                                    "conn_comp_cluster": {
-                                        "title": "Evidence of involvement",
-                                        "description": "Type of evidence that shows that this gene cluster is responsible for the biosynthesis of the designated molecules. Hold ctrl or cmd key for multiple selection.",
-                                        "type": "array",
-                                        "items": {
-                                            "type": "string",
-                                            "enum": [
-                                                "Heterologous expression",
-                                                "Sequence-based prediction",
-                                                "Other",
-                                                "Enzymatic assays",
-                                                "Knock-out studies",
-                                                "Gene expression correlated with compound production"
-                                            ]
-                                        }
+                                    "accession": {
+                                        "title": "GenBank nucleotide accession number",
+                                        "type": "string",
+                                        "description": "E.g., AL645882. Only use GenBank accessions, not RefSeq accessions or GI numbers."
                                     }
                                 },
                                 "required": [
-                                    "Accession",
-                                    "conn_comp_cluster"
+                                    "accession"
                                 ]
-                            }
+                            },
+                            "minItems": 1
+                        },
+                        "conn_comp_cluster": {
+                            "title": "Evidence of involvement",
+                            "description": "Type of evidence that shows that this gene cluster is responsible for the biosynthesis of the designated molecules. Hold ctrl or cmd key for multiple selection.",
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "Other",
+                                    "Sequence-based prediction",
+                                    "Knock-out studies",
+                                    "Gene expression correlated with compound production",
+                                    "Enzymatic assays",
+                                    "Heterologous expression"
+                                ]
+                            },
+                            "minItems": 1
                         }
                     },
                     "required": [
                         "complete",
-                        "nucl_acc"
+                        "nucl_acc",
+                        "conn_comp_cluster"
                     ]
                 },
                 "compounds": {
@@ -199,19 +199,19 @@
                             "mass_ion_type": {
                                 "title": "Ion type for this mass",
                                 "enum": [
-                                    "M-",
-                                    "[M+H]+",
+                                    "[M+2H]2+",
+                                    "[M-H\u2013H2O]-",
+                                    "Other",
+                                    "[M+K]+",
                                     "[M+X]-",
                                     "M+",
-                                    "Other",
-                                    "[M+2H]2+",
-                                    "Other multiply charged ion",
-                                    "[M+H\u2013H2O]+",
                                     "[M-H]-",
                                     "[M+Na]+",
                                     "[M+Cl]-",
-                                    "[M+K]+",
-                                    "[M-H\u2013H2O]-",
+                                    "[M+H\u2013H2O]+",
+                                    "M-",
+                                    "[M+H]+",
+                                    "Other multiply charged ion",
                                     "[M+NH4]+"
                                 ],
                                 "type": "string"
@@ -223,14 +223,15 @@
                                 "items": {
                                     "type": "string",
                                     "enum": [
-                                        "Chemical derivatization",
                                         "Other",
+                                        "Chemical derivatization",
+                                        "Total synthesis",
                                         "Mass spectrometry",
                                         "X-ray",
-                                        "NMR",
-                                        "Total synthesis"
+                                        "NMR"
                                     ]
-                                }
+                                },
+                                "minItems": 1
                             },
                             "chem_act": {
                                 "title": "Molecular activities",
@@ -238,19 +239,20 @@
                                 "items": {
                                     "type": "string",
                                     "enum": [
-                                        "Antioxidant",
                                         "Other",
-                                        "Unknown",
-                                        "Surfactant",
-                                        "Signalling",
-                                        "Antibacterial",
-                                        "Inhibitor",
                                         "Siderophore",
+                                        "Signalling",
+                                        "Antioxidant",
+                                        "Antifungal",
+                                        "Surfactant",
+                                        "Inhibitor",
+                                        "Antibacterial",
                                         "Cytotoxic",
-                                        "Antifungal"
+                                        "Unknown"
                                     ]
                                 },
-                                "description": "Hold ctrl or cmd key to select multiple items. Enter only proven activities; always provide the publication IDs where the evidence was provided under 'Key publications' above."
+                                "description": "Hold ctrl or cmd key to select multiple items. Enter only proven activities; always provide the publication IDs where the evidence was provided under 'Key publications' above.",
+                                "minItems": 1
                             },
                             "other_chem_act": {
                                 "title": "Other activity",
@@ -276,17 +278,17 @@
                                             "title": "Chemical moiety",
                                             "type": "string",
                                             "enum": [
-                                                "Coumarin group",
-                                                "Lipid",
                                                 "6-methylsalicylic acid",
-                                                "Polyamino alcohol",
+                                                "Coumarin group",
                                                 "Other",
-                                                "3-Amino-5-hydroxybenzoic acid",
+                                                "Lipid",
+                                                "Pyrrole ring",
+                                                "Polyamino alcohol",
                                                 "3-Dimethylallyl-4-hydroxybenzoic acid",
                                                 "Indole group",
                                                 "Orsellinic acid",
                                                 "Benzoic acid",
-                                                "Pyrrole ring"
+                                                "3-Amino-5-hydroxybenzoic acid"
                                             ]
                                         },
                                         "other_chem_moiety": {
@@ -320,7 +322,7 @@
                                 "if": {
                                     "properties": {
                                         "chem_act": {
-                                            "items": {
+                                            "contains": {
                                                 "enum": [
                                                     "Other"
                                                 ]
@@ -335,7 +337,8 @@
                                 }
                             }
                         ]
-                    }
+                    },
+                    "minItems": 1
                 },
                 "genes": {
                     "type": "object",
@@ -353,9 +356,6 @@
                                         "type": "string",
                                         "title": "Gene name",
                                         "description": "Custom gene name. E.g., 'eryA'. Not needed if the GenBank entry already contains this information in a 'gene' tag within the corresponding CDS feature."
-                                    },
-                                    "not_in_gbk": {
-                                        "description": "Tick this box if the gene has been missed in the original annotation in GenBank, e.g. for a small RiPP precursor-encoding gene."
                                     },
                                     "gene_startpos": {
                                         "type": "integer",
@@ -381,47 +381,47 @@
                                         "title": "Gene function category",
                                         "type": "string",
                                         "enum": [
-                                            "Transport",
+                                            "Regulation",
                                             "Precursor biosynthesis",
                                             "Other",
-                                            "Regulation",
-                                            "Unknown",
-                                            "Other enzymatic",
-                                            "Resistance/immunity",
+                                            "Tailoring",
                                             "Scaffold biosynthesis",
                                             "Activation / processing",
-                                            "Tailoring"
+                                            "Resistance/immunity",
+                                            "Other enzymatic",
+                                            "Transport",
+                                            "Unknown"
                                         ]
                                     },
                                     "tailoring": {
                                         "title": "Tailoring reaction type",
                                         "type": "string",
                                         "enum": [
-                                            "Hydrolysis",
-                                            "Deoxygenation",
                                             "Other",
-                                            "Demethylation",
-                                            "Prenylation",
-                                            "Carboxylation",
-                                            "Sulfation",
-                                            "Amination",
-                                            "Deamination",
-                                            "Epimerization",
-                                            "Unknown",
-                                            "Heterocyclization",
-                                            "Methylation",
-                                            "Acetylation",
-                                            "Monooxygenation",
-                                            "Acylation",
-                                            "Glycosylation",
                                             "Decarboxylation",
-                                            "Dehydration",
+                                            "Carboxylation",
+                                            "Acylation",
+                                            "Methylation",
                                             "Hydroxylation",
+                                            "Monooxygenation",
+                                            "Dehydration",
+                                            "Epimerization",
+                                            "Deamination",
+                                            "Amination",
                                             "Oxidation",
-                                            "Phosphorylation",
-                                            "Dioxygenation",
+                                            "Reduction",
+                                            "Acetylation",
+                                            "Hydrolysis",
+                                            "Heterocyclization",
+                                            "Prenylation",
+                                            "Unknown",
+                                            "Deoxygenation",
                                             "Halogenation",
-                                            "Reduction"
+                                            "Dioxygenation",
+                                            "Glycosylation",
+                                            "Phosphorylation",
+                                            "Sulfation",
+                                            "Demethylation"
                                         ]
                                     },
                                     "evidence_genefunction": {
@@ -431,14 +431,15 @@
                                         "items": {
                                             "type": "string",
                                             "enum": [
-                                                "Heterologous expression",
-                                                "Sequence-based prediction",
+                                                "Activity assay",
                                                 "Other",
-                                                "Other in vivo study",
                                                 "Knock-out",
-                                                "Activity assay"
+                                                "Sequence-based prediction",
+                                                "Other in vivo study",
+                                                "Heterologous expression"
                                             ]
-                                        }
+                                        },
+                                        "minItems": 1
                                     },
                                     "mut_pheno": {
                                         "title": "Knockout mutation phenotype for this gene, if known",
@@ -454,27 +455,50 @@
                                     "gene_comments": {
                                         "title": "Comments on this gene",
                                         "type": "string"
+                                    },
+                                    "nucl_acc": {
+                                        "type": "string"
                                     }
                                 },
                                 "required": [
-                                    "gene_startpos",
-                                    "gene_endpos",
-                                    "gene_id",
                                     "gene_function",
-                                    "tailoring",
                                     "evidence_genefunction"
                                 ],
-                                "dependencies": {
-                                    "not_in_gbk": [
-                                        "gene_startpos",
-                                        "gene_endpos",
-                                        "gene_id"
-                                    ],
-                                    "gene_function": [
-                                        "tailoring",
-                                        "evidence_genefunction"
-                                    ]
-                                }
+                                "allOf": [
+                                    {
+                                        "if": {
+                                            "not": {
+                                                "required": [
+                                                    "gene_id"
+                                                ]
+                                            }
+                                        },
+                                        "then": {
+                                            "required": [
+                                                "gene_startpos",
+                                                "gene_endpos",
+                                                "gene_name",
+                                                "nucl_acc"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "if": {
+                                            "properties": {
+                                                "gene_function": {
+                                                    "enum": [
+                                                        "Tailoring"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "then": {
+                                            "required": [
+                                                "tailoring"
+                                            ]
+                                        }
+                                    }
+                                ]
                             }
                         },
                         "operon": {
@@ -490,50 +514,543 @@
                                         "items": {
                                             "type": "string"
                                         },
-                                        "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference) that make up this operon, exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, from 5' to 3', separated by commas."
+                                        "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference) that make up this operon, exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, from 5' to 3', separated by commas.",
+                                        "minItems": 1
                                     },
                                     "evidence_operon": {
                                         "title": "Experimental evidence for this operon",
                                         "type": "string",
                                         "enum": [
+                                            "ChIPseq",
                                             "RACE",
-                                            "Sequence-based prediction",
                                             "Other",
-                                            "RNAseq",
-                                            "ChIPseq"
+                                            "Sequence-based prediction",
+                                            "RNAseq"
                                         ]
                                     }
-                                }
+                                },
+                                "required": [
+                                    "operon_genes",
+                                    "evidence_operon"
+                                ]
                             }
                         }
                     }
                 },
-                "NRP": {
+                "polyketide": {
+                    "title": "Polyketide-specific parameters",
+                    "type": "object",
+                    "properties": {
+                        "pk_subclass": {
+                            "title": "Polyketide subclass",
+                            "type": "string",
+                            "enum": [
+                                "Polyphenol",
+                                "Chalcone",
+                                "Other",
+                                "Benzoisochromanequinone",
+                                "Angucycline",
+                                "Anthracycline",
+                                "Stilbene",
+                                "Enediyine",
+                                "Polyene",
+                                "Macrolide",
+                                "Aryl polyene",
+                                "Tetracycline",
+                                "Polyether",
+                                "Tetracenomycin",
+                                "Ansamycin"
+                            ],
+                            "description": "Also choose 'Other' if the polyketide is a hybrid of multiple polyketide types."
+                        },
+                        "lin_cycl_pk": {
+                            "type": "string",
+                            "enum": [
+                                "Cyclic",
+                                "Linear"
+                            ],
+                            "description": "Also counts as cyclic if the molecule is hybrid and the polyketide cyclizes onto another part of the hybrid molecule. Internal cyclizations of an amino acid or cyclizations of two adjacent amino acids or ketide groups do not count to define a cyclic compound: a cyclization should bridge residues that would otherwise not be connected, with at least two other residues being present between them."
+                        },
+                        "pks_subclass": {
+                            "title": "Polyketide synthase subclass",
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "Other",
+                                    "Type II",
+                                    "Type III",
+                                    "Trans-AT type I",
+                                    "Iterative type I",
+                                    "PUFA synthase or related",
+                                    "Modular type I",
+                                    "Enediyne type I"
+                                ]
+                            },
+                            "description": "Hold ctrl or cmd key to select multiple items. The 'Modular Type I' option denotes the presence of cis-AT modules. If the pathway is a hybrid NRPS-PKS pathway, select the type of PKS responsible for the polyketide-synthesizing part of the pathway.",
+                            "minItems": 1
+                        },
+                        "starter_unit": {
+                            "title": "Starter unit",
+                            "type": "string",
+                            "enum": [
+                                "Other",
+                                "Hexanoyl-ACP",
+                                "Butyryl-ACP",
+                                "Trans-cyclopentane-(1R,2R)-dicarboxylic acid",
+                                "2-Methylbutyryl-CoA",
+                                "Methylmalonyl-CoA",
+                                "Glycolate",
+                                "3,5-AHBA-CoA",
+                                "p-Aminobenzoate",
+                                "3-Methylbutyryl-CoA",
+                                "p-Coumaroyl-CoA",
+                                "Malonyl-CoA",
+                                "p-Nitrobenzoate",
+                                "Acetyl-CoA",
+                                "Hydroxymalonyl-CoA",
+                                "Benzoyl-CoA",
+                                "Malonamyl-CoA",
+                                "Acetoacetyl-CoA",
+                                "Unknown",
+                                "Methoxymalonyl-CoA",
+                                "Mycolate",
+                                "Aminomalonyl-CoA",
+                                "Isobutyryl-CoA",
+                                "3-Amino-2-Methylpropionate",
+                                "Propionyl-CoA",
+                                "Ethylmalonyl-CoA",
+                                "Cyclohexylcarbonyl-CoA"
+                            ]
+                        },
+                        "mod_pks_genes": {
+                            "title": "__ Modular PKS genes in cluster",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "title": "Modular PKS gene",
+                                "properties": {
+                                    "mod_pks_gene": {
+                                        "title": "PKS-encoding gene:",
+                                        "description": "Modular polyketide synthase-encoding gene; Enter locus tag, protein ID or gene ID (in this order of preference) exactly as it is specified in the submitted GenBank/ENA/DDBJ entry.",
+                                        "type": "string"
+                                    },
+                                    "pks_module": {
+                                        "title": "__ PKS modules in this gene",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "title": "PKS Module",
+                                            "properties": {
+                                                "module_nr": {
+                                                    "title": "Assembly line module number",
+                                                    "type": "string",
+                                                    "pattern": "^[xABCD0123456789]{1,}$",
+                                                    "description": "Counting starts from 1 at the start of the assembly-line, and includes loading modules (which are numbered '0'). If a module is split across two genes, please re-indicate the same module at each gene, but only with the domains present in that gene. Every module with at least an substrate-selecting domain (A / AT / CAL) is included in the count. If a module is split over two genes, the same number can be re-used for the domain(s) in the second gene. For hybrids, NRPS modules are included in the counting. If this PKS module is not part of a main assembly-line for producing this compound or if the PKS complex is too noncanonical to describe in a linear fashion, please enter 'x'. The same applies for monomodular precursor synthases such as MSAS synthase, which may be encoded within larger multi-modular PKS-encoding gene clusters. If there are multiple assembly-lines involved in synthesis of the main product, these can be indicated as 'A1, A2, A3, etc.' and 'B1, B2, B3'. Similarly, if the assembly-line branches at a later stage to make multiple products, the shared part can be called e.g. '1, 2, 3' and the split part 'A4, A5' and 'B4, B5'. Up to four parallel assembly-lines are supported (with letters A-D)."
+                                                },
+                                                "pks_domains": {
+                                                    "title": "Core PKS domains present in this module",
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                            "Enoylreductase",
+                                                            "Ketosynthase",
+                                                            "Ketoreductase",
+                                                            "CoA-ligase",
+                                                            "Dehydratase",
+                                                            "Acyltransferase",
+                                                            "Thiolation (ACP/PCP)"
+                                                        ]
+                                                    },
+                                                    "description": "Hold ctrl or cmd key to select multiple items",
+                                                    "minItems": 1
+                                                },
+                                                "at_substr_spec": {
+                                                    "title": "AT/CAL domain substrate specificity",
+                                                    "type": "string",
+                                                    "description": "Enter 'None' if no AT-domain present (e.g., for trans-AT modules) or module is skipped. Enter 'Unknown' if specificity not known.",
+                                                    "enum": [
+                                                        "Other",
+                                                        "Hexanoyl-ACP",
+                                                        "Multiple (promiscuous)",
+                                                        "Butyryl-ACP",
+                                                        "2-Methylbutyryl-CoA",
+                                                        "Methylmalonyl-CoA",
+                                                        "Glycolate",
+                                                        "3,5-AHBA-CoA",
+                                                        "Trans-cyclopentane-(1R, 2R)-dicarboxylic acid",
+                                                        "None",
+                                                        "p-Aminobenzoate",
+                                                        "3-Methylbutyryl-CoA",
+                                                        "p-Coumaroyl-CoA",
+                                                        "Malonyl-CoA",
+                                                        "p-Nitrobenzoate",
+                                                        "Acetyl-CoA",
+                                                        "Hydroxymalonyl-CoA",
+                                                        "Benzoyl-CoA",
+                                                        "Malonamyl-CoA",
+                                                        "Acetoacetyl-CoA",
+                                                        "Unknown",
+                                                        "Mycolate",
+                                                        "Methoxymalonyl-CoA",
+                                                        "Aminomalonyl-CoA",
+                                                        "Isobutyryl-CoA",
+                                                        "3-Amino-2-Methylpropionate",
+                                                        "Propionyl-CoA",
+                                                        "Ethylmalonyl-CoA",
+                                                        "Cyclohexylcarbonyl-CoA "
+                                                    ]
+                                                },
+                                                "at_multiple_spec": {
+                                                    "title": "Specify promiscuous keto group specificity",
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string"
+                                                    },
+                                                    "description": "Input multiple keto groups, separated by semi-colons (';'). Use the exact same spelling as denoted in the multiple-choice option above."
+                                                },
+                                                "evidence_at_spec": {
+                                                    "title": "Evidence for AT/CAL specificity",
+                                                    "description": "Choose 'None' if substrate specificity not known or not applicable. Select the strongest level of evidence.",
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "Activity assay",
+                                                        "Other",
+                                                        "Sequence-based prediction",
+                                                        "Structure-based inference"
+                                                    ]
+                                                },
+                                                "kr_stereochem": {
+                                                    "title": "KR domain stereochemistry / activity",
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "Inactive",
+                                                        "L-OH",
+                                                        "D-OH",
+                                                        "Unknown",
+                                                        "No reduction"
+                                                    ],
+                                                    "description": "A-group / B-group according to Caffrey, ChemBioChem 2003."
+                                                },
+                                                "pks_mod_doms": {
+                                                    "title": "Nonreductive scaffold-modifying domain in this module",
+                                                    "description": "Any additional modifications made by a domain within module",
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                            "Beta-branching",
+                                                            "Other",
+                                                            "Michael branching",
+                                                            "Amination",
+                                                            "Pyran synthase",
+                                                            "Methylation",
+                                                            "None"
+                                                        ]
+                                                    },
+                                                    "minItems": 1
+                                                },
+                                                "pks_other_mod_dom": {
+                                                    "title": "Modifying domain type:",
+                                                    "type": "string"
+                                                },
+                                                "pks_mod_skip_iter": {
+                                                    "title": "Module skipped or iterated during biosynthesis?",
+                                                    "description": "Choose 'None' if unknown.",
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "Iterated",
+                                                        "Skipped",
+                                                        "Non-elongating",
+                                                        "Neither"
+                                                    ]
+                                                },
+                                                "pks_evidence_skip_iter": {
+                                                    "title": "Evidence for skipping/iteration",
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "Structure-based inference",
+                                                        "Other",
+                                                        "Activity assay",
+                                                        "Sequence-based prediction"
+                                                    ]
+                                                },
+                                                "comments": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "module_nr",
+                                                "pks_domains",
+                                                "at_substr_spec",
+                                                "pks_mod_doms",
+                                                "pks_evidence_skip_iter"
+                                            ],
+                                            "dependencies": {
+                                                "pks_domains": [
+                                                    "at_substr_spec",
+                                                    "kr_stereochem"
+                                                ],
+                                                "at_substr_spec": [
+                                                    "at_multiple_spec",
+                                                    "evidence_at_spec"
+                                                ],
+                                                "pks_mod_doms": [
+                                                    "pks_other_mod_dom"
+                                                ],
+                                                "pks_mod_skip_iter": [
+                                                    "pks_evidence_skip_iter"
+                                                ]
+                                            }
+                                        },
+                                        "minItems": 1
+                                    }
+                                },
+                                "required": [
+                                    "pks_module"
+                                ]
+                            }
+                        },
+                        "pks_genes": {
+                            "title": "Genes in cluster encoding nonmodular polyketide synthases / ketosynthases",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference), exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas. For Type II PKSs, do not include chain length factor-encoding genes."
+                        },
+                        "pufa_mod_doms": {
+                            "title": "Nonreductive scaffold-modifying domain in this synthase",
+                            "description": "Any additional modifications made by a domain within this PUFA synthase",
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "Beta-branching",
+                                    "Other",
+                                    "Michael branching",
+                                    "Amination",
+                                    "Pyran synthase",
+                                    "Methylation",
+                                    "None"
+                                ]
+                            }
+                        },
+                        "nr_iterations": {
+                            "title": "Number of chain synthesis iterations performed by iterative PKS module",
+                            "type": "number"
+                        },
+                        "iterative_subtype": {
+                            "title": "Iterative PKS subtype",
+                            "type": "string",
+                            "enum": [
+                                "Non-reducing",
+                                "Highly reducing",
+                                "Partially reducing"
+                            ]
+                        },
+                        "iter_cycl_type": {
+                            "title": "Iterative PKS cyclization type",
+                            "type": "string",
+                            "description": "Cyclization type according to Zhou, Li & Tang, Nat. Prod. Rep., 2010,27, 839-868.",
+                            "enum": [
+                                "C6-C11 first",
+                                "C2-C7 first",
+                                "C4-C9 first",
+                                "Other"
+                            ]
+                        },
+                        "trans_at": {
+                            "title": "Genes in cluster encoding trans-acyltransferases",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference), exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas."
+                        },
+                        "ketide_length": {
+                            "title": "Polyketide length",
+                            "type": "number",
+                            "description": "Length of the ketide chain, e.g. 6 for a hexaketide or 9 for a nonaketide."
+                        },
+                        "cyclases": {
+                            "title": "Gene(s) in cluster involved in folding and cyclization of the aromatic polyketide",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "E.g., cyclases/aromatases. Enter locus tags, protein IDs or gene IDs (in this order of preference), exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas."
+                        },
+                        "pks_te_type": {
+                            "title": "Thioesterase type:",
+                            "type": "string",
+                            "enum": [
+                                "Both",
+                                "Other",
+                                "Type II",
+                                "None",
+                                "Type I",
+                                "Unknown"
+                            ],
+                            "description": "Also choose 'None' if it concerns a hybrid pathway and the thioesterase is an integral part of an NRPS module at the end of the assembly-line."
+                        },
+                        "pks_thioesterase": {
+                            "title": "Thioesterase-encoding gene(s):",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference) exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas."
+                        },
+                        "pks_release_type": {
+                            "title": "Release/cyclization type:",
+                            "type": "string",
+                            "enum": [
+                                "Macrolactamization",
+                                "Other",
+                                "Claisen condensation",
+                                "Macrolactonization",
+                                "Reductive release",
+                                "Hydrolysis",
+                                "Macrothiolactonization",
+                                "Unknown"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "pk_subclass",
+                        "pks_subclass",
+                        "pks_te_type",
+                        "lin_cycl_pk",
+                        "starter_unit",
+                        "ketide_length"
+                    ],
+                    "allOf": [
+                        {
+                            "if": {
+                                "properties": {
+                                    "pks_subclass": {
+                                        "enum": [
+                                            "Modular type I"
+                                        ]
+                                    }
+                                }
+                            },
+                            "then": {
+                                "required": [
+                                    "mod_pks_genes"
+                                ],
+                                "properties": {
+                                    "mod_pks_genes": {
+                                        "minItems": 1
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if": {
+                                "properties": {
+                                    "pks_subclass": {
+                                        "enum": [
+                                            "Trans-AT type I"
+                                        ]
+                                    }
+                                }
+                            },
+                            "then": {
+                                "required": [
+                                    "trans_at"
+                                ],
+                                "properties": {
+                                    "trans_at": {
+                                        "minItems": 1
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if": {
+                                "properties": {
+                                    "pks_subclass": {
+                                        "enum": [
+                                            "Iterative type I"
+                                        ]
+                                    }
+                                }
+                            },
+                            "then": {
+                                "required": [
+                                    "iterative_subtype",
+                                    "nr_iterations",
+                                    "iter_cycl_type"
+                                ]
+                            }
+                        },
+                        {
+                            "if": {
+                                "properties": {
+                                    "pks_subclass": {
+                                        "enum": [
+                                            "PUFA synthase or related"
+                                        ]
+                                    }
+                                }
+                            },
+                            "then": {
+                                "required": [
+                                    "pufa_mod_doms"
+                                ],
+                                "properties": {
+                                    "pufa_mod_doms": {
+                                        "minItems": 1
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if": {
+                                "not": {
+                                    "properties": {
+                                        "pks_te_type": {
+                                            "enum": [
+                                                "None"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "then": {
+                                "required": [
+                                    "pks_thioesterase"
+                                ],
+                                "properties": {
+                                    "pks_thioesterase": {
+                                        "minItems": 1
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "nrp": {
                     "title": "NRP-specific parameters",
                     "type": "object",
-                    "dependencies": {
-                        "subclass": [
-                            "lipid_moiety"
-                        ],
-                        "nrps_te_type": [
-                            "nrps_thioesterase"
-                        ]
-                    },
                     "properties": {
                         "subclass": {
                             "title": "NRP subclass",
                             "type": "string",
                             "enum": [
-                                "Glycopeptide",
-                                "Ca+-dependent lipopeptide",
                                 "Other",
-                                "NRP siderophore",
-                                "Glycopeptidolipid",
-                                "Pyrrolobenzodiazepine",
-                                "Uridylpeptide",
+                                "Glycopeptide",
                                 "Other lipopeptide",
-                                "Beta-lactam",
-                                "Cyclic depsipeptide"
+                                "Glycopeptidolipid",
+                                "Ca+-dependent lipopeptide",
+                                "Uridylpeptide",
+                                "Cyclic depsipeptide",
+                                "Pyrrolobenzodiazepine",
+                                "NRP siderophore",
+                                "Beta-lactam"
                             ]
                         },
                         "lipid_moiety": {
@@ -583,83 +1100,83 @@
                                                             "type": "string",
                                                             "description": "Enter 'None' if module is skipped or inactive.",
                                                             "enum": [
+                                                                "Proteinogenic",
+                                                                "Multiple (promiscuous)",
                                                                 "Nonproteinogenic",
                                                                 "None",
-                                                                "Unknown",
-                                                                "Multiple (promiscuous)",
-                                                                "Proteinogenic"
+                                                                "Unknown"
                                                             ]
                                                         },
                                                         "prot_adom_spec": {
                                                             "type": "string",
                                                             "enum": [
-                                                                "Alanine",
                                                                 "Cysteine",
                                                                 "Arginine",
                                                                 "Glycine",
                                                                 "Methionine",
-                                                                "Glutamine",
-                                                                "Histidine",
                                                                 "Threonine",
-                                                                "Serine",
-                                                                "Lysine",
+                                                                "Glutamate",
+                                                                "Valine",
                                                                 "Phenylalanine",
-                                                                "Aspartate",
+                                                                "Histidine",
                                                                 "Tyrosine",
                                                                 "Tryptophan",
+                                                                "Serine",
                                                                 "Leucine",
-                                                                "Proline",
-                                                                "Asparagine",
-                                                                "Glutamate",
                                                                 "Isoleucine",
-                                                                "Valine"
+                                                                "Aspartate",
+                                                                "Proline",
+                                                                "Alanine",
+                                                                "Lysine",
+                                                                "Glutamine",
+                                                                "Asparagine"
                                                             ]
                                                         },
                                                         "nonprot_adom_spec": {
                                                             "type": "string",
                                                             "enum": [
-                                                                "N-Methyl-valine",
                                                                 "Other",
-                                                                "Homoproline",
-                                                                "Kynurenine",
-                                                                "Salicylic acid",
+                                                                "Hydroxy-cycloornithine",
+                                                                "2-Hydroxyisovalerate",
+                                                                "N-Methyl-valine",
+                                                                "Phenylglycine",
+                                                                "2,3-Dehydro-2-aminobutyric acid",
+                                                                "Homotyrosine",
+                                                                "2-Aminobutyricacid",
+                                                                "N-Methyl-hydroxyphenylglycine",
+                                                                "Beta-hydroxytyrosine",
+                                                                "N-Methyl-phenylglycine",
                                                                 "N5-Hydroxyornithine",
                                                                 "N-Acetyl-hydroxyornithine",
-                                                                "2-Aminoisobutyricacid",
-                                                                "2,3-Dihydroxybenzoic acid",
                                                                 "2,4-Diaminobutyric acid",
-                                                                "Beta-hydroxytyrosine",
-                                                                "Homotyrosine",
-                                                                "Hydroxyaspartic acid",
-                                                                "N-Methyl-isoleucine",
-                                                                "2-Hydroxy-3-methyl-pentanoic acid",
-                                                                "4-Hydroxyphenylglycine",
-                                                                "2-Hydroxyisovalerate",
-                                                                "Isovaline",
-                                                                "Ornithine",
-                                                                "Phenylglycine",
                                                                 "Hydroxyasparagine",
-                                                                "Allo-threonine",
-                                                                "3,5-Dihydroxy-phenylglycine",
-                                                                "Citrulline",
-                                                                "2,3-Diaminopropionic acid",
-                                                                "N-Methyl-hydroxyphenylglycine",
-                                                                "Beta-alanine",
-                                                                "Homoserine",
-                                                                "2-Amino-adipic-acid",
-                                                                "Pipecolic acid",
-                                                                "N-Methyl-alanine",
-                                                                "2,3-Dehydro-2-aminobutyric acid",
-                                                                "Phenylalaninol",
-                                                                "N-Methyl-phenylglycine",
-                                                                "N6-Formyl-hydroxyornithine",
-                                                                "Hydroxy-cycloornithine",
-                                                                "N-Methyl-leucine",
+                                                                "N-Methyl-Glycine",
                                                                 "Putrescine",
-                                                                "2-Aminobutyricacid",
+                                                                "2,3-Diaminopropionic acid",
+                                                                "Allo-threonine",
+                                                                "Phenylalaninol",
+                                                                "N-Methyl-isoleucine",
+                                                                "Beta-alanine",
+                                                                "N-Methyl-leucine",
+                                                                "N6-Formyl-hydroxyornithine",
+                                                                "Citrulline",
+                                                                "Pipecolic acid",
+                                                                "Hydroxyaspartic acid",
                                                                 "4-Hydroxyproline",
+                                                                "2,3-Dihydroxybenzoic acid",
+                                                                "Ornithine",
+                                                                "Salicylic acid",
+                                                                "2-Amino-adipic-acid",
+                                                                "N-Methyl-alanine",
+                                                                "4-Hydroxyphenylglycine",
+                                                                "Kynurenine",
+                                                                "3,5-Dihydroxy-phenylglycine",
+                                                                "2-Aminoisobutyricacid",
+                                                                "Homoserine",
+                                                                "Homoproline",
+                                                                "Isovaline",
                                                                 "N-Methyl-phenylalanine",
-                                                                "N-Methyl-Glycine"
+                                                                "2-Hydroxy-3-methyl-pentanoic acid"
                                                             ]
                                                         },
                                                         "other_spec": {
@@ -677,12 +1194,12 @@
                                                             "description": "Choose 'None' if substrate specificity not known or not applicable.",
                                                             "type": "string",
                                                             "enum": [
-                                                                "Isotope labeling",
-                                                                "Structure-based inference",
-                                                                "Feeding study",
-                                                                "Sequence-based prediction",
+                                                                "Activity assay",
                                                                 "Other",
-                                                                "Activity assay"
+                                                                "Feeding study",
+                                                                "Structure-based inference",
+                                                                "Sequence-based prediction",
+                                                                "Isotope labeling"
                                                             ]
                                                         },
                                                         "epimerized": {},
@@ -716,14 +1233,14 @@
                                                     "title": "Subtype of condensation domain in this module",
                                                     "type": "string",
                                                     "enum": [
-                                                        "Starter",
+                                                        "DCL",
                                                         "Other",
-                                                        "Unknown",
+                                                        "Ester bond-forming",
+                                                        "Starter",
+                                                        "Dual",
                                                         "Heterocyclization",
                                                         "LCL",
-                                                        "Ester bond-forming",
-                                                        "Dual",
-                                                        "DCL"
+                                                        "Unknown"
                                                     ],
                                                     "description": "See Rausch et al. (2007) BMC Evolutionary Biology 7:78. Epimerization domains are not counted as C domains, but as a separate domain type."
                                                 },
@@ -731,8 +1248,8 @@
                                                     "title": "Scaffold-modifying domains in this module",
                                                     "type": "string",
                                                     "enum": [
-                                                        "Oxidation",
                                                         "Other",
+                                                        "Oxidation",
                                                         "None",
                                                         "Methylation"
                                                     ]
@@ -746,20 +1263,20 @@
                                                     "type": "string",
                                                     "description": "Choose 'None' if unknown.",
                                                     "enum": [
-                                                        "Skipped",
-                                                        "Neither",
                                                         "Iterated",
-                                                        "Non-elongating"
+                                                        "Skipped",
+                                                        "Non-elongating",
+                                                        "Neither"
                                                     ]
                                                 },
                                                 "nrps_evidence_skip_iter": {
                                                     "title": "Evidence for skipping/iteration",
                                                     "type": "string",
                                                     "enum": [
-                                                        "Other",
-                                                        "Structure-based inference",
                                                         "Activity assay",
-                                                        "Sequence-based prediction"
+                                                        "Other",
+                                                        "Sequence-based prediction",
+                                                        "Structure-based inference"
                                                     ]
                                                 },
                                                 "comments": {
@@ -769,34 +1286,63 @@
                                             "required": [
                                                 "module_nr",
                                                 "cdom_subtype",
-                                                "nrps_mod_doms",
-                                                "nrps_evidence_skip_iter"
+                                                "nrps_mod_doms"
                                             ],
-                                            "dependencies": {
-                                                "nrps_mod_doms": [
-                                                    "nrps_other_mod_dom"
-                                                ],
-                                                "nrps_mod_skip_iter": [
-                                                    "nrps_evidence_skip_iter"
-                                                ]
-                                            }
-                                        }
+                                            "allOf": [
+                                                {
+                                                    "if": {
+                                                        "properties": {
+                                                            "nrps_mod_doms": {
+                                                                "enum": [
+                                                                    "Other"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "then": {
+                                                        "required": [
+                                                            "nrps_other_mod_dom"
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "if": {
+                                                        "not": {
+                                                            "properties": {
+                                                                "nrps_mod_skip_iter": {
+                                                                    "enum": [
+                                                                        "Neither"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "then": {
+                                                        "required": [
+                                                            "nrps_evidence_skip_iter"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "minItems": 1
                                     }
                                 },
                                 "required": [
                                     "nrps_module"
                                 ]
-                            }
+                            },
+                            "minItems": 1
                         },
                         "nrps_te_type": {
                             "title": "Thioesterase type:",
                             "type": "string",
                             "enum": [
                                 "Both",
-                                "None",
-                                "Unknown",
                                 "Type II",
-                                "Type I"
+                                "None",
+                                "Type I",
+                                "Unknown"
                             ],
                             "description": "Also choose 'None' if it concerns a hybrid pathway and the thioesterase is an integral part of a PKS module at the end of the assembly-line."
                         },
@@ -812,13 +1358,13 @@
                             "title": "Release/cyclization type:",
                             "type": "string",
                             "enum": [
-                                "Hydrolysis",
                                 "Macrolactamization",
-                                "Macrolactonization",
                                 "Other",
-                                "Unknown",
+                                "Macrolactonization",
                                 "Reductive release",
-                                "Macrothiolactonization"
+                                "Hydrolysis",
+                                "Macrothiolactonization",
+                                "Unknown"
                             ]
                         }
                     },
@@ -828,419 +1374,50 @@
                         "nrps_genes",
                         "nrps_te_type",
                         "nrps_release_type"
-                    ]
-                },
-                "Polyketide": {
-                    "title": "Polyketide-specific parameters",
-                    "type": "object",
-                    "dependencies": {
-                        "pks_subclass": [
-                            "starter_unit",
-                            "mod_pks_genes",
-                            "pks_genes",
-                            "pufa_mod_doms",
-                            "nr_iterations",
-                            "iterative_subtype",
-                            "iter_cycl_type",
-                            "trans_at",
-                            "ketide_length",
-                            "cyclases",
-                            "pks_te_type",
-                            "pks_release_type"
-                        ],
-                        "pks_te_type": [
-                            "pks_thioesterase"
-                        ]
-                    },
-                    "properties": {
-                        "pk_subclass": {
-                            "title": "Polyketide subclass",
-                            "type": "string",
-                            "enum": [
-                                "Stilbene",
-                                "Macrolide",
-                                "Angucycline",
-                                "Tetracycline",
-                                "Polyphenol",
-                                "Chalcone",
-                                "Ansamycin",
-                                "Anthracycline",
-                                "Polyene",
-                                "Tetracenomycin",
-                                "Other",
-                                "Polyether",
-                                "Aryl polyene",
-                                "Benzoisochromanequinone",
-                                "Enediyine"
-                            ],
-                            "description": "Also choose 'Other' if the polyketide is a hybrid of multiple polyketide types."
-                        },
-                        "lin_cycl_pk": {
-                            "type": "string",
-                            "enum": [
-                                "Cyclic",
-                                "Linear"
-                            ],
-                            "description": "Also counts as cyclic if the molecule is hybrid and the polyketide cyclizes onto another part of the hybrid molecule. Internal cyclizations of an amino acid or cyclizations of two adjacent amino acids or ketide groups do not count to define a cyclic compound: a cyclization should bridge residues that would otherwise not be connected, with at least two other residues being present between them."
-                        },
-                        "pks_subclass": {
-                            "title": "Polyketide synthase subclass",
-                            "type": "array",
-                            "items": {
-                                "type": "string",
-                                "enum": [
-                                    "Trans-AT type I",
-                                    "Modular type I",
-                                    "Type III",
-                                    "Other",
-                                    "Iterative type I",
-                                    "Type II",
-                                    "PUFA synthase or related",
-                                    "Enediyne type I"
-                                ]
-                            },
-                            "description": "Hold ctrl or cmd key to select multiple items. The 'Modular Type I' option denotes the presence of cis-AT modules. If the pathway is a hybrid NRPS-PKS pathway, select the type of PKS responsible for the polyketide-synthesizing part of the pathway."
-                        },
-                        "starter_unit": {
-                            "title": "Starter unit",
-                            "type": "string",
-                            "enum": [
-                                "Acetyl-CoA",
-                                "p-Aminobenzoate",
-                                "Mycolate",
-                                "Methylmalonyl-CoA",
-                                "Other",
-                                "Glycolate",
-                                "Aminomalonyl-CoA",
-                                "Hydroxymalonyl-CoA",
-                                "Cyclohexylcarbonyl-CoA",
-                                "Trans-cyclopentane-(1R,2R)-dicarboxylic acid",
-                                "Isobutyryl-CoA",
-                                "p-Nitrobenzoate",
-                                "Methoxymalonyl-CoA",
-                                "Benzoyl-CoA",
-                                "Malonamyl-CoA",
-                                "3-Amino-2-Methylpropionate",
-                                "Hexanoyl-ACP",
-                                "Butyryl-ACP",
-                                "Unknown",
-                                "Ethylmalonyl-CoA",
-                                "2-Methylbutyryl-CoA",
-                                "p-Coumaroyl-CoA",
-                                "Malonyl-CoA",
-                                "Acetoacetyl-CoA",
-                                "Propionyl-CoA",
-                                "3,5-AHBA-CoA",
-                                "3-Methylbutyryl-CoA"
-                            ]
-                        },
-                        "mod_pks_genes": {
-                            "title": "__ Modular PKS genes in cluster",
-                            "type": "array",
-                            "items": {
-                                "type": "object",
-                                "title": "Modular PKS gene",
-                                "properties": {
-                                    "mod_pks_gene": {
-                                        "title": "PKS-encoding gene:",
-                                        "description": "Modular polyketide synthase-encoding gene; Enter locus tag, protein ID or gene ID (in this order of preference) exactly as it is specified in the submitted GenBank/ENA/DDBJ entry.",
-                                        "type": "string"
-                                    },
-                                    "pks_module": {
-                                        "title": "__ PKS modules in this gene",
-                                        "type": "array",
-                                        "items": {
-                                            "type": "object",
-                                            "title": "PKS Module",
-                                            "properties": {
-                                                "module_nr": {
-                                                    "title": "Assembly line module number",
-                                                    "type": "string",
-                                                    "pattern": "^[xABCD0123456789]{1,}$",
-                                                    "description": "Counting starts from 1 at the start of the assembly-line, and includes loading modules (which are numbered '0'). If a module is split across two genes, please re-indicate the same module at each gene, but only with the domains present in that gene. Every module with at least an substrate-selecting domain (A / AT / CAL) is included in the count. If a module is split over two genes, the same number can be re-used for the domain(s) in the second gene. For hybrids, NRPS modules are included in the counting. If this PKS module is not part of a main assembly-line for producing this compound or if the PKS complex is too noncanonical to describe in a linear fashion, please enter 'x'. The same applies for monomodular precursor synthases such as MSAS synthase, which may be encoded within larger multi-modular PKS-encoding gene clusters. If there are multiple assembly-lines involved in synthesis of the main product, these can be indicated as 'A1, A2, A3, etc.' and 'B1, B2, B3'. Similarly, if the assembly-line branches at a later stage to make multiple products, the shared part can be called e.g. '1, 2, 3' and the split part 'A4, A5' and 'B4, B5'. Up to four parallel assembly-lines are supported (with letters A-D)."
-                                                },
-                                                "pks_domains": {
-                                                    "title": "Core PKS domains present in this module",
-                                                    "type": "array",
-                                                    "items": {
-                                                        "type": "string",
-                                                        "enum": [
-                                                            "Ketosynthase",
-                                                            "Dehydratase",
-                                                            "Enoylreductase",
-                                                            "CoA-ligase",
-                                                            "Ketoreductase",
-                                                            "Acyltransferase",
-                                                            "Thiolation (ACP/PCP)"
-                                                        ]
-                                                    },
-                                                    "description": "Hold ctrl or cmd key to select multiple items"
-                                                },
-                                                "at_substr_spec": {
-                                                    "title": "AT/CAL domain substrate specificity",
-                                                    "type": "string",
-                                                    "description": "Enter 'None' if no AT-domain present (e.g., for trans-AT modules) or module is skipped. Enter 'Unknown' if specificity not known.",
-                                                    "enum": [
-                                                        "Acetyl-CoA",
-                                                        "p-Aminobenzoate",
-                                                        "Mycolate",
-                                                        "Methylmalonyl-CoA",
-                                                        "Other",
-                                                        "Glycolate",
-                                                        "Aminomalonyl-CoA",
-                                                        "Hydroxymalonyl-CoA",
-                                                        "None",
-                                                        "Cyclohexylcarbonyl-CoA ",
-                                                        "Isobutyryl-CoA",
-                                                        "p-Nitrobenzoate",
-                                                        "Methoxymalonyl-CoA",
-                                                        "Benzoyl-CoA",
-                                                        "Malonamyl-CoA",
-                                                        "3-Amino-2-Methylpropionate",
-                                                        "Trans-cyclopentane-(1R, 2R)-dicarboxylic acid",
-                                                        "Hexanoyl-ACP",
-                                                        "Butyryl-ACP",
-                                                        "Unknown",
-                                                        "Ethylmalonyl-CoA",
-                                                        "2-Methylbutyryl-CoA",
-                                                        "p-Coumaroyl-CoA",
-                                                        "Malonyl-CoA",
-                                                        "Acetoacetyl-CoA",
-                                                        "Propionyl-CoA",
-                                                        "Multiple (promiscuous)",
-                                                        "3,5-AHBA-CoA",
-                                                        "3-Methylbutyryl-CoA"
-                                                    ]
-                                                },
-                                                "at_multiple_spec": {
-                                                    "title": "Specify promiscuous keto group specificity",
-                                                    "type": "array",
-                                                    "items": {
-                                                        "type": "string"
-                                                    },
-                                                    "description": "Input multiple keto groups, separated by semi-colons (';'). Use the exact same spelling as denoted in the multiple-choice option above."
-                                                },
-                                                "evidence_at_spec": {
-                                                    "title": "Evidence for AT/CAL specificity",
-                                                    "description": "Choose 'None' if substrate specificity not known or not applicable. Select the strongest level of evidence.",
-                                                    "type": "string",
-                                                    "enum": [
-                                                        "Other",
-                                                        "Structure-based inference",
-                                                        "Activity assay",
-                                                        "Sequence-based prediction"
-                                                    ]
-                                                },
-                                                "kr_stereochem": {
-                                                    "title": "KR domain stereochemistry / activity",
-                                                    "type": "string",
-                                                    "enum": [
-                                                        "L-OH",
-                                                        "D-OH",
-                                                        "No reduction",
-                                                        "Unknown",
-                                                        "Inactive"
-                                                    ],
-                                                    "description": "A-group / B-group according to Caffrey, ChemBioChem 2003."
-                                                },
-                                                "pks_mod_doms": {
-                                                    "title": "Nonreductive scaffold-modifying domain in this module",
-                                                    "description": "Any additional modifications made by a domain within module",
-                                                    "type": "array",
-                                                    "items": {
-                                                        "type": "string",
-                                                        "enum": [
-                                                            "Michael branching",
-                                                            "Other",
-                                                            "Beta-branching",
-                                                            "None",
-                                                            "Pyran synthase",
-                                                            "Amination",
-                                                            "Methylation"
-                                                        ]
-                                                    }
-                                                },
-                                                "pks_other_mod_dom": {
-                                                    "title": "Modifying domain type:",
-                                                    "type": "string"
-                                                },
-                                                "pks_mod_skip_iter": {
-                                                    "title": "Module skipped or iterated during biosynthesis?",
-                                                    "description": "Choose 'None' if unknown.",
-                                                    "type": "string",
-                                                    "enum": [
-                                                        "Skipped",
-                                                        "Neither",
-                                                        "Iterated",
-                                                        "Non-elongating"
-                                                    ]
-                                                },
-                                                "pks_evidence_skip_iter": {
-                                                    "title": "Evidence for skipping/iteration",
-                                                    "type": "string",
-                                                    "enum": [
-                                                        "Other",
-                                                        "Structure-based inference",
-                                                        "Activity assay",
-                                                        "Sequence-based prediction"
-                                                    ]
-                                                },
-                                                "comments": {
-                                                    "type": "string"
-                                                }
-                                            },
-                                            "required": [
-                                                "module_nr",
-                                                "pks_domains",
-                                                "at_substr_spec",
-                                                "pks_mod_doms",
-                                                "pks_evidence_skip_iter"
-                                            ],
-                                            "dependencies": {
-                                                "pks_domains": [
-                                                    "at_substr_spec",
-                                                    "kr_stereochem"
-                                                ],
-                                                "at_substr_spec": [
-                                                    "at_multiple_spec",
-                                                    "evidence_at_spec"
-                                                ],
-                                                "pks_mod_doms": [
-                                                    "pks_other_mod_dom"
-                                                ],
-                                                "pks_mod_skip_iter": [
-                                                    "pks_evidence_skip_iter"
-                                                ]
-                                            }
+                    ],
+                    "allOf": [
+                        {
+                            "if": {
+                                "not": {
+                                    "properties": {
+                                        "nrps_te_type": {
+                                            "enum": [
+                                                "None"
+                                            ]
                                         }
                                     }
-                                },
+                                }
+                            },
+                            "then": {
                                 "required": [
-                                    "pks_module"
-                                ]
+                                    "nrps_thioesterase"
+                                ],
+                                "properties": {
+                                    "nrps_thioesterase": {
+                                        "minItems": 1
+                                    }
+                                }
                             }
                         },
-                        "pks_genes": {
-                            "title": "Genes in cluster encoding nonmodular polyketide synthases / ketosynthases",
-                            "type": "array",
-                            "items": {
-                                "type": "string"
+                        {
+                            "if": {
+                                "properties": {
+                                    "subclass": {
+                                        "enum": [
+                                            "Other lipopeptide"
+                                        ]
+                                    }
+                                }
                             },
-                            "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference), exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas. For Type II PKSs, do not include chain length factor-encoding genes."
-                        },
-                        "pufa_mod_doms": {
-                            "title": "Nonreductive scaffold-modifying domain in this synthase",
-                            "description": "Any additional modifications made by a domain within this PUFA synthase",
-                            "type": "array",
-                            "items": {
-                                "type": "string",
-                                "enum": [
-                                    "Michael branching",
-                                    "Other",
-                                    "Beta-branching",
-                                    "None",
-                                    "Pyran synthase",
-                                    "Amination",
-                                    "Methylation"
+                            "then": {
+                                "required": [
+                                    "lipid_moiety"
                                 ]
                             }
-                        },
-                        "nr_iterations": {
-                            "title": "Number of chain synthesis iterations performed by iterative PKS module",
-                            "type": "number"
-                        },
-                        "iterative_subtype": {
-                            "title": "Iterative PKS subtype",
-                            "type": "string",
-                            "enum": [
-                                "Highly reducing",
-                                "Non-reducing",
-                                "Partially reducing"
-                            ]
-                        },
-                        "iter_cycl_type": {
-                            "title": "Iterative PKS cyclization type",
-                            "type": "string",
-                            "description": "Cyclization type according to Zhou, Li & Tang, Nat. Prod. Rep., 2010,27, 839-868.",
-                            "enum": [
-                                "C2-C7 first",
-                                "C6-C11 first",
-                                "Other",
-                                "C4-C9 first"
-                            ]
-                        },
-                        "trans_at": {
-                            "title": "Genes in cluster encoding trans-acyltransferases",
-                            "type": "array",
-                            "items": {
-                                "type": "string"
-                            },
-                            "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference), exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas."
-                        },
-                        "ketide_length": {
-                            "title": "Polyketide length",
-                            "type": "number",
-                            "description": "Length of the ketide chain, e.g. 6 for a hexaketide or 9 for a nonaketide."
-                        },
-                        "cyclases": {
-                            "title": "Gene(s) in cluster involved in folding and cyclization of the aromatic polyketide",
-                            "type": "array",
-                            "items": {
-                                "type": "string"
-                            },
-                            "description": "E.g., cyclases/aromatases. Enter locus tags, protein IDs or gene IDs (in this order of preference), exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas."
-                        },
-                        "pks_te_type": {
-                            "title": "Thioesterase type:",
-                            "type": "string",
-                            "enum": [
-                                "Both",
-                                "Other",
-                                "None",
-                                "Unknown",
-                                "Type II",
-                                "Type I"
-                            ],
-                            "description": "Also choose 'None' if it concerns a hybrid pathway and the thioesterase is an integral part of an NRPS module at the end of the assembly-line."
-                        },
-                        "pks_thioesterase": {
-                            "title": "Thioesterase-encoding gene(s):",
-                            "type": "array",
-                            "items": {
-                                "type": "string"
-                            },
-                            "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference) exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas."
-                        },
-                        "pks_release_type": {
-                            "title": "Release/cyclization type:",
-                            "type": "string",
-                            "enum": [
-                                "Hydrolysis",
-                                "Macrolactamization",
-                                "Macrolactonization",
-                                "Other",
-                                "Unknown",
-                                "Reductive release",
-                                "Macrothiolactonization",
-                                "Claisen condensation"
-                            ]
                         }
-                    },
-                    "required": [
-                        "pk_subclass",
-                        "lin_cycl_pk",
-                        "pks_subclass",
-                        "starter_unit",
-                        "mod_pks_genes",
-                        "pufa_mod_doms",
-                        "nr_iterations",
-                        "iterative_subtype",
-                        "ketide_length",
-                        "pks_te_type",
-                        "pks_release_type"
                     ]
                 },
-                "RiPP": {
+                "ripp": {
                     "title": "RiPP-specific parameters",
                     "type": "object",
                     "properties": {
@@ -1248,24 +1425,24 @@
                             "title": "RiPP subclass",
                             "type": "string",
                             "enum": [
-                                "Microcin",
-                                "Linaridin",
-                                "Lanthipeptide",
-                                "LAP",
-                                "Thiopeptide",
-                                "Lassopeptide",
-                                "Glycocin",
-                                "Other",
-                                "Bottromycin",
-                                "Sactipeptide",
-                                "Cyclotide",
-                                "Conopeptide",
-                                "Microviridin",
-                                "Orbitide",
                                 "Proteusin",
+                                "Other",
+                                "Cyclotide",
+                                "Linaridin",
+                                "Bottromycin",
+                                "Lassopeptide",
+                                "Lanthipeptide",
+                                "Sactipeptide",
+                                "Orbitide",
+                                "Microviridin",
                                 "Cyanobactin",
+                                "LAP",
+                                "Glycocin",
+                                "Microcin",
+                                "Conopeptide",
+                                "Head-to-tailcyclized peptide",
                                 "Amatoxin/phallotoxin",
-                                "Head-to-tailcyclized peptide"
+                                "Thiopeptide"
                             ]
                         },
                         "lin_cycl_ripp": {
@@ -1289,7 +1466,8 @@
                                         "items": {
                                             "type": "string"
                                         },
-                                        "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference) that make up this operon, exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas."
+                                        "description": "Enter locus tags, protein IDs or gene IDs (in this order of preference) that make up this operon, exactly as they are specified in the submitted GenBank/ENA/DDBJ entry, separated by commas.",
+                                        "minItems": 1
                                     },
                                     "core_pept_aa": {
                                         "title": "RiPP core peptide amino acid sequence(s)",
@@ -1347,11 +1525,11 @@
                                                     "title": "Type of crosslink",
                                                     "type": "string",
                                                     "enum": [
-                                                        "Thioether",
                                                         "Lactam",
-                                                        "Ether",
+                                                        "Lactone",
                                                         "Other",
-                                                        "Lactone"
+                                                        "Ether",
+                                                        "Thioether"
                                                     ]
                                                 }
                                             },
@@ -1364,7 +1542,8 @@
                                 "required": [
                                     "gene_id"
                                 ]
-                            }
+                            },
+                            "minItems": 1
                         }
                     },
                     "required": [
@@ -1373,7 +1552,7 @@
                         "precursor_loci"
                     ]
                 },
-                "Terpene": {
+                "terpene": {
                     "title": "Terpene-specific parameters",
                     "type": "object",
                     "properties": {
@@ -1383,11 +1562,11 @@
                             "enum": [
                                 "Other",
                                 "Dolichol",
-                                "Tocopherol",
-                                "Sterol",
-                                "Quinone",
                                 "Hopanoid",
+                                "Tocopherol",
+                                "Quinone",
                                 "Gibberellin",
+                                "Sterol",
                                 "Carotenoid"
                             ]
                         },
@@ -1395,34 +1574,34 @@
                             "title": "Terpene subclass by number of carbon units",
                             "type": "string",
                             "enum": [
-                                "Tetraterpene",
-                                "Homoterpene (C11)",
-                                "Homoterpene (C16)",
-                                "Triterpene",
-                                "Sesquarterpene",
-                                "Norisoprenoid",
                                 "Other",
                                 "Polyterpene",
-                                "Hemiterpene",
-                                "Monoterpene",
                                 "Sesterterpene",
-                                "Sesquiterpene",
-                                "Diterpene"
+                                "Tetraterpene",
+                                "Hemiterpene",
+                                "Norisoprenoid",
+                                "Homoterpene (C11)",
+                                "Diterpene",
+                                "Sesquarterpene",
+                                "Homoterpene (C16)",
+                                "Triterpene",
+                                "Monoterpene",
+                                "Sesquiterpene"
                             ]
                         },
                         "terpene_precursor": {
                             "title": "Final isoprenoid precursor",
                             "type": "string",
                             "enum": [
-                                "GFPP",
-                                "FPP",
-                                "NPP",
                                 "Other",
+                                "FPP",
                                 "GPP",
                                 "GGPP",
                                 "IPP",
+                                "UPP",
+                                "NPP",
                                 "DMAPP",
-                                "UPP"
+                                "GFPP"
                             ]
                         },
                         "terpene_synth_cycl": {
@@ -1448,7 +1627,7 @@
                         "terpene_precursor"
                     ]
                 },
-                "Saccharide": {
+                "saccharide": {
                     "title": "Saccharide-specific parameters",
                     "type": "object",
                     "properties": {
@@ -1456,14 +1635,14 @@
                             "title": "Saccharide subclass",
                             "type": "string",
                             "enum": [
-                                "other",
-                                "aminoglycoside",
-                                "oligosaccharide",
-                                "lipopolysaccharide",
-                                "capsular polysaccharide",
                                 "hybrid/tailoring",
                                 "exopolysaccharide",
-                                "aminocyclitol"
+                                "lipopolysaccharide",
+                                "oligosaccharide",
+                                "aminocyclitol",
+                                "other",
+                                "aminoglycoside",
+                                "capsular polysaccharide"
                             ]
                         },
                         "gt_genes": {
@@ -1475,106 +1654,103 @@
                                 "properties": {
                                     "gt_gene": {
                                         "title": "Gene ID",
-                                        "type": "array",
-                                        "items": {
-                                            "type": "string"
-                                        },
+                                        "type": "string",
                                         "description": "Enter locus tag, protein ID or gene ID (in this order of preference), exactly as it is used in the submitted GenBank/ENA/DDBJ entry."
                                     },
                                     "gt_specificity": {
                                         "title": "Specificity of glycosyltransferase",
                                         "type": "string",
                                         "enum": [
-                                            "3,4-O-dimethyl-L-rhamnose",
-                                            "D-olivose ",
-                                            "L-nogalose",
-                                            "3-O-carbamoyl-4-O-methyl-L-noviose",
+                                            "3-N,N-dimethyl-L-eremosamine",
                                             "2,3-O-dimethyl-L-rhamnose",
-                                            "D-fucose",
-                                            "L-quinovose",
-                                            "L-vicenisamine",
-                                            "Kedarosamine",
-                                            "O-methyl-L-amicetose",
-                                            "L-fucose",
-                                            "L-digitoxose",
-                                            "4,6-dideoxy-4-hydroxylamino-D-glucose",
-                                            "D-quinovose",
-                                            "D-forosamine",
-                                            "3-O-carbamoyl-L-noviose",
-                                            "L-noviose",
-                                            "D-galacturonic acid",
-                                            "L-aculose",
-                                            "L-rhodinose",
-                                            "Nogalamine",
+                                            "4-oxo-L-vancosamine",
+                                            "L-megosamine",
+                                            "L-acosamine",
+                                            "L-cinerulose A",
+                                            "Chromose D (4-O-acetyl-beta-D-oliose)",
+                                            "4-N,N-dimethylamino-4-deoxy-5-C-methyl-l-rhamnose",
                                             "N-acetyl-D-glucosamine",
+                                            "Olivomose",
+                                            "4-O-carbamoyl-D-olivose",
+                                            "N,N-dimethyl-L-pyrrolosamine",
+                                            "Namenamicin sugar C",
+                                            "Rednose",
+                                            "D-fucose",
+                                            "D-rhamnose",
+                                            "D-chalcose",
+                                            "4-N-ethyl-4-amino-3-O-methoxy-2,4,5-trideoxypentose",
+                                            "D-mycarose",
+                                            "Other",
+                                            "D-oliose",
+                                            "L-rhodosamine ",
+                                            "D-ravidosamine",
+                                            "D-3-N-methyl-4-O-methyl-L-ristosamine",
+                                            "D-digitalose",
+                                            "L-actinosamine",
+                                            "3,4-O-dimethyl-L-rhamnose",
                                             "L-cinerulose B",
+                                            "3-O-methyl-rhamnose",
+                                            "4-O-acetyl-L-arcanose",
+                                            "L-fucose",
+                                            "L-rhamnose",
+                                            "4-O-acetyl-D-ravidosamine",
+                                            "3-epi-L-vancosamine",
+                                            "D-angolosamine",
+                                            "L-noviose",
+                                            "Glucuronic acid",
+                                            "L-aculose",
+                                            "L-ristosamine",
+                                            "3-O-methyl-L-olivose/L-oleandrose",
+                                            "Ketodeoxyoctonic acid",
+                                            "L-cladinose",
+                                            "D-olivose ",
+                                            "D-galactose",
+                                            "Nogalamine",
+                                            "3-O-carbamoyl-4-O-methyl-L-noviose",
+                                            "2-O-methyl-L-rhamnose",
+                                            "D-quinovose",
+                                            "2-thioglucose",
+                                            "D-digitoxose",
+                                            "2-deoxy-L-fucose",
+                                            "3-N,N-dimethyl-D-mycosamine",
+                                            "4-O-methyl-L-rhodinose",
+                                            "3-O-carbamoyl-L-noviose",
+                                            "2,3,4-tri-O-methylrhamnose",
+                                            "D-arabinose",
+                                            "D-forosamine",
+                                            "D-fucofuranose",
+                                            "D-galacturonic acid",
+                                            "L-vicenisamine",
                                             "6-deoxy-3-C-methyl-L-mannose",
+                                            "L-nogalose",
+                                            "Unknown",
+                                            "D-mycosamine",
                                             "3-(5'-methyl-2'-pyrrolylcarbonyl-)4-O-methyl-L-noviose",
+                                            "4-deoxy-4-thio-D-digitoxose ",
+                                            "Multiple (promiscuous)",
+                                            "2,4-O-dimethyl-L-rhamnose",
+                                            "O-methyl-L-amicetose",
+                                            "L-vancosamine",
+                                            "L-boivinose",
+                                            "6-methoxy-D-glucose",
+                                            "2'-N-methyl-D-fucosamine",
+                                            "L-rhodinose",
+                                            "Olivomycose (L-chromose B)",
+                                            "4-deoxy-4-methylthio-a-D-digitoxose ",
+                                            "Kedarosamine",
+                                            "D-glucosamine",
+                                            "4,6-dideoxy-4-hydroxylamino-D-glucose",
+                                            "D-mannose",
+                                            "3-N-acetyl-4-O-acetyl-D-ravidosamine",
+                                            "3-N-acetyl-D-ravidosamine",
+                                            "N-5-acetylneuraminic acid",
                                             "3-methoxy-D-mannose",
                                             "D-desosamine",
-                                            "L-rhodosamine ",
-                                            "N-5-acetylneuraminic acid",
-                                            "L-daunosamine ",
+                                            "L-quinovose",
                                             "D-glucose",
-                                            "L-cladinose",
-                                            "Glucuronic acid",
-                                            "4-O-acetyl-D-ravidosamine",
-                                            "Chromose D (4-O-acetyl-beta-D-oliose)",
-                                            "Unknown",
-                                            "4-O-carbamoyl-D-olivose",
-                                            "3-O-methyl-rhamnose",
-                                            "L-ristosamine",
-                                            "D-digitalose",
-                                            "Olivomycose (L-chromose B)",
-                                            "4-N,N-dimethylamino-4-deoxy-5-C-methyl-l-rhamnose",
-                                            "L-acosamine",
-                                            "6-methoxy-D-glucose",
-                                            "D-mycosamine",
-                                            "D-mannose",
-                                            "2-O-methyl-L-rhamnose",
-                                            "D-galactose",
-                                            "Ketodeoxyoctonic acid",
-                                            "Other",
-                                            "4-deoxy-4-methylthio-a-D-digitoxose ",
-                                            "D-3-N-methyl-4-O-methyl-L-ristosamine",
-                                            "D-chalcose",
-                                            "D-oliose",
-                                            "D-glucosamine",
-                                            "L-boivinose",
-                                            "3-O-methyl-L-olivose/L-oleandrose",
-                                            "L-actinosamine",
-                                            "4-O-methyl-L-rhodinose",
-                                            "L-cinerulose A",
-                                            "3-N,N-dimethyl-L-eremosamine",
-                                            "3-epi-L-vancosamine",
-                                            "Multiple (promiscuous)",
-                                            "3-N-acetyl-4-O-acetyl-D-ravidosamine",
-                                            "L-megosamine",
-                                            "2,4-O-dimethyl-L-rhamnose",
-                                            "D-ravidosamine",
-                                            "D-angolosamine",
-                                            "D-mycarose",
-                                            "2'-N-methyl-D-fucosamine",
-                                            "3-N,N-dimethyl-D-mycosamine",
-                                            "4-N-ethyl-4-amino-3-O-methoxy-2,4,5-trideoxypentose",
-                                            "3-N-acetyl-D-ravidosamine",
-                                            "4-O-acetyl-L-arcanose",
-                                            "L-vancosamine",
-                                            "D-rhamnose",
-                                            "4-oxo-L-vancosamine",
-                                            "Olivomose",
-                                            "Namenamicin sugar C",
-                                            "D-fucofuranose",
-                                            "L-rhamnose",
-                                            "N-acetyl-D-galactose",
-                                            "2,3,4-tri-O-methylrhamnose",
-                                            "D-digitoxose",
-                                            "4-deoxy-4-thio-D-digitoxose ",
-                                            "Rednose",
-                                            "2-thioglucose",
-                                            "D-arabinose",
-                                            "2-deoxy-L-fucose",
-                                            "N,N-dimethyl-L-pyrrolosamine"
+                                            "L-digitoxose",
+                                            "L-daunosamine ",
+                                            "N-acetyl-D-galactose"
                                         ]
                                     },
                                     "other_gt_spec": {
@@ -1586,32 +1762,65 @@
                                         "description": "Select the strongest available level of evidence.",
                                         "type": "string",
                                         "enum": [
+                                            "Activity assay",
+                                            "Other",
                                             "Structure-based inference",
                                             "Sequence-based prediction",
-                                            "Other",
-                                            "Activity assay",
                                             "Knock-out construct"
                                         ]
-                                    },
-                                    "sugar_subcluster": {
-                                        "title": "Sub-cluster for sugar biosynthesis, if within this gene cluster",
-                                        "description": "Note that a sub-cluster may consist of genes dispersed throughout the gene cluster. Enter locus tags, gene IDs or protein IDs, separated by commas. A sub-cluster only needs to be declared once, in case there are multiple glycosyltransferases with the same substrate specificity.",
-                                        "type": "array",
-                                        "items": {
-                                            "type": "string"
-                                        }
                                     }
                                 },
                                 "required": [
                                     "gt_gene",
                                     "gt_specificity"
                                 ],
-                                "dependencies": {
-                                    "gt_specificity": [
-                                        "other_gt_spec",
-                                        "evidence_gt_spec",
-                                        "sugar_subcluster"
-                                    ]
+                                "allOf": [
+                                    {
+                                        "if": {
+                                            "properties": {
+                                                "gt_specificity": {
+                                                    "enum": [
+                                                        "Other"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "then": {
+                                            "required": [
+                                                "other_gt_spec"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "if": {
+                                            "not": {
+                                                "properties": {
+                                                    "gt_specificity": {
+                                                        "enum": [
+                                                            "Unknown"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "then": {
+                                            "required": [
+                                                "evidence_gt_spec"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "sugar_subclusters": {
+                            "title": "Sub-clusters for sugar biosynthesis",
+                            "type": "array",
+                            "items": {
+                                "title": "Sub-cluster for sugar biosynthesis, if within this gene cluster",
+                                "description": "Note that a sub-cluster may consist of genes dispersed throughout the gene cluster. Enter locus tags, gene IDs or protein IDs, separated by commas. A sub-cluster only needs to be declared once, in case there are multiple glycosyltransferases with the same substrate specificity.",
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
                                 }
                             }
                         }
@@ -1620,7 +1829,7 @@
                         "saccharide_subclass"
                     ]
                 },
-                "Alkaloid": {
+                "alkaloid": {
                     "title": "Alkaloid-specific parameters",
                     "type": "object",
                     "properties": {
@@ -1629,22 +1838,22 @@
                             "type": "string",
                             "enum": [
                                 "Isoquinoline",
-                                "Imidazole",
-                                "Aporphine",
-                                "Indolizidine",
-                                "Pyrrole/pyrrolidine",
-                                "Purine",
-                                "Terpenoid",
                                 "Non-heterocyclic",
                                 "Other",
-                                "Indole/benzopyrrole",
+                                "Terpenoid",
+                                "Pyridine",
+                                "Purine",
                                 "Piperidine",
-                                "Pyrrolizidine",
-                                "Quinoline",
                                 "Quinolizidine",
+                                "Indole/benzopyrrole",
+                                "Quinoline",
+                                "Pyrrole/pyrrolidine",
+                                "Aporphine",
+                                "Pyrrolizidine",
                                 "Steroidal",
+                                "Imidazole",
                                 "Tropane",
-                                "Pyridine"
+                                "Indolizidine"
                             ]
                         }
                     },
@@ -1652,7 +1861,7 @@
                         "alkaloid_subclass"
                     ]
                 },
-                "Other": {
+                "other": {
                     "title": "Parameters specific for other classes",
                     "type": "object",
                     "properties": {
@@ -1660,25 +1869,25 @@
                             "title": "Other biosynthetic class",
                             "type": "string",
                             "enum": [
-                                "Non-NRP siderophore",
-                                "Fatty acid",
-                                "Non-NRP beta-lactam",
-                                "Other",
                                 "Ectoine",
-                                "Nucleoside",
-                                "Homoserine lactone",
-                                "Aminocoumarin",
-                                "Furan",
-                                "Amino acid-derived",
+                                "Other",
                                 "tRNA-derived",
-                                "Phenazine",
-                                "Melanin",
-                                "Phosphoglycolipid",
-                                "Butyrolactone",
-                                "Glucosinate",
+                                "Cyclitol",
+                                "Aminocoumarin",
                                 "Phosphonate",
+                                "Non-NRP beta-lactam",
+                                "Melanin",
+                                "Fatty acid",
+                                "Nucleoside",
+                                "Amino acid-derived",
                                 "Shikimate-derived",
-                                "Cyclitol"
+                                "Butyrolactone",
+                                "Homoserine lactone",
+                                "Phenazine",
+                                "Phosphoglycolipid",
+                                "Furan",
+                                "Glucosinate",
+                                "Non-NRP siderophore"
                             ]
                         }
                     },
@@ -1696,9 +1905,19 @@
             "allOf": [
                 {
                     "if": {
+                        "not": {
+                            "properties": {
+                                "minimal": {
+                                    "const": true
+                                }
+                            },
+                            "required": [
+                                "minimal"
+                            ]
+                        },
                         "properties": {
                             "biosyn_class": {
-                                "items": {
+                                "contains": {
                                     "enum": [
                                         "NRP"
                                     ]
@@ -1708,15 +1927,25 @@
                     },
                     "then": {
                         "required": [
-                            "NRP"
+                            "nrp"
                         ]
                     }
                 },
                 {
                     "if": {
+                        "not": {
+                            "properties": {
+                                "minimal": {
+                                    "const": true
+                                }
+                            },
+                            "required": [
+                                "minimal"
+                            ]
+                        },
                         "properties": {
                             "biosyn_class": {
-                                "items": {
+                                "contains": {
                                     "enum": [
                                         "Polyketide"
                                     ]
@@ -1726,15 +1955,25 @@
                     },
                     "then": {
                         "required": [
-                            "Polyketide"
+                            "polyketide"
                         ]
                     }
                 },
                 {
                     "if": {
+                        "not": {
+                            "properties": {
+                                "minimal": {
+                                    "const": true
+                                }
+                            },
+                            "required": [
+                                "minimal"
+                            ]
+                        },
                         "properties": {
                             "biosyn_class": {
-                                "items": {
+                                "contains": {
                                     "enum": [
                                         "RiPP"
                                     ]
@@ -1744,15 +1983,25 @@
                     },
                     "then": {
                         "required": [
-                            "RiPP"
+                            "ripp"
                         ]
                     }
                 },
                 {
                     "if": {
+                        "not": {
+                            "properties": {
+                                "minimal": {
+                                    "const": true
+                                }
+                            },
+                            "required": [
+                                "minimal"
+                            ]
+                        },
                         "properties": {
                             "biosyn_class": {
-                                "items": {
+                                "contains": {
                                     "enum": [
                                         "Terpene"
                                     ]
@@ -1762,15 +2011,25 @@
                     },
                     "then": {
                         "required": [
-                            "Terpene"
+                            "terpene"
                         ]
                     }
                 },
                 {
                     "if": {
+                        "not": {
+                            "properties": {
+                                "minimal": {
+                                    "const": true
+                                }
+                            },
+                            "required": [
+                                "minimal"
+                            ]
+                        },
                         "properties": {
                             "biosyn_class": {
-                                "items": {
+                                "contains": {
                                     "enum": [
                                         "Saccharide"
                                     ]
@@ -1780,15 +2039,25 @@
                     },
                     "then": {
                         "required": [
-                            "Saccharide"
+                            "saccharide"
                         ]
                     }
                 },
                 {
                     "if": {
+                        "not": {
+                            "properties": {
+                                "minimal": {
+                                    "const": true
+                                }
+                            },
+                            "required": [
+                                "minimal"
+                            ]
+                        },
                         "properties": {
                             "biosyn_class": {
-                                "items": {
+                                "contains": {
                                     "enum": [
                                         "Alkaloid"
                                     ]
@@ -1798,15 +2067,25 @@
                     },
                     "then": {
                         "required": [
-                            "Alkaloid"
+                            "alkaloid"
                         ]
                     }
                 },
                 {
                     "if": {
+                        "not": {
+                            "properties": {
+                                "minimal": {
+                                    "const": true
+                                }
+                            },
+                            "required": [
+                                "minimal"
+                            ]
+                        },
                         "properties": {
                             "biosyn_class": {
-                                "items": {
+                                "contains": {
                                     "enum": [
                                         "Other"
                                     ]
@@ -1816,7 +2095,7 @@
                     },
                     "then": {
                         "required": [
-                            "Other"
+                            "other"
                         ]
                     }
                 }
@@ -1828,14 +2107,23 @@
         },
         "embargo": {
             "description": "For newly characterized gene clusters only. You will be sent an accession number that you can mention in the paper. Please notify us upon publication so that the embargo can be lifted."
+        },
+        "created": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "modified": {
+            "type": "string",
+            "format": "date-time"
         }
     },
     "required": [
-        "version",
+        "created",
+        "modified",
         "general_params",
         "personal"
     ],
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$schema_version": "2.0",
-    "$schema_created": "2019-03-21 16:24"
+    "$schema_created": "2019-03-22 21:57"
 }
