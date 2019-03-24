@@ -1,92 +1,73 @@
-required	1816	
-properties.general_params.required	128	
-properties.general_params.properties.terpene.properties.terpene_subclass.enum	2	None
-properties.general_params.properties.terpene.properties.terpene_precursor.enum	1	None
-properties.general_params.properties.terpene.properties.terpene_c_len.enum	1	None
-properties.general_params.properties.saccharide.properties.saccharide_subclass.enum	1	hyrbid/tailoring
-properties.general_params.properties.saccharide.properties.gt_genes.items.required	2	
-properties.general_params.properties.saccharide.properties.gt_genes.items.properties.gt_specificity.enum	7	None;mycoamine;mycaminose;L-forosamine;D-olivose;L-Rhodinose
-properties.general_params.properties.saccharide.properties.gt_genes.items.properties.evidence_gt_spec.enum	1	structure-based inference
-properties.general_params.properties.saccharide.properties.gt_genes.items.allOf.1.if.then.required	9	
-properties.general_params.properties.saccharide.properties.gt_genes.items.allOf.0.if.then.required	1	
-properties.general_params.properties.ripp.required	142	
-properties.general_params.properties.ripp.properties.ripp_subclass.enum	46	Lantipeptide;Head-To-Tail Cyclized Peptide;Lap;Lap / Microcin;Lasso Peptide;None
-properties.general_params.properties.ripp.properties.precursor_loci.items.properties.gene_id.minItems	8	
-properties.general_params.properties.ripp.properties.precursor_loci.items.properties.crosslinks.items.properties.crosslink_type.enum	2	None
-properties.general_params.properties.ripp.properties.lin_cycl_ripp.enum	1	linear
-properties.general_params.properties.polyketide.required	728	
-properties.general_params.properties.polyketide.properties.starter_unit.enum	7	methylmalonate-CoA;None;4-hydroxyphenylpyruvate
-properties.general_params.properties.polyketide.properties.pks_te_type.enum	1	other
-properties.general_params.properties.polyketide.properties.pks_subclass.items.enum	335	Type I;Iterative typeI;Modular Type I
-properties.general_params.properties.polyketide.properties.pks_release_type.enum	7	None
-properties.general_params.properties.polyketide.properties.pk_subclass.enum	1	None
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.required	128	
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.pks_mod_doms.items.enum	3	Oxidation;2x Crotonase / Enoyl-CoA dehydratase;GNAT
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.pks_evidence_skip_iter.enum	2	None
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.pks_domains.items.enum	115	AT;DH;KR;KS;T;TE;ER;PT;SAT;ACP;PPTASE;CAL;A;E;TE/CLC;CMET;FAAL;ST;C;TR
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.module_nr.pattern	1	X
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.kr_stereochem.enum	48	A-group;B-group
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.evidence_at_spec.enum	16	None;Feeding study
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.comments.type	4	None
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.at_substr_spec.enum	9	malonyl-CoA;methylmalonyl-CoA;4-hydroxyphenylpyruvate;Acetyl-CoA/Methylmalonyl-CoA;Malonyl-CoA/Malonyl-CoA/Malonyl-CoA;Methylmalonyl-CoA/Malonyl-CoA;Methylmalonyl-CoA/Methylmalonyl-CoA;Various atypical acyl-CoAs;N/A;phenylacetate-like;Decanoyl-CoA;Acetyl-CoA + Malonyl CoA;Cyclohexylcarbonyl-CoA
-properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.dependencies	168	
-properties.general_params.properties.polyketide.allOf.4.if.then.required	56	
-properties.general_params.properties.polyketide.allOf.4.if.then.properties.pks_thioesterase.minItems	9	
-properties.general_params.properties.polyketide.allOf.3.if.then.required	20	
-properties.general_params.properties.polyketide.allOf.2.if.then.required	20	
-properties.general_params.properties.polyketide.allOf.1.if.then.required	20	
-properties.general_params.properties.other.properties.other_subclass.enum	18	other;None
-properties.general_params.properties.nrp.required	29	
-properties.general_params.properties.nrp.properties.subclass.enum	3	None
-properties.general_params.properties.nrp.properties.nrps_release_type.enum	18	None
-properties.general_params.properties.nrp.properties.nrps_genes.minItems	3	
-properties.general_params.properties.nrp.properties.nrps_genes.items.required	2	
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.required	3	
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.nrps_mod_doms.enum	3	Aminotransferase;Amination;Epimerization;Heterocyclization
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.nrps_evidence_skip_iter.enum	2	None
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.module_nr.pattern	5	X;x
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.comments.type	6	None
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.cdom_subtype.enum	65	N/A;None
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.a_substr_spec.required	180	
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.a_substr_spec.properties.prot_adom_spec.enum	1	Asparigine
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.a_substr_spec.properties.nonprot_adom_spec.enum	53	3,5-Dihydroxyphenylglycine;Hydroxyphenylglycine;Arginine / Lysine;Lysine;Phenylalanine;Tyrosine;Valine;Coumaric acid;Asparigine or (2S, 3S)-3-hydroxyasparagine;Glutamate or (2S, 3R)-3-methylglutamate;alpha-ketoisocaproic acid;alpha-ketoisovaleric acid;4-Methylproline;3-hydroxy-4-O-methyl-5-methyl-tyrosine;Glycolic acid;Anthranilate;(Phenylalanine, Tryptophane),(Valine, Isoleucine);Phenylalanine, Tyrosine;Valine, isoleucine;Dihydroxy hexadecanoic acid;Glutamine / Tyrosine;Glutamine;Glycine;N-methyl-threonine;Threonine;Alanine;D-alanine;Proline;(3-Ncp)Ala;(4-Pe)Pro;(beta-Me)Phe;D-allothreonine;D-glutamine;D-leucine;D-proline;D-serine;D-valine;Beta-methoxyaspartate;D-tryptophan;Argininal;Cysteic acid;Indole pyruvic acid;4-Chlorothreonine;Didehydroaminobutyric acid;Hydroxyaspartate;3-hydroxypicolinic acid;Beta-methylleucine;Sarcosine;Isoleucine; Valine;(2S,3S)-2,3-Diaminobutyric acid;m-Tyrosine;Pyruvate;(4S)-5,5,5-trichloroleucine;Asparigine;methyl beta-alanine;tyrosine;guanidinoacetate ;2-oxo-isovaleric acid;Arginine;Aspartate / N-methylaspartate;Hydrocinnamate;Leucine / Arginine;Serine;D-N2-methylasparagine;Phenylacetate;DAFFLGVTFK;DAWLFGLIDK;DAWTIAAVCK;DILALGLIWK;DVQFIAHVVK;VGVWVAASGK;3,4-hydroxyhomotyrosine;3-hydroxy-4-methylproline;3-hydroxyglutamine;4,5-dihydroxyornithine;Cysteine;Proprionate;4-acetamidopyrrole-2-carboxylate;glycocyamine;L-2,4-Diaminobutyric acid;2-amino-9,10-epoxi-8-oxodecanoic acid;D-Alanine;dhb;Norcoronamic acid;Beta-hydroxyasparagine;(2S,3R)-2-amino-3-hydroxy-4-(4-nitrophenyl)butanoate;2,3-Diamino-3-methylpropanoic acid;3-Methylproline;3-methylaspartic acid;D-lysine;Homophenylalanine;N-methylglycine
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.a_substr_spec.properties.evidence_a_spec.enum	8	None
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.a_substr_spec.dependencies	179	
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.allOf.1.if.then.required	4	
-properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.allOf.0.if.then.required	15	
-properties.general_params.properties.nrp.allOf.1.if.then.required	11	
-properties.general_params.properties.nrp.allOf.0.if.then.required	33	
-properties.general_params.properties.nrp.allOf.0.if.then.properties.nrps_thioesterase.minItems	28	
-properties.general_params.properties.loci.required	1322	
-properties.general_params.properties.loci.properties.conn_comp_cluster.items.enum	25	Proven expression in natural host;Knock-outstudies
-properties.general_params.properties.loci.properties.complete.enum	1	partial
-properties.general_params.properties.genes.properties.operon.items.required	30	
-properties.general_params.properties.genes.properties.operon.items.properties.operon_genes.minItems	22	
-properties.general_params.properties.genes.properties.gene.items.required	43	
-properties.general_params.properties.genes.properties.gene.items.properties.tailoring.enum	4	None;Dehydrogenation;FADH2 supply for chlorination
-properties.general_params.properties.genes.properties.gene.items.properties.mut_pheno.type	53	None
-properties.general_params.properties.genes.properties.gene.items.properties.gene_startpos.minimum	23	-1
-properties.general_params.properties.genes.properties.gene.items.properties.gene_name.type	9	None
-properties.general_params.properties.genes.properties.gene.items.properties.gene_id.type	3	None
-properties.general_params.properties.genes.properties.gene.items.properties.gene_function.type	7	None
-properties.general_params.properties.genes.properties.gene.items.properties.gene_function.enum	94	;None;Scaffold Biosynthesis
-properties.general_params.properties.genes.properties.gene.items.properties.gene_endpos.minimum	23	-1
-properties.general_params.properties.genes.properties.gene.items.properties.gene_comments.type	1	None
-properties.general_params.properties.genes.properties.gene.items.properties.gene_annotation.type	5	None
-properties.general_params.properties.genes.properties.gene.items.properties.evidence_genefunction.items.enum	146	N/A; Activity assay;;heterologous expression; Other in vivo studies; Sequence-based prediction; sequence-based prediction;Other in vivo studies;None; Other in vivo study;knock out;other in vivo study; sequenced-based prediction;Resistance/immunity;activity assay;Activity assay & knock-out;Activity assay & knockout;Sequence based prediction; activity assay;N/AKnock-out; other in vivo study;Overexpression
-properties.general_params.properties.genes.properties.gene.items.allOf.1.if.then.required	6	
-properties.general_params.properties.genes.properties.gene.items.allOf.0.if.then.required	10	
-properties.general_params.properties.compounds.items.required	1728	
-properties.general_params.properties.compounds.items.properties.pubchem_id.type	3	71455791;11509754;11494615
-properties.general_params.properties.compounds.items.properties.mol_mass.type	4	348.417 ;823.056 ;272.468;323.12938
-properties.general_params.properties.compounds.items.properties.mass_ion_type.enum	97	None;Molecular ion;M+H+;M+Na+;none;[M+H-H2O]+
-properties.general_params.properties.compounds.items.properties.chembl_id.type	1	1651097 
-properties.general_params.properties.compounds.items.properties.chem_moieties.items.properties.chem_moiety.enum	1	3-amino-4-hydroxybenzoic acid
-properties.general_params.properties.compounds.items.properties.chem_moieties.items.dependencies	39	
-properties.general_params.properties.compounds.items.properties.chem_act.items.enum	4	;Pigment;Antiviral
-properties.general_params.properties.compounds.items.allOf.0.if.then.required	1331	
-properties.general_params.properties.biosyn_class.items.enum	1	Nucleoside
-properties.general_params.allOf.6.if.then.required	4	
-properties.general_params.allOf.4.if.then.required	15	
-properties.general_params.allOf.1.if.then.required	1	
-properties.general_params.allOf.0.if.then.required	2	
+required	required	1816	
+properties.general_params.required	required	128	
+properties.general_params.properties.terpene.properties.terpene_subclass.enum	enum	2	None
+properties.general_params.properties.terpene.properties.terpene_precursor.enum	enum	1	None
+properties.general_params.properties.terpene.properties.terpene_c_len.enum	enum	1	None
+properties.general_params.properties.saccharide.properties.saccharide_subclass.enum	enum	1	hyrbid/tailoring
+properties.general_params.properties.saccharide.properties.gt_genes.items.required	required	2	
+properties.general_params.properties.saccharide.properties.gt_genes.items.properties.gt_specificity.enum	enum	12	None;mycoamine;mycaminose;L-forosamine;D-olivose ;L-rhodosamine ;L-Rhodinose
+properties.general_params.properties.saccharide.properties.gt_genes.items.properties.evidence_gt_spec.enum	enum	1	structure-based inference
+properties.general_params.properties.saccharide.properties.gt_genes.items.allOf.1.if.then.required	required	9	
+properties.general_params.properties.saccharide.properties.gt_genes.items.allOf.0.if.then.required	required	1	
+properties.general_params.properties.ripp.properties.ripp_subclass.enum	enum	46	Lantipeptide;Head-To-Tail Cyclized Peptide;Lap;Lap / Microcin;Lasso Peptide;None
+properties.general_params.properties.ripp.properties.precursor_loci.items.properties.gene_id.minItems	minItems	8	
+properties.general_params.properties.ripp.properties.precursor_loci.items.properties.crosslinks.items.properties.crosslink_type.enum	enum	2	None
+properties.general_params.properties.ripp.properties.lin_cycl_ripp.enum	enum	1	linear
+properties.general_params.properties.polyketide.properties.starter_unit.enum	enum	7	methylmalonate-CoA;None;4-hydroxyphenylpyruvate
+properties.general_params.properties.polyketide.properties.pks_te_type.enum	enum	1	other
+properties.general_params.properties.polyketide.properties.pks_subclass.items.enum	enum	335	Type I;Iterative typeI;Modular Type I
+properties.general_params.properties.polyketide.properties.pks_release_type.enum	enum	7	None
+properties.general_params.properties.polyketide.properties.pk_subclass.enum	enum	1	None
+properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.pks_mod_doms.items.enum	enum	3	Oxidation;2x Crotonase / Enoyl-CoA dehydratase;GNAT
+properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.pks_evidence_skip_iter.enum	enum	2	None
+properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.pks_domains.items.enum	enum	115	AT;DH;KR;KS;T;TE;ER;PT;SAT;ACP;PPTASE;CAL;A;E;TE/CLC;CMET;FAAL;ST;C;TR
+properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.module_nr.pattern	pattern	1	X
+properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.kr_stereochem.enum	enum	48	A-group;B-group
+properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.evidence_at_spec.enum	enum	1	Feeding study
+properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.comments.type	type	4	None
+properties.general_params.properties.polyketide.properties.mod_pks_genes.items.properties.pks_module.items.properties.at_substr_spec.enum	enum	8	malonyl-CoA;methylmalonyl-CoA;4-hydroxyphenylpyruvate;Acetyl-CoA/Methylmalonyl-CoA;Malonyl-CoA/Malonyl-CoA/Malonyl-CoA;Methylmalonyl-CoA/Malonyl-CoA;Methylmalonyl-CoA/Methylmalonyl-CoA;Various atypical acyl-CoAs;N/A;phenylacetate-like;Decanoyl-CoA;Acetyl-CoA + Malonyl CoA
+properties.general_params.properties.other.properties.other_subclass.enum	enum	18	other;None
+properties.general_params.properties.nrp.properties.subclass.enum	enum	3	None
+properties.general_params.properties.nrp.properties.nrps_release_type.enum	enum	18	None
+properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.nrps_mod_doms.enum	enum	3	Aminotransferase;Amination;Epimerization;Heterocyclization
+properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.nrps_evidence_skip_iter.enum	enum	2	None
+properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.module_nr.pattern	pattern	5	X;x
+properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.comments.type	type	6	None
+properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.cdom_subtype.enum	enum	65	N/A;None
+properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.a_substr_spec.properties.prot_adom_spec.enum	enum	1	Asparigine
+properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.a_substr_spec.properties.nonprot_adom_spec.enum	enum	53	3,5-Dihydroxyphenylglycine;Hydroxyphenylglycine;Arginine / Lysine;Lysine;Phenylalanine;Tyrosine;Valine;Coumaric acid;Asparigine or (2S, 3S)-3-hydroxyasparagine;Glutamate or (2S, 3R)-3-methylglutamate;alpha-ketoisocaproic acid;alpha-ketoisovaleric acid;4-Methylproline;3-hydroxy-4-O-methyl-5-methyl-tyrosine;Glycolic acid;Anthranilate;(Phenylalanine, Tryptophane),(Valine, Isoleucine);Phenylalanine, Tyrosine;Valine, isoleucine;Dihydroxy hexadecanoic acid;Glutamine / Tyrosine;Glutamine;Glycine;N-methyl-threonine;Threonine;Alanine;D-alanine;Proline;(3-Ncp)Ala;(4-Pe)Pro;(beta-Me)Phe;D-allothreonine;D-glutamine;D-leucine;D-proline;D-serine;D-valine;Beta-methoxyaspartate;D-tryptophan;Argininal;Cysteic acid;Indole pyruvic acid;4-Chlorothreonine;Didehydroaminobutyric acid;Hydroxyaspartate;3-hydroxypicolinic acid;Beta-methylleucine;Sarcosine;Isoleucine; Valine;(2S,3S)-2,3-Diaminobutyric acid;m-Tyrosine;Pyruvate;(4S)-5,5,5-trichloroleucine;Asparigine;methyl beta-alanine;tyrosine;guanidinoacetate ;2-oxo-isovaleric acid;Arginine;Aspartate / N-methylaspartate;Hydrocinnamate;Leucine / Arginine;Serine;D-N2-methylasparagine;Phenylacetate;DAFFLGVTFK;DAWLFGLIDK;DAWTIAAVCK;DILALGLIWK;DVQFIAHVVK;VGVWVAASGK;3,4-hydroxyhomotyrosine;3-hydroxy-4-methylproline;3-hydroxyglutamine;4,5-dihydroxyornithine;Cysteine;Proprionate;4-acetamidopyrrole-2-carboxylate;glycocyamine;L-2,4-Diaminobutyric acid;2-amino-9,10-epoxi-8-oxodecanoic acid;D-Alanine;dhb;Norcoronamic acid;Beta-hydroxyasparagine;(2S,3R)-2-amino-3-hydroxy-4-(4-nitrophenyl)butanoate;2,3-Diamino-3-methylpropanoic acid;3-Methylproline;3-methylaspartic acid;D-lysine;Homophenylalanine;N-methylglycine
+properties.general_params.properties.nrp.properties.nrps_genes.items.properties.nrps_module.items.properties.a_substr_spec.properties.evidence_a_spec.enum	enum	8	None
+properties.general_params.properties.loci.required	required	1322	
+properties.general_params.properties.loci.properties.conn_comp_cluster.items.enum	enum	25	Proven expression in natural host;Knock-outstudies
+properties.general_params.properties.loci.properties.complete.enum	enum	1	partial
+properties.general_params.properties.genes.properties.operon.items.required	required	30	
+properties.general_params.properties.genes.properties.operon.items.properties.operon_genes.minItems	minItems	22	
+properties.general_params.properties.genes.properties.gene.items.required	required	5	
+properties.general_params.properties.genes.properties.gene.items.properties.tailoring.enum	enum	4	None;Dehydrogenation;FADH2 supply for chlorination
+properties.general_params.properties.genes.properties.gene.items.properties.mut_pheno.type	type	53	None
+properties.general_params.properties.genes.properties.gene.items.properties.gene_startpos.minimum	minimum	23	-1
+properties.general_params.properties.genes.properties.gene.items.properties.gene_name.type	type	9	None
+properties.general_params.properties.genes.properties.gene.items.properties.gene_id.type	type	3	None
+properties.general_params.properties.genes.properties.gene.items.properties.gene_function.type	type	7	None
+properties.general_params.properties.genes.properties.gene.items.properties.gene_function.enum	enum	94	;None;Scaffold Biosynthesis
+properties.general_params.properties.genes.properties.gene.items.properties.gene_endpos.minimum	minimum	23	-1
+properties.general_params.properties.genes.properties.gene.items.properties.gene_comments.type	type	1	None
+properties.general_params.properties.genes.properties.gene.items.properties.gene_annotation.type	type	5	None
+properties.general_params.properties.genes.properties.gene.items.properties.evidence_genefunction.items.enum	enum	146	N/A; Activity assay;;heterologous expression; Other in vivo studies; Sequence-based prediction; sequence-based prediction;Other in vivo studies;None; Other in vivo study;knock out;other in vivo study; sequenced-based prediction;Resistance/immunity;activity assay;Activity assay & knock-out;Activity assay & knockout;Sequence based prediction; activity assay;N/AKnock-out; other in vivo study;Overexpression
+properties.general_params.properties.genes.properties.gene.items.allOf.1.if.then.required	required	1	
+properties.general_params.properties.genes.properties.gene.items.allOf.0.if.then.required	required	7	
+properties.general_params.properties.compounds.items.required	required	1728	
+properties.general_params.properties.compounds.items.properties.pubchem_id.type	type	3	71455791;11509754;11494615
+properties.general_params.properties.compounds.items.properties.mol_mass.type	type	4	348.417 ;823.056 ;272.468;323.12938
+properties.general_params.properties.compounds.items.properties.mass_ion_type.enum	enum	97	None;Molecular ion;M+H+;M+Na+;none;[M+H-H2O]+
+properties.general_params.properties.compounds.items.properties.chembl_id.type	type	1	1651097 
+properties.general_params.properties.compounds.items.properties.chem_moieties.items.properties.chem_moiety.enum	enum	1	3-amino-4-hydroxybenzoic acid
+properties.general_params.properties.compounds.items.properties.chem_moieties.items.allOf.0.if.then.required	required	5	
+properties.general_params.properties.compounds.items.properties.chem_act.items.enum	enum	4	;Pigment;Antiviral
+properties.general_params.properties.compounds.items.allOf.0.if.then.required	required	4	
+properties.general_params.properties.biosyn_class.items.enum	enum	1	Nucleoside
+properties.general_params.allOf.6.if.then.required	required	4	
+properties.general_params.allOf.4.if.then.required	required	15	
+properties.general_params.allOf.2.if.then.properties.ripp.required	required	4	
+properties.general_params.allOf.1.if.then.required	required	1	
+properties.general_params.allOf.0.if.then.required	required	2	
