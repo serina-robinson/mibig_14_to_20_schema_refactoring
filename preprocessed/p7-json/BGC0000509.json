@@ -1,0 +1,226 @@
+{
+    "submitter": {
+        "name": "Wilfred A. Van Der Donk",
+        "institution": "The University of Illinois at Urbana-Champaign",
+        "email": "vddonk@illinois.edu"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000509",
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "publications": [
+            "pubmed:24866416",
+            "pubmed:21802007",
+            "pubmed:22524291"
+        ],
+        "loci": {
+            "accession": "JQ979180.1",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "epilancin 15X",
+                "chem_synonyms": [],
+                "molecular_formula": "C145H233N41O33S3",
+                "mol_mass": 3172.7,
+                "chem_moieties": [
+                    {
+                        "moiety": "N-terminal lactate",
+                        "subcluster": [
+                            "afn69434.1",
+                            "afn69430.1"
+                        ]
+                    }
+                ],
+                "database_id": "",
+                "mass_spec_ion_type": "M+",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "Unknown",
+                        "publications": []
+                    },
+                    {
+                        "target": "poreformation",
+                        "publications": []
+                    }
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "elxO",
+                    "id": "AFN69430.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "tailoring": [
+                        "Reduction"
+                    ]
+                },
+                {
+                    "name": "elxT",
+                    "id": "AFN69431.1",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "elxA",
+                    "id": "AFN69432.1",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "elxP",
+                    "id": "AFN69433.1",
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "elxB",
+                    "id": "AFN69434.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "tailoring": [
+                        "Dehydration"
+                    ]
+                },
+                {
+                    "name": "elxC",
+                    "id": "AFN69435.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "name": "elx1",
+                    "id": "AFN69436.1",
+                    "functions": [
+                        {
+                            "category": "Resistance/immunity",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "elx2",
+                    "id": "AFN69437.1",
+                    "functions": [
+                        {
+                            "category": "Resistance/immunity",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "elx3",
+                    "id": "AFN69438.1",
+                    "functions": [
+                        {
+                            "category": "Resistance/immunity",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "ripp": {
+            "subclass": "Lanthipeptide",
+            "cyclic": true,
+            "precursor_genes": [
+                {
+                    "gene_id": "afn69432.1",
+                    "cleavage_recogn_site": [
+                        "SDLNPQA"
+                    ],
+                    "crosslinks": [
+                        {
+                            "crosslink_type": "Thioether",
+                            "first_AA": 12,
+                            "second_AA": 16
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "first_AA": 20,
+                            "second_AA": 23
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "first_AA": 22,
+                            "second_AA": 25
+                        }
+                    ],
+                    "core_sequence": [
+                        "SASIVKTTIKASKKLCRGFTLTCGCHFTGKK"
+                    ],
+                    "leader_sequence": 25,
+                    "recognition_motif": "FDLN"
+                }
+            ],
+            "peptidases": [
+                "afn69433.1"
+            ]
+        }
+    }
+}

@@ -1,0 +1,210 @@
+{
+    "submitter": {
+        "name": "Yit-Heng Chooi",
+        "institution": "The Australian National University",
+        "email": "yhchooi@gmail.com"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001141",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:24845309",
+            "pubmed:2426273",
+            "pubmed:3192548"
+        ],
+        "loci": {
+            "accession": "KJ728786.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "brefeldin A",
+                "chem_synonyms": [
+                    "brefeldin a",
+                    "ascotoxin",
+                    "cyanein",
+                    "decumbin",
+                    "synergisidin",
+                    "nectrolide"
+                ],
+                "database_id": "pubchem:5287620",
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "proteintransport",
+                        "publications": []
+                    }
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [],
+            "annotations": [
+                {
+                    "name": "Bref-TH",
+                    "id": "AIA58903",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "product": "thiohydrolase for polyketide release",
+                    "tailoring": [
+                        "Hydrolysis"
+                    ]
+                },
+                {
+                    "name": "No Gene ID",
+                    "id": "AIA58895",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Unknown"
+                            ]
+                        }
+                    ],
+                    "product": "cytochrome P450 oxygenase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "name": "No Gene ID",
+                    "id": "AIA58896",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Unknown"
+                            ]
+                        }
+                    ],
+                    "product": "cytochrome P450 oxygenase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "name": "No Gene ID",
+                    "id": "AIA58897",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Unknown"
+                            ]
+                        }
+                    ],
+                    "product": "cytochrome P450 oxygenase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "name": "No Gene ID",
+                    "id": "AIA58898",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Unknown"
+                            ]
+                        }
+                    ],
+                    "product": "cytochrome P450 oxygenase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "name": "Bref-PKS",
+                    "id": "AIA58899",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "product": "polyketide synthase"
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AIA58899",
+                        "aia58899",
+                        "aia58903"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 7,
+                        "subtype": "Highly reducing",
+                        "cyclization_type": "Unknown"
+                    },
+                    "thioesterases": [
+                        {
+                            "gene": "aia58903",
+                            "thioesterase_type": "Unknown"
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "genes": [
+                                "AIA58899"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Activity assay",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

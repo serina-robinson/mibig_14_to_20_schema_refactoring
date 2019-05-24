@@ -1,0 +1,171 @@
+{
+    "comments": "The gli cluster contains an additional experimentally verified gene (gliH; EAL88826) which is essential for gliotoxin biosynthesis (Schrettl et al. 2010- PMID 20548963). gliH occurs after gliT in the gli cluster.\\n\\nBismethylgliotoxin is also formed via the action of the gli cluster, plus one additional gene on chromosome 2 (gliotoxin bis-thiomethyltransferase; AFUA_2g11120; Dolan et al. 2014; PMID 25126990).",
+    "submitter": {
+        "name": "Sean Doyle",
+        "institution": "Maynooth University",
+        "email": "sean.doyle@nuim.ie"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000361",
+        "biosyn_class": [
+            "NRP"
+        ],
+        "publications": [
+            "pubmed:24847038",
+            "pubmed:25126990",
+            "pubmed:25311525",
+            "pubmed:25062268",
+            "pubmed:24039048",
+            "pubmed:22936680",
+            "pubmed:21749092",
+            "pubmed:21513890",
+            "pubmed:20548963",
+            "pubmed:20593880",
+            "pubmed:18199036",
+            "pubmed:17601876",
+            "pubmed:17154540",
+            "pubmed:16956378",
+            "pubmed:16757745",
+            "pubmed:15979823"
+        ],
+        "loci": {
+            "accession": "AAHF01000006.1",
+            "start_coord": 1054011,
+            "end_coord": 1054627,
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Gliotoxin",
+                "chem_synonyms": [],
+                "database_id": "pubchem:6223",
+                "chem_acts": [
+                    "Antibacterial",
+                    "Antifungal",
+                    "Antioxidant",
+                    "Cytotoxic",
+                    "Inhibitor"
+                ]
+            },
+            {
+                "compound": "Bisdethiobis(methylthio)gliotoxin",
+                "chem_synonyms": [
+                    "bismethylgliotoxin"
+                ],
+                "chem_moieties": [],
+                "database_id": "pubchem:135171858",
+                "chem_acts": [
+                    "Formation attenuates gliotoxin biosynthesis"
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [
+                {
+                    "id": "AFUA_2G11120"
+                }
+            ],
+            "annotations": [
+                {
+                    "name": "gliH",
+                    "id": "AFUA_6G09745",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "GliH"
+                },
+                {
+                    "name": "gtmA",
+                    "id": "AFUA_2G11120",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "GtmA",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                }
+            ]
+        },
+        "nrp": {
+            "subclass": "Unknown",
+            "nrps_genes": [
+                {
+                    "gene_id": "AAW03307.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Phenylalanine"
+                                ],
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "0",
+                            "active": false,
+                            "modification_domains": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Serine"
+                                ],
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "1",
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "module_number": "2",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cyclic": true,
+            "thioesterases": [],
+            "release_type": [
+                "Unknown"
+            ]
+        }
+    }
+}

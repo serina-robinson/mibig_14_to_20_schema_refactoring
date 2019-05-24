@@ -1,0 +1,127 @@
+{
+    "submitter": {
+        "name": "Jeff Cary",
+        "institution": "USDA Souther Regional Research Center",
+        "email": "Jeff.Cary@ARS.USDA.GOV"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001446",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:24412484",
+            "pubmed:24405210"
+        ],
+        "loci": {
+            "accession": "EQ963472.1",
+            "start_coord": 2642293,
+            "end_coord": 2658105,
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "asparasone A",
+                "chem_synonyms": [],
+                "database_id": "pubchem:10808295",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "chem_acts": [
+                    "Antiinsectan "
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "No gene ID",
+                    "id": "EED57517.1",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "hypothetical protein"
+                },
+                {
+                    "name": "No gene ID",
+                    "id": "EED57518.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "polyketide synthase, putative"
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "EED57518.1"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 8,
+                        "subtype": "Non-reducing",
+                        "cyclization_type": "Unknown"
+                    },
+                    "modules": [
+                        {
+                            "genes": [
+                                "EED57518.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)",
+                                "Thioesterase"
+                            ],
+                            "at_specificities": [
+                                "None"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

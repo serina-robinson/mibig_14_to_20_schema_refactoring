@@ -1,0 +1,251 @@
+{
+    "submitter": {
+        "name": "Keishi Ishida",
+        "institution": "Leipniz Institute for Natural Product Research and Infection Biology",
+        "email": "keishi.ishida@hki-jena.de"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000024",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:13174453",
+            "pubmed:770405",
+            "pubmed:11079808",
+            "pubmed:14700630",
+            "pubmed:15038705",
+            "pubmed:15612710",
+            "pubmed:15645471",
+            "pubmed:15812854",
+            "pubmed:16292785",
+            "pubmed:17718517",
+            "pubmed:17763486",
+            "pubmed:17765264",
+            "pubmed:18458342",
+            "pubmed:20798054",
+            "pubmed:21280577",
+            "pubmed:21678538",
+            "pubmed:22799266",
+            "pubmed:23606628",
+            "pubmed:24402879",
+            "pubmed:24973817",
+            "pubmed:20662518"
+        ],
+        "loci": {
+            "accession": "AJ575648.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "aureothin",
+                "chem_synonyms": [],
+                "chem_moieties": [
+                    {
+                        "moiety": "para-nitrobenzoate",
+                        "subcluster": [
+                            "cae02603.1",
+                            "cae02601.1"
+                        ]
+                    }
+                ],
+                "database_id": "pubchem:6436188;chemspider:5029106",
+                "chem_acts": [
+                    "Antibacterial",
+                    "Antifungal",
+                    "Cytotoxic",
+                    "insecticide"
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [],
+            "annotations": [
+                {
+                    "id": "CAE02601.1",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Heterologous expression",
+                                "Other in vivo study",
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "product": "p-aminobenzoate N-oxygenase"
+                },
+                {
+                    "id": "CAE02607.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out",
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "id": "CAE02604.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out",
+                                "Heterologous expression",
+                                "Other in vivo study",
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "product": "bifunctional cytochrome P450 monooxygenase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "id": "CAE02600.1",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "p-nitrobenzoate CoA ligase"
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "p-Nitrobenzoate",
+            "subclasses": [
+                "Polyene"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "CAE02602.1",
+                        "CAE02605.1",
+                        "CAE02606.1"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "modules": [
+                        {
+                            "genes": [
+                                "CAE02602.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true
+                            }
+                        },
+                        {
+                            "genes": [
+                                "CAE02605.1"
+                            ],
+                            "module_number": "2",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "CAE02606.1"
+                            ],
+                            "module_number": "3",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "CAE02606.1"
+                            ],
+                            "module_number": "4",
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

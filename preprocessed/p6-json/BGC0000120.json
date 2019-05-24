@@ -1,0 +1,187 @@
+{
+    "comments": "The patulin genes cluster and its boudaries have been validated by the deletetion of patL (AIG62143), gene encoding the specific transcription factor (PMID: 26582186 ).\\n\\nThe patulin cluster has been described in A. clavatus (PMID:19383676)\\n\\nThe role of PatH (AIG62144) , PatI (AIG62145) and PatG (AIG62133) has been determined by heterologous expression studies (PMID:19383676 and PMID:24334092)\\n\\nThe role of PatE (AIG62134) has been determined by knock-out (27913847).",
+    "submitter": {
+        "name": "Olivier Puel",
+        "institution": "National Institute of Agronomical Research, France",
+        "email": "olivier.puel@inra.fr"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000120",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:25120234",
+            "pubmed:26582186",
+            "pubmed:27913847",
+            "pubmed:24334092",
+            "pubmed:19383676"
+        ],
+        "loci": {
+            "accession": "KF899892.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Patulin",
+                "chem_synonyms": [],
+                "mol_mass": -1,
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
+                    "Cytotoxic"
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [],
+            "annotations": [
+                {
+                    "name": "patH",
+                    "id": "AIG62144.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "product": "M-cresol hydroxylase",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "name": "patG",
+                    "id": "AIG62133.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "product": "6-methylsalicylic decarboxylase",
+                    "tailoring": [
+                        "Decarboxylation"
+                    ]
+                },
+                {
+                    "name": "patD",
+                    "id": "AIG62135.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "hypothetical protein",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "name": "patL",
+                    "id": "AIG62143.1",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "C6 transcription activator"
+                },
+                {
+                    "name": "patI",
+                    "id": "AIG62145.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "product": "M-hydroxybenzyl alcohol hydroxylase",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AIG62146.1"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": -1,
+                        "subtype": "Partially reducing",
+                        "cyclization_type": "C2-C7 first"
+                    },
+                    "modules": [
+                        {
+                            "genes": [
+                                "AIG62146.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Activity assay"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

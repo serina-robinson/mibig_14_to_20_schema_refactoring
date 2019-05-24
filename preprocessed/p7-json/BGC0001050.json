@@ -1,0 +1,239 @@
+{
+    "comments": "Modules 1 and 5 are missing adenylation domains completely. Module 6 is spread over the two genes, with  the condensation domain on ttbA and the remainder of the module on ttbB. The PKS portion is a trans AT system but to date no AT domain has been identified in the rest of the genome.",
+    "submitter": {
+        "name": "Avena Ross",
+        "institution": "University of California at San Diego, Scripps Institution of Oceanography",
+        "email": "a1ross@ucsd.edu"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001050",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:17373804",
+            "pubmed:23270364"
+        ],
+        "loci": {
+            "accession": "KC181865.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Sequence-based prediction"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Thalassospiramide A",
+                "chem_synonyms": [],
+                "database_id": "chemspider:17214520",
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "Humancalpain1protease",
+                        "publications": []
+                    }
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "ttbA",
+                    "id": "AGC65516.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "NRPS/PKS hybrid"
+                },
+                {
+                    "name": "ttbB",
+                    "id": "AGC65517.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "NRPS"
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AGC65516.1"
+                    ],
+                    "subclass": [
+                        "Trans-AT type I"
+                    ],
+                    "modules": [
+                        {
+                            "genes": [
+                                "AGC65516.1"
+                            ],
+                            "module_number": "4",
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "nrp": {
+            "subclass": "Other lipopeptide",
+            "lipid_moiety": "cis-3-decenoic acid",
+            "nrps_genes": [
+                {
+                    "gene_id": "AGC65516.1",
+                    "modules": [
+                        {
+                            "module_number": "1",
+                            "active": false,
+                            "c_dom_subtype": "Starter",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Valine"
+                                ],
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "2",
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Serine"
+                                ],
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "3",
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
+                        },
+                        {
+                            "module_number": "5",
+                            "active": false,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AGC65517.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Tyrosine"
+                                ],
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "6",
+                            "active": false,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "Methylation"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cyclic": true,
+            "thioesterases": [
+                {
+                    "gene": "agc65517.1",
+                    "thioesterase_type": "Type I"
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
+            ]
+        }
+    }
+}

@@ -1,0 +1,207 @@
+{
+    "comments": "origin of polyketide tail currently unknown",
+    "submitter": {
+        "name": "Daniel Krug",
+        "institution": "HIPS",
+        "email": "daniel.krug@helmholtz-hzi.de"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000383",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:22909174"
+        ],
+        "loci": {
+            "accession": "BX470251.1",
+            "start_coord": 2221617,
+            "end_coord": 2239965,
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Luminmycin",
+                "chem_synonyms": [],
+                "chem_struct": "C1CCC[C@H](NC([C@H](C(O)C)NC(/C=C/C=C/CCCCCCC)=O)=O)C(=O)N[C@@H](C)C=CC(=O)N1",
+                "molecular_formula": "C27H44O5N4",
+                "mol_mass": 505.3385,
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "proteasome",
+                        "publications": []
+                    }
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "plu1878",
+                    "id": "CAE14171.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "plu1880",
+                    "id": "CAE14173.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "product": "hypothetical protein"
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Unknown",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "np_929147.1",
+                        "plu1880"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "np_929147.1",
+                            "thioesterase_type": "Type I"
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "genes": [
+                                "plu1880"
+                            ],
+                            "module_number": "4",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "D-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "nrp": {
+            "subclass": "Unknown",
+            "nrps_genes": [
+                {
+                    "gene_id": "plu1878",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Threonine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "1",
+                            "active": false,
+                            "c_dom_subtype": "Starter",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "plu1880",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Lysine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "2",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Alanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "3",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cyclic": false,
+            "thioesterases": [],
+            "release_type": [
+                "Macrolactamization"
+            ]
+        }
+    }
+}

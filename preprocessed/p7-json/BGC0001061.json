@@ -1,0 +1,193 @@
+{
+    "submitter": {
+        "name": "Andreas Bechthold",
+        "institution": "Albert-Ludwigs-University of Freiburg, Germany",
+        "email": "andreas.bechthold@pharmazie.uni-freiburg.de"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001061",
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "publications": [
+            "pubmed:9531983",
+            "pubmed:9531984",
+            "pubmed:10344562",
+            "pubmed:19266534"
+        ],
+        "loci": {
+            "accession": "FJ483966.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Polyketomycin",
+                "chem_synonyms": [],
+                "chem_moieties": [
+                    {
+                        "moiety": "6-methylsalicylic acid",
+                        "subcluster": [
+                            "acn64830.1",
+                            "acn64831.1",
+                            "acn64832.1",
+                            "acn64833.1"
+                        ]
+                    }
+                ],
+                "database_id": "chebi:66771",
+                "chem_acts": [
+                    "Antibacterial",
+                    "Cytotoxic"
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "pokO1",
+                    "id": "ACN64845.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "name": "pokO2",
+                    "id": "ACN64853.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "name": "pokO4",
+                    "id": "ACN64854.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "pokMT1",
+                    "id": "ACN64833.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "name": "pokMT2",
+                    "id": "ACN64843.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Malonyl-CoA",
+            "ketide_length": 10,
+            "cyclases": [
+                "ACN64848.1",
+                "ACN64846.1",
+                "ACN64851.1"
+            ],
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ACN64831.1",
+                        "ACN64851.1",
+                        "ACN64846.1",
+                        "ACN64848.1",
+                        "acn64834.1",
+                        "acn64836.1"
+                    ],
+                    "subclass": [
+                        "Iterative type I",
+                        "Type II"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 9,
+                        "subtype": "Partially reducing",
+                        "cyclization_type": "Unknown"
+                    },
+                    "modules": [
+                        {
+                            "genes": [
+                                "ACN64831.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "saccharide": {
+            "subclass": "hybrid/tailoring"
+        }
+    }
+}

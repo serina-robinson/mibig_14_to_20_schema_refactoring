@@ -1,0 +1,116 @@
+{
+    "submitter": {
+        "name": "Jose A. Salas",
+        "institution": "University of Oviedo",
+        "email": "jasalas@uniovi.es"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000273",
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "publications": [
+            "pubmed:16751529"
+        ],
+        "loci": {
+            "accession": "AM156932.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "steffimycin",
+                "chem_synonyms": [],
+                "chem_struct": "CC1C(C(C(C(O1)OC2C(C(C(=O)C3=C2C(=C4C(=C3)C(=O)C5=CC(=CC(=C5C4=O)O)OC)O)(C)O)OC)OC)O)O",
+                "molecular_formula": "C28H30O13",
+                "mol_mass": 575.53,
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "DNA",
+                        "publications": []
+                    }
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [],
+            "annotations": [
+                {
+                    "name": "stfX",
+                    "id": "CAJ42323.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "cyclase"
+                },
+                {
+                    "name": "stfG",
+                    "id": "CAJ42338.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "glycosyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Acetyl-CoA",
+            "ketide_length": 10,
+            "cyclases": [
+                "CAJ42323.1",
+                "CAJ42324.1",
+                "CAJ42327.1"
+            ],
+            "subclasses": [
+                "Anthracycline"
+            ],
+            "cyclic": true,
+            "synthases": [
+                {
+                    "genes": [
+                        "caj42318.1",
+                        "CAJ42327.1",
+                        "caj42320.1",
+                        "CAJ42324.1",
+                        "CAJ42323.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
+            ]
+        },
+        "saccharide": {
+            "subclass": "hybrid/tailoring"
+        }
+    }
+}

@@ -1,0 +1,297 @@
+{
+    "submitter": {
+        "name": "Christopher Morton Thomas",
+        "institution": "University of Birmingham",
+        "email": "c.m.thomas@bham.ac.uk"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000182",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:11495990",
+            "pubmed:12770824",
+            "pubmed:15583005",
+            "pubmed:15726184",
+            "pubmed:16039529",
+            "pubmed:17383964",
+            "pubmed:17713071",
+            "pubmed:20013982",
+            "pubmed:21318358",
+            "pubmed:24625190"
+        ],
+        "loci": {
+            "accession": "AF318063.3",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Pseudomonic acid A",
+                "chem_synonyms": [
+                    "mupirocin"
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "epoxide ring",
+                        "subcluster": [
+                            "mmpe"
+                        ]
+                    },
+                    {
+                        "moiety": "pyran ring",
+                        "subcluster": [
+                            "mupw",
+                            "mupt"
+                        ]
+                    },
+                    {
+                        "moiety": "beta-methylation",
+                        "subcluster": [
+                            "mupg",
+                            "muph",
+                            "mupj",
+                            "mupk",
+                            "macpc"
+                        ]
+                    },
+                    {
+                        "moiety": "C8 hydroxyl removal after pyran ring formation",
+                        "subcluster": [
+                            "macpe",
+                            "mupu",
+                            "mupv",
+                            "mupo",
+                            "mupc",
+                            "mupf"
+                        ]
+                    }
+                ],
+                "database_id": "chemspider:393914",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "IsoleucyltRNAsynthetase",
+                        "publications": []
+                    }
+                ]
+            }
+        ],
+        "genes": {},
+        "polyketide": {
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AAM12913.2",
+                        "AAM12911.1",
+                        "AAM12909.2",
+                        "1"
+                    ],
+                    "subclass": [
+                        "Iterative type I",
+                        "Trans-AT type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 3,
+                        "subtype": "Highly reducing",
+                        "cyclization_type": "Unknown"
+                    },
+                    "trans_at": {
+                        "genes": [
+                            "1"
+                        ]
+                    },
+                    "modules": [
+                        {
+                            "genes": [
+                                "AAM12909.2"
+                            ],
+                            "module_number": "5",
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "AAM12909.2"
+                            ],
+                            "module_number": "6",
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "AAM12909.2"
+                            ],
+                            "module_number": "7",
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "Beta-branching"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "AAM12911.1"
+                            ],
+                            "module_number": "8",
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
+                        },
+                        {
+                            "genes": [
+                                "AAM12913.2"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "AAM12913.2"
+                            ],
+                            "module_number": "2",
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "AAM12913.2"
+                            ],
+                            "module_number": "3",
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "AAM12913.2"
+                            ],
+                            "module_number": "4",
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

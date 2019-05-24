@@ -1,0 +1,130 @@
+{
+    "comments": "This type III PKS containing cluster is involved in the formation of red-brown pigment/melanin, and equivalent clusters have been studied in other organisms, e.g. PMID 10476972; 11723138; 15659395; 15701630; 16291687. The PKS product THN (1,3,6,8-tetrahydroxynaphthalene) of these clusters are variously oxidized/dimerized/polymerized by the action of additional enzymes in the cluster including a cytochrome P450 monooxygenase (RppB) and a monooxygenase of the cupin domain superfamily. The products of these clusters have been shown to provide resistance to UV radiation.",
+    "submitter": {
+        "name": "Professor Barrie Wilkinson",
+        "institution": "John Innes Centre",
+        "email": "barrie.wilkinson@jic.ac.uk"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000285",
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "publications": [
+            "pubmed:12028378"
+        ],
+        "loci": {
+            "accession": "AY078067.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Flaviolin rhamnoside",
+                "chem_synonyms": [],
+                "chem_struct": "O=C1C=C(O)C(C2=CC(O[C@H]3O[C@H](C)[C@@H](O)[C@H](O)[C@@H]3O)=CC(O)=C21)=O",
+                "molecular_formula": "C16H16O9",
+                "mol_mass": 352.0794,
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
+                    "Unknown"
+                ]
+            },
+            {
+                "compound": "3,3'-diflaviolin",
+                "chem_synonyms": [
+                    "flaviolin dimer"
+                ],
+                "chem_struct": "O=C1C=C(O)C(C2=CC(O)=C(C3=C(O)C=C(C(C(O)=CC4=O)=O)C4=C3O)C(O)=C21)=O",
+                "molecular_formula": "C20H10O10",
+                "mol_mass": 410.0274,
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
+                    "Potential UV protection"
+                ]
+            },
+            {
+                "compound": "Flaviolin",
+                "chem_synonyms": [],
+                "database_id": "pubchem:160478",
+                "chem_acts": [
+                    "Unknown"
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "rppA",
+                    "id": "AAL78053.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "Type III PKS"
+                },
+                {
+                    "name": "rppB",
+                    "id": "AAL78054.1",
+                    "product": "Cytochrome P450 monooxygenase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "name": "ORF3",
+                    "id": "AAL78055.1",
+                    "product": "Quinone forming monooxygenase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Malonyl-CoA",
+            "ketide_length": 5,
+            "subclasses": [
+                "Chalcone"
+            ],
+            "cyclic": true,
+            "synthases": [
+                {
+                    "genes": [
+                        "aal78053"
+                    ],
+                    "subclass": [
+                        "Type III"
+                    ]
+                }
+            ]
+        },
+        "saccharide": {
+            "subclass": "oligosaccharide",
+            "glycosyltransferases": [
+                {
+                    "gene_id": "No Gene ID",
+                    "specificity": "L-rhamnose",
+                    "evidence": [
+                        "Structure-based inference"
+                    ]
+                }
+            ]
+        }
+    }
+}

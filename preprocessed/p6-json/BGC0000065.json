@@ -1,0 +1,145 @@
+{
+    "comments": "GalABC is proposed as a novel type of PKS: bacterial highly-reducing type iterative PKS incorporating methylmalonyl-CoA with highly programmed \u00ce\u00b2-keto group modifications, a discrete AT, and no distinctive releasing domain. \\n",
+    "submitter": {
+        "name": "Hyung-Jin Kwon",
+        "institution": "Myongji University",
+        "email": "hjink@mju.ac.kr"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000065",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:20662933",
+            "pubmed:25336658"
+        ],
+        "loci": {
+            "accession": "GU300145.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "galbonolide A",
+                "chem_synonyms": [
+                    "rustmicin"
+                ],
+                "chem_moieties": [],
+                "database_id": "pubchem:6438453",
+                "chem_acts": [
+                    "Antifungal"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "inositolphosphoceramidesynthase",
+                        "publications": []
+                    }
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [],
+            "annotations": [
+                {
+                    "name": "galA",
+                    "id": "ADE22340.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "standing alone acyltransferase working with iterative type I PKS, GalB"
+                },
+                {
+                    "name": "galB",
+                    "id": "ADE22339.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "iterative type I PKS (highly reducing type)"
+                },
+                {
+                    "name": "galC",
+                    "id": "ADE22338.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "KS fold with no cysteine catalytic residue; a partner of GalB"
+                },
+                {
+                    "name": "galD",
+                    "id": "ADE22337.1",
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "cytochrome P450-type monooxygenase"
+                },
+                {
+                    "name": "galE",
+                    "id": "ADE22336.1",
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Unknown"
+                            ]
+                        }
+                    ],
+                    "product": "Rieske domain protein"
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Propionyl-CoA",
+            "subclasses": [
+                "Macrolide"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ade22339.1"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 6,
+                        "subtype": "Highly reducing",
+                        "cyclization_type": "Unknown"
+                    }
+                }
+            ]
+        }
+    }
+}

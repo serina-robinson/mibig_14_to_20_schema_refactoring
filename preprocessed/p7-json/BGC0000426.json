@@ -1,0 +1,151 @@
+{
+    "submitter": {
+        "name": "Daniel Petras",
+        "institution": "TU Berlin / AK S\u00c3\u00bcssmuth",
+        "email": "daniel.petras@chem.tu-berlin.de"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000426",
+        "biosyn_class": [
+            "NRP"
+        ],
+        "publications": [
+            "pubmed:25118351"
+        ],
+        "loci": {
+            "accession": "KF318360.1",
+            "completeness": "incomplete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Sevadicin",
+                "chem_synonyms": [],
+                "chem_struct": "O=C(NC(C)C(NC(CC1=CNC2=C1C=CC=C2)C(O)=O)=O)C(N)CC3=CC=CC=C3",
+                "molecular_formula": "C23H26N4O4",
+                "mol_mass": 423.2026,
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
+                    "Antibacterial"
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "sevA",
+                    "id": "AGZ03650.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "SevA"
+                },
+                {
+                    "name": "sevB",
+                    "id": "AGZ03651.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "SevB"
+                }
+            ]
+        },
+        "nrp": {
+            "subclass": "Unknown",
+            "nrps_genes": [
+                {
+                    "gene_id": "AGZ03650.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Phenylalanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": true,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "1",
+                            "active": false,
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AGZ03651.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Alanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": true,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "2",
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Tryptophan"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "3",
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cyclic": false,
+            "thioesterases": [
+                {
+                    "gene": "agz03651.1",
+                    "thioesterase_type": "Type I"
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
+            ]
+        }
+    }
+}

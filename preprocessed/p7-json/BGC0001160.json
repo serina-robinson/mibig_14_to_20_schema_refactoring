@@ -1,0 +1,126 @@
+{
+    "comments": "The thioester release mechanism of this pathway involves a release via hydrolysis and decarboxylation which was not an option for this submission.",
+    "submitter": {
+        "name": "R. Cameron Coates",
+        "institution": "DOE Joint Genome Institute",
+        "email": "rccoates@lbl.gov"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001160",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:24475038",
+            "pubmed:21531827",
+            "pubmed:25063658",
+            "pubmed:22991895"
+        ],
+        "loci": {
+            "accession": "CP000951.1",
+            "start_coord": 1205897,
+            "end_coord": 1214059,
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "1-nonadecene",
+                "chem_synonyms": [
+                    "nonadec-1-ene",
+                    "nonadecene"
+                ],
+                "database_id": "pubchem:29075",
+                "chem_acts": [
+                    "Unknown"
+                ]
+            },
+            {
+                "compound": "(14Z)-1,14-Nonadecadiene",
+                "chem_synonyms": [
+                    "(14z)-nonadeca-1",
+                    "14-diene"
+                ],
+                "database_id": "chemspider:28184646",
+                "chem_acts": [
+                    "Unknown"
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "6056266",
+                    "id": "ACA99172.1",
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "polyketide synthase"
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ACA99172"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "modules": [
+                        {
+                            "genes": [
+                                "ACA99172"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "CoA-ligase",
+                                "Thiolation (ACP/PCP)",
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)",
+                                "Sulfotransferase",
+                                "Thioesterase"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "Unknown"
+                            ],
+                            "comments": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

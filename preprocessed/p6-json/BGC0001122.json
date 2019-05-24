@@ -1,0 +1,146 @@
+{
+    "submitter": {
+        "name": "Yuta Tsunematsu",
+        "institution": "University of Shizuoka",
+        "email": "tsunematsu@u-shizuoka-ken.ac.jp"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001122",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:21236704"
+        ],
+        "loci": {
+            "accession": "CH476594.1",
+            "start_coord": 901119,
+            "end_coord": 944781,
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "dihydroisoflavipucine",
+                "chem_synonyms": [],
+                "chem_struct": "OC(CC(C)C)C(O1)OC2=C1C=C(C)NC2=O",
+                "molecular_formula": "C12H17NO4",
+                "mol_mass": -1,
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
+                    "Unknown"
+                ]
+            },
+            {
+                "compound": "isoflavipucine",
+                "chem_synonyms": [],
+                "chem_struct": "O=C(CC(C)C)C(O1)OC2=C1C=C(C)NC2=O",
+                "molecular_formula": "C12H15NO4",
+                "mol_mass": -1,
+                "chem_moieties": [],
+                "database_id": "",
+                "mass_spec_ion_type": "M+",
+                "chem_acts": [
+                    "Unknown"
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [],
+            "annotations": [
+                {
+                    "name": "ATEG_00325",
+                    "id": "EAU38971",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "PKS-NRPS hybrid"
+                },
+                {
+                    "name": "ATEG_00326",
+                    "id": "EAU38972",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "transcription factor"
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "EAU38971"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 2,
+                        "subtype": "Non-reducing",
+                        "cyclization_type": "Unknown"
+                    }
+                }
+            ]
+        },
+        "nrp": {
+            "subclass": "Unknown",
+            "nrps_genes": [
+                {
+                    "gene_id": "EAU38971",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Leucine"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "1",
+                            "active": false,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cyclic": false,
+            "thioesterases": [],
+            "release_type": [
+                "Unknown"
+            ]
+        }
+    }
+}

@@ -1,0 +1,435 @@
+{
+    "comments": "DH of module 7 is inactive as inferred from the structure of pellasoren. Active site alignment showed two aa being different to the other active DHs within the cluster. I don't know how to mark this DH as inactive.",
+    "submitter": {
+        "name": "Thomas Hoffmann",
+        "institution": "Helmholtz Institute for Pharmaceutical Research Saarland (HIPS)",
+        "email": "th.hoffmann83@gmail.com"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001034",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:22488911"
+        ],
+        "loci": {
+            "accession": "HE616533.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Pellasoren",
+                "chem_synonyms": [],
+                "chem_struct": "CC/C=C(OC)/C(N[C@@H](C)/C=C(C)/C=C(C)/C=C/C[C@@H]([C@H]1OC([C@H](C)C[C@@H]1C)=O)C)=O",
+                "molecular_formula": "C26H41NO4",
+                "mol_mass": 432.31084,
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
+                    "Cytotoxic"
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [],
+            "annotations": [
+                {
+                    "name": "ABC transporter",
+                    "id": "ctg1_orf00011",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelA",
+                    "id": "ctg1_orf00037",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelB",
+                    "id": "ctg1_orf00041",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelC",
+                    "id": "ctg1_orf00043",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelD",
+                    "id": "ctg1_orf00048",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelE",
+                    "id": "ctg1_orf00051",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelF",
+                    "id": "ctg1_orf00054",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelG",
+                    "id": "ctg1_orf00019",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelH",
+                    "id": "ctg1_orf00020",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelI",
+                    "id": "ctg1_orf00021",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelJ",
+                    "id": "ctg1_orf00024",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PelK",
+                    "id": "ctg1_orf00026",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Propionyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "pelF",
+                        "pelA",
+                        "pelB",
+                        "pelE",
+                        "pelD",
+                        "pelC"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": [],
+                    "modules": [
+                        {
+                            "genes": [
+                                "pelA"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methoxymalonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "pelA"
+                            ],
+                            "module_number": "2",
+                            "domains": [
+                                "Ketoreductase"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Inactive",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": true,
+                                "non_elongating": false,
+                                "iterated": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
+                        },
+                        {
+                            "genes": [
+                                "pelB"
+                            ],
+                            "module_number": "3",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "pelC"
+                            ],
+                            "module_number": "4",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "pelD"
+                            ],
+                            "module_number": "5",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "pelD"
+                            ],
+                            "module_number": "6",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "pelE"
+                            ],
+                            "module_number": "7",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "pelF"
+                            ],
+                            "module_number": "8",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "nrp": {
+            "subclass": "Unknown",
+            "nrps_genes": [
+                {
+                    "gene_id": "ctg1_orf00037",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "proteinogenic": [
+                                    "Alanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "2",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Macrolactonization"
+            ]
+        }
+    }
+}

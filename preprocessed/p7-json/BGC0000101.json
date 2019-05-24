@@ -1,0 +1,166 @@
+{
+    "submitter": {
+        "name": "Philipp Wiemann",
+        "institution": "University of Wisconsin-Madison",
+        "email": "pwiemann@wisc.edu"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000101",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:19448638",
+            "pubmed:20139316",
+            "pubmed:21351751",
+            "pubmed:22730213",
+            "pubmed:22909031",
+            "pubmed:23848338"
+        ],
+        "loci": {
+            "accession": "BN001302.1",
+            "start_coord": 441042,
+            "end_coord": 446753,
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "emodin",
+                "chem_synonyms": [
+                    "frangula emodin",
+                    "emodol",
+                    "rheum emodin",
+                    "schuttgelb"
+                ],
+                "database_id": "pubchem:3220",
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "STAT3",
+                        "publications": []
+                    }
+                ]
+            },
+            {
+                "compound": "monodictyphenone ",
+                "chem_synonyms": [],
+                "database_id": "pubchem:16114922",
+                "chem_acts": [
+                    "Unknown"
+                ]
+            },
+            {
+                "compound": "shamixanthone",
+                "chem_synonyms": [],
+                "database_id": "pubchem:15596091",
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "calmodulin",
+                        "publications": []
+                    }
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "xptC",
+                    "id": "CBF73676.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "oxidoreductase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Polyphenol"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "CBF90097.1",
+                        "xm_652661"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 7,
+                        "subtype": "Non-reducing",
+                        "cyclization_type": "C6-C11 first"
+                    },
+                    "thioesterases": [
+                        {
+                            "gene": "xm_652661",
+                            "thioesterase_type": "Unknown"
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "genes": [
+                                "CBF90097.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "ACP transacylase",
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Product Template domain",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

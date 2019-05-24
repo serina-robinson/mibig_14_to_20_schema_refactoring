@@ -1,0 +1,104 @@
+{
+    "submitter": {
+        "name": "Yuta Tsunematsu",
+        "institution": "University of Shizuoka",
+        "email": "tsunematsu@u-shizuoka-ken.ac.jp"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001121",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:19666480",
+            "pubmed:20174687"
+        ],
+        "loci": {
+            "accession": "BN001302.1",
+            "start_coord": 214879,
+            "end_coord": 224786,
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "orsellinic acid",
+                "chem_synonyms": [],
+                "database_id": "pubchem:68072;chemspider:61385",
+                "chem_acts": [
+                    "Unknown"
+                ]
+            }
+        ],
+        "genes": {},
+        "polyketide": {
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "xp_681178",
+                        "an7909",
+                        "AN7909"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 3,
+                        "subtype": "Non-reducing",
+                        "cyclization_type": "C2-C7 first"
+                    },
+                    "modules": [
+                        {
+                            "genes": [
+                                "AN7909"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "ACP transacylase",
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Product Template domain",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)",
+                                "Thioesterase"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

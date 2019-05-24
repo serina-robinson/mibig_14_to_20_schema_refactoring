@@ -1,0 +1,117 @@
+{
+    "submitter": {
+        "name": "Yuta Tsunematsu",
+        "institution": "University of Shizuoka",
+        "email": "tsunematsu@u-shizuoka-ken.ac.jp"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0000161",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:24816227"
+        ],
+        "loci": {
+            "accession": "CH476594.1",
+            "start_coord": 399827,
+            "end_coord": 432585,
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "terrein",
+                "chem_synonyms": [],
+                "database_id": "pubchem:12443340",
+                "chem_acts": [
+                    "phytotoxicity"
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [],
+            "annotations": [
+                {
+                    "name": "terA",
+                    "id": "ATEG_00145, EAU38791.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "product": "PKS"
+                },
+                {
+                    "name": "ATEG_00143",
+                    "id": "EAU38789.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "FAD-dependent monooxygenase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "name": "ATEG_00139",
+                    "id": "EAU38785.1",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out",
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "transcription factor"
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ateg_00145"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 4,
+                        "subtype": "Non-reducing",
+                        "cyclization_type": "C2-C7 first"
+                    }
+                }
+            ]
+        }
+    }
+}

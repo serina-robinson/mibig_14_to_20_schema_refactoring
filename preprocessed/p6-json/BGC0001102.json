@@ -1,0 +1,196 @@
+{
+    "submitter": {
+        "name": "John Biggins",
+        "institution": "The Rockefeller University",
+        "email": "Jbiggins@rockefeller.edu"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001102",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:22765305"
+        ],
+        "loci": {
+            "accession": "CP000085.1",
+            "start_coord": 2545193,
+            "end_coord": 2580940,
+            "completeness": "complete",
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Malleilactone",
+                "chem_synonyms": [],
+                "chem_struct": "O=C1/C(C=C(C(CC)=O)O1)=C(O)/C(C)=C/CCCCCCC",
+                "molecular_formula": "C18H26O4",
+                "mol_mass": 306.1831,
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
+                    "Siderophore"
+                ]
+            }
+        ],
+        "genes": {
+            "extra_genes": [],
+            "annotations": []
+        },
+        "polyketide": {
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Polyene"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Reductive release"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ABC36203.1",
+                        "ABC35796.1"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "modules": [
+                        {
+                            "genes": [
+                                "ABC35796.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "Thiolation (ACP/PCP)",
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "ABC35796.1"
+                            ],
+                            "module_number": "2",
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "ABC36203.1"
+                            ],
+                            "module_number": "4",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thioesterase",
+                                "Ketoreductase"
+                            ],
+                            "at_specificities": [
+                                "Propionyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "nrp": {
+            "subclass": "Beta-lactam",
+            "nrps_genes": [
+                {
+                    "gene_id": "ABC35922.1",
+                    "modules": [
+                        {
+                            "module_number": "0",
+                            "active": false,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABC35796.1",
+                    "modules": [
+                        {
+                            "module_number": "3",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABC36203.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "nonproteinogenic": [
+                                    "Proprionate"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
+                            },
+                            "module_number": "3",
+                            "active": false,
+                            "modification_domains": [
+                                "None"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cyclic": false,
+            "thioesterases": [
+                {
+                    "gene": "bth_ii2088",
+                    "thioesterase_type": "Type I"
+                }
+            ],
+            "release_type": [
+                "Unknown"
+            ]
+        }
+    }
+}

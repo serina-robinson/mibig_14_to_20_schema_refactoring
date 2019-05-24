@@ -1,0 +1,162 @@
+{
+    "submitter": {
+        "name": "Philipp Wiemann, Nancy Keller",
+        "institution": "University of Wisconsin-Madison",
+        "email": "pwiemann@wisc.edu"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
+        "mibig_accession": "BGC0001118",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:22492455",
+            "pubmed:23592999"
+        ],
+        "loci": {
+            "accession": "CM000172.1",
+            "start_coord": 54334,
+            "end_coord": 75724,
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "endocrocin",
+                "chem_synonyms": [],
+                "database_id": "pubchem:160483",
+                "chem_acts": [
+                    "inhibits neutrophil recruitment, immunosuppressive"
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "name": "encA",
+                    "id": "EAL84397.1",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "polyketide synthase"
+                },
+                {
+                    "name": "encB",
+                    "id": "EAL84396.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "metallo-beta-lactamase"
+                },
+                {
+                    "name": "encC",
+                    "id": "EBA27176.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "monooxygenase",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                },
+                {
+                    "name": "encD",
+                    "id": "EAL84395.2",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "oxidoreductase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                }
+            ]
+        },
+        "polyketide": {
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Polyphenol"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "XP_746435.1"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": -1,
+                        "subtype": "Non-reducing",
+                        "cyclization_type": "C6-C11 first"
+                    },
+                    "modules": [
+                        {
+                            "genes": [
+                                "XP_746435.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "ACP transacylase",
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Product Template domain",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
