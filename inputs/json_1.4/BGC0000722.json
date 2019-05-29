@@ -1,48 +1,43 @@
 {
-    "version": "18", 
     "personal": {
+        "submitter_email": "bailq@sjtu.edu.cn", 
         "submitter_name": "Linquan Bai", 
-        "submitter_institution": "Shanghai Jiao Tong University", 
-        "submitter_email": "bailq@sjtu.edu.cn"
+        "submitter_institution": "Shanghai Jiao Tong University"
     }, 
+    "version": "18", 
     "general_params": {
-        "mibig_accession": "BGC0000722", 
-        "biosyn_class": [
-            "Other"
-        ], 
-        "publications": "16632251,16151088,17335096,18563934,19477421", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "DQ164098.1", 
-                    "start_coord": -1, 
                     "end_coord": -1, 
+                    "Accession": "DQ164098.1", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Enzymatic assays", 
                         "Heterologous expression", 
                         "Gene expression correlated with compound production", 
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "start_coord": -1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "validamycin A", 
-                "chem_synonyms": [], 
-                "chem_struct": "O[C@H]1[C@H](O)[C@@H](O)[C@@H](N[C@H]2C[C@H](CO)[C@@H](O[C@H](OC(CO)[C@@H](O)[C@H]3O)[C@H]3O)[C@H](O)[C@H]2O)C=C1CO.C", 
-                "molecular_formula": "C20H35NO13", 
-                "mol_mass": 498.21, 
-                "mass_ion_type": "[M+H]+", 
                 "evidence_struct": [
                     "NMR"
                 ], 
+                "mol_mass": 498.21, 
+                "chem_struct": "O[C@H]1[C@H](O)[C@@H](O)[C@@H](N[C@H]2C[C@H](CO)[C@@H](O[C@H](OC(CO)[C@@H](O)[C@H]3O)[C@H]3O)[C@H](O)[C@H]2O)C=C1CO.C", 
+                "mass_ion_type": "[M+H]+", 
+                "chem_target": "Trehalose synthase", 
+                "compound": "validamycin A", 
+                "molecular_formula": "C20H35NO13", 
+                "chem_synonyms": [], 
                 "chem_act": [
                     "Antifungal"
-                ], 
-                "chem_target": "Trehalose synthase"
+                ]
             }
         ], 
         "genes": {
@@ -81,16 +76,22 @@
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000722", 
         "Other": {
             "other_subclass": "Cyclitol"
         }, 
+        "biosyn_class": [
+            "Other"
+        ], 
         "Polyketide": {
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "nigAI", 
                     "pks_module": [
                         {
-                            "module_nr": "2", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -98,12 +99,10 @@
                                 "AT", 
                                 "DH"
                             ], 
+                            "module_nr": "2", 
                             "at_substr_spec": "Acetyl-CoA/Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -111,7 +110,9 @@
                     "mod_pks_gene": "nigAII", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -119,14 +120,12 @@
                                 "ER", 
                                 "KR"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Neither", 
-                            "comments": null
+                            "comments": null, 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -134,7 +133,9 @@
                     "mod_pks_gene": "nigAIII", 
                     "pks_module": [
                         {
-                            "module_nr": "2", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -146,14 +147,12 @@
                                 "ER", 
                                 "KR"
                             ], 
+                            "module_nr": "2", 
                             "at_substr_spec": "Acetyl-CoA/Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Neither", 
-                            "comments": null
+                            "comments": null, 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -161,7 +160,9 @@
                     "mod_pks_gene": "nigAIV", 
                     "pks_module": [
                         {
-                            "module_nr": "2", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -173,14 +174,12 @@
                                 "ER", 
                                 "KR"
                             ], 
+                            "module_nr": "2", 
                             "at_substr_spec": "Methylmalonyl-CoA/Malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Neither", 
-                            "comments": null
+                            "comments": null, 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -188,7 +187,9 @@
                     "mod_pks_gene": "nigAV", 
                     "pks_module": [
                         {
-                            "module_nr": "2", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -200,14 +201,12 @@
                                 "ER", 
                                 "KR"
                             ], 
+                            "module_nr": "2", 
                             "at_substr_spec": "Methylmalonyl-CoA/Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Neither", 
-                            "comments": null
+                            "comments": null, 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -215,20 +214,20 @@
                     "mod_pks_gene": "nigAVI", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
                                 "KR"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Neither", 
-                            "comments": null
+                            "comments": null, 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -236,7 +235,9 @@
                     "mod_pks_gene": "nigAVII", 
                     "pks_module": [
                         {
-                            "module_nr": "3", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -248,14 +249,12 @@
                                 "AT", 
                                 "KR"
                             ], 
+                            "module_nr": "3", 
                             "at_substr_spec": "Malonyl-CoA/Malonyl-CoA/Malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Neither", 
-                            "comments": null
+                            "comments": null, 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -263,7 +262,9 @@
                     "mod_pks_gene": "nigAVIII", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -271,14 +272,12 @@
                                 "ER", 
                                 "KR"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Neither", 
-                            "comments": null
+                            "comments": null, 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -286,26 +285,26 @@
                     "mod_pks_gene": "nigAIX", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
                                 "DH", 
                                 "KR"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Neither", 
-                            "comments": null
+                            "comments": null, 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }
             ]
-        }
+        }, 
+        "publications": "16632251,16151088,17335096,18563934,19477421"
     }
 }
-

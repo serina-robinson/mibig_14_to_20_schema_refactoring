@@ -1,38 +1,32 @@
 {
-    "version": "15", 
     "personal": {
+        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp", 
         "submitter_name": "Yuta Tsunematsu", 
-        "submitter_institution": "University of Shizuoka", 
-        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp"
+        "submitter_institution": "University of Shizuoka"
     }, 
+    "version": "15", 
     "general_params": {
-        "mibig_accession": "BGC0001182", 
-        "biosyn_class": [
-            "NRP", 
-            "Polyketide"
-        ], 
-        "publications": "17636916, 3611317", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "NT_165976", 
-                    "start_coord": 3830915, 
                     "end_coord": 3866651, 
+                    "Accession": "NT_165976", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Heterologous expression"
-                    ]
+                    ], 
+                    "start_coord": 3830915
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
+                "mol_mass": -1, 
+                "chem_struct": "CC[C@H]1[C@H]2[C@@H](NC(=O)[C@@]23[C@@H](/C=C/C[C@@H](/C=C(\\\\[C@H](C(=O)/C=C/C3=O)O)/C)C)[C@H]4[C@@]1(O4)C)[C@@H](C)C5=CNC6=CC=CC=C65", 
+                "mass_ion_type": "None", 
                 "compound": "chaetoglobosins", 
                 "chem_synonyms": [], 
-                "chem_struct": "CC[C@H]1[C@H]2[C@@H](NC(=O)[C@@]23[C@@H](/C=C/C[C@@H](/C=C(\\\\[C@H](C(=O)/C=C/C3=O)O)/C)C)[C@H]4[C@@]1(O4)C)[C@@H](C)C5=CNC6=CC=CC=C65", 
-                "mol_mass": -1, 
-                "mass_ion_type": "None", 
                 "chem_act": [
                     "Cytotoxic"
                 ]
@@ -41,103 +35,107 @@
         "genes": {
             "gene": [
                 {
-                    "gene_name": "CHGG_01239 ", 
+                    "gene_function": "Scaffold biosynthesis", 
+                    "mut_pheno": "abolishment of chaetoglobosin A production", 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "XP_001220460", 
                     "gene_annotation": "PKS-NRPS hybrid", 
+                    "gene_name": "CHGG_01239 "
+                }, 
+                {
                     "gene_function": "Scaffold biosynthesis", 
+                    "mut_pheno": "abolishment of chaetoglobosin A production", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "abolishment of chaetoglobosin A production"
-                }, 
-                {
-                    "gene_name": "CHGG_01240", 
                     "gene_id": "XP_001220461", 
                     "gene_annotation": "enoyl reducctase ", 
-                    "gene_function": "Scaffold biosynthesis", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "abolishment of chaetoglobosin A production"
+                    "gene_name": "CHGG_01240"
                 }, 
                 {
-                    "gene_name": "CHGG_01242-1", 
-                    "gene_id": "XP_001220463", 
-                    "gene_annotation": "FAD-dependent monooxygenase", 
                     "gene_function": "Tailoring", 
                     "tailoring": "Monooxygenation", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "abolishment of chaetoglobosin A production"
+                    "gene_id": "XP_001220463", 
+                    "gene_annotation": "FAD-dependent monooxygenase", 
+                    "mut_pheno": "abolishment of chaetoglobosin A production", 
+                    "gene_name": "CHGG_01242-1"
                 }, 
                 {
-                    "gene_name": "CHGG_01242-2", 
+                    "gene_function": "Tailoring", 
+                    "tailoring": "Oxidation", 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        "Heterologous expression"
+                    ], 
                     "gene_id": "XP_001220463", 
                     "gene_annotation": "cytochrome P450 oxidoreductase", 
-                    "gene_function": "Tailoring", 
-                    "tailoring": "Oxidation", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        "Heterologous expression"
-                    ], 
-                    "mut_pheno": "abolishment of chaetoglobosin A production"
+                    "mut_pheno": "abolishment of chaetoglobosin A production", 
+                    "gene_name": "CHGG_01242-2"
                 }, 
                 {
-                    "gene_name": "CHGG_01243", 
-                    "gene_id": "XP_001220464", 
-                    "gene_annotation": "cytochrome P450 oxidoreductase", 
                     "gene_function": "Tailoring", 
                     "tailoring": "Oxidation", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Heterologous expression"
                     ], 
-                    "mut_pheno": "abolishment of chaetoglobosin A production"
+                    "gene_id": "XP_001220464", 
+                    "gene_annotation": "cytochrome P450 oxidoreductase", 
+                    "mut_pheno": "abolishment of chaetoglobosin A production", 
+                    "gene_name": "CHGG_01243"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0001182", 
+        "biosyn_class": [
+            "NRP", 
+            "Polyketide"
+        ], 
         "NRP": {
-            "subclass": "Other", 
-            "lin_cycl_nrp": "Linear", 
+            "nrps_release_type": "Unknown", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "XP_001220460", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "1", 
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
-                                "prot_adom_spec": "Tryptophan", 
-                                "evidence_a_spec": "Structure-based inference"
-                            }, 
-                            "cdom_subtype": "Unknown", 
                             "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Tryptophan", 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
+                            }, 
+                            "cdom_subtype": "Unknown"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "XP_001220460"
                 }
             ], 
+            "subclass": "Other", 
+            "lin_cycl_nrp": "Linear", 
             "nrps_te_type": "None", 
-            "nrps_thioesterase": [], 
-            "nrps_release_type": "Unknown"
+            "nrps_thioesterase": []
         }, 
         "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Linear", 
+            "nr_iterations": 8, 
+            "pks_te_type": "None", 
             "pks_subclass": [
                 "Iterative type I"
             ], 
+            "lin_cycl_pk": "Linear", 
+            "iterative_subtype": "Highly reducing", 
             "starter_unit": "Acetyl-CoA", 
+            "pk_subclass": "Other", 
             "pks_genes": [
                 "XP_001220460"
             ], 
-            "nr_iterations": 8, 
-            "iterative_subtype": "Highly reducing", 
-            "pks_te_type": "None", 
             "pks_release_type": "Unknown"
-        }
+        }, 
+        "publications": "17636916, 3611317"
     }
 }
-
-

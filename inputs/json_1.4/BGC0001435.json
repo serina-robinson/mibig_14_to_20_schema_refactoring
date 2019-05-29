@@ -1,41 +1,39 @@
 {
-    "version": "18", 
     "personal": {
+        "submitter_email": "cruzmoralesp@gmail.com", 
         "submitter_name": "Pablo Cruz Morales", 
-        "submitter_institution": "University of Queensland/Langebio-CINVESTAV", 
-        "submitter_email": "cruzmoralesp@gmail.com"
+        "submitter_institution": "University of Queensland/Langebio-CINVESTAV"
     }, 
+    "version": "18", 
+    "comments": "Please note that I was  not involved in the studies on the mechanism and genes involved in the biosynthesis of Ikarugamycin, I am submitting this entry as part of study on the evolution of polycyclic tetramate macromalctams.", 
     "general_params": {
-        "mibig_accession": "BGC0001435", 
-        "biosyn_class": [
-            "NRP", 
-            "Polyketide"
-        ], 
-        "publications": "24519911,    24706593", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "KF954512.1", 
-                    "start_coord": 1, 
                     "end_coord": 36760, 
+                    "Accession": "KF954512.1", 
                     "conn_comp_cluster": [
                         "Heterologous expression"
-                    ]
+                    ], 
+                    "start_coord": 1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "ikarugamycin", 
-                "chem_synonyms": [], 
-                "database_deposited": true, 
-                "databases_deposited": [
-                    "PubChem"
-                ], 
-                "pubchem_id": 101647494, 
                 "evidence_struct": [
                     "Mass spectrometry"
+                ], 
+                "mol_mass": "478.633", 
+                "chem_struct": "CC[C@@H]1[C@@H](C[C@H]2[C@H]1C=C[C@H]3[C@@H]2C[C@@H]\\4[C@@H]3C/C=C/C(=O)NCCC[C@H]5C(=O)C(=C(/C=C4)O)C(=O)N5)C", 
+                "chem_synonyms": [], 
+                "database_deposited": true, 
+                "pubchem_id": 101647494, 
+                "compound": "ikarugamycin", 
+                "molecular_formula": "C29H38N2O4", 
+                "databases_deposited": [
+                    "PubChem"
                 ], 
                 "chem_act": [
                     "Antibacterial", 
@@ -44,31 +42,35 @@
             }
         ], 
         "genes": {}, 
+        "mibig_accession": "BGC0001435", 
+        "biosyn_class": [
+            "NRP", 
+            "Polyketide"
+        ], 
         "NRP": {
-            "subclass": "Other", 
             "lin_cycl_nrp": "Linear", 
+            "nrps_release_type": "Hydrolysis", 
             "nrps_te_type": "Type I", 
+            "subclass": "Other", 
             "nrps_thioesterase": [
                 "ajd77023.1"
-            ], 
-            "nrps_release_type": "Hydrolysis"
+            ]
         }, 
         "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Cyclic", 
+            "nr_iterations": 6, 
+            "pks_te_type": "Type I", 
             "pks_subclass": [
                 "Iterative type I"
             ], 
+            "lin_cycl_pk": "Cyclic", 
+            "iterative_subtype": "Partially reducing", 
             "starter_unit": "Malonyl-CoA", 
+            "pk_subclass": "Other", 
             "pks_genes": [
                 "ajd77023.1"
             ], 
-            "nr_iterations": 6, 
-            "iterative_subtype": "Partially reducing", 
-            "pks_te_type": "Type I", 
             "pks_release_type": "Hydrolysis"
-        }
-    }, 
-    "comments": "Please note that I was  not involved in the studies on the mechanism and genes involved in the biosynthesis of Ikarugamycin, I am submitting this entry as part of study on the evolution of polycyclic tetramate macromalctams."
+        }, 
+        "publications": "24519911,    24706593"
+    }
 }
-

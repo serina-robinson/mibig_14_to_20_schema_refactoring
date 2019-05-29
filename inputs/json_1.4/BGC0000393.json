@@ -1,38 +1,32 @@
 {
-    "version": "10", 
     "personal": {
+        "submitter_email": "daniel.krug@helmholtz-hzi.de", 
         "submitter_name": "Daniel Krug", 
-        "submitter_institution": "Helmholtz Institute for Pharmaceutical Research Saarland", 
-        "submitter_email": "daniel.krug@helmholtz-hzi.de"
+        "submitter_institution": "Helmholtz Institute for Pharmaceutical Research Saarland"
     }, 
+    "version": "10", 
     "general_params": {
-        "mibig_accession": "BGC0000393", 
-        "biosyn_class": [
-            "NRP", 
-            "Polyketide"
-        ], 
-        "publications": "22162209", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "CP000113", 
-                    "start_coord": 4498820, 
                     "end_coord": 4546737, 
+                    "Accession": "CP000113", 
                     "conn_comp_cluster": [
                         "Knock-out studies"
-                    ]
+                    ], 
+                    "start_coord": 4498820
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "Myxoprincomide-c506", 
-                "chem_synonyms": [], 
-                "chem_struct": "CNC(CO)C(=O)NC(CC(C)C)C(=O)NC(C(O)(C)C)C(=O)NC(CO)C(=O)NC(C(C)C)C(=O)C(=O)NC(CO)C(=O)NC(CC1=CC=C(O)C=C1)C(=O)NC(CCCN)CC(=O)NC(C)C(=O)O", 
-                "molecular_formula": "C45H74O16N10", 
                 "mol_mass": 1011.53568, 
+                "chem_struct": "CNC(CO)C(=O)NC(CC(C)C)C(=O)NC(C(O)(C)C)C(=O)NC(CO)C(=O)NC(C(C)C)C(=O)C(=O)NC(CO)C(=O)NC(CC1=CC=C(O)C=C1)C(=O)NC(CCCN)CC(=O)NC(C)C(=O)O", 
                 "mass_ion_type": "[M+H]+", 
+                "compound": "Myxoprincomide-c506", 
+                "molecular_formula": "C45H74O16N10", 
+                "chem_synonyms": [], 
                 "chem_act": [
                     "Unknown"
                 ]
@@ -41,184 +35,187 @@
         "genes": {
             "gene": [
                 {
-                    "gene_name": "mxp", 
-                    "gene_id": "MXAN_3779", 
+                    "mut_pheno": "loss of production", 
                     "gene_function": "Scaffold biosynthesis", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "loss of production"
+                    "gene_id": "MXAN_3779", 
+                    "gene_name": "mxp"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000393", 
+        "biosyn_class": [
+            "NRP", 
+            "Polyketide"
+        ], 
         "NRP": {
-            "subclass": "Other", 
-            "lin_cycl_nrp": "Linear", 
+            "nrps_release_type": "Hydrolysis", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "MXAN_3779", 
                     "nrps_module": [
                         {
                             "module_nr": "0", 
+                            "nrps_evidence_skip_iter": "Structure-based inference", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
                                 "aa_type": "Unknown"
                             }, 
                             "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Skipped", 
-                            "nrps_evidence_skip_iter": "Structure-based inference"
+                            "nrps_mod_skip_iter": "Skipped"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "1", 
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
-                                "prot_adom_spec": "Serine", 
-                                "evidence_a_spec": "Structure-based inference"
-                            }, 
-                            "cdom_subtype": "LCL", 
                             "nrps_mod_doms": "Methylation", 
-                            "nrps_mod_skip_iter": "Neither"
-                        }, 
-                        {
-                            "module_nr": "2", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
-                                "prot_adom_spec": "Leucine", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "prot_adom_spec": "Serine", 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
-                            "module_nr": "3", 
+                            "nrps_mod_skip_iter": "Neither", 
+                            "module_nr": "2", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic", 
-                                "nonprot_adom_spec": "Other", 
+                                "prot_adom_spec": "Leucine", 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
+                            }, 
+                            "cdom_subtype": "LCL"
+                        }, 
+                        {
+                            "nrps_mod_skip_iter": "Neither", 
+                            "module_nr": "3", 
+                            "nrps_mod_doms": "None", 
+                            "a_substr_spec": {
+                                "aa_subcluster": [], 
                                 "other_spec": "bOH-Val", 
                                 "evidence_a_spec": "Structure-based inference", 
-                                "aa_subcluster": []
+                                "nonprot_adom_spec": "Other", 
+                                "aa_type": "Nonproteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "4", 
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
-                                "prot_adom_spec": "Serine", 
-                                "evidence_a_spec": "Structure-based inference"
-                            }, 
-                            "cdom_subtype": "LCL", 
                             "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Serine", 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
+                            }, 
+                            "cdom_subtype": "LCL"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "5", 
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
-                                "prot_adom_spec": "Valine", 
-                                "evidence_a_spec": "Structure-based inference"
-                            }, 
-                            "cdom_subtype": "LCL", 
                             "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Valine", 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
+                            }, 
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "8", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Serine", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "9", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Tyrosine", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "10", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic", 
-                                "nonprot_adom_spec": "Other", 
+                                "aa_subcluster": [], 
                                 "other_spec": "bLys", 
                                 "evidence_a_spec": "Structure-based inference", 
-                                "aa_subcluster": []
+                                "nonprot_adom_spec": "Other", 
+                                "aa_type": "Nonproteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "11", 
+                            "nrps_evidence_skip_iter": "Structure-based inference", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "None", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "None"
                             }, 
                             "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Skipped", 
-                            "nrps_evidence_skip_iter": "Structure-based inference"
+                            "nrps_mod_skip_iter": "Skipped"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "12", 
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
-                                "prot_adom_spec": "Alanine", 
-                                "evidence_a_spec": "Structure-based inference"
-                            }, 
-                            "cdom_subtype": "LCL", 
                             "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Alanine", 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
+                            }, 
+                            "cdom_subtype": "LCL"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "MXAN_3779"
                 }
             ], 
+            "subclass": "Other", 
+            "lin_cycl_nrp": "Linear", 
             "nrps_te_type": "Type I", 
             "nrps_thioesterase": [
                 "mxan_3779"
-            ], 
-            "nrps_release_type": "Hydrolysis"
+            ]
         }, 
         "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Linear", 
+            "pks_te_type": "None", 
             "pks_subclass": [
                 "Modular type I"
             ], 
-            "starter_unit": "Unknown", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "MXAN_3779", 
                     "pks_module": [
                         {
-                            "module_nr": "6", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "6", 
                             "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
             ], 
-            "pks_te_type": "None", 
+            "starter_unit": "Unknown", 
+            "pk_subclass": "Other", 
+            "lin_cycl_pk": "Linear", 
             "pks_release_type": "Unknown"
-        }
+        }, 
+        "publications": "22162209"
     }
 }
-
-
-

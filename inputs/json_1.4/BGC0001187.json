@@ -1,43 +1,37 @@
 {
-    "version": "18", 
     "personal": {
+        "submitter_email": "qun.yue@uth.tmc.edu", 
         "submitter_name": "Qun Yue", 
-        "submitter_institution": "University of Texas Health Science Center at Houston", 
-        "submitter_email": "qun.yue@uth.tmc.edu"
+        "submitter_institution": "University of Texas Health Science Center at Houston"
     }, 
+    "version": "18", 
     "general_params": {
-        "mibig_accession": "BGC0001187", 
-        "biosyn_class": [
-            "NRP", 
-            "Polyketide"
-        ], 
-        "publications": "26081635", 
         "loci": {
-            "complete": "incomplete", 
             "nucl_acc": [
                 {
-                    "Accession": "KM603664", 
-                    "start_coord": -1, 
                     "end_coord": -1, 
+                    "Accession": "KM603664", 
                     "conn_comp_cluster": [
                         "Heterologous expression", 
                         "Gene expression correlated with compound production"
-                    ]
+                    ], 
+                    "start_coord": -1
                 }
-            ]
+            ], 
+            "complete": "incomplete"
         }, 
         "compounds": [
             {
-                "compound": "xenolozoyenone", 
-                "chem_synonyms": [], 
-                "chem_struct": "CCCCCC/C=C/C=C/C=C/C(O)=C1C(N(O)CC/1=O)=O", 
-                "molecular_formula": "C17H23NO4", 
-                "mol_mass": 306.1708, 
-                "mass_ion_type": "[M+H]+", 
                 "evidence_struct": [
                     "NMR", 
                     "Mass spectrometry"
                 ], 
+                "mol_mass": 306.1708, 
+                "chem_struct": "CCCCCC/C=C/C=C/C=C/C(O)=C1C(N(O)CC/1=O)=O", 
+                "mass_ion_type": "[M+H]+", 
+                "compound": "xenolozoyenone", 
+                "molecular_formula": "C17H23NO4", 
+                "chem_synonyms": [], 
                 "chem_act": [
                     "Unknown"
                 ]
@@ -54,57 +48,58 @@
                 }
             ]
         }, 
+        "mibig_accession": "BGC0001187", 
+        "biosyn_class": [
+            "NRP", 
+            "Polyketide"
+        ], 
         "NRP": {
-            "subclass": "Other lipopeptide", 
             "lipid_moiety": "(4E,6E,8E)-3-oxopentadeca-4,6,8-trienoic acid", 
-            "lin_cycl_nrp": "Cyclic", 
-            "nrps_te_type": "Unknown", 
+            "nrps_release_type": "Other", 
+            "subclass": "Other lipopeptide", 
             "nrps_thioesterase": [
                 "akl78825.1"
             ], 
-            "nrps_release_type": "Other", 
+            "lin_cycl_nrp": "Cyclic", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "AKL78825.1", 
                     "nrps_module": [
                         {
                             "module_nr": "2", 
+                            "comments": null, 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
+                                "epimerized": false, 
                                 "prot_adom_spec": "Glycine", 
                                 "evidence_a_spec": "Structure-based inference", 
-                                "epimerized": false
+                                "aa_type": "Proteinogenic"
                             }, 
                             "cdom_subtype": "Other", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither", 
-                            "comments": null
+                            "nrps_mod_skip_iter": "Neither"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "AKL78825.1"
                 }
-            ]
+            ], 
+            "nrps_te_type": "Unknown"
         }, 
         "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Cyclic", 
+            "nr_iterations": 6, 
+            "pks_te_type": "None", 
+            "iter_cycl_type": "Other", 
             "pks_subclass": [
                 "Iterative type I"
             ], 
-            "starter_unit": "Propionyl-CoA", 
-            "pks_genes": [
-                "akl78824.1"
-            ], 
-            "nr_iterations": 6, 
-            "iterative_subtype": "Highly reducing", 
-            "iter_cycl_type": "Other", 
-            "pks_te_type": "None", 
-            "pks_release_type": "Other", 
+            "lin_cycl_pk": "Cyclic", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AKL78824.1", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
+                            "pks_evidence_skip_iter": "Structure-based inference", 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -114,18 +109,23 @@
                                 "ACP", 
                                 "C"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Propionyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Iterated", 
-                            "pks_evidence_skip_iter": "Structure-based inference"
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
-            ]
-        }
+            ], 
+            "iterative_subtype": "Highly reducing", 
+            "starter_unit": "Propionyl-CoA", 
+            "pk_subclass": "Other", 
+            "pks_genes": [
+                "akl78824.1"
+            ], 
+            "pks_release_type": "Other"
+        }, 
+        "publications": "26081635"
     }
 }

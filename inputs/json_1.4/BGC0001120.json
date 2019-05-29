@@ -1,143 +1,143 @@
 {
-    "version": "14", 
     "personal": {
+        "submitter_email": "keishi.ishida@hki-jena.de", 
         "submitter_name": "Keishi Ishida", 
-        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology", 
-        "submitter_email": "keishi.ishida@hki-jena.de"
+        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology"
     }, 
+    "version": "14", 
     "general_params": {
-        "mibig_accession": "BGC0001120", 
-        "biosyn_class": [
-            "NRP", 
-            "Polyketide"
-        ], 
-        "publications": "23055407, 22765305", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "CP000086", 
-                    "start_coord": 2543245, 
                     "end_coord": 2580940, 
+                    "Accession": "CP000086", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Proven expression in natural host"
-                    ]
+                    ], 
+                    "start_coord": 2543245
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "burkholderic acid", 
+                "chemspider_id": 28536046, 
+                "mol_mass": "", 
+                "other_chem_act": "Virulence factor", 
+                "chem_struct": "", 
                 "chem_synonyms": [
                     "malleilactone"
                 ], 
                 "database_deposited": true, 
+                "compound": "burkholderic acid", 
+                "molecular_formula": "", 
                 "databases_deposited": [
                     "ChemSpider"
                 ], 
-                "chemspider_id": 28536046, 
                 "chem_act": [
                     "Antibacterial", 
                     "Cytotoxic", 
                     "Siderophore", 
                     "Other"
-                ], 
-                "other_chem_act": "Virulence factor"
+                ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "burA", 
+                    "mut_pheno": "Loss of burkholderic acid production", 
+                    "gene_function": "Scaffold biosynthesis", 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "ABC36203", 
+                    "gene_name": "burA"
+                }, 
+                {
+                    "mut_pheno": "Loss of burkholderic acid production", 
                     "gene_function": "Scaffold biosynthesis", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "Loss of burkholderic acid production"
-                }, 
-                {
-                    "gene_name": "burF", 
                     "gene_id": "ABC35796", 
-                    "gene_function": "Scaffold biosynthesis", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "Loss of burkholderic acid production"
+                    "gene_name": "burF"
                 }, 
                 {
-                    "gene_name": "burH", 
-                    "not_in_gbk": true, 
-                    "gene_startpos": 2571843, 
+                    "gene_function": "Unknown", 
                     "gene_endpos": 2573207, 
                     "gene_annotation": "FkbH-like protein", 
-                    "gene_function": "Unknown"
+                    "gene_startpos": 2571843, 
+                    "not_in_gbk": true, 
+                    "gene_name": "burH"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0001120", 
+        "biosyn_class": [
+            "NRP", 
+            "Polyketide"
+        ], 
         "NRP": {
-            "subclass": "Other", 
             "lin_cycl_nrp": "Cyclic", 
+            "nrps_te_type": "Type II", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "ABC36203", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "A1", 
-                            "a_substr_spec": {
-                                "aa_type": "Unknown", 
-                                "evidence_a_spec": "Other"
-                            }, 
-                            "cdom_subtype": "None", 
                             "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "evidence_a_spec": "Other", 
+                                "aa_type": "Unknown"
+                            }, 
+                            "cdom_subtype": "None"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "ABC36203"
                 }, 
                 {
-                    "nrps_gene": "ABC35796", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "B3", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
                                 "aa_type": "None"
                             }, 
-                            "cdom_subtype": "Other", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Other"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "ABC35796"
                 }
             ], 
-            "nrps_te_type": "Type II", 
+            "subclass": "Other", 
             "nrps_release_type": "Unknown"
         }, 
         "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Cyclic", 
+            "pks_te_type": "None", 
             "pks_subclass": [
                 "Modular type I"
             ], 
-            "starter_unit": "Unknown", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ABC36203", 
                     "pks_module": [
                         {
-                            "module_nr": "A2", 
+                            "pks_mod_doms": "Other", 
+                            "pks_other_mod_dom": "Hydroxylation", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
                                 "Ketoreductase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "A2", 
                             "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "Inactive", 
-                            "pks_mod_doms": "Other", 
-                            "pks_other_mod_dom": "Hydroxylation", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -145,43 +145,44 @@
                     "mod_pks_gene": "ABC35796", 
                     "pks_module": [
                         {
+                            "pks_mod_doms": "None", 
                             "module_nr": "B0", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "Thiolation (ACP/PCP)"
-                            ], 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }, 
                         {
-                            "module_nr": "B1", 
+                            "pks_mod_doms": "Methylation", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
                                 "Ketoreductase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "B1", 
                             "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "Methylation", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Structure-based inference"
                         }, 
                         {
+                            "pks_mod_doms": "None", 
                             "module_nr": "B2", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Thiolation (ACP/PCP)"
-                            ], 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }
                     ]
                 }
             ], 
-            "pks_te_type": "None", 
+            "starter_unit": "Unknown", 
+            "pk_subclass": "Other", 
+            "lin_cycl_pk": "Cyclic", 
             "pks_release_type": "Reductive release"
-        }
+        }, 
+        "publications": "23055407, 22765305"
     }
 }
-
-

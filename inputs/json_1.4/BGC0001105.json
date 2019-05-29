@@ -1,155 +1,151 @@
 {
-    "version": "18", 
     "personal": {
+        "submitter_email": "ehelfrich@ethz.ch", 
         "submitter_name": "Eric J. N. Helfrich", 
-        "submitter_institution": "Institute of Microbiology, Eidgen\u00c3\u00b6ssische Technische Hochschule (ETH) Zurich, Piel lab", 
-        "submitter_email": "ehelfrich@ethz.ch"
+        "submitter_institution": "Institute of Microbiology, Eidgenoessische Technische Hochschule (ETH) Zurich, Piel lab"
     }, 
+    "version": "18", 
+    "comments": "The gene cluster encodes for all onnamides, theopederins and pseudoonnamides.", 
     "general_params": {
+        "loci": {
+            "nucl_acc": [
+                {
+                    "end_coord": -1, 
+                    "Accession": "AY688304", 
+                    "conn_comp_cluster": [
+                        "Sequence-based prediction"
+                    ], 
+                    "start_coord": -1
+                }
+            ], 
+            "complete": "incomplete"
+        }, 
+        "compounds": [
+            {
+                "evidence_struct": [
+                    "NMR", 
+                    "Mass spectrometry"
+                ], 
+                "mol_mass": "793.956", 
+                "chem_struct": "C[C@H]1[C@H](O[C@](CC1=C)([C@@H](C(=O)N[C@@H]2[C@@H]3[C@@H]([C@H](C([C@H](O3)C[C@@H](CCC/C=C/C=C/C=C/C(=O)N[C@@H](CCCN=C(N)N)C(=O)O)O)(C)C)OC)OCO2)O)OC)C", 
+                "chem_synonyms": [], 
+                "database_deposited": true, 
+                "pubchem_id": 10373128, 
+                "chem_target": "inhibition of protein biosynthesis caused by binding to the ribosome. This mechanism causes a ribotoxic stress response and ultimately apoptosis.", 
+                "compound": "Onnamide A", 
+                "molecular_formula": "C39H63N5O12", 
+                "databases_deposited": [
+                    "PubChem"
+                ], 
+                "chem_act": [
+                    "Cytotoxic"
+                ]
+            }
+        ], 
+        "genes": {}, 
         "mibig_accession": "BGC0001105", 
         "biosyn_class": [
             "NRP", 
             "Polyketide"
         ], 
-        "publications": "15520376, 24476823, 20464003, 15958059, 10.1016/S0040-4020(01)86585-6, 10.1016/S0040-4020(99)00841-8, 10.1021/ja00222a068", 
-        "loci": {
-            "complete": "incomplete", 
-            "nucl_acc": [
-                {
-                    "Accession": "AY688304", 
-                    "start_coord": -1, 
-                    "end_coord": -1, 
-                    "conn_comp_cluster": [
-                        "Sequence-based prediction"
-                    ]
-                }
-            ]
-        }, 
-        "compounds": [
-            {
-                "compound": "Onnamide A", 
-                "chem_synonyms": [], 
-                "database_deposited": true, 
-                "databases_deposited": [
-                    "PubChem"
-                ], 
-                "pubchem_id": 10373128, 
-                "evidence_struct": [
-                    "NMR", 
-                    "Mass spectrometry"
-                ], 
-                "chem_act": [
-                    "Cytotoxic"
-                ], 
-                "chem_target": "inhibition of protein biosynthesis caused by binding to the ribosome. This mechanism causes a ribotoxic stress response and ultimately apoptosis."
-            }
-        ], 
-        "genes": {}, 
         "NRP": {
-            "subclass": "Other", 
-            "lin_cycl_nrp": "Linear", 
-            "nrps_te_type": "None", 
-            "nrps_thioesterase": [], 
             "nrps_release_type": "Hydrolysis", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "AAV97877.1", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "5", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
+                                "epimerized": false, 
                                 "prot_adom_spec": "Glycine", 
                                 "evidence_a_spec": "Sequence-based prediction", 
-                                "epimerized": false
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "LCL"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "AAV97877.1"
                 }, 
                 {
-                    "nrps_gene": "n.a.", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "14", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
+                                "epimerized": false, 
                                 "prot_adom_spec": "Arginine", 
                                 "evidence_a_spec": "Sequence-based prediction", 
-                                "epimerized": false
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "LCL"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "n.a."
                 }
-            ]
+            ], 
+            "subclass": "Other", 
+            "lin_cycl_nrp": "Linear", 
+            "nrps_te_type": "None", 
+            "nrps_thioesterase": []
         }, 
         "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Linear", 
+            "pks_te_type": "Type I", 
             "pks_subclass": [
                 "Trans-AT type I"
             ], 
-            "starter_unit": "Acetyl-CoA", 
-            "trans_at": [
-                "none"
-            ], 
-            "pks_te_type": "Type I", 
-            "pks_release_type": "Hydrolysis", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AAV97870.1", 
                     "pks_module": [
                         {
-                            "module_nr": "0", 
-                            "pks_domains": [
-                                "T"
-                            ], 
                             "pks_mod_doms": [
                                 "GNAT"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "0", 
+                            "pks_mod_skip_iter": "Neither", 
+                            "pks_domains": [
+                                "T"
+                            ]
                         }, 
                         {
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ], 
                             "module_nr": "1", 
+                            "kr_stereochem": "D-OH", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
                                 "KR", 
                                 "T"
-                            ], 
-                            "kr_stereochem": "D-OH", 
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }, 
                         {
-                            "module_nr": "2", 
-                            "pks_domains": [
-                                "KS", 
-                                "T", 
-                                "T", 
-                                "T"
-                            ], 
                             "pks_mod_doms": [
                                 "2x Crotonase / Enoyl-CoA dehydratase"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
-                        }, 
-                        {
-                            "module_nr": "3", 
+                            "module_nr": "2", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
+                                "T", 
+                                "T", 
                                 "T"
-                            ], 
+                            ]
+                        }, 
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "3", 
+                            "pks_mod_skip_iter": "Neither", 
+                            "pks_domains": [
+                                "KS", 
+                                "T"
+                            ]
                         }
                     ]
                 }, 
@@ -157,93 +153,93 @@
                     "mod_pks_gene": "AAV97877.1", 
                     "pks_module": [
                         {
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "module_nr": "10", 
+                            "kr_stereochem": "D-OH", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
                                 "DH", 
                                 "KR", 
                                 "T"
-                            ], 
-                            "kr_stereochem": "D-OH", 
+                            ]
+                        }, 
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
-                        }, 
-                        {
                             "module_nr": "11", 
+                            "pks_mod_skip_iter": "Non-elongating", 
                             "pks_domains": [
                                 "KS"
-                            ], 
+                            ]
+                        }, 
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Non-elongating"
-                        }, 
-                        {
                             "module_nr": "4", 
+                            "pks_mod_skip_iter": "Non-elongating", 
                             "pks_domains": [
                                 "KS", 
                                 "T"
-                            ], 
+                            ]
+                        }, 
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Non-elongating"
-                        }, 
-                        {
                             "module_nr": "6", 
+                            "kr_stereochem": "D-OH", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
                                 "KR", 
                                 "T"
-                            ], 
-                            "kr_stereochem": "D-OH", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }, 
                         {
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ], 
                             "module_nr": "7", 
+                            "kr_stereochem": "D-OH", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
                                 "KR", 
                                 "T", 
                                 "T"
-                            ], 
-                            "kr_stereochem": "D-OH", 
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }, 
                         {
+                            "pks_mod_doms": [
+                                "Pyran synthase"
+                            ], 
                             "module_nr": "8", 
+                            "kr_stereochem": "D-OH", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
                                 "DH", 
                                 "KR", 
                                 "T"
-                            ], 
-                            "kr_stereochem": "D-OH", 
-                            "pks_mod_doms": [
-                                "Pyran synthase"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }, 
                         {
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "module_nr": "9", 
+                            "kr_stereochem": "L-OH", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
                                 "KR", 
                                 "T"
-                            ], 
-                            "kr_stereochem": "L-OH", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }
                     ]
                 }, 
@@ -251,46 +247,52 @@
                     "mod_pks_gene": "no accession available", 
                     "pks_module": [
                         {
-                            "module_nr": "11", 
-                            "pks_domains": [
-                                "DH", 
-                                "T"
-                            ], 
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Non-elongating"
+                            "module_nr": "11", 
+                            "pks_mod_skip_iter": "Non-elongating", 
+                            "pks_domains": [
+                                "DH", 
+                                "T"
+                            ]
                         }, 
                         {
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "module_nr": "12", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
                                 "DH", 
                                 "T"
-                            ], 
+                            ]
+                        }, 
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
-                        }, 
-                        {
                             "module_nr": "13", 
+                            "kr_stereochem": "D-OH", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
                                 "KR", 
                                 "T"
-                            ], 
-                            "kr_stereochem": "D-OH", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }
                     ]
                 }
-            ]
-        }
-    }, 
-    "comments": "The gene cluster encodes for all onnamides, theopederins and pseudoonnamides."
+            ], 
+            "trans_at": [
+                "none"
+            ], 
+            "starter_unit": "Acetyl-CoA", 
+            "pk_subclass": "Other", 
+            "lin_cycl_pk": "Linear", 
+            "pks_release_type": "Hydrolysis"
+        }, 
+        "publications": "15520376, 24476823, 20464003, 15958059, 10.1016/S0040-4020(01)86585-6, 10.1016/S0040-4020(99)00841-8, 10.1021/ja00222a068"
+    }
 }
-

@@ -1,272 +1,271 @@
 {
-    "version": "10", 
     "personal": {
+        "submitter_email": "jasalas@uniovi.es", 
         "submitter_name": "Jose A. Salas", 
-        "submitter_institution": "University of Oviedo", 
-        "submitter_email": "jasalas@uniovi.es"
+        "submitter_institution": "University of Oviedo"
     }, 
+    "version": "10", 
     "general_params": {
-        "mibig_accession": "BGC0000247", 
-        "biosyn_class": [
-            "Polyketide", 
-            "Saccharide"
-        ], 
-        "publications": "8654997,9150235,10102355,11254130,8807845,8654997,8757400,9150235,9375253,9733697,9882681,9889148,9917296,10102355,10660060,10760873,10652287,10779713,11254130,11853433,12022840,12733914,12813091,14660589,15712316", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "X89899", 
-                    "start_coord": -1, 
                     "end_coord": -1, 
+                    "Accession": "X89899", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Enzymatic assays", 
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "start_coord": -1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "mithramycin", 
-                "chem_synonyms": [
-                	"Aureolic Acid", 
-                	"Mitramycin", 
-                	"Plicamycin" 
-                ], 
-                "chem_struct": "C[C@@H]1[C@H]([C@@H](C[C@@H](O1)O[C@@H]2C[C@@H](O[C@@H]([C@H]2O)C)OC3=CC4=CC5=C(C(=O)[C@H]([C@@H](C5)[C@@H](C(=O)[C@H]([C@@H](C)O)O)OC)O[C@H]6C[C@H]([C@@H]([C@H](O6)C)O)O[C@H]7C[C@H]([C@H]([C@H](O7)C)O)O[C@H]8C[C@]([C@@H]([C@H](O8)C)O)(C)O)C(=C4C(=C3C)O)O)O)O", 
-                "molecular_formula": "C52H76O24", 
                 "mol_mass": 1086.15, 
+                "chem_struct": "C[C@@H]1[C@H]([C@@H](C[C@@H](O1)O[C@@H]2C[C@@H](O[C@@H]([C@H]2O)C)OC3=CC4=CC5=C(C(=O)[C@H]([C@@H](C5)[C@@H](C(=O)[C@H]([C@@H](C)O)O)OC)O[C@H]6C[C@H]([C@@H]([C@H](O6)C)O)O[C@H]7C[C@H]([C@H]([C@H](O7)C)O)O[C@H]8C[C@]([C@@H]([C@H](O8)C)O)(C)O)C(=C4C(=C3C)O)O)O)O", 
                 "mass_ion_type": "[M+H]+", 
+                "chem_target": "DNA", 
+                "compound": "mithramycin", 
+                "molecular_formula": "C52H76O24", 
+                "chem_synonyms": [
+                    "Aureolic Acid", 
+                    "Mitramycin", 
+                    "Plicamycin"
+                ], 
                 "chem_act": [
                     "Cytotoxic"
-                ], 
-                "chem_target": "DNA"
+                ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "mtmR", 
-                    "gene_id": "CAK50770.1", 
+                    "mut_pheno": "Non producing mutant", 
                     "gene_function": "Regulation", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "Non producing mutant"
+                    "gene_id": "CAK50770.1", 
+                    "gene_name": "mtmR"
                 }, 
                 {
-                    "gene_name": "mtmD", 
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of premithramycinone", 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "CAK50774.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Other", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": "Accumulation of premithramycinone"
+                    "gene_name": "mtmD"
                 }, 
                 {
-                    "gene_name": "mtmOII", 
-                    "gene_id": "CAK50777.1", 
                     "gene_function": "Tailoring", 
-                    "tailoring": "Hydroxylation", 
+                    "mut_pheno": "Accumulation of premithramycinone G", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "Accumulation of premithramycinone G"
+                    "gene_id": "CAK50777.1", 
+                    "tailoring": "Hydroxylation", 
+                    "gene_name": "mtmOII"
                 }, 
                 {
-                    "gene_name": "mtmP", 
-                    "gene_id": "CAA61989.1", 
+                    "mut_pheno": "Non producing mutant", 
                     "gene_function": "Scaffold biosynthesis", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "Non producing mutant"
+                    "gene_id": "CAA61989.1", 
+                    "gene_name": "mtmP"
                 }, 
                 {
-                    "gene_name": "mtmTIII", 
-                    "gene_id": "CAK50783.1", 
                     "gene_function": "Tailoring", 
-                    "tailoring": "Other", 
+                    "mut_pheno": "Accumulation of 4E-ketomithramycin", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "Accumulation of 4E-ketomithramycin"
+                    "gene_id": "CAK50783.1", 
+                    "tailoring": "Other", 
+                    "gene_name": "mtmTIII"
                 }, 
                 {
-                    "gene_name": "mtmC", 
+                    "gene_function": "Scaffold biosynthesis", 
+                    "mut_pheno": "Accumulation of 4A-ketopremithramycin A2 , 4A-keto-9-demethylpremithramycin and 4C-keto-demycarosylmithramycin ", 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        "Activity assay", 
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "CAK50784.1", 
                     "gene_annotation": "D-mycarose 3-C-methyltransferase and 4-D-olivosyl-ketoreductase", 
-                    "gene_function": "Scaffold biosynthesis", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        "Activity assay", 
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": "Accumulation of 4A-ketopremithramycin A2 , 4A-keto-9-demethylpremithramycin and 4C-keto-demycarosylmithramycin "
+                    "gene_name": "mtmC"
                 }, 
                 {
-                    "gene_name": "mtmU", 
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of premithramycin A1", 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "CAK50785.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Other", 
+                    "gene_name": "mtmU"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of premithramycinone", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "Accumulation of premithramycin A1"
-                }, 
-                {
-                    "gene_name": "mtmV", 
                     "gene_id": "CAK50786.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Other", 
+                    "gene_name": "mtmV"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of mithramycin SK, demycarosyl-mithramycin SK, mithramycin SA, mithramycin SDK", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "Accumulation of premithramycinone"
-                }, 
-                {
-                    "gene_name": "mtmW", 
                     "gene_id": "CAK50787.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Reduction", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": "Accumulation of mithramycin SK, demycarosyl-mithramycin SK, mithramycin SA, mithramycin SDK"
+                    "gene_name": "mtmW"
                 }, 
                 {
-                    "gene_name": "mtmGIV", 
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of premithramycinone", 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        "Activity assay", 
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "CAK50788.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Glycosylation", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        "Activity assay", 
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": "Accumulation of premithramycinone"
+                    "gene_name": "mtmGIV"
                 }, 
                 {
-                    "gene_name": "mtmGIII", 
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of premithramycinone and premithramycin A1", 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "CAK50789.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Glycosylation", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": "Accumulation of premithramycinone and premithramycin A1"
+                    "gene_name": "mtmGIII"
                 }, 
                 {
-                    "gene_name": "mtmMII", 
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of  9-demethyl-premithramycin A2 , 9-demethyl-premithramycin A3 , 7-demethyl-mithramycin", 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        "Activity assay", 
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "CAK50790.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Methylation", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        "Activity assay", 
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": "Accumulation of  9-demethyl-premithramycin A2 , 9-demethyl-premithramycin A3 , 7-demethyl-mithramycin"
+                    "gene_name": "mtmMII"
                 }, 
                 {
-                    "gene_name": "mtmMI", 
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of 4-demethylpremithramycinone ", 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "CAK50791.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Methylation", 
+                    "gene_name": "mtmMI"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of premithramycin A1, A2, A3 and A4", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "Accumulation of 4-demethylpremithramycinone "
-                }, 
-                {
-                    "gene_name": "mtmGII", 
                     "gene_id": "CAK50792.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Glycosylation", 
+                    "gene_name": "mtmGII"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of premithramycin A1, A2, A3 and A4", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "Accumulation of premithramycin A1, A2, A3 and A4"
-                }, 
-                {
-                    "gene_name": "mtmGI", 
                     "gene_id": "CAK50793.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Glycosylation", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": "Accumulation of premithramycin A1, A2, A3 and A4"
+                    "gene_name": "mtmGI"
                 }, 
                 {
-                    "gene_name": "mtmOIV", 
-                    "gene_id": "CAK50794.2", 
                     "gene_function": "Tailoring", 
-                    "tailoring": "Hydroxylation", 
+                    "mut_pheno": "Accumulation of premithramycin B", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Activity assay", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "Accumulation of premithramycin B"
+                    "gene_id": "CAK50794.2", 
+                    "tailoring": "Hydroxylation", 
+                    "gene_name": "mtmOIV"
                 }
             ]
         }, 
-        "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Cyclic", 
-            "pks_subclass": [
-                "Type II"
-            ], 
-            "starter_unit": "Malonyl-CoA", 
-            "pks_genes": [
-                "caa61989.1", 
-                "caa61991.1"
-            ], 
-            "ketide_length": 10, 
-            "cyclases": "CAA61987.1 , CAA61988.1 , CAK50782.1"
-        }, 
+        "mibig_accession": "BGC0000247", 
         "Saccharide": {
             "saccharide_subclass": "oligosaccharide", 
             "gt_genes": [
                 {
-                    "gt_gene": "CAK50788.1", 
-                    "gt_specificity": "Other", 
+                    "evidence_gt_spec": "Activity assay", 
                     "other_gt_spec": "D-olivose and D-mycarose", 
-                    "evidence_gt_spec": "Activity assay"
+                    "gt_gene": "CAK50788.1", 
+                    "gt_specificity": "Other"
                 }, 
                 {
+                    "evidence_gt_spec": "Knock-out construct", 
                     "gt_gene": "CAK50789.1", 
-                    "gt_specificity": "D-oliose", 
-                    "evidence_gt_spec": "Knock-out construct"
+                    "gt_specificity": "D-oliose"
                 }, 
                 {
+                    "evidence_gt_spec": "Knock-out construct", 
                     "gt_gene": "CAK50792.1", 
-                    "gt_specificity": "D-olivose ", 
-                    "evidence_gt_spec": "Knock-out construct"
+                    "gt_specificity": "D-olivose "
                 }, 
                 {
+                    "evidence_gt_spec": "Knock-out construct", 
                     "gt_gene": "CAK50793.1", 
-                    "gt_specificity": "D-olivose ", 
-                    "evidence_gt_spec": "Knock-out construct"
+                    "gt_specificity": "D-olivose "
                 }
             ]
-        }
+        }, 
+        "biosyn_class": [
+            "Polyketide", 
+            "Saccharide"
+        ], 
+        "Polyketide": {
+            "cyclases": "CAA61987.1 , CAA61988.1 , CAK50782.1", 
+            "ketide_length": 10, 
+            "pks_subclass": [
+                "Type II"
+            ], 
+            "lin_cycl_pk": "Cyclic", 
+            "starter_unit": "Malonyl-CoA", 
+            "pk_subclass": "Other", 
+            "pks_genes": [
+                "caa61989.1", 
+                "caa61991.1"
+            ]
+        }, 
+        "publications": "8654997,9150235,10102355,11254130,8807845,8654997,8757400,9150235,9375253,9733697,9882681,9889148,9917296,10102355,10660060,10760873,10652287,10779713,11254130,11853433,12022840,12733914,12813091,14660589,15712316"
     }
 }
-

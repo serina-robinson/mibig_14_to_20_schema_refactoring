@@ -1,49 +1,12 @@
 {
     "personal": {
-        "submitter_email": "juan-pablo.gomez-escribano@jic.ac.uk", 
         "submitter_name": "Juan Pablo Gomez-Escribano", 
+        "submitter_email": "juan-pablo.gomez-escribano@jic.ac.uk", 
         "submitter_institution": "John Innes Centre; Norwich Research Park; Norwich; NR4 7UH; UK"
     }, 
     "version": "17", 
     "comments": "Chloramphenicol gene cluster comprises 17 genes (sven_0913 to sven_0929) including a monomodular NRPS. ", 
     "general_params": {
-        "loci": {
-            "nucl_acc": [
-                {
-                    "end_coord": 1061851, 
-                    "Accession": "FR845719", 
-                    "conn_comp_cluster": [
-                        "Knock-out studies", 
-                        "Enzymatic assays", 
-                        "Heterologous expression", 
-                        "Gene expression correlated with compound production", 
-                        "Sequence-based prediction"
-                    ], 
-                    "start_coord": 1039846
-                }
-            ], 
-            "complete": "complete"
-        }, 
-        "compounds": [
-            {
-                "mol_mass": "323.12938", 
-                "chem_struct": "C1=CC(=CC=C1[C@H]([C@@H](CO)NC(=O)C(Cl)Cl)O)[N+](=O)[O-]", 
-                "chem_synonyms": [], 
-                "database_deposited": true, 
-                "pubchem_id": 5959, 
-                "chemspider_id": 5744,
-                "chem_target": "23S rRNA", 
-                "compound": "chloramphenicol", 
-                "molecular_formula": "C11H12Cl2N2O5", 
-                "databases_deposited": [
-                    "PubChem",
-                    "ChemSpider"
-                ], 
-                "chem_act": [
-                    "Antibacterial"
-                ]
-            }
-        ], 
         "genes": {
             "gene": [
                 {
@@ -243,16 +206,16 @@
                 }, 
                 {
                     "gene_function": "Tailoring", 
-                    "gene_endpos": 1060672, 
+                    "mut_pheno": "Flavin-dependent halogenase (chlorination of chloramphenicol)", 
                     "evidence_genefunction": [
                         "Activity assay"
                     ], 
                     "gene_id": "CCA54215.1", 
+                    "tailoring": "Halogenation", 
                     "gene_annotation": "CmlS", 
-                    "mut_pheno": "Flavin-dependent halogenase (chlorination of chloramphenicol)", 
                     "gene_startpos": 1058957, 
                     "not_in_gbk": true, 
-                    "tailoring": "Halogenation", 
+                    "gene_endpos": 1060672, 
                     "gene_name": "SVEN_0928"
                 }, 
                 {
@@ -270,19 +233,56 @@
                 }
             ]
         }, 
+        "compounds": [
+            {
+                "chemspider_id": 5744, 
+                "mol_mass": "323.126", 
+                "chem_struct": "C1=CC(=CC=C1[C@H]([C@@H](CO)NC(=O)C(Cl)Cl)O)[N+](=O)[O-]", 
+                "databases_deposited": [
+                    "PubChem", 
+                    "ChemSpider"
+                ], 
+                "database_deposited": true, 
+                "pubchem_id": 5959, 
+                "chem_target": "23S rRNA", 
+                "compound": "chloramphenicol", 
+                "molecular_formula": "C11H12Cl2N2O5", 
+                "chem_synonyms": [], 
+                "chem_act": [
+                    "Antibacterial"
+                ]
+            }
+        ], 
+        "loci": {
+            "nucl_acc": [
+                {
+                    "end_coord": 1061851, 
+                    "Accession": "FR845719", 
+                    "conn_comp_cluster": [
+                        "Knock-out studies", 
+                        "Enzymatic assays", 
+                        "Heterologous expression", 
+                        "Gene expression correlated with compound production", 
+                        "Sequence-based prediction"
+                    ], 
+                    "start_coord": 1039846
+                }
+            ], 
+            "complete": "complete"
+        }, 
         "mibig_accession": "BGC0000893", 
         "biosyn_class": [
             "NRP"
         ], 
         "NRP": {
             "lin_cycl_nrp": "Linear", 
-            "nrps_release_type": "Reductive release", 
-            "nrps_te_type": "None", 
-            "subclass": "Other", 
             "nrps_thioesterase": [
                 "sven_0922m cca54209.1", 
                 "cmlp"
-            ]
+            ], 
+            "nrps_release_type": "Reductive release", 
+            "nrps_te_type": "None", 
+            "subclass": "Other"
         }, 
         "publications": "11577160,25267678,20876130,15184904,20713732,24347692,19255478,14702400"
     }

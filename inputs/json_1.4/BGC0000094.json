@@ -1,40 +1,35 @@
 {
-    "version": "17", 
     "personal": {
+        "submitter_email": "fenganyu@umich.edu", 
         "submitter_name": "Fengan Yu", 
-        "submitter_institution": "University of Michigan", 
-        "submitter_email": "fenganyu@umich.edu"
+        "submitter_institution": "University of Michigan"
     }, 
+    "embargo": true, 
+    "version": "17", 
     "general_params": {
-        "mibig_accession": "BGC0000094", 
-        "biosyn_class": [
-            "Polyketide", 
-            "Saccharide"
-        ], 
-        "publications": "9770448", 
         "loci": {
-            "complete": "partial", 
             "nucl_acc": [
                 {
-                    "Accession": "AF079138", 
-                    "start_coord": 1, 
                     "end_coord": 37948, 
+                    "Accession": "AF079138", 
                     "conn_comp_cluster": [
                         "Enzymatic assays"
-                    ]
+                    ], 
+                    "start_coord": 1
                 }
-            ]
+            ], 
+            "complete": "partial"
         }, 
         "compounds": [
             {
+                "mol_mass": 469.304, 
+                "chem_struct": "CC[C@@H]1[C@@](/C=C/C(=O)[C@@H](C[C@@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2[C@@H]([C@H](C[C@H](O2)C)N(C)C)O)C)C)(C)O", 
+                "mass_ion_type": "[M+H]+", 
                 "compound": "methymycin", 
+                "molecular_formula": "C25H43NO7", 
                 "chem_synonyms": [
                     "pikromycin"
                 ], 
-                "chem_struct": "CC[C@@H]1[C@@](/C=C/C(=O)[C@@H](C[C@@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2[C@@H]([C@H](C[C@H](O2)C)N(C)C)O)C)C)(C)O", 
-                "molecular_formula": "C25H43NO7", 
-                "mol_mass": 469.304, 
-                "mass_ion_type": "[M+H]+", 
                 "chem_act": [
                     "Antibacterial"
                 ]
@@ -86,52 +81,54 @@
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000094", 
+        "biosyn_class": [
+            "Polyketide", 
+            "Saccharide"
+        ], 
         "Polyketide": {
-            "pk_subclass": "Macrolide", 
-            "lin_cycl_pk": "Cyclic", 
+            "pks_te_type": "Type II", 
             "pks_subclass": [
                 "Modular type I"
             ], 
-            "starter_unit": "Malonyl-CoA", 
-            "pks_te_type": "Type II", 
-            "pks_thioesterase": [], 
-            "pks_release_type": "Macrolactamization", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AAC69329.1", 
                     "pks_module": [
                         {
-                            "module_nr": "0", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
                                 "T"
                             ], 
+                            "module_nr": "0", 
                             "at_substr_spec": "Propionyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Structure-based inference"
+                        }, 
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
-                        }, 
-                        {
-                            "module_nr": "1", 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
                                 "KR", 
                                 "T"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
                             "kr_stereochem": "B-group", 
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Structure-based inference"
+                        }, 
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
-                        }, 
-                        {
-                            "module_nr": "2", 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -139,13 +136,11 @@
                                 "KR", 
                                 "T"
                             ], 
+                            "module_nr": "2", 
                             "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
                             "kr_stereochem": "A-group", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }, 
@@ -153,23 +148,25 @@
                     "mod_pks_gene": "AAC69330.1", 
                     "pks_module": [
                         {
-                            "module_nr": "3", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
                                 "KR", 
                                 "T"
                             ], 
+                            "module_nr": "3", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
                             "kr_stereochem": "Inactive", 
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Structure-based inference"
+                        }, 
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
-                        }, 
-                        {
-                            "module_nr": "4", 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -178,13 +175,11 @@
                                 "KR", 
                                 "T"
                             ], 
+                            "module_nr": "4", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
                             "kr_stereochem": "A-group", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }, 
@@ -192,20 +187,20 @@
                     "mod_pks_gene": "AAC69331.1", 
                     "pks_module": [
                         {
-                            "module_nr": "5", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
                                 "KR", 
                                 "T"
                             ], 
+                            "module_nr": "5", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
                             "kr_stereochem": "A-group", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }, 
@@ -213,24 +208,28 @@
                     "mod_pks_gene": "AAC69332.1", 
                     "pks_module": [
                         {
-                            "module_nr": "6", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
                                 "T"
                             ], 
+                            "module_nr": "6", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
-            ]
-        }
-    }, 
-    "embargo": true
+            ], 
+            "pks_thioesterase": [], 
+            "starter_unit": "Malonyl-CoA", 
+            "pk_subclass": "Macrolide", 
+            "lin_cycl_pk": "Cyclic", 
+            "pks_release_type": "Macrolactamization"
+        }, 
+        "publications": "9770448"
+    }
 }
-

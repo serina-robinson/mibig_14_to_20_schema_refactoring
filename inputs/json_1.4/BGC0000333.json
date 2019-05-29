@@ -1,160 +1,161 @@
 {
-    "version": "15", 
     "personal": {
+        "submitter_email": "nziemert@ucsd.edu", 
         "submitter_name": "Nadine Ziemert", 
-        "submitter_institution": "University of Tuebingen", 
-        "submitter_email": "nziemert@ucsd.edu"
+        "submitter_institution": "University of Tuebingen"
     }, 
+    "version": "15", 
     "general_params": {
-        "mibig_accession": "BGC0000333", 
-        "biosyn_class": [
-            "NRP"
-        ], 
-        "publications": "18331040, 20055491", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "CP000850", 
-                    "start_coord": 5140169, 
                     "end_coord": 5187645, 
+                    "Accession": "CP000850", 
                     "conn_comp_cluster": [
                         "Knock-out studies"
-                    ]
+                    ], 
+                    "start_coord": 5140169
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "cyclomarin D", 
+                "mol_mass": "1013.291", 
+                "chem_struct": "C[C@H]1C(=O)N[C@H](C(=O)N[C@H](C(=O)N([C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)C[C@@H](C)CO)[C@@H](C2=CN(C3=CC=CC=C32)C(C)(C)C=C)O)[C@H](C)C=C(C)C)CC(C)C)C)C(C)C)[C@@H](C4=CC=CC=C4)OC", 
                 "chem_synonyms": [], 
                 "database_deposited": true, 
-                "databases_deposited": [
-                    "PubChem"
-                ], 
                 "pubchem_id": 25220882, 
-                "chem_act": [
-                    "Cytotoxic"
-                ], 
+                "compound": "cyclomarin D", 
+                "molecular_formula": "C55H80N8O10", 
                 "chem_moieties": [
                     {
                         "chem_moiety": "Other", 
-                        "other_chem_moiety": "2-amino-3,5- dimethyl-4-hexenoic acid  (ADH)", 
                         "moiety_subcluster": [
                             "sare4566", 
                             "sare4567", 
                             "sare4568", 
                             "sare4569"
-                        ]
+                        ], 
+                        "other_chem_moiety": "2-amino-3,5- dimethyl-4-hexenoic acid  (ADH)"
                     }
+                ], 
+                "databases_deposited": [
+                    "PubChem"
+                ], 
+                "chem_act": [
+                    "Cytotoxic"
                 ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "cymD", 
-                    "gene_id": "SARE4565", 
-                    "gene_annotation": "N -prenyltransferase", 
                     "gene_function": "Tailoring", 
                     "tailoring": "Prenylation", 
                     "evidence_genefunction": [
                         "Activity assay"
                     ], 
-                    "mut_pheno": "desprenylcyclomarin C"
+                    "gene_id": "SARE4565", 
+                    "gene_annotation": "N -prenyltransferase", 
+                    "mut_pheno": "desprenylcyclomarin C", 
+                    "gene_name": "cymD"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000333", 
+        "biosyn_class": [
+            "NRP"
+        ], 
         "NRP": {
-            "subclass": "Other", 
-            "lin_cycl_nrp": "Cyclic", 
+            "nrps_release_type": "Macrolactamization", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "sare4562", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "7", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic", 
-                                "nonprot_adom_spec": "Other", 
+                                "aa_subcluster": [], 
                                 "other_spec": "2-Amino-3,5-dimethyl-4-hexenoic Acid", 
                                 "evidence_a_spec": "Structure-based inference", 
-                                "aa_subcluster": []
+                                "nonprot_adom_spec": "Other", 
+                                "aa_type": "Nonproteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "6", 
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
-                                "prot_adom_spec": "Leucine"
-                            }, 
-                            "cdom_subtype": "LCL", 
                             "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Leucine", 
+                                "aa_type": "Proteinogenic"
+                            }, 
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "5", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Valine", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "4", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Phenylalanine", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "3", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Alanine", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "2", 
+                            "nrps_mod_doms": "Methylation", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Leucine", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "Methylation"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "1", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Tryptophan", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "None", 
-                            "nrps_mod_doms": "None"
+                            "cdom_subtype": "None"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "sare4562"
                 }
             ], 
+            "subclass": "Other", 
+            "lin_cycl_nrp": "Cyclic", 
             "nrps_te_type": "Type I", 
             "nrps_thioesterase": [
                 "sare4565"
-            ], 
-            "nrps_release_type": "Macrolactamization"
-        }
+            ]
+        }, 
+        "publications": "18331040, 20055491"
     }
 }
-
-

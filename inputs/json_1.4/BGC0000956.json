@@ -1,51 +1,52 @@
 {
-    "version": "11", 
     "personal": {
+        "submitter_email": "antonio_ruzzini@hms.harvard.edu", 
         "submitter_name": "Antonio Ruzzini", 
-        "submitter_institution": "Harvard Medical School", 
-        "submitter_email": "antonio_ruzzini@hms.harvard.edu"
+        "submitter_institution": "Harvard Medical School"
     }, 
+    "version": "11", 
     "general_params": {
-    	"mibig_accession": "BGC0000956", 
-        "biosyn_class": [
-            "NRP", 
-            "Polyketide"
-        ], 
-        "publications": "15066985, 16910643, 17653193, 18652473, 18768797, 21561099", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "AY192157", 
-                    "start_coord": 1, 
                     "end_coord": 28485, 
+                    "Accession": "AY192157", 
                     "conn_comp_cluster": [
                         "Enzymatic assays", 
                         "Heterologous expression", 
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "start_coord": 1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "andrimid", 
-                "chem_synonyms": [],
+                "mol_mass": "479.577", 
+                "chem_struct": "C/C=C/C=C/C=C/C(=O)N[C@@H](CC(=O)N[C@@H](C(C)C)C(=O)[C@H]1[C@@H](C(=O)NC1=O)C)C2=CC=CC=C2", 
+                "chem_synonyms": [], 
                 "database_deposited": true, 
+                "pubchem_id": 636857, 
+                "chem_target": "beta-subunit of acetyl-CoA carboxylase", 
+                "compound": "andrimid", 
+                "molecular_formula": "C27H33N3O5", 
                 "databases_deposited": [
                     "PubChem"
                 ], 
-                "pubchem_id": 636857, 
                 "chem_act": [
                     "Antibacterial"
-                ], 
-                "chem_target": "beta-subunit of acetyl-CoA carboxylase"
+                ]
             }
         ], 
         "genes": {}, 
+        "mibig_accession": "BGC0000956", 
+        "biosyn_class": [
+            "NRP", 
+            "Polyketide"
+        ], 
         "NRP": {
-            "subclass": "Beta-lactam", 
-            "lin_cycl_nrp": "Linear", 
+            "nrps_release_type": "Hydrolysis", 
             "nrps_genes": [
                 {
                     "nrps_gene": "AdmI"
@@ -66,24 +67,25 @@
                     "nrps_gene": "AdmM"
                 }
             ], 
+            "subclass": "Beta-lactam", 
+            "lin_cycl_nrp": "Linear", 
             "nrps_te_type": "Type I", 
             "nrps_thioesterase": [
                 "admm"
-            ], 
-            "nrps_release_type": "Hydrolysis"
+            ]
         }, 
         "Polyketide": {
-            "pk_subclass": "Ansamycin", 
-            "lin_cycl_pk": "Linear", 
+            "ketide_length": 8, 
             "pks_subclass": [
                 "Type II"
             ], 
+            "lin_cycl_pk": "Linear", 
             "starter_unit": "Malonyl-CoA", 
+            "pk_subclass": "Ansamycin", 
             "pks_genes": [
                 "AAO39098.1"
-            ], 
-            "ketide_length": 8
-        }
+            ]
+        }, 
+        "publications": "15066985, 16910643, 17653193, 18652473, 18768797, 21561099"
     }
 }
-

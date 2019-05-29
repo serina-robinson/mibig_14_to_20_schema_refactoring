@@ -1,72 +1,73 @@
 {
-    "version": "11", 
     "personal": {
+        "submitter_email": "h.bode@bio.uni-frankfurt.de", 
         "submitter_name": "Helge Bode", 
-        "submitter_institution": "Goethe Universit\u00c3\u00a4t Frankfurt", 
-        "submitter_email": "h.bode@bio.uni-frankfurt.de"
+        "submitter_institution": "Goethe Universitaet Frankfurt"
     }, 
+    "version": "11", 
     "general_params": {
-        "mibig_accession": "BGC0000465", 
-        "biosyn_class": [
-            "NRP"
-        ], 
-        "publications": "25080196,18491867,21888371", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "FN667742", 
-                    "start_coord": 2245621, 
                     "end_coord": 2235579, 
+                    "Accession": "FN667742", 
                     "conn_comp_cluster": [
                         "Knock-out studies"
-                    ]
+                    ], 
+                    "start_coord": 2245621
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "Xenortide A", 
+                "mol_mass": "409.574", 
+                "chem_struct": "CC(C)C[C@@H](C(=O)N(C)[C@@H](CC1=CC=CC=C1)C(=O)NCCC2=CC=CC=C2)NC", 
                 "chem_synonyms": [], 
                 "database_deposited": true, 
-                "databases_deposited": [
-                    "PubChem"
-                ], 
                 "pubchem_id": 24900168, 
-                "chem_act": [
-                    "Cytotoxic"
-                ]
-            }, 
-            {
-                "compound": "Xenortide B", 
-                "chem_synonyms": [], 
-                "database_deposited": true, 
+                "compound": "Xenortide A", 
+                "molecular_formula": "C25H35N3O2", 
                 "databases_deposited": [
                     "PubChem"
                 ], 
-                "pubchem_id": 24900169, 
                 "chem_act": [
                     "Cytotoxic"
                 ]
             }, 
             {
-                "compound": "Xenortide C", 
+                "mol_mass": "448.611", 
+                "chem_struct": "CC(C)C[C@@H](C(=O)N(C)[C@@H](CC1=CC=CC=C1)C(=O)NCCC2=CNC3=CC=CC=C32)NC", 
                 "chem_synonyms": [], 
-                "chem_struct": "CN[C@@H](C(C)C)C(N([C@H](C(NCCC1=CC=CC=C1)=O)CC2=CC=CC=C2)C)=O", 
-                "molecular_formula": "C24H34N3O2", 
+                "database_deposited": true, 
+                "pubchem_id": 24900169, 
+                "compound": "Xenortide B", 
+                "molecular_formula": "C27H36N4O2", 
+                "databases_deposited": [
+                    "PubChem"
+                ], 
+                "chem_act": [
+                    "Cytotoxic"
+                ]
+            }, 
+            {
                 "mol_mass": 396.2642, 
+                "chem_struct": "CN[C@@H](C(C)C)C(N([C@H](C(NCCC1=CC=CC=C1)=O)CC2=CC=CC=C2)C)=O", 
                 "mass_ion_type": "[M+H]+", 
+                "compound": "Xenortide C", 
+                "molecular_formula": "C24H34N3O2", 
+                "chem_synonyms": [], 
                 "chem_act": [
                     "Unknown"
                 ]
             }, 
             {
-                "compound": "Xenortide D", 
-                "chem_synonyms": [], 
-                "chem_struct": "CN[C@@H](C(C)C)C(N([C@H](C(NCCC1=CNC2=C1C=CC=C2)=O)CC3=CC=CC=C3)C)=O", 
-                "molecular_formula": "C26H35N4O2", 
                 "mol_mass": 435.2755, 
+                "chem_struct": "CN[C@@H](C(C)C)C(N([C@H](C(NCCC1=CNC2=C1C=CC=C2)=O)CC3=CC=CC=C3)C)=O", 
                 "mass_ion_type": "[M+H]+", 
+                "compound": "Xenortide D", 
+                "molecular_formula": "C26H35N4O2", 
+                "chem_synonyms": [], 
                 "chem_act": [
                     "Unknown"
                 ]
@@ -75,32 +76,35 @@
         "genes": {
             "gene": [
                 {
-                    "gene_name": "xndA", 
-                    "gene_id": "XNC1_2299", 
                     "gene_function": "Scaffold biosynthesis", 
                     "evidence_genefunction": [
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "gene_id": "XNC1_2299", 
+                    "gene_name": "xndA"
                 }, 
                 {
-                    "gene_name": "xndB", 
-                    "gene_id": "XNC1_2300", 
+                    "mut_pheno": "Loss of all xenortide production", 
                     "gene_function": "Scaffold biosynthesis", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "Loss of all xenortide production"
+                    "gene_id": "XNC1_2300", 
+                    "gene_name": "xndB"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000465", 
+        "biosyn_class": [
+            "NRP"
+        ], 
         "NRP": {
-            "subclass": "Other", 
             "lin_cycl_nrp": "Linear", 
+            "nrps_release_type": "Unknown", 
             "nrps_te_type": "None", 
-            "nrps_thioesterase": [], 
-            "nrps_release_type": "Unknown"
-        }
+            "subclass": "Other", 
+            "nrps_thioesterase": []
+        }, 
+        "publications": "25080196,18491867,21888371"
     }
 }
-
-

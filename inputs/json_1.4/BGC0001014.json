@@ -1,285 +1,277 @@
 {
-    "version": "16", 
     "personal": {
+        "submitter_email": "markus.nett@hki-jena.de", 
         "submitter_name": "Markus Nett", 
-        "submitter_institution": "Hans-Knoell-Institute", 
-        "submitter_email": "markus.nett@hki-jena.de"
+        "submitter_institution": "Hans-Knoell-Institute"
     }, 
+    "version": "16", 
     "general_params": {
-        "mibig_accession": "BGC0001014", 
-        "biosyn_class": [
-            "NRP", 
-            "Polyketide"
-        ], 
-        "publications": "21724891,23790487,24202877", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "AL646052", 
-                    "start_coord": 1941939, 
                     "end_coord": 1980062, 
+                    "Accession": "AL646052", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Enzymatic assays", 
                         "Heterologous expression"
-                    ]
+                    ], 
+                    "start_coord": 1941939
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "micacocidin", 
-                "chem_synonyms": [], 
-                "chem_struct": "OC1=C(C2=N[C@]([C@@]3([H])SC[C@]([C@@H](O)C(C)(C)C4=N[C@](C(O)=O)(C)CS4)([H])N3C)([H])CS2)C(CCCCC)=CC=C1", 
-                "molecular_formula": "C27H39N3O4S3", 
                 "mol_mass": 566.2175, 
+                "chem_struct": "OC1=C(C2=N[C@]([C@@]3([H])SC[C@]([C@@H](O)C(C)(C)C4=N[C@](C(O)=O)(C)CS4)([H])N3C)([H])CS2)C(CCCCC)=CC=C1", 
                 "mass_ion_type": "[M+H]+", 
-                "chem_act": [
-                    "Antibacterial", 
-                    "Siderophore"
-                ], 
                 "chem_moieties": [
                     {
                         "chem_moiety": "Other", 
-                        "other_chem_moiety": "6-pentylsalicylic acid", 
-                        "moiety_subcluster": []
+                        "moiety_subcluster": [], 
+                        "other_chem_moiety": "6-pentylsalicylic acid"
                     }
+                ], 
+                "compound": "micacocidin", 
+                "molecular_formula": "C27H39N3O4S3", 
+                "chem_synonyms": [], 
+                "chem_act": [
+                    "Antibacterial", 
+                    "Siderophore"
                 ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "micA", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1944437, 
+                    "gene_function": "Activation / processing", 
                     "gene_endpos": 1941939, 
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ], 
                     "gene_id": "CAD15506.1", 
                     "gene_annotation": "protein with thioesterase and phosphopantetheinyl transferase domains", 
-                    "gene_function": "Activation / processing", 
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ]
+                    "gene_startpos": 1944437, 
+                    "not_in_gbk": false, 
+                    "gene_name": "micA"
                 }, 
                 {
-                    "gene_name": "micB", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1945597, 
+                    "gene_function": "Tailoring", 
                     "gene_endpos": 1944434, 
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ], 
                     "gene_id": "CAD15507.1", 
                     "gene_annotation": "thiazolinyl imide reductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": null, 
+                    "gene_startpos": 1945597, 
+                    "not_in_gbk": false, 
                     "tailoring": "Reduction", 
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ], 
-                    "mut_pheno": null
+                    "gene_name": "micB"
                 }, 
                 {
-                    "gene_name": "micC", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1958620, 
+                    "gene_function": "Scaffold biosynthesis", 
                     "gene_endpos": 1945814, 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "CAD15508.1", 
                     "gene_annotation": "polyketide synthase/non-ribosomal peptide synthetase", 
-                    "gene_function": "Scaffold biosynthesis", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "loss of micacocidin production"
+                    "gene_startpos": 1958620, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "loss of micacocidin production", 
+                    "gene_name": "micC"
                 }, 
                 {
-                    "gene_name": "micD", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1958894, 
+                    "gene_function": "Transport", 
                     "gene_endpos": 1960969, 
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "CAD15509.1", 
                     "gene_annotation": "TonB-dependent receptor", 
+                    "gene_startpos": 1958894, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "micD"
+                }, 
+                {
                     "gene_function": "Transport", 
+                    "gene_endpos": 1962933, 
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": null
-                }, 
-                {
-                    "gene_name": "micE", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1961077, 
-                    "gene_endpos": 1962933, 
                     "gene_id": "CAD15510.1", 
                     "gene_annotation": "ATP-binding transmembrane ABC transporter protein", 
+                    "gene_startpos": 1961077, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "micE"
+                }, 
+                {
                     "gene_function": "Transport", 
+                    "gene_endpos": 1964675, 
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": null
-                }, 
-                {
-                    "gene_name": "micF", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1962930, 
-                    "gene_endpos": 1964675, 
                     "gene_id": "CAD15511.1", 
                     "gene_annotation": "ATP-binding transmembrane ABC transporter protein", 
-                    "gene_function": "Transport", 
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": null
+                    "gene_startpos": 1962930, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "micF"
                 }, 
                 {
-                    "gene_name": "micG", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1964976, 
+                    "gene_function": "Scaffold biosynthesis", 
                     "gene_endpos": 1972118, 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "CAD15512.1", 
                     "gene_annotation": "polyketide synthase", 
+                    "gene_startpos": 1964976, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "loss of micacocidin production", 
+                    "gene_name": "micG"
+                }, 
+                {
                     "gene_function": "Scaffold biosynthesis", 
+                    "gene_endpos": 1978570, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "loss of micacocidin production"
-                }, 
-                {
-                    "gene_name": "micH", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1972550, 
-                    "gene_endpos": 1978570, 
                     "gene_id": "CAD15513.1", 
                     "gene_annotation": "non-ribosomal peptide synthetase", 
-                    "gene_function": "Scaffold biosynthesis", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "loss of micacocidin production"
+                    "gene_startpos": 1972550, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "loss of micacocidin production", 
+                    "gene_name": "micH"
                 }, 
                 {
-                    "gene_name": "micI", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1978660, 
-                    "gene_endpos": 1979076, 
-                    "gene_id": "CAD15514.1", 
-                    "gene_annotation": "conserved hypothetical protein", 
                     "gene_function": "Unknown", 
+                    "gene_endpos": 1979076, 
                     "evidence_genefunction": [
                         "N/A"
                     ], 
-                    "mut_pheno": null
+                    "gene_id": "CAD15514.1", 
+                    "gene_annotation": "conserved hypothetical protein", 
+                    "gene_startpos": 1978660, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "micI"
                 }, 
                 {
-                    "gene_name": "micJ", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 1980062, 
-                    "gene_endpos": 1979151, 
-                    "gene_id": "CAD15515.1", 
-                    "gene_annotation": "AraC-like regulator", 
                     "gene_function": "Regulation", 
+                    "gene_endpos": 1979151, 
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": null
+                    "gene_id": "CAD15515.1", 
+                    "gene_annotation": "AraC-like regulator", 
+                    "gene_startpos": 1980062, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "micJ"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0001014", 
+        "biosyn_class": [
+            "NRP", 
+            "Polyketide"
+        ], 
         "NRP": {
-            "subclass": "NRP siderophore", 
             "lin_cycl_nrp": "Linear", 
-            "nrps_te_type": "Both", 
-            "nrps_release_type": "Hydrolysis", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "CAD15508.1", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "0", 
-                            "a_substr_spec": {
-                                "aa_type": "None", 
-                                "evidence_a_spec": "Activity assay", 
-                                "epimerized": false
-                            }, 
-                            "cdom_subtype": "N/A", 
                             "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "epimerized": false, 
+                                "evidence_a_spec": "Activity assay", 
+                                "aa_type": "None"
+                            }, 
+                            "cdom_subtype": "N/A"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "2", 
+                            "nrps_mod_doms": "Methylation", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
+                                "epimerized": false, 
                                 "prot_adom_spec": "Cysteine", 
                                 "evidence_a_spec": "Structure-based inference", 
-                                "epimerized": false
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "Heterocyclization", 
-                            "nrps_mod_doms": "Methylation", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Heterocyclization"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "3", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
                                 "epimerized": false
                             }, 
-                            "cdom_subtype": "Heterocyclization", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Heterocyclization"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "CAD15508.1"
                 }, 
                 {
-                    "nrps_gene": "CAD15513.1", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "5", 
+                            "nrps_mod_doms": "Methylation", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
+                                "epimerized": false, 
                                 "prot_adom_spec": "Cysteine", 
                                 "evidence_a_spec": "Structure-based inference", 
-                                "epimerized": false
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "Heterocyclization", 
-                            "nrps_mod_doms": "Methylation", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Heterocyclization"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "CAD15513.1"
                 }
-            ]
+            ], 
+            "nrps_te_type": "Both", 
+            "subclass": "NRP siderophore", 
+            "nrps_release_type": "Hydrolysis"
         }, 
         "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Cyclic", 
+            "nr_iterations": 2, 
+            "pks_te_type": "None", 
+            "iter_cycl_type": "C2-C7 first", 
             "pks_subclass": [
                 "Modular type I", 
                 "Iterative type I"
             ], 
-            "starter_unit": "Hexanoyl-ACP", 
-            "pks_genes": [
-                "rsc1806"
-            ], 
-            "nr_iterations": 2, 
-            "iterative_subtype": "Partially reducing", 
-            "iter_cycl_type": "C2-C7 first", 
-            "pks_te_type": "None", 
-            "pks_release_type": "Other", 
+            "lin_cycl_pk": "Cyclic", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "CAD15508.1", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
+                            "pks_evidence_skip_iter": "Activity assay", 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
                                 "KR", 
                                 "T"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Activity assay", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Iterated", 
-                            "pks_evidence_skip_iter": "Activity assay"
+                            "evidence_at_spec": "Activity assay"
                         }
                     ]
                 }, 
@@ -287,23 +279,29 @@
                     "mod_pks_gene": "CAD15512.1", 
                     "pks_module": [
                         {
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ], 
                             "module_nr": "4", 
+                            "kr_stereochem": "Unknown", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "KS", 
                                 "KR", 
                                 "T"
-                            ], 
-                            "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ], 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }
                     ]
                 }
-            ]
-        }
+            ], 
+            "iterative_subtype": "Partially reducing", 
+            "starter_unit": "Hexanoyl-ACP", 
+            "pk_subclass": "Other", 
+            "pks_genes": [
+                "rsc1806"
+            ], 
+            "pks_release_type": "Other"
+        }, 
+        "publications": "21724891,23790487,24202877"
     }
 }
-
-

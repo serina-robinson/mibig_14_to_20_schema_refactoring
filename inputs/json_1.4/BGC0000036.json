@@ -1,48 +1,33 @@
 {
-    "version": "14", 
     "personal": {
+        "submitter_email": "tiantou81@hotmail.com", 
         "submitter_name": "Zhenhua Tian", 
-        "submitter_institution": "Shanghai Institute of Organic Chemistry, Chinese Academy of Science", 
-        "submitter_email": "tiantou81@hotmail.com"
+        "submitter_institution": "Shanghai Institute of Organic Chemistry, Chinese Academy of Science"
     }, 
+    "version": "14", 
     "general_params": {
-    	"mibig_accession": "BGC0000036",
-        "biosyn_class": [
-            "Polyketide", 
-            "Saccharide" 
-        ], 
-        "publications": "16793515,16677607,20534347,19266533", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "DQ116941", 
-                    "start_coord": -1, 
                     "end_coord": -1, 
+                    "Accession": "DQ116941", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Enzymatic assays", 
                         "Heterologous expression", 
                         "Gene expression correlated with compound production", 
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "start_coord": -1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "chlorothricin", 
-                "chem_synonyms": [
-                    "chl"
-                ], 
-                "chem_struct": "C[C@@H](C(C(O)=O)=C1)C[C@@]2(C(O)=C(O3)C(O2)=O)[C@@H]1C=CCCCC[C@@H]4C=C[C@@]([C@@H](O[C@@H]5C[C@H](O)[C@@H](O[C@H]6O[C@@H](C)[C@H](O)[C@@H](OC(C7=C(C)C(Cl)=CC=C7OC)=O)C6)[C@@H](C)O5)CCC8)([H])[C@]8([H])[C@@H]4C3=O", 
-                "molecular_formula": "C49H61ClO16", 
                 "mol_mass": 940.3648, 
+                "chem_struct": "C[C@@H](C(C(O)=O)=C1)C[C@@]2(C(O)=C(O3)C(O2)=O)[C@@H]1C=CCCCC[C@@H]4C=C[C@@]([C@@H](O[C@@H]5C[C@H](O)[C@@H](O[C@H]6O[C@@H](C)[C@H](O)[C@@H](OC(C7=C(C)C(Cl)=CC=C7OC)=O)C6)[C@@H](C)O5)CCC8)([H])[C@]8([H])[C@@H]4C3=O", 
                 "mass_ion_type": "None", 
-                "chem_act": [
-                    "Antibacterial"
-                ], 
-                "chem_target": "Pyruvate biosynthesis", 
                 "chem_moieties": [
                     {
                         "chem_moiety": "6-methylsalicylic acid", 
@@ -55,94 +40,121 @@
                             "chlb6"
                         ]
                     }
+                ], 
+                "chem_target": "Pyruvate biosynthesis", 
+                "compound": "chlorothricin", 
+                "molecular_formula": "C49H61ClO16", 
+                "chem_synonyms": [
+                    "chl"
+                ], 
+                "chem_act": [
+                    "Antibacterial"
                 ]
             }, 
             {
+                "mol_mass": 906.4038, 
+                "chem_struct": "C[C@@H](C(C(O)=O)=C1)C[C@@]2(C(O)=C(O3)C(O2)=O)[C@@H]1C=CCCCC[C@@H]4C=C[C@@]([C@@H](O[C@@H]5C[C@H](O)[C@@H](O[C@H]6O[C@@H](C)[C@H](O)[C@@H](OC(C7=C(C)C=CC=C7OC)=O)C6)[C@@H](C)O5)CCC8)([H])[C@]8([H])[C@@H]4C3=O", 
+                "mass_ion_type": "None", 
+                "chem_target": "Pyruvate biosynthesis", 
                 "compound": "deschlorothricin", 
+                "molecular_formula": "C49H62O16", 
                 "chem_synonyms": [
                     "deschl"
                 ], 
-                "chem_struct": "C[C@@H](C(C(O)=O)=C1)C[C@@]2(C(O)=C(O3)C(O2)=O)[C@@H]1C=CCCCC[C@@H]4C=C[C@@]([C@@H](O[C@@H]5C[C@H](O)[C@@H](O[C@H]6O[C@@H](C)[C@H](O)[C@@H](OC(C7=C(C)C=CC=C7OC)=O)C6)[C@@H](C)O5)CCC8)([H])[C@]8([H])[C@@H]4C3=O", 
-                "molecular_formula": "C49H62O16", 
-                "mol_mass": 906.4038, 
-                "mass_ion_type": "None", 
                 "chem_act": [
                     "Antibacterial"
-                ], 
-                "chem_target": "Pyruvate biosynthesis"
+                ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "chlB1", 
-                    "gene_id": "AAZ77673", 
-                    "gene_annotation": "6-methlysalicylic acid synthase", 
                     "gene_function": "Other enzymatic", 
+                    "mut_pheno": "6-methylsalicylic acid non-produce", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Heterologous expression", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "6-methylsalicylic acid non-produce"
+                    "gene_id": "AAZ77673", 
+                    "gene_annotation": "6-methlysalicylic acid synthase", 
+                    "gene_name": "chlB1"
                 }, 
                 {
-                    "gene_name": "chlB6", 
-                    "gene_id": "AAZ77679", 
-                    "gene_annotation": "6-methlysalicylic acid acylase", 
                     "gene_function": "Activation / processing", 
+                    "mut_pheno": "CHL not produced", 
                     "evidence_genefunction": [
                         "Knock-out", 
                         "Heterologous expression", 
                         "Activity assay", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "CHL not produced"
+                    "gene_id": "AAZ77679", 
+                    "gene_annotation": "6-methlysalicylic acid acylase", 
+                    "gene_name": "chlB6"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000036", 
+        "Saccharide": {
+            "saccharide_subclass": "oligosaccharide", 
+            "gt_genes": [
+                {
+                    "gt_gene": "ChlC6", 
+                    "gt_specificity": "Unknown"
+                }, 
+                {
+                    "gt_gene": "ChlC7", 
+                    "gt_specificity": "Unknown"
+                }
+            ]
+        }, 
+        "biosyn_class": [
+            "Polyketide", 
+            "Saccharide"
+        ], 
         "Polyketide": {
-            "pk_subclass": "Macrolide", 
-            "lin_cycl_pk": "Linear", 
+            "nr_iterations": 2, 
+            "pks_te_type": "None", 
+            "iter_cycl_type": "C2-C7 first", 
             "pks_subclass": [
                 "Modular type I", 
                 "Iterative type I"
             ], 
-            "starter_unit": "Acetyl-CoA", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "chlA1", 
                     "pks_module": [
                         {
+                            "pks_mod_doms": "None", 
+                            "pks_domains": [
+                                "Ketosynthase", 
+                                "Acyltransferase", 
+                                "Thiolation (ACP/PCP)"
+                            ], 
                             "module_nr": "0", 
-                            "pks_domains": [
-                                "Ketosynthase", 
-                                "Acyltransferase", 
-                                "Thiolation (ACP/PCP)"
-                            ], 
                             "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }, 
                         {
+                            "pks_mod_doms": "None", 
+                            "pks_domains": [
+                                "Ketosynthase", 
+                                "Acyltransferase", 
+                                "Ketoreductase", 
+                                "Dehydratase", 
+                                "Thiolation (ACP/PCP)"
+                            ], 
                             "module_nr": "1", 
-                            "pks_domains": [
-                                "Ketosynthase", 
-                                "Acyltransferase", 
-                                "Ketoreductase", 
-                                "Dehydratase", 
-                                "Thiolation (ACP/PCP)"
-                            ], 
                             "at_substr_spec": "methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }, 
                         {
-                            "module_nr": "2", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -150,19 +162,19 @@
                                 "Dehydratase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "2", 
                             "at_substr_spec": "malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
-                        } 
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
+                        }
                     ]
-                },
+                }, 
                 {
                     "mod_pks_gene": "chlA2", 
                     "pks_module": [
                         {
-                            "module_nr": "3", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -170,14 +182,14 @@
                                 "Dehydratase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "3", 
                             "at_substr_spec": "malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
-                        },  
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
+                        }, 
                         {
-                            "module_nr": "4", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -186,19 +198,19 @@
                                 "Enoylreductase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "4", 
                             "at_substr_spec": "malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
-                        } 
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
+                        }
                     ]
-                },
+                }, 
                 {
                     "mod_pks_gene": "chlA3", 
                     "pks_module": [
                         {
-                            "module_nr": "5", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -207,29 +219,29 @@
                                 "Enoylreductase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "5", 
                             "at_substr_spec": "malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }, 
                         {
+                            "pks_mod_doms": "None", 
+                            "pks_domains": [
+                                "Ketosynthase", 
+                                "Acyltransferase", 
+                                "Ketoreductase", 
+                                "Dehydratase", 
+                                "Thiolation (ACP/PCP)"
+                            ], 
                             "module_nr": "6", 
-                            "pks_domains": [
-                                "Ketosynthase", 
-                                "Acyltransferase", 
-                                "Ketoreductase", 
-                                "Dehydratase", 
-                                "Thiolation (ACP/PCP)"
-                            ], 
                             "at_substr_spec": "malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }, 
                         {
-                            "module_nr": "7", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -237,19 +249,19 @@
                                 "Dehydratase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "7", 
                             "at_substr_spec": "malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
-                        } 
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
+                        }
                     ]
-                },
+                }, 
                 {
                     "mod_pks_gene": "chlA4", 
                     "pks_module": [
                         {
-                            "module_nr": "8", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -257,19 +269,19 @@
                                 "Dehydratase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "8", 
                             "at_substr_spec": "malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
-                        }  
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
+                        }
                     ]
-                },
+                }, 
                 {
                     "mod_pks_gene": "chlA5", 
                     "pks_module": [
                         {
-                            "module_nr": "9", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -278,14 +290,14 @@
                                 "Enoylreductase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "9", 
                             "at_substr_spec": "malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
-                        },   
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
+                        }, 
                         {
-                            "module_nr": "10", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -293,56 +305,42 @@
                                 "Dehydratase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "10", 
                             "at_substr_spec": "methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
-                        } 
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
+                        }
                     ]
                 }, 
                 {
                     "mod_pks_gene": "chlA6", 
                     "pks_module": [
                         {
-                            "module_nr": "11", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "11", 
                             "at_substr_spec": "malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
-                        }  
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
+                        }
                     ]
-                } 
+                }
             ], 
             "pks_genes": [
                 "chlb1"
             ], 
-            "nr_iterations": 2, 
             "iterative_subtype": "Partially reducing", 
-            "iter_cycl_type": "C2-C7 first", 
-            "pks_te_type": "None", 
+            "starter_unit": "Acetyl-CoA", 
+            "pk_subclass": "Macrolide", 
+            "lin_cycl_pk": "Linear", 
             "pks_release_type": "Claisen condensation"
         }, 
-        "Saccharide": {
-            "saccharide_subclass": "oligosaccharide", 
-            "gt_genes": [
-                {
-                    "gt_gene": "ChlC6",
-                    "gt_specificity": "Unknown" 
-                },
-                {
-                	"gt_gene": "ChlC7",
-                    "gt_specificity": "Unknown" 
-                }
-            ]
-        }
+        "publications": "16793515,16677607,20534347,19266533"
     }
 }
-
-

@@ -1,163 +1,160 @@
 {
-    "version": "10", 
     "personal": {
+        "submitter_email": "jasalas@uniovi.es", 
         "submitter_name": "Jose A. Salas", 
-        "submitter_institution": "University of Oviedo", 
-        "submitter_email": "jasalas@uniovi.es"
+        "submitter_institution": "University of Oviedo"
     }, 
+    "version": "10", 
     "general_params": {
-        "mibig_accession": "BGC0000973", 
-        "biosyn_class": [
-            "NRP", 
-            "Polyketide"
-        ], 
-        "publications": "22444595", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "HE575208", 
-                    "start_coord": -1, 
                     "end_coord": -1, 
+                    "Accession": "HE575208", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "start_coord": -1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "collismycin A", 
-                "chem_synonyms": [], 
-                "chem_struct": "COC1=C(/C(=C\\\\N=O)/NC(=C1)C2=CC=CC=N2)SC", 
-                "molecular_formula": "C13H13N3O2S", 
                 "mol_mass": 276.33, 
+                "other_chem_act": "Neuroprotectant", 
+                "chem_struct": "COC1=C(/C(=C\\\\N=O)/NC(=C1)C2=CC=CC=N2)SC", 
                 "mass_ion_type": "[M+H]+", 
+                "compound": "collismycin A", 
+                "molecular_formula": "C13H13N3O2S", 
+                "chem_synonyms": [], 
                 "chem_act": [
                     "Other"
-                ], 
-                "other_chem_act": "Neuroprotectant"
+                ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "clmM2", 
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of collismycins D, DS and DN", 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "CCC55909.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Methylation", 
+                    "gene_name": "clmM2"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of collismycins H and DH", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "Accumulation of collismycins D, DS and DN"
-                }, 
-                {
-                    "gene_name": "clmAT", 
                     "gene_id": "CCC55911.1", 
-                    "gene_function": "Tailoring", 
                     "tailoring": "Amination", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "Accumulation of collismycins H and DH"
+                    "gene_name": "clmAT"
                 }, 
                 {
-                    "gene_name": "clmM1", 
-                    "gene_id": "CCC55912.1", 
                     "gene_function": "Tailoring", 
+                    "mut_pheno": "Accumulation of collismycin SN", 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
+                    "gene_id": "CCC55912.1", 
                     "tailoring": "Methylation", 
+                    "gene_name": "clmM1"
+                }, 
+                {
+                    "mut_pheno": "Accumulation of collismycin C", 
+                    "gene_function": "Scaffold biosynthesis", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "Accumulation of collismycin SN"
-                }, 
-                {
-                    "gene_name": "clmG2", 
                     "gene_id": "CCC55914.1", 
+                    "gene_name": "clmG2"
+                }, 
+                {
+                    "mut_pheno": "Accumulation of collismycin DA", 
                     "gene_function": "Scaffold biosynthesis", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "Accumulation of collismycin C"
-                }, 
-                {
-                    "gene_name": "clmM", 
                     "gene_id": "CCC55915.1", 
-                    "gene_function": "Scaffold biosynthesis", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "Accumulation of collismycin DA"
+                    "gene_name": "clmM"
                 }, 
                 {
-                    "gene_name": "clmAH", 
-                    "gene_id": "CCC55916.1", 
+                    "mut_pheno": "Accumulation of collismycin SC", 
                     "gene_function": "Scaffold biosynthesis", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "Accumulation of collismycin SC"
+                    "gene_id": "CCC55916.1", 
+                    "gene_name": "clmAH"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000973", 
+        "biosyn_class": [
+            "NRP", 
+            "Polyketide"
+        ], 
         "NRP": {
-            "subclass": "Other", 
             "lin_cycl_nrp": "Cyclic", 
+            "nrps_te_type": "Type II", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "CCC55921.1", 
                     "nrps_module": [
                         {
                             "module_nr": "2", 
+                            "nrps_mod_doms": "Other", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
+                                "evidence_a_spec": "Sequence-based prediction", 
                                 "prot_adom_spec": "Cysteine", 
                                 "epimerized": true, 
-                                "evidence_a_spec": "Sequence-based prediction"
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "Other", 
-                            "nrps_other_mod_dom": "Cyclase"
+                            "nrps_other_mod_dom": "Cyclase", 
+                            "cdom_subtype": "Unknown"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "CCC55921.1"
                 }, 
                 {
-                    "nrps_gene": "CCC55922.1", 
                     "nrps_module": [
                         {
                             "module_nr": "3", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Leucine", 
-                                "evidence_a_spec": "Other"
+                                "evidence_a_spec": "Other", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "None"
+                            "cdom_subtype": "Unknown"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "CCC55922.1"
                 }
             ], 
-            "nrps_te_type": "Type II", 
+            "subclass": "Other", 
             "nrps_release_type": "Unknown"
         }, 
         "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Cyclic", 
+            "pks_te_type": "None", 
             "pks_subclass": [
                 "Modular type I"
             ], 
-            "starter_unit": "Other", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "CCC55918.1", 
                     "pks_module": [
                         {
+                            "pks_mod_doms": "None", 
                             "module_nr": "0", 
                             "pks_domains": [
                                 "Thiolation (ACP/PCP)"
-                            ], 
-                            "pks_mod_doms": "None"
+                            ]
                         }
                     ]
                 }, 
@@ -165,22 +162,24 @@
                     "mod_pks_gene": "CCC55921.1", 
                     "pks_module": [
                         {
+                            "pks_mod_doms": "None", 
                             "module_nr": "1", 
+                            "at_substr_spec": "Malonyl-CoA", 
+                            "evidence_at_spec": "Sequence-based prediction", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
                                 "Thiolation (ACP/PCP)"
-                            ], 
-                            "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
-                            "pks_mod_doms": "None"
+                            ]
                         }
                     ]
                 }
             ], 
-            "pks_te_type": "None", 
+            "starter_unit": "Other", 
+            "pk_subclass": "Other", 
+            "lin_cycl_pk": "Cyclic", 
             "pks_release_type": "Unknown"
-        }
+        }, 
+        "publications": "22444595"
     }
 }
-

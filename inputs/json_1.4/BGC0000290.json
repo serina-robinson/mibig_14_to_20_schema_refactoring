@@ -1,211 +1,212 @@
 {
-    "version": "15", 
     "personal": {
+        "submitter_email": "wrightge@mcmaster.ca", 
         "submitter_name": "Gerry Wright", 
-        "submitter_institution": "McMaster University", 
-        "submitter_email": "wrightge@mcmaster.ca"
+        "submitter_institution": "McMaster University"
     }, 
+    "version": "15", 
+    "comments": "Glycopeptide stereochemistry is known not to correlate with the presence of E domains.", 
     "general_params": {
-        "mibig_accession": "BGC0000290", 
-        "biosyn_class": [
-            "NRP"
-        ], 
-        "publications": "9177243,12060705,16492565", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "U82965", 
-                    "start_coord": -1, 
                     "end_coord": -1, 
+                    "Accession": "U82965", 
                     "conn_comp_cluster": [
                         "Enzymatic assays", 
                         "Heterologous expression", 
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "start_coord": -1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "A47934", 
+                "mol_mass": "1313.428", 
+                "chem_struct": "C1[C@@H]2C(=O)N[C@@H](C3=CC(=CC(=C3)O)OC4=C(C=CC(=C4)[C@H](C(=O)N2)N)OS(=O)(=O)O)C(=O)N[C@@H]5C6=CC(=C(C(=C6)OC7=C(C=C(C=C7)[C@H]([C@H]8C(=O)N[C@@H](C9=CC(=CC(=C9C2=CC(=CC(=C2O)Cl)[C@H](C(=O)N8)NC5=O)O)O)C(=O)O)O)Cl)O)OC2=C(C=C1C=C2)Cl", 
                 "chem_synonyms": [], 
                 "database_deposited": true, 
+                "pubchem_id": 16131155, 
+                "chem_target": "D-Ala-D-Ala terminus of peptidoglycan precursors", 
+                "compound": "A47934", 
+                "molecular_formula": "C58H44Cl3N7O21S", 
                 "databases_deposited": [
                     "PubChem"
                 ], 
-                "pubchem_id": 16131155, 
                 "chem_act": [
                     "Antibacterial"
-                ], 
-                "chem_target": "D-Ala-D-Ala terminus of peptidoglycan precursors"
+                ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "staL", 
-                    "gene_id": "AAM80529.1", 
                     "gene_function": "Tailoring", 
-                    "tailoring": "Sulfation", 
+                    "mut_pheno": "produces compound without sulfation", 
                     "evidence_genefunction": [
                         "Heterologous expression", 
                         "Activity assay", 
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": "produces compound without sulfation"
+                    "gene_id": "AAM80529.1", 
+                    "tailoring": "Sulfation", 
+                    "gene_name": "staL"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000290", 
+        "biosyn_class": [
+            "NRP"
+        ], 
         "NRP": {
-            "subclass": "Glycopeptide", 
-            "lin_cycl_nrp": "Linear", 
+            "nrps_release_type": "Hydrolysis", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "AAM80539.1", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "1", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic", 
-                                "nonprot_adom_spec": "4-Hydroxyphenylglycine", 
-                                "evidence_a_spec": "Structure-based inference", 
-                                "epimerized": true, 
                                 "aa_subcluster": [
                                     "aam80549.1", 
                                     "aam80550.1", 
                                     "aam80551.1", 
                                     "aam80552.1"
-                                ]
+                                ], 
+                                "epimerized": true, 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "nonprot_adom_spec": "4-Hydroxyphenylglycine", 
+                                "aa_type": "Nonproteinogenic"
                             }, 
-                            "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Unknown"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "2", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
+                                "epimerized": true, 
                                 "prot_adom_spec": "Tyrosine", 
                                 "evidence_a_spec": "Structure-based inference", 
-                                "epimerized": true
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Unknown"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "AAM80539.1"
                 }, 
                 {
-                    "nrps_gene": "AAM80538.1", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "3", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic", 
-                                "nonprot_adom_spec": "3,5-Dihydroxy-phenylglycine", 
-                                "evidence_a_spec": "Structure-based inference", 
                                 "aa_subcluster": [
                                     "aam80549.1", 
                                     "aam80545.1", 
                                     "aam80546.1", 
                                     "aam80547.1", 
                                     "aam80548.1"
-                                ]
+                                ], 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "nonprot_adom_spec": "3,5-Dihydroxy-phenylglycine", 
+                                "aa_type": "Nonproteinogenic"
                             }, 
-                            "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Unknown"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "AAM80538.1"
                 }, 
                 {
-                    "nrps_gene": "AAM80537.1", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "4", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic", 
-                                "nonprot_adom_spec": "4-Hydroxyphenylglycine", 
-                                "evidence_a_spec": "Structure-based inference", 
-                                "epimerized": true, 
                                 "aa_subcluster": [
                                     "aam80549.1", 
                                     "aam80550.1", 
                                     "aam80551.1", 
                                     "aam80552.1"
-                                ]
+                                ], 
+                                "epimerized": true, 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "nonprot_adom_spec": "4-Hydroxyphenylglycine", 
+                                "aa_type": "Nonproteinogenic"
                             }, 
-                            "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Unknown"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "5", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic", 
-                                "nonprot_adom_spec": "4-Hydroxyphenylglycine", 
-                                "evidence_a_spec": "Structure-based inference", 
-                                "epimerized": true, 
                                 "aa_subcluster": [
                                     "aam80549.1", 
                                     "aam80550.1", 
                                     "aam80551.1", 
                                     "aam80552.1"
-                                ]
+                                ], 
+                                "epimerized": true, 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "nonprot_adom_spec": "4-Hydroxyphenylglycine", 
+                                "aa_type": "Nonproteinogenic"
                             }, 
-                            "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Unknown"
                         }, 
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "6", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
-                                "prot_adom_spec": "Tyrosine", 
-                                "evidence_a_spec": "Structure-based inference", 
                                 "aa_subcluster": [
                                     "aam80528.1"
-                                ]
+                                ], 
+                                "prot_adom_spec": "Tyrosine", 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Unknown"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "AAM80537.1"
                 }, 
                 {
-                    "nrps_gene": "AAM80536.1", 
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither", 
                             "module_nr": "7", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic", 
-                                "nonprot_adom_spec": "3,5-Dihydroxy-phenylglycine", 
-                                "evidence_a_spec": "Structure-based inference", 
                                 "aa_subcluster": [
                                     "aam80549.1", 
                                     "aam80545.1", 
                                     "aam80546.1", 
                                     "aam80547.1", 
                                     "aam80548.1"
-                                ]
+                                ], 
+                                "evidence_a_spec": "Structure-based inference", 
+                                "nonprot_adom_spec": "3,5-Dihydroxy-phenylglycine", 
+                                "aa_type": "Nonproteinogenic"
                             }, 
-                            "cdom_subtype": "Unknown", 
-                            "nrps_mod_doms": "None", 
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "Unknown"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "AAM80536.1"
                 }
             ], 
+            "subclass": "Glycopeptide", 
+            "lin_cycl_nrp": "Linear", 
             "nrps_te_type": "Type I", 
             "nrps_thioesterase": [
                 "aam80536.1"
-            ], 
-            "nrps_release_type": "Hydrolysis"
-        }
-    }, 
-    "comments": "Glycopeptide stereochemistry is known not to correlate with the presence of E domains."
+            ]
+        }, 
+        "publications": "9177243,12060705,16492565"
+    }
 }
-
-

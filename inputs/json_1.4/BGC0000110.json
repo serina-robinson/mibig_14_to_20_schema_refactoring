@@ -1,102 +1,110 @@
 {
-    "version": "15", 
     "personal": {
+        "submitter_email": "keishi.ishida@hki-jena.de", 
         "submitter_name": "Keishi Ishida", 
-        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology", 
-        "submitter_email": "keishi.ishida@hki-jena.de"
+        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology"
     }, 
+    "version": "15", 
+    "comments": "The AT domain within module 6 is inactive and thus module 6 uses the AT domain from module 5.", 
     "general_params": {
-        "mibig_accession": "BGC0000110", 
-        "biosyn_class": [
-            "Polyketide"
-        ], 
-        "publications": "17763486, 19651421, 24402879, 11897600, 5593974, 11560371, 20094652, 23968564", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "AM778535", 
-                    "start_coord": -1, 
                     "end_coord": -1, 
+                    "Accession": "AM778535", 
                     "conn_comp_cluster": [
                         "Heterologous expression", 
                         "Sequence-based prediction", 
                         "Other"
-                    ]
+                    ], 
+                    "start_coord": -1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "Neoaureothin", 
+                "chemspider_id": 4509000, 
+                "mol_mass": "477.557", 
+                "chem_struct": "CC1=C(OC(=C(C1=O)C)OC)C2C/C(=C/C(=C/C(=C/C(=C/C3=CC=C(C=C3)[N+](=O)[O-])/C)/C)/C)/CO2", 
                 "chem_synonyms": [
                     "spectinabilin"
                 ], 
                 "database_deposited": true, 
+                "pubchem_id": 5352028, 
+                "chem_target": "reverse transcriptase", 
+                "compound": "Neoaureothin", 
+                "molecular_formula": "C28H31NO6", 
                 "databases_deposited": [
                     "PubChem", 
                     "ChemSpider"
                 ], 
-                "pubchem_id": 5352028, 
-                "chemspider_id": 4509000, 
                 "chem_act": [
                     "Antifungal", 
                     "Inhibitor"
-                ], 
-                "chem_target": "reverse transcriptase"
+                ]
             }, 
             {
-                "compound": "orinocin", 
-                "chem_synonyms": [], 
-                "chem_struct": "CC1=C(OC(OC)=C(C)C1=O)[C@](C/2)([H])OCC2=C/C3=CC=C([N+]([O-])=O)C=C3", 
-                "molecular_formula": "C19H19NO6", 
                 "mol_mass": 358.1291, 
+                "chem_struct": "CC1=C(OC(OC)=C(C)C1=O)[C@](C/2)([H])OCC2=C/C3=CC=C([N+]([O-])=O)C=C3", 
                 "mass_ion_type": "[M+H]+", 
+                "compound": "orinocin", 
+                "molecular_formula": "C19H19NO6", 
+                "chem_synonyms": [], 
                 "chem_act": [
                     "Unknown"
                 ]
             }, 
             {
-                "compound": "SNF4435C", 
+                "chemspider_id": 8088555, 
+                "mol_mass": "", 
+                "other_chem_act": "immunosuppressive", 
+                "chem_struct": "", 
                 "chem_synonyms": [], 
                 "database_deposited": true, 
+                "compound": "SNF4435C", 
+                "molecular_formula": "", 
                 "databases_deposited": [
                     "ChemSpider"
                 ], 
-                "chemspider_id": 8088555, 
                 "chem_act": [
                     "Other"
-                ], 
-                "other_chem_act": "immunosuppressive"
+                ]
             }, 
             {
-                "compound": "SNF4435D", 
+                "chemspider_id": 8226279, 
+                "mol_mass": "", 
+                "other_chem_act": "immunosuppressive", 
+                "chem_struct": "", 
                 "chem_synonyms": [], 
                 "database_deposited": true, 
+                "compound": "SNF4435D", 
+                "molecular_formula": "", 
                 "databases_deposited": [
                     "ChemSpider"
                 ], 
-                "chemspider_id": 8226279, 
                 "chem_act": [
                     "Other"
-                ], 
-                "other_chem_act": "immunosuppressive"
+                ]
             }
         ], 
         "genes": {}, 
+        "mibig_accession": "BGC0000110", 
+        "biosyn_class": [
+            "Polyketide"
+        ], 
         "Polyketide": {
-            "pk_subclass": "Polyene", 
-            "lin_cycl_pk": "Linear", 
+            "pks_te_type": "Type I", 
             "pks_subclass": [
                 "Modular type I"
             ], 
-            "starter_unit": "p-Nitrobenzoate", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "CAO85893.1", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
+                            "pks_mod_doms": "None", 
+                            "pks_evidence_skip_iter": "Sequence-based prediction", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -104,12 +112,11 @@
                                 "Dehydratase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
                             "pks_mod_skip_iter": "Iterated", 
-                            "pks_evidence_skip_iter": "Sequence-based prediction"
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -117,7 +124,7 @@
                     "mod_pks_gene": "CAO85896.1", 
                     "pks_module": [
                         {
-                            "module_nr": "2", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -125,14 +132,14 @@
                                 "Dehydratase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "2", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }, 
                         {
-                            "module_nr": "3", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -140,11 +147,11 @@
                                 "Dehydratase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "3", 
                             "at_substr_spec": "Methylmalonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -152,7 +159,7 @@
                     "mod_pks_gene": "CAO85897.1", 
                     "pks_module": [
                         {
-                            "module_nr": "4", 
+                            "pks_mod_doms": "None", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
@@ -161,11 +168,11 @@
                                 "Enoylreductase", 
                                 "Thiolation (ACP/PCP)"
                             ], 
+                            "module_nr": "4", 
                             "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "kr_stereochem": "B-group", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -173,33 +180,33 @@
                     "mod_pks_gene": "CAO85898.1", 
                     "pks_module": [
                         {
+                            "pks_mod_doms": "None", 
                             "module_nr": "5", 
+                            "at_substr_spec": "Methylmalonyl-CoA", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Acyltransferase", 
                                 "Thiolation (ACP/PCP)"
-                            ], 
-                            "at_substr_spec": "Methylmalonyl-CoA", 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }, 
                         {
+                            "pks_mod_doms": "None", 
                             "module_nr": "6", 
+                            "pks_mod_skip_iter": "Neither", 
                             "pks_domains": [
                                 "Ketosynthase", 
                                 "Thiolation (ACP/PCP)"
-                            ], 
-                            "pks_mod_doms": "None", 
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }
                     ]
                 }
             ], 
-            "pks_te_type": "Type I", 
+            "starter_unit": "p-Nitrobenzoate", 
+            "pk_subclass": "Polyene", 
+            "lin_cycl_pk": "Linear", 
             "pks_release_type": "Macrolactonization"
-        }
-    }, 
-	"comments": "The AT domain within module 6 is inactive and thus module 6 uses the AT domain from module 5."
+        }, 
+        "publications": "17763486, 19651421, 24402879, 11897600, 5593974, 11560371, 20094652, 23968564"
+    }
 }
-
-

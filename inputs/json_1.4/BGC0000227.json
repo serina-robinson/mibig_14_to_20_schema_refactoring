@@ -1,65 +1,62 @@
 {
-    "version": "17", 
     "personal": {
+        "submitter_email": "fenganyu@umich.edu", 
         "submitter_name": "Fengan Yu", 
-        "submitter_institution": "University of Michigan", 
-        "submitter_email": "fenganyu@umich.edu"
+        "submitter_institution": "University of Michigan"
     }, 
+    "embargo": true, 
+    "version": "17", 
     "general_params": {
-        "mibig_accession": "BGC0000227", 
-        "biosyn_class": [
-            "Polyketide"
-        ], 
-        "publications": "2583128,7476861,9831526", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "AJ011500", 
-                    "start_coord": 1, 
                     "end_coord": 39250, 
+                    "Accession": "AJ011500", 
                     "conn_comp_cluster": [
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "start_coord": 1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "granaticin", 
-                "chem_synonyms": [], 
-                "chem_struct": "C[C@@H]1[C@]2(c3c(c(c4c(c3O)C(=O)C5=C(C4=O)[C@H]6[C@H](CC(=O)O6)OC5C)O)[C@@H](O1)C[C@H]2O)O", 
-                "molecular_formula": "C22H20O10", 
                 "mol_mass": 444.1057, 
+                "chem_struct": "C[C@@H]1[C@]2(c3c(c(c4c(c3O)C(=O)C5=C(C4=O)[C@H]6[C@H](CC(=O)O6)OC5C)O)[C@@H](O1)C[C@H]2O)O", 
                 "mass_ion_type": "[M+H]+", 
+                "compound": "granaticin", 
+                "molecular_formula": "C22H20O10", 
+                "chem_synonyms": [], 
                 "chem_act": [
                     "Antibacterial"
                 ]
             }
         ], 
         "genes": {}, 
+        "mibig_accession": "BGC0000227", 
+        "biosyn_class": [
+            "Polyketide"
+        ], 
         "Polyketide": {
-            "pk_subclass": "Ansamycin", 
-            "lin_cycl_pk": "Cyclic", 
+            "ketide_length": -1, 
             "pks_subclass": [
                 "Type II"
             ], 
-            "starter_unit": "Malonyl-CoA", 
-            "pks_genes": [], 
-            "ketide_length": -1, 
+            "lin_cycl_pk": "Cyclic", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "CAA09653.1", 
                     "pks_module": [
                         {
-                            "module_nr": "0", 
-                            "pks_domains": [
-                                "KS"
-                            ], 
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "0", 
+                            "pks_mod_skip_iter": "Neither", 
+                            "pks_domains": [
+                                "KS"
+                            ]
                         }
                     ]
                 }, 
@@ -67,16 +64,16 @@
                     "mod_pks_gene": "CAA09654.1", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
-                            "pks_domains": [
-                                "CAL"
-                            ], 
-                            "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Sequence-based prediction", 
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_domains": [
+                                "CAL"
+                            ], 
+                            "module_nr": "1", 
+                            "at_substr_spec": "Malonyl-CoA", 
+                            "pks_mod_skip_iter": "Neither", 
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }, 
@@ -84,20 +81,22 @@
                     "mod_pks_gene": "CAA09655.1", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
-                            "pks_domains": [
-                                "T"
-                            ], 
                             "pks_mod_doms": [
                                 "None"
                             ], 
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "1", 
+                            "pks_mod_skip_iter": "Neither", 
+                            "pks_domains": [
+                                "T"
+                            ]
                         }
                     ]
                 }
-            ]
-        }
-    }, 
-    "embargo": true
+            ], 
+            "starter_unit": "Malonyl-CoA", 
+            "pk_subclass": "Ansamycin", 
+            "pks_genes": []
+        }, 
+        "publications": "2583128,7476861,9831526"
+    }
 }
-

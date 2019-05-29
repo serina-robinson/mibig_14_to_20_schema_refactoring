@@ -1,59 +1,61 @@
 {
-    "version": "17", 
     "personal": {
+        "submitter_email": "pwiemann@wisc.edu", 
         "submitter_name": "Philipp Wiemann, Nancy Keller", 
-        "submitter_institution": "University of Wisconsin-Madison", 
-        "submitter_email": "pwiemann@wisc.edu"
+        "submitter_institution": "University of Wisconsin-Madison"
     }, 
+    "version": "17", 
     "general_params": {
-        "mibig_accession": "BGC0000057", 
-        "biosyn_class": [
-            "Polyketide"
-        ], 
-        "publications": "20174687, 9448638, 19666480, ", 
         "loci": {
-            "complete": "incomplete", 
             "nucl_acc": [
                 {
-                    "Accession": "AACD01000135", 
-                    "start_coord": 207766, 
                     "end_coord": 225686, 
+                    "Accession": "AACD01000135", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Gene expression correlated with compound production"
-                    ]
+                    ], 
+                    "start_coord": 207766
                 }
-            ]
+            ], 
+            "complete": "incomplete"
         }, 
         "compounds": [
             {
-                "compound": "F9775A", 
+                "mol_mass": "396.351", 
+                "chem_struct": "CC1=CC2=C(C(=C1)O)OC3=C(O2)C4(C5C(=CC(=O)C5(C(=O)C4=C(C3=O)O)O)C)C", 
                 "chem_synonyms": [], 
                 "database_deposited": true, 
-                "databases_deposited": [
-                    "PubChem"
-                ], 
                 "pubchem_id": 9843671, 
-                "chem_act": [
-                    "Inhibitor"
-                ], 
-                "chem_target": "inhibitor of cathepsin K"
-            }, 
-            {
-                "compound": "F9775B", 
-                "chem_synonyms": [], 
-                "database_deposited": true, 
+                "chem_target": "inhibitor of cathepsin K", 
+                "compound": "F9775A", 
+                "molecular_formula": "C21H16O8", 
                 "databases_deposited": [
                     "PubChem"
                 ], 
-                "pubchem_id": 25235989, 
                 "chem_act": [
                     "Inhibitor"
-                ], 
-                "chem_target": "inhibitor of cathepsin K"
+                ]
             }, 
             {
-                "compound": "Orsellinic acid", 
+                "mol_mass": "396.351", 
+                "chem_struct": "CC1=CC2=C(C(=C1)O)OC3=C(O2)C(=O)C(=C4C3(C5C(=CC(=O)C5(C4=O)O)C)C)O", 
+                "chem_synonyms": [], 
+                "database_deposited": true, 
+                "pubchem_id": 25235989, 
+                "chem_target": "inhibitor of cathepsin K", 
+                "compound": "F9775B", 
+                "molecular_formula": "C21H16O8", 
+                "databases_deposited": [
+                    "PubChem"
+                ], 
+                "chem_act": [
+                    "Inhibitor"
+                ]
+            }, 
+            {
+                "mol_mass": "168.148", 
+                "chem_struct": "CC1=CC(=CC(=C1C(=O)O)O)O", 
                 "chem_synonyms": [
                     "orsellic acid", 
                     "o-orsellinic acid", 
@@ -61,10 +63,12 @@
                     "benzoic acid"
                 ], 
                 "database_deposited": true, 
+                "pubchem_id": 68072, 
+                "compound": "Orsellinic acid", 
+                "molecular_formula": "C8H8O4", 
                 "databases_deposited": [
                     "PubChem"
                 ], 
-                "pubchem_id": 68072, 
                 "chem_act": [
                     "Unknown"
                 ]
@@ -73,119 +77,120 @@
         "genes": {
             "gene": [
                 {
-                    "gene_name": "orsA", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 128096, 
+                    "gene_function": "Scaffold biosynthesis", 
                     "gene_endpos": 134597, 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "EAA59563.1", 
                     "gene_annotation": "polyketide synthase", 
-                    "gene_function": "Scaffold biosynthesis", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "loss of orsellinic acid, F9775A, and F977B production"
+                    "gene_startpos": 128096, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "loss of orsellinic acid, F9775A, and F977B production", 
+                    "gene_name": "orsA"
                 }, 
                 {
-                    "gene_name": "No gene ID", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 135422, 
-                    "gene_endpos": 136114, 
-                    "gene_id": "EAA59564.1", 
-                    "gene_annotation": "NTF2-like superfamily protein, putative", 
                     "gene_function": "Unknown", 
+                    "gene_endpos": 136114, 
                     "evidence_genefunction": [
                         "N/A"
-                    ]
+                    ], 
+                    "gene_id": "EAA59564.1", 
+                    "gene_annotation": "NTF2-like superfamily protein, putative", 
+                    "gene_startpos": 135422, 
+                    "not_in_gbk": false, 
+                    "gene_name": "No gene ID"
                 }, 
                 {
-                    "gene_name": "orsB", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 136228, 
+                    "gene_function": "Tailoring", 
                     "gene_endpos": 137290, 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "EAA59565.1", 
                     "gene_annotation": "aminohydrolase, putative", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "accumulation or orsellinic acid and gerfelin, loss of F9775A, and B", 
+                    "gene_startpos": 136228, 
+                    "not_in_gbk": false, 
                     "tailoring": "Unknown", 
+                    "gene_name": "orsB"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 138834, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "accumulation or orsellinic acid and gerfelin, loss of F9775A, and B"
-                }, 
-                {
-                    "gene_name": "orsC", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 137660, 
-                    "gene_endpos": 138834, 
                     "gene_id": "EAA59566.1", 
                     "gene_annotation": "tyrosinase, putative", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "accumulation or orsellinic acid and diorcinol, loss of F9775A, and B", 
+                    "gene_startpos": 137660, 
+                    "not_in_gbk": false, 
                     "tailoring": "Unknown", 
+                    "gene_name": "orsC"
+                }, 
+                {
+                    "gene_function": "Unknown", 
+                    "gene_endpos": 140860, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "accumulation or orsellinic acid and diorcinol, loss of F9775A, and B"
-                }, 
-                {
-                    "gene_name": "orsD", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 139355, 
-                    "gene_endpos": 140860, 
                     "gene_id": "EAA59567.1", 
                     "gene_annotation": "conserved hypothetical protein", 
+                    "gene_startpos": 139355, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "no significant change in orsellinic acid, F9775A, and F977B production", 
+                    "gene_name": "orsD"
+                }, 
+                {
                     "gene_function": "Unknown", 
+                    "gene_endpos": 142516, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "no significant change in orsellinic acid, F9775A, and F977B production"
-                }, 
-                {
-                    "gene_name": "orsE", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 141414, 
-                    "gene_endpos": 142516, 
                     "gene_id": "EAA59568.1", 
                     "gene_annotation": "alcohol dehydrogenase, putative", 
-                    "gene_function": "Unknown", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "no significant change in orsellinic acid, F9775A, and F977B production"
+                    "gene_startpos": 141414, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "no significant change in orsellinic acid, F9775A, and F977B production", 
+                    "gene_name": "orsE"
                 }, 
                 {
-                    "gene_name": "bglD", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 142746, 
-                    "gene_endpos": 146016, 
-                    "gene_id": "EAA59569.1", 
-                    "gene_annotation": "glucosidase, putative", 
                     "gene_function": "Unknown", 
+                    "gene_endpos": 146016, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "no significant change in orsellinic acid, F9775A, and F977B production"
+                    "gene_id": "EAA59569.1", 
+                    "gene_annotation": "glucosidase, putative", 
+                    "gene_startpos": 142746, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "no significant change in orsellinic acid, F9775A, and F977B production", 
+                    "gene_name": "bglD"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000057", 
+        "biosyn_class": [
+            "Polyketide"
+        ], 
         "Polyketide": {
-            "pk_subclass": "Other", 
-            "lin_cycl_pk": "Cyclic", 
+            "nr_iterations": 3, 
+            "pks_te_type": "Other", 
+            "iter_cycl_type": "C2-C7 first", 
             "pks_subclass": [
                 "Iterative type I"
             ], 
-            "starter_unit": "Malonyl-CoA", 
-            "pks_genes": [], 
-            "nr_iterations": 3, 
-            "iterative_subtype": "Non-reducing", 
-            "iter_cycl_type": "C2-C7 first", 
-            "pks_te_type": "Other", 
-            "pks_thioesterase": [], 
-            "pks_release_type": "Claisen condensation", 
+            "lin_cycl_pk": "Cyclic", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "EAA59563.1", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
+                            "pks_evidence_skip_iter": "Structure-based inference", 
                             "pks_domains": [
                                 "SAT", 
                                 "KS", 
@@ -195,19 +200,21 @@
                                 "T", 
                                 "TE"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Structure-based inference", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Iterated", 
-                            "pks_evidence_skip_iter": "Structure-based inference"
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
-            ]
-        }
+            ], 
+            "pks_thioesterase": [], 
+            "iterative_subtype": "Non-reducing", 
+            "starter_unit": "Malonyl-CoA", 
+            "pk_subclass": "Other", 
+            "pks_genes": [], 
+            "pks_release_type": "Claisen condensation"
+        }, 
+        "publications": "20174687, 9448638, 19666480, "
     }
 }
-
-

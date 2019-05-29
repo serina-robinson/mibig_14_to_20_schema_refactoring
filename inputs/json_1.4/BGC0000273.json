@@ -1,87 +1,84 @@
 {
-    "version": "8", 
     "personal": {
+        "submitter_email": "jasalas@uniovi.es", 
         "submitter_name": "Jose A. Salas", 
-        "submitter_institution": "University of Oviedo", 
-        "submitter_email": "jasalas@uniovi.es"
+        "submitter_institution": "University of Oviedo"
     }, 
+    "version": "8", 
     "general_params": {
-        "mibig_accession": "BGC0000273", 
-        "biosyn_class": [
-            "Polyketide",
-            "Saccharide" 
-        ], 
-        "publications": "16751529", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "AM156932", 
-                    "start_coord": -1, 
                     "end_coord": -1, 
+                    "Accession": "AM156932", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Heterologous expression", 
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "start_coord": -1
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "steffimycin", 
-                "chem_synonyms": [], 
-                "chem_struct": "CC1C(C(C(C(O1)OC2C(C(C(=O)C3=C2C(=C4C(=C3)C(=O)C5=CC(=CC(=C5C4=O)O)OC)O)(C)O)OC)OC)O)O", 
-                "molecular_formula": "C28H30O13", 
                 "mol_mass": 575.53, 
+                "chem_struct": "CC1C(C(C(C(O1)OC2C(C(C(=O)C3=C2C(=C4C(=C3)C(=O)C5=CC(=CC(=C5C4=O)O)OC)O)(C)O)OC)OC)O)O", 
                 "mass_ion_type": "[M+H]+", 
+                "chem_target": "DNA", 
+                "compound": "steffimycin", 
+                "molecular_formula": "C28H30O13", 
+                "chem_synonyms": [], 
                 "chem_act": [
                     "Cytotoxic"
-                ], 
-                "chem_target": "DNA"
+                ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "stfX", 
-                    "gene_id": "CAJ42323.1", 
-                    "gene_annotation": "cyclase", 
                     "gene_function": "Scaffold biosynthesis", 
+                    "mut_pheno": "Accumulation of 2-hydroxy-nogalonic acid", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "Accumulation of 2-hydroxy-nogalonic acid"
+                    "gene_id": "CAJ42323.1", 
+                    "gene_annotation": "cyclase", 
+                    "gene_name": "stfX"
                 }, 
                 {
-                    "gene_name": "stfG", 
-                    "gene_id": "CAJ42338.1", 
-                    "gene_annotation": "glycosyltransferase", 
                     "gene_function": "Tailoring", 
                     "tailoring": "Glycosylation", 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "Accumulation of 8-demethoxy-10-deoxysteffimycinone"
+                    "gene_id": "CAJ42338.1", 
+                    "gene_annotation": "glycosyltransferase", 
+                    "mut_pheno": "Accumulation of 8-demethoxy-10-deoxysteffimycinone", 
+                    "gene_name": "stfG"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000273", 
+        "biosyn_class": [
+            "Polyketide", 
+            "Saccharide"
+        ], 
         "Polyketide": {
-            "pk_subclass": "Anthracycline", 
-            "lin_cycl_pk": "Cyclic", 
+            "cyclases": "CAJ42323.1, CAJ42324.1, CAJ42327.1", 
+            "ketide_length": 10, 
             "pks_subclass": [
                 "Type II"
             ], 
+            "lin_cycl_pk": "Cyclic", 
             "starter_unit": "Acetyl-CoA", 
+            "pk_subclass": "Anthracycline", 
             "pks_genes": [
                 "caj42318.1", 
                 "caj42320.1"
-            ], 
-            "ketide_length": 10, 
-            "cyclases": "CAJ42323.1, CAJ42324.1, CAJ42327.1"
-        }
+            ]
+        }, 
+        "publications": "16751529"
     }
 }
-
-
-

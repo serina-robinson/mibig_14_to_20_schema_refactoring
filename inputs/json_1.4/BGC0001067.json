@@ -1,52 +1,50 @@
 {
-    "version": "16", 
     "personal": {
+        "submitter_email": "yhchooi@gmail.com", 
         "submitter_name": "Yit-Heng Chooi", 
-        "submitter_institution": "The Australian National University", 
-        "submitter_email": "yhchooi@gmail.com"
+        "submitter_institution": "The Australian National University"
     }, 
+    "version": "16", 
     "general_params": {
-        "mibig_accession": "BGC0001067", 
-        "biosyn_class": [
-            "Polyketide", 
-            "Terpene"
-        ], 
-        "publications": "23488861,24568283,9177176", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "CM000176", 
-                    "start_coord": 77900, 
                     "end_coord": 115000, 
+                    "Accession": "CM000176", 
                     "conn_comp_cluster": [
                         "Knock-out studies", 
                         "Enzymatic assays", 
                         "Heterologous expression"
-                    ]
+                    ], 
+                    "start_coord": 77900
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "fumagillin", 
+                "mol_mass": "458.551", 
+                "chem_struct": "CC(=CC[C@@H]1[C@@](O1)(C)[C@H]2[C@@H]([C@@H](CC[C@]23CO3)OC(=O)/C=C/C=C/C=C/C=C/C(=O)O)OC)C", 
                 "chem_synonyms": [
                     "amebacilin", 
                     "fugillin", 
                     "fumidil"
                 ], 
                 "database_deposited": true, 
+                "pubchem_id": 6917655, 
+                "chem_target": "methionine aminopeptidase 2", 
+                "compound": "fumagillin", 
+                "molecular_formula": "C26H34O7", 
                 "databases_deposited": [
                     "PubChem"
                 ], 
-                "pubchem_id": 6917655, 
                 "chem_act": [
                     "Inhibitor"
-                ], 
-                "chem_target": "methionine aminopeptidase 2"
+                ]
             }, 
             {
-                "compound": "beta-trans-bergamotene", 
+                "mol_mass": "204.357", 
+                "chem_struct": "CC(=CCC[C@@]1([C@H]2CCC(=C)[C@@H]1C2)C)C", 
                 "chem_synonyms": [
                     "exo-beta-bergamotene", 
                     "trans-beta-bergamotene", 
@@ -54,248 +52,260 @@
                     "(+)-exo-beta-bergamotene"
                 ], 
                 "database_deposited": true, 
+                "pubchem_id": 12300069, 
+                "compound": "beta-trans-bergamotene", 
+                "molecular_formula": "C15H24", 
                 "databases_deposited": [
                     "PubChem"
                 ], 
-                "pubchem_id": 12300069, 
                 "chem_act": [
                     "Unknown"
                 ]
             }, 
             {
-                "compound": "fumagillol", 
+                "mol_mass": "282.38", 
+                "chem_struct": "CC(=CC[C@@H]1[C@@](O1)(C)[C@H]2[C@@H]([C@@H](CC[C@]23CO3)O)OC)C", 
                 "chem_synonyms": [
                     "alcohol-i from fumagillin", 
                     "gelcohol"
                 ], 
                 "database_deposited": true, 
+                "pubchem_id": 222778, 
+                "chem_target": "methionine aminopeptidase 2", 
+                "compound": "fumagillol", 
+                "molecular_formula": "C16H26O4", 
                 "databases_deposited": [
                     "PubChem"
                 ], 
-                "pubchem_id": 222778, 
                 "chem_act": [
                     "Inhibitor"
-                ], 
-                "chem_target": "methionine aminopeptidase 2"
+                ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "fmaB, fma-PKS", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 79285, 
+                    "gene_function": "Scaffold biosynthesis", 
                     "gene_endpos": 86887, 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        " Activity assay", 
+                        " Other in vivo study"
+                    ], 
                     "gene_id": "EAL85129.1", 
                     "gene_annotation": "polyketide synthase", 
+                    "gene_startpos": 79285, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "accumulation of fumagilliol", 
+                    "gene_name": "fmaB, fma-PKS"
+                }, 
+                {
                     "gene_function": "Scaffold biosynthesis", 
+                    "gene_endpos": 88295, 
                     "evidence_genefunction": [
                         "Knock-out", 
                         " Activity assay", 
                         " Other in vivo study"
                     ], 
-                    "mut_pheno": "accumulation of fumagilliol"
-                }, 
-                {
-                    "gene_name": "fmaC, fma-AT", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 87370, 
-                    "gene_endpos": 88295, 
                     "gene_id": "EAL85128.1", 
                     "gene_annotation": "acyltransferase", 
-                    "gene_function": "Scaffold biosynthesis", 
+                    "gene_startpos": 87370, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "loss of fumagillin production", 
+                    "gene_name": "fmaC, fma-AT"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 89296, 
                     "evidence_genefunction": [
                         "Knock-out", 
                         " Activity assay", 
                         " Other in vivo study"
                     ], 
-                    "mut_pheno": "loss of fumagillin production"
-                }, 
-                {
-                    "gene_name": "fmaD, fma-MT", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 88492, 
-                    "gene_endpos": 89296, 
                     "gene_id": "EAL85127.1", 
                     "gene_annotation": "O-methyltransferase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "accumulation of demethyl-fumagillin", 
+                    "gene_startpos": 88492, 
+                    "not_in_gbk": false, 
                     "tailoring": "Methylation", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        " Activity assay", 
-                        " Other in vivo study"
-                    ], 
-                    "mut_pheno": "accumulation of demethyl-fumagillin"
+                    "gene_name": "fmaD, fma-MT"
                 }, 
                 {
-                    "gene_name": "fpaII", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 90299, 
+                    "gene_function": "Unknown", 
                     "gene_endpos": 92235, 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "EAL85125.1", 
                     "gene_annotation": "methionine aminopeptidase, type II, putative", 
-                    "gene_function": "Unknown", 
+                    "gene_startpos": 90299, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "reduced fumagillin production", 
+                    "gene_name": "fpaII"
+                }, 
+                {
+                    "gene_function": "Regulation", 
+                    "gene_endpos": 95101, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "reduced fumagillin production"
-                }, 
-                {
-                    "gene_name": "fapR", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 93113, 
-                    "gene_endpos": 95101, 
                     "gene_id": "EAL85124.1", 
                     "gene_annotation": "C6 finger transcription factor", 
-                    "gene_function": "Regulation", 
+                    "gene_startpos": 93113, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "loss of fumagillin and pseurotin production", 
+                    "gene_name": "fapR"
+                }, 
+                {
+                    "gene_function": "Unknown", 
+                    "gene_endpos": 95807, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "loss of fumagillin and pseurotin production"
-                }, 
-                {
-                    "gene_name": "No gene ID", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 95277, 
-                    "gene_endpos": 95807, 
                     "gene_id": "EAL85123.1", 
                     "gene_annotation": "conserved hypothetical protein", 
+                    "gene_startpos": 95277, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "no significant change in fumagillin production", 
+                    "gene_name": "No gene ID"
+                }, 
+                {
                     "gene_function": "Unknown", 
+                    "gene_endpos": 102341, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "no significant change in fumagillin production"
-                }, 
-                {
-                    "gene_name": "fpaI", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 100917, 
-                    "gene_endpos": 102341, 
                     "gene_id": "EAL85121.1", 
                     "gene_annotation": "methionine aminopeptidase, type I, putative", 
-                    "gene_function": "Unknown", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "no significant change in fumagillin production"
+                    "gene_startpos": 100917, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "no significant change in fumagillin production", 
+                    "gene_name": "fpaI"
                 }, 
                 {
-                    "gene_name": "fmaE, fma-ABM", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 102474, 
+                    "gene_function": "Tailoring", 
                     "gene_endpos": 103368, 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        " Activity assay", 
+                        " Other in vivo study"
+                    ], 
                     "gene_id": "EAL85120.1", 
                     "gene_annotation": "ABM superfamily monooxygenase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "accumulation of prefumagillin", 
+                    "gene_startpos": 102474, 
+                    "not_in_gbk": false, 
                     "tailoring": "Oxidation", 
+                    "gene_name": "fmaE, fma-ABM"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 104694, 
                     "evidence_genefunction": [
                         "Knock-out", 
                         " Activity assay", 
                         " Other in vivo study"
                     ], 
-                    "mut_pheno": "accumulation of prefumagillin"
-                }, 
-                {
-                    "gene_name": "fmaF, fma-C6H", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 103765, 
-                    "gene_endpos": 104694, 
                     "gene_id": "EAL85119.2", 
                     "gene_annotation": "hydroxylase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "accumulation of 6-demethoxyfumagillin", 
+                    "gene_startpos": 103765, 
+                    "not_in_gbk": false, 
                     "tailoring": "Hydroxylation", 
+                    "gene_name": "fmaF, fma-C6H"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 108249, 
                     "evidence_genefunction": [
                         "Knock-out", 
                         " Activity assay", 
                         " Other in vivo study"
                     ], 
-                    "mut_pheno": "accumulation of 6-demethoxyfumagillin"
-                }, 
-                {
-                    "gene_name": "fma-KR", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 105095, 
-                    "gene_endpos": 108249, 
                     "gene_id": "EAL85118.1", 
                     "gene_annotation": "PKS-like enzyme, ketoreductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "reduced fumagillin production", 
+                    "gene_startpos": 105095, 
+                    "not_in_gbk": false, 
                     "tailoring": "Reduction", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        " Activity assay", 
-                        " Other in vivo study"
-                    ], 
-                    "mut_pheno": "reduced fumagillin production"
+                    "gene_name": "fma-KR"
                 }, 
                 {
-                    "gene_name": "No gene ID", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 108297, 
-                    "gene_endpos": 110523, 
-                    "gene_id": "EAL85117.1", 
-                    "gene_annotation": "acetate-CoA ligase, putative", 
                     "gene_function": "Unknown", 
+                    "gene_endpos": 110523, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "no significant change in fumagillin production"
+                    "gene_id": "EAL85117.1", 
+                    "gene_annotation": "acetate-CoA ligase, putative", 
+                    "gene_startpos": 108297, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "no significant change in fumagillin production", 
+                    "gene_name": "No gene ID"
                 }, 
                 {
-                    "gene_name": "fmaG, fma-P450", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 110932, 
+                    "gene_function": "Tailoring", 
                     "gene_endpos": 112596, 
+                    "evidence_genefunction": [
+                        "Knock-out", 
+                        " Activity assay", 
+                        " Other in vivo study"
+                    ], 
                     "gene_id": "EAL85116.1", 
                     "gene_annotation": "cytochrome P450 oxidoreductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "accumulation of \u00df-trans-bergamotene", 
+                    "gene_startpos": 110932, 
+                    "not_in_gbk": false, 
                     "tailoring": "Oxidation", 
-                    "evidence_genefunction": [
-                        "Knock-out", 
-                        " Activity assay", 
-                        " Other in vivo study"
-                    ], 
-                    "mut_pheno": "accumulation of \u00df-trans-bergamotene"
+                    "gene_name": "fmaG, fma-P450"
                 }, 
                 {
-                    "gene_name": "fmaA", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 113744, 
-                    "gene_endpos": 114438, 
-                    "gene_id": "EAL85115.1", 
-                    "gene_annotation": "terpene cycase", 
                     "gene_function": "Scaffold biosynthesis", 
+                    "gene_endpos": 114438, 
                     "evidence_genefunction": [
                         "Knock-out", 
                         " Activity assay", 
                         " Other in vivo study"
                     ], 
-                    "mut_pheno": "loss of fumagillin production"
+                    "gene_id": "EAL85115.1", 
+                    "gene_annotation": "terpene cycase", 
+                    "gene_startpos": 113744, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "loss of fumagillin production", 
+                    "gene_name": "fmaA"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0001067", 
+        "Terpene": {
+            "terpene_subclass": "Other", 
+            "terpene_synth_cycl": [
+                "eal85115.1"
+            ], 
+            "terpene_precursor": "FPP", 
+            "terpene_c_len": "Sesquiterpene", 
+            "prenyl_transf": []
+        }, 
+        "biosyn_class": [
+            "Polyketide", 
+            "Terpene"
+        ], 
         "Polyketide": {
-            "pk_subclass": "Polyene", 
-            "lin_cycl_pk": "Linear", 
+            "nr_iterations": 5, 
+            "pks_te_type": "Other", 
             "pks_subclass": [
                 "Iterative type I"
             ], 
-            "starter_unit": "Acetyl-CoA", 
-            "pks_genes": [
-                "eal85129.1"
-            ], 
-            "nr_iterations": 5, 
-            "iterative_subtype": "Highly reducing", 
-            "pks_te_type": "Other", 
-            "pks_thioesterase": [
-                "eal85128.1"
-            ], 
-            "pks_release_type": "Hydrolysis", 
+            "lin_cycl_pk": "Linear", 
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "EAL85129.1", 
                     "pks_module": [
                         {
-                            "module_nr": "1", 
+                            "pks_mod_doms": [
+                                "None"
+                            ], 
+                            "pks_evidence_skip_iter": "Activity assay", 
                             "pks_domains": [
                                 "KS", 
                                 "AT", 
@@ -304,29 +314,26 @@
                                 "KR", 
                                 "T"
                             ], 
+                            "module_nr": "1", 
                             "at_substr_spec": "Malonyl-CoA", 
-                            "evidence_at_spec": "Activity assay", 
                             "kr_stereochem": "Unknown", 
-                            "pks_mod_doms": [
-                                "None"
-                            ], 
                             "pks_mod_skip_iter": "Iterated", 
-                            "pks_evidence_skip_iter": "Activity assay"
+                            "evidence_at_spec": "Activity assay"
                         }
                     ]
                 }
-            ]
-        }, 
-        "Terpene": {
-            "terpene_subclass": "Other", 
-            "terpene_c_len": "Sesquiterpene", 
-            "terpene_precursor": "FPP", 
-            "terpene_synth_cycl": [
-                "eal85115.1"
             ], 
-            "prenyl_transf": []
-        }
+            "pks_thioesterase": [
+                "eal85128.1"
+            ], 
+            "iterative_subtype": "Highly reducing", 
+            "starter_unit": "Acetyl-CoA", 
+            "pk_subclass": "Polyene", 
+            "pks_genes": [
+                "eal85129.1"
+            ], 
+            "pks_release_type": "Hydrolysis"
+        }, 
+        "publications": "23488861,24568283,9177176"
     }
 }
-
-

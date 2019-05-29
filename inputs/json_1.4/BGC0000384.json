@@ -1,94 +1,52 @@
 {
-    "version": "15", 
     "personal": {
+        "submitter_email": "acj523@gmail.com", 
         "submitter_name": "Adam Jones", 
-        "submitter_institution": "Fairfax, VA USA", 
-        "submitter_email": "acj523@gmail.com"
+        "submitter_institution": "Fairfax, VA USA"
     }, 
+    "version": "15", 
+    "comments": "Only one condensation domain is present within AAT12283", 
     "general_params": {
-        "mibig_accession": "BGC0000384", 
-        "biosyn_class": [
-            "NRP"
-        ], 
-        "publications": "107586, 15366877, 20000453, 22314229, 13880125, 24839542, 23751865", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "AY588942", 
-                    "start_coord": 2740, 
                     "end_coord": 13999, 
+                    "Accession": "AY588942", 
                     "conn_comp_cluster": [
                         "Enzymatic assays", 
                         "Heterologous expression", 
                         "Sequence-based prediction"
-                    ]
+                    ], 
+                    "start_coord": 2740
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
-                "compound": "Lyngbyatoxin", 
+                "chemspider_id": 10472344, 
+                "mol_mass": "437.628", 
+                "other_chem_act": "Tumor promoter, irritant, vesicant ", 
+                "chem_struct": "CC(C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)[C@](C)(CCC=C(C)C)C=C)CO", 
                 "chem_synonyms": [], 
                 "database_deposited": true, 
+                "chebi_id": 80050, 
+                "pubchem_id": 91706, 
+                "chem_target": "Protein kinase C (activator)", 
+                "compound": "Lyngbyatoxin", 
+                "molecular_formula": "C27H39N3O2", 
                 "databases_deposited": [
                     "PubChem", 
                     "chEBI", 
                     "ChemSpider"
                 ], 
-                "pubchem_id": 91706, 
-                "chebi_id": 80050, 
-                "chemspider_id": 10472344, 
                 "chem_act": [
                     "Cytotoxic", 
                     "Other"
-                ], 
-                "other_chem_act": "Tumor promoter, irritant, vesicant ", 
-                "chem_target": "Protein kinase C (activator)"
+                ]
             }
         ], 
         "genes": {
-            "gene": [
-                {
-                    "gene_name": "ltxA", 
-                    "gene_id": "AAT12283", 
-                    "gene_function": "Scaffold biosynthesis", 
-                    "evidence_genefunction": [
-                        "Heterologous expression", 
-                        "Sequence-based prediction"
-                    ]
-                }, 
-                {
-                    "gene_name": "ltxB", 
-                    "gene_id": "AAT12284", 
-                    "gene_function": "Tailoring", 
-                    "tailoring": "Oxidation", 
-                    "evidence_genefunction": [
-                        "Heterologous expression", 
-                        "Activity assay", 
-                        "Sequence-based prediction"
-                    ]
-                }, 
-                {
-                    "gene_name": "ltxC", 
-                    "gene_id": "AAT12285", 
-                    "gene_function": "Scaffold biosynthesis", 
-                    "evidence_genefunction": [
-                        "Heterologous expression", 
-                        "Activity assay", 
-                        "Sequence-based prediction"
-                    ]
-                }, 
-                {
-                    "gene_name": "ltxD", 
-                    "gene_id": "AAT12286", 
-                    "gene_function": "Tailoring", 
-                    "tailoring": "Other", 
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                }
-            ], 
             "operon": [
                 {
                     "operon_genes": [
@@ -99,43 +57,87 @@
                     ], 
                     "evidence_operon": "Sequence-based prediction"
                 }
+            ], 
+            "gene": [
+                {
+                    "gene_function": "Scaffold biosynthesis", 
+                    "evidence_genefunction": [
+                        "Heterologous expression", 
+                        "Sequence-based prediction"
+                    ], 
+                    "gene_id": "AAT12283", 
+                    "gene_name": "ltxA"
+                }, 
+                {
+                    "tailoring": "Oxidation", 
+                    "gene_function": "Tailoring", 
+                    "evidence_genefunction": [
+                        "Heterologous expression", 
+                        "Activity assay", 
+                        "Sequence-based prediction"
+                    ], 
+                    "gene_id": "AAT12284", 
+                    "gene_name": "ltxB"
+                }, 
+                {
+                    "gene_function": "Scaffold biosynthesis", 
+                    "evidence_genefunction": [
+                        "Heterologous expression", 
+                        "Activity assay", 
+                        "Sequence-based prediction"
+                    ], 
+                    "gene_id": "AAT12285", 
+                    "gene_name": "ltxC"
+                }, 
+                {
+                    "tailoring": "Other", 
+                    "gene_function": "Tailoring", 
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ], 
+                    "gene_id": "AAT12286", 
+                    "gene_name": "ltxD"
+                }
             ]
         }, 
+        "mibig_accession": "BGC0000384", 
+        "biosyn_class": [
+            "NRP"
+        ], 
         "NRP": {
-            "subclass": "Other", 
-            "lin_cycl_nrp": "Cyclic", 
+            "nrps_release_type": "Reductive release", 
             "nrps_genes": [
                 {
-                    "nrps_gene": "AAT12283", 
                     "nrps_module": [
                         {
                             "module_nr": "2", 
+                            "nrps_mod_doms": "None", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Tryptophan", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "LCL", 
-                            "nrps_mod_doms": "None"
+                            "cdom_subtype": "LCL"
                         }, 
                         {
                             "module_nr": "1", 
+                            "nrps_mod_doms": "Methylation", 
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic", 
                                 "prot_adom_spec": "Valine", 
-                                "evidence_a_spec": "Structure-based inference"
+                                "evidence_a_spec": "Structure-based inference", 
+                                "aa_type": "Proteinogenic"
                             }, 
-                            "cdom_subtype": "Other", 
-                            "nrps_mod_doms": "Methylation"
+                            "cdom_subtype": "Other"
                         }
-                    ]
+                    ], 
+                    "nrps_gene": "AAT12283"
                 }
             ], 
+            "subclass": "Other", 
+            "lin_cycl_nrp": "Cyclic", 
             "nrps_te_type": "None", 
-            "nrps_thioesterase": [], 
-            "nrps_release_type": "Reductive release"
-        }
-    },
-    "comments": "Only one condensation domain is present within AAT12283"
+            "nrps_thioesterase": []
+        }, 
+        "publications": "107586, 15366877, 20000453, 22314229, 13880125, 24839542, 23751865"
+    }
 }
-

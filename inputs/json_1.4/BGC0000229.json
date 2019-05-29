@@ -1,473 +1,471 @@
 {
-    "version": "16", 
     "personal": {
+        "submitter_email": "jju@scsio.ac.cn", 
         "submitter_name": "Jianhua Ju", 
-        "submitter_institution": " Guangdong Key Laboratory of Marine Materia Medica Deputy director, Key Laboratory of Marine Bio-resources Sustainable Utilization,CAS South China Sea Institute of Oceanology, Chinese Academy of Sciences (CAS)", 
-        "submitter_email": "jju@scsio.ac.cn"
+        "submitter_institution": " Guangdong Key Laboratory of Marine Materia Medica Deputy director, Key Laboratory of Marine Bio-resources Sustainable Utilization,CAS South China Sea Institute of Oceanology, Chinese Academy of Sciences (CAS)"
     }, 
+    "version": "16", 
     "general_params": {
-        "mibig_accession": "BGC0000229", 
-        "biosyn_class": [
-            "Polyketide", 
-			"Saccharide"
-        ], 
-        "publications": "23782455", 
         "loci": {
-            "complete": "complete", 
             "nucl_acc": [
                 {
-                    "Accession": "KC962511", 
-                    "start_coord": 3722, 
                     "end_coord": 40613, 
+                    "Accession": "KC962511", 
                     "conn_comp_cluster": [
                         "Knock-out studies"
-                    ]
+                    ], 
+                    "start_coord": 3722
                 }
-            ]
+            ], 
+            "complete": "complete"
         }, 
         "compounds": [
             {
+                "mol_mass": 938.3936, 
+                "chem_struct": "O=C2C3=C(C=C[C@@](C[C@@](C)(OC5CCC(OC8CCC(C(C)O8)=O)C(C)O5)C4)(O)[C@@](O)3C4=O)C(C1=C(O)C(C6CC(O)C(OC7CCC(OC9CCC(C(C)O9)=O)C(C)O7)C(C)O6)=CC=C12)=O", 
+                "mass_ion_type": "None", 
+                "chem_target": "endoplasmic reticulum", 
                 "compound": "grincamycin", 
+                "molecular_formula": "C49H62O18", 
                 "chem_synonyms": [
                     "vineomycin a1", 
                     "vineomycin b1"
                 ], 
-                "chem_struct": "O=C2C3=C(C=C[C@@](C[C@@](C)(OC5CCC(OC8CCC(C(C)O8)=O)C(C)O5)C4)(O)[C@@](O)3C4=O)C(C1=C(O)C(C6CC(O)C(OC7CCC(OC9CCC(C(C)O9)=O)C(C)O7)C(C)O6)=CC=C12)=O", 
-                "molecular_formula": "C49H62O18", 
-                "mol_mass": 938.3936, 
-                "mass_ion_type": "None", 
                 "chem_act": [
                     "Cytotoxic"
-                ], 
-                "chem_target": "endoplasmic reticulum"
+                ]
             }
         ], 
         "genes": {
             "gene": [
                 {
-                    "gene_name": "GcnA", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 3722, 
+                    "gene_function": "Tailoring", 
                     "gene_endpos": 4840, 
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "AGO50604.1", 
                     "gene_annotation": "putative oxidoreductase", 
-                    "gene_function": "Tailoring", 
+                    "gene_startpos": 3722, 
+                    "not_in_gbk": false, 
                     "tailoring": "Oxidation", 
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_name": "GcnA"
                 }, 
                 {
-                    "gene_name": "GcnB", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 5064, 
+                    "gene_function": "Transport", 
                     "gene_endpos": 6581, 
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "AGO50605.1", 
                     "gene_annotation": "transporter", 
-                    "gene_function": "Transport", 
+                    "gene_startpos": 5064, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "GcnB"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 7211, 
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": null
-                }, 
-                {
-                    "gene_name": "GcnC", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 6612, 
-                    "gene_endpos": 7211, 
                     "gene_id": "AGO50606.1", 
                     "gene_annotation": "NADPH-dependent fmn reductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": null, 
+                    "gene_startpos": 6612, 
+                    "not_in_gbk": false, 
                     "tailoring": "Reduction", 
+                    "gene_name": "GcnC"
+                }, 
+                {
+                    "gene_function": "Regulation", 
+                    "gene_endpos": 8081, 
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": null
-                }, 
-                {
-                    "gene_name": "GcnD", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 7242, 
-                    "gene_endpos": 8081, 
                     "gene_id": "AGO50607.1", 
                     "gene_annotation": "tetr family transcriptional regulator", 
-                    "gene_function": "Regulation", 
+                    "gene_startpos": 7242, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "GcnD"
+                }, 
+                {
+                    "gene_function": "Unknown", 
+                    "gene_endpos": 9070, 
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": null
-                }, 
-                {
-                    "gene_name": "GcnE", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 8228, 
-                    "gene_endpos": 9070, 
                     "gene_id": "AGO50608.1", 
                     "gene_annotation": "hypothetical protein", 
-                    "gene_function": "Unknown", 
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": null
+                    "gene_startpos": 8228, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "GcnE"
                 }, 
                 {
-                    "gene_name": "GcnF", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 9396, 
+                    "gene_function": "Tailoring", 
                     "gene_endpos": 10883, 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "AGO50609.1", 
                     "gene_annotation": "oxidoreductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 9396, 
+                    "not_in_gbk": false, 
                     "tailoring": "Oxidation", 
+                    "gene_name": "GcnF"
+                }, 
+                {
+                    "gene_function": "Precursor biosynthesis", 
+                    "gene_endpos": 12500, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnH", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 11220, 
-                    "gene_endpos": 12500, 
                     "gene_id": "AGO50610.1", 
                     "gene_annotation": "ketoacyl synthase", 
+                    "gene_startpos": 11220, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "none wildtype", 
+                    "gene_name": "GcnH"
+                }, 
+                {
                     "gene_function": "Precursor biosynthesis", 
+                    "gene_endpos": 13717, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnI", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 12497, 
-                    "gene_endpos": 13717, 
                     "gene_id": "AGO50611.1", 
                     "gene_annotation": "chain length determinant", 
+                    "gene_startpos": 12497, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "none wildtype", 
+                    "gene_name": "GcnI"
+                }, 
+                {
                     "gene_function": "Precursor biosynthesis", 
+                    "gene_endpos": 14063, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnJ", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 13794, 
-                    "gene_endpos": 14063, 
                     "gene_id": "AGO50612.1", 
                     "gene_annotation": "acyl carrier protein", 
+                    "gene_startpos": 13794, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "none wildtype", 
+                    "gene_name": "GcnJ"
+                }, 
+                {
                     "gene_function": "Precursor biosynthesis", 
+                    "gene_endpos": 14977, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnK", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 14192, 
-                    "gene_endpos": 14977, 
                     "gene_id": "AGO50613.1", 
                     "gene_annotation": "ketoreductase", 
+                    "gene_startpos": 14192, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "none wildtype", 
+                    "gene_name": "GcnK"
+                }, 
+                {
                     "gene_function": "Precursor biosynthesis", 
+                    "gene_endpos": 15933, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnL", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 14998, 
-                    "gene_endpos": 15933, 
                     "gene_id": "AGO50614.1", 
                     "gene_annotation": "cyclase", 
-                    "gene_function": "Precursor biosynthesis", 
+                    "gene_startpos": 14998, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": "none wildtype", 
+                    "gene_name": "GcnL"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 17923, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnM", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 15935, 
-                    "gene_endpos": 17923, 
                     "gene_id": "AGO50615.1", 
                     "gene_annotation": "oxygenase-reductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 15935, 
+                    "not_in_gbk": false, 
                     "tailoring": "Oxidation", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "none wildtype"
+                    "gene_name": "GcnM"
                 }, 
                 {
-                    "gene_name": "GcnN", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 17936, 
+                    "gene_function": "Transport", 
                     "gene_endpos": 19153, 
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "AGO50616.1", 
                     "gene_annotation": "transporter", 
-                    "gene_function": "Transport", 
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": null
+                    "gene_startpos": 17936, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "GcnN"
                 }, 
                 {
-                    "gene_name": "GcnG1", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 19194, 
+                    "gene_function": "Tailoring", 
                     "gene_endpos": 20486, 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "AGO50617.1", 
                     "gene_annotation": "glycosyltransferase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 19194, 
+                    "not_in_gbk": false, 
                     "tailoring": "Glycosylation", 
+                    "gene_name": "GcnG1"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 21730, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnG2", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 20516, 
-                    "gene_endpos": 21730, 
                     "gene_id": "AGO50618.1", 
                     "gene_annotation": "glycosyltransferases", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 20516, 
+                    "not_in_gbk": false, 
                     "tailoring": "Glycosylation", 
+                    "gene_name": "GcnG2"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 22293, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnS1", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 21799, 
-                    "gene_endpos": 22293, 
                     "gene_id": "AGO50619.1", 
                     "gene_annotation": "NDP-hexose 3, 5-epimerase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 21799, 
+                    "not_in_gbk": false, 
                     "tailoring": "Epimerization", 
+                    "gene_name": "GcnS1"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 23426, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnG3", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 22296, 
-                    "gene_endpos": 23426, 
                     "gene_id": "AGO50620.1", 
                     "gene_annotation": "glycosyltransferase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 22296, 
+                    "not_in_gbk": false, 
                     "tailoring": "Glycosylation", 
+                    "gene_name": "GcnG3"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 24522, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnS2", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 23455, 
-                    "gene_endpos": 24522, 
                     "gene_id": "AGO50621.1", 
                     "gene_annotation": "dNDP-glucose synthetase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 23455, 
+                    "not_in_gbk": false, 
                     "tailoring": "Other", 
+                    "gene_name": "GcnS2"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 25502, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnS3", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 24519, 
-                    "gene_endpos": 25502, 
                     "gene_id": "AGO50622.1", 
                     "gene_annotation": "dNDP-glucose 4,6-dehydratase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 24519, 
+                    "not_in_gbk": false, 
                     "tailoring": "Dehydration", 
+                    "gene_name": "GcnS3"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 26547, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnS4", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 25537, 
-                    "gene_endpos": 26547, 
                     "gene_id": "AGO50623.1", 
                     "gene_annotation": "NDP-hexose 4-ketoreductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 25537, 
+                    "not_in_gbk": false, 
                     "tailoring": "Reduction", 
+                    "gene_name": "GcnS4"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 27854, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnS5", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 26550, 
-                    "gene_endpos": 27854, 
                     "gene_id": "AGO50624.1", 
                     "gene_annotation": "NDP-hexose 3,4-dehydratase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 26550, 
+                    "not_in_gbk": false, 
                     "tailoring": "Dehydration", 
+                    "gene_name": "GcnS5"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 28671, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnS6", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 27907, 
-                    "gene_endpos": 28671, 
                     "gene_id": "AGO50625.1", 
                     "gene_annotation": "NDP-hexose 4-ketoreductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 27907, 
+                    "not_in_gbk": false, 
                     "tailoring": "Reduction", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "none wildtype"
+                    "gene_name": "GcnS6"
                 }, 
                 {
-                    "gene_name": "GcnO", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 28700, 
+                    "gene_function": "Unknown", 
                     "gene_endpos": 29653, 
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "AGO50626.1", 
                     "gene_annotation": "hypothetical protein", 
-                    "gene_function": "Unknown", 
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": null
+                    "gene_startpos": 28700, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "GcnO"
                 }, 
                 {
-                    "gene_name": "GcnS7", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 29709, 
+                    "gene_function": "Tailoring", 
                     "gene_endpos": 31112, 
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ], 
                     "gene_id": "AGO50627.1", 
                     "gene_annotation": "NDP-hexose 2,3-dehydratase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 29709, 
+                    "not_in_gbk": false, 
                     "tailoring": "Dehydration", 
+                    "gene_name": "GcnS7"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 32068, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
-                }, 
-                {
-                    "gene_name": "GcnS8", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 31109, 
-                    "gene_endpos": 32068, 
                     "gene_id": "AGO50628.1", 
                     "gene_annotation": "NDP-hexose 3-ketoreductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 31109, 
+                    "not_in_gbk": false, 
                     "tailoring": "Reduction", 
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ], 
-                    "mut_pheno": "none wildtype"
+                    "gene_name": "GcnS8"
                 }, 
                 {
-                    "gene_name": "GcnP", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 32089, 
+                    "gene_function": "Tailoring", 
                     "gene_endpos": 33624, 
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "AGO50629.1", 
                     "gene_annotation": "carboxyl transferase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": null, 
+                    "gene_startpos": 32089, 
+                    "not_in_gbk": false, 
                     "tailoring": "Carboxylation", 
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": null
+                    "gene_name": "GcnP"
                 }, 
                 {
-                    "gene_name": "GcnQ", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 34149, 
-                    "gene_endpos": 35738, 
-                    "gene_id": "AGO50630.1", 
-                    "gene_annotation": "FAD/FMN-containin-g dehydrogenase", 
                     "gene_function": "Tailoring", 
-                    "tailoring": "Dehydration", 
+                    "gene_endpos": 35738, 
                     "evidence_genefunction": [
                         "Knock-out"
                     ], 
-                    "mut_pheno": "none wildtype"
+                    "gene_id": "AGO50630.1", 
+                    "gene_annotation": "FAD/FMN-containin-g dehydrogenase", 
+                    "mut_pheno": "none wildtype", 
+                    "gene_startpos": 34149, 
+                    "not_in_gbk": false, 
+                    "tailoring": "Dehydration", 
+                    "gene_name": "GcnQ"
                 }, 
                 {
-                    "gene_name": "GcnR", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 36425, 
+                    "gene_function": "Regulation", 
                     "gene_endpos": 37135, 
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ], 
                     "gene_id": "AGO50631.1", 
                     "gene_annotation": "positive regulation regulator", 
-                    "gene_function": "Regulation", 
+                    "gene_startpos": 36425, 
+                    "not_in_gbk": false, 
+                    "mut_pheno": null, 
+                    "gene_name": "GcnR"
+                }, 
+                {
+                    "gene_function": "Tailoring", 
+                    "gene_endpos": 39598, 
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": null
-                }, 
-                {
-                    "gene_name": "GcnT", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 37802, 
-                    "gene_endpos": 39598, 
                     "gene_id": "AGO50632.1", 
                     "gene_annotation": "putative oxidoreductase", 
-                    "gene_function": "Tailoring", 
+                    "mut_pheno": null, 
+                    "gene_startpos": 37802, 
+                    "not_in_gbk": false, 
                     "tailoring": "Oxidation", 
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ], 
-                    "mut_pheno": null
+                    "gene_name": "GcnT"
                 }, 
                 {
-                    "gene_name": "GcnU", 
-                    "not_in_gbk": false, 
-                    "gene_startpos": 39588, 
-                    "gene_endpos": 40613, 
-                    "gene_id": "AGO50633.1", 
-                    "gene_annotation": "putative oxidoreductase", 
                     "gene_function": "Tailoring", 
-                    "tailoring": "Reduction", 
+                    "gene_endpos": 40613, 
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ], 
-                    "mut_pheno": null
+                    "gene_id": "AGO50633.1", 
+                    "gene_annotation": "putative oxidoreductase", 
+                    "mut_pheno": null, 
+                    "gene_startpos": 39588, 
+                    "not_in_gbk": false, 
+                    "tailoring": "Reduction", 
+                    "gene_name": "GcnU"
                 }
             ]
         }, 
+        "mibig_accession": "BGC0000229", 
+        "biosyn_class": [
+            "Polyketide", 
+            "Saccharide"
+        ], 
         "Polyketide": {
-            "pk_subclass": "Angucycline", 
-            "lin_cycl_pk": "Cyclic", 
+            "cyclases": "AGO50613.1,AGO50614.1", 
+            "ketide_length": 10, 
             "pks_subclass": [
                 "Type II"
             ], 
+            "lin_cycl_pk": "Cyclic", 
             "starter_unit": "Malonyl-CoA", 
+            "pk_subclass": "Angucycline", 
             "pks_genes": [
-                "ago50610.1\u00ef\u00bc\u008cago50611.1\u00ef\u00bc\u008cago50612.1"
-            ], 
-            "ketide_length": 10, 
-            "cyclases": "AGO50613.1\u00ef\u00bc\u008cAGO50614.1"
-        }
+                "ago50610.1,ago50611.1,ago50612.1"
+            ]
+        }, 
+        "publications": "23782455"
     }
 }
-
-
