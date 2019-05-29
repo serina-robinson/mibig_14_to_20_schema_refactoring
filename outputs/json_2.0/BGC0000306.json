@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Neha Garg",
-        "submitter_institution": "University of California at San Diego",
-        "submitter_email": "negarg@ucsd.edu"
+    "submitter": {
+        "name": "Neha Garg",
+        "institution": "University of California at San Diego",
+        "email": "negarg@ucsd.edu"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000306",
         "biosyn_class": [
             "NRP"
@@ -13,201 +19,163 @@
             "pubmed:21999343"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Sequence-based prediction"
-            ],
             "accession": "ABYX02000001.1",
             "start_coord": 6273710,
-            "end_coord": 6304320
+            "end_coord": 6304320,
+            "completeness": "complete",
+            "evidence": [
+                "Sequence-based prediction"
+            ]
         },
         "compounds": [
             {
                 "compound": "Arylomycin",
-                "chem_synonyms": [
-                    "Arylomycin C16",
-                    "CHEMBL1784531",
-                    "SCHEMBL14234622",
-                    "BDBM50441139",
-                    ""
-                ],
-                "pubchem_id": 54586211,
-                "chem_act": [
+                "chem_synonyms": [],
+                "database_id": "pubchem:54586211",
+                "chem_acts": [
                     "Antibacterial"
                 ],
-                "chem_target": [
-                    "typeIsignalpeptidases"
-                ],
-                "mol_mass": 880.495,
-                "molecular_formula": "C46H68N6O11",
-                "chem_struct": "CCCCCCCCCCCCCCCC(=O)N(C)[C@H](CO)C(=O)N[C@H](C)C(=O)NCC(=O)N(C)[C@H]1C2=CC(=C(C=C2)O)C3=C(C=CC(=C3)C[C@H](NC(=O)[C@@H](NC1=O)C)C(=O)O)O"
+                "chem_targets": [
+                    {
+                        "target": "typeIsignalpeptidases",
+                        "publications": []
+                    }
+                ]
             }
         ],
-        "genes": {
-            "gene": [
-                {
-                    "gene_name": "EWS95122.1",
-                    "not_in_gbk": false,
-                    "gene_id": "SSIG_07966",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "EWS95123.1",
-                    "not_in_gbk": false,
-                    "gene_id": "SSIG_05822",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "EWS95124.1",
-                    "not_in_gbk": false,
-                    "gene_id": "SSIG_05823",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "EWS95125.1",
-                    "not_in_gbk": false,
-                    "gene_id": "SSIG_05824",
-                    "gene_annotation": "MbtH domain-containing protein",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "EWS95126.1",
-                    "not_in_gbk": false,
-                    "gene_id": "SSIG_05825",
-                    "gene_annotation": "4-hydroxyphenylpyruvate dioxygenase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "EWS95127.1",
-                    "not_in_gbk": false,
-                    "gene_id": "SSIG_05826",
-                    "gene_annotation": "L-lactate oxidase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "EWS95128.1",
-                    "not_in_gbk": false,
-                    "gene_id": "SSIG_05827",
-                    "gene_annotation": "GntR family transcriptional regulator",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "EWS95129.1",
-                    "not_in_gbk": false,
-                    "gene_id": "SSIG_05828",
-                    "gene_annotation": "heme ABC exporter, ATP-binding protein CcmA",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "EWS95130.1",
-                    "not_in_gbk": false,
-                    "gene_id": "SSIG_05829",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown"
-                }
-            ]
-        },
+        "genes": {},
         "nrp": {
             "subclass": "Other lipopeptide",
             "lipid_moiety": "10-methylundecanoic acid",
-            "lin_cycl_nrp": "Linear",
-            "nrps_te_type": "Unknown",
-            "nrps_thioesterase": [
-                "ssig_05823"
-            ],
-            "nrps_release_type": "Hydrolysis",
             "nrps_genes": [
                 {
-                    "nrps_gene": "EWS95122.1",
-                    "nrps_module": [
+                    "gene_id": "EWS95122.1",
+                    "modules": [
                         {
-                            "module_nr": "1",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Serine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": true
+                                "proteinogenic": [
+                                    "Serine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": true,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "Starter",
-                            "nrps_mod_doms": "Methylation",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "1",
+                            "active": false,
+                            "c_dom_subtype": "Starter",
+                            "modification_domains": [
+                                "Methylation"
+                            ]
                         },
                         {
-                            "module_nr": "2",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Alanine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": true
+                                "proteinogenic": [
+                                    "Alanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": true,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "Unknown",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "2",
+                            "active": false,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "None"
+                            ]
                         }
                     ]
                 },
                 {
-                    "nrps_gene": "EWS95124.1",
-                    "nrps_module": [
+                    "gene_id": "EWS95124.1",
+                    "modules": [
                         {
-                            "module_nr": "2",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Glycine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Glycine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "2",
+                            "active": false,
+                            "modification_domains": [
+                                "None"
+                            ]
                         },
                         {
-                            "module_nr": "3",
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "4-Hydroxyphenylglycine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "nonproteinogenic": [
+                                    "4-Hydroxyphenylglycine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "Methylation",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "3",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ]
                         },
                         {
-                            "module_nr": "4",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Alanine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Alanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "4",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         },
                         {
-                            "module_nr": "5",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Tyrosine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Tyrosine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "5",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         }
                     ]
                 }
+            ],
+            "cyclic": false,
+            "thioesterases": [
+                {
+                    "gene": "ssig_05823",
+                    "thioesterase_type": "Unknown"
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
             ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

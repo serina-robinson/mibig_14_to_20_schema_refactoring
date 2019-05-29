@@ -1,97 +1,122 @@
 {
-    "submitter": {
-        "name": "Arnold J.M. Driessen",
-        "institution": "University of Groningen",
-        "email": "a.j.m.driessen@rug.nl"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000405",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:1368505",
-            "pubmed:2129535",
-            "pubmed:7597101",
-            "pubmed:11180058",
-            "pubmed:17548217",
-            "pubmed:20851974",
-            "pubmed:18820685"
-        ],
-        "loci": {
-            "accession": "EF601124.1",
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays"
-            ]
-        },
         "compounds": [
             {
-                "compound": "delta-(L-alpha-aminoadipyl)-L-cysteine-D-valine",
+                "chem_acts": [
+                    "none"
+                ],
                 "chem_synonyms": [
                     "acv"
                 ],
-                "database_id": "chebi:58572",
-                "chem_acts": [
-                    "none"
-                ]
+                "compound": "delta-(L-alpha-aminoadipyl)-L-cysteine-D-valine",
+                "database_id": "chebi:58572"
             },
             {
-                "compound": "isopenicillin N",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_synonyms": [
                     "ipn"
                 ],
-                "database_id": "chebi:18165",
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "cellwallsynthesis"
+                    }
+                ],
+                "compound": "isopenicillin N",
+                "database_id": "chebi:18165"
+            },
+            {
                 "chem_acts": [
                     "Antibacterial"
                 ],
-                "chem_targets": [
-                    {
-                        "target": "cellwallsynthesis",
-                        "publications": []
-                    }
-                ]
-            },
-            {
-                "compound": "Benzylpenicillin",
                 "chem_synonyms": [
                     "penicillin g"
                 ],
-                "database_id": "chebi:51765",
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "cellwallbiosynthesis"
+                    }
+                ],
+                "compound": "Benzylpenicillin",
+                "database_id": "chebi:51765"
+            },
+            {
                 "chem_acts": [
                     "Antibacterial"
                 ],
-                "chem_targets": [
-                    {
-                        "target": "cellwallbiosynthesis",
-                        "publications": []
-                    }
-                ]
-            },
-            {
-                "compound": "Phenoxymethylpenicillin ",
                 "chem_synonyms": [
                     "penicillin v"
                 ],
-                "database_id": "chembl:615",
-                "chem_acts": [
-                    "Antibacterial"
-                ],
                 "chem_targets": [
                     {
-                        "target": "cellwallbiosynthesis",
-                        "publications": []
+                        "publications": [],
+                        "target": "cellwallbiosynthesis"
                     }
-                ]
+                ],
+                "compound": "Phenoxymethylpenicillin ",
+                "database_id": "chembl:615"
             }
         ],
         "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "ABR12615.1",
+                    "name": "pcbAB",
+                    "product": "ACV synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "ABR12616.1",
+                    "name": "pcbC",
+                    "product": "IPN synthase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "ABR12617.1",
+                    "name": "penDE",
+                    "product": "IPN:acyltransferase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                }
+            ],
             "extra_genes": [
                 {
                     "id": "ABR12607.1"
@@ -133,133 +158,108 @@
                     "id": "ABR12622.1"
                 }
             ],
-            "annotations": [
-                {
-                    "name": "pcbAB",
-                    "id": "ABR12615.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Activity assay"
-                            ]
-                        }
-                    ],
-                    "product": "ACV synthetase"
-                },
-                {
-                    "name": "pcbC",
-                    "id": "ABR12616.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Activity assay"
-                            ]
-                        }
-                    ],
-                    "product": "IPN synthase",
-                    "tailoring": [
-                        "Oxidation"
-                    ]
-                },
-                {
-                    "name": "penDE",
-                    "id": "ABR12617.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Activity assay"
-                            ]
-                        }
-                    ],
-                    "product": "IPN:acyltransferase",
-                    "tailoring": [
-                        "Unknown"
-                    ]
-                }
-            ],
             "operons": [
                 {
+                    "evidence": [
+                        "RNAseq"
+                    ],
                     "genes": [
                         "pcbab",
                         "pcbc",
                         "pende"
-                    ],
-                    "evidence": [
-                        "RNAseq"
                     ]
                 }
             ]
         },
+        "loci": {
+            "accession": "EF601124.1",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays"
+            ]
+        },
+        "mibig_accession": "BGC0000405",
         "nrp": {
-            "subclass": "Beta-lactam",
+            "cyclic": false,
             "nrps_genes": [
                 {
                     "gene_id": "ABR12615.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "2-Amino-adipic-acid"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "2-Amino-adipic-acid"
+                                ]
                             },
-                            "module_number": "0",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Cysteine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Cysteine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Valine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Valine"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 }
             ],
-            "cyclic": false,
-            "thioesterases": [],
             "release_type": [
                 "Macrolactamization"
-            ]
-        }
+            ],
+            "subclass": "Beta-lactam",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:1368505",
+            "pubmed:2129535",
+            "pubmed:7597101",
+            "pubmed:11180058",
+            "pubmed:17548217",
+            "pubmed:20851974",
+            "pubmed:18820685"
+        ]
+    },
+    "submitter": {
+        "email": "a.j.m.driessen@rug.nl",
+        "institution": "University of Groningen",
+        "name": "Arnold J.M. Driessen"
     }
 }

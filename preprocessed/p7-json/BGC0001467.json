@@ -1,165 +1,89 @@
 {
-    "submitter": {
-        "name": "Paul D'Agostino",
-        "institution": "Technical University of Munich",
-        "email": "paulmdagostino@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001467",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "doi:10.1021/jo00103a011",
-            "pubmed:26335778",
-            "pubmed:29940102"
-        ],
-        "loci": {
-            "accession": "NZ_KE650771.1",
-            "start_coord": 6215740,
-            "end_coord": 6241521,
-            "completeness": "complete",
-            "evidence": [
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Hapalosin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:133055;chemspider:117421",
-                "evidence": [
-                    "NMR",
-                    "Mass spectrometry"
-                ],
                 "chem_acts": [
                     "Cytotoxic",
                     "P-glycoprotein-mediated multiple drug resistance"
                 ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "P-glycoprotein",
-                        "publications": []
+                        "publications": [],
+                        "target": "P-glycoprotein"
                     }
+                ],
+                "compound": "Hapalosin",
+                "database_id": "pubchem:133055;chemspider:117421",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
                 ]
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "hapE",
                     "id": "WP_035122279.1",
+                    "name": "hapE",
                     "product": "type I polyketide synthase"
                 },
                 {
-                    "name": "hapD",
                     "id": "WP_051206727.1",
+                    "name": "hapD",
                     "product": "non-ribosomal peptide synthetase"
                 },
                 {
-                    "name": "hapC",
                     "id": "WP_081656241.1",
+                    "name": "hapC",
                     "product": "non-ribosomal peptide synthetase"
                 },
                 {
-                    "name": "hapB",
                     "id": "WP_035121546.1",
+                    "name": "hapB",
                     "product": "type I polyketide synthase"
                 },
                 {
-                    "name": "hapA",
                     "id": "WP_026723805.1",
+                    "name": "hapA",
                     "product": "AMP-dependent synthetase"
                 }
             ]
         },
-        "polyketide": {
-            "starter_unit": "Hexanoyl-ACP",
-            "subclasses": [
-                "Other"
+        "loci": {
+            "accession": "NZ_KE650771.1",
+            "completeness": "complete",
+            "end_coord": 6241521,
+            "evidence": [
+                "Heterologous expression",
+                "Sequence-based prediction"
             ],
-            "cyclic": true,
-            "release_type": [
-                "Hydrolysis"
-            ],
-            "synthases": [
-                {
-                    "genes": [
-                        "WP_035121546.1",
-                        "WP_035122279.1"
-                    ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "WP_035121546.1"
-                            ],
-                            "module_number": "1",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "WP_035122279.1"
-                            ],
-                            "module_number": "4",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)",
-                                "Thioesterase"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        }
-                    ]
-                }
-            ]
+            "start_coord": 6215740
         },
+        "mibig_accession": "BGC0001467",
         "nrp": {
-            "subclass": "Cyclic depsipeptide",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "WP_026723805.1",
                     "modules": [
                         {
-                            "module_number": "0",
                             "active": false,
                             "c_dom_subtype": "Starter",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         }
                     ]
                 },
@@ -168,21 +92,21 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "2-Hydroxyisovalerate"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "2-Hydroxyisovalerate"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 },
@@ -191,35 +115,111 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Phenylalanine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Phenylalanine"
+                                ]
                             },
-                            "module_number": "3",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "Methylation"
-                            ]
+                            ],
+                            "module_number": "3"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "subclass": "Cyclic depsipeptide",
             "thioesterases": [
                 {
                     "gene": "hape",
                     "thioesterase_type": "Type I"
                 }
-            ],
+            ]
+        },
+        "polyketide": {
+            "cyclic": true,
             "release_type": [
                 "Hydrolysis"
+            ],
+            "starter_unit": "Hexanoyl-ACP",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "WP_035121546.1",
+                        "WP_035122279.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "WP_035121546.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)",
+                                "Thioesterase"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "WP_035122279.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
             ]
-        }
+        },
+        "publications": [
+            "doi:10.1021/jo00103a011",
+            "pubmed:26335778",
+            "pubmed:29940102"
+        ]
+    },
+    "submitter": {
+        "email": "paulmdagostino@gmail.com",
+        "institution": "Technical University of Munich",
+        "name": "Paul D'Agostino"
     }
 }

@@ -1,80 +1,57 @@
 {
-    "submitter": {
-        "name": "Helge B. Bode",
-        "institution": "Molecular Biotechnology, Institute for Molecular Bioscience, Goethe University Frankfurt, 60438 Frankfurt/Main, Germany",
-        "email": "h.bode@bio.uni-frankfurt.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000416",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:24038745"
-        ],
-        "loci": {
-            "accession": "FN667742.1",
-            "start_coord": 2154724,
-            "end_coord": 2170060,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Rhabdopeptide 1",
-                "chem_synonyms": [],
-                "chem_struct": "CC(C)C[C@H](NC)C(=O)N(C)[C@@H](C(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)NCCc1ccccc1",
-                "molecular_formula": "C32H56N5O4",
-                "mol_mass": 574.432682,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Unknown"
-                ]
-            },
-            {
-                "compound": "Rhabdopeptide 2",
+                ],
+                "chem_struct": "CC(C)C[C@H](NC)C(=O)N(C)[C@@H](C(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)NCCc1ccccc1",
                 "chem_synonyms": [],
-                "chem_struct": "CN[C@H](C(C)C)C(=O)N(C)[C@H](CC(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)NCCC1=CC=CC=C1",
-                "molecular_formula": "C33H57N5O4",
-                "mol_mass": 587.85,
+                "compound": "Rhabdopeptide 1",
                 "database_id": "",
                 "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 574.432682,
+                "molecular_formula": "C32H56N5O4"
+            },
+            {
                 "chem_acts": [
                     "Cytotoxic"
-                ]
+                ],
+                "chem_struct": "CN[C@H](C(C)C)C(=O)N(C)[C@H](CC(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)NCCC1=CC=CC=C1",
+                "chem_synonyms": [],
+                "compound": "Rhabdopeptide 2",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 587.85,
+                "molecular_formula": "C33H57N5O4"
             },
             {
-                "compound": "Rhabdopeptide 3",
                 "chem_struct": "CN[C@H](CC(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)NCCC1=CC=CC=C1",
-                "molecular_formula": "C38H66N6O5",
+                "compound": "Rhabdopeptide 3",
+                "database_id": "",
                 "mol_mass": 686.983,
-                "database_id": ""
+                "molecular_formula": "C38H66N6O5"
             },
             {
-                "compound": "Rhabdopeptide 4",
                 "chem_struct": "CN[C@H](C(C)C)C(=O)N(C)[C@H](CC(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)NCCC1=CC=CC=C1",
-                "molecular_formula": "C39H68N6O5",
+                "compound": "Rhabdopeptide 4",
+                "database_id": "",
                 "mol_mass": 701.01,
-                "database_id": ""
+                "molecular_formula": "C39H68N6O5"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "rdpA",
-                    "id": "YP_003712464.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -83,24 +60,24 @@
                             ]
                         }
                     ],
+                    "id": "YP_003712464.1",
+                    "name": "rdpA",
                     "product": "NRPS"
                 },
                 {
-                    "name": "rdpB",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Unknown"
+                            ]
+                        }
+                    ],
                     "id": "YP_003712465.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Unknown"
-                            ]
-                        }
-                    ],
+                    "name": "rdpB",
                     "product": "NRPS"
                 },
                 {
-                    "name": "rdpC",
-                    "id": "YP_003712466.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -109,33 +86,48 @@
                             ]
                         }
                     ],
+                    "id": "YP_003712466.1",
+                    "name": "rdpC",
                     "product": "NRPS"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "FN667742.1",
+            "completeness": "complete",
+            "end_coord": 2170060,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 2154724
+        },
+        "mibig_accession": "BGC0000416",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": false,
             "nrps_genes": [
                 {
                     "gene_id": "CBJ90287.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Leucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Leucine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "Methylation"
-                            ]
+                            ],
+                            "module_number": "1"
                         }
                     ]
                 },
@@ -144,28 +136,28 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Valine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Valine"
+                                ]
                             },
-                            "module_number": "2",
                             "active": true,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "Methylation"
                             ],
+                            "module_number": "2",
                             "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": false,
                                 "evidence": [
                                     "Structure-based inference"
-                                ]
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
                             }
                         }
                     ]
@@ -175,38 +167,46 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Valine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Valine"
+                                ]
                             },
-                            "module_number": "3",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "Methylation"
-                            ]
+                            ],
+                            "module_number": "3"
                         },
                         {
-                            "module_number": "4",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "4"
                         }
                     ]
                 }
             ],
-            "cyclic": false,
-            "thioesterases": [],
             "release_type": [
                 "Unknown"
-            ]
-        }
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:24038745"
+        ]
+    },
+    "submitter": {
+        "email": "h.bode@bio.uni-frankfurt.de",
+        "institution": "Molecular Biotechnology, Institute for Molecular Bioscience, Goethe University Frankfurt, 60438 Frankfurt/Main, Germany",
+        "name": "Helge B. Bode"
     }
 }

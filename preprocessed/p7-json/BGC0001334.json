@@ -1,39 +1,21 @@
 {
-    "submitter": {
-        "name": "Fang-Yuan Chang",
-        "institution": "MIT",
-        "email": "fangyuanchang@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001334",
+        "alkaloid": {
+            "subclass": "Pyrrole/pyrrolidine"
+        },
         "biosyn_class": [
             "Alkaloid"
         ],
-        "publications": [
-            "pubmed:21876764"
-        ],
-        "loci": {
-            "accession": "JN165773.1",
-            "start_coord": 9571,
-            "end_coord": 30347,
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "cladoniamide A",
-                "chem_synonyms": [
-                    "cladoniamide"
+                "chem_acts": [
+                    "Cytotoxic"
                 ],
                 "chem_moieties": [
                     {
@@ -43,19 +25,20 @@
                         ]
                     }
                 ],
+                "chem_synonyms": [
+                    "cladoniamide"
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "V-ATPase"
+                    }
+                ],
+                "compound": "cladoniamide A",
                 "database_id": "pubchem:25053147",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
-                ],
-                "chem_acts": [
-                    "Cytotoxic"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "V-ATPase",
-                        "publications": []
-                    }
                 ]
             },
             {
@@ -84,8 +67,25 @@
             }
         ],
         "genes": {},
-        "alkaloid": {
-            "subclass": "Pyrrole/pyrrolidine"
-        }
+        "loci": {
+            "accession": "JN165773.1",
+            "completeness": "complete",
+            "end_coord": 30347,
+            "evidence": [
+                "Enzymatic assays",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 9571
+        },
+        "mibig_accession": "BGC0001334",
+        "publications": [
+            "pubmed:21876764"
+        ]
+    },
+    "submitter": {
+        "email": "fangyuanchang@gmail.com",
+        "institution": "MIT",
+        "name": "Fang-Yuan Chang"
     }
 }

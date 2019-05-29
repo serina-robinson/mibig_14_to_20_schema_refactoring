@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Silke Wenzel",
-        "submitter_institution": "Helmholtz Institute for Pharmaceutical Research Saarland",
-        "submitter_email": "silke.wenzel@helmholtz-hzi.de"
+    "submitter": {
+        "name": "Silke Wenzel",
+        "institution": "Helmholtz Institute for Pharmaceutical Research Saarland",
+        "email": "silke.wenzel@helmholtz-hzi.de"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001429",
         "biosyn_class": [
             "NRP",
@@ -14,13 +20,13 @@
             "pubmed:28128551"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "KX622599",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Heterologous expression",
                 "Sequence-based prediction"
-            ],
-            "accession": "KX622599"
+            ]
         },
         "compounds": [
             {
@@ -29,142 +35,168 @@
                 "chem_struct": "CC(C[C@@H]1NC([C@@H](N(C)C(=O)/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C)[C@@H](C)OC(=O)[C@H](CCC(=O)N)NC([C@H](C)NC(=O)[C@H](C)NC1=O)=O)=O)C",
                 "molecular_formula": "C38H54N6O8",
                 "mol_mass": 723.40759,
-                "mass_ion_type": "[M+H]+",
-                "evidence_struct": [
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "evidence": [
                     "NMR",
                     "Mass spectrometry",
                     "Chemical derivatization"
                 ],
-                "chem_act": [
+                "chem_acts": [
                     "Unknown"
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "extra_genes": [
                 {
-                    "gene_name": "orf1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1,
-                    "gene_endpos": 2154,
-                    "gene_id": "No protein ID",
-                    "gene_annotation": "cation/H(+) antiporter",
-                    "gene_function": "Unknown"
+                    "id": "orf1",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 1,
+                                "end": 2154
+                            }
+                        ],
+                        "strand": -1
+                    },
+                    "translation": "MHGLAQNPLTVLIVQLIVIIGLSRLIGKVTRWLGQPLVIAEVVAGVMLGPSLLGWLAPDLMHSLFPDSSLPVLKMLSQVGLILFMFLIGLELDPKLLQGRGHSSVAISHSSIIVPFVLGAGASALWLYRALSSPEVPFLSFVLFMGVAMSITAFPVLARILSERGLLQSRVGVISITCAAVDDVTAWCLLAFVVSIVRATSLTEAGFTTLLALLYIAFMLLVVRPFLARLGARVASKDGLTQNVVAGTLVLLLASSWATELIGIHALFGAFLFGAVIPKEGGLADALAERLEDVAVVLLLPIFFAYSGLRTQVGLLNSADAWAMCGLIILLACLGKFGGSAVAARLTGLRWREASAVGVLMNTRGLMELIVLNIGLDLGVISPTLFTMMVVMALVTTFITSPLLNWIYPTAEIARDKVELSPVTTGPAPFTVLMCVSHGQAGPGMAALGRALTGGSAAENAQLYALHLISAERSSIHRLHEPRPPDEGALAPLLSSAKRLELSVRSLSFVSSEPSADICRTAEAKRADLVLLGWHKPLFSRTMLGGTVHEVMREATTSVAVLVDRGLSETKRVLVPFIGSQNDRQALALARRILRHTGAEVTVLHVTAPGSASQGPRGRALVEELFPQELGQVRFKVVEHESPEEAALAEASLGYDLTVVGAGSEWGLEDRLFGLSRERIIRDAPGSLLIVRHPLPSASPAVASETVSGLPANQGLS",
+                    "product": "cation/H(+) antiporter",
+                    "comments": "smCOG: SMCOG1117:sodium/hydrogen_exchanger (Score: 460.8; E-value: 6e-140);"
                 },
                 {
-                    "gene_name": "orf2",
-                    "not_in_gbk": false,
-                    "gene_startpos": 2276,
-                    "gene_endpos": 3481,
-                    "gene_id": "No protein ID",
-                    "gene_annotation": "hydrolase",
-                    "gene_function": "Unknown"
+                    "id": "orf2",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 2276,
+                                "end": 3481
+                            }
+                        ],
+                        "strand": -1
+                    },
+                    "translation": "MRGGGKGLVLGIMGVLAVLGAGVFFVAREAPPPQGTPGLTVATLLGKTEDGDEGYARALQPREFLFPEDHGPHEAFRTEWWYWTGNLQTADGHAFGYQLTMFRNAMASEAVKRESEWGTRQLYMGHFALSDIGAERFHVFERFSRAAVGLAGAQSQPFRVWLEDWEVKGLNEGALPMRLSVAAQEVALSLVMDEGKPPVLQGDQGLSQKGGPGSASYYYSLTRMPSWGTVTVAGRVYEVTGSSWMDREWSTAVLDSSQIGWDWFALQLSDDTELMYYQLRLRDGTTAPGSAGSFVFPQGTSARLKPEEGKLEVLDTWTSPRSGVTYPARWRLSVPSQQLELEIVPAQADQELPVTVLYWEGSVRIRGTRAGQPVTGRGYVELTGYGDTPSASASRGALPEK",
+                    "product": "hydrolase"
                 },
                 {
-                    "gene_name": "orf3",
-                    "not_in_gbk": false,
-                    "gene_startpos": 3485,
-                    "gene_endpos": 6025,
-                    "gene_id": "No protein ID",
-                    "gene_annotation": "ABC transporter permease",
-                    "gene_function": "Unknown"
+                    "id": "orf3",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 3485,
+                                "end": 6025
+                            }
+                        ],
+                        "strand": -1
+                    },
+                    "translation": "MSRRLLARASARHLAGHPWLTALSLLGIALGVAVVVSIDLASNSALQAFAQSTDTVAGQATHQLVGGPSGLPASLYSALRLRPGAPTSAPVVEGHVRAANGDRRPLTLLGVDPFAEAPFRPYARDRKGSQVTLLLTEPGTVLMTASTARLVGATAPGDTFEVAVGGQRRTLRVLDFLAPSDERTLRALEGLLLADVSTAQEVLGLTGRLSRIDLKLGDEAEEARLRQWLPPGVDVLRAVSRGNAVDQMTRAFRTNLTALSLLALVVGMFLIYNTMTFSVVQRRGLLGRLRALGITRGELFALVLGEAALLGAVGTAAGLLLGVLLGRGLVGLVTQTINDLYFVVSVRRLSLEPLMFAKGVALGLGATLGAALVPAWEAARSPPVTTMRRSTAEDMAQGRAPKLALLGLLILGAGTVLLVLPTHSLSPAYVGLFSVQLGAALLVPWMTERLVLGAAHPLGAAFGMLGRMAARGVRTSLSRTSVALAALMIAVATTVGVGLMVASFRGTVVEWLESSLQADVYATPPSLMARRGDSSFVPGLAERLSTTPGVAASATIRSVKVNVNGIPTDLTAIAFPPNIPRQYRFKEGDAATVWRELEALDTVIISEPLSFHHNLHRGSTLHLATDHGPRDFRVLGVYYDFGSDVGAVLMPRATYDAAFEDRGVTSLALYAAPGQDVDALVERMRERIGDAQIVNVRSNRVLREGSLEVFDRTFTITQVLRLLAVGVAFVGVLSALMALQLERAREFAVLRATGLTPGQLWGLVSLQTGLLGLLAGLFAVPLGLALAHILVHVINQRSFGWTLQLVITPGVLIQAVVLALAAAGLAGVYPAWRMSRANPALALREE",
+                    "product": "ABC transporter permease",
+                    "comments": "smCOG: SMCOG1243:ABC_transporter,_permease_component (Score: 39.5; E-value: 1.978e-11);"
                 },
                 {
-                    "gene_name": "orf4",
-                    "not_in_gbk": false,
-                    "gene_startpos": 6022,
-                    "gene_endpos": 6723,
-                    "gene_id": "No protein ID",
-                    "gene_annotation": "ABC transporter ATP-binding protein",
-                    "gene_function": "Unknown"
+                    "id": "orf4",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 6022,
+                                "end": 6723
+                            }
+                        ],
+                        "strand": -1
+                    },
+                    "translation": "MPSSSSPIVELQDVSKAYSEGDATREVLTRARLTLHRGEFAVLLGRSGSGKSTLLNLISGIDLPTQGTVRVEGKDLASLSERERTLLRRERIGFVFQAFNLLPTLTVEENVRLPLELTGRAGAEVDGRVKALLGRVGLTGRERSFPDRLSGGEQQRVAVARALAHTPPLLLADEPTGNLDEKTGLQVLDLLEELIRQGHAGALVVSHDEGLAARADRVFVLEAGQLVERPVRP",
+                    "product": "ABC transporter ATP-binding protein",
+                    "comments": "smCOG: SMCOG1000:ABC_transporter_ATP-binding_protein (Score: 212.7; E-value: 9.8e-65);"
                 },
                 {
-                    "gene_name": "mchA",
-                    "not_in_gbk": false,
-                    "gene_id": "APZ78820.1",
-                    "gene_annotation": "polyketide synthase",
-                    "gene_function": "Unknown"
+                    "id": "orf5",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 36764,
+                                "end": 37582
+                            }
+                        ],
+                        "strand": -1
+                    },
+                    "translation": "MDTGKTAPFELGRGDDACLLLHGFTGSPWEMFPLGEALAAQGMYVKAPRLPGHGTTPEALLEVNHRDWEQAAAESLRSLTGFRRVFVAGLSMGALLALGLAAQFPQVVRGLVLIAPAARFKGPTMALLKGLRHTGLLEWMKPWVFKDSTDLSDPVALAEAPILPAFPSARLNDLWTLQASALAQAPLVRCPTLVAVAQQDHVVDPEGGQWLAHHLTGAASVRILSLQEGYHIIPRDRGGPRLALEVGAFLHPLRKRNESLGAAKLDEAPPAL",
+                    "product": "alpha/beta hydrolase",
+                    "comments": "smCOG: SMCOG1036:alpha/beta_hydrolase_fold_protein (Score: 64.8; E-value: 1.68e-18);"
                 },
                 {
-                    "gene_name": "mchB",
-                    "not_in_gbk": false,
-                    "gene_id": "APZ78821.1",
-                    "gene_annotation": "nonribosomal peptide synthetase",
-                    "gene_function": "Unknown"
+                    "id": "orf6",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 37753,
+                                "end": 38511
+                            }
+                        ],
+                        "strand": 1
+                    },
+                    "translation": "MYSLLPWLFVVLMASTASAACPEDGVQIFPRPGSVVPTNTRLLLEGIGTARGLVADLPGKTVRLQTAGHEVRARIQRGWTSTLGRATVLLKLDGTLLPDKVYILRLDDVLPGTVALLNGAGPMTLPEWRSGKGPDKTGPYWLKRPAVSEGFSRRSEQGTTRYVRLTLAAREESPTYMVVTLTRKRSGASAQHYVVPVVNGTAMLGHEPCSGAFALEDGKSYRARVEVFDAAGNLAPAVPPMDFEAPAAPPGG",
+                    "product": "uncharacterized protein"
                 },
                 {
-                    "gene_name": "mchC",
-                    "not_in_gbk": false,
-                    "gene_id": "APZ78822.1",
-                    "gene_annotation": "nonribosomal peptide synthetase",
-                    "gene_function": "Unknown"
+                    "id": "orf7",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 38520,
+                                "end": 39443
+                            }
+                        ],
+                        "strand": 1
+                    },
+                    "translation": "MTLDVEKVERLKVRMAEFIRQLQDEICAGLETLDGKGRFREDAWERAGGGGGRSRVLEGGSVLEKAGVNTSVVYGQLEEAFAHKLQGEGRYFWAGGLSLVLHPRNPHVPTVHANFRFIHQGPKAWFGGGADLTPYYLYDEDAVHFHRTLKAVCDRYDPSYYPRFKSTCDKYFYLRHREECRGVGGLFFEDLGGQDLERELAFVMDAGRAFLPAYLPIAERRKDVASTEPQRFWQEVRRGRYVEFNLVYDRGTVFGLETKGRTESILMSLPPQVRWLYDHHPVPGSEEERLVDVLRNPRDWAAGGQER",
+                    "product": "coproporphyrinogen III oxidase"
                 },
                 {
-                    "gene_name": "mchD",
-                    "not_in_gbk": false,
-                    "gene_id": "APZ78823.1",
-                    "gene_annotation": "membrane protein",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "orf5",
-                    "not_in_gbk": false,
-                    "gene_startpos": 36764,
-                    "gene_endpos": 37582,
-                    "gene_id": "No protein ID",
-                    "gene_annotation": "alpha/beta hydrolase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "orf6",
-                    "not_in_gbk": false,
-                    "gene_startpos": 37753,
-                    "gene_endpos": 38511,
-                    "gene_id": "No protein ID",
-                    "gene_annotation": "uncharacterized protein",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "orf7",
-                    "not_in_gbk": false,
-                    "gene_startpos": 38520,
-                    "gene_endpos": 39443,
-                    "gene_id": "No protein ID",
-                    "gene_annotation": "coproporphyrinogen III oxidase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "orf8",
-                    "not_in_gbk": false,
-                    "gene_startpos": 39453,
-                    "gene_endpos": 39989,
-                    "gene_id": "No protein ID",
-                    "gene_annotation": "uncharacterized protein",
-                    "gene_function": "Unknown"
+                    "id": "orf8",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 39453,
+                                "end": 39989
+                            }
+                        ],
+                        "strand": 1
+                    },
+                    "translation": "MKTTQDGPRRNPRRTLALVLALVAGVPLLGGAGVFLYLLWKRAQAPDPDNALRVAAGGNTAPSEEARINVLALCDAVQMYRAEHGTFLSAGPTPAEVPRGGKAVSFPHDEAFEQLGFAPGTAVRFQYQVAIQENPVGEAEVTCYARGDLDGDGQNAVYRVMLDANGMTSPVEVEREGE",
+                    "product": "uncharacterized protein"
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Polyene",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
             "starter_unit": "Acetyl-CoA",
-            "pks_genes": [
-                "mcha"
+            "subclasses": [
+                "Polyene"
             ],
-            "nr_iterations": 8,
-            "iterative_subtype": "Partially reducing",
-            "pks_te_type": "None",
-            "pks_release_type": "Unknown",
-            "mod_pks_genes": [
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
                 {
-                    "mod_pks_gene": "APZ78820.1",
-                    "pks_module": [
+                    "genes": [
+                        "mcha",
+                        "APZ78820.1"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 8,
+                        "subtype": "Partially reducing",
+                        "cyclization_type": "Unknown"
+                    },
+                    "modules": [
                         {
-                            "module_nr": "1",
-                            "pks_domains": [
+                            "genes": [
+                                "APZ78820.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Dehydratase",
@@ -172,14 +204,23 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
                             "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Iterated",
-                            "pks_evidence_skip_iter": "Structure-based inference"
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -187,102 +228,134 @@
         },
         "nrp": {
             "subclass": "Cyclic depsipeptide",
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_te_type": "Type I",
-            "nrps_thioesterase": [
-                "mchc"
-            ],
-            "nrps_release_type": "Macrolactonization",
             "nrps_genes": [
                 {
-                    "nrps_gene": "APZ78821.1",
-                    "nrps_module": [
+                    "gene_id": "APZ78821.1",
+                    "modules": [
                         {
-                            "module_nr": "2",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Threonine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Threonine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "Methylation",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "2",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ]
                         },
                         {
-                            "module_nr": "3",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Leucine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": true
+                                "proteinogenic": [
+                                    "Leucine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": true,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "3",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         }
                     ]
                 },
                 {
-                    "nrps_gene": "APZ78822.1",
-                    "nrps_module": [
+                    "gene_id": "APZ78822.1",
+                    "modules": [
                         {
-                            "module_nr": "4",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Alanine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Alanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "DCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "4",
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         },
                         {
-                            "module_nr": "5",
-                            "a_substr_spec": {
-                                "aa_type": "None",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Skipped",
-                            "nrps_evidence_skip_iter": "Structure-based inference"
+                            "module_number": "5",
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
                         },
                         {
-                            "module_nr": "6",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Alanine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Alanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "6",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         },
                         {
-                            "module_nr": "7",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Glutamine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Glutamine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "7",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         }
                     ]
                 }
+            ],
+            "cyclic": true,
+            "thioesterases": [
+                {
+                    "gene": "mchc",
+                    "thioesterase_type": "Type I"
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
             ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

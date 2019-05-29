@@ -1,60 +1,40 @@
 {
-    "personal": {
-        "submitter_name": "Antonio Ruzzini",
-        "submitter_institution": "Harvard Medical School",
-        "submitter_email": "antonio_ruzzini@hms.harvard.edu"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0000956",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:15066985",
-            "pubmed:16910643",
-            "pubmed:17653193",
-            "pubmed:18652473",
-            "pubmed:18768797",
-            "pubmed:21561099"
+        "compounds": [
+            {
+                "chem_act": [
+                    "Antibacterial"
+                ],
+                "chem_synonyms": [],
+                "chem_target": [
+                    "beta-subunitofacetyl-CoAcarboxylase"
+                ],
+                "compound": "andrimid",
+                "pubchem_id": 636857
+            }
         ],
+        "genes": {},
         "loci": {
+            "accession": "AY192157.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Enzymatic assays",
                 "Heterologous expression",
                 "Sequence-based prediction"
-            ],
-            "accession": "AY192157.1"
+            ]
         },
-        "compounds": [
-            {
-                "compound": "andrimid",
-                "chem_synonyms": [],
-                "pubchem_id": 636857,
-                "chem_act": [
-                    "Antibacterial"
-                ],
-                "chem_target": [
-                    "beta-subunitofacetyl-CoAcarboxylase"
-                ]
-            }
-        ],
-        "genes": {},
-        "polyketide": {
-            "pk_subclass": "Ansamycin",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Type II"
-            ],
-            "starter_unit": "Malonyl-CoA",
-            "pks_genes": [
-                "AAO39098.1"
-            ],
-            "ketide_length": 8
-        },
+        "mibig_accession": "BGC0000956",
         "nrp": {
-            "subclass": "Beta-lactam",
             "lin_cycl_nrp": "Linear",
             "nrps_genes": [
                 {
@@ -76,17 +56,37 @@
                     "nrps_gene": "AdmM"
                 }
             ],
+            "nrps_release_type": "Hydrolysis",
             "nrps_te_type": "Type I",
             "nrps_thioesterase": [
                 "admm"
             ],
-            "nrps_release_type": "Hydrolysis"
-        }
+            "subclass": "Beta-lactam"
+        },
+        "polyketide": {
+            "ketide_length": 8,
+            "lin_cycl_pk": "Linear",
+            "pk_subclass": "Ansamycin",
+            "pks_genes": [
+                "AAO39098.1"
+            ],
+            "pks_subclass": [
+                "Type II"
+            ],
+            "starter_unit": "Malonyl-CoA"
+        },
+        "publications": [
+            "pubmed:15066985",
+            "pubmed:16910643",
+            "pubmed:17653193",
+            "pubmed:18652473",
+            "pubmed:18768797",
+            "pubmed:21561099"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "antonio_ruzzini@hms.harvard.edu",
+        "submitter_institution": "Harvard Medical School",
+        "submitter_name": "Antonio Ruzzini"
+    }
 }

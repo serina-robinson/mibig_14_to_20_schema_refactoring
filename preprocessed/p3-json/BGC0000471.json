@@ -1,37 +1,14 @@
 {
-    "version": "17",
-    "personal": {
-        "submitter_name": "David Fewer",
-        "submitter_institution": "University of Helsinki",
-        "submitter_email": "david.fewer@helsinki.fi"
-    },
     "general_params": {
-        "mibig_accession": "BGC0000471",
+        "RiPP": {
+            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Cyanobactin"
+        },
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "23911585"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "CP003614",
-                    "start_coord": 4308240,
-                    "end_coord": 4321209,
-                    "conn_comp_cluster": [
-                        "Sequence-based prediction"
-                    ]
-                }
-            ]
-        },
         "compounds": [
             {
-                "compound": "viridisamide A",
-                "chem_synonyms": [],
-                "mol_mass": -1,
-                "mass_ion_type": "None",
                 "chem_act": [
                     "Unknown"
                 ],
@@ -41,12 +18,118 @@
                             "n-prenyl"
                         ]
                     }
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "viridisamide A",
+                "mass_ion_type": "None",
+                "mol_mass": -1
             }
         ],
         "genes": {
+            "gene": [
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "N-terminal protease",
+                    "gene_endpos": 4310240,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AFZ08002.1",
+                    "gene_name": "VirA",
+                    "gene_startpos": 4308240,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "hypothetical protein",
+                    "gene_endpos": 4310588,
+                    "gene_function": "Unknown",
+                    "gene_id": "AFZ08003.1",
+                    "gene_name": "VirB",
+                    "gene_startpos": 4310337,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "hypothetical protein",
+                    "gene_endpos": 4311371,
+                    "gene_function": "Unknown",
+                    "gene_id": "AFZ08004.1",
+                    "gene_name": "VirC",
+                    "gene_startpos": 4310613,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "Heterocyclase",
+                    "gene_endpos": 4313751,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AFZ08005.1",
+                    "gene_name": "VirD",
+                    "gene_startpos": 4311421,
+                    "not_in_gbk": false,
+                    "tailoring": "Heterocyclization"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "Precursor peptide",
+                    "gene_endpos": 4314113,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AFZ08006.1",
+                    "gene_name": "VirE",
+                    "gene_startpos": 4313886,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "Methyltransferase-putative prenyl transferase",
+                    "gene_endpos": 4316088,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AFZ08007.1",
+                    "gene_name": "VirF1",
+                    "gene_startpos": 4314247,
+                    "not_in_gbk": false,
+                    "tailoring": "Prenylation"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "Prenyl transferase",
+                    "gene_endpos": 4317138,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AFZ08008.1",
+                    "gene_name": "VirF2",
+                    "gene_startpos": 4316176,
+                    "not_in_gbk": false,
+                    "tailoring": "Prenylation"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "C-terminal protease",
+                    "gene_endpos": 4321209,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AFZ08009.1",
+                    "gene_name": "VirG",
+                    "gene_startpos": 4317331,
+                    "not_in_gbk": false
+                }
+            ],
             "operon": [
                 {
+                    "evidence_operon": "Sequence-based prediction",
                     "operon_genes": [
                         "osc7112_3648",
                         "osc7112_3649",
@@ -56,115 +139,32 @@
                         "osc7112_3653",
                         "osc7112_3654",
                         "osc7112_3655"
-                    ],
-                    "evidence_operon": "Sequence-based prediction"
-                }
-            ],
-            "gene": [
-                {
-                    "gene_name": "VirA",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4308240,
-                    "gene_endpos": 4310240,
-                    "gene_id": "AFZ08002.1",
-                    "gene_annotation": "N-terminal protease",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "VirB",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4310337,
-                    "gene_endpos": 4310588,
-                    "gene_id": "AFZ08003.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "VirC",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4310613,
-                    "gene_endpos": 4311371,
-                    "gene_id": "AFZ08004.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "VirD",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4311421,
-                    "gene_endpos": 4313751,
-                    "gene_id": "AFZ08005.1",
-                    "gene_annotation": "Heterocyclase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Heterocyclization",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "VirE",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4313886,
-                    "gene_endpos": 4314113,
-                    "gene_id": "AFZ08006.1",
-                    "gene_annotation": "Precursor peptide",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "VirF1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4314247,
-                    "gene_endpos": 4316088,
-                    "gene_id": "AFZ08007.1",
-                    "gene_annotation": "Methyltransferase-putative prenyl transferase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Prenylation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "VirF2",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4316176,
-                    "gene_endpos": 4317138,
-                    "gene_id": "AFZ08008.1",
-                    "gene_annotation": "Prenyl transferase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Prenylation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "VirG",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4317331,
-                    "gene_endpos": 4321209,
-                    "gene_id": "AFZ08009.1",
-                    "gene_annotation": "C-terminal protease",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
                     ]
                 }
             ]
         },
-        "RiPP": {
-            "ripp_subclass": "Cyanobactin",
-            "lin_cycl_ripp": "Cyclic"
-        }
-    }
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
+                {
+                    "Accession": "CP003614",
+                    "conn_comp_cluster": [
+                        "Sequence-based prediction"
+                    ],
+                    "end_coord": 4321209,
+                    "start_coord": 4308240
+                }
+            ]
+        },
+        "mibig_accession": "BGC0000471",
+        "publications": [
+            "23911585"
+        ]
+    },
+    "personal": {
+        "submitter_email": "david.fewer@helsinki.fi",
+        "submitter_institution": "University of Helsinki",
+        "submitter_name": "David Fewer"
+    },
+    "version": "17"
 }

@@ -1,37 +1,22 @@
 {
-    "submitter": {
-        "name": "Yi-Qiang Cheng",
-        "institution": "University of North Texas Health Science Center",
-        "email": "yiqiang.cheng@unthsc.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000453",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:16511823"
-        ],
-        "loci": {
-            "accession": "DQ174261.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Valinomycin",
-                "chem_synonyms": [],
-                "chem_struct": "CC1C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)O1)C(C)C)C(C)C)C(C)C)C)C(C)C)C(C)C)C(C)C)C)C(C)C)C(C)C)C(C)C",
-                "molecular_formula": "C54H90N6O18",
-                "mol_mass": 1111.5,
+                "chem_acts": [
+                    "Antibacterial",
+                    "Antifungal",
+                    "Cytotoxic",
+                    "Antiviral"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "D-alpha-hydroxyisovaleric acid",
@@ -40,21 +25,18 @@
                         ]
                     }
                 ],
+                "chem_struct": "CC1C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)O1)C(C)C)C(C)C)C(C)C)C)C(C)C)C(C)C)C(C)C)C)C(C)C)C(C)C)C(C)C",
+                "chem_synonyms": [],
+                "compound": "Valinomycin",
                 "database_id": "",
                 "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Antifungal",
-                    "Cytotoxic",
-                    "Antiviral"
-                ]
+                "mol_mass": 1111.5,
+                "molecular_formula": "C54H90N6O18"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "76884874",
-                    "id": "ABA59547.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -63,11 +45,11 @@
                             ]
                         }
                     ],
+                    "id": "ABA59547.1",
+                    "name": "76884874",
                     "product": "NRPS"
                 },
                 {
-                    "name": "76884875",
-                    "id": "ABA59548.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -76,27 +58,45 @@
                             ]
                         }
                     ],
+                    "id": "ABA59548.1",
+                    "name": "76884875",
                     "product": "NRPS"
                 }
             ],
             "operons": [
                 {
-                    "genes": [
-                        "vlm1",
-                        "vlm2"
-                    ],
                     "evidence": [
                         "Sequence-based prediction"
+                    ],
+                    "genes": [
+                        "vlm2",
+                        "vlm1"
                     ]
                 }
             ]
         },
+        "loci": {
+            "accession": "DQ174261.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000453",
         "nrp": {
-            "subclass": "Cyclic depsipeptide",
             "cyclic": true,
             "release_type": [
                 "Unknown"
-            ]
-        }
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "publications": [
+            "pubmed:16511823"
+        ]
+    },
+    "submitter": {
+        "email": "yiqiang.cheng@unthsc.edu",
+        "institution": "University of North Texas Health Science Center",
+        "name": "Yi-Qiang Cheng"
     }
 }

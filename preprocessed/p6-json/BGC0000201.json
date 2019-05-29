@@ -1,47 +1,20 @@
 {
-    "comments": "Auricin is stable in acid and unstable in neutral and alkaline pH. It undergoes methanolysis (addition of methanol to the aglycon)   ",
-    "submitter": {
-        "name": "Jan Kormanec",
-        "institution": "Institute of Molecular Biology, Slovak Academy of Sciences",
-        "email": "jan.kormanec@savba.sk"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000201",
         "biosyn_class": [
             "Polyketide",
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:12384301",
-            "pubmed:16079347",
-            "pubmed:20466770",
-            "pubmed:21393365",
-            "pubmed:23081778",
-            "pubmed:23373695",
-            "pubmed:23763439",
-            "pubmed:24265028",
-            "pubmed:25219533"
-        ],
-        "loci": {
-            "accession": "KJ396772.1",
-            "start_coord": 58195,
-            "end_coord": 86722,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "auricin",
-                "chem_synonyms": [],
-                "mol_mass": 542.2039,
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "forosamine",
@@ -57,19 +30,16 @@
                         ]
                     }
                 ],
+                "chem_synonyms": [],
+                "compound": "auricin",
                 "database_id": "",
                 "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "mol_mass": 542.2039
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "sa59",
-                    "id": "305861153",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -78,14 +48,14 @@
                             ]
                         }
                     ],
+                    "id": "305861153",
+                    "name": "sa59",
                     "product": "forosamine aminotrasnferase",
                     "tailoring": [
                         "Amination"
                     ]
                 },
                 {
-                    "name": "sa52",
-                    "id": "305861160",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -94,14 +64,14 @@
                             ]
                         }
                     ],
+                    "id": "305861160",
+                    "name": "sa52",
                     "product": "forosamine N.N-dimethyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "aur1PR3",
-                    "id": "662023972",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -110,11 +80,11 @@
                             ]
                         }
                     ],
+                    "id": "662023972",
+                    "name": "aur1PR3",
                     "product": "SARP-family auricin specific regulator"
                 },
                 {
-                    "name": "aur1R",
-                    "id": "662024136",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -123,11 +93,11 @@
                             ]
                         }
                     ],
+                    "id": "662024136",
+                    "name": "aur1R",
                     "product": "auricin-specific repressor of TetR family"
                 },
                 {
-                    "name": "aur1P",
-                    "id": "662024109",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -136,11 +106,11 @@
                             ]
                         }
                     ],
+                    "id": "662024109",
+                    "name": "aur1P",
                     "product": "auricin-specific activator"
                 },
                 {
-                    "name": "aur1PR4",
-                    "id": "218511497",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -149,11 +119,17 @@
                             ]
                         }
                     ],
+                    "id": "218511497",
+                    "name": "aur1PR4",
                     "product": "SARP-family transcriptional regulator"
                 }
             ],
+            "extra_genes": [],
             "operons": [
                 {
+                    "evidence": [
+                        "Unknown"
+                    ],
                     "genes": [
                         "662024110",
                         "61968690",
@@ -177,43 +153,50 @@
                         "218511486",
                         "218511487",
                         "218511488"
-                    ],
-                    "evidence": [
-                        "Unknown"
                     ]
                 },
                 {
+                    "evidence": [
+                        "Unknown"
+                    ],
                     "genes": [
                         "662024123",
                         "662024122",
                         "662024121",
                         "218511498"
-                    ],
-                    "evidence": [
-                        "Unknown"
                     ]
                 }
             ]
         },
+        "loci": {
+            "accession": "KJ396772.1",
+            "completeness": "complete",
+            "end_coord": 86722,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 58195
+        },
+        "mibig_accession": "BGC0000201",
         "polyketide": {
-            "ketide_length": -1,
             "cyclases": [
                 "61968691",
                 "61968695",
                 "61968696"
             ],
+            "cyclic": true,
+            "ketide_length": -1,
             "subclasses": [
                 "Angucycline"
             ],
-            "cyclic": true,
             "synthases": [
                 {
                     "genes": [
-                        "61968692",
-                        "61968695",
-                        "61968696",
                         "61968691",
-                        "662024112"
+                        "662024112",
+                        "61968695",
+                        "61968692",
+                        "61968696"
                     ],
                     "subclass": [
                         "Type II"
@@ -221,8 +204,25 @@
                 }
             ]
         },
+        "publications": [
+            "pubmed:12384301",
+            "pubmed:16079347",
+            "pubmed:20466770",
+            "pubmed:21393365",
+            "pubmed:23081778",
+            "pubmed:23373695",
+            "pubmed:23763439",
+            "pubmed:24265028",
+            "pubmed:25219533"
+        ],
         "saccharide": {
             "subclass": "hybrid/tailoring"
         }
+    },
+    "comments": "Auricin is stable in acid and unstable in neutral and alkaline pH. It undergoes methanolysis (addition of methanol to the aglycon)   ",
+    "submitter": {
+        "email": "jan.kormanec@savba.sk",
+        "institution": "Institute of Molecular Biology, Slovak Academy of Sciences",
+        "name": "Jan Kormanec"
     }
 }

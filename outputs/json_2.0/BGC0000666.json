@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Changsheng Zhang",
-        "submitter_institution": "South China Sea Institute of Oceanology, Chinese Academy of Sciences",
-        "submitter_email": "czhang2006@gmail.com"
+    "submitter": {
+        "name": "Changsheng Zhang",
+        "institution": "South China Sea Institute of Oceanology, Chinese Academy of Sciences",
+        "email": "czhang2006@gmail.com"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000666",
         "biosyn_class": [
             "Terpene"
@@ -14,113 +20,116 @@
             "pubmed:23205935"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "JQ812811.1",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Enzymatic assays"
-            ],
-            "accession": "JQ812811.1"
+            ]
         },
         "compounds": [
             {
                 "compound": "xiamycin A",
-                "chem_synonyms": [
-                    "Xiamycin A",
-                    "hydroxy(dimethyl)[?]carboxylic acid",
-                    "XIAMYCIN",
-                    "CHEMBL1270030",
-                    "(3S,4S,4aR,13bS)-3-Hydroxy-4,13b-dimethyl-2,3,4,4a,5,6,8,13b-octahydro-1H-naphtho[2,1-b]carbazole-4-carboxylic acid",
-                    ""
-                ],
-                "pubchem_id": 38358410,
-                "chem_act": [
+                "chem_synonyms": [],
+                "database_id": "pubchem:38358410",
+                "chem_acts": [
                     "Antibacterial"
-                ],
-                "mol_mass": 363.183,
-                "molecular_formula": "C23H25NO3",
-                "chem_struct": "C[C@]12CC[C@@H]([C@@]([C@@H]1CCC3=C2C=C4C5=CC=CC=C5NC4=C3)(C)C(=O)O)O"
+                ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "AFK78074.1",
-                    "gene_id": "AFK78074.1",
-                    "gene_annotation": "terpene cyclase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "xiaH",
+                    "id": "AFK78074.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "not_in_gbk": false
+                    "product": "terpene cyclase"
                 },
                 {
-                    "gene_name": "AFK78075.1",
-                    "gene_id": "AFK78075.1",
-                    "gene_annotation": "oxidative terpene cyclase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "xiaI",
+                    "id": "AFK78075.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "not_in_gbk": false
+                    "product": "oxidative terpene cyclase"
                 },
                 {
-                    "gene_name": "AFK78077.1",
-                    "gene_id": "AFK78077.1",
-                    "gene_annotation": "C,N- and N,N dimerization",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Unknown",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "xiaK",
+                    "id": "AFK78077.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "not_in_gbk": false
+                    "product": "C,N- and N,N dimerization",
+                    "tailoring": [
+                        "Unknown"
+                    ]
                 },
                 {
-                    "gene_name": "AFK78079.1",
-                    "gene_id": "AFK78079.1",
-                    "gene_annotation": "carboxylase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "xiaM",
+                    "id": "AFK78079.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "not_in_gbk": false
+                    "product": "carboxylase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
                 },
                 {
-                    "gene_name": "AFK78081.1",
-                    "gene_id": "AFK78081.1",
-                    "gene_annotation": "epoxidase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "xiaO",
+                    "id": "AFK78081.1",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "not_in_gbk": false
+                    "product": "epoxidase"
                 }
             ]
         },
         "terpene": {
-            "terpene_subclass": "Unknown",
-            "terpene_c_len": "Sesquiterpene",
             "terpene_precursor": "DMAPP",
             "terpene_synth_cycl": [
                 "afk78070.1",
                 "afk78071.1",
                 "afk78072.1"
             ],
-            "prenyl_transf": [
+            "structural_subclass": "Unknown",
+            "carbon_count_subclass": "Sesquiterpene",
+            "prenyltransferases": [
                 "afk78080.1",
                 "afk78082.1"
             ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

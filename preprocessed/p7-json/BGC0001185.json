@@ -1,69 +1,60 @@
 {
-    "comments": "Deletion of the complete FZB42 bacillibactin gene cluster covering genomic region 3021250-3032970 revealed that ability to produce bacillibactin has been lost completely. Construction of mutants devoid in bacillibactin production RS01 (delta bac) and RS06 (delta sfp, delta bac) has been described in PMID   19061923 ",
-    "submitter": {
-        "name": "Rainer Borriss",
-        "institution": "Humboldt University",
-        "email": "rainer.borriss@rz.hu-berlin.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001185",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:18957859"
-        ],
-        "loci": {
-            "accession": "CP000560.1",
-            "start_coord": 3021250,
-            "end_coord": 3032970,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "bacillibactin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:125349",
-                "evidence": [
+                "chem_acts": [
                     "Unknown"
                 ],
-                "chem_acts": [
+                "chem_synonyms": [],
+                "compound": "bacillibactin",
+                "database_id": "pubchem:125349",
+                "evidence": [
                     "Unknown"
                 ]
             }
         ],
         "genes": {},
+        "loci": {
+            "accession": "CP000560.1",
+            "completeness": "complete",
+            "end_coord": 3032970,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 3021250
+        },
+        "mibig_accession": "BGC0001185",
         "nrp": {
-            "subclass": "NRP siderophore",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "ABS75234.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "dhb"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "dhb"
+                                ]
                             },
-                            "module_number": "0",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         }
                     ]
                 },
@@ -72,48 +63,57 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Glycine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Glycine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "Starter",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Threonine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Threonine"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Unknown"
-            ]
-        }
+            ],
+            "subclass": "NRP siderophore",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:18957859"
+        ]
+    },
+    "comments": "Deletion of the complete FZB42 bacillibactin gene cluster covering genomic region 3021250-3032970 revealed that ability to produce bacillibactin has been lost completely. Construction of mutants devoid in bacillibactin production RS01 (delta bac) and RS06 (delta sfp, delta bac) has been described in PMID   19061923 ",
+    "submitter": {
+        "email": "rainer.borriss@rz.hu-berlin.de",
+        "institution": "Humboldt University",
+        "name": "Rainer Borriss"
     }
 }

@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Harald Gross",
-        "submitter_institution": "University of Tuebingen",
-        "submitter_email": "harald.gross@uni-tuebingen.de"
+    "submitter": {
+        "name": "Harald Gross",
+        "institution": "University of Tuebingen",
+        "email": "harald.gross@uni-tuebingen.de"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001285",
         "biosyn_class": [
             "Other"
@@ -13,11 +19,11 @@
             "pubmed:26507104"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "KT373879.1",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies"
-            ],
-            "accession": "KT373879.1"
+            ]
         },
         "compounds": [
             {
@@ -25,17 +31,23 @@
                 "chem_synonyms": [
                     "alpha-pyrone ii"
                 ],
-                "chemspider_id": 10480437,
-                "evidence_struct": [
+                "database_id": "chemspider:10480437",
+                "evidence": [
                     "NMR",
                     "Mass spectrometry"
                 ],
-                "chem_act": [
+                "chem_acts": [
                     "Antibacterial"
                 ],
-                "chem_target": [
-                    "fattyacidsynthaseIIsystem",
-                    "membranedisruption"
+                "chem_targets": [
+                    {
+                        "target": "fattyacidsynthaseIIsystem",
+                        "publications": []
+                    },
+                    {
+                        "target": "membranedisruption",
+                        "publications": []
+                    }
                 ]
             },
             {
@@ -44,192 +56,240 @@
                     "alpha-pyrone i",
                     "sch 419560"
                 ],
-                "chemspider_id": 10480436,
-                "evidence_struct": [
+                "database_id": "chemspider:10480436",
+                "evidence": [
                     "NMR",
                     "Mass spectrometry"
                 ],
-                "chem_act": [
+                "chem_acts": [
                     "Antibacterial"
                 ],
-                "chem_target": [
-                    "fattyacidsynthaseIIsystem",
-                    "membranedisruption"
+                "chem_targets": [
+                    {
+                        "target": "fattyacidsynthaseIIsystem",
+                        "publications": []
+                    },
+                    {
+                        "target": "membranedisruption",
+                        "publications": []
+                    }
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "ALJ01853.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01853.1",
-                    "gene_annotation": "membrane protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01853.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "membrane protein"
                 },
                 {
-                    "gene_name": "ALJ01854.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01854.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01854.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "hypothetical protein"
                 },
                 {
-                    "gene_name": "ALJ01855.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01855.1",
-                    "gene_annotation": "putative dioxygenase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01855.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "putative dioxygenase"
                 },
                 {
-                    "gene_name": "ALJ01856.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01856.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01856.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "hypothetical protein"
                 },
                 {
-                    "gene_name": "ALJ01857.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01857.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01857.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "hypothetical protein"
                 },
                 {
-                    "gene_name": "ppyS",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01858.1",
-                    "gene_annotation": "pseudopyronine synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ]
+                    "name": "ppyS",
+                    "id": "ALJ01858.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "pseudopyronine synthase"
                 },
                 {
-                    "gene_name": "ALJ01859.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01859.1",
-                    "gene_annotation": "glucose-6-phosphate 1-dehydrogenase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01859.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "glucose-6-phosphate 1-dehydrogenase"
                 },
                 {
-                    "gene_name": "ALJ01860.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01860.1",
-                    "gene_annotation": "6-phosphogluconate dehydrogenase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01860.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "6-phosphogluconate dehydrogenase"
                 },
                 {
-                    "gene_name": "ALJ01861.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01861.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01861.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "hypothetical protein"
                 },
                 {
-                    "gene_name": "glgA",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01862.1",
-                    "gene_annotation": "glycogen synthase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "glgA",
+                    "id": "ALJ01862.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "glycogen synthase"
                 },
                 {
-                    "gene_name": "ALJ01863.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01863.1",
-                    "gene_annotation": "malto-oligosyltrehalose trehalohydrolase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01863.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "malto-oligosyltrehalose trehalohydrolase"
                 },
                 {
-                    "gene_name": "ALJ01864.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01864.1",
-                    "gene_annotation": "4-alpha-glucanotransferase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01864.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "4-alpha-glucanotransferase"
                 },
                 {
-                    "gene_name": "ALJ01865.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01865.1",
-                    "gene_annotation": "malto-oligosyltrehalose synthase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01865.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "malto-oligosyltrehalose synthase"
                 },
                 {
-                    "gene_name": "ALJ01866.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01866.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01866.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "hypothetical protein"
                 },
                 {
-                    "gene_name": "glgX",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01867.1",
-                    "gene_annotation": "glycogen debranching enzyme",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "glgX",
+                    "id": "ALJ01867.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "glycogen debranching enzyme"
                 },
                 {
-                    "gene_name": "ALJ01868.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALJ01868.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "No gene ID",
+                    "id": "ALJ01868.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "hypothetical protein"
                 }
             ]
         },
         "other": {
-            "other_subclass": "Fatty acid"
+            "subclass": "Fatty acid"
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

@@ -1,49 +1,29 @@
 {
-    "submitter": {
-        "name": "Alexey Melnik",
-        "institution": "UCSD",
-        "email": "alexvmelnik@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000578",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:21983601"
-        ],
-        "loci": {
-            "accession": "NZ_DS999644.1",
-            "start_coord": 4289783,
-            "end_coord": 4294787,
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "SRO15-2005",
-                "chem_synonyms": [],
-                "mol_mass": 2005.09,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "SRO15-2005",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 2005.09
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "id": "SSGG_03858",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -52,10 +32,10 @@
                             ]
                         }
                     ],
+                    "id": "SSGG_03858",
                     "product": "Prepropeptide"
                 },
                 {
-                    "id": "SSGG_03859",
                     "functions": [
                         {
                             "category": "Resistance/immunity",
@@ -64,10 +44,10 @@
                             ]
                         }
                     ],
+                    "id": "SSGG_03859",
                     "product": "Lactamase"
                 },
                 {
-                    "id": "SSGG_03861",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -76,10 +56,10 @@
                             ]
                         }
                     ],
+                    "id": "SSGG_03861",
                     "product": "Peptidase"
                 },
                 {
-                    "id": "SSGG_03862",
                     "functions": [
                         {
                             "category": "Transport",
@@ -87,24 +67,44 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "SSGG_03862"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "NZ_DS999644.1",
+            "completeness": "complete",
+            "end_coord": 4294787,
+            "evidence": [
+                "Sequence-based prediction"
+            ],
+            "start_coord": 4289783
+        },
+        "mibig_accession": "BGC0000578",
+        "publications": [
+            "pubmed:21983601"
+        ],
         "ripp": {
-            "subclass": "Lassopeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "ssgg_03858",
                     "core_sequence": [
                         "GYFVGSYKEYWSRRII"
                     ],
-                    "leader_sequence": 27,
-                    "follower_sequence": 16
+                    "follower_sequence": 16,
+                    "gene_id": "ssgg_03858",
+                    "leader_sequence": 27
                 }
             ],
-            "peptidases": []
+            "subclass": "Lassopeptide"
         }
+    },
+    "submitter": {
+        "email": "alexvmelnik@gmail.com",
+        "institution": "UCSD",
+        "name": "Alexey Melnik"
     }
 }

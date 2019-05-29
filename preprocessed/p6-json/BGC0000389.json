@@ -1,145 +1,133 @@
 {
-    "submitter": {
-        "name": "Prof. Dr. Jos Raaijmakers",
-        "institution": "NIOO-KNAW",
-        "email": "j.raaijmakers@nioo.knaw.nl"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000389",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:17993540",
-            "pubmed:17241198",
-            "pubmed:22792073",
-            "pubmed:19447950",
-            "pubmed:14660362"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antifungal",
+                    "Surfactant"
+                ],
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "membrane"
+                    }
+                ],
+                "compound": "massetolide A",
+                "database_id": "chembl:500573"
+            }
         ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABH06367",
+                    "name": "massA"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABH06368",
+                    "name": "massB"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABH06369",
+                    "name": "massC"
+                }
+            ],
+            "extra_genes": []
+        },
         "loci": {
             "accession": "EU199081.2",
-            "start_coord": 11695,
-            "end_coord": 35942,
             "completeness": "complete",
+            "end_coord": 35942,
             "evidence": [
                 "Knock-out studies",
                 "Enzymatic assays",
                 "Heterologous expression",
                 "Gene expression correlated with compound production",
                 "Sequence-based prediction"
-            ]
+            ],
+            "start_coord": 11695
         },
-        "compounds": [
-            {
-                "compound": "massetolide A",
-                "chem_synonyms": [],
-                "database_id": "chembl:500573",
-                "chem_acts": [
-                    "Antifungal",
-                    "Surfactant"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "membrane",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": [
-                {
-                    "name": "massA",
-                    "id": "ABH06367",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Knock-out",
-                                "Activity assay",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "massB",
-                    "id": "ABH06368",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Knock-out",
-                                "Activity assay",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "massC",
-                    "id": "ABH06369",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Knock-out",
-                                "Activity assay",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
+        "mibig_accession": "BGC0000389",
         "nrp": {
-            "subclass": "Cyclic depsipeptide",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "ABH06367",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Leucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Leucine"
+                                ]
                             },
-                            "module_number": "A1",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "A1"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Glutamate"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Glutamate"
+                                ]
                             },
-                            "module_number": "A2",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "A2"
                         }
                     ]
                 },
@@ -148,75 +136,75 @@
                     "modules": [
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
                                 "proteinogenic": [
                                     "Threonine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "B1",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B1"
                         },
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
                                 "proteinogenic": [
                                     "Isoleucine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "B2",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B2"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Leucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Leucine"
+                                ]
                             },
-                            "module_number": "B3",
                             "active": true,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B3"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Serine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Serine"
+                                ]
                             },
-                            "module_number": "B4",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B4"
                         }
                     ]
                 },
@@ -225,71 +213,83 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Leucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Leucine"
+                                ]
                             },
-                            "module_number": "B5",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B5"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Serine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Serine"
+                                ]
                             },
-                            "module_number": "B6",
                             "active": true,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B6"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Isoleucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Isoleucine"
+                                ]
                             },
-                            "module_number": "B7",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B7"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
+            "release_type": [
+                "Unknown"
+            ],
+            "subclass": "Cyclic depsipeptide",
             "thioesterases": [
                 {
                     "gene": "abh06369",
                     "thioesterase_type": "Unknown"
                 }
-            ],
-            "release_type": [
-                "Unknown"
             ]
-        }
+        },
+        "publications": [
+            "pubmed:17993540",
+            "pubmed:17241198",
+            "pubmed:22792073",
+            "pubmed:19447950",
+            "pubmed:14660362"
+        ]
+    },
+    "submitter": {
+        "email": "j.raaijmakers@nioo.knaw.nl",
+        "institution": "NIOO-KNAW",
+        "name": "Prof. Dr. Jos Raaijmakers"
     }
 }

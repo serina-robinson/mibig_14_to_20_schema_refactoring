@@ -1,42 +1,19 @@
 {
-    "comments": "As we are waiting on publication, we do not have a DOI/PMID for article associated with this cluster (Step 2). A related publication from our lab has been used to allow for MIBiG submission while this publication is finishing the review process.",
-    "submitter": {
-        "name": "Christopher Schwalen",
-        "institution": "University of Illinois at Urbana-Champaign",
-        "email": "cschwal@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001471",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:29983054",
-            "pubmed:29507203"
-        ],
-        "loci": {
-            "accession": "NZ_FOEF01000002.1",
-            "start_coord": 708692,
-            "end_coord": 733454,
-            "completeness": "Unknown",
-            "evidence": [
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "saalfelduracin",
-                "chem_synonyms": [],
-                "chem_struct": "C[C@H]([C@H](NC1=S)C2=NC([C@](N3)([H])[C@](C4=NC(C(N[C@@](C(N/C(C5=N[C@](C(N[C@](C(C)(O)[C@@H](C)O)([H])C6=NC1=CS6)=O)([H])CS5)=C\\\\C)=O)([H])[C@@H](C)O)=O)=CS4)(NC(C(NC(C(NC(C(NC([C@@](C)([H])N[C@@H]7C=CC8=C(N=C9C=C8[C@@H](O)C)[C@H]7O)=O)=C)=O)=C)=O)=C)=O)CCC3C%10=NC(C(NC(C(NC(C(O)=O)=C)=O)=C)=O)=CS%10)=CS2)OC9=O",
-                "molecular_formula": "C69H76N18O18S6",
-                "mol_mass": 1637.3996,
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "thioamide",
@@ -46,32 +23,55 @@
                         ]
                     }
                 ],
+                "chem_struct": "C[C@H]([C@H](NC1=S)C2=NC([C@](N3)([H])[C@](C4=NC(C(N[C@@](C(N/C(C5=N[C@](C(N[C@](C(C)(O)[C@@H](C)O)([H])C6=NC1=CS6)=O)([H])CS5)=C\\\\C)=O)([H])[C@@H](C)O)=O)=CS4)(NC(C(NC(C(NC(C(NC([C@@](C)([H])N[C@@H]7C=CC8=C(N=C9C=C8[C@@H](O)C)[C@H]7O)=O)=C)=O)=C)=O)=C)=O)CCC3C%10=NC(C(NC(C(NC(C(O)=O)=C)=O)=C)=O)=CS%10)=CS2)OC9=O",
+                "chem_synonyms": [],
+                "compound": "saalfelduracin",
                 "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
                 ],
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1637.3996,
+                "molecular_formula": "C69H76N18O18S6"
             }
         ],
         "genes": {},
+        "loci": {
+            "accession": "NZ_FOEF01000002.1",
+            "completeness": "Unknown",
+            "end_coord": 733454,
+            "evidence": [
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 708692
+        },
+        "mibig_accession": "BGC0001471",
+        "publications": [
+            "pubmed:29983054",
+            "pubmed:29507203"
+        ],
         "ripp": {
-            "subclass": "Thiopeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "wp_091614358.1",
                     "core_sequence": [
                         "ASSSSCTTCICTCSCSS"
                     ],
-                    "leader_sequence": 61,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "wp_091614358.1",
+                    "leader_sequence": 61
                 }
             ],
-            "peptidases": []
+            "subclass": "Thiopeptide"
         }
+    },
+    "comments": "As we are waiting on publication, we do not have a DOI/PMID for article associated with this cluster (Step 2). A related publication from our lab has been used to allow for MIBiG submission while this publication is finishing the review process.",
+    "submitter": {
+        "email": "cschwal@gmail.com",
+        "institution": "University of Illinois at Urbana-Champaign",
+        "name": "Christopher Schwalen"
     }
 }

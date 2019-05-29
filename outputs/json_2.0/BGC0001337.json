@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Fang-Yuan Chang",
-        "submitter_institution": "MIT",
-        "submitter_email": "fangyuanchang@gmail.com"
+    "submitter": {
+        "name": "Fang-Yuan Chang",
+        "institution": "MIT",
+        "email": "fangyuanchang@gmail.com"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001337",
         "biosyn_class": [
             "Alkaloid"
@@ -13,14 +19,14 @@
             "pubmed:26150486"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Heterologous expression",
-                "Gene expression correlated with compound production"
-            ],
             "accession": "KR052816.1",
             "start_coord": 3107,
-            "end_coord": 25639
+            "end_coord": 25639,
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
         },
         "compounds": [
             {
@@ -31,174 +37,42 @@
                 "chem_struct": "O=C1[C@@]2(O)N3C(C4=C([C@@]2(O)C(N1C)=O)C5=CC(Cl)=CC=C5N4)=C(OC)C6=CC(O)=C(Cl)C=C63",
                 "molecular_formula": "C22H16Cl2N3O6",
                 "mol_mass": 486.026,
-                "mass_ion_type": "[M-H]-",
-                "evidence_struct": [
-                    "NMR",
-                    "Mass spectrometry"
-                ],
-                "chem_act": [
-                    "Cytotoxic"
-                ],
                 "chem_moieties": [
                     {
-                        "chem_moiety": "Indole group",
-                        "moiety_subcluster": [
+                        "moiety": "Indole group",
+                        "subcluster": [
                             "akq20701.1"
                         ]
                     }
+                ],
+                "database_id": "",
+                "mass_spec_ion_type": "[M-H]-",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "chem_acts": [
+                    "Cytotoxic"
                 ]
             },
             {
                 "compound": "lazarimide B",
                 "chem_struct": "COC1=C2N(C3=C1C=CC(Cl)=C3)[C@]1(O)C(=O)N(C)C(=O)[C@]1(O)C1=C2NC2=C1C=C(Cl)C=C2",
                 "molecular_formula": "C22H15Cl2N3O5",
-                "mol_mass": 472.284
+                "mol_mass": 472.284,
+                "database_id": ""
             },
             {
                 "compound": "lazarimide C",
                 "chem_struct": "O[C@@]12C(=O)NC(=O)[C@]1(O)C1=C(NC3=C1C=C(Cl)C=C3)C1=C2C2=C(N1)C=C(Cl)C=C2",
                 "molecular_formula": "C20H11Cl2N3O4",
-                "mol_mass": 428.231
+                "mol_mass": 428.231,
+                "database_id": ""
             }
         ],
-        "genes": {
-            "gene": [
-                {
-                    "gene_name": "lzrX1a",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20686.1",
-                    "gene_annotation": "monooxygenase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrX1b",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20687.1",
-                    "gene_annotation": "monooxygenase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrM1",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20688.1",
-                    "gene_annotation": "N-methyltransferase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrP",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20689.1",
-                    "gene_annotation": "RebP-like cytochrome p450",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrC",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20690.1",
-                    "gene_annotation": "RebC-like monooxygenase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrY1",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20691.1",
-                    "gene_annotation": "putative alpha/beta hydrolase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrY2",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20692.1",
-                    "gene_annotation": "putative alpha/beta hydrolase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrF",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20693.1",
-                    "gene_annotation": "putative flavin reductase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrT1",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20694.1",
-                    "gene_annotation": "putative cation/H+ antiporter",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrT2",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20695.1",
-                    "gene_annotation": "putative cation/H+ antiporter",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrH1",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20696.1",
-                    "gene_annotation": "tryptophan-5 halogenase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrM3",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20697.1",
-                    "gene_annotation": "O-methyltransferase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrX2",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20698.1",
-                    "gene_annotation": "monooxygenase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrH2",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20699.1",
-                    "gene_annotation": "tryptophan-6 halogenase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrO",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20700.1",
-                    "gene_annotation": "RebO-like L-amino acid oxidase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrD",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20701.1",
-                    "gene_annotation": "RebD-like chromopyrrolic acid synthase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrG",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20702.1",
-                    "gene_annotation": "cytochrome p450",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "lzrR",
-                    "not_in_gbk": false,
-                    "gene_id": "AKQ20703.1",
-                    "gene_annotation": "LuxR-type transcriptional regulator",
-                    "gene_function": "Unknown"
-                }
-            ]
-        },
+        "genes": {},
         "alkaloid": {
-            "alkaloid_subclass": "Indole/benzopyrrole"
+            "subclass": "Indole/benzopyrrole"
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

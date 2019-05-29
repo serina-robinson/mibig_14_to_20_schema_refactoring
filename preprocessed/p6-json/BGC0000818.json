@@ -1,23 +1,31 @@
 {
-    "submitter": {
-        "name": "Fengan Yu",
-        "institution": "University of Michigan",
-        "email": "fenganyu@umich.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000818",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:23213353"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
+                "chem_struct": "CC1(C=CC2=C(O1)C=CC3=C2N(C(=O)[C@@]34C[C@]56[C@H](C4(C)C)C[C@@]7(CCCN7C5=O)C(=O)N6)O)C",
+                "chem_synonyms": [],
+                "compound": "Notoamide A",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 463.2107,
+                "molecular_formula": "C26H29N3O5"
+            }
         ],
+        "genes": {
+            "operons": []
+        },
         "loci": {
             "accession": "JQ708194.1",
             "completeness": "complete",
@@ -25,73 +33,65 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Notoamide A",
-                "chem_synonyms": [],
-                "chem_struct": "CC1(C=CC2=C(O1)C=CC3=C2N(C(=O)[C@@]34C[C@]56[C@H](C4(C)C)C[C@@]7(CCCN7C5=O)C(=O)N6)O)C",
-                "molecular_formula": "C26H29N3O5",
-                "mol_mass": 463.2107,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Cytotoxic"
-                ]
-            }
-        ],
-        "genes": {
-            "operons": []
-        },
+        "mibig_accession": "BGC0000818",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "AGC83576.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Proline"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Proline"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Tryptophan"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Tryptophan"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Unknown"
-            ]
-        }
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:23213353"
+        ]
+    },
+    "submitter": {
+        "email": "fenganyu@umich.edu",
+        "institution": "University of Michigan",
+        "name": "Fengan Yu"
     }
 }

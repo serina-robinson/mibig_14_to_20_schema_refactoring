@@ -1,37 +1,52 @@
 {
-    "version": "6",
-    "personal": {
-        "submitter_name": "Jens Nielsen",
-        "submitter_institution": "Chalmers University of Technology",
-        "submitter_email": "nielsenj@chalmers.se"
-    },
     "general_params": {
-        "mibig_accession": "BGC0000104",
+        "Polyketide": {
+            "iter_cycl_type": "C2-C7 first",
+            "iterative_subtype": "Non-reducing",
+            "lin_cycl_pk": "Cyclic",
+            "nr_iterations": 3,
+            "pk_subclass": "Other",
+            "pks_genes": [
+                "ady00130.1"
+            ],
+            "pks_release_type": "Hydrolysis",
+            "pks_subclass": [
+                "Iterative type I"
+            ],
+            "pks_te_type": "Unknown",
+            "starter_unit": "Acetyl-CoA"
+        },
+        "Terpene": {
+            "prenyl_transf": [
+                "ady00128.1"
+            ],
+            "terpene_c_len": "Sesquiterpene",
+            "terpene_precursor": "Other",
+            "terpene_subclass": "Dolichol",
+            "terpene_synth_cycl": []
+        },
         "biosyn_class": [
             "Polyketide",
             "Terpene"
         ],
-        "publications": [
-            "21398490",
-            "4472552"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "HQ731031",
-                    "start_coord": -1,
-                    "end_coord": -1,
-                    "conn_comp_cluster": [
-                        "Knock-out studies"
-                    ]
-                }
-            ]
-        },
         "compounds": [
             {
-                "compound": "mycophenolic acid",
+                "chebi_id": 168396,
+                "chem_act": [
+                    "Inhibitor"
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety_subcluster": []
+                    }
+                ],
                 "chem_synonyms": [],
+                "chem_target": [
+                    "inosinemonophosphatedehydrogenase"
+                ],
+                "chembl_id": 866,
+                "chemspider_id": 393865,
+                "compound": "mycophenolic acid",
                 "database_deposited": true,
                 "databases_deposited": [
                     "PubChem",
@@ -39,21 +54,7 @@
                     "chEMBL",
                     "ChemSpider"
                 ],
-                "pubchem_id": 446541,
-                "chebi_id": 168396,
-                "chembl_id": 866,
-                "chemspider_id": 393865,
-                "chem_act": [
-                    "Inhibitor"
-                ],
-                "chem_target": [
-                    "inosinemonophosphatedehydrogenase"
-                ],
-                "chem_moieties": [
-                    {
-                        "moiety_subcluster": []
-                    }
-                ]
+                "pubchem_id": 446541
             }
         ],
         "genes": {
@@ -63,30 +64,29 @@
                 }
             ]
         },
-        "Polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
-            "starter_unit": "Acetyl-CoA",
-            "pks_genes": [
-                "ady00130.1"
-            ],
-            "nr_iterations": 3,
-            "iterative_subtype": "Non-reducing",
-            "iter_cycl_type": "C2-C7 first",
-            "pks_te_type": "Unknown",
-            "pks_release_type": "Hydrolysis"
-        },
-        "Terpene": {
-            "terpene_subclass": "Dolichol",
-            "terpene_c_len": "Sesquiterpene",
-            "terpene_precursor": "Other",
-            "terpene_synth_cycl": [],
-            "prenyl_transf": [
-                "ady00128.1"
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
+                {
+                    "Accession": "HQ731031",
+                    "conn_comp_cluster": [
+                        "Knock-out studies"
+                    ],
+                    "end_coord": -1,
+                    "start_coord": -1
+                }
             ]
-        }
-    }
+        },
+        "mibig_accession": "BGC0000104",
+        "publications": [
+            "21398490",
+            "4472552"
+        ]
+    },
+    "personal": {
+        "submitter_email": "nielsenj@chalmers.se",
+        "submitter_institution": "Chalmers University of Technology",
+        "submitter_name": "Jens Nielsen"
+    },
+    "version": "6"
 }

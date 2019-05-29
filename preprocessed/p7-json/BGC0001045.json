@@ -1,24 +1,35 @@
 {
-    "submitter": {
-        "name": "Yi-Qiang (Eric) Cheng",
-        "institution": "University of North Texas Health Science Center",
-        "email": "yiqiang.cheng@unthsc.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001045",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24973954"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antifungal",
+                    "Cytotoxic",
+                    "Inhibitor"
+                ],
+                "chem_moieties": [],
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "Histonedeacetylases"
+                    }
+                ],
+                "compound": "Spiruchostatin A",
+                "database_id": "pubchem:60209141"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "JQ045344.1",
             "completeness": "complete",
@@ -26,34 +37,22 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Spiruchostatin A",
-                "chem_synonyms": [],
-                "chem_moieties": [],
-                "database_id": "pubchem:60209141",
-                "chem_acts": [
-                    "Antifungal",
-                    "Cytotoxic",
-                    "Inhibitor"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "Histonedeacetylases",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {},
-        "polyketide": {
-            "starter_unit": "Malonyl-CoA",
-            "subclasses": [
-                "Macrolide"
-            ],
+        "mibig_accession": "BGC0001045",
+        "nrp": {
             "cyclic": true,
             "release_type": [
                 "Macrolactamization"
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Macrolide"
             ],
             "synthases": [
                 {
@@ -72,12 +71,13 @@
                 }
             ]
         },
-        "nrp": {
-            "subclass": "Cyclic depsipeptide",
-            "cyclic": true,
-            "release_type": [
-                "Macrolactamization"
-            ]
-        }
+        "publications": [
+            "pubmed:24973954"
+        ]
+    },
+    "submitter": {
+        "email": "yiqiang.cheng@unthsc.edu",
+        "institution": "University of North Texas Health Science Center",
+        "name": "Yi-Qiang (Eric) Cheng"
     }
 }

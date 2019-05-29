@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Fang-Yuan Chang",
-        "submitter_institution": "MIT",
-        "submitter_email": "fangyuanchang@gmail.com"
+    "submitter": {
+        "name": "Fang-Yuan Chang",
+        "institution": "MIT",
+        "email": "fangyuanchang@gmail.com"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001336",
         "biosyn_class": [
             "Alkaloid"
@@ -13,14 +19,14 @@
             "pubmed:24171465"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Heterologous expression",
-                "Gene expression correlated with compound production"
-            ],
             "accession": "KF551865.1",
             "start_coord": 2596,
-            "end_coord": 15215
+            "end_coord": 15215,
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
         },
         "compounds": [
             {
@@ -31,107 +37,36 @@
                 "chem_struct": "O=C1C2=C(C(C(OC)=O)N1)C3=C(C4=C2C5=CC=CC=C5N4)NC6=CC=CC=C63",
                 "molecular_formula": "C22H15N3O3",
                 "mol_mass": 368.1035,
-                "mass_ion_type": "[M-H]-",
-                "evidence_struct": [
-                    "NMR",
-                    "Mass spectrometry"
-                ],
-                "chem_act": [
-                    "Cytotoxic"
-                ],
                 "chem_moieties": [
                     {
-                        "chem_moiety": "Indole group",
-                        "moiety_subcluster": [
+                        "moiety": "Indole group",
+                        "subcluster": [
                             "ahe14639.1"
                         ]
                     }
+                ],
+                "database_id": "",
+                "mass_spec_ion_type": "[M-H]-",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "chem_acts": [
+                    "Cytotoxic"
                 ]
             },
             {
                 "compound": "erdasporine B",
-                "pubchem_id": 102584106,
-                "mol_mass": 353.116,
-                "molecular_formula": "C22H15N3O2",
-                "chem_struct": "COC(=O)C1=C2C(=CN1)C3=C(C4=C2C5=CC=CC=C5N4)NC6=CC=CC=C63",
-                "chem_synonyms": [
-                    "Erdasporine B",
-                    ""
-                ]
+                "database_id": "pubchem:102584106"
             },
             {
                 "compound": "erdasporine C",
-                "pubchem_id": 102584107,
-                "mol_mass": 369.111,
-                "molecular_formula": "C22H15N3O3",
-                "chem_struct": "COC(=O)C1C2=C3C4=CC=CC=C4NC3=C5C(=C2C(=O)N1)C6=CC=CC=C6N5",
-                "chem_synonyms": [
-                    "Erdasporine C",
-                    ""
-                ]
+                "database_id": "pubchem:102584107"
             }
         ],
-        "genes": {
-            "gene": [
-                {
-                    "gene_name": "espM",
-                    "not_in_gbk": false,
-                    "gene_id": "asmbl_3",
-                    "gene_annotation": "O-methyltransferase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "espX",
-                    "not_in_gbk": false,
-                    "gene_id": "asmbl_4",
-                    "gene_annotation": "FAD-binding monooxygenase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "espO",
-                    "not_in_gbk": false,
-                    "gene_id": "asmbl_5",
-                    "gene_annotation": "indole-3-pyruvic acid imine synthase EspO",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "espD",
-                    "not_in_gbk": false,
-                    "gene_id": "asmbl_6",
-                    "gene_annotation": "chromopyrrolic acid synthase",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "espP",
-                    "not_in_gbk": false,
-                    "gene_id": "asmbl_7",
-                    "gene_annotation": "cytochrome P450",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "espT1",
-                    "not_in_gbk": false,
-                    "gene_id": "asmbl_8",
-                    "gene_annotation": "putative transporter EspT1",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "espT2",
-                    "not_in_gbk": false,
-                    "gene_id": "asmbl_9",
-                    "gene_annotation": "putative transporter EspT2",
-                    "gene_function": "Unknown"
-                }
-            ]
-        },
+        "genes": {},
         "alkaloid": {
-            "alkaloid_subclass": "Indole/benzopyrrole"
+            "subclass": "Indole/benzopyrrole"
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

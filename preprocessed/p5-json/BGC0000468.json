@@ -1,41 +1,42 @@
 {
-    "personal": {
-        "submitter_email": "juan-pablo.gomez-escribano@jic.ac.uk",
-        "submitter_name": "Juan Pablo Gomez-Escribano",
-        "submitter_institution": "John Innes Centre; Norwich Research Park; Norwich; NR4 7UH; UK"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Heterologous expression"
-            ],
-            "accession": "HE983629.1",
-            "start_coord": 1377,
-            "end_coord": 18956
-        },
+        "biosyn_class": [
+            "RiPP"
+        ],
         "compounds": [
             {
-                "chemspider_id": 26365309,
-                "mol_mass": 823.056,
+                "chem_act": [
+                    "Antibacterial"
+                ],
                 "chem_struct": "C[CH]1CCN2[CH]1C(=O)N[CH](C(=O)N[CH](/C(=N/[CH](C(=O)N[CH]([CH](C)c3ccccc3)C(=O)N[CH](CC(=O)OC)c4nccs4)C(C)(C)C)/NCC2=O)C(C)(C)C)C(C)C",
                 "chem_synonyms": [],
                 "chem_target": [
                     "Bacterialribosome"
                 ],
+                "chemspider_id": 26365309,
                 "compound": "Bottromycin A2",
-                "molecular_formula": "C42H62N8O7S",
-                "chem_act": [
-                    "Antibacterial"
-                ]
+                "mol_mass": 823.056,
+                "molecular_formula": "C42H62N8O7S"
             }
         ],
         "genes": {},
+        "loci": {
+            "accession": "HE983629.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Heterologous expression"
+            ],
+            "end_coord": 18956,
+            "start_coord": 1377
+        },
         "mibig_accession": "BGC0000468",
-        "biosyn_class": [
-            "RiPP"
-        ],
         "publications": [
             "pubmed:19115340",
             "pubmed:6337880",
@@ -43,20 +44,20 @@
             "doi:10.1039/C2SC21183A"
         ],
         "ripp": {
-            "ripp_subclass": "Bottromycin",
+            "lin_cycl_ripp": "Cyclic",
             "precursor_loci": [
                 {
-                    "foll_pept_len": 35,
-                    "crosslinks": [
-                        {
-                            "crosslink_type": "Lactam",
-                            "AA_pos_1": 1,
-                            "AA_pos_2": 4
-                        }
-                    ],
                     "core_pept_aa": [
                         "GPVVVFDC"
                     ],
+                    "crosslinks": [
+                        {
+                            "AA_pos_1": 1,
+                            "AA_pos_2": 4,
+                            "crosslink_type": "Lactam"
+                        }
+                    ],
+                    "foll_pept_len": 35,
                     "gene_id": [
                         "bmbc",
                         "ccm09443.1"
@@ -72,13 +73,12 @@
                     ]
                 }
             ],
-            "lin_cycl_ripp": "Cyclic"
+            "ripp_subclass": "Bottromycin"
         }
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "juan-pablo.gomez-escribano@jic.ac.uk",
+        "submitter_institution": "John Innes Centre; Norwich Research Park; Norwich; NR4 7UH; UK",
+        "submitter_name": "Juan Pablo Gomez-Escribano"
+    }
 }

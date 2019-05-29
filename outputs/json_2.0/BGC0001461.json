@@ -1,10 +1,17 @@
 {
-    "personal": {
-        "submitter_name": "Navjot Kaur",
-        "submitter_institution": "CSIR Imtech, Chandigarh, India",
-        "submitter_email": "nkular67@gmail.com"
+    "comments": "nkaur@imtech.res.in\\nmayil@imtech.res.in",
+    "submitter": {
+        "name": "Navjot Kaur",
+        "institution": "CSIR Imtech, Chandigarh, India",
+        "email": "nkular67@gmail.com"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001461",
         "biosyn_class": [
             "NRP"
@@ -13,45 +20,43 @@
             "pubmed:12747408"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Sequence-based prediction"
-            ],
             "accession": "MQUP01000022.1",
             "start_coord": 97566,
-            "end_coord": 165358
+            "end_coord": 165358,
+            "completeness": "complete",
+            "evidence": [
+                "Sequence-based prediction"
+            ]
         },
         "compounds": [
             {
                 "compound": "Nogabecin",
                 "chem_synonyms": [],
                 "mol_mass": -1,
-                "mass_ion_type": "None",
-                "evidence_struct": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "evidence": [
                     "Unknown"
                 ],
-                "chem_act": [
+                "chem_acts": [
                     "Antibacterial"
                 ],
-                "chem_target": [
-                    "cellwall"
+                "chem_targets": [
+                    {
+                        "target": "cellwall",
+                        "publications": []
+                    }
                 ]
             }
         ],
         "genes": {},
         "nrp": {
             "subclass": "Glycopeptide",
-            "lin_cycl_nrp": "Linear",
-            "nrps_te_type": "Unknown",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Unknown"
+            "cyclic": false,
+            "thioesterases": [],
+            "release_type": [
+                "Unknown"
+            ]
         }
-    },
-    "comments": "nkaur@imtech.res.in\\nmayil@imtech.res.in",
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

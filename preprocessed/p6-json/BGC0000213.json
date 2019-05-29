@@ -1,23 +1,55 @@
 {
-    "submitter": {
-        "name": "Miroslav Petricek",
-        "institution": "Institute of Microbiology ASCR",
-        "email": "petras@biomed.cas.cz"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000213",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24838618"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial",
+                    "Inhibitor"
+                ],
+                "chem_moieties": [],
+                "chem_struct": "O=C(NC1=C[C@](/C=C/C=C/C=C/C=C/C(NC2=C(O)CCC2=O)=O)(O)C3C(O3)C1=O)/C=C/C=C/C=C/C=C\\\\C=C\\\\C",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "caspase1"
+                    }
+                ],
+                "compound": "colabomycin E",
+                "database_id": "",
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 555.2131,
+                "molecular_formula": "C32H32N2O7"
+            }
         ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out",
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "AIL50163.1",
+                    "name": "colR5",
+                    "product": "regulatory protein"
+                }
+            ],
+            "extra_genes": []
+        },
         "loci": {
             "accession": "KF850685.1",
             "completeness": "complete",
@@ -28,54 +60,14 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "colabomycin E",
-                "chem_synonyms": [],
-                "chem_struct": "O=C(NC1=C[C@](/C=C/C=C/C=C/C=C/C(NC2=C(O)CCC2=O)=O)(O)C3C(O3)C1=O)/C=C/C=C/C=C/C=C\\\\C=C\\\\C",
-                "molecular_formula": "C32H32N2O7",
-                "mol_mass": 555.2131,
-                "chem_moieties": [],
-                "database_id": "",
-                "mass_spec_ion_type": "[M-H]-",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Inhibitor"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "caspase1",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": [
-                {
-                    "name": "colR5",
-                    "id": "AIL50163.1",
-                    "functions": [
-                        {
-                            "category": "Regulation",
-                            "evidence": [
-                                "Knock-out",
-                                "Other in vivo study"
-                            ]
-                        }
-                    ],
-                    "product": "regulatory protein"
-                }
-            ]
-        },
+        "mibig_accession": "BGC0000213",
         "polyketide": {
-            "starter_unit": "Unknown",
+            "cyclic": false,
             "ketide_length": 9,
+            "starter_unit": "Unknown",
             "subclasses": [
                 "Polyene"
             ],
-            "cyclic": false,
             "synthases": [
                 {
                     "genes": [
@@ -87,6 +79,14 @@
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:24838618"
+        ]
+    },
+    "submitter": {
+        "email": "petras@biomed.cas.cz",
+        "institution": "Institute of Microbiology ASCR",
+        "name": "Miroslav Petricek"
     }
 }

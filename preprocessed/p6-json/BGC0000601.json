@@ -1,53 +1,31 @@
 {
-    "submitter": {
-        "name": "Alexey Melnik",
-        "institution": "UCSD",
-        "email": "alexvmelnik@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000601",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:20805502",
-            "pubmed:12817086"
-        ],
-        "loci": {
-            "accession": "AL009126.3",
-            "start_coord": 213941,
-            "end_coord": 220032,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "sporulation killing factor",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_synonyms": [
                     "skf"
                 ],
-                "mol_mass": 2781.3023,
+                "compound": "sporulation killing factor",
                 "database_id": "",
                 "mass_spec_ion_type": "M+",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "mol_mass": 2781.3023
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "skfA",
-                    "id": "CAB11984.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -55,11 +33,23 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "CAB11984.1",
+                    "name": "skfA"
                 },
                 {
-                    "name": "skfB",
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
                     "id": "CAB11985.2",
+                    "name": "skfB"
+                },
+                {
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -67,11 +57,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "skfC",
+                    ],
                     "id": "CAX52541.1",
+                    "name": "skfC"
+                },
+                {
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -79,23 +69,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "skfH",
+                    ],
                     "id": "CAB11992.2",
-                    "functions": [
-                        {
-                            "category": "Activation / processing",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ]
+                    "name": "skfH"
                 },
                 {
-                    "name": "skfE",
-                    "id": "CAB11989.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -106,11 +84,11 @@
                                 "Activity assay"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "CAB11989.1",
+                    "name": "skfE"
                 },
                 {
-                    "name": "skfF",
-                    "id": "CAB11990.2",
                     "functions": [
                         {
                             "category": "Transport",
@@ -118,24 +96,46 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "CAB11990.2",
+                    "name": "skfF"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "AL009126.3",
+            "completeness": "complete",
+            "end_coord": 220032,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 213941
+        },
+        "mibig_accession": "BGC0000601",
+        "publications": [
+            "pubmed:20805502",
+            "pubmed:12817086"
+        ],
         "ripp": {
-            "subclass": "Head-to-tailcyclized peptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "cab11984.1",
                     "core_sequence": [
                         "cmgcwasksiamtrvcalphpamrai"
                     ],
-                    "leader_sequence": 29,
-                    "follower_sequence": 26
+                    "follower_sequence": 26,
+                    "gene_id": "cab11984.1",
+                    "leader_sequence": 29
                 }
             ],
-            "peptidases": []
+            "subclass": "Head-to-tailcyclized peptide"
         }
+    },
+    "submitter": {
+        "email": "alexvmelnik@gmail.com",
+        "institution": "UCSD",
+        "name": "Alexey Melnik"
     }
 }

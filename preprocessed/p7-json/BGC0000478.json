@@ -1,23 +1,33 @@
 {
-    "submitter": {
-        "name": "Mohamed Donia",
-        "institution": "Princeton University",
-        "email": "donia@princeton.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000478",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:18425112"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_synonyms": [],
+                "compound": "patellin 6",
+                "database_id": "pubchem:10350938"
+            },
+            {
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
+                "chem_synonyms": [],
+                "compound": "trunkamide",
+                "database_id": "pubchem:9811230"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "EU290743.1",
             "completeness": "complete",
@@ -25,31 +35,15 @@
                 "Heterologous expression"
             ]
         },
-        "compounds": [
-            {
-                "compound": "patellin 6",
-                "chem_synonyms": [],
-                "database_id": "pubchem:10350938",
-                "chem_acts": [
-                    "Unknown"
-                ]
-            },
-            {
-                "compound": "trunkamide",
-                "chem_synonyms": [],
-                "database_id": "pubchem:9811230",
-                "chem_acts": [
-                    "Cytotoxic"
-                ]
-            }
+        "mibig_accession": "BGC0000478",
+        "publications": [
+            "pubmed:18425112"
         ],
-        "genes": {},
         "ripp": {
-            "subclass": "Cyanobactin",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "eu290743",
                     "cleavage_recogn_site": [
                         "GVDAS",
                         "SYD",
@@ -59,11 +53,17 @@
                         "TFPVPTVC",
                         "TSIAPFC"
                     ],
-                    "leader_sequence": 40,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "eu290743",
+                    "leader_sequence": 40
                 }
             ],
-            "peptidases": []
+            "subclass": "Cyanobactin"
         }
+    },
+    "submitter": {
+        "email": "donia@princeton.edu",
+        "institution": "Princeton University",
+        "name": "Mohamed Donia"
     }
 }

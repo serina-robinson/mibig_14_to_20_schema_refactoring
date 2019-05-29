@@ -1,56 +1,53 @@
 {
-    "submitter": {
-        "name": "Rainer Borriss",
-        "institution": "Humboldt-Universitat zu Berlin",
-        "email": "rainer.borriss@rz.hu-berlin.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000616",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:24610713"
-        ],
-        "loci": {
-            "accession": "CP000560.1",
-            "start_coord": 3044506,
-            "end_coord": 3048678,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "amylocyclicin",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_synonyms": [
                     "acn"
                 ],
-                "mol_mass": 6381,
+                "compound": "amylocyclicin",
                 "database_id": "",
                 "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "mol_mass": 6381
             }
         ],
         "genes": {},
+        "loci": {
+            "accession": "CP000560.1",
+            "completeness": "complete",
+            "end_coord": 3048678,
+            "evidence": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 3044506
+        },
+        "mibig_accession": "BGC0000616",
+        "publications": [
+            "pubmed:24610713"
+        ],
         "ripp": {
-            "subclass": "Head-to-tailcyclized peptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "rbam_029230",
                     "cleavage_recogn_site": [
                         "ANAE"
+                    ],
+                    "core_sequence": [
+                        "LASTLGISTAAAKKAIDIIDAASTIASIISLIGIVTGAGAISYAIVATAKTMIKKYGKKYAAAW"
                     ],
                     "crosslinks": [
                         {
@@ -59,14 +56,17 @@
                             "second_AA": 64
                         }
                     ],
-                    "core_sequence": [
-                        "LASTLGISTAAAKKAIDIIDAASTIASIISLIGIVTGAGAISYAIVATAKTMIKKYGKKYAAAW"
-                    ],
-                    "leader_sequence": 48,
-                    "follower_sequence": 64
+                    "follower_sequence": 64,
+                    "gene_id": "rbam_029230",
+                    "leader_sequence": 48
                 }
             ],
-            "peptidases": []
+            "subclass": "Head-to-tailcyclized peptide"
         }
+    },
+    "submitter": {
+        "email": "rainer.borriss@rz.hu-berlin.de",
+        "institution": "Humboldt-Universitat zu Berlin",
+        "name": "Rainer Borriss"
     }
 }

@@ -1,137 +1,189 @@
 {
-    "personal": {
-        "submitter_name": "Leonard Kaysser",
-        "submitter_institution": "Eberhard Karls University Tuebingen",
-        "submitter_email": "leonard.kaysser@uni-tuebingen.de"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0000346",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24168704",
-            "pubmed:1468981",
-            "pubmed:10465562",
-            "pubmed:10468620"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Heterologous expression"
-            ],
-            "accession": "KF647219.1"
-        },
         "compounds": [
             {
-                "compound": "epoxomicin",
-                "chem_synonyms": [],
-                "pubchem_id": 9915668,
                 "chem_act": [
                     "Cytotoxic",
                     "Inhibitor"
-                ],
-                "chem_target": [
-                    "proteasome"
                 ],
                 "chem_moieties": [
                     {
                         "chem_moiety": "epoxyketone",
                         "moiety_subcluster": []
                     }
-                ]
+                ],
+                "chem_synonyms": [],
+                "chem_target": [
+                    "proteasome"
+                ],
+                "compound": "epoxomicin",
+                "pubchem_id": 9915668
             }
         ],
         "genes": {
-            "operon": [],
             "gene": [
                 {
-                    "gene_name": "epxA",
-                    "not_in_gbk": false,
-                    "gene_id": "AHB38494.1",
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
                     "gene_annotation": "TetR-like transcriptional regulator",
                     "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "gene_id": "AHB38494.1",
+                    "gene_name": "epxA",
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "epxB",
-                    "not_in_gbk": false,
-                    "gene_id": "AHB38495.1",
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
                     "gene_annotation": "FAD-dependent oxidoreductase",
                     "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "gene_id": "AHB38495.1",
+                    "gene_name": "epxB",
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "epxC",
-                    "not_in_gbk": false,
-                    "gene_id": "AHB38496.1",
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
                     "gene_annotation": "cytochrome P450",
                     "gene_function": "Tailoring",
-                    "tailoring": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "gene_id": "AHB38496.1",
+                    "gene_name": "epxC",
+                    "not_in_gbk": false,
+                    "tailoring": "Unknown"
                 },
                 {
-                    "gene_name": "epxD",
-                    "not_in_gbk": false,
-                    "gene_id": "AHB38497.1",
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
                     "gene_annotation": "non-ribosomal peptide synthetase",
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "gene_id": "AHB38497.1",
+                    "gene_name": "epxD",
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "epxE",
-                    "not_in_gbk": false,
-                    "gene_id": "AHB38498.1",
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
                     "gene_annotation": "polyketide synthase",
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "gene_id": "AHB38498.1",
+                    "gene_name": "epxE",
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "epxF",
-                    "not_in_gbk": false,
-                    "gene_id": "AHB38499.1",
-                    "gene_annotation": "acyl-CoA dehydrogenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Unknown",
                     "evidence_genefunction": [
                         "Unknown"
-                    ]
+                    ],
+                    "gene_annotation": "acyl-CoA dehydrogenase",
+                    "gene_function": "Tailoring",
+                    "gene_id": "AHB38499.1",
+                    "gene_name": "epxF",
+                    "not_in_gbk": false,
+                    "tailoring": "Unknown"
                 }
+            ],
+            "operon": []
+        },
+        "loci": {
+            "accession": "KF647219.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Heterologous expression"
             ]
         },
-        "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Modular type I"
+        "mibig_accession": "BGC0000346",
+        "nrp": {
+            "lin_cycl_nrp": "Linear",
+            "nrps_genes": [
+                {
+                    "nrps_gene": "AHB38497.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "prot_adom_spec": "Isoleucine"
+                            },
+                            "cdom_subtype": "Starter",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "Methylation",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "prot_adom_spec": "Isoleucine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "2",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "prot_adom_spec": "Threonine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "3",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "None",
+                                "prot_adom_spec": "Leucine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "4",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                }
             ],
-            "starter_unit": "Unknown",
-            "pks_te_type": "Type I",
-            "pks_release_type": "Unknown",
+            "nrps_release_type": "Unknown",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": [
+                "ahb38498.1"
+            ],
+            "subclass": "Unknown"
+        },
+        "polyketide": {
+            "lin_cycl_pk": "Linear",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AHB38498.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "5",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
@@ -139,77 +191,25 @@
                         }
                     ]
                 }
-            ]
-        },
-        "nrp": {
-            "subclass": "Unknown",
-            "lin_cycl_nrp": "Linear",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [
-                "ahb38498.1"
             ],
-            "nrps_release_type": "Unknown",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "AHB38497.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "1",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Isoleucine",
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "Starter",
-                            "nrps_mod_doms": "Methylation",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "2",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Isoleucine",
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "3",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Threonine",
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "4",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Leucine",
-                                "evidence_a_spec": "None",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ]
-        }
+            "pk_subclass": "Other",
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Modular type I"
+            ],
+            "pks_te_type": "Type I",
+            "starter_unit": "Unknown"
+        },
+        "publications": [
+            "pubmed:24168704",
+            "pubmed:1468981",
+            "pubmed:10465562",
+            "pubmed:10468620"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "leonard.kaysser@uni-tuebingen.de",
+        "submitter_institution": "Eberhard Karls University Tuebingen",
+        "submitter_name": "Leonard Kaysser"
+    }
 }

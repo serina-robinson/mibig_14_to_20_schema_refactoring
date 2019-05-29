@@ -1,25 +1,61 @@
 {
-    "submitter": {
-        "name": "Andreas Bechthold",
-        "institution": "Albert-Ludwigs-University of Freiburg, Germany",
-        "email": "andreas.bechthold@pharmazie.uni-freiburg.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001179",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:22162248",
-            "pubmed:6209258",
-            "pubmed:1473997"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_struct": "CC1C(=O)c2cc3cccc(c3cc2C(C1(C(=O)O)O)(CCC(C)C)O)O",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "a2-macroglobulin"
+                    },
+                    {
+                        "publications": [],
+                        "target": "glutathione-S-transferase"
+                    }
+                ],
+                "compound": "Rishirilide B ",
+                "database_id": "",
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 371.3,
+                "molecular_formula": "C21H24O6"
+            },
+            {
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_struct": "CC1C(=O)c2cc3cccc(c3cc2C(C1(C(=O)O)O)(CCC(C)C)O)O.CC1C(=O)C2=Cc3cccc(c3C(C24C(C1(C(=O)O4)O)(CCC(C)C)O)O)O",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "a2-macroglobulin"
+                    },
+                    {
+                        "publications": [],
+                        "target": "glutathione-S-transferase"
+                    }
+                ],
+                "compound": "Rishirilide A",
+                "database_id": "",
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 387.3,
+                "molecular_formula": "C21H24O7"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "KJ437438.1",
             "completeness": "complete",
@@ -27,79 +63,43 @@
                 "Heterologous expression"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Rishirilide B ",
-                "chem_synonyms": [],
-                "chem_struct": "CC1C(=O)c2cc3cccc(c3cc2C(C1(C(=O)O)O)(CCC(C)C)O)O",
-                "molecular_formula": "C21H24O6",
-                "mol_mass": 371.3,
-                "database_id": "",
-                "mass_spec_ion_type": "[M-H]-",
-                "chem_acts": [
-                    "Inhibitor"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "a2-macroglobulin",
-                        "publications": []
-                    },
-                    {
-                        "target": "glutathione-S-transferase",
-                        "publications": []
-                    }
-                ]
-            },
-            {
-                "compound": "Rishirilide A",
-                "chem_synonyms": [],
-                "chem_struct": "CC1C(=O)c2cc3cccc(c3cc2C(C1(C(=O)O)O)(CCC(C)C)O)O.CC1C(=O)C2=Cc3cccc(c3C(C24C(C1(C(=O)O4)O)(CCC(C)C)O)O)O",
-                "molecular_formula": "C21H24O7",
-                "mol_mass": 387.3,
-                "database_id": "",
-                "mass_spec_ion_type": "[M-H]-",
-                "chem_acts": [
-                    "Inhibitor"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "a2-macroglobulin",
-                        "publications": []
-                    },
-                    {
-                        "target": "glutathione-S-transferase",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {},
+        "mibig_accession": "BGC0001179",
         "polyketide": {
-            "starter_unit": "Unknown",
-            "ketide_length": 9,
             "cyclases": [
                 "AHL46720.1",
                 "AHL46724.1",
                 "AHL46707.1"
             ],
+            "cyclic": true,
+            "ketide_length": 9,
+            "starter_unit": "Unknown",
             "subclasses": [
                 "Other"
             ],
-            "cyclic": true,
             "synthases": [
                 {
                     "genes": [
                         "AHL46724.1",
                         "AHL46720.1",
-                        "ahl46710.1",
+                        "ahl46708.1",
                         "AHL46707.1",
-                        "ahl46708.1"
+                        "ahl46710.1"
                     ],
                     "subclass": [
                         "Type II"
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:22162248",
+            "pubmed:6209258",
+            "pubmed:1473997"
+        ]
+    },
+    "submitter": {
+        "email": "andreas.bechthold@pharmazie.uni-freiburg.de",
+        "institution": "Albert-Ludwigs-University of Freiburg, Germany",
+        "name": "Andreas Bechthold"
     }
 }

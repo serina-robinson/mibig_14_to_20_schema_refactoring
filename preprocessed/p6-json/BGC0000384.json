@@ -1,30 +1,108 @@
 {
-    "comments": "Only one condensation domain is present within AAT12283",
-    "submitter": {
-        "name": "Adam Jones",
-        "institution": "Fairfax, VA USA",
-        "email": "acj523@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000384",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:107586",
-            "pubmed:15366877",
-            "pubmed:20000453",
-            "pubmed:22314229",
-            "pubmed:13880125",
-            "pubmed:24839542",
-            "pubmed:23751865"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Cytotoxic",
+                    "Tumor promoter, irritant, vesicant "
+                ],
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "ProteinkinaseC(activator)"
+                    }
+                ],
+                "compound": "Lyngbyatoxin",
+                "database_id": "pubchem:91706;chebi:80050;chemspider:10472344"
+            }
         ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Heterologous expression",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AAT12283",
+                    "name": "ltxA"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Heterologous expression",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AAT12284",
+                    "name": "ltxB",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Heterologous expression",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AAT12285",
+                    "name": "ltxC"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AAT12286",
+                    "name": "ltxD",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                }
+            ],
+            "extra_genes": [],
+            "operons": [
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "genes": [
+                        "aat12283",
+                        "aat12284",
+                        "aat12285",
+                        "aat12286"
+                    ]
+                }
+            ]
+        },
         "loci": {
             "accession": "AY588942.1",
             "completeness": "complete",
@@ -34,150 +112,72 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Lyngbyatoxin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:91706;chebi:80050;chemspider:10472344",
-                "chem_acts": [
-                    "Cytotoxic",
-                    "Tumor promoter, irritant, vesicant "
-                ],
-                "chem_targets": [
-                    {
-                        "target": "ProteinkinaseC(activator)",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": [
-                {
-                    "name": "ltxA",
-                    "id": "AAT12283",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Heterologous expression",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "ltxB",
-                    "id": "AAT12284",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Heterologous expression",
-                                "Activity assay",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "tailoring": [
-                        "Oxidation"
-                    ]
-                },
-                {
-                    "name": "ltxC",
-                    "id": "AAT12285",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Heterologous expression",
-                                "Activity assay",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "ltxD",
-                    "id": "AAT12286",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "tailoring": [
-                        "Unknown"
-                    ]
-                }
-            ],
-            "operons": [
-                {
-                    "genes": [
-                        "aat12283",
-                        "aat12284",
-                        "aat12285",
-                        "aat12286"
-                    ],
-                    "evidence": [
-                        "Sequence-based prediction"
-                    ]
-                }
-            ]
-        },
+        "mibig_accession": "BGC0000384",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "AAT12283",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Tryptophan"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Tryptophan"
+                                ]
                             },
-                            "module_number": "2",
                             "active": true,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Valine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Valine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "Methylation"
-                            ]
+                            ],
+                            "module_number": "1"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Reductive release"
-            ]
-        }
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:107586",
+            "pubmed:15366877",
+            "pubmed:20000453",
+            "pubmed:22314229",
+            "pubmed:13880125",
+            "pubmed:24839542",
+            "pubmed:23751865"
+        ]
+    },
+    "comments": "Only one condensation domain is present within AAT12283",
+    "submitter": {
+        "email": "acj523@gmail.com",
+        "institution": "Fairfax, VA USA",
+        "name": "Adam Jones"
     }
 }

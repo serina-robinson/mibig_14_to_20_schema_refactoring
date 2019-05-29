@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Guohui Pan",
-        "submitter_institution": "The Scripps Research Institute",
-        "submitter_email": "gpan@scripps.edu"
+    "submitter": {
+        "name": "Guohui Pan",
+        "institution": "The Scripps Research Institute",
+        "email": "gpan@scripps.edu"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000275",
         "biosyn_class": [
             "Polyketide"
@@ -18,15 +24,15 @@
             "pubmed:9609708"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "M80674.1",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Enzymatic assays",
                 "Heterologous expression",
                 "Gene expression correlated with compound production",
                 "Sequence-based prediction"
-            ],
-            "accession": "M80674.1"
+            ]
         },
         "compounds": [
             {
@@ -35,8 +41,9 @@
                 "chem_struct": "O[C@H]1[C@@]2(O)[C@@](C(C(C(O)=C(C(C)=C(C(OC)=O)C(OC)=C4)C4=C3)=C3C2=O)=O)(O)C(C=C1OC)=O",
                 "molecular_formula": "C23H20O11",
                 "mol_mass": 472.1,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Antibacterial",
                     "Cytotoxic",
                     "Unknown"
@@ -44,164 +51,203 @@
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "tcmR",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67508.1",
-                    "gene_annotation": "tetracenomycin C resistance and export gene repressor",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "tcmR",
+                    "id": "AAA67508.1",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "constitutive transcription of the tcmA gene"
+                    "product": "tetracenomycin C resistance and export gene repressor"
                 },
                 {
-                    "gene_name": "tcmA",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67509.1",
-                    "gene_annotation": "tetracenomycin C resistance and export protein",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
+                    "name": "tcmA",
+                    "id": "AAA67509.1",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "tetracenomycin C resistance and export protein"
+                },
+                {
+                    "name": "tcmP",
+                    "id": "AAA67510.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "product": "O-methyltransferase",
+                    "tailoring": [
+                        "Methylation"
                     ]
                 },
                 {
-                    "gene_name": "tcmP",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67510.1",
-                    "gene_annotation": "O-methyltransferase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Methylation",
-                    "evidence_genefunction": [
-                        "Activity assay"
+                    "name": "tcmG",
+                    "id": "AAA67511.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "product": "hydroxylase",
+                    "tailoring": [
+                        "Hydroxylation"
                     ]
                 },
                 {
-                    "gene_name": "tcmG",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67511.1",
-                    "gene_annotation": "hydroxylase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Hydroxylation",
-                    "evidence_genefunction": [
-                        "Activity assay"
+                    "name": "tcmH",
+                    "id": "AAA67512.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "product": "monooxygenase",
+                    "tailoring": [
+                        "Oxidation"
                     ]
                 },
                 {
-                    "gene_name": "tcmH",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67512.1",
-                    "gene_annotation": "monooxygenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ]
-                },
-                {
-                    "gene_name": "tcmI",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67513.1",
-                    "gene_annotation": "cyclase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ]
-                },
-                {
-                    "gene_name": "tcmJ",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67514.1",
-                    "gene_annotation": "predicted protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "tcmI",
+                    "id": "AAA67513.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "reduced production of tetracenomycin C"
+                    "product": "cyclase"
                 },
                 {
-                    "gene_name": "tcmK",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67515.1",
-                    "gene_annotation": "beta-ketoacyl synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "tcmJ",
+                    "id": "AAA67514.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "loss of tetracenomycin C production"
+                    "product": "predicted protein"
                 },
                 {
-                    "gene_name": "tcmL",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67516.1",
-                    "gene_annotation": "beta-ketoacyl synthase,chain length factor",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "tcmK",
+                    "id": "AAA67515.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "loss of tetracenomycin C production"
+                    "product": "beta-ketoacyl synthase"
                 },
                 {
-                    "gene_name": "tcmM",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67517.1",
-                    "gene_annotation": "acyl carrier protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "tcmL",
+                    "id": "AAA67516.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "loss of tetracenomycin C production"
+                    "product": "beta-ketoacyl synthase,chain length factor"
                 },
                 {
-                    "gene_name": "tcmN",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67518.1",
-                    "gene_annotation": "aromatase/cyclase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
+                    "name": "tcmM",
+                    "id": "AAA67517.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "loss of tetracenomycin C production"
+                    "product": "acyl carrier protein"
                 },
                 {
-                    "gene_name": "tcmO",
-                    "not_in_gbk": false,
-                    "gene_id": "AAA67519.1",
-                    "gene_annotation": "O-methyltransferase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Methylation",
-                    "evidence_genefunction": [
-                        "Activity assay"
+                    "name": "tcmN",
+                    "id": "AAA67518.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "product": "aromatase/cyclase"
+                },
+                {
+                    "name": "tcmO",
+                    "id": "AAA67519.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "product": "O-methyltransferase",
+                    "tailoring": [
+                        "Methylation"
                     ]
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Anthracycline",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Type II"
-            ],
             "starter_unit": "Acetyl-CoA",
-            "pks_genes": [
-                "aaa67515.1"
-            ],
             "ketide_length": 10,
             "cyclases": [
                 "AAA67518.1"
+            ],
+            "subclasses": [
+                "Anthracycline"
+            ],
+            "cyclic": true,
+            "synthases": [
+                {
+                    "genes": [
+                        "AAA67518.1",
+                        "aaa67515.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
             ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

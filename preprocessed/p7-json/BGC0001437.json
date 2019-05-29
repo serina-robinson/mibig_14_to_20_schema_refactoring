@@ -1,36 +1,19 @@
 {
-    "submitter": {
-        "name": "Professor Barrie Wilkinson",
-        "institution": "John Innes Centre",
-        "email": "barrie.wilkinson@jic.ac.uk"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001437",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "doi:10.1038/ncomms15935"
-        ],
-        "loci": {
-            "accession": "KX931446.1",
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction",
-                "Knock-out studies",
-                "Enzymatic assays"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Obafluorin",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "\u03b2-lactone ",
@@ -46,69 +29,86 @@
                         ]
                     }
                 ],
+                "chem_synonyms": [],
+                "compound": "Obafluorin",
                 "database_id": "pubchem:146354",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
-                ],
-                "chem_acts": [
-                    "Antibacterial"
                 ]
             }
         ],
         "genes": {},
+        "loci": {
+            "accession": "KX931446.1",
+            "completeness": "complete",
+            "evidence": [
+                "Sequence-based prediction",
+                "Knock-out studies",
+                "Enzymatic assays"
+            ]
+        },
+        "mibig_accession": "BGC0001437",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "AQZ26587.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "2,3-Dihydroxybenzoic acid"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "2,3-Dihydroxybenzoic acid"
+                                ]
                             },
-                            "module_number": "0",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         },
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "nonproteinogenic": [
                                     "(2S,3R)-2-amino-3-hydroxy-4-(4-nitrophenyl)butanoate"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "comments": "",
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "LCL",
+                            "comments": "",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
+            "release_type": [
+                "Unknown"
+            ],
+            "subclass": "Unknown",
             "thioesterases": [
                 {
                     "gene": "aqz26587.1",
                     "thioesterase_type": "Type I"
                 }
-            ],
-            "release_type": [
-                "Unknown"
             ]
-        }
+        },
+        "publications": [
+            "doi:10.1038/ncomms15935"
+        ]
+    },
+    "submitter": {
+        "email": "barrie.wilkinson@jic.ac.uk",
+        "institution": "John Innes Centre",
+        "name": "Professor Barrie Wilkinson"
     }
 }

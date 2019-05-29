@@ -1,60 +1,62 @@
 {
-    "version": "17",
-    "personal": {
-        "submitter_name": "Mohamed Donia",
-        "submitter_institution": "Princeton University",
-        "submitter_email": "donia@princeton.edu"
-    },
     "general_params": {
-        "mibig_accession": "BGC0000480",
+        "RiPP": {
+            "lin_cycl_ripp": "Cyclic",
+            "precursor_loci": [
+                {
+                    "cleavage_recogn_site": [
+                        "GVGAS",
+                        "AYD",
+                        "GAGAS",
+                        "AYE"
+                    ],
+                    "core_pept_aa": [
+                        "ATGCMC",
+                        "ATACAC"
+                    ],
+                    "foll_pept_len": -1,
+                    "gene_id": [
+                        "aca04484.1"
+                    ],
+                    "lead_pept_len": 42,
+                    "peptidase": []
+                }
+            ],
+            "ripp_subclass": "Cyanobactin"
+        },
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "18425112"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "EU290741",
-                    "start_coord": -1,
-                    "end_coord": -1,
-                    "conn_comp_cluster": [
-                        "Sequence-based prediction"
-                    ]
-                }
-            ]
-        },
         "compounds": [
             {
-                "compound": "tenuecyclamide A",
+                "chem_act": [
+                    "Unknown"
+                ],
                 "chem_synonyms": [],
+                "compound": "tenuecyclamide A",
                 "database_deposited": true,
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 24762151,
-                "chem_act": [
-                    "Unknown"
-                ]
+                "pubchem_id": 24762151
             },
             {
-                "compound": "tenuecyclamide C",
+                "chem_act": [
+                    "Unknown"
+                ],
                 "chem_synonyms": [],
+                "compound": "tenuecyclamide C",
                 "database_deposited": true,
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 10720367,
-                "chem_act": [
-                    "Unknown"
-                ]
+                "pubchem_id": 10720367
             }
         ],
         "genes": {
             "operon": [
                 {
+                    "evidence_operon": "Sequence-based prediction",
                     "operon_genes": [
                         "aca04480.1",
                         "aca04481.1",
@@ -63,34 +65,32 @@
                         "aca04484.1",
                         "aca04485.1",
                         "aca04486.1"
-                    ],
-                    "evidence_operon": "Sequence-based prediction"
+                    ]
                 }
             ]
         },
-        "RiPP": {
-            "ripp_subclass": "Cyanobactin",
-            "lin_cycl_ripp": "Cyclic",
-            "precursor_loci": [
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
                 {
-                    "gene_id": [
-                        "aca04484.1"
+                    "Accession": "EU290741",
+                    "conn_comp_cluster": [
+                        "Sequence-based prediction"
                     ],
-                    "core_pept_aa": [
-                        "ATGCMC",
-                        "ATACAC"
-                    ],
-                    "lead_pept_len": 42,
-                    "foll_pept_len": -1,
-                    "cleavage_recogn_site": [
-                        "GVGAS",
-                        "AYD",
-                        "GAGAS",
-                        "AYE"
-                    ],
-                    "peptidase": []
+                    "end_coord": -1,
+                    "start_coord": -1
                 }
             ]
-        }
-    }
+        },
+        "mibig_accession": "BGC0000480",
+        "publications": [
+            "18425112"
+        ]
+    },
+    "personal": {
+        "submitter_email": "donia@princeton.edu",
+        "submitter_institution": "Princeton University",
+        "submitter_name": "Mohamed Donia"
+    },
+    "version": "17"
 }

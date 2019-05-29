@@ -1,52 +1,32 @@
 {
-    "submitter": {
-        "name": "Daniel Krug",
-        "institution": "Helmholtz Institute for Pharmaceutical Research Saarland",
-        "email": "daniel.krug@helmholtz-hzi.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000393",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:22162209"
-        ],
-        "loci": {
-            "accession": "CP000113.1",
-            "start_coord": 4498820,
-            "end_coord": 4546737,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Myxoprincomide-c506",
-                "chem_synonyms": [],
-                "chem_struct": "CNC(CO)C(=O)NC(CC(C)C)C(=O)NC(C(O)(C)C)C(=O)NC(CO)C(=O)NC(C(C)C)C(=O)C(=O)NC(CO)C(=O)NC(CC1=CC=C(O)C=C1)C(=O)NC(CCCN)CC(=O)NC(C)C(=O)O",
-                "molecular_formula": "C45H74O16N10",
-                "mol_mass": 1011.53568,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_struct": "CNC(CO)C(=O)NC(CC(C)C)C(=O)NC(C(O)(C)C)C(=O)NC(CO)C(=O)NC(C(C)C)C(=O)C(=O)NC(CO)C(=O)NC(CC1=CC=C(O)C=C1)C(=O)NC(CCCN)CC(=O)NC(C)C(=O)O",
+                "chem_synonyms": [],
+                "compound": "Myxoprincomide-c506",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1011.53568,
+                "molecular_formula": "C45H74O16N10"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "mxp",
-                    "id": "MXAN_3779",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -54,265 +34,285 @@
                                 "Knock-out"
                             ]
                         }
+                    ],
+                    "id": "MXAN_3779",
+                    "name": "mxp"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP000113.1",
+            "completeness": "complete",
+            "end_coord": 4546737,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 4498820
+        },
+        "mibig_accession": "BGC0000393",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "MXAN_3779",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "0",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Serine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Leucine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "bOH-Val"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Serine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Valine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Serine"
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "8"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Tyrosine"
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "9"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "bLys"
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "10"
+                        },
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "11",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Alanine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "12"
+                        }
                     ]
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "subclass": "Unknown",
+            "thioesterases": [
+                {
+                    "gene": "mxan_3779",
+                    "thioesterase_type": "Type I"
                 }
             ]
         },
         "polyketide": {
-            "starter_unit": "Unknown",
-            "subclasses": [
-                "Other"
-            ],
             "cyclic": false,
             "release_type": [
                 "Unknown"
+            ],
+            "starter_unit": "Unknown",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
                     "genes": [
                         "MXAN_3779"
                     ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
                     "modules": [
                         {
-                            "genes": [
-                                "MXAN_3779"
+                            "at_specificities": [
+                                "Malonyl-CoA"
                             ],
-                            "module_number": "6",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
                             "evidence": "Structure-based inference",
+                            "genes": [
+                                "MXAN_3779"
+                            ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "6",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         }
+                    ],
+                    "subclass": [
+                        "Modular type I"
                     ]
                 }
             ]
         },
-        "nrp": {
-            "subclass": "Unknown",
-            "nrps_genes": [
-                {
-                    "gene_id": "MXAN_3779",
-                    "modules": [
-                        {
-                            "module_number": "0",
-                            "active": true,
-                            "c_dom_subtype": "Unknown",
-                            "modification_domains": [
-                                "None"
-                            ],
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": false,
-                                "evidence": [
-                                    "Structure-based inference"
-                                ]
-                            }
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Serine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "1",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "Methylation"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Leucine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "2",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "bOH-Val"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "3",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Serine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "4",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Valine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "5",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Serine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "8",
-                            "active": true,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Tyrosine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "9",
-                            "active": true,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "bLys"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "10",
-                            "active": true,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "module_number": "11",
-                            "active": true,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ],
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": false,
-                                "evidence": [
-                                    "Structure-based inference"
-                                ]
-                            }
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Alanine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "12",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "cyclic": false,
-            "thioesterases": [
-                {
-                    "gene": "mxan_3779",
-                    "thioesterase_type": "Type I"
-                }
-            ],
-            "release_type": [
-                "Hydrolysis"
-            ]
-        }
+        "publications": [
+            "pubmed:22162209"
+        ]
+    },
+    "submitter": {
+        "email": "daniel.krug@helmholtz-hzi.de",
+        "institution": "Helmholtz Institute for Pharmaceutical Research Saarland",
+        "name": "Daniel Krug"
     }
 }

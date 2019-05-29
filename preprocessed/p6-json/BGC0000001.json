@@ -1,87 +1,67 @@
 {
-    "submitter": {
-        "name": "Daniel Petras",
-        "institution": "TU Berlin / AK Sussmuth",
-        "email": "daniel.petras@chem.tu-berlin.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000001",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:21656887"
-        ],
-        "loci": {
-            "accession": "JF752342.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Abyssomicin C",
-                "chem_synonyms": [],
-                "chem_struct": "C[C@@H](C1=O)C[C@H](C)C/C=C/[C@H]([C@@H](O)[C@@H]2OC3=C1C4=O)[C@]3(O4)C[C@H]2C",
-                "molecular_formula": "C23H36O6",
-                "mol_mass": 408.25,
+                "chem_acts": [
+                    "Antibacterial",
+                    "Cytotoxic"
+                ],
                 "chem_moieties": [],
+                "chem_struct": "C[C@@H](C1=O)C[C@H](C)C/C=C/[C@H]([C@@H](O)[C@@H]2OC3=C1C4=O)[C@]3(O4)C[C@H]2C",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "PabB"
+                    },
+                    {
+                        "publications": [],
+                        "target": "p-aminobenzoate(pABA)pathway"
+                    }
+                ],
+                "compound": "Abyssomicin C",
                 "database_id": "pubchem:71455791;chembl:1651097",
                 "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Cytotoxic"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "PabB",
-                        "publications": []
-                    },
-                    {
-                        "target": "p-aminobenzoate(pABA)pathway",
-                        "publications": []
-                    }
-                ]
+                "mol_mass": 408.25,
+                "molecular_formula": "C23H36O6"
             },
             {
-                "compound": "Atrop-abyssomicin C",
-                "chem_synonyms": [],
-                "chem_struct": "C[C@@H](C1=O)C[C@H](C)C/C=C/[C@H]([C@@H](O)[C@@H]2OC3=C1C4=O)[C@]3(O4)C[C@H]2C",
-                "molecular_formula": "C23H36O6",
-                "mol_mass": 408.25,
-                "chem_moieties": [],
-                "database_id": "chemspider:19955692",
-                "mass_spec_ion_type": "None",
                 "chem_acts": [
                     "Antibacterial",
                     "Cytotoxic"
                 ],
+                "chem_moieties": [],
+                "chem_struct": "C[C@@H](C1=O)C[C@H](C)C/C=C/[C@H]([C@@H](O)[C@@H]2OC3=C1C4=O)[C@]3(O4)C[C@H]2C",
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "PabA",
-                        "publications": []
+                        "publications": [],
+                        "target": "PabA"
                     },
                     {
-                        "target": "p-aminobenzoate(pABA)pathway",
-                        "publications": []
+                        "publications": [],
+                        "target": "p-aminobenzoate(pABA)pathway"
                     }
-                ]
+                ],
+                "compound": "Atrop-abyssomicin C",
+                "database_id": "chemspider:19955692",
+                "mass_spec_ion_type": "None",
+                "mol_mass": 408.25,
+                "molecular_formula": "C23H36O6"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "abyA1",
-                    "id": "AEK75497.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -91,11 +71,11 @@
                             ]
                         }
                     ],
+                    "id": "AEK75497.1",
+                    "name": "abyA1",
                     "product": "3-oxoacyl-ACP synthase III"
                 },
                 {
-                    "name": "abyA2",
-                    "id": "AEK75498.1",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -105,11 +85,11 @@
                             ]
                         }
                     ],
+                    "id": "AEK75498.1",
+                    "name": "abyA2",
                     "product": "phosphatase and glyceryl transferase"
                 },
                 {
-                    "name": "abyA3",
-                    "id": "AEK75499.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -119,11 +99,11 @@
                             ]
                         }
                     ],
+                    "id": "AEK75499.1",
+                    "name": "abyA3",
                     "product": "acyl-carrier protein"
                 },
                 {
-                    "name": "abyA4",
-                    "id": "AEK75500.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -132,35 +112,65 @@
                             ]
                         }
                     ],
+                    "id": "AEK75500.1",
+                    "name": "abyA4",
                     "product": "pyruvate/2-oxoglutarate dehydrogenase"
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "JF752342.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Sequence-based prediction"
             ]
         },
+        "mibig_accession": "BGC0000001",
         "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "subclasses": [
-                "Other"
-            ],
             "cyclic": true,
             "release_type": [
                 "Macrolactonization"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
                     "genes": [
                         "AEK75503.1",
-                        "AEK75502.1",
-                        "AEK75504.1"
-                    ],
-                    "subclass": [
-                        "Modular type I"
+                        "AEK75504.1",
+                        "AEK75502.1"
                     ],
                     "modules": [
                         {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
                             "genes": [
                                 "AEK75502.1"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -168,100 +178,79 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Unknown"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "AEK75502.1"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "2",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Unknown"
-                            ],
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         },
                         {
-                            "genes": [
-                                "AEK75502.1"
-                            ],
-                            "module_number": "3",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
                             "at_specificities": [
                                 "Acetyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
                             ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "AEK75502.1"
                             ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "3",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AEK75502.1"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "1",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Unknown"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "AEK75503.1"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "5",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Unknown"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AEK75503.1"
-                            ],
-                            "module_number": "6",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -270,37 +259,48 @@
                                 "Enoylreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "genes": [
+                                "AEK75503.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "6",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Unknown"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AEK75504.1"
-                            ],
-                            "module_number": "7",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Unknown"
+                            "genes": [
+                                "AEK75504.1"
                             ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "7",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         }
+                    ],
+                    "subclass": [
+                        "Modular type I"
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:21656887"
+        ]
+    },
+    "submitter": {
+        "email": "daniel.petras@chem.tu-berlin.de",
+        "institution": "TU Berlin / AK Sussmuth",
+        "name": "Daniel Petras"
     }
 }

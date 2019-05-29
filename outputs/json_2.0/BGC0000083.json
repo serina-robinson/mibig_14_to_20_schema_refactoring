@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Guohui Pan",
-        "submitter_institution": "The Scripps Research Institute",
-        "submitter_email": "gpan@scripps.edu"
+    "submitter": {
+        "name": "Guohui Pan",
+        "institution": "The Scripps Research Institute",
+        "email": "gpan@scripps.edu"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000083",
         "biosyn_class": [
             "Polyketide"
@@ -14,34 +20,31 @@
             "pubmed:17997563"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "GQ274954.1",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Sequence-based prediction"
-            ],
-            "accession": "GQ274954.1"
+            ]
         },
         "compounds": [
             {
                 "compound": "Lactimidomycin",
                 "chem_synonyms": [
-                    "134869-15-1",
-                    "Bu-4146T",
-                    "CHEMBL1221911",
-                    ""
+                    "ltm"
                 ],
-                "pubchem_id": 11669726,
-                "chem_act": [
+                "database_id": "pubchem:11669726",
+                "chem_acts": [
                     "Antifungal",
                     "Cytotoxic",
                     "Inhibitor"
                 ],
-                "chem_target": [
-                    "ribosome"
-                ],
-                "mol_mass": 457.246,
-                "molecular_formula": "C26H35NO6",
-                "chem_struct": "C[C@H]1/C=C\\C=C\\CC/C=C/C(=O)O[C@H]1/C(=C/[C@H](C)C(=O)C[C@@H](CC2CC(=O)NC(=O)C2)O)/C"
+                "chem_targets": [
+                    {
+                        "target": "ribosome",
+                        "publications": []
+                    }
+                ]
             },
             {
                 "compound": "8,9-dihydro-LTM",
@@ -49,8 +52,9 @@
                 "chem_struct": "O=C1O[C@@H](/C(C)=C/[C@H](C)C(C[C@H](O)CC2CC(NC(C2)=O)=O)=O)[C@@H](C)CC/C=C/CC/C=C/1",
                 "molecular_formula": "C26H37NO6",
                 "mol_mass": 459.26,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Cytotoxic"
                 ]
             },
@@ -60,8 +64,9 @@
                 "chem_struct": "O=C1O[C@@H](/C(C)=C/[C@H](C)C(C[C@H](O)CC2CC(NC(C2)=O)=O)=O)[C@@H](C)C[C@H](O)/C=C/CC/C=C/1",
                 "molecular_formula": "C26H37NO7",
                 "mol_mass": 475.26,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Cytotoxic"
                 ]
             },
@@ -71,310 +76,372 @@
                 "chem_struct": "O=C1O[C@@H](/C(C)=C/[C@H](C)C(C[C@H](O)CC2CC(NC(C2)=O)=O)=O)[C@@H](C)[C@H](O)C/C=C/CC/C=C/1",
                 "molecular_formula": "C26H37NO7",
                 "mol_mass": 475.26,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Cytotoxic"
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "ACY01397.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ACY01397.1",
-                    "gene_annotation": "trans-acting acyl transferase/thioesterase fusion protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "ltmB",
+                    "id": "ACY01397.1",
+                    "product": "trans-acting acyl transferase/thioesterase fusion protein"
                 },
                 {
-                    "gene_name": "ACY01398.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ACY01398.1",
-                    "gene_annotation": "acyl carrier protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "ltmC",
+                    "id": "ACY01398.1",
+                    "product": "acyl carrier protein"
                 },
                 {
-                    "gene_name": "ACY01399.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ACY01399.1",
-                    "gene_annotation": "amidotransferase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "ltmD",
+                    "id": "ACY01399.1",
+                    "product": "amidotransferase"
                 },
                 {
-                    "gene_name": "ACY01400.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ACY01400.1",
-                    "gene_annotation": "AT-less polyketide synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "ltmE",
+                    "id": "ACY01400.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "abolish LTM production"
+                    "product": "AT-less polyketide synthase"
                 },
                 {
-                    "gene_name": "ACY01401.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ACY01401.1",
-                    "gene_annotation": "AT-less polyketide synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "ltmF",
+                    "id": "ACY01401.1",
+                    "product": "AT-less polyketide synthase"
                 },
                 {
-                    "gene_name": "ACY01402.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ACY01402.1",
-                    "gene_annotation": "AT-less polyketide synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "ltmG",
+                    "id": "ACY01402.1",
+                    "product": "AT-less polyketide synthase"
                 },
                 {
-                    "gene_name": "ACY01403.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ACY01403.1",
-                    "gene_annotation": "trans-acting acyl transferase/oxidoreductase fusion protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "ltmH",
+                    "id": "ACY01403.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "abolish LTM production"
+                    "product": "trans-acting acyl transferase/oxidoreductase fusion protein"
                 },
                 {
-                    "gene_name": "ACY01404.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ACY01404.1",
-                    "gene_annotation": "Cytochrome P450 desaturase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "ltmK",
+                    "id": "ACY01404.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "accumulate 8,9-dihydro-LTM"
+                    "product": "Cytochrome P450 desaturase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
                 },
                 {
-                    "gene_name": "ACY01405.1",
-                    "not_in_gbk": false,
-                    "gene_id": "ACY01405.1",
-                    "gene_annotation": "phosphopantetheinyl transferase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "ltmL",
+                    "id": "ACY01405.1",
+                    "product": "phosphopantetheinyl transferase"
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Macrolide",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Modular type I",
-                "Trans-AT type I"
-            ],
             "starter_unit": "Malonyl-CoA",
-            "trans_at": [
-                "acy01403"
+            "subclasses": [
+                "Macrolide"
             ],
-            "pks_te_type": "Both",
-            "pks_thioesterase": [
-                "acy01397",
-                "acy01402"
+            "cyclic": true,
+            "release_type": [
+                "Macrolactonization"
             ],
-            "pks_release_type": "Macrolactonization",
-            "mod_pks_genes": [
+            "synthases": [
                 {
-                    "mod_pks_gene": "ACY01398.1",
-                    "pks_module": [
+                    "genes": [
+                        "ACY01402.1",
+                        "acy01397",
+                        "acy01403",
+                        "ACY01400.1",
+                        "ACY01401.1",
+                        "acy01402",
+                        "ACY01398.1"
+                    ],
+                    "subclass": [
+                        "Modular type I",
+                        "Trans-AT type I"
+                    ],
+                    "trans_at": {
+                        "genes": [
+                            "acy01403"
+                        ]
+                    },
+                    "thioesterases": [
                         {
-                            "module_nr": "0",
-                            "pks_domains": [
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "gene": "acy01397",
+                            "thioesterase_type": "Unknown"
+                        },
+                        {
+                            "gene": "acy01402",
+                            "thioesterase_type": "Unknown"
                         }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "ACY01400.1",
-                    "pks_module": [
+                    ],
+                    "modules": [
                         {
-                            "module_nr": "1",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Dehydratase",
-                                "Ketoreductase",
+                            "genes": [
+                                "ACY01398.1"
+                            ],
+                            "module_number": "0",
+                            "domains": [
                                 "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
                             ],
                             "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "2",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01400.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
                                 "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "pks_mod_doms": [
-                                "Michael branching"
+                            "at_specificities": [
+                                "Unknown"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "3",
-                            "pks_domains": [
-                                "Ketosynthase"
-                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "ACY01401.1",
-                    "pks_module": [
+                            "comments": ""
+                        },
                         {
-                            "module_nr": "3",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01400.1"
+                            ],
+                            "module_number": "2",
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "Michael branching"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "ACY01400.1"
+                            ],
+                            "module_number": "3",
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "ACY01401.1"
+                            ],
+                            "module_number": "3",
+                            "domains": [
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
                             ],
                             "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "4",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01401.1"
+                            ],
+                            "module_number": "4",
+                            "domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "5",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01401.1"
+                            ],
+                            "module_number": "5",
+                            "domains": [
                                 "Ketosynthase",
                                 "Dehydratase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
                             "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "6",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01401.1"
+                            ],
+                            "module_number": "6",
+                            "domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Unknown"
                             ],
                             "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "7",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01401.1"
+                            ],
+                            "module_number": "7",
+                            "domains": [
                                 "Ketosynthase"
                             ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "8",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01401.1"
+                            ],
+                            "module_number": "8",
+                            "domains": [
                                 "Ketosynthase",
                                 "Dehydratase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
                             "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "9",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01401.1"
+                            ],
+                            "module_number": "9",
+                            "domains": [
                                 "Ketosynthase",
                                 "Dehydratase"
                             ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "ACY01402.1",
-                    "pks_module": [
+                            "comments": ""
+                        },
                         {
-                            "module_nr": "10",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01402.1"
+                            ],
+                            "module_number": "10",
+                            "domains": [
                                 "Ketosynthase",
                                 "Dehydratase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
                             "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "9",
-                            "pks_domains": [
+                            "genes": [
+                                "ACY01402.1"
+                            ],
+                            "module_number": "9",
+                            "domains": [
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         }
                     ]
                 }
             ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

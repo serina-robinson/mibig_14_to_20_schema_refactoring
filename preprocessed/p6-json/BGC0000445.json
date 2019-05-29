@@ -1,23 +1,51 @@
 {
-    "submitter": {
-        "name": "Jose A. Salas",
-        "institution": "University of Oviedo",
-        "email": "jasalas@uniovi.es"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000445",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:16408310"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
+                "chem_struct": "CN1C2CSSCC(C(=O)N(C(C(=O)SCC(C(=O)NCC1=O)NC(=O)C3=NC4=CC=CC=C4C=C3O)CSC)C)N(C(=O)CNC(=O)C(CSC(=O)C(N(C2=O)C)CSC)NC(=O)C5=NC6=CC=CC=C6C=C5O)C",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "DNApolymerasealpha"
+                    }
+                ],
+                "compound": "thiocoraline",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1158.41,
+                "molecular_formula": "C48H56N10O12S6"
+            }
         ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAJ34374.1",
+                    "name": "tioR"
+                }
+            ],
+            "extra_genes": []
+        },
         "loci": {
             "accession": "AM113472.1",
             "completeness": "complete",
@@ -27,84 +55,48 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "thiocoraline",
-                "chem_synonyms": [],
-                "chem_struct": "CN1C2CSSCC(C(=O)N(C(C(=O)SCC(C(=O)NCC1=O)NC(=O)C3=NC4=CC=CC=C4C=C3O)CSC)C)N(C(=O)CNC(=O)C(CSC(=O)C(N(C2=O)C)CSC)NC(=O)C5=NC6=CC=CC=C6C=C5O)C",
-                "molecular_formula": "C48H56N10O12S6",
-                "mol_mass": 1158.41,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Cytotoxic"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "DNApolymerasealpha",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": [
-                {
-                    "name": "tioR",
-                    "id": "CAJ34374.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
+        "mibig_accession": "BGC0000445",
         "nrp": {
-            "subclass": "Cyclic depsipeptide",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "CAJ34374.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Cysteine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Cysteine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Glycine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Glycine"
+                                ]
                             },
-                            "module_number": "2",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 },
@@ -113,39 +105,39 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Cysteine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Cysteine"
+                                ]
                             },
-                            "module_number": "3",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "Methylation"
-                            ]
+                            ],
+                            "module_number": "3"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Cysteine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Cysteine"
+                                ]
                             },
-                            "module_number": "4",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "Methylation"
-                            ]
+                            ],
+                            "module_number": "4"
                         }
                     ]
                 },
@@ -153,20 +145,28 @@
                     "gene_id": "CAJ34368.1",
                     "modules": [
                         {
-                            "module_number": "0",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
             "release_type": [
                 "Hydrolysis"
-            ]
-        }
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "publications": [
+            "pubmed:16408310"
+        ]
+    },
+    "submitter": {
+        "email": "jasalas@uniovi.es",
+        "institution": "University of Oviedo",
+        "name": "Jose A. Salas"
     }
 }

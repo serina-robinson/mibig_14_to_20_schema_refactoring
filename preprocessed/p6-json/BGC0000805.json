@@ -1,46 +1,18 @@
 {
-    "submitter": {
-        "name": "Bohdan Ostash",
-        "institution": "Ivan Franko National University of Lviv",
-        "email": "bohdanostash@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000805",
         "biosyn_class": [
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:17379141",
-            "pubmed:19640006",
-            "pubmed:24164498",
-            "pubmed:22505780"
-        ],
-        "loci": {
-            "accession": "DQ988993.1",
-            "start_coord": 898,
-            "end_coord": 5623,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "moenomycin",
-                "chem_synonyms": [
-                    "bambermycin",
-                    "flavofosfolipol",
-                    "flavomycin"
+                "chem_acts": [
+                    "Antibacterial"
                 ],
                 "chem_moieties": [
                     {
@@ -50,24 +22,36 @@
                         ]
                     }
                 ],
-                "database_id": "pubchem:46926246",
-                "chem_acts": [
-                    "Antibacterial"
+                "chem_synonyms": [
+                    "bambermycin",
+                    "flavofosfolipol",
+                    "flavomycin"
                 ],
                 "chem_targets": [
                     {
-                        "target": "peptidoglycanglycosyltransferases",
-                        "publications": []
+                        "publications": [],
+                        "target": "peptidoglycanglycosyltransferases"
                     }
-                ]
+                ],
+                "compound": "moenomycin",
+                "database_id": "pubchem:46926246"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "moeD5",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
                     "id": "ABJ90154.1",
+                    "name": "moeD5"
+                },
+                {
                     "functions": [
                         {
                             "category": "Transport",
@@ -75,23 +59,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "moeJ5",
+                    ],
                     "id": "ABJ90155.1",
-                    "functions": [
-                        {
-                            "category": "Transport",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ]
+                    "name": "moeJ5"
                 },
                 {
-                    "name": "moeE5",
-                    "id": "ABJ90156.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -99,11 +71,11 @@
                                 "Activity assay"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABJ90156.1",
+                    "name": "moeE5"
                 },
                 {
-                    "name": "moeF5",
-                    "id": "ABJ90157.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -112,14 +84,14 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90157.1",
+                    "name": "moeF5",
                     "product": "amidotransferase of first sugar ring of moenomycin",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "moeGT1",
-                    "id": "ABJ90158.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -130,11 +102,11 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90158.1",
+                    "name": "moeGT1",
                     "product": "transfers first sugar to farnesyl-3PG precursor"
                 },
                 {
-                    "name": "moeH5",
-                    "id": "ABJ90159.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -145,14 +117,14 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90159.1",
+                    "name": "moeH5",
                     "product": "transfer of diverse set of amine-carrying moieties on carboxyl group of B ring of moenomycin",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "moeK5",
-                    "id": "ABJ90160.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -161,14 +133,14 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90160.1",
+                    "name": "moeK5",
                     "product": "SAM radical B12-dependent methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "moeGT4",
-                    "id": "ABJ90161.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -177,11 +149,11 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90161.1",
+                    "name": "moeGT4",
                     "product": "transfers second sugar to monosaccharide intermediate"
                 },
                 {
-                    "name": "moeM5",
-                    "id": "ABJ90162.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -190,13 +162,13 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90162.1",
+                    "name": "moeM5",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "moeN5",
-                    "id": "ABJ90163.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -205,11 +177,11 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90163.1",
+                    "name": "moeN5",
                     "product": "converts farnesyl-3PG-trisaccharide intermediate into the one carrying mature C25 (moenocinyl) sioprene chain"
                 },
                 {
-                    "name": "moeO5",
-                    "id": "ABJ90164.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -220,11 +192,23 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90164.1",
+                    "name": "moeO5",
                     "product": "farnesyl-3-phosphoglycerate synthase"
                 },
                 {
-                    "name": "moeX5",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
                     "id": "ABJ90165.1",
+                    "name": "moeX5"
+                },
+                {
                     "functions": [
                         {
                             "category": "Transport",
@@ -232,23 +216,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "moeP5",
+                    ],
                     "id": "ABJ90166.1",
-                    "functions": [
-                        {
-                            "category": "Transport",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ]
+                    "name": "moeP5"
                 },
                 {
-                    "name": "moeGT5",
-                    "id": "ABJ90167.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -257,11 +229,11 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90167.1",
+                    "name": "moeGT5",
                     "product": "transfers third sugar (chinovosamine or GlcNAc) to disaccharide intermediate"
                 },
                 {
-                    "name": "moeGT2",
-                    "id": "ABJ90168.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -270,11 +242,11 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90168.1",
+                    "name": "moeGT2",
                     "product": "transfers last sugar (B ring) in moenomycin biosynthesis"
                 },
                 {
-                    "name": "moeGT3",
-                    "id": "ABJ90169.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -283,11 +255,11 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90169.1",
+                    "name": "moeGT3",
                     "product": "transfers branching glucose residue in moenomycin biosynthesis"
                 },
                 {
-                    "name": "moeR5",
-                    "id": "ABJ90170.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -296,13 +268,13 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90170.1",
+                    "name": "moeR5",
                     "tailoring": [
                         "Dehydration"
                     ]
                 },
                 {
-                    "name": "moeS5",
-                    "id": "ABJ90171.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -311,13 +283,13 @@
                             ]
                         }
                     ],
+                    "id": "ABJ90171.1",
+                    "name": "moeS5",
                     "tailoring": [
                         "Reduction"
                     ]
                 },
                 {
-                    "name": "moeA4",
-                    "id": "ABJ90146.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -325,11 +297,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABJ90146.1",
+                    "name": "moeA4"
                 },
                 {
-                    "name": "moeC4",
-                    "id": "ABJ90148.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -337,11 +309,72 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABJ90148.1",
+                    "name": "moeC4"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "DQ988993.1",
+            "completeness": "complete",
+            "end_coord": 5623,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 898
+        },
+        "mibig_accession": "BGC0000805",
+        "publications": [
+            "pubmed:17379141",
+            "pubmed:19640006",
+            "pubmed:24164498",
+            "pubmed:22505780"
+        ],
         "saccharide": {
+            "glycosyltransferases": [
+                {
+                    "evidence": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ABJ90158.1",
+                    "specificity": "D-galacturonic acid"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90161.1",
+                    "specificity": "N-acetyl-D-glucosamine"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90167.1",
+                    "specificity": "chinovosamine AND N-acetyl-D-glucosamine"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90168.1",
+                    "specificity": "D-galacturonic acid"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90169.1",
+                    "specificity": "D-glucose"
+                }
+            ],
+            "subclass": "Unknown",
             "sugar_subclusters": [
                 [
                     "moeE5"
@@ -350,45 +383,12 @@
                     "moeR5",
                     "moeS5"
                 ]
-            ],
-            "subclass": "Unknown",
-            "glycosyltransferases": [
-                {
-                    "gene_id": "ABJ90158.1",
-                    "specificity": "D-galacturonic acid",
-                    "evidence": [
-                        "Activity assay"
-                    ]
-                },
-                {
-                    "gene_id": "ABJ90161.1",
-                    "specificity": "N-acetyl-D-glucosamine",
-                    "evidence": [
-                        "Knock-out construct"
-                    ]
-                },
-                {
-                    "gene_id": "ABJ90167.1",
-                    "specificity": "chinovosamine AND N-acetyl-D-glucosamine",
-                    "evidence": [
-                        "Knock-out construct"
-                    ]
-                },
-                {
-                    "gene_id": "ABJ90168.1",
-                    "specificity": "D-galacturonic acid",
-                    "evidence": [
-                        "Knock-out construct"
-                    ]
-                },
-                {
-                    "gene_id": "ABJ90169.1",
-                    "specificity": "D-glucose",
-                    "evidence": [
-                        "Knock-out construct"
-                    ]
-                }
             ]
         }
+    },
+    "submitter": {
+        "email": "bohdanostash@gmail.com",
+        "institution": "Ivan Franko National University of Lviv",
+        "name": "Bohdan Ostash"
     }
 }

@@ -1,39 +1,21 @@
 {
-    "comments": "3-amino-4-hydroxybenzoic acid is the precursor for 2-amino-4-hydroxy-5,6-epoxycyclohex-2-enone",
-    "submitter": {
-        "name": "Zhe Rui",
-        "institution": "UC Berkeley",
-        "email": "ruizhebio@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000187",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:25489112"
-        ],
-        "loci": {
-            "accession": "GQ926890.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "asukamycin",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Antibacterial",
+                    "Cytotoxic",
+                    "Pigment"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "3-amino-4-hydroxybenzoic acid",
@@ -72,19 +54,27 @@
                         ]
                     }
                 ],
-                "database_id": "pubchem:6441014",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Cytotoxic",
-                    "Pigment"
-                ]
+                "chem_synonyms": [],
+                "compound": "asukamycin",
+                "database_id": "pubchem:6441014"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "asuR4",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "ADI58623.1",
+                    "name": "asuR4",
+                    "product": "Transcriptional regulation"
+                },
+                {
                     "functions": [
                         {
                             "category": "Regulation",
@@ -93,11 +83,11 @@
                             ]
                         }
                     ],
-                    "product": "Transcriptional regulation"
-                },
-                {
-                    "name": "asuR3",
                     "id": "ADI58624.1",
+                    "name": "asuR3",
+                    "product": "Transcriptional regulation"
+                },
+                {
                     "functions": [
                         {
                             "category": "Regulation",
@@ -106,11 +96,11 @@
                             ]
                         }
                     ],
-                    "product": "Transcriptional regulation"
-                },
-                {
-                    "name": "asuR2",
                     "id": "ADI58625.1",
+                    "name": "asuR2",
+                    "product": "Transcriptional regulation"
+                },
+                {
                     "functions": [
                         {
                             "category": "Regulation",
@@ -119,24 +109,11 @@
                             ]
                         }
                     ],
-                    "product": "Transcriptional regulation"
-                },
-                {
-                    "name": "asuR1",
                     "id": "ADI58626.1",
-                    "functions": [
-                        {
-                            "category": "Regulation",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
+                    "name": "asuR1",
                     "product": "Transcriptional regulation"
                 },
                 {
-                    "name": "asuC1",
-                    "id": "ADI58627.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -145,11 +122,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58627.1",
+                    "name": "asuC1",
                     "product": "Phosphopantetheinyl transferase"
                 },
                 {
-                    "name": "asuE1",
-                    "id": "ADI58628.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -158,14 +135,14 @@
                             ]
                         }
                     ],
+                    "id": "ADI58628.1",
+                    "name": "asuE1",
                     "product": "Protoasukamycin 4-hydroxylase",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "asuB4",
-                    "id": "ADI58629.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -174,11 +151,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58629.1",
+                    "name": "asuB4",
                     "product": "2,4-DienoylCoA reductase"
                 },
                 {
-                    "name": "asuB3",
-                    "id": "ADI58630.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -187,11 +164,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58630.1",
+                    "name": "asuB3",
                     "product": "1-Cyclohexenylcarbonyl CoA reductase"
                 },
                 {
-                    "name": "AsuB2",
-                    "id": "ADI58631.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -200,11 +177,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58631.1",
+                    "name": "AsuB2",
                     "product": "Acyl-CoA dehydrogenase"
                 },
                 {
-                    "name": "asuB1",
-                    "id": "ADI58632.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -213,11 +190,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58632.1",
+                    "name": "asuB1",
                     "product": "5-Enolpyruvylshikimate-3-phosphate synthase/CHC-CoA ligase"
                 },
                 {
-                    "name": "asuC5",
-                    "id": "ADI58633.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -226,11 +203,24 @@
                             ]
                         }
                     ],
+                    "id": "ADI58633.1",
+                    "name": "asuC5",
                     "product": "Asukamycin KSIII associated ACP"
                 },
                 {
-                    "name": "asuC4",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
                     "id": "ADI58634.1",
+                    "name": "asuC4",
+                    "product": "Asukamycin ketosynthase III"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -239,24 +229,11 @@
                             ]
                         }
                     ],
-                    "product": "Asukamycin ketosynthase III"
-                },
-                {
-                    "name": "asuC3",
                     "id": "ADI58635.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
+                    "name": "asuC3",
                     "product": "Asukamycin ketosynthase III"
                 },
                 {
-                    "name": "AsuC2",
-                    "id": "ADI58636.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -265,11 +242,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58636.1",
+                    "name": "AsuC2",
                     "product": "Arylamine N-acyltransferase"
                 },
                 {
-                    "name": "asuC6",
-                    "id": "ADI58637.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -278,11 +255,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58637.1",
+                    "name": "asuC6",
                     "product": "Thioesterase"
                 },
                 {
-                    "name": "asuE2",
-                    "id": "ADI58638.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -291,14 +268,14 @@
                             ]
                         }
                     ],
+                    "id": "ADI58638.1",
+                    "name": "asuE2",
                     "product": "Flavin reducatse",
                     "tailoring": [
                         "Reduction"
                     ]
                 },
                 {
-                    "name": "asuC7",
-                    "id": "ADI58639.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -307,16 +284,29 @@
                             ]
                         }
                     ],
+                    "id": "ADI58639.1",
+                    "name": "asuC7",
                     "product": "Ketoreductase"
                 },
                 {
-                    "name": "asuC10",
                     "id": "ADI58640.1",
+                    "name": "asuC10",
                     "product": "Unknown"
                 },
                 {
-                    "name": "asuC9",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "ADI58641.1",
+                    "name": "asuC9",
+                    "product": "Acyl dehydratase"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -325,24 +315,11 @@
                             ]
                         }
                     ],
-                    "product": "Acyl dehydratase"
-                },
-                {
-                    "name": "asuC8",
                     "id": "ADI58642.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
+                    "name": "asuC8",
                     "product": "Acyl dehydratase"
                 },
                 {
-                    "name": "asuA2",
-                    "id": "ADI58643.1",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -351,11 +328,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58643.1",
+                    "name": "asuA2",
                     "product": "3,4-AHBA carboxyl group adenylation"
                 },
                 {
-                    "name": "asuA1",
-                    "id": "ADI58644.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -364,11 +341,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58644.1",
+                    "name": "asuA1",
                     "product": "3,4-AHBA synthase"
                 },
                 {
-                    "name": "asuD1",
-                    "id": "ADI58645.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -377,11 +354,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58645.1",
+                    "name": "asuD1",
                     "product": "Amide synthase"
                 },
                 {
-                    "name": "asuD2",
-                    "id": "ADI58646.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -390,11 +367,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58646.1",
+                    "name": "asuD2",
                     "product": "2-Oxoamine synthase"
                 },
                 {
-                    "name": "asuD3",
-                    "id": "ADI58647.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -403,11 +380,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58647.1",
+                    "name": "asuD3",
                     "product": "5-Aminolevulinate CoA ligase"
                 },
                 {
-                    "name": "asuE3",
-                    "id": "ADI58648.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -416,14 +393,14 @@
                             ]
                         }
                     ],
+                    "id": "ADI58648.1",
+                    "name": "asuE3",
                     "product": "4-Hydroxyprotoasukamycin epoxidase",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "asuC14",
-                    "id": "ADI58649.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -432,11 +409,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58649.1",
+                    "name": "asuC14",
                     "product": "Ketosynthase I/II"
                 },
                 {
-                    "name": "asuC13",
-                    "id": "ADI58650.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -445,11 +422,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58650.1",
+                    "name": "asuC13",
                     "product": "Ketosynthase I/II"
                 },
                 {
-                    "name": "asuC12",
-                    "id": "ADI58651.1",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -458,11 +435,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58651.1",
+                    "name": "asuC12",
                     "product": "3,4-AHBA carrier protein"
                 },
                 {
-                    "name": "asuC11",
-                    "id": "ADI58652.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -471,11 +448,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58652.1",
+                    "name": "asuC11",
                     "product": "KSI/II associated ACP"
                 },
                 {
-                    "name": "asuA3",
-                    "id": "ADI58653.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -484,11 +461,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58653.1",
+                    "name": "asuA3",
                     "product": "Condensation of L-aspartate-4-semialdehyde and dihydroxyacetone phosphate"
                 },
                 {
-                    "name": "asuC15",
-                    "id": "ADI58654.1",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -497,11 +474,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58654.1",
+                    "name": "asuC15",
                     "product": "Type II thioesterase"
                 },
                 {
-                    "name": "asuM1",
-                    "id": "ADI58655.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -510,11 +487,11 @@
                             ]
                         }
                     ],
+                    "id": "ADI58655.1",
+                    "name": "asuM1",
                     "product": "Asukamycin exporter"
                 },
                 {
-                    "name": "asuR5",
-                    "id": "ADI58657.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -523,16 +500,16 @@
                             ]
                         }
                     ],
+                    "id": "ADI58657.1",
+                    "name": "asuR5",
                     "product": "Transcriptional regulation"
                 },
                 {
-                    "name": "asuH1",
                     "id": "ADI58656.1",
+                    "name": "asuH1",
                     "product": "Hypothetical"
                 },
                 {
-                    "name": "asuR6",
-                    "id": "ADI58658.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -541,23 +518,37 @@
                             ]
                         }
                     ],
+                    "id": "ADI58658.1",
+                    "name": "asuR6",
                     "product": "Transcriptional regulation"
                 }
             ]
         },
+        "loci": {
+            "accession": "GQ926890.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0000187",
         "polyketide": {
-            "starter_unit": "Unknown",
+            "cyclic": false,
             "ketide_length": 6,
+            "starter_unit": "Unknown",
             "subclasses": [
                 "Polyene"
             ],
-            "cyclic": false,
             "synthases": [
                 {
                     "genes": [
-                        "adi58650.1",
                         "adi58635.1",
                         "adi58634.1",
+                        "adi58650.1",
                         "adi58649.1"
                     ],
                     "subclass": [
@@ -565,6 +556,15 @@
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:25489112"
+        ]
+    },
+    "comments": "3-amino-4-hydroxybenzoic acid is the precursor for 2-amino-4-hydroxy-5,6-epoxycyclohex-2-enone",
+    "submitter": {
+        "email": "ruizhebio@gmail.com",
+        "institution": "UC Berkeley",
+        "name": "Zhe Rui"
     }
 }

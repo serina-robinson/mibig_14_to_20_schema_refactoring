@@ -1,76 +1,70 @@
 {
-    "personal": {
-        "submitter_name": "R. Cameron Coates",
-        "submitter_institution": "DOE Joint Genome Institute",
-        "submitter_email": "rccoates@lbl.gov"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0001164",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24475038"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Sequence-based prediction"
-            ],
-            "accession": "CP002198.1",
-            "start_coord": 2029235,
-            "end_coord": 2037562
-        },
         "compounds": [
             {
-                "compound": "1-heptadecene",
+                "chem_act": [
+                    "Unknown"
+                ],
                 "chem_synonyms": [
                     "heptadec-1-ene"
                 ],
-                "pubchem_id": 23217,
-                "chem_act": [
-                    "Unknown"
-                ]
+                "compound": "1-heptadecene",
+                "pubchem_id": 23217
             }
         ],
         "genes": {
-            "operon": [
-                {
-                    "operon_genes": [
-                        "yp_003887107.1"
-                    ],
-                    "evidence_operon": "Sequence-based prediction"
-                }
-            ],
             "gene": [
                 {
-                    "gene_name": "",
-                    "not_in_gbk": false,
-                    "gene_startpos": 2029235,
-                    "gene_endpos": 2037562,
-                    "gene_id": "ADN13832.1",
-                    "gene_annotation": "Polyketide Synthase",
-                    "gene_function": "Activation / processing",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "Polyketide Synthase",
+                    "gene_endpos": 2037562,
+                    "gene_function": "Activation / processing",
+                    "gene_id": "ADN13832.1",
+                    "gene_name": "",
+                    "gene_startpos": 2029235,
+                    "not_in_gbk": false
+                }
+            ],
+            "operon": [
+                {
+                    "evidence_operon": "Sequence-based prediction",
+                    "operon_genes": [
+                        "yp_003887107.1"
                     ]
                 }
             ]
         },
-        "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Modular type I"
+        "loci": {
+            "accession": "CP002198.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Sequence-based prediction"
             ],
-            "starter_unit": "Malonyl-CoA",
-            "pks_te_type": "Type I",
-            "pks_release_type": "Unknown",
+            "end_coord": 2037562,
+            "start_coord": 2029235
+        },
+        "mibig_accession": "BGC0001164",
+        "polyketide": {
+            "lin_cycl_pk": "Linear",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ADN13832.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Malonamyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "1",
                             "pks_domains": [
                                 "CoA-ligase",
@@ -82,9 +76,6 @@
                                 "Sulfotransferase",
                                 "Thioesterase"
                             ],
-                            "at_substr_spec": "Malonamyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "Unknown"
                             ],
@@ -92,13 +83,22 @@
                         }
                     ]
                 }
-            ]
-        }
+            ],
+            "pk_subclass": "Other",
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Modular type I"
+            ],
+            "pks_te_type": "Type I",
+            "starter_unit": "Malonyl-CoA"
+        },
+        "publications": [
+            "pubmed:24475038"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "rccoates@lbl.gov",
+        "submitter_institution": "DOE Joint Genome Institute",
+        "submitter_name": "R. Cameron Coates"
+    }
 }

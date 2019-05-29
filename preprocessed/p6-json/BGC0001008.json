@@ -1,37 +1,20 @@
 {
-    "submitter": {
-        "name": "Xiaohui Yan",
-        "institution": "The Scripps Research Institute",
-        "email": "xyan@scripps.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001008",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:17918933",
-            "pubmed:18223152",
-            "pubmed:20534556",
-            "pubmed:20718468"
-        ],
-        "loci": {
-            "accession": "AY271660.2",
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "maduropeptin",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Antibacterial",
+                    "Antioxidant"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "3,6-dimethylsalicylate",
@@ -43,25 +26,20 @@
                         ]
                     }
                 ],
-                "database_id": "chemspider:21805429",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Antioxidant"
-                ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "DNA",
-                        "publications": []
+                        "publications": [],
+                        "target": "DNA"
                     }
-                ]
+                ],
+                "compound": "maduropeptin",
+                "database_id": "chemspider:21805429"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "mdpC4",
-                    "id": "ABY66005.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -70,14 +48,14 @@
                             ]
                         }
                     ],
+                    "id": "ABY66005.1",
+                    "name": "mdpC4",
                     "product": "MIO-containing aminomutase",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "mdpC1",
-                    "id": "ABY66004.1",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -85,11 +63,11 @@
                                 "Activity assay"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABY66004.1",
+                    "name": "mdpC1"
                 },
                 {
-                    "name": "mdpB1",
-                    "id": "ABY66020.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -98,13 +76,13 @@
                             ]
                         }
                     ],
+                    "id": "ABY66020.1",
+                    "name": "mdpB1",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "mdpB2",
-                    "id": "ABY66018.1",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -112,11 +90,11 @@
                                 "Activity assay"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABY66018.1",
+                    "name": "mdpB2"
                 },
                 {
-                    "name": "mdpE",
-                    "id": "AAQ17110.2",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -125,11 +103,11 @@
                                 "Activity assay"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AAQ17110.2",
+                    "name": "mdpE"
                 },
                 {
-                    "name": "mdeE10",
-                    "id": "AAQ17111.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -137,35 +115,46 @@
                                 "Heterologous expression"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AAQ17111.1",
+                    "name": "mdeE10"
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "AY271660.2",
+            "completeness": "complete",
+            "evidence": [
+                "Sequence-based prediction"
             ]
         },
+        "mibig_accession": "BGC0001008",
         "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "subclasses": [
-                "Enediyine"
-            ],
             "cyclic": true,
             "release_type": [
                 "Hydrolysis"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Enediyine"
             ],
             "synthases": [
                 {
                     "genes": [
                         "mdpb",
-                        "mdpe10",
-                        "mdpe"
+                        "mdpe",
+                        "mdpe10"
                     ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 7,
+                        "subtype": "Partially reducing"
+                    },
                     "subclass": [
                         "Iterative type I",
                         "Enediyne type I"
                     ],
-                    "iterative": {
-                        "nr_iterations": 7,
-                        "subtype": "Partially reducing",
-                        "cyclization_type": "Unknown"
-                    },
                     "thioesterases": [
                         {
                             "gene": "mdpe10",
@@ -174,6 +163,17 @@
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:17918933",
+            "pubmed:18223152",
+            "pubmed:20534556",
+            "pubmed:20718468"
+        ]
+    },
+    "submitter": {
+        "email": "xyan@scripps.edu",
+        "institution": "The Scripps Research Institute",
+        "name": "Xiaohui Yan"
     }
 }

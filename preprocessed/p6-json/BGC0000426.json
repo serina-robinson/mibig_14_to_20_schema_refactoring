@@ -1,50 +1,31 @@
 {
-    "submitter": {
-        "name": "Daniel Petras",
-        "institution": "TU Berlin / AK S\u00c3\u00bcssmuth",
-        "email": "daniel.petras@chem.tu-berlin.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000426",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:25118351"
-        ],
-        "loci": {
-            "accession": "KF318360.1",
-            "completeness": "incomplete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Sevadicin",
-                "chem_synonyms": [],
-                "chem_struct": "O=C(NC(C)C(NC(CC1=CNC2=C1C=CC=C2)C(O)=O)=O)C(N)CC3=CC=CC=C3",
-                "molecular_formula": "C23H26N4O4",
-                "mol_mass": 423.2026,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Antibacterial"
-                ]
+                ],
+                "chem_struct": "O=C(NC(C)C(NC(CC1=CNC2=C1C=CC=C2)C(O)=O)=O)C(N)CC3=CC=CC=C3",
+                "chem_synonyms": [],
+                "compound": "Sevadicin",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 423.2026,
+                "molecular_formula": "C23H26N4O4"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "sevA",
-                    "id": "AGZ03650.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -53,11 +34,11 @@
                             ]
                         }
                     ],
+                    "id": "AGZ03650.1",
+                    "name": "sevA",
                     "product": "SevA"
                 },
                 {
-                    "name": "sevB",
-                    "id": "AGZ03651.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -66,32 +47,43 @@
                             ]
                         }
                     ],
+                    "id": "AGZ03651.1",
+                    "name": "sevB",
                     "product": "SevB"
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "KF318360.1",
+            "completeness": "incomplete",
+            "evidence": [
+                "Knock-out studies"
             ]
         },
+        "mibig_accession": "BGC0000426",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": false,
             "nrps_genes": [
                 {
                     "gene_id": "AGZ03650.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Phenylalanine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Phenylalanine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         }
                     ]
                 },
@@ -100,53 +92,61 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Alanine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Alanine"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Tryptophan"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Tryptophan"
+                                ]
                             },
-                            "module_number": "3",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "3"
                         }
                     ]
                 }
             ],
-            "cyclic": false,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "subclass": "Unknown",
             "thioesterases": [
                 {
                     "gene": "agz03651.1",
                     "thioesterase_type": "Type I"
                 }
-            ],
-            "release_type": [
-                "Hydrolysis"
             ]
-        }
+        },
+        "publications": [
+            "pubmed:25118351"
+        ]
+    },
+    "submitter": {
+        "email": "daniel.petras@chem.tu-berlin.de",
+        "institution": "TU Berlin / AK S\u00c3\u00bcssmuth",
+        "name": "Daniel Petras"
     }
 }

@@ -1,23 +1,29 @@
 {
-    "submitter": {
-        "name": "Mohamed Donia",
-        "institution": "Princeton University",
-        "email": "donia@princeton.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000476",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:17086177"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_struct": "CC[C@H](C)[C@H]1C2=N[C@@H]([C@H](O2)C)C(=O)N[C@@H](C3=NC(=CS3)C(=O)N[C@H](C4=N[C@@H]([C@H](O4)C)C(=O)N[C@@H](C5=NC(=CS5)C(=O)N1)C)CC(C)C)CC6=CC=CC=C6",
+                "chem_synonyms": [],
+                "compound": "Patellamide B",
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "mol_mass": -1,
+                "molecular_formula": "C38H48N8O6S2"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "DQ869558.1",
             "completeness": "incomplete",
@@ -25,32 +31,24 @@
                 "Gene expression correlated with compound production"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Patellamide B",
-                "chem_synonyms": [],
-                "chem_struct": "CC[C@H](C)[C@H]1C2=N[C@@H]([C@H](O2)C)C(=O)N[C@@H](C3=NC(=CS3)C(=O)N[C@H](C4=N[C@@H]([C@H](O4)C)C(=O)N[C@@H](C5=NC(=CS5)C(=O)N1)C)CC(C)C)CC6=CC=CC=C6",
-                "molecular_formula": "C38H48N8O6S2",
-                "mol_mass": -1,
-                "database_id": "",
-                "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Unknown"
-                ]
-            }
+        "mibig_accession": "BGC0000476",
+        "publications": [
+            "pubmed:17086177"
         ],
-        "genes": {},
         "ripp": {
-            "subclass": "Cyanobactin",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "abi99461.1",
                     "cleavage_recogn_site": [
                         "GLEAS",
                         "AYD",
                         "GVEPS",
                         "AYDGE"
+                    ],
+                    "core_sequence": [
+                        "ltacitfc",
+                        "ctlcctlc"
                     ],
                     "crosslinks": [
                         {
@@ -59,15 +57,17 @@
                             "second_AA": -1
                         }
                     ],
-                    "core_sequence": [
-                        "ltacitfc",
-                        "ctlcctlc"
-                    ],
-                    "leader_sequence": 42,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "abi99461.1",
+                    "leader_sequence": 42
                 }
             ],
-            "peptidases": []
+            "subclass": "Cyanobactin"
         }
+    },
+    "submitter": {
+        "email": "donia@princeton.edu",
+        "institution": "Princeton University",
+        "name": "Mohamed Donia"
     }
 }

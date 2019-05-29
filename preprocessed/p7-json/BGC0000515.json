@@ -1,60 +1,36 @@
 {
-    "comments": "Locus tags have been given to the genes described. As of now the genes have been given the automatic GeneID designation as either sunA, spaB and spaC. The entered GeneID designations are as follows: geoAI, geoB, geoC respectively to match what is reported in the literature. ",
-    "submitter": {
-        "name": "Wilfred Van Der Donk",
-        "institution": "The University of Illinois Urbana Champaign",
-        "email": "vddonk@illinois.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000515",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:22431611",
-            "pubmed:24169799"
-        ],
-        "loci": {
-            "accession": "CP000557.1",
-            "start_coord": 298823,
-            "end_coord": 311453,
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "geobacillin I",
-                "chem_synonyms": [],
-                "molecular_formula": "C136H220N40O37S8",
-                "mol_mass": 3262.5,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Antibacterial"
                 ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "BindingtolipidIIandporeformation",
-                        "publications": []
+                        "publications": [],
+                        "target": "BindingtolipidIIandporeformation"
                     }
-                ]
+                ],
+                "compound": "geobacillin I",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 3262.5,
+                "molecular_formula": "C136H220N40O37S8"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "geoAI",
-                    "id": "GTNG_0265",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -64,11 +40,11 @@
                             ]
                         }
                     ],
+                    "id": "GTNG_0265",
+                    "name": "geoAI",
                     "product": "Lantibiotic antimicrobial precursor peptide"
                 },
                 {
-                    "name": "geoC",
-                    "id": "GTNG_0268",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -78,11 +54,11 @@
                             ]
                         }
                     ],
+                    "id": "GTNG_0268",
+                    "name": "geoC",
                     "product": "cyclase"
                 },
                 {
-                    "name": "geoB",
-                    "id": "GTNG_0266",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -92,18 +68,38 @@
                             ]
                         }
                     ],
+                    "id": "GTNG_0266",
+                    "name": "geoB",
                     "product": "dehydratase"
                 }
             ]
         },
+        "loci": {
+            "accession": "CP000557.1",
+            "completeness": "complete",
+            "end_coord": 311453,
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 298823
+        },
+        "mibig_accession": "BGC0000515",
+        "publications": [
+            "pubmed:22431611",
+            "pubmed:24169799"
+        ],
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "",
                     "cleavage_recogn_site": [
                         ""
+                    ],
+                    "core_sequence": [
+                        "VTSKSLCTPGCITGVLMCLTQNSCVSCNSCIRC"
                     ],
                     "crosslinks": [
                         {
@@ -142,14 +138,18 @@
                             "second_AA": 33
                         }
                     ],
-                    "core_sequence": [
-                        "VTSKSLCTPGCITGVLMCLTQNSCVSCNSCIRC"
-                    ],
-                    "leader_sequence": 23,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "",
+                    "leader_sequence": 23
                 }
             ],
-            "peptidases": []
+            "subclass": "Lanthipeptide"
         }
+    },
+    "comments": "Locus tags have been given to the genes described. As of now the genes have been given the automatic GeneID designation as either sunA, spaB and spaC. The entered GeneID designations are as follows: geoAI, geoB, geoC respectively to match what is reported in the literature. ",
+    "submitter": {
+        "email": "vddonk@illinois.edu",
+        "institution": "The University of Illinois Urbana Champaign",
+        "name": "Wilfred Van Der Donk"
     }
 }

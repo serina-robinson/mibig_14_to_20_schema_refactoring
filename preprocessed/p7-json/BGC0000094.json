@@ -1,24 +1,32 @@
 {
-    "submitter": {
-        "name": "Fengan Yu",
-        "institution": "University of Michigan",
-        "email": "fenganyu@umich.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000094",
         "biosyn_class": [
             "Polyketide",
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:9770448"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial"
+                ],
+                "chem_struct": "CC[C@@H]1[C@@](/C=C/C(=O)[C@@H](C[C@@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2[C@@H]([C@H](C[C@H](O2)C)N(C)C)O)C)C)(C)O",
+                "chem_synonyms": [
+                    "pikromycin"
+                ],
+                "compound": "methymycin",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 469.304,
+                "molecular_formula": "C25H43NO7"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "AF079138.1",
             "completeness": "incomplete",
@@ -26,91 +34,71 @@
                 "Enzymatic assays"
             ]
         },
-        "compounds": [
-            {
-                "compound": "methymycin",
-                "chem_synonyms": [
-                    "pikromycin"
-                ],
-                "chem_struct": "CC[C@@H]1[C@@](/C=C/C(=O)[C@@H](C[C@@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2[C@@H]([C@H](C[C@H](O2)C)N(C)C)O)C)C)(C)O",
-                "molecular_formula": "C25H43NO7",
-                "mol_mass": 469.304,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
-            }
-        ],
-        "genes": {},
+        "mibig_accession": "BGC0000094",
         "polyketide": {
-            "starter_unit": "Malonyl-CoA",
-            "subclasses": [
-                "Macrolide"
-            ],
             "cyclic": true,
             "release_type": [
                 "Macrolactamization"
             ],
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Macrolide"
+            ],
             "synthases": [
                 {
                     "genes": [
+                        "AAC69332.1",
                         "AAC69329.1",
                         "AAC69330.1",
-                        "AAC69331.1",
-                        "AAC69332.1"
+                        "AAC69331.1"
                     ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
-                    "thioesterases": [],
                     "modules": [
                         {
-                            "genes": [
-                                "AAC69329.1"
+                            "at_specificities": [
+                                "Propionyl-CoA"
                             ],
-                            "module_number": "0",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Propionyl-CoA"
-                            ],
                             "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "AAC69329.1"
                             ],
-                            "module_number": "1",
+                            "kr_stereochem": "Unknown",
+                            "module_number": "0",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
                             "evidence": "Structure-based inference",
-                            "kr_stereochem": "L-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "AAC69329.1"
                             ],
-                            "module_number": "2",
+                            "kr_stereochem": "L-OH",
+                            "module_number": "1",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -118,42 +106,42 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
                             "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAC69329.1"
+                            ],
                             "kr_stereochem": "D-OH",
+                            "module_number": "2",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         },
                         {
-                            "genes": [
-                                "AAC69330.1"
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
                             ],
-                            "module_number": "3",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
                             "evidence": "Structure-based inference",
-                            "kr_stereochem": "Inactive",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "AAC69330.1"
                             ],
-                            "module_number": "4",
+                            "kr_stereochem": "Inactive",
+                            "module_number": "3",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -162,63 +150,75 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAC69330.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Methylmalonyl-CoA"
                             ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "D-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAC69331.1"
-                            ],
-                            "module_number": "5",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAC69331.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "5",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Methylmalonyl-CoA"
                             ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "D-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAC69332.1"
-                            ],
-                            "module_number": "6",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
                             "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAC69332.1"
+                            ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "6",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         }
-                    ]
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": []
                 }
             ]
         },
+        "publications": [
+            "pubmed:9770448"
+        ],
         "saccharide": {
             "subclass": "hybrid/tailoring"
         }
+    },
+    "submitter": {
+        "email": "fenganyu@umich.edu",
+        "institution": "University of Michigan",
+        "name": "Fengan Yu"
     }
 }

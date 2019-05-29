@@ -1,38 +1,19 @@
 {
-    "submitter": {
-        "name": "David Widdick",
-        "institution": "John Innes Centre",
-        "email": "david.widdick@jic.ac.uk"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000503",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:12642677",
-            "pubmed:21770392"
-        ],
-        "loci": {
-            "accession": "AJ536588.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Cinnamycin",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "hydroxyaspartate",
@@ -47,27 +28,24 @@
                         ]
                     }
                 ],
-                "database_id": "pubchem:135309121",
-                "chem_acts": [
-                    "Antibacterial"
-                ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "CellWall",
-                        "publications": []
+                        "publications": [],
+                        "target": "CellWall"
                     },
                     {
-                        "target": "ethanolamine",
-                        "publications": []
+                        "publications": [],
+                        "target": "ethanolamine"
                     }
-                ]
+                ],
+                "compound": "Cinnamycin",
+                "database_id": "pubchem:135309121"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "cinorf7",
-                    "id": "CAD60519.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -76,11 +54,11 @@
                             ]
                         }
                     ],
+                    "id": "CAD60519.1",
+                    "name": "cinorf7",
                     "product": "Cin orf7 protein"
                 },
                 {
-                    "name": "cinA",
-                    "id": "CAD60520.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -89,11 +67,11 @@
                             ]
                         }
                     ],
+                    "id": "CAD60520.1",
+                    "name": "cinA",
                     "product": "preprocinnamycin"
                 },
                 {
-                    "name": "cinM",
-                    "id": "CAD60521.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -102,11 +80,11 @@
                             ]
                         }
                     ],
+                    "id": "CAD60521.1",
+                    "name": "cinM",
                     "product": "CinM protein"
                 },
                 {
-                    "name": "cinX",
-                    "id": "CAD60522.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -115,14 +93,14 @@
                             ]
                         }
                     ],
+                    "id": "CAD60522.1",
+                    "name": "cinX",
                     "product": "CinX protein",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "cinT",
-                    "id": "CAD60523.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -131,11 +109,11 @@
                             ]
                         }
                     ],
+                    "id": "CAD60523.1",
+                    "name": "cinT",
                     "product": "CinT protein"
                 },
                 {
-                    "name": "cinH",
-                    "id": "CAD60524.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -144,11 +122,11 @@
                             ]
                         }
                     ],
+                    "id": "CAD60524.1",
+                    "name": "cinH",
                     "product": "CinH protein"
                 },
                 {
-                    "name": "cinR",
-                    "id": "CAD60529.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -157,11 +135,11 @@
                             ]
                         }
                     ],
+                    "id": "CAD60529.1",
+                    "name": "cinR",
                     "product": "CinR protein"
                 },
                 {
-                    "name": "cinK",
-                    "id": "CAD60530.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -170,11 +148,11 @@
                             ]
                         }
                     ],
+                    "id": "CAD60530.1",
+                    "name": "cinK",
                     "product": "CinK protein"
                 },
                 {
-                    "name": "cinR1",
-                    "id": "CAD60533.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -183,16 +161,35 @@
                             ]
                         }
                     ],
+                    "id": "CAD60533.1",
+                    "name": "cinR1",
                     "product": "CinR1 protein"
                 }
             ]
         },
+        "loci": {
+            "accession": "AJ536588.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0000503",
+        "publications": [
+            "pubmed:12642677",
+            "pubmed:21770392"
+        ],
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "cina",
+                    "core_sequence": [
+                        "CRQSCSFGPFTFVCDGNTK"
+                    ],
                     "crosslinks": [
                         {
                             "crosslink_type": "Thioether",
@@ -215,14 +212,17 @@
                             "second_AA": 19
                         }
                     ],
-                    "core_sequence": [
-                        "CRQSCSFGPFTFVCDGNTK"
-                    ],
-                    "leader_sequence": 59,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "cina",
+                    "leader_sequence": 59
                 }
             ],
-            "peptidases": []
+            "subclass": "Lanthipeptide"
         }
+    },
+    "submitter": {
+        "email": "david.widdick@jic.ac.uk",
+        "institution": "John Innes Centre",
+        "name": "David Widdick"
     }
 }

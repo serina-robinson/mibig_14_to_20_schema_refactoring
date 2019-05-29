@@ -1,124 +1,142 @@
 {
-    "personal": {
-        "submitter_name": "Keishi Ishida",
-        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology",
-        "submitter_email": "keishi.ishida@hki-jena.de"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0000186",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:18223641",
-            "pubmed:20853892",
-            "pubmed:22517609"
+        "compounds": [
+            {
+                "chem_act": [
+                    "Unknown"
+                ],
+                "chem_struct": "OC([C@H](C)[C@H](OC)/C(C)=C/C=C/C=C(C)/C=C/C[C@H](O)CC(/C=C/C=C(C)/C=C/[C@@H](C)NC([C@H](C)C/C=C/C[C@@H](O)CC1=CC=C(O)C=C1)=O)=O)=O",
+                "chem_synonyms": [],
+                "compound": "thailandamide A",
+                "mass_ion_type": "[M-H]-",
+                "mol_mass": 716.4134,
+                "molecular_formula": "C43H60O8N"
+            },
+            {
+                "chem_act": [
+                    "Unknown"
+                ],
+                "chem_struct": "OC([C@H](C)[C@H](OC)/C(C)=C/C=C/C=C(C)/C=C/C[C@H](O)CC(/C=C\\\\C=C(C)\\\\C=C\\\\[C@@H](C)NC([C@H](C)C/C=C/C[C@@H](O)CC1=CC=C(O)C=C1)=O)=O)=O",
+                "chem_synonyms": [],
+                "compound": "thailandamide B",
+                "mass_ion_type": "[M+H]+",
+                "mol_mass": 718.4323,
+                "molecular_formula": "C43H60O8N"
+            },
+            {
+                "chem_act": [
+                    "Cytotoxic"
+                ],
+                "chem_struct": "OC(C=C1)=CC=C1C[C@H](O)C/C=C/C[C@@H](C)C(N[C@H](C)/C=C/C(C)=C/C=C/C(/C=C(O)/C=C/C=C(C)/C=C/C=C/[C@@]2(C)[C@@H](OC)[C@@H](C)C(O2)=O)=O)=O",
+                "chem_synonyms": [],
+                "compound": "thailandamide lactone",
+                "mass_ion_type": "[M+H]+",
+                "mol_mass": 714.3981,
+                "molecular_formula": "C43H55O8N"
+            }
         ],
+        "genes": {
+            "gene": [
+                {
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Other in vivo study"
+                    ],
+                    "gene_function": "Regulation",
+                    "gene_id": "ABC34138.1",
+                    "gene_name": "thaA",
+                    "mut_pheno": "Loss of thailandamide production"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "trans acyltransferase (AT-AT-ER)",
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "ABC34740.1",
+                    "gene_name": "thaF",
+                    "mut_pheno": "Loss of thailandamide production"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "ABC34599.1",
+                    "gene_name": "thaQ",
+                    "mut_pheno": "Production of thailandamide intermediates"
+                }
+            ]
+        },
         "loci": {
+            "accession": "CP000085.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Knock-out studies",
                 "Gene expression correlated with compound production",
                 "Sequence-based prediction"
             ],
-            "accession": "CP000085.1",
-            "start_coord": 1950416,
-            "end_coord": 2036975
+            "end_coord": 2036975,
+            "start_coord": 1950416
         },
-        "compounds": [
-            {
-                "compound": "thailandamide A",
-                "chem_synonyms": [],
-                "chem_struct": "OC([C@H](C)[C@H](OC)/C(C)=C/C=C/C=C(C)/C=C/C[C@H](O)CC(/C=C/C=C(C)/C=C/[C@@H](C)NC([C@H](C)C/C=C/C[C@@H](O)CC1=CC=C(O)C=C1)=O)=O)=O",
-                "molecular_formula": "C43H60O8N",
-                "mol_mass": 716.4134,
-                "mass_ion_type": "[M-H]-",
-                "chem_act": [
-                    "Unknown"
-                ]
-            },
-            {
-                "compound": "thailandamide B",
-                "chem_synonyms": [],
-                "chem_struct": "OC([C@H](C)[C@H](OC)/C(C)=C/C=C/C=C(C)/C=C/C[C@H](O)CC(/C=C\\\\C=C(C)\\\\C=C\\\\[C@@H](C)NC([C@H](C)C/C=C/C[C@@H](O)CC1=CC=C(O)C=C1)=O)=O)=O",
-                "molecular_formula": "C43H60O8N",
-                "mol_mass": 718.4323,
-                "mass_ion_type": "[M+H]+",
-                "chem_act": [
-                    "Unknown"
-                ]
-            },
-            {
-                "compound": "thailandamide lactone",
-                "chem_synonyms": [],
-                "chem_struct": "OC(C=C1)=CC=C1C[C@H](O)C/C=C/C[C@@H](C)C(N[C@H](C)/C=C/C(C)=C/C=C/C(/C=C(O)/C=C/C=C(C)/C=C/C=C/[C@@]2(C)[C@@H](OC)[C@@H](C)C(O2)=O)=O)=O",
-                "molecular_formula": "C43H55O8N",
-                "mol_mass": 714.3981,
-                "mass_ion_type": "[M+H]+",
-                "chem_act": [
-                    "Cytotoxic"
-                ]
-            }
-        ],
-        "genes": {
-            "gene": [
+        "mibig_accession": "BGC0000186",
+        "nrp": {
+            "lin_cycl_nrp": "Linear",
+            "nrps_genes": [
                 {
-                    "gene_name": "thaA",
-                    "gene_id": "ABC34138.1",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Other in vivo study"
-                    ],
-                    "mut_pheno": "Loss of thailandamide production"
-                },
-                {
-                    "gene_name": "thaF",
-                    "gene_id": "ABC34740.1",
-                    "gene_annotation": "trans acyltransferase (AT-AT-ER)",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of thailandamide production"
-                },
-                {
-                    "gene_name": "thaQ",
-                    "gene_id": "ABC34599.1",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Production of thailandamide intermediates"
+                    "nrps_gene": "ABC35522.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "aa_type": "Nonproteinogenic",
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "nonprot_adom_spec": "D-alanine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "4",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
                 }
-            ]
+            ],
+            "nrps_release_type": "Unknown",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": [],
+            "subclass": "Unknown"
         },
         "polyketide": {
-            "pk_subclass": "Polyene",
             "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "starter_unit": "Unknown",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ABC34832.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "D-OH",
                             "module_nr": "1",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "2",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -126,13 +144,13 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "3",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -140,7 +158,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
@@ -152,13 +169,13 @@
                     "mod_pks_gene": "ABC35522.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "5",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Dehydratase"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -181,6 +198,7 @@
                     "mod_pks_gene": "ABC34176.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "D-OH",
                             "module_nr": "7",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -188,7 +206,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -205,13 +222,13 @@
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "9",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -223,6 +240,7 @@
                     "mod_pks_gene": "ABC34675.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "10",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -230,7 +248,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -253,6 +270,7 @@
                     "mod_pks_gene": "ABC33986.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "12",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -260,13 +278,13 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "13",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -274,7 +292,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
@@ -299,40 +316,23 @@
                     ]
                 }
             ],
-            "pks_te_type": "Type I",
-            "pks_release_type": "Unknown"
-        },
-        "nrp": {
-            "subclass": "Unknown",
-            "lin_cycl_nrp": "Linear",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "ABC35522.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "4",
-                            "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "D-alanine",
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "aa_subcluster": []
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
+            "pk_subclass": "Polyene",
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Modular type I"
             ],
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Unknown"
-        }
+            "pks_te_type": "Type I",
+            "starter_unit": "Unknown"
+        },
+        "publications": [
+            "pubmed:18223641",
+            "pubmed:20853892",
+            "pubmed:22517609"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "keishi.ishida@hki-jena.de",
+        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology",
+        "submitter_name": "Keishi Ishida"
+    }
 }

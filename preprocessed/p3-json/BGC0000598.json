@@ -1,101 +1,78 @@
 {
-    "version": "13",
-    "personal": {
-        "submitter_name": "Eric J.N. Helfrich",
-        "submitter_institution": "Institute of Microbiology ETH Zurich",
-        "submitter_email": "ehelfrich@ethz.ch"
-    },
+    "comments": "poyD and E activities were verified by co-expression with poyA. poy F activity was verified by co-expression with poy A and D. \\n",
     "general_params": {
-        "mibig_accession": "BGC0000598",
+        "RiPP": {
+            "lin_cycl_ripp": "Linear",
+            "precursor_loci": [
+                {
+                    "core_pept_aa": [
+                        "TGIGVVVAVVAGAVANTGAGVNQVAGGNINVVGNINVNANVSVNMNQTT"
+                    ],
+                    "foll_pept_len": 48,
+                    "gene_id": [
+                        "afs60639"
+                    ],
+                    "lead_pept_len": 96,
+                    "peptidase": []
+                }
+            ],
+            "ripp_subclass": "Proteusin"
+        },
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "22983711",
-            "24476823",
-            "20795624",
-            "21124508",
-            "15631460"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "JX456532",
-                    "start_coord": 5500,
-                    "end_coord": 20549,
-                    "conn_comp_cluster": [
-                        "Enzymatic assays",
-                        "Heterologous expression",
-                        "Sequence-based prediction"
-                    ]
-                }
-            ]
-        },
         "compounds": [
             {
-                "compound": "polytheonamide A",
-                "chem_synonyms": [],
-                "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
-                "pubchem_id": 44602391,
                 "chem_act": [
                     "Cytotoxic"
                 ],
+                "chem_moieties": [
+                    {
+                        "chem_moiety": "Other",
+                        "moiety_subcluster": [
+                            "afs60640"
+                        ],
+                        "other_chem_moiety": "18 D-configured amino acids introduced by one enzyme (PoyD)"
+                    },
+                    {
+                        "chem_moiety": "Other",
+                        "moiety_subcluster": [
+                            "afs60637",
+                            "afs60638",
+                            "afs60640",
+                            "afs60641",
+                            "afs60642",
+                            "afs60645"
+                        ],
+                        "other_chem_moiety": "13 out of 19 amino acids are non-proteinogenic"
+                    }
+                ],
+                "chem_synonyms": [],
                 "chem_target": [
                     "actsasaminimalisticionchannel",
                     "insertsintocellmembrane"
                 ],
-                "chem_moieties": [
-                    {
-                        "chem_moiety": "Other",
-                        "other_chem_moiety": "18 D-configured amino acids introduced by one enzyme (PoyD)",
-                        "moiety_subcluster": [
-                            "afs60640"
-                        ]
-                    },
-                    {
-                        "chem_moiety": "Other",
-                        "other_chem_moiety": "13 out of 19 amino acids are non-proteinogenic",
-                        "moiety_subcluster": [
-                            "afs60637",
-                            "afs60638",
-                            "afs60640",
-                            "afs60641",
-                            "afs60642",
-                            "afs60645"
-                        ]
-                    }
-                ]
-            },
-            {
-                "compound": "polytheonamide B",
-                "chem_synonyms": [],
+                "compound": "polytheonamide A",
                 "database_deposited": true,
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 44602381,
+                "pubchem_id": 44602391
+            },
+            {
                 "chem_act": [
                     "Cytotoxic"
-                ],
-                "chem_target": [
-                    "actsasminimalisticionchannel",
-                    "insertsintocellmembrane"
                 ],
                 "chem_moieties": [
                     {
                         "chem_moiety": "Other",
-                        "other_chem_moiety": "18 D-configured amino acids introduced by one enzyme (PoyD), ",
                         "moiety_subcluster": [
                             "afs60640"
-                        ]
+                        ],
+                        "other_chem_moiety": "18 D-configured amino acids introduced by one enzyme (PoyD), "
                     },
                     {
                         "chem_moiety": "Other",
-                        "other_chem_moiety": "13 out of 19 amino acids are non-proteinogenic",
                         "moiety_subcluster": [
                             "afs60637",
                             "afs60638",
@@ -103,120 +80,132 @@
                             "afs60641",
                             "afs60642",
                             "afs60645"
-                        ]
+                        ],
+                        "other_chem_moiety": "13 out of 19 amino acids are non-proteinogenic"
                     }
-                ]
+                ],
+                "chem_synonyms": [],
+                "chem_target": [
+                    "actsasminimalisticionchannel",
+                    "insertsintocellmembrane"
+                ],
+                "compound": "polytheonamide B",
+                "database_deposited": true,
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "pubchem_id": 44602381
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "poyK",
+                    "gene_function": "Unknown",
                     "gene_id": "AFS60634",
-                    "gene_function": "Unknown"
+                    "gene_name": "poyK"
                 },
                 {
-                    "gene_name": "poyJ",
-                    "gene_id": " AFS60635 ",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "putative transporter-hydrolase fusion protein",
                     "gene_function": "Other",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": " AFS60635 ",
+                    "gene_name": "poyJ"
                 },
                 {
-                    "gene_name": "poyB",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_function": "Tailoring",
                     "gene_id": "AFS60637",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Methylation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_name": "poyB",
+                    "tailoring": "Methylation"
                 },
                 {
-                    "gene_name": "poyC",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_function": "Tailoring",
                     "gene_id": "AFS60638",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Methylation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_name": "poyC",
+                    "tailoring": "Methylation"
                 },
                 {
-                    "gene_name": "poyA",
-                    "gene_id": "AFS60639",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction",
+                        "Other"
+                    ],
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction",
-                        "Other"
-                    ]
+                    "gene_id": "AFS60639",
+                    "gene_name": "poyA"
                 },
                 {
-                    "gene_name": "poyD",
+                    "evidence_genefunction": [
+                        "Activity assay",
+                        "Sequence-based prediction",
+                        "Other"
+                    ],
+                    "gene_function": "Tailoring",
                     "gene_id": "AFS60640",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Epimerization",
+                    "gene_name": "poyD",
+                    "tailoring": "Epimerization"
+                },
+                {
                     "evidence_genefunction": [
                         "Activity assay",
                         "Sequence-based prediction",
                         "Other"
-                    ]
-                },
-                {
-                    "gene_name": "poyE",
+                    ],
+                    "gene_function": "Tailoring",
                     "gene_id": "AFS60641 ",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Methylation",
-                    "evidence_genefunction": [
-                        "Activity assay",
-                        "Sequence-based prediction",
-                        "Other"
-                    ]
+                    "gene_name": "poyE",
+                    "tailoring": "Methylation"
                 },
                 {
-                    "gene_name": "poyF",
-                    "gene_id": "AFS60642",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Dehydration",
                     "evidence_genefunction": [
                         "Activity assay",
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "gene_function": "Tailoring",
+                    "gene_id": "AFS60642",
+                    "gene_name": "poyF",
+                    "tailoring": "Dehydration"
                 },
                 {
-                    "gene_name": "poyG",
-                    "gene_id": "AFS60643",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "chagasin-like peptidase inhibitor",
                     "gene_function": "Other",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AFS60643",
+                    "gene_name": "poyG"
                 },
                 {
-                    "gene_name": "poyH",
-                    "gene_id": "AFS60644 ",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_function": "Activation / processing",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AFS60644 ",
+                    "gene_name": "poyH"
                 },
                 {
-                    "gene_name": "poyI",
-                    "gene_id": "AFS60645",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_function": "Tailoring",
-                    "tailoring": "Hydroxylation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AFS60645",
+                    "gene_name": "poyI",
+                    "tailoring": "Hydroxylation"
                 },
                 {
-                    "gene_name": "ORF-1 (int)",
-                    "gene_id": "AFS60636",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "transposase/ integrase",
                     "gene_function": "Other",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AFS60636",
+                    "gene_name": "ORF-1 (int)"
                 }
             ],
             "operon": [
@@ -246,23 +235,34 @@
                 }
             ]
         },
-        "RiPP": {
-            "ripp_subclass": "Proteusin",
-            "lin_cycl_ripp": "Linear",
-            "precursor_loci": [
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
                 {
-                    "gene_id": [
-                        "afs60639"
+                    "Accession": "JX456532",
+                    "conn_comp_cluster": [
+                        "Enzymatic assays",
+                        "Heterologous expression",
+                        "Sequence-based prediction"
                     ],
-                    "core_pept_aa": [
-                        "TGIGVVVAVVAGAVANTGAGVNQVAGGNINVVGNINVNANVSVNMNQTT"
-                    ],
-                    "lead_pept_len": 96,
-                    "foll_pept_len": 48,
-                    "peptidase": []
+                    "end_coord": 20549,
+                    "start_coord": 5500
                 }
             ]
-        }
+        },
+        "mibig_accession": "BGC0000598",
+        "publications": [
+            "22983711",
+            "24476823",
+            "20795624",
+            "21124508",
+            "15631460"
+        ]
     },
-    "comments": "poyD and E activities were verified by co-expression with poyA. poy F activity was verified by co-expression with poy A and D. \\n"
+    "personal": {
+        "submitter_email": "ehelfrich@ethz.ch",
+        "submitter_institution": "Institute of Microbiology ETH Zurich",
+        "submitter_name": "Eric J.N. Helfrich"
+    },
+    "version": "13"
 }

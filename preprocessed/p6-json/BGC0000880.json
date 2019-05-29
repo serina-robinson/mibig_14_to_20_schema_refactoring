@@ -1,58 +1,40 @@
 {
-    "comments": "The core sugar components of tunicamycin are identical to corynetoxin, however between the two variations in lipid side chain exist.",
-    "submitter": {
-        "name": "David Widdick and Juan Pablo Gomez-Escribano",
-        "institution": "John Innes Centre",
-        "email": "david.widdick@jic.ac.uk"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "loci": {
-            "accession": "HQ172897.1",
-            "start_coord": 8616,
-            "end_coord": 20609,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
+        "biosyn_class": [
+            "Other"
+        ],
         "compounds": [
             {
-                "mol_mass": 830.916,
-                "chem_struct": "CCCCCCCCCCCC/C=C/C(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)NC(=O)C)C[C@H]([C@@H]3[C@H]([C@H]([C@@H](O3)n4ccc(=O)[nH]c4=O)O)O)O)O)O",
-                "chem_synonyms": [
-                    "tunicamycin IV"
-                ],
-                "compound": "Tunicamycin B1",
-                "molecular_formula": "C38H62N4O16",
-                "database_id": "chemspider:27471420",
                 "chem_acts": [
                     "Antibacterial",
                     "Antifungal",
                     "Cytotoxic"
                 ],
+                "chem_struct": "CCCCCCCCCCCC/C=C/C(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)NC(=O)C)C[C@H]([C@@H]3[C@H]([C@H]([C@@H](O3)n4ccc(=O)[nH]c4=O)O)O)O)O)O",
+                "chem_synonyms": [
+                    "tunicamycin IV"
+                ],
                 "chem_targets": [
                     {
-                        "target": "MraY",
-                        "publications": []
+                        "publications": [],
+                        "target": "MraY"
                     }
-                ]
+                ],
+                "compound": "Tunicamycin B1",
+                "database_id": "chemspider:27471420",
+                "mol_mass": 830.916,
+                "molecular_formula": "C38H62N4O16"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "tunA",
-                    "id": "ADP94221.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -61,11 +43,11 @@
                             ]
                         }
                     ],
+                    "id": "ADP94221.1",
+                    "name": "tunA",
                     "product": "TunA"
                 },
                 {
-                    "name": "tunB",
-                    "id": "ADP94222.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -74,11 +56,11 @@
                             ]
                         }
                     ],
+                    "id": "ADP94222.1",
+                    "name": "tunB",
                     "product": "TunB"
                 },
                 {
-                    "name": "tunF",
-                    "id": "ADP94226.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -87,11 +69,17 @@
                             ]
                         }
                     ],
+                    "id": "ADP94226.1",
+                    "name": "tunF",
                     "product": "TunF"
                 }
             ],
+            "extra_genes": [],
             "operons": [
                 {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
                     "genes": [
                         "tuna",
                         "tunb",
@@ -107,22 +95,34 @@
                         "tunl",
                         "tunm",
                         "tunn"
-                    ],
-                    "evidence": [
-                        "Sequence-based prediction"
                     ]
                 }
             ]
         },
+        "loci": {
+            "accession": "HQ172897.1",
+            "completeness": "complete",
+            "end_coord": 20609,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 8616
+        },
         "mibig_accession": "BGC0000880",
-        "biosyn_class": [
-            "Other"
-        ],
-        "publications": [
-            "pubmed:22717438"
-        ],
         "other": {
             "subclass": "Nucleoside"
-        }
+        },
+        "publications": [
+            "pubmed:22717438"
+        ]
+    },
+    "comments": "The core sugar components of tunicamycin are identical to corynetoxin, however between the two variations in lipid side chain exist.",
+    "submitter": {
+        "email": "david.widdick@jic.ac.uk",
+        "institution": "John Innes Centre",
+        "name": "David Widdick and Juan Pablo Gomez-Escribano"
     }
 }

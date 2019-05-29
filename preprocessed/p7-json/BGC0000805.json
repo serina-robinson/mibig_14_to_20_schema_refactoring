@@ -1,46 +1,18 @@
 {
-    "submitter": {
-        "name": "Bohdan Ostash",
-        "institution": "Ivan Franko National University of Lviv",
-        "email": "bohdanostash@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000805",
         "biosyn_class": [
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:17379141",
-            "pubmed:19640006",
-            "pubmed:24164498",
-            "pubmed:22505780"
-        ],
-        "loci": {
-            "accession": "DQ988993.1",
-            "start_coord": 898,
-            "end_coord": 5623,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "moenomycin",
-                "chem_synonyms": [
-                    "bambermycin",
-                    "flavofosfolipol",
-                    "flavomycin"
+                "chem_acts": [
+                    "Antibacterial"
                 ],
                 "chem_moieties": [
                     {
@@ -50,23 +22,24 @@
                         ]
                     }
                 ],
-                "database_id": "pubchem:46926246",
-                "chem_acts": [
-                    "Antibacterial"
+                "chem_synonyms": [
+                    "bambermycin",
+                    "flavofosfolipol",
+                    "flavomycin"
                 ],
                 "chem_targets": [
                     {
-                        "target": "peptidoglycanglycosyltransferases",
-                        "publications": []
+                        "publications": [],
+                        "target": "peptidoglycanglycosyltransferases"
                     }
-                ]
+                ],
+                "compound": "moenomycin",
+                "database_id": "pubchem:46926246"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "moeA4",
-                    "id": "ABJ90146.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -74,11 +47,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABJ90146.1",
+                    "name": "moeA4"
                 },
                 {
-                    "name": "moeC4",
-                    "id": "ABJ90148.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -86,11 +59,71 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABJ90148.1",
+                    "name": "moeC4"
                 }
             ]
         },
+        "loci": {
+            "accession": "DQ988993.1",
+            "completeness": "complete",
+            "end_coord": 5623,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 898
+        },
+        "mibig_accession": "BGC0000805",
+        "publications": [
+            "pubmed:17379141",
+            "pubmed:19640006",
+            "pubmed:24164498",
+            "pubmed:22505780"
+        ],
         "saccharide": {
+            "glycosyltransferases": [
+                {
+                    "evidence": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ABJ90158.1",
+                    "specificity": "D-galacturonic acid"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90161.1",
+                    "specificity": "N-acetyl-D-glucosamine"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90167.1",
+                    "specificity": "chinovosamine AND N-acetyl-D-glucosamine"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90168.1",
+                    "specificity": "D-galacturonic acid"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90169.1",
+                    "specificity": "D-glucose"
+                }
+            ],
+            "subclass": "Unknown",
             "sugar_subclusters": [
                 [
                     "moeE5"
@@ -99,45 +132,12 @@
                     "moeR5",
                     "moeS5"
                 ]
-            ],
-            "subclass": "Unknown",
-            "glycosyltransferases": [
-                {
-                    "gene_id": "ABJ90158.1",
-                    "specificity": "D-galacturonic acid",
-                    "evidence": [
-                        "Activity assay"
-                    ]
-                },
-                {
-                    "gene_id": "ABJ90161.1",
-                    "specificity": "N-acetyl-D-glucosamine",
-                    "evidence": [
-                        "Knock-out construct"
-                    ]
-                },
-                {
-                    "gene_id": "ABJ90167.1",
-                    "specificity": "chinovosamine AND N-acetyl-D-glucosamine",
-                    "evidence": [
-                        "Knock-out construct"
-                    ]
-                },
-                {
-                    "gene_id": "ABJ90168.1",
-                    "specificity": "D-galacturonic acid",
-                    "evidence": [
-                        "Knock-out construct"
-                    ]
-                },
-                {
-                    "gene_id": "ABJ90169.1",
-                    "specificity": "D-glucose",
-                    "evidence": [
-                        "Knock-out construct"
-                    ]
-                }
             ]
         }
+    },
+    "submitter": {
+        "email": "bohdanostash@gmail.com",
+        "institution": "Ivan Franko National University of Lviv",
+        "name": "Bohdan Ostash"
     }
 }

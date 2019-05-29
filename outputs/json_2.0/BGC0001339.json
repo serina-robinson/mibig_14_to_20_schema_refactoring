@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Russell Cox",
-        "submitter_institution": "University of Hannover",
-        "submitter_email": "russell.cox@oci.uni-hannover.de"
+    "submitter": {
+        "name": "Russell Cox",
+        "institution": "University of Hannover",
+        "email": "russell.cox@oci.uni-hannover.de"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001339",
         "biosyn_class": [
             "Polyketide"
@@ -13,15 +19,15 @@
             "doi:10.1039/c6cc02130a"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "KU946987.1",
+            "start_coord": 1,
+            "end_coord": 69700,
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Enzymatic assays",
                 "Heterologous expression"
-            ],
-            "accession": "KU946987.1",
-            "start_coord": 1,
-            "end_coord": 69700
+            ]
         },
         "compounds": [
             {
@@ -29,249 +35,159 @@
                 "chem_synonyms": [
                     "zaragozic acid a"
                 ],
-                "chemspider_id": 4942838,
-                "evidence_struct": [
+                "database_id": "chemspider:4942838",
+                "evidence": [
                     "NMR",
                     "Mass spectrometry"
                 ],
-                "chem_act": [
+                "chem_acts": [
                     "Antifungal",
                     "Inhibitor"
                 ],
-                "chem_target": [
-                    "squalenesynthase"
+                "chem_targets": [
+                    {
+                        "target": "squalenesynthase",
+                        "publications": []
+                    }
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "mfL3",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15054.1",
-                    "gene_annotation": "transcription factor",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "mfL2",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15055.1",
-                    "gene_annotation": "MFS transporter",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "mfL1",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15056.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "mfpks1",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15057.1",
-                    "gene_annotation": "tetraketide synthase MF-SQTKS",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Other in vivo study"
-                    ]
-                },
-                {
-                    "gene_name": "mfM1",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15058.1",
-                    "gene_annotation": "copper dependent oxygenase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
-                },
-                {
-                    "gene_name": "mfM2",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15059.1",
-                    "gene_annotation": "MFS transporter",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "mfM3",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15060.1",
-                    "gene_annotation": "NADP dependent dehydrogenase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
-                },
-                {
-                    "gene_name": "mfM4",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15061.1",
-                    "gene_annotation": "acyltransferase AT1",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Acylation",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "mfpks1",
+                    "id": "AMY15057.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "Loss of side chain acylation"
+                    "product": "tetraketide synthase MF-SQTKS"
                 },
                 {
-                    "gene_name": "mfM5",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15062.1",
-                    "gene_annotation": "mfM5 protein",
-                    "gene_function": "Unknown"
+                    "name": "mfM1",
+                    "id": "AMY15058.1",
+                    "product": "copper dependent oxygenase"
                 },
                 {
-                    "gene_name": "mfM6",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15063.1",
-                    "gene_annotation": "MFS transporter",
-                    "gene_function": "Unknown"
+                    "name": "mfM3",
+                    "id": "AMY15060.1",
+                    "product": "NADP dependent dehydrogenase"
                 },
                 {
-                    "gene_name": "mfM7",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15064.1",
-                    "gene_annotation": "phenylalanine ammonia-lyase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
+                    "name": "mfM4",
+                    "id": "AMY15061.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "acyltransferase AT1",
+                    "tailoring": [
+                        "Acylation"
                     ]
                 },
                 {
-                    "gene_name": "mfM8",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15065.1",
-                    "gene_annotation": "esterase/lipase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfM7",
+                    "id": "AMY15064.1",
+                    "product": "phenylalanine ammonia-lyase"
                 },
                 {
-                    "gene_name": "mfM9",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15066.1",
-                    "gene_annotation": "acyl-CoA synthetase/ligase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfM8",
+                    "id": "AMY15065.1",
+                    "product": "esterase/lipase"
                 },
                 {
-                    "gene_name": "mfM10",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15067.1",
-                    "gene_annotation": "hydrolase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfM9",
+                    "id": "AMY15066.1",
+                    "product": "acyl-CoA synthetase/ligase"
                 },
                 {
-                    "gene_name": "mfpks2",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15068.1",
-                    "gene_annotation": "hexaketide synthase MF-SQHKS",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "mfM10",
+                    "id": "AMY15067.1",
+                    "product": "hydrolase"
                 },
                 {
-                    "gene_name": "mfR1",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15069.1",
-                    "gene_annotation": "putative non-heme iron dependent",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfpks2",
+                    "id": "AMY15068.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "hexaketide synthase MF-SQHKS"
                 },
                 {
-                    "gene_name": "mfR2",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15070.1",
-                    "gene_annotation": "putative non-heme iron dependent",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfR1",
+                    "id": "AMY15069.1",
+                    "product": "putative non-heme iron dependent"
                 },
                 {
-                    "gene_name": "mfR3",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15071.1",
-                    "gene_annotation": "citrate synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfR2",
+                    "id": "AMY15070.1",
+                    "product": "putative non-heme iron dependent"
                 },
                 {
-                    "gene_name": "mfR4",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15072.1",
-                    "gene_annotation": "acyltransferase-3 superfamily AT2",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfR3",
+                    "id": "AMY15071.1",
+                    "product": "citrate synthase"
                 },
                 {
-                    "gene_name": "mfR5",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15073.1",
-                    "gene_annotation": "MFS transporter",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfR4",
+                    "id": "AMY15072.1",
+                    "product": "acyltransferase-3 superfamily AT2"
                 },
                 {
-                    "gene_name": "mfR6",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15074.1",
-                    "gene_annotation": "squalene synthase",
-                    "gene_function": "Resistance/immunity",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfR5",
+                    "id": "AMY15073.1",
+                    "product": "MFS transporter"
                 },
                 {
-                    "gene_name": "mfR7",
-                    "not_in_gbk": false,
-                    "gene_id": "AMY15075.1",
-                    "gene_annotation": "ab hydrolase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mfR6",
+                    "id": "AMY15074.1",
+                    "product": "squalene synthase"
+                },
+                {
+                    "name": "mfR7",
+                    "id": "AMY15075.1",
+                    "product": "ab hydrolase"
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
             "starter_unit": "Benzoyl-CoA",
-            "pks_genes": [
-                "phpks1",
-                "phpks2"
+            "subclasses": [
+                "Other"
             ],
-            "nr_iterations": 5,
-            "iterative_subtype": "Highly reducing",
-            "pks_te_type": "None",
-            "pks_release_type": "Unknown"
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "phpks2",
+                        "phpks1"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 5,
+                        "subtype": "Highly reducing",
+                        "cyclization_type": "Unknown"
+                    }
+                }
+            ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

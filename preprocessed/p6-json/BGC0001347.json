@@ -1,56 +1,35 @@
 {
-    "comments": "Pseudomonas synxantha strain CR32 (poaeamide B producer)\\nNCBI accession: KU936045 and KU936046\\nhttp://www.ncbi.nlm.nih.gov/nuccore/KU936045\\nhttp://www.ncbi.nlm.nih.gov/nuccore/KU936046",
-    "submitter": {
-        "name": "Don D. Nguyen",
-        "institution": "EMBL",
-        "email": "don.nguyen@embl.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001347",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:0"
-        ],
-        "loci": {
-            "accession": "KU936045.1",
-            "completeness": "incomplete",
-            "evidence": [
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Poaeamide B",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Unknown"
+                ],
                 "chem_struct": "CCCCCCCC(CC(NC(CC(C)C)C(NC(CCC(O)=O)C(NC(C(NC(C(CC)C)C(NC(CC(C)C)C(NC(CO)C(NC(CC(C)C)C(NC(CC(C)C)C(NC(CO)C(NC1C(C)CC)=O)=O)=O)=O)=O)=O)=O)C(C)OC1=O)=O)=O)=O)O",
-                "molecular_formula": "C61H108N10O17",
-                "mol_mass": 1253.7965,
+                "chem_synonyms": [],
+                "compound": "Poaeamide B",
                 "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
                 ],
-                "chem_acts": [
-                    "Unknown"
-                ]
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1253.7965,
+                "molecular_formula": "C61H108N10O17"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "No gene ID",
-                    "id": "ANQ43346.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -59,11 +38,24 @@
                             ]
                         }
                     ],
+                    "id": "ANQ43346.1",
+                    "name": "No gene ID",
                     "product": "LuxR transcriptional regulator"
                 },
                 {
-                    "name": "No gene ID",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
                     "id": "ANQ43347.1",
+                    "name": "No gene ID",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -72,24 +64,11 @@
                             ]
                         }
                     ],
-                    "product": "non-ribosomal peptide synthetase"
-                },
-                {
-                    "name": "No gene ID",
                     "id": "ANQ43348.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Other in vivo study"
-                            ]
-                        }
-                    ],
+                    "name": "No gene ID",
                     "product": "non-ribosomal peptide synthetase"
                 },
                 {
-                    "name": "No gene ID",
-                    "id": "ANQ43349.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -98,51 +77,63 @@
                             ]
                         }
                     ],
+                    "id": "ANQ43349.1",
+                    "name": "No gene ID",
                     "product": "non-ribosomal peptide synthetase"
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "KU936045.1",
+            "completeness": "incomplete",
+            "evidence": [
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
             ]
         },
+        "mibig_accession": "BGC0001347",
         "nrp": {
-            "subclass": "Cyclic depsipeptide",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "ANQ43347.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Leucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Leucine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "Starter",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Glutamate"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Glutamate"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 },
@@ -151,75 +142,75 @@
                     "modules": [
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
                                 "proteinogenic": [
                                     "Threonine"
-                                ],
-                                "evidence": [
-                                    "Sequence-based prediction"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
                                 "proteinogenic": [
                                     "Isoleucine"
-                                ],
-                                "evidence": [
-                                    "Sequence-based prediction"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         },
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
                                 "proteinogenic": [
                                     "Leucine"
-                                ],
-                                "evidence": [
-                                    "Sequence-based prediction"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "3",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "3"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Serine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Serine"
+                                ]
                             },
-                            "module_number": "4",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "4"
                         }
                     ]
                 },
@@ -228,84 +219,93 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Leucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Leucine"
+                                ]
                             },
-                            "module_number": "5",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "5"
                         },
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
                                 "proteinogenic": [
                                     "Leucine"
-                                ],
-                                "evidence": [
-                                    "Sequence-based prediction"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "6",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "6"
                         },
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
                                 "proteinogenic": [
                                     "Serine"
-                                ],
-                                "evidence": [
-                                    "Sequence-based prediction"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "7",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "7"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Isoleucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Isoleucine"
+                                ]
                             },
-                            "module_number": "8",
                             "active": false,
                             "c_dom_subtype": "Dual",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "8"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Unknown"
-            ]
-        }
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:0"
+        ]
+    },
+    "comments": "Pseudomonas synxantha strain CR32 (poaeamide B producer)\\nNCBI accession: KU936045 and KU936046\\nhttp://www.ncbi.nlm.nih.gov/nuccore/KU936045\\nhttp://www.ncbi.nlm.nih.gov/nuccore/KU936046",
+    "submitter": {
+        "email": "don.nguyen@embl.de",
+        "institution": "EMBL",
+        "name": "Don D. Nguyen"
     }
 }

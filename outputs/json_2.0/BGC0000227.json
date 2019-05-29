@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Fengan Yu",
-        "submitter_institution": "University of Michigan",
-        "submitter_email": "fenganyu@umich.edu"
+    "submitter": {
+        "name": "Fengan Yu",
+        "institution": "University of Michigan",
+        "email": "fenganyu@umich.edu"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000227",
         "biosyn_class": [
             "Polyketide"
@@ -15,11 +21,11 @@
             "pubmed:9831526"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "AJ011500.1",
+            "completeness": "complete",
+            "evidence": [
                 "Sequence-based prediction"
-            ],
-            "accession": "AJ011500.1"
+            ]
         },
         "compounds": [
             {
@@ -28,77 +34,87 @@
                 "chem_struct": "C[C@@H]1[C@]2(c3c(c(c4c(c3O)C(=O)C5=C(C4=O)[C@H]6[C@H](CC(=O)O6)OC5C)O)[C@@H](O1)C[C@H]2O)O",
                 "molecular_formula": "C22H20O10",
                 "mol_mass": 444.1057,
-                "mass_ion_type": "[M+H]+",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
                     "Antibacterial"
                 ]
             }
         ],
         "genes": {},
         "polyketide": {
-            "pk_subclass": "Ansamycin",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Type II"
-            ],
             "starter_unit": "Malonyl-CoA",
-            "pks_genes": [],
             "ketide_length": -1,
-            "mod_pks_genes": [
+            "subclasses": [
+                "Ansamycin"
+            ],
+            "cyclic": true,
+            "synthases": [
                 {
-                    "mod_pks_gene": "CAA09653.1",
-                    "pks_module": [
+                    "genes": [
+                        "CAA09653.1",
+                        "CAA09654.1",
+                        "CAA09655.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ],
+                    "modules": [
                         {
-                            "module_nr": "0",
-                            "pks_domains": [
+                            "genes": [
+                                "CAA09653.1"
+                            ],
+                            "module_number": "0",
+                            "domains": [
                                 "Ketosynthase"
                             ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAA09654.1",
-                    "pks_module": [
+                            "comments": ""
+                        },
                         {
-                            "module_nr": "1",
-                            "pks_domains": [
+                            "genes": [
+                                "CAA09654.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
                                 "CoA-ligase"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAA09655.1",
-                    "pks_module": [
+                            "comments": ""
+                        },
                         {
-                            "module_nr": "1",
-                            "pks_domains": [
+                            "genes": [
+                                "CAA09655.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         }
                     ]
                 }
             ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

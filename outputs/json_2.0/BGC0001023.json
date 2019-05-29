@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Daniel Krug",
-        "submitter_institution": "Helmholtz Institute for Pharmaceutical Research Saarland",
-        "submitter_email": "daniel.krug@helmholtz-hzi.de"
+    "submitter": {
+        "name": "Daniel Krug",
+        "institution": "Helmholtz Institute for Pharmaceutical Research Saarland",
+        "email": "daniel.krug@helmholtz-hzi.de"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001023",
         "biosyn_class": [
             "NRP",
@@ -14,12 +20,12 @@
             "pubmed:15651040"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "AJ698723.2",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Heterologous expression"
-            ],
-            "accession": "AJ698723.2"
+            ]
         },
         "compounds": [
             {
@@ -28,64 +34,80 @@
                 "chem_struct": "CN(C1C(C)CC(=O)C(NC(=O)C(C)NC(=O)C(C)NC(=O)C(NC1=O)CC(C)C)CCC(=O)N)C(=O)/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C",
                 "molecular_formula": "C38H54N6O8",
                 "mol_mass": 723.4076,
-                "mass_ion_type": "[M+H]+",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
                     "Unknown"
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "mchA",
-                    "not_in_gbk": false,
-                    "gene_id": "CAG28678.1",
-                    "gene_annotation": "polyketide synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "mchA",
+                    "id": "CAG28678.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "loss of production"
+                    "product": "polyketide synthase"
                 },
                 {
-                    "gene_name": "mchB",
-                    "not_in_gbk": false,
-                    "gene_id": "CAG29031.1",
-                    "gene_annotation": "nonribosomal peptide synthetase (modules 1 and 2)",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "mchB",
+                    "id": "CAG29031.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "loss of production"
+                    "product": "nonribosomal peptide synthetase (modules 1 and 2)"
                 },
                 {
-                    "gene_name": "mchC",
-                    "not_in_gbk": false,
-                    "gene_id": "CAG29032.1",
-                    "gene_annotation": "nonribosomal peptide synthetase (modules 3 to 6)",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "name": "mchC",
+                    "id": "CAG29032.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "nonribosomal peptide synthetase (modules 3 to 6)"
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Modular type I"
-            ],
             "starter_unit": "Acetyl-CoA",
-            "pks_te_type": "None",
-            "pks_release_type": "Claisen condensation",
-            "mod_pks_genes": [
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Claisen condensation"
+            ],
+            "synthases": [
                 {
-                    "mod_pks_gene": "CAG28678.1",
-                    "pks_module": [
+                    "genes": [
+                        "CAG28678.1"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "modules": [
                         {
-                            "module_nr": "1",
-                            "pks_domains": [
+                            "genes": [
+                                "CAG28678.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Dehydratase",
@@ -93,14 +115,23 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
                             "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Iterated",
-                            "pks_evidence_skip_iter": "Structure-based inference"
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -108,102 +139,134 @@
         },
         "nrp": {
             "subclass": "Unknown",
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [
-                "cag29032.1"
-            ],
-            "nrps_release_type": "Macrolactonization",
             "nrps_genes": [
                 {
-                    "nrps_gene": "CAG29031.1",
-                    "nrps_module": [
+                    "gene_id": "CAG29031.1",
+                    "modules": [
                         {
-                            "module_nr": "2",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Threonine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Threonine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "Methylation",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "2",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ]
                         },
                         {
-                            "module_nr": "3",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Leucine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": true
+                                "proteinogenic": [
+                                    "Leucine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": true,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "3",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         }
                     ]
                 },
                 {
-                    "nrps_gene": "CAG29032.1",
-                    "nrps_module": [
+                    "gene_id": "CAG29032.1",
+                    "modules": [
                         {
-                            "module_nr": "4",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Alanine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Alanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "DCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "4",
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         },
                         {
-                            "module_nr": "5",
-                            "a_substr_spec": {
-                                "aa_type": "None",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Skipped",
-                            "nrps_evidence_skip_iter": "Structure-based inference"
+                            "module_number": "5",
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
                         },
                         {
-                            "module_nr": "6",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Alanine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Alanine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "6",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         },
                         {
-                            "module_nr": "7",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Glutamine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "proteinogenic": [
+                                    "Glutamine"
+                                ],
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "epimerized": false,
+                                "aa_subcluster": []
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "module_number": "7",
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ]
                         }
                     ]
                 }
+            ],
+            "cyclic": true,
+            "thioesterases": [
+                {
+                    "gene": "cag29032.1",
+                    "thioesterase_type": "Unknown"
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
             ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

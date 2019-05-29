@@ -1,52 +1,31 @@
 {
-    "submitter": {
-        "name": "Doug Mitchell",
-        "institution": "University of Illinois at Urbana-Champaign",
-        "email": "douglasm@illinois.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001174",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:21950656"
-        ],
-        "loci": {
-            "accession": "CP004085.1",
-            "start_coord": 1876183,
-            "end_coord": 1882234,
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "corynazolicin",
-                "chem_synonyms": [],
-                "chem_struct": "O=C(NCC(NCC(O)=O)=O)C1=CSC(C2=CSC(C3=CSC(C4=CSC(C5=CSC([C@@H]6CCCN6C([C@@H](NC(C7=C(C)OC(C8=C(C)OC(C9=CSC(C%10=COC(C%11=CSC([C@@H](N(C)C)CCCNC(N)=N)=N%11)=N%10)=N9)=N8)=N7)=O)[C@H](CC)C)=O)=N5)=N4)=N3)=N2)=N1",
-                "molecular_formula": "C55H56N18O9S7",
-                "mol_mass": 1337.2595,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Antibacterial"
-                ]
+                ],
+                "chem_struct": "O=C(NCC(NCC(O)=O)=O)C1=CSC(C2=CSC(C3=CSC(C4=CSC(C5=CSC([C@@H]6CCCN6C([C@@H](NC(C7=C(C)OC(C8=C(C)OC(C9=CSC(C%10=COC(C%11=CSC([C@@H](N(C)C)CCCNC(N)=N)=N%11)=N%10)=N9)=N8)=N7)=O)[C@H](CC)C)=O)=N5)=N4)=N3)=N2)=N1",
+                "chem_synonyms": [],
+                "compound": "corynazolicin",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1337.2595,
+                "molecular_formula": "C55H56N18O9S7"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "pznL",
-                    "id": "CU7111_1582",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -55,14 +34,14 @@
                             ]
                         }
                     ],
+                    "id": "CU7111_1582",
+                    "name": "pznL",
                     "product": "SAM-dependent methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "pznC",
-                    "id": "CU7111_1584",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -72,11 +51,11 @@
                             ]
                         }
                     ],
+                    "id": "CU7111_1584",
+                    "name": "pznC",
                     "product": "cyclodehydratase partner"
                 },
                 {
-                    "name": "pznD",
-                    "id": "CU7111_1585",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -86,14 +65,14 @@
                             ]
                         }
                     ],
+                    "id": "CU7111_1585",
+                    "name": "pznD",
                     "product": "cyclodehydratase",
                     "tailoring": [
                         "Heterocyclization"
                     ]
                 },
                 {
-                    "name": "pznB",
-                    "id": "CU7111_1586",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -103,14 +82,14 @@
                             ]
                         }
                     ],
+                    "id": "CU7111_1586",
+                    "name": "pznB",
                     "product": "FMN-dependent dehydrogenase",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "pznE",
-                    "id": "CU7111_1587",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -119,15 +98,36 @@
                             ]
                         }
                     ],
+                    "id": "CU7111_1587",
+                    "name": "pznE",
                     "product": "protease"
                 }
             ]
         },
-        "ripp": {
-            "subclass": "LAP",
-            "cyclic": false,
-            "peptidases": []
+        "loci": {
+            "accession": "CP004085.1",
+            "completeness": "complete",
+            "end_coord": 1882234,
+            "evidence": [
+                "Enzymatic assays",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 1876183
         },
-        "minimal": true
+        "mibig_accession": "BGC0001174",
+        "minimal": true,
+        "publications": [
+            "pubmed:21950656"
+        ],
+        "ripp": {
+            "cyclic": false,
+            "peptidases": [],
+            "subclass": "LAP"
+        }
+    },
+    "submitter": {
+        "email": "douglasm@illinois.edu",
+        "institution": "University of Illinois at Urbana-Champaign",
+        "name": "Doug Mitchell"
     }
 }

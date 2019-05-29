@@ -1,23 +1,26 @@
 {
-    "submitter": {
-        "name": "Muriel Viaud",
-        "institution": "INRA",
-        "email": "viaud@versailles.inra.fr"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001158",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:23308280"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial",
+                    "Antifungal"
+                ],
+                "chem_synonyms": [],
+                "compound": "bikaverin",
+                "database_id": "pubchem:5281730"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "HE802545.1",
             "completeness": "complete",
@@ -27,42 +30,39 @@
                 "Heterologous expression"
             ]
         },
-        "compounds": [
-            {
-                "compound": "bikaverin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:5281730",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Antifungal"
-                ]
-            }
-        ],
-        "genes": {},
+        "mibig_accession": "BGC0001158",
         "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "subclasses": [
-                "Other"
-            ],
             "cyclic": true,
             "release_type": [
                 "Unknown"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
                     "genes": [
                         "cch26295.1"
                     ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 9,
+                        "subtype": "Non-reducing"
+                    },
                     "subclass": [
                         "Iterative type I"
-                    ],
-                    "iterative": {
-                        "nr_iterations": 9,
-                        "subtype": "Non-reducing",
-                        "cyclization_type": "Unknown"
-                    }
+                    ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:23308280"
+        ]
+    },
+    "submitter": {
+        "email": "viaud@versailles.inra.fr",
+        "institution": "INRA",
+        "name": "Muriel Viaud"
     }
 }

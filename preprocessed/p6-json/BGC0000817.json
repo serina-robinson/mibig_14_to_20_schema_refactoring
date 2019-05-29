@@ -1,58 +1,40 @@
 {
-    "submitter": {
-        "name": "Sean Brady",
-        "institution": "The Rockefeller University",
-        "email": "sbrady@rockefeller.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000817",
+        "alkaloid": {
+            "subclass": "Pyrrole/pyrrolidine"
+        },
         "biosyn_class": [
             "Alkaloid"
         ],
-        "publications": [
-            "pubmed:24648189"
-        ],
-        "loci": {
-            "accession": "KF551863.1",
-            "start_coord": 5678,
-            "end_coord": 12491,
-            "completeness": "complete",
-            "evidence": [
-                "Gene expression correlated with compound production"
-            ]
-        },
         "compounds": [
             {
-                "compound": "methylarcyriarubin",
-                "chem_synonyms": [],
-                "chem_struct": "O=C(N1C)C(C2=CNC3=CC=CC=C32)=C(C4=CNC5=CC=CC=C54)C1=O",
-                "molecular_formula": "C21H15N3O2",
-                "mol_mass": 341.1164,
-                "database_id": "",
-                "mass_spec_ion_type": "None",
                 "chem_acts": [
                     "Cytotoxic"
                 ],
+                "chem_struct": "O=C(N1C)C(C2=CNC3=CC=CC=C32)=C(C4=CNC5=CC=CC=C54)C1=O",
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "Proteinkinase",
-                        "publications": []
+                        "publications": [],
+                        "target": "Proteinkinase"
                     }
-                ]
+                ],
+                "compound": "methylarcyriarubin",
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "mol_mass": 341.1164,
+                "molecular_formula": "C21H15N3O2"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "marM",
-                    "id": "AHE14572.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -61,14 +43,14 @@
                             ]
                         }
                     ],
+                    "id": "AHE14572.1",
+                    "name": "marM",
                     "product": "N-methyltransferase MarM",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "marB",
-                    "id": "AHE14562.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -77,11 +59,11 @@
                             ]
                         }
                     ],
+                    "id": "AHE14562.1",
+                    "name": "marB",
                     "product": "chromopyrrolic acid synthase MarB"
                 },
                 {
-                    "name": "marC",
-                    "id": "AHE14552.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -90,14 +72,14 @@
                             ]
                         }
                     ],
+                    "id": "AHE14552.1",
+                    "name": "marC",
                     "product": "Rieske [2Fe-2S] domain dioxygenase MarC",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "marE",
-                    "id": "AHE14571.1",
                     "functions": [
                         {
                             "category": "Unknown",
@@ -106,12 +88,30 @@
                             ]
                         }
                     ],
+                    "id": "AHE14571.1",
+                    "name": "marE",
                     "product": "putative VioE-like protein MarE"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
-        "alkaloid": {
-            "subclass": "Pyrrole/pyrrolidine"
-        }
+        "loci": {
+            "accession": "KF551863.1",
+            "completeness": "complete",
+            "end_coord": 12491,
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 5678
+        },
+        "mibig_accession": "BGC0000817",
+        "publications": [
+            "pubmed:24648189"
+        ]
+    },
+    "submitter": {
+        "email": "sbrady@rockefeller.edu",
+        "institution": "The Rockefeller University",
+        "name": "Sean Brady"
     }
 }

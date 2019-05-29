@@ -1,23 +1,74 @@
 {
-    "submitter": {
-        "name": "Daniel Petras",
-        "institution": "TU Berlin / AK S\u00c3\u00bcssmuth",
-        "email": "daniel.petras@chem.tu-berlin.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000519",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:20082397"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antiviral"
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Labionin",
+                        "subcluster": [
+                            "cax48971.1"
+                        ]
+                    }
+                ],
+                "chem_synonyms": [],
+                "compound": "Labyrinthopeptin A2",
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "mol_mass": 1922.6872,
+                "molecular_formula": "C85H110N20O24S4"
+            },
+            {
+                "chem_acts": [
+                    "Antiviral"
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Labionin",
+                        "subcluster": [
+                            "cax48971.1"
+                        ]
+                    }
+                ],
+                "chem_synonyms": [],
+                "compound": "Labyrinthopeptin A1",
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "mol_mass": 2073.763,
+                "molecular_formula": "C92H119N23O25S4"
+            },
+            {
+                "chem_acts": [
+                    "Antiviral"
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Labionin",
+                        "subcluster": [
+                            "cax48971.1"
+                        ]
+                    }
+                ],
+                "chem_synonyms": [],
+                "compound": "Labyrinthopeptin A3",
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "mol_mass": 2188.79,
+                "molecular_formula": "C96H124N24O28S4"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "FN178622.1",
             "completeness": "complete",
@@ -26,72 +77,18 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Labyrinthopeptin A2",
-                "chem_synonyms": [],
-                "molecular_formula": "C85H110N20O24S4",
-                "mol_mass": 1922.6872,
-                "chem_moieties": [
-                    {
-                        "moiety": "Labionin",
-                        "subcluster": [
-                            "cax48971.1"
-                        ]
-                    }
-                ],
-                "database_id": "",
-                "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Antiviral"
-                ]
-            },
-            {
-                "compound": "Labyrinthopeptin A1",
-                "chem_synonyms": [],
-                "molecular_formula": "C92H119N23O25S4",
-                "mol_mass": 2073.763,
-                "chem_moieties": [
-                    {
-                        "moiety": "Labionin",
-                        "subcluster": [
-                            "cax48971.1"
-                        ]
-                    }
-                ],
-                "database_id": "",
-                "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Antiviral"
-                ]
-            },
-            {
-                "compound": "Labyrinthopeptin A3",
-                "chem_synonyms": [],
-                "molecular_formula": "C96H124N24O28S4",
-                "mol_mass": 2188.79,
-                "chem_moieties": [
-                    {
-                        "moiety": "Labionin",
-                        "subcluster": [
-                            "cax48971.1"
-                        ]
-                    }
-                ],
-                "database_id": "",
-                "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Antiviral"
-                ]
-            }
+        "mibig_accession": "BGC0000519",
+        "publications": [
+            "pubmed:20082397"
         ],
-        "genes": {},
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "c0mp60",
+                    "core_sequence": [
+                        "MASILELQNLDVEHARGENRSDWSLWECCSTGSLFACC"
+                    ],
                     "crosslinks": [
                         {
                             "crosslink_type": "Thioether",
@@ -109,14 +106,14 @@
                             "second_AA": 17
                         }
                     ],
-                    "core_sequence": [
-                        "MASILELQNLDVEHARGENRSDWSLWECCSTGSLFACC"
-                    ],
-                    "leader_sequence": 20,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "c0mp60",
+                    "leader_sequence": 20
                 },
                 {
-                    "gene_id": "c0mp59",
+                    "core_sequence": [
+                        "MASILELQDLEVERASSAADSNASVWECCSTGSWVPFTCC"
+                    ],
                     "crosslinks": [
                         {
                             "crosslink_type": "Thioether",
@@ -134,14 +131,17 @@
                             "second_AA": 20
                         }
                     ],
-                    "core_sequence": [
-                        "MASILELQDLEVERASSAADSNASVWECCSTGSWVPFTCC"
-                    ],
-                    "leader_sequence": 18,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "c0mp59",
+                    "leader_sequence": 18
                 }
             ],
-            "peptidases": []
+            "subclass": "Lanthipeptide"
         }
+    },
+    "submitter": {
+        "email": "daniel.petras@chem.tu-berlin.de",
+        "institution": "TU Berlin / AK S\u00c3\u00bcssmuth",
+        "name": "Daniel Petras"
     }
 }

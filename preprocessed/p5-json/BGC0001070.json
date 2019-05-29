@@ -1,99 +1,129 @@
 {
-    "personal": {
-        "submitter_name": "Tilmann Weber",
-        "submitter_institution": "The Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark",
-        "submitter_email": "tiwe@biosustain.dtu.dk"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0001070",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:4554808",
-            "pubmed:4373734",
-            "pubmed:18291322",
-            "pubmed:21513880",
-            "pubmed:19609288",
-            "pubmed:21401713",
-            "pubmed:23828654"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies"
-            ],
-            "accession": "AM746336.1"
-        },
         "compounds": [
             {
-                "compound": "kirromycin",
+                "chem_act": [
+                    "Antibacterial"
+                ],
                 "chem_synonyms": [
                     "mocimycin",
                     "delvomycin"
                 ],
-                "pubchem_id": 54697674,
-                "chemspider_id": 4883396,
-                "chem_act": [
-                    "Antibacterial"
-                ],
                 "chem_target": [
                     "EF-Tu"
-                ]
+                ],
+                "chemspider_id": 4883396,
+                "compound": "kirromycin",
+                "pubchem_id": 54697674
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_id": "CAN89641.1",
-                    "gene_function": "Unknown",
                     "evidence_genefunction": [
                         "Activity assay"
                     ],
+                    "gene_function": "Unknown",
+                    "gene_id": "CAN89641.1",
                     "mut_pheno": "Strongly reduced kirromycin production"
                 },
                 {
-                    "gene_id": "CAN89636.1",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "CAN89636.1",
                     "mut_pheno": "Loss of kirromycin production"
                 },
                 {
-                    "gene_id": "CAN89639.1",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Activity assay"
                     ],
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "CAN89639.1",
                     "mut_pheno": "Strongly decreased kirromycin production, but traces of kirromycin still detectable"
                 },
                 {
-                    "gene_id": "CAN89643.1",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Activity assay"
                     ],
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "CAN89643.1",
                     "mut_pheno": "Loss of kirromycin production"
                 },
                 {
-                    "gene_id": "CAN89641.1",
-                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Activity assay"
-                    ]
+                    ],
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "CAN89641.1"
                 }
             ]
         },
-        "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Modular type I",
-                "Trans-AT type I"
+        "loci": {
+            "accession": "AM746336.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0001070",
+        "nrp": {
+            "lin_cycl_nrp": "Linear",
+            "nrps_genes": [
+                {
+                    "nrps_gene": "CAN89633.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Glycine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "6",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                },
+                {
+                    "nrps_gene": "CAN89638.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [
+                                    "can89641.1"
+                                ],
+                                "aa_type": "Nonproteinogenic",
+                                "evidence_a_spec": "Structure-based inference",
+                                "nonprot_adom_spec": "Beta-alanine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "16",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                }
             ],
-            "starter_unit": "Acetyl-CoA",
+            "nrps_release_type": "Unknown",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": [],
+            "subclass": "Unknown"
+        },
+        "polyketide": {
+            "lin_cycl_pk": "Linear",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "CAN89631.1",
@@ -138,39 +168,39 @@
                     "mod_pks_gene": "CAN89632.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "2",
                             "pks_domains": [
                                 "Ketoreductase",
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "D-OH",
                             "module_nr": "3",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "4",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -208,19 +238,20 @@
                     "mod_pks_gene": "CAN89634.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "D-OH",
                             "module_nr": "7",
                             "pks_domains": [
                                 "Ketoreductase",
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "8",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -228,7 +259,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
@@ -246,26 +276,26 @@
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "D-OH",
                             "module_nr": "10",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "11",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -287,19 +317,20 @@
                     "mod_pks_gene": "CAN89635.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "12",
                             "pks_domains": [
                                 "Ketoreductase",
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "13",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -307,7 +338,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -319,6 +349,8 @@
                     "mod_pks_gene": "CAN89636.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "kr_stereochem": "L-OH",
                             "module_nr": "14",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -327,21 +359,19 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Malonyl-CoA",
                             "module_nr": "15",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -350,62 +380,32 @@
                     ]
                 }
             ],
+            "pk_subclass": "Other",
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Modular type I",
+                "Trans-AT type I"
+            ],
+            "pks_te_type": "None",
+            "starter_unit": "Acetyl-CoA",
             "trans_at": [
                 "can89639.1",
                 "can89643.1"
-            ],
-            "pks_te_type": "None",
-            "pks_release_type": "Unknown"
+            ]
         },
-        "nrp": {
-            "subclass": "Unknown",
-            "lin_cycl_nrp": "Linear",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "CAN89633.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "6",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Glycine",
-                                "evidence_a_spec": "Structure-based inference"
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "CAN89638.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "16",
-                            "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "Beta-alanine",
-                                "aa_subcluster": [
-                                    "can89641.1"
-                                ],
-                                "evidence_a_spec": "Structure-based inference"
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Unknown"
-        }
+        "publications": [
+            "pubmed:4554808",
+            "pubmed:4373734",
+            "pubmed:18291322",
+            "pubmed:21513880",
+            "pubmed:19609288",
+            "pubmed:21401713",
+            "pubmed:23828654"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "tiwe@biosustain.dtu.dk",
+        "submitter_institution": "The Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark",
+        "submitter_name": "Tilmann Weber"
+    }
 }

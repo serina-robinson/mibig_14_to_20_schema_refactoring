@@ -1,51 +1,38 @@
 {
-    "submitter": {
-        "name": "Mohamed Donia",
-        "institution": "Princeton University",
-        "email": "donia@princeton.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000480",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:18425112"
-        ],
-        "loci": {
-            "accession": "EU290741.1",
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "tenuecyclamide A",
-                "chem_synonyms": [],
-                "database_id": "pubchem:24762151",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "tenuecyclamide A",
+                "database_id": "pubchem:24762151"
             },
             {
-                "compound": "tenuecyclamide C",
-                "chem_synonyms": [],
-                "database_id": "pubchem:10720367",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "tenuecyclamide C",
+                "database_id": "pubchem:10720367"
             }
         ],
         "genes": {
             "operons": [
                 {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
                     "genes": [
                         "aca04480.1",
                         "aca04481.1",
@@ -54,19 +41,26 @@
                         "aca04484.1",
                         "aca04485.1",
                         "aca04486.1"
-                    ],
-                    "evidence": [
-                        "Sequence-based prediction"
                     ]
                 }
             ]
         },
+        "loci": {
+            "accession": "EU290741.1",
+            "completeness": "complete",
+            "evidence": [
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0000480",
+        "publications": [
+            "pubmed:18425112"
+        ],
         "ripp": {
-            "subclass": "Cyanobactin",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "aca04484.1",
                     "cleavage_recogn_site": [
                         "GVGAS",
                         "AYD",
@@ -77,11 +71,17 @@
                         "ATGCMC",
                         "ATACAC"
                     ],
-                    "leader_sequence": 42,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "aca04484.1",
+                    "leader_sequence": 42
                 }
             ],
-            "peptidases": []
+            "subclass": "Cyanobactin"
         }
+    },
+    "submitter": {
+        "email": "donia@princeton.edu",
+        "institution": "Princeton University",
+        "name": "Mohamed Donia"
     }
 }

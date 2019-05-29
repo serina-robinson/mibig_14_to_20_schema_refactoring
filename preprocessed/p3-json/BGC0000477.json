@@ -1,40 +1,34 @@
 {
-    "version": "17",
-    "personal": {
-        "submitter_name": "Mohamed Donia",
-        "submitter_institution": "Princeton University",
-        "submitter_email": "donia@princeton.edu"
-    },
     "general_params": {
-        "mibig_accession": "BGC0000477",
+        "RiPP": {
+            "lin_cycl_ripp": "Cyclic",
+            "precursor_loci": [
+                {
+                    "cleavage_recogn_site": [
+                        "GVDAS",
+                        "SYD",
+                        "GVDAS",
+                        "SYDD"
+                    ],
+                    "core_pept_aa": [
+                        "TLPVPTLC",
+                        "TVPTLC"
+                    ],
+                    "foll_pept_len": -1,
+                    "gene_id": [
+                        "aca04491.1"
+                    ],
+                    "lead_pept_len": 40,
+                    "peptidase": []
+                }
+            ],
+            "ripp_subclass": "Cyanobactin"
+        },
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "18425112"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "EU290742",
-                    "start_coord": -1,
-                    "end_coord": -1,
-                    "conn_comp_cluster": [
-                        "Heterologous expression"
-                    ]
-                }
-            ]
-        },
         "compounds": [
             {
-                "compound": "patellin 2 ",
-                "chem_synonyms": [],
-                "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
-                "pubchem_id": 24762149,
                 "chem_act": [
                     "Unknown"
                 ],
@@ -42,24 +36,32 @@
                     {
                         "moiety_subcluster": []
                     }
-                ]
-            },
-            {
-                "compound": "patellin 3",
+                ],
                 "chem_synonyms": [],
+                "compound": "patellin 2 ",
                 "database_deposited": true,
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 24762150,
+                "pubchem_id": 24762149
+            },
+            {
                 "chem_act": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "patellin 3",
+                "database_deposited": true,
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "pubchem_id": 24762150
             }
         ],
         "genes": {
             "operon": [
                 {
+                    "evidence_operon": "Other",
                     "operon_genes": [
                         "aca04487.1",
                         "aca04488.1",
@@ -69,34 +71,32 @@
                         "aca04492.1",
                         "aca04493.1",
                         "aca04494.1"
-                    ],
-                    "evidence_operon": "Other"
+                    ]
                 }
             ]
         },
-        "RiPP": {
-            "ripp_subclass": "Cyanobactin",
-            "lin_cycl_ripp": "Cyclic",
-            "precursor_loci": [
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
                 {
-                    "gene_id": [
-                        "aca04491.1"
+                    "Accession": "EU290742",
+                    "conn_comp_cluster": [
+                        "Heterologous expression"
                     ],
-                    "core_pept_aa": [
-                        "TLPVPTLC",
-                        "TVPTLC"
-                    ],
-                    "lead_pept_len": 40,
-                    "foll_pept_len": -1,
-                    "cleavage_recogn_site": [
-                        "GVDAS",
-                        "SYD",
-                        "GVDAS",
-                        "SYDD"
-                    ],
-                    "peptidase": []
+                    "end_coord": -1,
+                    "start_coord": -1
                 }
             ]
-        }
-    }
+        },
+        "mibig_accession": "BGC0000477",
+        "publications": [
+            "18425112"
+        ]
+    },
+    "personal": {
+        "submitter_email": "donia@princeton.edu",
+        "submitter_institution": "Princeton University",
+        "submitter_name": "Mohamed Donia"
+    },
+    "version": "17"
 }

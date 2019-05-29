@@ -1,23 +1,27 @@
 {
-    "submitter": {
-        "name": "Nadine Ziemert",
-        "institution": "University of Tuebingen",
-        "email": "nziemert@ucsd.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000473",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:18245249"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_synonyms": [
+                    "aerucyclamide"
+                ],
+                "compound": "microcyclamide",
+                "database_id": "pubchem:10555282"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "AM774406.1",
             "completeness": "complete",
@@ -25,25 +29,18 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "microcyclamide",
-                "chem_synonyms": [
-                    "aerucyclamide"
-                ],
-                "database_id": "pubchem:10555282",
-                "chem_acts": [
-                    "Unknown"
-                ]
-            }
+        "mibig_accession": "BGC0000473",
+        "publications": [
+            "pubmed:18245249"
         ],
-        "genes": {},
         "ripp": {
-            "subclass": "Cyanobactin",
             "cyclic": true,
+            "peptidases": [
+                "cao82088",
+                "cao82081"
+            ],
             "precursor_genes": [
                 {
-                    "gene_id": "cao82085",
                     "cleavage_recogn_site": [
                         "GLEAS",
                         "AFDGAEAS",
@@ -52,14 +49,17 @@
                     "core_sequence": [
                         "MRITPMDKKNILPQQGKPVFRTTTGKLPSYLAELSEEALGGNGLEASHCATICAFDGAEASHCATICAFDGDEA"
                     ],
-                    "leader_sequence": 74,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "cao82085",
+                    "leader_sequence": 74
                 }
             ],
-            "peptidases": [
-                "cao82088",
-                "cao82081"
-            ]
+            "subclass": "Cyanobactin"
         }
+    },
+    "submitter": {
+        "email": "nziemert@ucsd.edu",
+        "institution": "University of Tuebingen",
+        "name": "Nadine Ziemert"
     }
 }

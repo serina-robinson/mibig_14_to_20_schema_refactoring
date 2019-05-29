@@ -1,26 +1,36 @@
 {
-    "submitter": {
-        "name": "Keishi Ishida",
-        "institution": "Leipniz Institute for Natural Product Research and Infection Biology",
-        "email": "keishi.ishida@hki-jena.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000206",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:15911378",
-            "pubmed:14529449",
-            "pubmed:12384604",
-            "pubmed:12107551"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Inhibitor",
+                    "Antitumor"
+                ],
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "DNA"
+                    },
+                    {
+                        "publications": [],
+                        "target": "topoisomeraseII"
+                    }
+                ],
+                "compound": "chartreusin",
+                "database_id": "pubchem:5281394;chemspider:4444748"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "AJ786382.1",
             "completeness": "complete",
@@ -30,51 +40,41 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "chartreusin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:5281394;chemspider:4444748",
-                "chem_acts": [
-                    "Inhibitor",
-                    "Antitumor"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "DNA",
-                        "publications": []
-                    },
-                    {
-                        "target": "topoisomeraseII",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {},
+        "mibig_accession": "BGC0000206",
         "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "ketide_length": 10,
             "cyclases": [
                 "CAH10155.1",
                 "CAH10156.1"
             ],
+            "cyclic": true,
+            "ketide_length": 10,
+            "starter_unit": "Acetyl-CoA",
             "subclasses": [
                 "Anthracycline"
             ],
-            "cyclic": true,
             "synthases": [
                 {
                     "genes": [
-                        "CAH10156.1",
+                        "CAH10155.1",
                         "cah10161.1",
-                        "CAH10155.1"
+                        "CAH10156.1"
                     ],
                     "subclass": [
                         "Type II"
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:15911378",
+            "pubmed:14529449",
+            "pubmed:12384604",
+            "pubmed:12107551"
+        ]
+    },
+    "submitter": {
+        "email": "keishi.ishida@hki-jena.de",
+        "institution": "Leipniz Institute for Natural Product Research and Infection Biology",
+        "name": "Keishi Ishida"
     }
 }

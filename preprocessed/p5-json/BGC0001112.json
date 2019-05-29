@@ -1,74 +1,98 @@
 {
-    "personal": {
-        "submitter_name": "Yuta Tsunematsu",
-        "submitter_institution": "University of Shizuoka",
-        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0001112",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:17154220",
-            "pubmed:19266509",
-            "pubmed:22915379",
-            "pubmed:24048471",
-            "pubmed:25214315"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Sequence-based prediction"
-            ],
-            "accession": "AM411073.1"
-        },
         "compounds": [
             {
-                "compound": "rhizoxin A",
-                "chem_synonyms": [],
-                "pubchem_id": 6437358,
                 "chem_act": [
                     "Cytotoxic"
                 ],
+                "chem_synonyms": [],
                 "chem_target": [
                     "tublin"
-                ]
+                ],
+                "compound": "rhizoxin A",
+                "pubchem_id": 6437358
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "rhiG",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1066,
-                    "gene_endpos": 3063,
-                    "gene_id": "CAL69887.1",
-                    "gene_annotation": "acyltransferase",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "loss of rhizoxin A production"
+                    "gene_annotation": "acyltransferase",
+                    "gene_endpos": 3063,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "CAL69887.1",
+                    "gene_name": "rhiG",
+                    "gene_startpos": 1066,
+                    "mut_pheno": "loss of rhizoxin A production",
+                    "not_in_gbk": false
                 }
             ]
         },
-        "polyketide": {
-            "pk_subclass": "Macrolide",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Trans-AT type I"
+        "loci": {
+            "accession": "AM411073.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0001112",
+        "nrp": {
+            "lin_cycl_nrp": "Linear",
+            "nrps_genes": [
+                {
+                    "nrps_gene": "rhiA, CAL69888.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false
+                            },
+                            "cdom_subtype": "Unknown",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                },
+                {
+                    "nrps_gene": "rhiB, CAL69889.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Serine"
+                            },
+                            "module_nr": "1",
+                            "nrps_mod_doms": "Oxidation",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                }
             ],
-            "starter_unit": "Malonyl-CoA",
-            "trans_at": [
-                "rhig",
+            "nrps_release_type": "Unknown",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": [
                 "am411073"
             ],
-            "pks_te_type": "Type I",
-            "pks_release_type": "Macrolactonization",
+            "subclass": "Unknown"
+        },
+        "polyketide": {
+            "lin_cycl_pk": "Cyclic",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "rhiA, CAL69888.1",
@@ -89,6 +113,7 @@
                     "mod_pks_gene": "rhiB, CAL69889.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "1",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -96,13 +121,13 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "2",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -111,20 +136,19 @@
                                 "Thiolation (ACP/PCP)",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "3",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Dehydratase",
                                 "Ketoreductase"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -146,32 +170,33 @@
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "D-OH",
                             "module_nr": "4",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "5",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "D-OH",
                             "module_nr": "6",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -179,7 +204,6 @@
                                 "Thiolation (ACP/PCP)",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -191,6 +215,7 @@
                     "mod_pks_gene": "rhiD, CAL69891.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "7",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -198,13 +223,13 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "Unknown"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "8",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -212,7 +237,6 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
@@ -224,6 +248,7 @@
                     "mod_pks_gene": "rhiE, CAL69892.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "10",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -231,7 +256,6 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -249,6 +273,7 @@
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "D-OH",
                             "module_nr": "9",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -257,7 +282,6 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "Unknown"
                             ],
@@ -269,6 +293,7 @@
                     "mod_pks_gene": "rhiF, CAL69893.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "L-OH",
                             "module_nr": "12",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -276,7 +301,6 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -284,54 +308,30 @@
                         }
                     ]
                 }
+            ],
+            "pk_subclass": "Macrolide",
+            "pks_release_type": "Macrolactonization",
+            "pks_subclass": [
+                "Trans-AT type I"
+            ],
+            "pks_te_type": "Type I",
+            "starter_unit": "Malonyl-CoA",
+            "trans_at": [
+                "rhig",
+                "am411073"
             ]
         },
-        "nrp": {
-            "subclass": "Unknown",
-            "lin_cycl_nrp": "Linear",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [
-                "am411073"
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "rhiA, CAL69888.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "1",
-                            "a_substr_spec": {
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "Unknown",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "rhiB, CAL69889.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "1",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Serine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "nrps_mod_doms": "Oxidation",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ]
-        }
+        "publications": [
+            "pubmed:17154220",
+            "pubmed:19266509",
+            "pubmed:22915379",
+            "pubmed:24048471",
+            "pubmed:25214315"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp",
+        "submitter_institution": "University of Shizuoka",
+        "submitter_name": "Yuta Tsunematsu"
+    }
 }

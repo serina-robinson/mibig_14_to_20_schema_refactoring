@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Daniel Krug",
-        "submitter_institution": "HIPS",
-        "submitter_email": "daniel.krug@helmholtz-hzi.de"
+    "submitter": {
+        "name": "Daniel Krug",
+        "institution": "HIPS",
+        "email": "daniel.krug@helmholtz-hzi.de"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000023",
         "biosyn_class": [
             "Polyketide"
@@ -13,11 +19,11 @@
             "pubmed:17919655"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "AM850130.1",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies"
-            ],
-            "accession": "AM850130.1"
+            ]
         },
         "compounds": [
             {
@@ -26,293 +32,356 @@
                 "chem_struct": "C(C)(C)C/C=C(\\C)/C(O)C(C)/C=C/C=C\\C(O)CC1OC(O)(C)C(=O)C=1C",
                 "molecular_formula": "C22H34O5",
                 "mol_mass": 379.2479,
-                "mass_ion_type": "[M+H]+",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
                     "Antifungal",
                     "Cytotoxic"
                 ],
-                "chem_target": [
-                    "cholesterolbiosynthesis"
+                "chem_targets": [
+                    {
+                        "target": "cholesterolbiosynthesis",
+                        "publications": []
+                    }
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "aufA",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98845.1",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "aufB",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98846.1",
-                    "gene_annotation": "cytochrome P450 monooxygenase AufB",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "aufC",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98847.1",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "aufA",
+                    "id": "CAO98845.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "complete loss of Aurafuron A production"
-                },
-                {
-                    "gene_name": "aufD",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98879.1",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
+                    "tailoring": [
+                        "Oxidation"
                     ]
                 },
                 {
-                    "gene_name": "aufE",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98848.1",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
+                    "name": "aufB",
+                    "id": "CAO98846.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "cytochrome P450 monooxygenase AufB",
+                    "tailoring": [
+                        "Oxidation"
                     ]
                 },
                 {
-                    "gene_name": "aufF",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98849.1",
-                    "gene_annotation": "polyketide synthase AufF",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
+                    "name": "aufC",
+                    "id": "CAO98847.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ]
                 },
                 {
-                    "gene_name": "aufG",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98850.1",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
+                    "name": "aufD",
+                    "id": "CAO98879.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
                     ]
                 },
                 {
-                    "gene_name": "aufH",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98851.1",
-                    "gene_annotation": "cytochrome P450 monooxygenase AufH",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
+                    "name": "aufE",
+                    "id": "CAO98848.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
                     ]
                 },
                 {
-                    "gene_name": "aufI",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98852.1",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
+                    "name": "aufF",
+                    "id": "CAO98849.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "polyketide synthase AufF"
+                },
+                {
+                    "name": "aufG",
+                    "id": "CAO98850.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
                     ]
                 },
                 {
-                    "gene_name": "aufJ",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98853.1",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
+                    "name": "aufH",
+                    "id": "CAO98851.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "cytochrome P450 monooxygenase AufH",
+                    "tailoring": [
+                        "Oxidation"
                     ]
                 },
                 {
-                    "gene_name": "ctg1_orf00002",
-                    "not_in_gbk": false,
-                    "gene_id": "ctg1_orf00002",
-                    "gene_function": "Unknown"
+                    "name": "aufI",
+                    "id": "CAO98852.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "gene_name": "ctg1_orf00004",
-                    "not_in_gbk": false,
-                    "gene_id": "ctg1_orf00004",
-                    "gene_function": "Unknown"
-                },
-                {
-                    "gene_name": "CAO98844.1",
-                    "not_in_gbk": false,
-                    "gene_id": "CAO98844.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown"
+                    "name": "aufJ",
+                    "id": "CAO98853.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "tailoring": [
+                        "Oxidation"
+                    ]
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Modular type I"
-            ],
             "starter_unit": "3-Methylbutyryl-CoA",
-            "mod_pks_genes": [
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
                 {
-                    "mod_pks_gene": "CAO98847.1",
-                    "pks_module": [
+                    "genes": [
+                        "CAO98848.1",
+                        "CAO98850.1",
+                        "CAO98852.1",
+                        "CAO98849.1",
+                        "CAO98847.1",
+                        "CAO98879.1"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": [],
+                    "modules": [
                         {
-                            "module_nr": "6",
-                            "pks_domains": [
+                            "genes": [
+                                "CAO98847.1"
+                            ],
+                            "module_number": "6",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
                             "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAO98879.1",
-                    "pks_module": [
-                        {
-                            "module_nr": "2",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "D-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "3",
-                            "pks_domains": [
+                            "genes": [
+                                "CAO98879.1"
+                            ],
+                            "module_number": "2",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
                             "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Iterated",
-                            "pks_evidence_skip_iter": "Structure-based inference"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAO98848.1",
-                    "pks_module": [
-                        {
-                            "module_nr": "7",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Enoylreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "L-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAO98849.1",
-                    "pks_module": [
-                        {
-                            "module_nr": "4",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "L-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Iterated",
-                            "pks_evidence_skip_iter": "Structure-based inference"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "5",
-                            "pks_domains": [
+                            "genes": [
+                                "CAO98879.1"
+                            ],
+                            "module_number": "3",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
                             "kr_stereochem": "D-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAO98850.1",
-                    "pks_module": [
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
+                        },
                         {
-                            "module_nr": "8",
-                            "pks_domains": [
+                            "genes": [
+                                "CAO98848.1"
+                            ],
+                            "module_number": "7",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "CAO98849.1"
+                            ],
+                            "module_number": "4",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ]
+                            }
+                        },
+                        {
+                            "genes": [
+                                "CAO98849.1"
+                            ],
+                            "module_number": "5",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "kr_stereochem": "D-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "CAO98850.1"
+                            ],
+                            "module_number": "8",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Dehydratase",
                                 "Enoylreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAO98852.1",
-                    "pks_module": [
+                            "comments": ""
+                        },
                         {
-                            "module_nr": "1",
-                            "pks_domains": [
+                            "genes": [
+                                "CAO98852.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
@@ -320,26 +389,19 @@
                                 "Enoylreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "evidence": "Sequence-based prediction",
                             "kr_stereochem": "L-OH",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         }
                     ]
                 }
-            ],
-            "pks_te_type": "None",
-            "pks_thioesterase": [],
-            "pks_release_type": "Unknown"
+            ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

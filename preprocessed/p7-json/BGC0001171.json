@@ -1,58 +1,31 @@
 {
-    "comments": "The genes within the llsGHXBCDE operon section should also contain an unannotated precursor peptide gene, llsA.",
-    "submitter": {
-        "name": "Professor Douglas Mitchell",
-        "institution": "University of Illinois at Urbana-Champaign",
-        "email": "douglasm@illinois.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001171",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:18375757",
-            "pubmed:18787690",
-            "pubmed:19286651",
-            "pubmed:21075895",
-            "pubmed:21822292",
-            "pubmed:24606727"
-        ],
-        "loci": {
-            "accession": "AE017262.2",
-            "start_coord": 1126697,
-            "end_coord": 1132588,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Listeriolysin S",
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
                 "chem_synonyms": [
                     "lls"
                 ],
-                "mol_mass": -1,
+                "compound": "Listeriolysin S",
                 "database_id": "",
                 "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Cytotoxic"
-                ]
+                "mol_mass": -1
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "llsG",
-                    "id": "LMOf2365_1113",
                     "functions": [
                         {
                             "category": "Transport",
@@ -61,11 +34,11 @@
                             ]
                         }
                     ],
+                    "id": "LMOf2365_1113",
+                    "name": "llsG",
                     "product": "ABC transporter"
                 },
                 {
-                    "name": "llsH",
-                    "id": "LMOf2365_1114",
                     "functions": [
                         {
                             "category": "Transport",
@@ -74,11 +47,11 @@
                             ]
                         }
                     ],
+                    "id": "LMOf2365_1114",
+                    "name": "llsH",
                     "product": "ABC transporter "
                 },
                 {
-                    "name": "llsB",
-                    "id": "LMOf2365_1116",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -87,14 +60,14 @@
                             ]
                         }
                     ],
+                    "id": "LMOf2365_1116",
+                    "name": "llsB",
                     "product": "Dehydrogenase",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "llsC",
-                    "id": "LMOf2365_1117",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -103,14 +76,14 @@
                             ]
                         }
                     ],
+                    "id": "LMOf2365_1117",
+                    "name": "llsC",
                     "product": "Cyclodehydratase partner",
                     "tailoring": [
                         "Heterocyclization"
                     ]
                 },
                 {
-                    "name": "llsD",
-                    "id": "LMOf2365_1118",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -119,14 +92,14 @@
                             ]
                         }
                     ],
+                    "id": "LMOf2365_1118",
+                    "name": "llsD",
                     "product": "Cyclodehydratase",
                     "tailoring": [
                         "Heterocyclization"
                     ]
                 },
                 {
-                    "name": "llsE ",
-                    "id": "LMOf2365_1119",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -135,15 +108,42 @@
                             ]
                         }
                     ],
+                    "id": "LMOf2365_1119",
+                    "name": "llsE ",
                     "product": "Putative protease"
                 }
             ]
         },
-        "ripp": {
-            "subclass": "LAP",
-            "cyclic": false,
-            "peptidases": []
+        "loci": {
+            "accession": "AE017262.2",
+            "completeness": "complete",
+            "end_coord": 1132588,
+            "evidence": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 1126697
         },
-        "minimal": true
+        "mibig_accession": "BGC0001171",
+        "minimal": true,
+        "publications": [
+            "pubmed:18375757",
+            "pubmed:18787690",
+            "pubmed:19286651",
+            "pubmed:21075895",
+            "pubmed:21822292",
+            "pubmed:24606727"
+        ],
+        "ripp": {
+            "cyclic": false,
+            "peptidases": [],
+            "subclass": "LAP"
+        }
+    },
+    "comments": "The genes within the llsGHXBCDE operon section should also contain an unannotated precursor peptide gene, llsA.",
+    "submitter": {
+        "email": "douglasm@illinois.edu",
+        "institution": "University of Illinois at Urbana-Champaign",
+        "name": "Professor Douglas Mitchell"
     }
 }

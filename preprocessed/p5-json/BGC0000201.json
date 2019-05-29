@@ -1,41 +1,18 @@
 {
-    "personal": {
-        "submitter_name": "Jan Kormanec",
-        "submitter_institution": "Institute of Molecular Biology, Slovak Academy of Sciences",
-        "submitter_email": "jan.kormanec@savba.sk"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
+    "comments": "Auricin is stable in acid and unstable in neutral and alkaline pH. It undergoes methanolysis (addition of methanol to the aglycon)   ",
     "general_params": {
-        "mibig_accession": "BGC0000201",
         "biosyn_class": [
             "Polyketide",
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:12384301",
-            "pubmed:16079347",
-            "pubmed:20466770",
-            "pubmed:21393365",
-            "pubmed:23081778",
-            "pubmed:23373695",
-            "pubmed:23763439",
-            "pubmed:24265028",
-            "pubmed:25219533"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies"
-            ],
-            "accession": "KJ396772.1",
-            "start_coord": 58195,
-            "end_coord": 86722
-        },
         "compounds": [
             {
-                "compound": "auricin",
-                "chem_synonyms": [],
-                "mol_mass": 542.2039,
-                "mass_ion_type": "[M+H]+",
                 "chem_act": [
                     "Antibacterial"
                 ],
@@ -53,75 +30,80 @@
                             "aie41917.1"
                         ]
                     }
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "auricin",
+                "mass_ion_type": "[M+H]+",
+                "mol_mass": 542.2039
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "sa59",
-                    "gene_id": "305861153",
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_annotation": "forosamine aminotrasnferase",
                     "gene_function": "Tailoring",
-                    "tailoring": "Amination",
+                    "gene_id": "305861153",
+                    "gene_name": "sa59",
+                    "mut_pheno": "deglycosylated auricin",
+                    "tailoring": "Amination"
+                },
+                {
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "deglycosylated auricin"
-                },
-                {
-                    "gene_name": "sa52",
-                    "gene_id": "305861160",
                     "gene_annotation": "forosamine N.N-dimethyltransferase",
                     "gene_function": "Tailoring",
-                    "tailoring": "Methylation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "demethylated forosamine"
+                    "gene_id": "305861160",
+                    "gene_name": "sa52",
+                    "mut_pheno": "demethylated forosamine",
+                    "tailoring": "Methylation"
                 },
                 {
-                    "gene_name": "aur1PR3",
-                    "gene_id": "662023972",
-                    "gene_annotation": "SARP-family auricin specific regulator",
-                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
+                    "gene_annotation": "SARP-family auricin specific regulator",
+                    "gene_function": "Regulation",
+                    "gene_id": "662023972",
+                    "gene_name": "aur1PR3",
                     "mut_pheno": "decreased auricin"
                 },
                 {
-                    "gene_name": "aur1R",
-                    "gene_id": "662024136",
-                    "gene_annotation": "auricin-specific repressor of TetR family",
-                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
+                    "gene_annotation": "auricin-specific repressor of TetR family",
+                    "gene_function": "Regulation",
+                    "gene_id": "662024136",
+                    "gene_name": "aur1R",
                     "mut_pheno": "increased auricin"
                 },
                 {
-                    "gene_name": "aur1P",
-                    "gene_id": "662024109",
-                    "gene_annotation": "auricin-specific activator",
-                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
+                    "gene_annotation": "auricin-specific activator",
+                    "gene_function": "Regulation",
+                    "gene_id": "662024109",
+                    "gene_name": "aur1P",
                     "mut_pheno": "decreased auricin"
                 },
                 {
-                    "gene_name": "aur1PR4",
-                    "gene_id": "218511497",
-                    "gene_annotation": "SARP-family transcriptional regulator",
-                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Knock-out"
-                    ]
+                    ],
+                    "gene_annotation": "SARP-family transcriptional regulator",
+                    "gene_function": "Regulation",
+                    "gene_id": "218511497",
+                    "gene_name": "aur1PR4"
                 }
             ],
             "operon": [
                 {
+                    "evidence_operon": "Unknown",
                     "operon_genes": [
                         "662024110",
                         "61968690",
@@ -145,46 +127,64 @@
                         "218511486",
                         "218511487",
                         "218511488"
-                    ],
-                    "evidence_operon": "Unknown"
+                    ]
                 },
                 {
+                    "evidence_operon": "Unknown",
                     "operon_genes": [
                         "662024123",
                         "662024122",
                         "662024121",
                         "218511498"
-                    ],
-                    "evidence_operon": "Unknown"
+                    ]
                 }
             ]
         },
+        "loci": {
+            "accession": "KJ396772.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies"
+            ],
+            "end_coord": 86722,
+            "start_coord": 58195
+        },
+        "mibig_accession": "BGC0000201",
         "polyketide": {
-            "pk_subclass": "Angucycline",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Type II"
-            ],
-            "pks_genes": [
-                "61968692",
-                "662024112"
-            ],
-            "ketide_length": -1,
             "cyclases": [
                 "61968691",
                 "61968695",
                 "61968696"
+            ],
+            "ketide_length": -1,
+            "lin_cycl_pk": "Cyclic",
+            "pk_subclass": "Angucycline",
+            "pks_genes": [
+                "61968692",
+                "662024112"
+            ],
+            "pks_subclass": [
+                "Type II"
             ]
         },
+        "publications": [
+            "pubmed:12384301",
+            "pubmed:16079347",
+            "pubmed:20466770",
+            "pubmed:21393365",
+            "pubmed:23081778",
+            "pubmed:23373695",
+            "pubmed:23763439",
+            "pubmed:24265028",
+            "pubmed:25219533"
+        ],
         "saccharide": {
             "saccharide_subclass": "hybrid/tailoring"
         }
     },
-    "comments": "Auricin is stable in acid and unstable in neutral and alkaline pH. It undergoes methanolysis (addition of methanol to the aglycon)   ",
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "jan.kormanec@savba.sk",
+        "submitter_institution": "Institute of Molecular Biology, Slovak Academy of Sciences",
+        "submitter_name": "Jan Kormanec"
+    }
 }

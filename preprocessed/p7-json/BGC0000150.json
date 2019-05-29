@@ -1,40 +1,20 @@
 {
-    "submitter": {
-        "name": "Nadine Ziemert",
-        "institution": "University Tuebingen",
-        "email": "nziemert@ucsd.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000150",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:18232689"
-        ],
-        "loci": {
-            "accession": "CP000667.1",
-            "start_coord": 3027087,
-            "end_coord": 3086780,
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays"
-            ]
-        },
         "compounds": [
             {
-                "compound": "sporolide",
-                "chem_synonyms": [],
-                "chem_struct": "[H]C12OC11C(=O)C(C)=C3OC45C(O)C6=C(C(Cl)=C(C=C6)[C@@]([H])(O)COC(=O)[C@]1([H])OC)C4(OC23O)C([H])(O)CC5([H])O",
-                "molecular_formula": "C24H23ClO12",
-                "mol_mass": 538.087803907,
+                "chem_acts": [
+                    "Unknown"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "cyclohexenone",
@@ -52,29 +32,88 @@
                         ]
                     }
                 ],
+                "chem_struct": "[H]C12OC11C(=O)C(C)=C3OC45C(O)C6=C(C(Cl)=C(C=C6)[C@@]([H])(O)COC(=O)[C@]1([H])OC)C4(OC23O)C([H])(O)CC5([H])O",
+                "chem_synonyms": [],
+                "compound": "sporolide",
                 "database_id": "",
                 "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Unknown"
-                ]
+                "mol_mass": 538.087803907,
+                "molecular_formula": "C24H23ClO12"
             }
         ],
         "genes": {},
-        "polyketide": {
-            "starter_unit": "Malonyl-CoA",
-            "subclasses": [
-                "Enediyine"
+        "loci": {
+            "accession": "CP000667.1",
+            "completeness": "complete",
+            "end_coord": 3086780,
+            "evidence": [
+                "Enzymatic assays"
             ],
+            "start_coord": 3027087
+        },
+        "mibig_accession": "BGC0000150",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ABP55165.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "polyketide": {
             "cyclic": true,
             "release_type": [
                 "Unknown"
             ],
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Enediyine"
+            ],
             "synthases": [
                 {
                     "genes": [
-                        "stro2696",
                         "stro2697",
+                        "stro2696",
                         "ABP55141.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABP55141.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            },
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        }
                     ],
                     "subclass": [
                         "Enediyne type I"
@@ -84,56 +123,17 @@
                             "gene": "stro2696",
                             "thioesterase_type": "Type II"
                         }
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "ABP55141.1"
-                            ],
-                            "module_number": "1",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": "",
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": true,
-                                "evidence": [
-                                    "Structure-based inference"
-                                ]
-                            }
-                        }
                     ]
                 }
             ]
         },
-        "nrp": {
-            "nrps_genes": [
-                {
-                    "gene_id": "ABP55165.1",
-                    "modules": [
-                        {
-                            "module_number": "2",
-                            "active": true,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        }
+        "publications": [
+            "pubmed:18232689"
+        ]
+    },
+    "submitter": {
+        "email": "nziemert@ucsd.edu",
+        "institution": "University Tuebingen",
+        "name": "Nadine Ziemert"
     }
 }

@@ -1,81 +1,75 @@
 {
-    "personal": {
-        "submitter_name": "Changsheng Zhang",
-        "submitter_institution": "South China Sea Institute of Oceanology, Chinese Academy of Sciences",
-        "submitter_email": "czhang2006@gmail.com"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0001169",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24409990"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Sequence-based prediction"
-            ],
-            "accession": "KF874660.1"
-        },
         "compounds": [
             {
-                "compound": "piericidin A1",
-                "chem_synonyms": [],
-                "pubchem_id": 6437838,
                 "chem_act": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "piericidin A1",
+                "pubchem_id": 6437838
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "pieB1",
-                    "gene_id": "GI:570518041",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Methylation",
                     "evidence_genefunction": [
                         "Knock-out"
-                    ]
+                    ],
+                    "gene_function": "Tailoring",
+                    "gene_id": "GI:570518041",
+                    "gene_name": "pieB1",
+                    "tailoring": "Methylation"
                 },
                 {
-                    "gene_name": "pieB2",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Activity assay"
+                    ],
+                    "gene_function": "Tailoring",
                     "gene_id": "GI:570518044",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Methylation",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
-                    ]
+                    "gene_name": "pieB2",
+                    "tailoring": "Methylation"
                 },
                 {
-                    "gene_name": "pieE",
-                    "gene_id": "GI:570518045",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Hydroxylation",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Activity assay"
-                    ]
+                    ],
+                    "gene_function": "Tailoring",
+                    "gene_id": "GI:570518045",
+                    "gene_name": "pieE",
+                    "tailoring": "Hydroxylation"
                 }
             ]
         },
+        "loci": {
+            "accession": "KF874660.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0001169",
         "polyketide": {
-            "pk_subclass": "Polyene",
             "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "starter_unit": "Malonyl-CoA",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "pieA1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "1",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -84,20 +78,19 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Malonyl-CoA",
                             "module_nr": "0",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -109,6 +102,7 @@
                     "mod_pks_gene": "pieA2",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "2",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -116,13 +110,13 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "3",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -131,7 +125,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -143,6 +136,7 @@
                     "mod_pks_gene": "pieA3",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Malonyl-CoA",
                             "module_nr": "4",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -151,7 +145,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -163,6 +156,7 @@
                     "mod_pks_gene": "pieA4",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "5",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -172,7 +166,6 @@
                                 "Enoylreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -184,6 +177,7 @@
                     "mod_pks_gene": "pieA5",
                     "pks_module": [
                         {
+                            "at_substr_spec": "None",
                             "module_nr": "6",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -192,7 +186,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -204,26 +197,26 @@
                     "mod_pks_gene": "pieA6",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "7",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "8",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -232,14 +225,21 @@
                     ]
                 }
             ],
+            "pk_subclass": "Polyene",
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Modular type I"
+            ],
             "pks_te_type": "Unknown",
-            "pks_release_type": "Unknown"
-        }
+            "starter_unit": "Malonyl-CoA"
+        },
+        "publications": [
+            "pubmed:24409990"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "czhang2006@gmail.com",
+        "submitter_institution": "South China Sea Institute of Oceanology, Chinese Academy of Sciences",
+        "submitter_name": "Changsheng Zhang"
+    }
 }

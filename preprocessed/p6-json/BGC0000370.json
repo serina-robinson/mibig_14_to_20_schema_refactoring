@@ -1,39 +1,19 @@
 {
-    "submitter": {
-        "name": "Jonathan Walton",
-        "institution": "Michigan State University",
-        "email": "walton@msu.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000370",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:8672886",
-            "pubmed:11860263",
-            "pubmed:23865912",
-            "pubmed:16839576"
-        ],
-        "loci": {
-            "accession": "M98024.2",
-            "completeness": "incomplete",
-            "evidence": [
-                "Knock-out studies",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "HC-toxin",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Inhibitor"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "2-amino-9,10-epoxi-8-oxodecanoic acid",
@@ -44,24 +24,20 @@
                         ]
                     }
                 ],
-                "database_id": "pubchem:107864",
-                "chem_acts": [
-                    "Inhibitor"
-                ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "histonedeacetylaseRPD3-class",
-                        "publications": []
+                        "publications": [],
+                        "target": "histonedeacetylaseRPD3-class"
                     }
-                ]
+                ],
+                "compound": "HC-toxin",
+                "database_id": "pubchem:107864"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "TOXA",
-                    "id": "AAB36607.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -70,11 +46,11 @@
                             ]
                         }
                     ],
+                    "id": "AAB36607.1",
+                    "name": "TOXA",
                     "product": "cyclic peptide efflux pump"
                 },
                 {
-                    "name": "TOXC",
-                    "id": "AAC62818.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -83,11 +59,11 @@
                             ]
                         }
                     ],
+                    "id": "AAC62818.1",
+                    "name": "TOXC",
                     "product": "fatty acid synthase beta subunit"
                 },
                 {
-                    "name": "TOXD",
-                    "id": "CAA63129.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -96,11 +72,11 @@
                             ]
                         }
                     ],
+                    "id": "CAA63129.1",
+                    "name": "TOXD",
                     "product": "putative short chain alcohol dehydrogenase"
                 },
                 {
-                    "name": "TOXE",
-                    "id": "AAD13811.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -109,11 +85,11 @@
                             ]
                         }
                     ],
+                    "id": "AAD13811.1",
+                    "name": "TOXE",
                     "product": "transcription factor"
                 },
                 {
-                    "name": "TOXF",
-                    "id": "AAD45321.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -122,11 +98,11 @@
                             ]
                         }
                     ],
+                    "id": "AAD45321.1",
+                    "name": "TOXF",
                     "product": "putative branched chain amino acid aminotransferase"
                 },
                 {
-                    "name": "TOXG",
-                    "id": "AAD47837.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -135,11 +111,11 @@
                             ]
                         }
                     ],
+                    "id": "AAD47837.1",
+                    "name": "TOXG",
                     "product": "alanine racemase"
                 },
                 {
-                    "name": "TOXH",
-                    "id": "AGR67369.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -148,86 +124,110 @@
                             ]
                         }
                     ],
+                    "id": "AGR67369.1",
+                    "name": "TOXH",
                     "product": "fatty acid synthases alpha subunit"
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "M98024.2",
+            "completeness": "incomplete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Sequence-based prediction"
             ]
         },
+        "mibig_accession": "BGC0000370",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "AAA33023.2",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "Proline"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "Proline"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "Unknown"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
                                 "nonproteinogenic": [
                                     "Alanine"
-                                ],
-                                "evidence": [
-                                    "Activity assay"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         },
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "D-alanine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "D-alanine"
+                                ]
                             },
-                            "module_number": "3",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "3"
                         },
                         {
-                            "module_number": "4",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "4"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Macrolactamization"
-            ]
-        }
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:8672886",
+            "pubmed:11860263",
+            "pubmed:23865912",
+            "pubmed:16839576"
+        ]
+    },
+    "submitter": {
+        "email": "walton@msu.edu",
+        "institution": "Michigan State University",
+        "name": "Jonathan Walton"
     }
 }

@@ -1,53 +1,20 @@
 {
-    "submitter": {
-        "name": "Ryan F. Seipke",
-        "institution": "University of Leeds",
-        "email": "r.seipke@leeds.ac.uk"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000958",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:21857911",
-            "pubmed:22378565",
-            "pubmed:22861048",
-            "pubmed:22971101",
-            "pubmed:23772837",
-            "pubmed:24123503",
-            "pubmed:25275920",
-            "pubmed:24367419",
-            "pubmed:11175751",
-            "pubmed:13836892"
-        ],
-        "loci": {
-            "accession": "NZ_FR873698.1",
-            "start_coord": 81953,
-            "end_coord": 106578,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Antimycin",
-                "chem_synonyms": [
-                    "antipiricullin",
-                    "fintrol",
-                    "virosin"
+                "chem_acts": [
+                    "Antifungal",
+                    "Cytotoxic"
                 ],
                 "chem_moieties": [
                     {
@@ -65,98 +32,53 @@
                         ]
                     }
                 ],
-                "database_id": "pubchem:14957",
-                "chem_acts": [
-                    "Antifungal",
-                    "Cytotoxic"
+                "chem_synonyms": [
+                    "antipiricullin",
+                    "fintrol",
+                    "virosin"
                 ],
                 "chem_targets": [
                     {
-                        "target": "Bcl-XL",
-                        "publications": []
+                        "publications": [],
+                        "target": "Bcl-XL"
                     },
                     {
-                        "target": "cytochromeCreductase",
-                        "publications": []
+                        "publications": [],
+                        "target": "cytochromeCreductase"
                     }
-                ]
+                ],
+                "compound": "Antimycin",
+                "database_id": "pubchem:14957"
             }
         ],
         "genes": {},
-        "polyketide": {
-            "starter_unit": "Unknown",
-            "subclasses": [
-                "Other"
+        "loci": {
+            "accession": "NZ_FR873698.1",
+            "completeness": "complete",
+            "end_coord": 106578,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
             ],
-            "cyclic": true,
-            "release_type": [
-                "Macrolactamization"
-            ],
-            "synthases": [
-                {
-                    "genes": [
-                        "ZP_09179980.1",
-                        "ZP_09179989.1"
-                    ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "ZP_09179980.1"
-                            ],
-                            "module_number": "3",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)",
-                                "Thioesterase"
-                            ],
-                            "at_specificities": [
-                                "Various atypical acyl-CoAs"
-                            ],
-                            "evidence": "Activity assay",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ZP_09179989.1"
-                            ],
-                            "module_number": "3",
-                            "domains": [
-                                "Ketoreductase"
-                            ],
-                            "at_specificities": [
-                                "Unknown"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        }
-                    ]
-                }
-            ]
+            "start_coord": 81953
         },
+        "mibig_accession": "BGC0000958",
         "nrp": {
-            "subclass": "Cyclic depsipeptide",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "ZP_09179982.1",
                     "modules": [
                         {
-                            "module_number": "0",
                             "active": false,
                             "c_dom_subtype": "Starter",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         }
                     ]
                 },
@@ -164,11 +86,11 @@
                     "gene_id": "ZP_09179983.1",
                     "modules": [
                         {
-                            "module_number": "0",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         }
                     ]
                 },
@@ -177,48 +99,126 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Threonine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Threonine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "Starter",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "Pyruvate"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "Pyruvate"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Macrolactonization"
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "thioesterases": []
+        },
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "starter_unit": "Unknown",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ZP_09179980.1",
+                        "ZP_09179989.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Various atypical acyl-CoAs"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)",
+                                "Thioesterase"
+                            ],
+                            "evidence": "Activity assay",
+                            "genes": [
+                                "ZP_09179980.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "3",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketoreductase"
+                            ],
+                            "genes": [
+                                "ZP_09179989.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "3",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:21857911",
+            "pubmed:22378565",
+            "pubmed:22861048",
+            "pubmed:22971101",
+            "pubmed:23772837",
+            "pubmed:24123503",
+            "pubmed:25275920",
+            "pubmed:24367419",
+            "pubmed:11175751",
+            "pubmed:13836892"
+        ]
+    },
+    "submitter": {
+        "email": "r.seipke@leeds.ac.uk",
+        "institution": "University of Leeds",
+        "name": "Ryan F. Seipke"
     }
 }

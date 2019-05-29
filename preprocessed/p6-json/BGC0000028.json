@@ -1,23 +1,34 @@
 {
-    "submitter": {
-        "name": "Fengan Yu",
-        "institution": "University of Michigan-Ann Arbor",
-        "email": "fenganyu@umich.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000028",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:23362147"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial",
+                    "Antifungal",
+                    "antineoplastic, immunosuppressive"
+                ],
+                "chem_struct": "C[C@@H]1C/C(=C\\\\C=C[C@@H]([C@H](OC(=O)/C(=C/C(=C/[C@H]([C@H]1O)C)/C)/OC)[C@@H](C)[C@H]([C@H](C)[C@]2(C[C@H]([C@@H]([C@H](O2)C(C)C)C)O)O)O)OC)/C",
+                "chem_synonyms": [],
+                "compound": "Bafilomycin B1",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 132.0655,
+                "molecular_formula": "C35H58O9"
+            }
         ],
+        "genes": {
+            "annotations": [],
+            "extra_genes": []
+        },
         "loci": {
             "accession": "GU390405.1",
             "completeness": "complete",
@@ -26,171 +37,169 @@
                 "Enzymatic assays"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Bafilomycin B1",
-                "chem_synonyms": [],
-                "chem_struct": "C[C@@H]1C/C(=C\\\\C=C[C@@H]([C@H](OC(=O)/C(=C/C(=C/[C@H]([C@H]1O)C)/C)/OC)[C@@H](C)[C@H]([C@H](C)[C@]2(C[C@H]([C@@H]([C@H](O2)C(C)C)C)O)O)O)OC)/C",
-                "molecular_formula": "C35H58O9",
-                "mol_mass": 132.0655,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Antifungal",
-                    "antineoplastic, immunosuppressive"
-                ]
-            }
-        ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": []
-        },
+        "mibig_accession": "BGC0000028",
         "polyketide": {
-            "starter_unit": "Isobutyryl-CoA",
-            "subclasses": [
-                "Macrolide"
-            ],
             "cyclic": true,
             "release_type": [
                 "Macrolactamization"
+            ],
+            "starter_unit": "Isobutyryl-CoA",
+            "subclasses": [
+                "Macrolide"
             ],
             "synthases": [
                 {
                     "genes": [
                         "BafAII",
-                        "BafAIII",
-                        "BafV",
                         "BafAI",
-                        "BafAIV"
+                        "BafAIII",
+                        "BafAIV",
+                        "BafV"
                     ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
-                    "thioesterases": [],
                     "modules": [
                         {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
                             "genes": [
                                 "BafAI"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "0",
-                            "domains": [
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Methylmalonyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
                             ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "BafAI"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "1",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "BafAI"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "2",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Methylmalonyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
                             ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "BafAI"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "3",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Methylmalonyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
                             ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "BafAII"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "BafAII"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "5",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
+                                "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "BafAII"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "6",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -198,41 +207,20 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "BafAIII"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "7",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Methylmalonyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "BafAIII"
-                            ],
-                            "module_number": "8",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -241,80 +229,92 @@
                                 "Enoylreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "genes": [
+                                "BafAIII"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "8",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Methylmalonyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
                             ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "BafAIV"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "9",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
+                                "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "BafAIV"
                             ],
-                            "module_number": "10",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "10",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         },
                         {
-                            "genes": [
-                                "BafV"
-                            ],
-                            "module_number": "11",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
                             "at_specificities": [
                                 "Methoxymalonyl-CoA"
                             ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "BafV"
+                            ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "11",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         }
-                    ]
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": []
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:23362147"
+        ]
+    },
+    "submitter": {
+        "email": "fenganyu@umich.edu",
+        "institution": "University of Michigan-Ann Arbor",
+        "name": "Fengan Yu"
     }
 }

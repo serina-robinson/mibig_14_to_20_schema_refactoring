@@ -1,23 +1,77 @@
 {
-    "submitter": {
-        "name": "Fengan Yu",
-        "institution": "University of Michigan",
-        "email": "fenganyu@umich.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000350",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:21875091"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
+                "chem_struct": "CC1=C(C(=C2[C@@H]3[C@@H]4[C@H]5C6=C([C@@H](N4[C@H]([C@@H](N3C)CC2=C1)O)COC(=O)[C@@]7(CS5)C8=CC(=C(C=C8CCN7)O)OC)C9=C(C(=C6OC(=O)C)C)OCO9)O)OC",
+                "chem_synonyms": [
+                    "yondelis",
+                    "ecteinascidin 743",
+                    "trabectedin"
+                ],
+                "compound": "ET-743",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 761.2618,
+                "molecular_formula": "C39H43N3O11S "
+            }
         ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ADQ55474.1",
+                    "name": "etua1",
+                    "product": "NRPS"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ADQ55475.1",
+                    "name": "etua2",
+                    "product": "NRPS"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ADQ55476.1",
+                    "name": "etua3",
+                    "product": "NRPS"
+                }
+            ],
+            "extra_genes": [],
+            "operons": []
+        },
         "loci": {
             "accession": "HQ609499.1",
             "completeness": "incomplete",
@@ -25,124 +79,62 @@
                 "Enzymatic assays"
             ]
         },
-        "compounds": [
-            {
-                "compound": "ET-743",
-                "chem_synonyms": [
-                    "yondelis",
-                    "ecteinascidin 743",
-                    "trabectedin"
-                ],
-                "chem_struct": "CC1=C(C(=C2[C@@H]3[C@@H]4[C@H]5C6=C([C@@H](N4[C@H]([C@@H](N3C)CC2=C1)O)COC(=O)[C@@]7(CS5)C8=CC(=C(C=C8CCN7)O)OC)C9=C(C(=C6OC(=O)C)C)OCO9)O)OC",
-                "molecular_formula": "C39H43N3O11S ",
-                "mol_mass": 761.2618,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Cytotoxic"
-                ]
-            }
-        ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": [
-                {
-                    "name": "etua1",
-                    "id": "ADQ55474.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "NRPS"
-                },
-                {
-                    "name": "etua2",
-                    "id": "ADQ55475.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "NRPS"
-                },
-                {
-                    "name": "etua3",
-                    "id": "ADQ55476.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "NRPS"
-                }
-            ],
-            "operons": []
-        },
+        "mibig_accession": "BGC0000350",
         "nrp": {
-            "subclass": "Beta-lactam",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "ADQ55476.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "3-hydroxy-4-O-methyl-5-methyl-tyrosine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "3-hydroxy-4-O-methyl-5-methyl-tyrosine"
+                                ]
                             },
-                            "module_number": "0",
                             "active": true,
                             "modification_domains": [
                                 "None"
                             ],
+                            "module_number": "0",
                             "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": false,
                                 "evidence": [
                                     "Structure-based inference"
-                                ]
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
                             }
                         },
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "3-hydroxy-4-O-methyl-5-methyl-tyrosine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "3-hydroxy-4-O-methyl-5-methyl-tyrosine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
                             ],
+                            "module_number": "1",
                             "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": false,
                                 "evidence": [
                                     "Sequence-based prediction"
-                                ]
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
                             }
                         }
                     ]
@@ -152,48 +144,56 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "Glycolic acid"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "Glycolic acid"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Alanine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Alanine"
+                                ]
                             },
-                            "module_number": "3",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "3"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Reductive release"
-            ]
-        }
+            ],
+            "subclass": "Beta-lactam",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:21875091"
+        ]
+    },
+    "submitter": {
+        "email": "fenganyu@umich.edu",
+        "institution": "University of Michigan",
+        "name": "Fengan Yu"
     }
 }

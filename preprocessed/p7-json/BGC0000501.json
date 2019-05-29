@@ -1,50 +1,30 @@
 {
-    "submitter": {
-        "name": "Wilfred Van Der Donk",
-        "institution": "University of Illinois at Urbana-Champaign",
-        "email": "vddonk@illinois.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000501",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:22725258"
-        ],
-        "loci": {
-            "accession": "CP001700.1",
-            "start_coord": 4809160,
-            "end_coord": 4816367,
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays"
-            ]
-        },
         "compounds": [
             {
-                "compound": "catenulipeptin",
-                "chem_synonyms": [],
-                "molecular_formula": "C99H152N32O34S2",
-                "mol_mass": 2398.0599,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "catenulipeptin",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 2398.0599,
+                "molecular_formula": "C99H152N32O34S2"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "aciKC",
-                    "id": "ACU73103.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -53,11 +33,11 @@
                             ]
                         }
                     ],
+                    "id": "ACU73103.1",
+                    "name": "aciKC",
                     "product": "serine/threonine protein kinase"
                 },
                 {
-                    "name": "aciA",
-                    "id": "ACU73104.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -66,6 +46,8 @@
                             ]
                         }
                     ],
+                    "id": "ACU73104.1",
+                    "name": "aciA",
                     "product": "precursor"
                 },
                 {
@@ -73,8 +55,6 @@
                     "product": "hypothetical protein"
                 },
                 {
-                    "name": "aciT1",
-                    "id": "ACU73106.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -83,11 +63,11 @@
                             ]
                         }
                     ],
+                    "id": "ACU73106.1",
+                    "name": "aciT1",
                     "product": "ABC transporter related"
                 },
                 {
-                    "name": "aciT2",
-                    "id": "ACU73107.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -96,18 +76,35 @@
                             ]
                         }
                     ],
+                    "id": "ACU73107.1",
+                    "name": "aciT2",
                     "product": "ABC transporter related"
                 }
             ]
         },
+        "loci": {
+            "accession": "CP001700.1",
+            "completeness": "complete",
+            "end_coord": 4816367,
+            "evidence": [
+                "Enzymatic assays"
+            ],
+            "start_coord": 4809160
+        },
+        "mibig_accession": "BGC0000501",
+        "publications": [
+            "pubmed:22725258"
+        ],
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "yp_003114945.1",
                     "cleavage_recogn_site": [
                         "GS"
+                    ],
+                    "core_sequence": [
+                        "GHGGGGDSGLSVTGCNGHSGISLLCDL"
                     ],
                     "crosslinks": [
                         {
@@ -131,14 +128,17 @@
                             "second_AA": 22
                         }
                     ],
-                    "core_sequence": [
-                        "GHGGGGDSGLSVTGCNGHSGISLLCDL"
-                    ],
-                    "leader_sequence": 24,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "yp_003114945.1",
+                    "leader_sequence": 24
                 }
             ],
-            "peptidases": []
+            "subclass": "Lanthipeptide"
         }
+    },
+    "submitter": {
+        "email": "vddonk@illinois.edu",
+        "institution": "University of Illinois at Urbana-Champaign",
+        "name": "Wilfred Van Der Donk"
     }
 }

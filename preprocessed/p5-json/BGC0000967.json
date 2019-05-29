@@ -1,39 +1,19 @@
 {
-    "personal": {
-        "submitter_name": "Eric J. N. Helfrich",
-        "submitter_institution": "Institute of Microbiology, Eidgen\u00c3\u00b6ssische Technische Hochschule (ETH) Zurich, Piel lab",
-        "submitter_email": "ehelfrich@ethz.ch"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0000967",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24974231",
-            "pubmed:20161975",
-            "pubmed:11671610",
-            "pubmed:11927256"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Enzymatic assays",
-                "Sequence-based prediction"
-            ],
-            "accession": "AB933566.1"
-        },
         "compounds": [
             {
-                "compound": "calyculin A",
-                "chem_synonyms": [],
-                "pubchem_id": 5311365,
                 "chem_act": [
                     "Cytotoxic"
-                ],
-                "chem_target": [
-                    "inhibitionofproteinphosphatase1and2A"
                 ],
                 "chem_moieties": [
                     {
@@ -52,15 +32,15 @@
                             "bap05585.1"
                         ]
                     }
-                ]
+                ],
+                "chem_synonyms": [],
+                "chem_target": [
+                    "inhibitionofproteinphosphatase1and2A"
+                ],
+                "compound": "calyculin A",
+                "pubchem_id": 5311365
             },
             {
-                "compound": "phosphocalyculin A",
-                "chem_synonyms": [],
-                "chem_struct": "COC[C@H](N(C)C)[C@H](O)[C@H](O)C(NCC[C@H](C)C1=NC(/C=C/C[C@H]2[C@@H](C)[C@H](O)CC3(C(C)(C)[C@@H](OP(O)(OP(O)(O)=O)=O)[C@@H]([C@@H](OC)C[C@H](O)[C@H](C)[C@H](O)[C@H](C)/C=C(C)/C(C)=C/C=C/C(C)=C\\\\[N+]#[C-])O3)O2)=CO1)=O",
-                "molecular_formula": "C50H82N4O18P2",
-                "mol_mass": 1089.5178,
-                "mass_ion_type": "[M+H]+",
                 "chem_act": [
                     "Cytotoxic"
                 ],
@@ -80,12 +60,15 @@
                             "bap05581.1"
                         ]
                     }
-                ]
+                ],
+                "chem_struct": "COC[C@H](N(C)C)[C@H](O)[C@H](O)C(NCC[C@H](C)C1=NC(/C=C/C[C@H]2[C@@H](C)[C@H](O)CC3(C(C)(C)[C@@H](OP(O)(OP(O)(O)=O)=O)[C@@H]([C@@H](OC)C[C@H](O)[C@H](C)[C@H](O)[C@H](C)/C=C(C)/C(C)=C/C=C/C(C)=C\\\\[N+]#[C-])O3)O2)=CO1)=O",
+                "chem_synonyms": [],
+                "compound": "phosphocalyculin A",
+                "mass_ion_type": "[M+H]+",
+                "mol_mass": 1089.5178,
+                "molecular_formula": "C50H82N4O18P2"
             },
             {
-                "compound": "calyculinamide A",
-                "chem_synonyms": [],
-                "chemspider_id": 10476583,
                 "chem_act": [
                     "Cytotoxic"
                 ],
@@ -102,15 +85,12 @@
                             "bap05585.1"
                         ]
                     }
-                ]
+                ],
+                "chem_synonyms": [],
+                "chemspider_id": 10476583,
+                "compound": "calyculinamide A"
             },
             {
-                "compound": "dephosphonocalyculin A",
-                "chem_synonyms": [],
-                "chem_struct": "COC[C@H](N(C)C)[C@H](O)[C@H](O)C(NCC[C@H](C)C1=NC(/C=C/C[C@H]2[C@@H](C)[C@H](O)CC3(C(C)(C)[C@@H](O)[C@@H]([C@@H](OC)C[C@H](O)[C@H](C)[C@H](O)[C@H](C)/C=C(C)/C(C)=C/C=C/C(C)=C\\\\[N+]#[C-])O3)O2)=CO1)=O",
-                "molecular_formula": "C50H80N4O12",
-                "mol_mass": 929.585,
-                "mass_ion_type": "[M+H]+",
                 "chem_act": [
                     "Cytotoxic"
                 ],
@@ -123,354 +103,462 @@
                         "chem_moiety": "terminal nitrile ",
                         "moiety_subcluster": []
                     }
-                ]
+                ],
+                "chem_struct": "COC[C@H](N(C)C)[C@H](O)[C@H](O)C(NCC[C@H](C)C1=NC(/C=C/C[C@H]2[C@@H](C)[C@H](O)CC3(C(C)(C)[C@@H](O)[C@@H]([C@@H](OC)C[C@H](O)[C@H](C)[C@H](O)[C@H](C)/C=C(C)/C(C)=C/C=C/C(C)=C\\\\[N+]#[C-])O3)O2)=CO1)=O",
+                "chem_synonyms": [],
+                "compound": "dephosphonocalyculin A",
+                "mass_ion_type": "[M+H]+",
+                "mol_mass": 929.585,
+                "molecular_formula": "C50H80N4O12"
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "calY",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1,
-                    "gene_endpos": 2364,
-                    "gene_id": "BAP05573.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalY",
+                    "gene_endpos": 2364,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05573.1",
+                    "gene_name": "calY",
+                    "gene_startpos": 1,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calX",
-                    "not_in_gbk": false,
-                    "gene_startpos": 2395,
-                    "gene_endpos": 2643,
-                    "gene_id": "BAP05574.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalX",
+                    "gene_endpos": 2643,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05574.1",
+                    "gene_name": "calX",
+                    "gene_startpos": 2395,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calW",
-                    "not_in_gbk": false,
-                    "gene_startpos": 2621,
-                    "gene_endpos": 3850,
-                    "gene_id": "BAP05575.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalW",
+                    "gene_endpos": 3850,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05575.1",
+                    "gene_name": "calW",
+                    "gene_startpos": 2621,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calV",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4030,
-                    "gene_endpos": 4428,
-                    "gene_id": "BAP05576.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalV",
+                    "gene_endpos": 4428,
                     "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05576.1",
+                    "gene_name": "calV",
+                    "gene_startpos": 4030,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calU",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4425,
-                    "gene_endpos": 6545,
-                    "gene_id": "BAP05577.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalU",
+                    "gene_endpos": 6545,
                     "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05577.1",
+                    "gene_name": "calU",
+                    "gene_startpos": 4425,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calT",
-                    "not_in_gbk": false,
-                    "gene_startpos": 6647,
-                    "gene_endpos": 7921,
-                    "gene_id": "BAP05578.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalT",
+                    "gene_endpos": 7921,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05578.1",
+                    "gene_name": "calT",
+                    "gene_startpos": 6647,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calS",
-                    "not_in_gbk": false,
-                    "gene_startpos": 7909,
-                    "gene_endpos": 8715,
-                    "gene_id": "BAP05579.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalS",
+                    "gene_endpos": 8715,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05579.1",
+                    "gene_name": "calS",
+                    "gene_startpos": 7909,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calR",
-                    "not_in_gbk": false,
-                    "gene_startpos": 8708,
-                    "gene_endpos": 9445,
-                    "gene_id": "BAP05580.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalR",
+                    "gene_endpos": 9445,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05580.1",
+                    "gene_name": "calR",
+                    "gene_startpos": 8708,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calQ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 9473,
-                    "gene_endpos": 10606,
-                    "gene_id": "BAP05581.1",
-                    "gene_annotation": "CalQ",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Phosphorylation",
                     "evidence_genefunction": [
                         "Activity assay"
-                    ]
+                    ],
+                    "gene_annotation": "CalQ",
+                    "gene_endpos": 10606,
+                    "gene_function": "Tailoring",
+                    "gene_id": "BAP05581.1",
+                    "gene_name": "calQ",
+                    "gene_startpos": 9473,
+                    "not_in_gbk": false,
+                    "tailoring": "Phosphorylation"
                 },
                 {
-                    "gene_name": "calP",
-                    "not_in_gbk": false,
-                    "gene_startpos": 10603,
-                    "gene_endpos": 11298,
-                    "gene_id": "BAP05582.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalP",
+                    "gene_endpos": 11298,
                     "gene_function": "Tailoring",
-                    "tailoring": "Phosphorylation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05582.1",
+                    "gene_name": "calP",
+                    "gene_startpos": 10603,
+                    "not_in_gbk": false,
+                    "tailoring": "Phosphorylation"
                 },
                 {
-                    "gene_name": "calO",
-                    "not_in_gbk": false,
-                    "gene_startpos": 11313,
-                    "gene_endpos": 12122,
-                    "gene_id": "BAP05583.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalO",
+                    "gene_endpos": 12122,
                     "gene_function": "Resistance/immunity",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05583.1",
+                    "gene_name": "calO",
+                    "gene_startpos": 11313,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calN",
-                    "not_in_gbk": false,
-                    "gene_startpos": 12379,
-                    "gene_endpos": 13650,
-                    "gene_id": "BAP05584.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalN",
+                    "gene_endpos": 13650,
                     "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05584.1",
+                    "gene_name": "calN",
+                    "gene_startpos": 12379,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calM",
-                    "not_in_gbk": false,
-                    "gene_startpos": 14351,
-                    "gene_endpos": 15049,
-                    "gene_id": "BAP05585.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalM",
+                    "gene_endpos": 15049,
                     "gene_function": "Tailoring",
-                    "tailoring": "Phosphorylation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05585.1",
+                    "gene_name": "calM",
+                    "gene_startpos": 14351,
+                    "not_in_gbk": false,
+                    "tailoring": "Phosphorylation"
                 },
                 {
-                    "gene_name": "calL",
-                    "not_in_gbk": false,
-                    "gene_startpos": 15257,
-                    "gene_endpos": 16411,
-                    "gene_id": "BAP05586.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalL",
+                    "gene_endpos": 16411,
                     "gene_function": "Other enzymatic",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05586.1",
+                    "gene_name": "calL",
+                    "gene_startpos": 15257,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calK",
-                    "not_in_gbk": false,
-                    "gene_startpos": 16776,
-                    "gene_endpos": 17969,
-                    "gene_id": "BAP05587.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalK",
+                    "gene_endpos": 17969,
                     "gene_function": "Other enzymatic",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05587.1",
+                    "gene_name": "calK",
+                    "gene_startpos": 16776,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calJ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 18377,
-                    "gene_endpos": 20068,
-                    "gene_id": "BAP05588.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalJ",
+                    "gene_endpos": 20068,
                     "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05588.1",
+                    "gene_name": "calJ",
+                    "gene_startpos": 18377,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calA",
-                    "not_in_gbk": false,
-                    "gene_startpos": 20404,
-                    "gene_endpos": 31761,
-                    "gene_id": "BAP05589.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalA",
+                    "gene_endpos": 31761,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05589.1",
+                    "gene_name": "calA",
+                    "gene_startpos": 20404,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calB",
-                    "not_in_gbk": false,
-                    "gene_startpos": 31828,
-                    "gene_endpos": 51879,
-                    "gene_id": "BAP05590.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalB",
+                    "gene_endpos": 51879,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05590.1",
+                    "gene_name": "calB",
+                    "gene_startpos": 31828,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calC",
-                    "not_in_gbk": false,
-                    "gene_startpos": 51876,
-                    "gene_endpos": 65756,
-                    "gene_id": "BAP05591.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalC",
+                    "gene_endpos": 65756,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05591.1",
+                    "gene_name": "calC",
+                    "gene_startpos": 51876,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calD",
-                    "not_in_gbk": false,
-                    "gene_startpos": 65768,
-                    "gene_endpos": 66895,
-                    "gene_id": "BAP05592.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalD",
+                    "gene_endpos": 66895,
                     "gene_function": "Tailoring",
-                    "tailoring": "Monooxygenation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05592.1",
+                    "gene_name": "calD",
+                    "gene_startpos": 65768,
+                    "not_in_gbk": false,
+                    "tailoring": "Monooxygenation"
                 },
                 {
-                    "gene_name": "calE",
-                    "not_in_gbk": false,
-                    "gene_startpos": 66955,
-                    "gene_endpos": 90753,
-                    "gene_id": "BAP05593.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalE",
+                    "gene_endpos": 90753,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05593.1",
+                    "gene_name": "calE",
+                    "gene_startpos": 66955,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calF",
-                    "not_in_gbk": false,
-                    "gene_startpos": 90764,
-                    "gene_endpos": 108340,
-                    "gene_id": "BAP05594.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalF",
+                    "gene_endpos": 108340,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05594.1",
+                    "gene_name": "calF",
+                    "gene_startpos": 90764,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calG",
-                    "not_in_gbk": false,
-                    "gene_startpos": 108337,
-                    "gene_endpos": 125763,
-                    "gene_id": "BAP05595.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalG",
+                    "gene_endpos": 125763,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05595.1",
+                    "gene_name": "calG",
+                    "gene_startpos": 108337,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calH",
-                    "not_in_gbk": false,
-                    "gene_startpos": 125766,
-                    "gene_endpos": 140192,
-                    "gene_id": "BAP05596.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "CalH",
+                    "gene_endpos": 140192,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "BAP05596.1",
+                    "gene_name": "calH",
+                    "gene_startpos": 125766,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "calI",
-                    "not_in_gbk": false,
-                    "gene_startpos": 140205,
-                    "gene_endpos": 148229,
-                    "gene_id": "BAP05597.1",
-                    "gene_annotation": "CalI",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "gene_annotation": "CalI",
+                    "gene_endpos": 148229,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "BAP05597.1",
+                    "gene_name": "calI",
+                    "gene_startpos": 140205,
+                    "not_in_gbk": false
                 }
             ]
         },
+        "loci": {
+            "accession": "AB933566.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Enzymatic assays",
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0000967",
+        "nrp": {
+            "lin_cycl_nrp": "Linear",
+            "nrps_genes": [
+                {
+                    "nrps_gene": "BAP05589.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "prot_adom_spec": "Serine"
+                            },
+                            "module_nr": "0",
+                            "nrps_mod_doms": "Methylation",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                },
+                {
+                    "nrps_gene": "BAP05590.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "prot_adom_spec": "Glycine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "4",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "8",
+                            "nrps_mod_doms": "Unknown",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                },
+                {
+                    "nrps_gene": "BAP05591.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "prot_adom_spec": "Serine"
+                            },
+                            "module_nr": "8",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                },
+                {
+                    "nrps_gene": "BAP05596.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "prot_adom_spec": "Alanine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "29",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                },
+                {
+                    "nrps_gene": "BAP05597.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "prot_adom_spec": "Serine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "33",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                }
+            ],
+            "nrps_release_type": "Unknown",
+            "nrps_te_type": "Type I",
+            "nrps_thioesterase": [
+                "bap05597.1"
+            ],
+            "subclass": "Unknown"
+        },
         "polyketide": {
-            "pk_subclass": "Other",
             "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Trans-AT type I"
-            ],
-            "starter_unit": "Unknown",
-            "trans_at": [
-                "bap05573.1"
-            ],
-            "pks_te_type": "None",
-            "pks_release_type": "Unknown",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "BAP05589.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "1",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "2",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
@@ -482,19 +570,21 @@
                     "mod_pks_gene": "BAP05590.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "3",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "5",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -503,34 +593,32 @@
                                 "Ketoreductase",
                                 "Enoylreductase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "6",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "7",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -542,19 +630,21 @@
                     "mod_pks_gene": "BAP05591.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "9",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Oxidation"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "10",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -562,22 +652,20 @@
                                 "Dehydratase",
                                 "Ketoreductase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Oxidation"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "11",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)",
                                 "Ketoreductase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Oxidation"
                             ],
@@ -589,92 +677,92 @@
                     "mod_pks_gene": "BAP05593.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "12",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "13",
                             "pks_domains": [
                                 "Ketosynthase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "14",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "15",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "16",
                             "pks_domains": [
                                 "Ketosynthase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "17",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "18",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -686,67 +774,67 @@
                     "mod_pks_gene": "BAP05594.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "19",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "20",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "21",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "22",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "23",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -758,18 +846,20 @@
                     "mod_pks_gene": "BAP05595.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "23",
                             "pks_domains": [
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "24",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -777,26 +867,26 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "25",
                             "pks_domains": [
                                 "Ketosynthase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "26",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -804,20 +894,18 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "27",
                             "pks_domains": [
                                 "Ketosynthase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Methylation"
                             ],
@@ -829,38 +917,38 @@
                     "mod_pks_gene": "BAP05596.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "28",
                             "pks_domains": [
                                 "Ketosynthase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Beta-branching"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "30",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Dehydratase",
                                 "Ketoreductase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Beta-branching"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "31",
                             "pks_domains": [
                                 "Ketosynthase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "Beta-branching"
                             ],
@@ -872,25 +960,25 @@
                     "mod_pks_gene": "BAP05597.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "31",
                             "pks_domains": [
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Non-elongating"
                         },
                         {
+                            "at_substr_spec": "None",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "32",
                             "pks_domains": [
                                 "Ketosynthase"
                             ],
-                            "at_substr_spec": "None",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -898,116 +986,28 @@
                         }
                     ]
                 }
+            ],
+            "pk_subclass": "Other",
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Trans-AT type I"
+            ],
+            "pks_te_type": "None",
+            "starter_unit": "Unknown",
+            "trans_at": [
+                "bap05573.1"
             ]
         },
-        "nrp": {
-            "subclass": "Unknown",
-            "lin_cycl_nrp": "Linear",
-            "nrps_te_type": "Type I",
-            "nrps_thioesterase": [
-                "bap05597.1"
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "BAP05589.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "0",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Serine",
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
-                            },
-                            "nrps_mod_doms": "Methylation",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "BAP05590.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "4",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Glycine",
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "8",
-                            "a_substr_spec": {
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "Unknown",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "BAP05591.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "8",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Serine",
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
-                            },
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "BAP05596.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "29",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Alanine",
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "BAP05597.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "33",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Serine",
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ]
-        }
+        "publications": [
+            "pubmed:24974231",
+            "pubmed:20161975",
+            "pubmed:11671610",
+            "pubmed:11927256"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "ehelfrich@ethz.ch",
+        "submitter_institution": "Institute of Microbiology, Eidgen\u00c3\u00b6ssische Technische Hochschule (ETH) Zurich, Piel lab",
+        "submitter_name": "Eric J. N. Helfrich"
+    }
 }

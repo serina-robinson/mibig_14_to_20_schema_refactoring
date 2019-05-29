@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Helge B. Bode",
-        "submitter_institution": "Molecular Biotechnology, Institute for Molecular Bioscience, Goethe University Frankfurt, 60438 Frankfurt/Main, Germany",
-        "submitter_email": "h.bode@bio.uni-frankfurt.de"
+    "submitter": {
+        "name": "Helge B. Bode",
+        "institution": "Molecular Biotechnology, Institute for Molecular Bioscience, Goethe University Frankfurt, 60438 Frankfurt/Main, Germany",
+        "email": "h.bode@bio.uni-frankfurt.de"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001130",
         "biosyn_class": [
             "NRP",
@@ -14,13 +20,13 @@
             "pubmed:24532262"
         ],
         "loci": {
-            "complete": "Unknown",
-            "conn_comp_cluster": [
-                "Gene expression correlated with compound production"
-            ],
             "accession": "NIBS01000014.1",
             "start_coord": 52424,
-            "end_coord": 100650
+            "end_coord": 100650,
+            "completeness": "Unknown",
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ]
         },
         "compounds": [
             {
@@ -29,47 +35,34 @@
                 "chem_struct": "CC(N)CCCCCCCC(N)CCCCCCCC(N)CCCCCCCC(N)CCCCCCC[C@@H](O)CCNC(=O)C[C@@H](O)C[C@@H](O)[C@@H]3CCCN3C(=O)C2NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)C[C@H](N)C(=O)O)CC(=O)NC2C",
                 "molecular_formula": "C70H126N13O13",
                 "mol_mass": 1356.959258,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "chem_moieties": [],
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Antibacterial",
                     "Antifungal",
                     "Cytotoxic"
-                ],
-                "chem_moieties": [
-                    {
-                        "moiety_subcluster": [
-                            "unusual polyamino moiety"
-                        ]
-                    }
                 ]
             }
         ],
         "genes": {},
         "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
             "starter_unit": "Acetoacetyl-CoA",
-            "pks_genes": [],
-            "nr_iterations": -1,
-            "iterative_subtype": "Partially reducing",
-            "pks_te_type": "None",
-            "pks_release_type": "Claisen condensation"
+            "subclasses": [
+                "Other"
+            ],
+            "cyclic": false,
+            "release_type": [
+                "Claisen condensation"
+            ]
         },
         "nrp": {
             "subclass": "Unknown",
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Unknown"
+            "cyclic": true,
+            "thioesterases": [],
+            "release_type": [
+                "Unknown"
+            ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

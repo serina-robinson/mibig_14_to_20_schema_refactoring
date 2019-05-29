@@ -1,49 +1,163 @@
 {
-    "version": "17",
-    "personal": {
-        "submitter_name": "Fengan Yu",
-        "submitter_institution": "University of Michigan",
-        "submitter_email": "fenganyu@umich.edu"
-    },
+    "embargo": true,
     "general_params": {
-        "mibig_accession": "BGC0000816",
+        "Alkaloid": {
+            "alkaloid_subclass": "Pyrrole/pyrrolidine"
+        },
+        "NRP": {
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_genes": [
+                {
+                    "nrps_gene": "AGA37267.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Proline"
+                            },
+                            "cdom_subtype": "N/A",
+                            "module_nr": "0",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Tryptophan"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                }
+            ],
+            "nrps_release_type": "Reductive release",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": [],
+            "subclass": "Other"
+        },
         "biosyn_class": [
             "NRP",
             "Alkaloid"
         ],
-        "publications": [
-            "23213353"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "JQ708193.1",
-                    "start_coord": 1,
-                    "end_coord": 20179,
-                    "conn_comp_cluster": [
-                        "Sequence-based prediction"
-                    ]
-                }
-            ]
-        },
         "compounds": [
             {
-                "compound": "Malbrancheamide A",
-                "chem_synonyms": [],
-                "chem_struct": "CC1([C@@H]2C[C@]34CCCN3C[C@@]2(CC5=C1NC6=C5C=CC(=C6)Cl)NC4=O)C",
-                "molecular_formula": "C21H23ON3Cl2",
-                "mol_mass": 403.1218,
-                "mass_ion_type": "[M+H]+",
                 "chem_act": [
                     "Inhibitor"
                 ],
+                "chem_struct": "CC1([C@@H]2C[C@]34CCCN3C[C@@]2(CC5=C1NC6=C5C=CC(=C6)Cl)NC4=O)C",
+                "chem_synonyms": [],
                 "chem_target": [
                     "calmodulin"
-                ]
+                ],
+                "compound": "Malbrancheamide A",
+                "mass_ion_type": "[M+H]+",
+                "mol_mass": 403.1218,
+                "molecular_formula": "C21H23ON3Cl2"
             }
         ],
         "genes": {
+            "gene": [
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "flavin-dependent halogenase",
+                    "gene_endpos": 0,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AGA37261.1",
+                    "gene_name": "mala",
+                    "gene_startpos": 0,
+                    "not_in_gbk": false,
+                    "tailoring": "Halogenation"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "prenyltransferase",
+                    "gene_endpos": -1,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGA37262.1",
+                    "gene_name": "malb",
+                    "gene_startpos": -1,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "short chain dehydrogenase",
+                    "gene_endpos": -1,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AGA37263.1",
+                    "gene_name": "malc",
+                    "gene_startpos": -1,
+                    "mut_pheno": null,
+                    "not_in_gbk": false,
+                    "tailoring": "Unknown"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "negative regulator",
+                    "gene_endpos": -1,
+                    "gene_function": "Regulation",
+                    "gene_id": "AGA37264.1",
+                    "gene_name": "mald",
+                    "gene_startpos": -1,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "prenyltransferase",
+                    "gene_endpos": -1,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGA37265.1",
+                    "gene_name": "male",
+                    "gene_startpos": -1,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "oxidoreductase",
+                    "gene_endpos": -1,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AGA37266.1",
+                    "gene_name": "malf",
+                    "gene_startpos": -1,
+                    "mut_pheno": null,
+                    "not_in_gbk": false,
+                    "tailoring": "Unknown"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "NRPS",
+                    "gene_endpos": -1,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGA37267.1",
+                    "gene_name": "malg",
+                    "gene_startpos": -1,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                }
+            ],
             "operon": [
                 {
                     "operon_genes": [
@@ -52,18 +166,18 @@
                     ]
                 },
                 {
+                    "evidence_operon": "Sequence-based prediction",
                     "operon_genes": [
                         "aga37262.1",
                         "malb"
-                    ],
-                    "evidence_operon": "Sequence-based prediction"
+                    ]
                 },
                 {
+                    "evidence_operon": "Sequence-based prediction",
                     "operon_genes": [
                         "aga37263.1",
                         "malc"
-                    ],
-                    "evidence_operon": "Sequence-based prediction"
+                    ]
                 },
                 {
                     "operon_genes": [
@@ -95,144 +209,30 @@
                         "malh"
                     ]
                 }
-            ],
-            "gene": [
+            ]
+        },
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
                 {
-                    "gene_name": "mala",
-                    "not_in_gbk": false,
-                    "gene_startpos": 0,
-                    "gene_endpos": 0,
-                    "gene_id": "AGA37261.1",
-                    "gene_annotation": "flavin-dependent halogenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Halogenation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "malb",
-                    "not_in_gbk": false,
-                    "gene_startpos": -1,
-                    "gene_endpos": -1,
-                    "gene_id": "AGA37262.1",
-                    "gene_annotation": "prenyltransferase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
+                    "Accession": "JQ708193.1",
+                    "conn_comp_cluster": [
                         "Sequence-based prediction"
                     ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "malc",
-                    "not_in_gbk": false,
-                    "gene_startpos": -1,
-                    "gene_endpos": -1,
-                    "gene_id": "AGA37263.1",
-                    "gene_annotation": "short chain dehydrogenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "mald",
-                    "not_in_gbk": false,
-                    "gene_startpos": -1,
-                    "gene_endpos": -1,
-                    "gene_id": "AGA37264.1",
-                    "gene_annotation": "negative regulator",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "male",
-                    "not_in_gbk": false,
-                    "gene_startpos": -1,
-                    "gene_endpos": -1,
-                    "gene_id": "AGA37265.1",
-                    "gene_annotation": "prenyltransferase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "malf",
-                    "not_in_gbk": false,
-                    "gene_startpos": -1,
-                    "gene_endpos": -1,
-                    "gene_id": "AGA37266.1",
-                    "gene_annotation": "oxidoreductase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "malg",
-                    "not_in_gbk": false,
-                    "gene_startpos": -1,
-                    "gene_endpos": -1,
-                    "gene_id": "AGA37267.1",
-                    "gene_annotation": "NRPS",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
+                    "end_coord": 20179,
+                    "start_coord": 1
                 }
             ]
         },
-        "NRP": {
-            "subclass": "Other",
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Reductive release",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "AGA37267.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "0",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Proline",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "N/A",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "1",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Tryptophan",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ]
-        },
-        "Alkaloid": {
-            "alkaloid_subclass": "Pyrrole/pyrrolidine"
-        }
+        "mibig_accession": "BGC0000816",
+        "publications": [
+            "23213353"
+        ]
     },
-    "embargo": true
+    "personal": {
+        "submitter_email": "fenganyu@umich.edu",
+        "submitter_institution": "University of Michigan",
+        "submitter_name": "Fengan Yu"
+    },
+    "version": "17"
 }

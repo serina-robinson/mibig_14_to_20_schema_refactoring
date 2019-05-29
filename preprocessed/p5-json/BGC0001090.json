@@ -1,88 +1,228 @@
 {
-    "personal": {
-        "submitter_name": "Rainer Borriss",
-        "submitter_institution": "Humboldt University Berlin",
-        "submitter_email": "rainer.borriss@rz.hu-berlin.de"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0001090",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:14762003"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies"
-            ],
-            "accession": "CP000560.1",
-            "start_coord": 1867976,
-            "end_coord": 1912622
-        },
         "compounds": [
             {
-                "compound": "bacillomycin D",
-                "chem_synonyms": [],
-                "pubchem_id": 3086563,
                 "chem_act": [
                     "Antifungal"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "bacillomycin D",
+                "pubchem_id": 3086563
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "bmyD",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1908422,
-                    "gene_endpos": 1907220,
-                    "gene_id": "ABS74182",
-                    "gene_annotation": "malonyl-CoA transacylase ",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "gene_annotation": "malonyl-CoA transacylase ",
+                    "gene_endpos": 1907220,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "ABS74182",
+                    "gene_name": "bmyD",
+                    "gene_startpos": 1908422,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "bmyA",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1907200,
-                    "gene_endpos": 1895252,
-                    "gene_id": "ABS74181",
-                    "gene_annotation": "bacillomycin D synthetase A ",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "no synthesis of bacillomycin D"
+                    "gene_annotation": "bacillomycin D synthetase A ",
+                    "gene_endpos": 1895252,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "ABS74181",
+                    "gene_name": "bmyA",
+                    "gene_startpos": 1907200,
+                    "mut_pheno": "no synthesis of bacillomycin D",
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "bmyB",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1895207,
-                    "gene_endpos": 1879116,
-                    "gene_id": "ABS74180",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "bacillomycin D synthetase B",
+                    "gene_endpos": 1879116,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "ABS74180",
+                    "gene_name": "bmyB",
+                    "gene_startpos": 1895207,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "bmyC",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1879031,
-                    "gene_endpos": 1871172,
-                    "gene_id": "ABS74179",
-                    "gene_annotation": "bacillomycin D synthetase C",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "gene_annotation": "bacillomycin D synthetase C",
+                    "gene_endpos": 1871172,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "ABS74179",
+                    "gene_name": "bmyC",
+                    "gene_startpos": 1879031,
+                    "not_in_gbk": false
                 }
             ]
+        },
+        "loci": {
+            "accession": "CP000560.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies"
+            ],
+            "end_coord": 1912622,
+            "start_coord": 1867976
+        },
+        "mibig_accession": "BGC0001090",
+        "nrp": {
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_genes": [
+                {
+                    "nrps_gene": "ABS74181",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false
+                            },
+                            "cdom_subtype": "Unknown",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false
+                            },
+                            "cdom_subtype": "Unknown",
+                            "module_nr": "3",
+                            "nrps_mod_doms": "Amination",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Asparagine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "4",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true
+                            },
+                            "cdom_subtype": "DCL",
+                            "module_nr": "5",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                },
+                {
+                    "nrps_gene": "ABS74180",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Tyrosine"
+                            },
+                            "module_nr": "5",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": true,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Asparagine"
+                            },
+                            "cdom_subtype": "DCL",
+                            "module_nr": "6",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Proline"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "7",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Glutamate"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "8",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true
+                            },
+                            "cdom_subtype": "DCL",
+                            "module_nr": "9",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                },
+                {
+                    "nrps_gene": "ABS74179",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Threonine"
+                            },
+                            "cdom_subtype": "LCL",
+                            "module_nr": "10",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Serine"
+                            },
+                            "module_nr": "9",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                }
+            ],
+            "nrps_release_type": "Unknown",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": [],
+            "subclass": "Other lipopeptide"
         },
         "polyketide": {
             "mod_pks_genes": [
@@ -90,17 +230,17 @@
                     "mod_pks_gene": "ABS74182",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Sequence-based prediction",
                             "module_nr": "x",
                             "pks_domains": [
                                 "Acyltransferase"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
+                            "pks_evidence_skip_iter": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Iterated",
-                            "pks_evidence_skip_iter": "Sequence-based prediction"
+                            "pks_mod_skip_iter": "Iterated"
                         }
                     ]
                 },
@@ -122,153 +262,13 @@
                 }
             ]
         },
-        "nrp": {
-            "subclass": "Other lipopeptide",
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Unknown",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "ABS74181",
-                    "nrps_module": [
-                        {
-                            "module_nr": "1",
-                            "a_substr_spec": {
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "Unknown",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "3",
-                            "a_substr_spec": {
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "Unknown",
-                            "nrps_mod_doms": "Amination",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "4",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Asparagine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "5",
-                            "a_substr_spec": {
-                                "epimerized": true
-                            },
-                            "cdom_subtype": "DCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "ABS74180",
-                    "nrps_module": [
-                        {
-                            "module_nr": "5",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Tyrosine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "6",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Asparagine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": true
-                            },
-                            "cdom_subtype": "DCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "7",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Proline",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "8",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Glutamate",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "9",
-                            "a_substr_spec": {
-                                "epimerized": true
-                            },
-                            "cdom_subtype": "DCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "ABS74179",
-                    "nrps_module": [
-                        {
-                            "module_nr": "10",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Threonine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "9",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Serine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ]
-        }
+        "publications": [
+            "pubmed:14762003"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "rainer.borriss@rz.hu-berlin.de",
+        "submitter_institution": "Humboldt University Berlin",
+        "submitter_name": "Rainer Borriss"
+    }
 }

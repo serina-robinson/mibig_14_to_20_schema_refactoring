@@ -1,41 +1,21 @@
 {
-    "submitter": {
-        "name": "Andreas Bechthold",
-        "institution": "Albert-Ludwigs-Universit\u00c3\u00a4t Freiburg",
-        "email": "andreas.bechthold@pharmazie.uni-freiburg.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001003",
         "biosyn_class": [
             "NRP",
             "Polyketide",
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:16723573",
-            "pubmed:19585113",
-            "pubmed:23692164",
-            "pubmed:24169801",
-            "pubmed:4628181"
-        ],
-        "loci": {
-            "accession": "DQ176871.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "alpha-lipomycin",
-                "chem_synonyms": [],
-                "chem_struct": "CC(C)C(O[C@H]1C[C@H](O)[C@H](O)[C@@H](C)O1)C(C)\\\\C=C(C)\\C=C\\C=C\\C=C\\C=C\\C(=O)C1=C(O)C(CCC(O)=O)N(C)C1=O",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "N-Methyl-Tetramic acid",
@@ -45,17 +25,15 @@
                         ]
                     }
                 ],
-                "database_id": "chebi:80123",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "chem_struct": "CC(C)C(O[C@H]1C[C@H](O)[C@H](O)[C@@H](C)O1)C(C)\\\\C=C(C)\\C=C\\C=C\\C=C\\C=C\\C(=O)C1=C(O)C(CCC(O)=O)N(C)C1=O",
+                "chem_synonyms": [],
+                "compound": "alpha-lipomycin",
+                "database_id": "chebi:80123"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "lipGtf",
-                    "id": "ABB05096.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -64,39 +42,13 @@
                             ]
                         }
                     ],
+                    "id": "ABB05096.1",
+                    "name": "lipGtf",
                     "tailoring": [
                         "Glycosylation"
                     ]
                 },
                 {
-                    "name": "lipReg1",
-                    "id": "ABB05090.1",
-                    "functions": [
-                        {
-                            "category": "Regulation",
-                            "evidence": [
-                                "Knock-out",
-                                "Other in vivo study"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "lipReg2",
-                    "id": "ABB05091.1",
-                    "functions": [
-                        {
-                            "category": "Regulation",
-                            "evidence": [
-                                "Knock-out",
-                                "Other in vivo study"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "lipReg3",
-                    "id": "ABB05094.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -106,11 +58,50 @@
                             ]
                         }
                     ],
+                    "id": "ABB05090.1",
+                    "name": "lipReg1"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out",
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "ABB05091.1",
+                    "name": "lipReg2"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out",
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "ABB05094.1",
+                    "name": "lipReg3",
                     "product": "negative regulator"
                 },
                 {
-                    "name": "lipReg4",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out",
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
                     "id": "ABB05095.1",
+                    "name": "lipReg4"
+                },
+                {
                     "functions": [
                         {
                             "category": "Regulation",
@@ -119,24 +110,11 @@
                                 "Other in vivo study"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "lipX1",
+                    ],
                     "id": "ABB05092.1",
-                    "functions": [
-                        {
-                            "category": "Regulation",
-                            "evidence": [
-                                "Knock-out",
-                                "Other in vivo study"
-                            ]
-                        }
-                    ]
+                    "name": "lipX1"
                 },
                 {
-                    "name": "lipPks1",
-                    "id": "ABB05102.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -144,203 +122,22 @@
                                 "Activity assay"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABB05102.1",
+                    "name": "lipPks1"
                 }
             ]
         },
-        "polyketide": {
-            "starter_unit": "Isobutyryl-CoA",
-            "subclasses": [
-                "Polyene"
-            ],
-            "cyclic": false,
-            "release_type": [
-                "Unknown"
-            ],
-            "synthases": [
-                {
-                    "genes": [
-                        "ABB05103.1",
-                        "ABB05102.1",
-                        "ABB05104.1",
-                        "ABB05105.1"
-                    ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "ABB05102.1"
-                            ],
-                            "module_number": "0",
-                            "domains": [
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Isobutyryl-CoA"
-                            ],
-                            "evidence": "Activity assay",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABB05102.1"
-                            ],
-                            "module_number": "1",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABB05103.1"
-                            ],
-                            "module_number": "2",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABB05103.1"
-                            ],
-                            "module_number": "3",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABB05104.1"
-                            ],
-                            "module_number": "4",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABB05104.1"
-                            ],
-                            "module_number": "5",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABB05105.1"
-                            ],
-                            "module_number": "6",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABB05105.1"
-                            ],
-                            "module_number": "7",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        }
-                    ]
-                }
+        "loci": {
+            "accession": "DQ176871.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
             ]
         },
+        "mibig_accession": "BGC0001003",
         "nrp": {
-            "subclass": "Other lipopeptide",
+            "cyclic": false,
             "lipid_moiety": "pentaen chain ",
             "nrps_genes": [
                 {
@@ -348,31 +145,239 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Glutamate"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Glutamate"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         }
                     ]
                 }
             ],
+            "release_type": [
+                "Unknown"
+            ],
+            "subclass": "Other lipopeptide"
+        },
+        "polyketide": {
             "cyclic": false,
             "release_type": [
                 "Unknown"
+            ],
+            "starter_unit": "Isobutyryl-CoA",
+            "subclasses": [
+                "Polyene"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ABB05104.1",
+                        "ABB05105.1",
+                        "ABB05102.1",
+                        "ABB05103.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Isobutyryl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Activity assay",
+                            "genes": [
+                                "ABB05102.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "0",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABB05102.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABB05103.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "2",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ABB05103.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "3",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ABB05104.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ABB05104.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "5",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ABB05105.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "6",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ABB05105.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "7",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
             ]
         },
+        "publications": [
+            "pubmed:16723573",
+            "pubmed:19585113",
+            "pubmed:23692164",
+            "pubmed:24169801",
+            "pubmed:4628181"
+        ],
         "saccharide": {
+            "glycosyltransferases": [
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "ABB05096.1",
+                    "specificity": "L-digitoxose"
+                }
+            ],
+            "subclass": "hybrid/tailoring",
             "sugar_subclusters": [
                 [
                     "ABB05097.1",
@@ -381,17 +386,12 @@
                     "ABB05110.1",
                     "ABB05111.1"
                 ]
-            ],
-            "subclass": "hybrid/tailoring",
-            "glycosyltransferases": [
-                {
-                    "gene_id": "ABB05096.1",
-                    "specificity": "L-digitoxose",
-                    "evidence": [
-                        "Sequence-based prediction"
-                    ]
-                }
             ]
         }
+    },
+    "submitter": {
+        "email": "andreas.bechthold@pharmazie.uni-freiburg.de",
+        "institution": "Albert-Ludwigs-Universit\u00c3\u00a4t Freiburg",
+        "name": "Andreas Bechthold"
     }
 }

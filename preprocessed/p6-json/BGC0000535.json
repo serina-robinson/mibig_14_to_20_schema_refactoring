@@ -1,49 +1,30 @@
 {
-    "submitter": {
-        "name": "Aljosa Trmcic",
-        "institution": "Cornell Univeristy",
-        "email": "at543@cornell.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000535",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:21183019"
-        ],
-        "loci": {
-            "accession": "HM219853.1",
-            "completeness": "complete",
-            "evidence": [
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "nisin A",
-                "chem_synonyms": [
-                    "nisin"
-                ],
-                "database_id": "pubchem:16130280",
                 "chem_acts": [
                     "Antibacterial",
                     "Signalling"
-                ]
+                ],
+                "chem_synonyms": [
+                    "nisin"
+                ],
+                "compound": "nisin A",
+                "database_id": "pubchem:16130280"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "id": "nisB",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -54,12 +35,12 @@
                             ]
                         }
                     ],
+                    "id": "nisB",
                     "tailoring": [
                         "Dehydration"
                     ]
                 },
                 {
-                    "id": "nisG",
                     "functions": [
                         {
                             "category": "Resistance/immunity",
@@ -69,10 +50,10 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "nisG"
                 },
                 {
-                    "id": "nisE",
                     "functions": [
                         {
                             "category": "Resistance/immunity",
@@ -82,10 +63,10 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "nisE"
                 },
                 {
-                    "id": "nisF",
                     "functions": [
                         {
                             "category": "Resistance/immunity",
@@ -95,10 +76,10 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "nisF"
                 },
                 {
-                    "id": "nisK",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -108,10 +89,10 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "nisK"
                 },
                 {
-                    "id": "nisR",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -121,10 +102,10 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "nisR"
                 },
                 {
-                    "id": "nisP",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -132,10 +113,10 @@
                                 "Unknown"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "nisP"
                 },
                 {
-                    "id": "nisI",
                     "functions": [
                         {
                             "category": "Resistance/immunity",
@@ -145,10 +126,10 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "nisI"
                 },
                 {
-                    "id": "nisC",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -159,12 +140,12 @@
                             ]
                         }
                     ],
+                    "id": "nisC",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "id": "nisA",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -174,10 +155,10 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "nisA"
                 },
                 {
-                    "id": "nisT",
                     "functions": [
                         {
                             "category": "Transport",
@@ -187,16 +168,34 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "nisT"
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "HM219853.1",
+            "completeness": "complete",
+            "evidence": [
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
             ]
         },
+        "mibig_accession": "BGC0000535",
+        "publications": [
+            "pubmed:21183019"
+        ],
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [
+                "adj56357.1"
+            ],
             "precursor_genes": [
                 {
-                    "gene_id": "adj56352.1",
+                    "core_sequence": [
+                        "ITSISLCTPGCKTGALMGCNMKTATCHCSIHVSK"
+                    ],
                     "crosslinks": [
                         {
                             "crosslink_type": "Thioether",
@@ -224,16 +223,17 @@
                             "second_AA": 28
                         }
                     ],
-                    "core_sequence": [
-                        "ITSISLCTPGCKTGALMGCNMKTATCHCSIHVSK"
-                    ],
-                    "leader_sequence": 23,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "adj56352.1",
+                    "leader_sequence": 23
                 }
             ],
-            "peptidases": [
-                "adj56357.1"
-            ]
+            "subclass": "Lanthipeptide"
         }
+    },
+    "submitter": {
+        "email": "at543@cornell.edu",
+        "institution": "Cornell Univeristy",
+        "name": "Aljosa Trmcic"
     }
 }

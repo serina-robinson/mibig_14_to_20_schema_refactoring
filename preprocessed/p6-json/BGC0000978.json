@@ -1,36 +1,25 @@
 {
-    "submitter": {
-        "name": "Brett Neilan",
-        "institution": "UNSW Australia",
-        "email": "b.neilan@unsw.edu.au"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000978",
+        "alkaloid": {
+            "subclass": "Unknown"
+        },
         "biosyn_class": [
             "NRP",
             "Polyketide",
             "Alkaloid"
         ],
-        "publications": [
-            "pubmed:18065631"
-        ],
-        "loci": {
-            "accession": "EU140798.1",
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "cylindrospermopsin",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Cytotoxic",
+                    "Neurotoxic"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "guanidino",
@@ -52,181 +41,192 @@
                         ]
                     }
                 ],
-                "database_id": "pubchem:115005;chemspider:26396261",
-                "chem_acts": [
-                    "Cytotoxic",
-                    "Neurotoxic"
-                ]
+                "chem_synonyms": [],
+                "compound": "cylindrospermopsin",
+                "database_id": "pubchem:115005;chemspider:26396261"
             }
         ],
         "genes": {},
-        "polyketide": {
-            "starter_unit": "Unknown",
-            "subclasses": [
-                "Other"
-            ],
-            "cyclic": true,
-            "release_type": [
-                "Unknown"
-            ],
-            "synthases": [
-                {
-                    "genes": [
-                        "ABX60163.1",
-                        "ABX60153.1",
-                        "ABX60162.1",
-                        "ABX60161.1",
-                        "ABX60152.1"
-                    ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "ABX60152.1"
-                            ],
-                            "module_number": "1",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Dehydratase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABX60153.1"
-                            ],
-                            "module_number": "2",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABX60161.1"
-                            ],
-                            "module_number": "3",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Dehydratase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABX60162.1"
-                            ],
-                            "module_number": "4",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Dehydratase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABX60163.1"
-                            ],
-                            "module_number": "5",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        }
-                    ]
-                }
+        "loci": {
+            "accession": "EU140798.1",
+            "completeness": "complete",
+            "evidence": [
+                "Sequence-based prediction"
             ]
         },
+        "mibig_accession": "BGC0000978",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "ABX60161.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "guanidinoacetate "
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "guanidinoacetate "
+                                ]
                             },
-                            "module_number": "0",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Unknown"
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Unknown"
+            ],
+            "starter_unit": "Unknown",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ABX60152.1",
+                        "ABX60153.1",
+                        "ABX60163.1",
+                        "ABX60162.1",
+                        "ABX60161.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABX60152.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABX60153.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "2",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABX60161.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "3",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABX60162.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABX60163.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "5",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
             ]
         },
-        "alkaloid": {
-            "subclass": "Unknown"
-        }
+        "publications": [
+            "pubmed:18065631"
+        ]
+    },
+    "submitter": {
+        "email": "b.neilan@unsw.edu.au",
+        "institution": "UNSW Australia",
+        "name": "Brett Neilan"
     }
 }

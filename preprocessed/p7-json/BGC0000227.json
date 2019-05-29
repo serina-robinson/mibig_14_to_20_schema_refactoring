@@ -1,25 +1,29 @@
 {
-    "submitter": {
-        "name": "Fengan Yu",
-        "institution": "University of Michigan",
-        "email": "fenganyu@umich.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000227",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:2583128",
-            "pubmed:7476861",
-            "pubmed:9831526"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial"
+                ],
+                "chem_struct": "C[C@@H]1[C@]2(c3c(c(c4c(c3O)C(=O)C5=C(C4=O)[C@H]6[C@H](CC(=O)O6)OC5C)O)[C@@H](O1)C[C@H]2O)O",
+                "chem_synonyms": [],
+                "compound": "granaticin",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 444.1057,
+                "molecular_formula": "C22H20O10"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "AJ011500.1",
             "completeness": "complete",
@@ -27,94 +31,90 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "granaticin",
-                "chem_synonyms": [],
-                "chem_struct": "C[C@@H]1[C@]2(c3c(c(c4c(c3O)C(=O)C5=C(C4=O)[C@H]6[C@H](CC(=O)O6)OC5C)O)[C@@H](O1)C[C@H]2O)O",
-                "molecular_formula": "C22H20O10",
-                "mol_mass": 444.1057,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
-            }
-        ],
-        "genes": {},
+        "mibig_accession": "BGC0000227",
         "polyketide": {
-            "starter_unit": "Malonyl-CoA",
+            "cyclic": true,
             "ketide_length": -1,
+            "starter_unit": "Malonyl-CoA",
             "subclasses": [
                 "Ansamycin"
             ],
-            "cyclic": true,
             "synthases": [
                 {
                     "genes": [
                         "CAA09655.1",
-                        "CAA09653.1",
-                        "CAA09654.1"
-                    ],
-                    "subclass": [
-                        "Type II"
+                        "CAA09654.1",
+                        "CAA09653.1"
                     ],
                     "modules": [
                         {
-                            "genes": [
-                                "CAA09653.1"
+                            "at_specificities": [
+                                "Unknown"
                             ],
-                            "module_number": "0",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase"
                             ],
-                            "at_specificities": [
-                                "Unknown"
+                            "genes": [
+                                "CAA09653.1"
                             ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "0",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         },
                         {
-                            "genes": [
-                                "CAA09654.1"
-                            ],
-                            "module_number": "1",
-                            "domains": [
-                                "CoA-ligase"
-                            ],
                             "at_specificities": [
                                 "Malonyl-CoA"
                             ],
+                            "comments": "",
+                            "domains": [
+                                "CoA-ligase"
+                            ],
                             "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "CAA09654.1"
+                            ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "1",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         },
                         {
-                            "genes": [
-                                "CAA09655.1"
-                            ],
-                            "module_number": "1",
-                            "domains": [
-                                "Thiolation (ACP/PCP)"
-                            ],
                             "at_specificities": [
                                 "Unknown"
                             ],
+                            "comments": "",
+                            "domains": [
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CAA09655.1"
+                            ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "1",
                             "pks_mod_doms": [
                                 "None"
-                            ],
-                            "comments": ""
+                            ]
                         }
+                    ],
+                    "subclass": [
+                        "Type II"
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:2583128",
+            "pubmed:7476861",
+            "pubmed:9831526"
+        ]
+    },
+    "submitter": {
+        "email": "fenganyu@umich.edu",
+        "institution": "University of Michigan",
+        "name": "Fengan Yu"
     }
 }

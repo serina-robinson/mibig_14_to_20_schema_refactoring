@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Russell Cox",
-        "submitter_institution": "University of Hannover",
-        "submitter_email": "russell.cox@oci.uni-hannover.de"
+    "submitter": {
+        "name": "Russell Cox",
+        "institution": "University of Hannover",
+        "email": "russell.cox@oci.uni-hannover.de"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001338",
         "biosyn_class": [
             "Polyketide"
@@ -13,219 +19,198 @@
             "doi:10.1039/c5sc04027b"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "KT781075.1",
+            "start_coord": 1,
+            "end_coord": 42813,
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Heterologous expression",
                 "Gene expression correlated with compound production"
-            ],
-            "accession": "KT781075.1",
-            "start_coord": 1,
-            "end_coord": 42813
+            ]
         },
         "compounds": [
             {
                 "compound": "Citrinin",
                 "chem_synonyms": [],
-                "chemspider_id": 10222475,
-                "evidence_struct": [
+                "database_id": "chemspider:10222475",
+                "evidence": [
                     "NMR",
                     "Mass spectrometry"
                 ],
-                "chem_act": [
+                "chem_acts": [
                     "Cytotoxic"
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "citC",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92648.1",
-                    "gene_annotation": "CitC oxidoreductase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Other in vivo study"
+                    "name": "citC",
+                    "id": "ALI92648.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "CitC oxidoreductase",
+                    "tailoring": [
+                        "Oxidation"
                     ]
                 },
                 {
-                    "gene_name": "citE",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92649.1",
-                    "gene_annotation": "CitE dehydrogenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Reduction",
-                    "evidence_genefunction": [
-                        "Other in vivo study"
+                    "name": "citE",
+                    "id": "ALI92649.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "CitE dehydrogenase",
+                    "tailoring": [
+                        "Reduction"
                     ]
                 },
                 {
-                    "gene_name": "mrl5",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92650.1",
-                    "gene_annotation": "MRL5 glyoxalase-like domain",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
+                    "name": "mrl5",
+                    "id": "ALI92650.1",
+                    "product": "MRL5 glyoxalase-like domain"
+                },
+                {
+                    "name": "citD",
+                    "id": "ALI92651.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "CitD dehydrogenase",
+                    "tailoring": [
+                        "Oxidation"
                     ]
                 },
                 {
-                    "gene_name": "citD",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92651.1",
-                    "gene_annotation": "CitD dehydrogenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Other in vivo study"
+                    "name": "mrl3",
+                    "id": "ALI92652.1",
+                    "product": "MRL3 Zn(II)2Cys6 Transcriptional regulator"
+                },
+                {
+                    "name": "citB",
+                    "id": "ALI92653.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "CitB Fe(II)-dependent oxygenase",
+                    "tailoring": [
+                        "Hydroxylation"
                     ]
                 },
                 {
-                    "gene_name": "mrl3",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92652.1",
-                    "gene_annotation": "MRL3 Zn(II)2Cys6 Transcriptional regulator",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "citA",
+                    "id": "ALI92654.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "CitA serine hydrolase"
                 },
                 {
-                    "gene_name": "citB",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92653.1",
-                    "gene_annotation": "CitB Fe(II)-dependent oxygenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Hydroxylation",
-                    "evidence_genefunction": [
-                        "Other in vivo study"
-                    ]
+                    "name": "citS",
+                    "id": "ALI92655.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "CitS citrinin polyketide synthase"
                 },
                 {
-                    "gene_name": "citA",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92654.1",
-                    "gene_annotation": "CitA serine hydrolase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Other in vivo study"
-                    ]
+                    "name": "mrr1",
+                    "id": "ALI92656.1",
+                    "product": "MRR1 Major Facilitator Superfamily (MFS) protein"
                 },
                 {
-                    "gene_name": "citS",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92655.1",
-                    "gene_annotation": "CitS citrinin polyketide synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Other in vivo study"
-                    ]
+                    "name": "mrr2",
+                    "id": "ALI92657.1",
+                    "product": "MRR2 histidine phosphatase"
                 },
                 {
-                    "gene_name": "mrr1",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92656.1",
-                    "gene_annotation": "MRR1 Major Facilitator Superfamily (MFS) protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mrr3",
+                    "id": "ALI92658.1",
+                    "product": "MRR3 unknown protein"
                 },
                 {
-                    "gene_name": "mrr2",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92657.1",
-                    "gene_annotation": "MRR2 histidine phosphatase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mrr4",
+                    "id": "ALI92659.1",
+                    "product": "MRR4 WD40 protein"
                 },
                 {
-                    "gene_name": "mrr3",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92658.1",
-                    "gene_annotation": "MRR3 unknown protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mrr5",
+                    "id": "ALI92660.1",
+                    "product": "MRR5 carbonic anhydrases"
                 },
                 {
-                    "gene_name": "mrr4",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92659.1",
-                    "gene_annotation": "MRR4 WD40 protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mrr6",
+                    "id": "ALI92661.1",
+                    "product": "MRR6 unknown protein"
                 },
                 {
-                    "gene_name": "mrr5",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92660.1",
-                    "gene_annotation": "MRR5 carbonic anhydrases",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mrr7",
+                    "id": "ALI92662.1",
+                    "product": "MRR7 enoyl-(Acyl carrier protein) reductase"
                 },
                 {
-                    "gene_name": "mrr6",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92661.1",
-                    "gene_annotation": "MRR6 unknown protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
-                },
-                {
-                    "gene_name": "mrr7",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92662.1",
-                    "gene_annotation": "MRR7 enoyl-(Acyl carrier protein) reductase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
-                },
-                {
-                    "gene_name": "mrr8",
-                    "not_in_gbk": false,
-                    "gene_id": "ALI92663.1",
-                    "gene_annotation": "MRR8 AMP-binding enzyme",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ]
+                    "name": "mrr8",
+                    "id": "ALI92663.1",
+                    "product": "MRR8 AMP-binding enzyme"
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
             "starter_unit": "Acetyl-CoA",
-            "pks_genes": [
-                "cits"
+            "subclasses": [
+                "Other"
             ],
-            "nr_iterations": 4,
-            "iterative_subtype": "Non-reducing",
-            "iter_cycl_type": "C2-C7 first",
-            "pks_te_type": "None",
-            "pks_release_type": "Reductive release"
+            "cyclic": true,
+            "release_type": [
+                "Reductive release"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "cits"
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "iterative": {
+                        "nr_iterations": 4,
+                        "subtype": "Non-reducing",
+                        "cyclization_type": "C2-C7 first"
+                    }
+                }
+            ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

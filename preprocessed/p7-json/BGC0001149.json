@@ -1,52 +1,31 @@
 {
-    "submitter": {
-        "name": "Harald Gross",
-        "institution": "University of Tuebingen",
-        "email": "harald.gross@uni-tuebingen.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001149",
         "biosyn_class": [
             "NRP",
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:24436210"
-        ],
-        "loci": {
-            "accession": "CBLV010000330.1",
-            "start_coord": 196768,
-            "end_coord": 209553,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "brabantamide A",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
+                "chem_moieties": [],
                 "chem_synonyms": [
                     "sb-253514"
                 ],
-                "chem_moieties": [],
-                "database_id": "chemspider:8274723",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "compound": "brabantamide A",
+                "database_id": "chemspider:8274723"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "braA",
-                    "id": "CDF96613.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -55,14 +34,14 @@
                             ]
                         }
                     ],
+                    "id": "CDF96613.1",
+                    "name": "braA",
                     "product": "RhlB, TDP-rhamnosyltransferase 1",
                     "tailoring": [
                         "Glycosylation"
                     ]
                 },
                 {
-                    "name": "BraB",
-                    "id": "CDF96614.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -71,11 +50,11 @@
                             ]
                         }
                     ],
+                    "id": "CDF96614.1",
+                    "name": "BraB",
                     "product": "NRPS"
                 },
                 {
-                    "name": "BraC",
-                    "id": "CDF96615.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -84,14 +63,14 @@
                             ]
                         }
                     ],
+                    "id": "CDF96615.1",
+                    "name": "BraC",
                     "product": "FAD-dependent Baeyer\u2013Villiger monooxygenase",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "BraD",
-                    "id": "CDF96616.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -100,11 +79,11 @@
                             ]
                         }
                     ],
+                    "id": "CDF96616.1",
+                    "name": "BraD",
                     "product": "LuxR-type transcriptional regulator"
                 },
                 {
-                    "name": "BraE",
-                    "id": "CDF96617.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -113,12 +92,25 @@
                             ]
                         }
                     ],
+                    "id": "CDF96617.1",
+                    "name": "BraE",
                     "product": "RND efflux system"
                 }
             ]
         },
+        "loci": {
+            "accession": "CBLV010000330.1",
+            "completeness": "complete",
+            "end_coord": 209553,
+            "evidence": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 196768
+        },
+        "mibig_accession": "BGC0001149",
         "nrp": {
-            "subclass": "Other lipopeptide",
+            "cyclic": true,
             "lipid_moiety": "3-OH tetradecanoic acid ",
             "nrps_genes": [
                 {
@@ -126,72 +118,80 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Serine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Serine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "Starter",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Proline"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Proline"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
+            "release_type": [
+                "Unknown"
+            ],
+            "subclass": "Other lipopeptide",
             "thioesterases": [
                 {
                     "gene": "cdf96614.1",
                     "thioesterase_type": "Unknown"
                 }
-            ],
-            "release_type": [
-                "Unknown"
             ]
         },
+        "publications": [
+            "pubmed:24436210"
+        ],
         "saccharide": {
+            "glycosyltransferases": [
+                {
+                    "evidence": [
+                        "Structure-based inference"
+                    ],
+                    "gene_id": "CDF96613.1",
+                    "specificity": "D-rhamnose"
+                }
+            ],
+            "subclass": "hybrid/tailoring",
             "sugar_subclusters": [
                 [
                     "BN844_4693",
                     "BN844_4692",
                     "BN844_4691"
                 ]
-            ],
-            "subclass": "hybrid/tailoring",
-            "glycosyltransferases": [
-                {
-                    "gene_id": "CDF96613.1",
-                    "specificity": "D-rhamnose",
-                    "evidence": [
-                        "Structure-based inference"
-                    ]
-                }
             ]
         }
+    },
+    "submitter": {
+        "email": "harald.gross@uni-tuebingen.de",
+        "institution": "University of Tuebingen",
+        "name": "Harald Gross"
     }
 }

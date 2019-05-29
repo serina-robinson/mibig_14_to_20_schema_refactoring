@@ -1,64 +1,43 @@
 {
-    "submitter": {
-        "name": "Helge Bode",
-        "institution": "Goethe Universit\u00c3\u00a4t Frankfurt",
-        "email": "h.bode@bio.uni-frankfurt.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000464",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:24203528"
-        ],
-        "loci": {
-            "accession": "FO704550.1",
-            "start_coord": 2329335,
-            "end_coord": 2435321,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Gene expression correlated with compound production"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Xenoamicin A",
-                "chem_synonyms": [],
-                "chem_struct": "O=C(N[C@H](C(N[C@H](C(C)C)C(N[C@@H](C(C)C)C(N[C@H](C)C(NCCC1=O)=O)=O)=O)=O)C(C)C)[C@@H]([C@H](OC([C@@H](NC([C@@H]2N1CCC2)=O)C(C)C)=O)C)NC([C@H]([C@H](C)CC)NC([C@@H](CC(C)C)NC([C@H](C(C)C)NC([C@@H](C)NC([C@H]3N(C(CCC)=O)CCC3)=O)=O)=O)=O)=O",
-                "molecular_formula": "C64H109N13O15",
-                "mol_mass": 1300.822,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "antiparasitic"
-                ]
-            },
-            {
-                "compound": "Xenoamicin B",
+                ],
+                "chem_struct": "O=C(N[C@H](C(N[C@H](C(C)C)C(N[C@@H](C(C)C)C(N[C@H](C)C(NCCC1=O)=O)=O)=O)=O)C(C)C)[C@@H]([C@H](OC([C@@H](NC([C@@H]2N1CCC2)=O)C(C)C)=O)C)NC([C@H]([C@H](C)CC)NC([C@@H](CC(C)C)NC([C@H](C(C)C)NC([C@@H](C)NC([C@H]3N(C(CCC)=O)CCC3)=O)=O)=O)=O)=O",
                 "chem_synonyms": [],
-                "chem_struct": "O=C(N[C@H](C(N[C@H]([C@H](C)CC)C(N[C@@H](C(C)C)C(N[C@H](C)C(NCCC1=O)=O)=O)=O)=O)C(C)C)[C@@H]([C@H](OC([C@@H](NC([C@@H]2N1CCC2)=O)C(C)C)=O)C)NC([C@H]([C@H](C)CC)NC([C@@H](CC(C)C)NC([C@H](C(C)C)NC([C@@H](C)NC([C@H]3N(C(CCC)=O)CCC3)=O)=O)=O)=O)=O",
-                "molecular_formula": "C65H112O15N13",
-                "mol_mass": 1314.8388,
+                "compound": "Xenoamicin A",
                 "database_id": "",
                 "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1300.822,
+                "molecular_formula": "C64H109N13O15"
+            },
+            {
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_struct": "O=C(N[C@H](C(N[C@H]([C@H](C)CC)C(N[C@@H](C(C)C)C(N[C@H](C)C(NCCC1=O)=O)=O)=O)=O)C(C)C)[C@@H]([C@H](OC([C@@H](NC([C@@H]2N1CCC2)=O)C(C)C)=O)C)NC([C@H]([C@H](C)CC)NC([C@@H](CC(C)C)NC([C@H](C(C)C)NC([C@@H](C)NC([C@H]3N(C(CCC)=O)CCC3)=O)=O)=O)=O)=O",
+                "chem_synonyms": [],
+                "compound": "Xenoamicin B",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1314.8388,
+                "molecular_formula": "C65H112O15N13"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "xabB",
-                    "id": "XDD1_2282",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -66,23 +45,36 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "XDD1_2282",
+                    "name": "xabB"
                 }
             ]
         },
+        "loci": {
+            "accession": "FO704550.1",
+            "completeness": "complete",
+            "end_coord": 2435321,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 2329335
+        },
+        "mibig_accession": "BGC0000464",
         "nrp": {
-            "subclass": "Cyclic depsipeptide",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "XDD1_2281",
                     "modules": [
                         {
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         }
                     ]
                 },
@@ -90,51 +82,51 @@
                     "gene_id": "XDD1_2282",
                     "modules": [
                         {
-                            "module_number": "2",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         },
                         {
-                            "module_number": "3",
-                            "active": false,
-                            "c_dom_subtype": "Unknown",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "module_number": "4",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "3"
                         },
                         {
-                            "module_number": "5",
+                            "active": false,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "4"
+                        },
+                        {
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "5"
                         },
                         {
-                            "module_number": "6",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "6"
                         },
                         {
-                            "module_number": "7",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "7"
                         }
                     ]
                 },
@@ -142,20 +134,20 @@
                     "gene_id": "XDD1_2283",
                     "modules": [
                         {
-                            "module_number": "8",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "8"
                         },
                         {
-                            "module_number": "9",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "9"
                         }
                     ]
                 },
@@ -163,45 +155,53 @@
                     "gene_id": "XDD1_2287",
                     "modules": [
                         {
-                            "module_number": "10",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "10"
                         },
                         {
-                            "module_number": "11",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "11"
                         },
                         {
-                            "module_number": "12",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "12"
                         },
                         {
-                            "module_number": "13",
                             "active": true,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "13"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Unknown"
-            ]
-        }
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:24203528"
+        ]
+    },
+    "submitter": {
+        "email": "h.bode@bio.uni-frankfurt.de",
+        "institution": "Goethe Universit\u00c3\u00a4t Frankfurt",
+        "name": "Helge Bode"
     }
 }

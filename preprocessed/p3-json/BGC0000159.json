@@ -1,189 +1,28 @@
 {
-    "version": "17",
-    "personal": {
-        "submitter_name": "Xiaohui Yan",
-        "submitter_institution": "The Scripps Research Institute",
-        "submitter_email": "xyan@scripps.edu"
-    },
     "general_params": {
-        "mibig_accession": "BGC0000159",
-        "biosyn_class": [
-            "Polyketide"
-        ],
-        "publications": [
-            "16707708",
-            "18708355",
-            "19281218"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "EF990140",
-                    "start_coord": 7322,
-                    "end_coord": 92509,
-                    "conn_comp_cluster": [
-                        "Knock-out studies"
-                    ]
-                }
-            ]
-        },
-        "compounds": [
-            {
-                "compound": "tautomycin",
-                "chem_synonyms": [],
-                "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
-                "pubchem_id": 3034761,
-                "chem_act": [
-                    "Inhibitor"
-                ],
-                "chem_target": [
-                    "ProteinPhosphatase"
-                ],
-                "chem_moieties": [
-                    {
-                        "chem_moiety": "Other",
-                        "other_chem_moiety": "dialkylmaleic anhydride ",
-                        "moiety_subcluster": [
-                            "abw96543",
-                            "abw96544",
-                            "abw96545",
-                            "abw96546",
-                            "abw96547",
-                            "abw96548",
-                            "abw96550",
-                            "abw96551"
-                        ]
-                    }
-                ]
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "gene_name": "ttmA",
-                    "not_in_gbk": false,
-                    "gene_startpos": 80486,
-                    "gene_endpos": 81607,
-                    "gene_id": "ABW96553",
-                    "gene_annotation": "acyl-CoA dehydrogenase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "TTM-non-producing"
-                },
-                {
-                    "gene_name": "ttmJ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 43846,
-                    "gene_endpos": 76329,
-                    "gene_id": "ABW96542",
-                    "gene_annotation": "type I modular polyketide synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "TTM-non-producing"
-                },
-                {
-                    "gene_name": "ttmK",
-                    "not_in_gbk": false,
-                    "gene_startpos": 76705,
-                    "gene_endpos": 78075,
-                    "gene_id": "ABW96543",
-                    "gene_annotation": "type B carboxylesterase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "TTM-non-producing"
-                },
-                {
-                    "gene_name": "ttmP",
-                    "not_in_gbk": false,
-                    "gene_startpos": 86802,
-                    "gene_endpos": 88025,
-                    "gene_id": "ABW96548",
-                    "gene_annotation": "acyl-CoA transferases/carnitine",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "TTM-non-producing"
-                },
-                {
-                    "gene_name": "ttmR",
-                    "not_in_gbk": false,
-                    "gene_startpos": 89450,
-                    "gene_endpos": 90853,
-                    "gene_id": "ABW96550",
-                    "gene_annotation": "MmgE/PrpD family protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "TTM-non-producing"
-                },
-                {
-                    "gene_name": "ttmS",
-                    "not_in_gbk": false,
-                    "gene_startpos": 90850,
-                    "gene_endpos": 91674,
-                    "gene_id": "ABW96551",
-                    "gene_annotation": "cyclase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "TTM-non-producing"
-                },
-                {
-                    "gene_name": "ttmM",
-                    "not_in_gbk": false,
-                    "gene_startpos": 83662,
-                    "gene_endpos": 84723,
-                    "gene_id": "ABW96545",
-                    "gene_annotation": "hydroxylase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Hydroxylation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "produces 3 TTM analogs"
-                }
-            ]
-        },
         "Polyketide": {
-            "pk_subclass": "Other",
             "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "starter_unit": "Isobutyryl-CoA",
-            "pks_te_type": "Type I",
-            "pks_release_type": "Unknown",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ABW96542",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Isobutyryl-CoA",
+                            "evidence_at_spec": "None",
                             "module_nr": "0",
                             "pks_domains": [
                                 "AT",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Isobutyryl-CoA",
-                            "evidence_at_spec": "None",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methoxymalonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "1",
                             "pks_domains": [
                                 "KS",
@@ -192,15 +31,15 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Methoxymalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "2",
                             "pks_domains": [
                                 "KS",
@@ -208,15 +47,15 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "3",
                             "pks_domains": [
                                 "KS",
@@ -225,15 +64,15 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "4",
                             "pks_domains": [
                                 "KS",
@@ -241,15 +80,15 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "5",
                             "pks_domains": [
                                 "KS",
@@ -259,15 +98,15 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "6",
                             "pks_domains": [
                                 "KS",
@@ -275,9 +114,6 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -289,6 +125,9 @@
                     "mod_pks_gene": "ABW96541",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "7",
                             "pks_domains": [
                                 "KS",
@@ -298,15 +137,15 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "8",
                             "pks_domains": [
                                 "KS",
@@ -314,15 +153,15 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "9",
                             "pks_domains": [
                                 "KS",
@@ -332,9 +171,6 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -346,6 +182,9 @@
                     "mod_pks_gene": "ABW96540",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "10",
                             "pks_domains": [
                                 "KS",
@@ -353,15 +192,15 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "module_nr": "11",
                             "pks_domains": [
                                 "KS",
@@ -371,15 +210,14 @@
                                 "KR",
                                 "ACP"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
                             "module_nr": "12",
                             "pks_domains": [
                                 "KS",
@@ -387,8 +225,6 @@
                                 "ACP",
                                 "TE"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -396,7 +232,171 @@
                         }
                     ]
                 }
+            ],
+            "pk_subclass": "Other",
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Modular type I"
+            ],
+            "pks_te_type": "Type I",
+            "starter_unit": "Isobutyryl-CoA"
+        },
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_act": [
+                    "Inhibitor"
+                ],
+                "chem_moieties": [
+                    {
+                        "chem_moiety": "Other",
+                        "moiety_subcluster": [
+                            "abw96543",
+                            "abw96544",
+                            "abw96545",
+                            "abw96546",
+                            "abw96547",
+                            "abw96548",
+                            "abw96550",
+                            "abw96551"
+                        ],
+                        "other_chem_moiety": "dialkylmaleic anhydride "
+                    }
+                ],
+                "chem_synonyms": [],
+                "chem_target": [
+                    "ProteinPhosphatase"
+                ],
+                "compound": "tautomycin",
+                "database_deposited": true,
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "pubchem_id": 3034761
+            }
+        ],
+        "genes": {
+            "gene": [
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "acyl-CoA dehydrogenase",
+                    "gene_endpos": 81607,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "ABW96553",
+                    "gene_name": "ttmA",
+                    "gene_startpos": 80486,
+                    "mut_pheno": "TTM-non-producing",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "type I modular polyketide synthase",
+                    "gene_endpos": 76329,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "ABW96542",
+                    "gene_name": "ttmJ",
+                    "gene_startpos": 43846,
+                    "mut_pheno": "TTM-non-producing",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "type B carboxylesterase",
+                    "gene_endpos": 78075,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "ABW96543",
+                    "gene_name": "ttmK",
+                    "gene_startpos": 76705,
+                    "mut_pheno": "TTM-non-producing",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "acyl-CoA transferases/carnitine",
+                    "gene_endpos": 88025,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "ABW96548",
+                    "gene_name": "ttmP",
+                    "gene_startpos": 86802,
+                    "mut_pheno": "TTM-non-producing",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "MmgE/PrpD family protein",
+                    "gene_endpos": 90853,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "ABW96550",
+                    "gene_name": "ttmR",
+                    "gene_startpos": 89450,
+                    "mut_pheno": "TTM-non-producing",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "cyclase",
+                    "gene_endpos": 91674,
+                    "gene_function": "Unknown",
+                    "gene_id": "ABW96551",
+                    "gene_name": "ttmS",
+                    "gene_startpos": 90850,
+                    "mut_pheno": "TTM-non-producing",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "hydroxylase",
+                    "gene_endpos": 84723,
+                    "gene_function": "Tailoring",
+                    "gene_id": "ABW96545",
+                    "gene_name": "ttmM",
+                    "gene_startpos": 83662,
+                    "mut_pheno": "produces 3 TTM analogs",
+                    "not_in_gbk": false,
+                    "tailoring": "Hydroxylation"
+                }
             ]
-        }
-    }
+        },
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
+                {
+                    "Accession": "EF990140",
+                    "conn_comp_cluster": [
+                        "Knock-out studies"
+                    ],
+                    "end_coord": 92509,
+                    "start_coord": 7322
+                }
+            ]
+        },
+        "mibig_accession": "BGC0000159",
+        "publications": [
+            "16707708",
+            "18708355",
+            "19281218"
+        ]
+    },
+    "personal": {
+        "submitter_email": "xyan@scripps.edu",
+        "submitter_institution": "The Scripps Research Institute",
+        "submitter_name": "Xiaohui Yan"
+    },
+    "version": "17"
 }

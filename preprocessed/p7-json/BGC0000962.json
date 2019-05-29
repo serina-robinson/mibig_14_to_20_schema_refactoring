@@ -1,24 +1,30 @@
 {
-    "submitter": {
-        "name": "Fengan Yu",
-        "institution": "University of Michigan",
-        "email": "fenganyu@umich.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000962",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:12383521"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
+                "chem_struct": "CC(C/C(=C\\\\C(=O)N(C)C(CC1=CC=CC=C1)C2=NC=CS2)/OC)C(Cl)(Cl)Cl",
+                "chem_synonyms": [],
+                "compound": "barbamide",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 460.0546,
+                "molecular_formula": "C20H23Cl3N2O2S"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "AF516145.1",
             "completeness": "complete",
@@ -26,64 +32,9 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "barbamide",
-                "chem_synonyms": [],
-                "chem_struct": "CC(C/C(=C\\\\C(=O)N(C)C(CC1=CC=CC=C1)C2=NC=CS2)/OC)C(Cl)(Cl)Cl",
-                "molecular_formula": "C20H23Cl3N2O2S",
-                "mol_mass": 460.0546,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Cytotoxic"
-                ]
-            }
-        ],
-        "genes": {},
-        "polyketide": {
-            "starter_unit": "Malonyl-CoA",
-            "subclasses": [
-                "Other"
-            ],
-            "cyclic": false,
-            "release_type": [
-                "Unknown"
-            ],
-            "synthases": [
-                {
-                    "genes": [
-                        "AAN32978.1"
-                    ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "AAN32978.1"
-                            ],
-                            "module_number": "2",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        }
-                    ]
-                }
-            ]
-        },
+        "mibig_accession": "BGC0000962",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": false,
             "nrps_genes": [
                 {
                     "gene_id": "AAN32974.1",
@@ -101,20 +52,20 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Leucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Leucine"
+                                ]
                             },
-                            "module_number": "0",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         }
                     ]
                 },
@@ -123,20 +74,20 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "(4S)-5,5,5-trichloroleucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "(4S)-5,5,5-trichloroleucine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         }
                     ]
                 },
@@ -144,11 +95,11 @@
                     "gene_id": "AAN32979.1",
                     "modules": [
                         {
-                            "module_number": "2",
                             "active": false,
                             "modification_domains": [
                                 "Methylation"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 },
@@ -157,48 +108,97 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Phenylalanine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Phenylalanine"
+                                ]
                             },
-                            "module_number": "3",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "Methylation"
-                            ]
+                            ],
+                            "module_number": "3"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Cysteine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Activity assay"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Cysteine"
+                                ]
                             },
-                            "module_number": "4",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "4"
                         }
                     ]
                 }
             ],
-            "cyclic": false,
-            "thioesterases": [],
             "release_type": [
                 "Unknown"
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AAN32978.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAN32978.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "2",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:12383521"
+        ]
+    },
+    "submitter": {
+        "email": "fenganyu@umich.edu",
+        "institution": "University of Michigan",
+        "name": "Fengan Yu"
     }
 }

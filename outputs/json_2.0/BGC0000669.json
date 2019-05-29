@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Hans-Wilhelm Nuetzmann",
-        "submitter_institution": "John Innes Centre",
-        "submitter_email": "hans-wilhelm.nutzmann@jic.ac.uk"
+    "submitter": {
+        "name": "Hans-Wilhelm Nuetzmann",
+        "institution": "John Innes Centre",
+        "email": "hans-wilhelm.nutzmann@jic.ac.uk"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000669",
         "biosyn_class": [
             "Terpene"
@@ -14,90 +20,100 @@
             "pubmed:22882494"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Heterologous expression",
-                "Gene expression correlated with compound production"
-            ],
             "accession": "NC_003076.8",
             "start_coord": 17023646,
-            "end_coord": 17058245
+            "end_coord": 17058245,
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
         },
         "compounds": [
             {
                 "compound": "Marneral",
-                "chem_synonyms": [
-                    "marneral",
-                    "(+)-marneral",
-                    "3-{(1S,2R,3R)-2,3-dimethyl-6-(propan-2-ylidene)-2-[(3E,7E)-4,8,12-trimethyltrideca-3,7,11-trien-1-yl]cyclohexyl}propanal",
-                    "CHEBI:63465",
-                    "C20192",
-                    ""
-                ],
-                "pubchem_id": 25001002,
-                "chem_act": [
+                "chem_synonyms": [],
+                "chem_moieties": [],
+                "database_id": "pubchem:25001002",
+                "chem_acts": [
                     "Unknown"
-                ],
-                "chem_moieties": [
-                    {
-                        "moiety_subcluster": []
-                    }
-                ],
-                "mol_mass": 426.386,
-                "molecular_formula": "C30H50O",
-                "chem_struct": "C[C@@H]1CCC(=C(C)C)[C@H]([C@]1(C)CC/C=C(\\C)/CC/C=C(\\C)/CCC=C(C)C)CCC=O"
+                ]
             }
         ],
         "genes": {
-            "gene": [
+            "extra_genes": [
                 {
-                    "gene_name": "CYP705A12",
-                    "not_in_gbk": false,
-                    "gene_id": "AT5G42580",
-                    "gene_annotation": "cytochrome P450, family 705, subfamily A, polypeptide 12",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
+                    "id": "AT5G42591",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 17036673,
+                                "end": 17036780
+                            }
+                        ],
+                        "strand": 1
+                    },
+                    "translation": "MQCCFTISLVVDPTTAPMATSGYDSSPSPCVKEEV",
+                    "product": "hypothetical protein",
+                    "comments": "unknown protein; Has 30201 Blast hits to 17322 proteins in 780 species: Archae - 12; Bacteria - 1396; Metazoa - 17338; Fungi - 3422; Plants - 5037; Viruses - 0; Other Eukaryotes - 2996 (source: NCBI BLink)."
+                }
+            ],
+            "annotations": [
+                {
+                    "name": "CYP705A12",
+                    "id": "NP_199072.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "cytochrome P450, family 705, subfamily A, polypeptide 12",
+                    "tailoring": [
+                        "Unknown"
                     ]
                 },
                 {
-                    "gene_name": "CYP71A16",
-                    "not_in_gbk": false,
-                    "gene_id": "AT5G42590",
-                    "gene_annotation": "cytochrome P450 71A16",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Other in vivo study"
+                    "name": "CYP71A16",
+                    "id": "NP_199073.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "cytochrome P450 71A16",
+                    "tailoring": [
+                        "Oxidation"
                     ]
                 },
                 {
-                    "gene_name": "MRN1",
-                    "not_in_gbk": false,
-                    "gene_id": "AT5G42600",
-                    "gene_annotation": "marneral synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Other in vivo study"
-                    ]
+                    "name": "MRN1",
+                    "id": "NP_199074.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "product": "marneral synthase"
                 }
             ]
         },
         "terpene": {
-            "terpene_subclass": "Unknown",
-            "terpene_c_len": "Triterpene",
             "terpene_precursor": "FPP",
             "terpene_synth_cycl": [
                 "mrn1"
             ],
-            "prenyl_transf": []
+            "structural_subclass": "Unknown",
+            "carbon_count_subclass": "Triterpene",
+            "prenyltransferases": []
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

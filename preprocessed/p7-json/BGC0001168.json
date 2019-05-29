@@ -1,85 +1,85 @@
 {
-    "submitter": {
-        "name": "Pablo Cruz Morales",
-        "institution": "National Laboratory of genomics for biodiversity-CINVESTAV",
-        "email": "pcruz@langebio.cinvestav.mx"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001168",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:23709624"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "Trypsin"
+                    }
+                ],
+                "compound": "Livipeptin",
+                "database_id": "",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 347.16
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "CM001889.1",
-            "start_coord": 891947,
-            "end_coord": 896528,
             "completeness": "Unknown",
+            "end_coord": 896528,
             "evidence": [
                 "Knock-out studies",
                 "Heterologous expression",
                 "Gene expression correlated with compound production",
                 "Sequence-based prediction"
-            ]
+            ],
+            "start_coord": 891947
         },
-        "compounds": [
-            {
-                "compound": "Livipeptin",
-                "chem_synonyms": [],
-                "mol_mass": 347.16,
-                "database_id": "",
-                "mass_spec_ion_type": "M+",
-                "chem_acts": [
-                    "Inhibitor"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "Trypsin",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {},
+        "mibig_accession": "BGC0001168",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": false,
             "nrps_genes": [
                 {
                     "gene_id": "509516289",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Arginine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Arginine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         }
                     ]
                 }
             ],
-            "cyclic": false,
-            "thioesterases": [],
             "release_type": [
                 "Reductive release"
-            ]
-        }
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:23709624"
+        ]
+    },
+    "submitter": {
+        "email": "pcruz@langebio.cinvestav.mx",
+        "institution": "National Laboratory of genomics for biodiversity-CINVESTAV",
+        "name": "Pablo Cruz Morales"
     }
 }

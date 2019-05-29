@@ -1,107 +1,97 @@
 {
-    "personal": {
-        "submitter_name": "Jose A. Salas",
-        "submitter_institution": "University of Oviedo",
-        "submitter_email": "jasalas@uniovi.es"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0001046",
         "biosyn_class": [
             "NRP",
             "Polyketide",
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:19875077",
-            "pubmed:21398531",
-            "pubmed:21665968",
-            "pubmed:22569159",
-            "pubmed:22726958",
-            "pubmed:22820841"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ],
-            "accession": "FN433113.1"
-        },
         "compounds": [
             {
-                "compound": "Streptolydigin",
-                "chem_synonyms": [],
-                "chem_struct": "C[C@H]1[C@@H]2C=C[C@]3(CO3)[C@@](O2)(O[C@H]1[C@H](C)/C=C(\\\\C)/C=C/C(=O)C4=C(N([C@H](C4=O)[C@H](C)C(=O)NC)[C@@H]5CC[C@@H]([C@@H](O5)C)O)O)C",
-                "molecular_formula": "C32H44N2O9",
-                "mol_mass": 601.7,
-                "mass_ion_type": "[M+H]+",
                 "chem_act": [
                     "Antibacterial"
                 ],
+                "chem_struct": "C[C@H]1[C@@H]2C=C[C@]3(CO3)[C@@](O2)(O[C@H]1[C@H](C)/C=C(\\\\C)/C=C/C(=O)C4=C(N([C@H](C4=O)[C@H](C)C(=O)NC)[C@@H]5CC[C@@H]([C@@H](O5)C)O)O)C",
+                "chem_synonyms": [],
                 "chem_target": [
                     "RNApolymerase"
-                ]
+                ],
+                "compound": "Streptolydigin",
+                "mass_ion_type": "[M+H]+",
+                "mol_mass": 601.7,
+                "molecular_formula": "C32H44N2O9"
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "slgG",
-                    "gene_id": "CBA11567.1",
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_annotation": "glycosyltransferase",
                     "gene_function": "Tailoring",
-                    "tailoring": "Glycosylation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Accumulation of aglycon"
+                    "gene_id": "CBA11567.1",
+                    "gene_name": "slgG",
+                    "mut_pheno": "Accumulation of aglycon",
+                    "tailoring": "Glycosylation"
                 },
                 {
-                    "gene_name": "slgZ",
-                    "gene_id": "CBA11568.1",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "CBA11568.1",
+                    "gene_name": "slgZ",
                     "mut_pheno": "Accumulation of streptolydigin B"
                 },
                 {
-                    "gene_name": "slgE1",
-                    "gene_id": "CBA11574.1",
-                    "gene_annotation": "glutamate mutase subunit",
-                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
+                    "gene_annotation": "glutamate mutase subunit",
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "CBA11574.1",
+                    "gene_name": "slgE1",
                     "mut_pheno": "Accumulation of streptolydigins B and C"
                 }
             ]
         },
+        "loci": {
+            "accession": "FN433113.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0001046",
+        "minimal": true,
         "polyketide": {
-            "pk_subclass": "Other",
             "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "starter_unit": "Acetyl-CoA",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "CBA11584.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Malonyl-CoA",
                             "module_nr": "0",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "1",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -109,13 +99,13 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Malonyl-CoA",
                             "module_nr": "2",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -123,13 +113,13 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "3",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -138,7 +128,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -150,6 +139,7 @@
                     "mod_pks_gene": "CBA11583.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "4",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -157,13 +147,13 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Methylmalonyl-CoA",
                             "module_nr": "5",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -172,7 +162,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -184,6 +173,7 @@
                     "mod_pks_gene": "CBA11582.1",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Malonyl-CoA",
                             "module_nr": "6",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -192,13 +182,13 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "at_substr_spec": "Malonyl-CoA",
                             "module_nr": "7",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -206,7 +196,6 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -215,21 +204,32 @@
                     ]
                 }
             ],
+            "pk_subclass": "Other",
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Modular type I"
+            ],
             "pks_te_type": "Type II",
             "pks_thioesterase": [
                 "cba11581.1"
             ],
-            "pks_release_type": "Unknown"
+            "starter_unit": "Acetyl-CoA"
         },
-        "minimal": true,
+        "publications": [
+            "pubmed:19875077",
+            "pubmed:21398531",
+            "pubmed:21665968",
+            "pubmed:22569159",
+            "pubmed:22726958",
+            "pubmed:22820841"
+        ],
         "saccharide": {
             "saccharide_subclass": "hybrid/tailoring"
         }
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "jasalas@uniovi.es",
+        "submitter_institution": "University of Oviedo",
+        "submitter_name": "Jose A. Salas"
+    }
 }

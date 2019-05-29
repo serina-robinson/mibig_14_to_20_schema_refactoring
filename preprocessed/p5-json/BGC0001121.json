@@ -1,61 +1,48 @@
 {
-    "personal": {
-        "submitter_name": "Yuta Tsunematsu",
-        "submitter_institution": "University of Shizuoka",
-        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0001121",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:19666480",
-            "pubmed:20174687"
+        "compounds": [
+            {
+                "chem_act": [
+                    "Unknown"
+                ],
+                "chem_synonyms": [],
+                "chemspider_id": 61385,
+                "compound": "orsellinic acid",
+                "pubchem_id": 68072
+            }
         ],
+        "genes": {},
         "loci": {
+            "accession": "BN001302.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Knock-out studies",
                 "Gene expression correlated with compound production"
             ],
-            "accession": "BN001302.1",
-            "start_coord": 214879,
-            "end_coord": 224786
+            "end_coord": 224786,
+            "start_coord": 214879
         },
-        "compounds": [
-            {
-                "compound": "orsellinic acid",
-                "chem_synonyms": [],
-                "pubchem_id": 68072,
-                "chemspider_id": 61385,
-                "chem_act": [
-                    "Unknown"
-                ]
-            }
-        ],
-        "genes": {},
+        "mibig_accession": "BGC0001121",
         "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
-            "starter_unit": "Acetyl-CoA",
-            "pks_genes": [
-                "an7909",
-                "xp_681178"
-            ],
-            "nr_iterations": 3,
-            "iterative_subtype": "Non-reducing",
             "iter_cycl_type": "C2-C7 first",
-            "pks_te_type": "Unknown",
-            "pks_release_type": "Hydrolysis",
+            "iterative_subtype": "Non-reducing",
+            "lin_cycl_pk": "Cyclic",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AN7909",
                     "pks_module": [
                         {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "None",
                             "module_nr": "1",
                             "pks_domains": [
                                 "ACP transacylase",
@@ -66,23 +53,36 @@
                                 "Thiolation (ACP/PCP)",
                                 "Thioesterase"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "None",
+                            "pks_evidence_skip_iter": "Sequence-based prediction",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Iterated",
-                            "pks_evidence_skip_iter": "Sequence-based prediction"
+                            "pks_mod_skip_iter": "Iterated"
                         }
                     ]
                 }
-            ]
-        }
+            ],
+            "nr_iterations": 3,
+            "pk_subclass": "Other",
+            "pks_genes": [
+                "an7909",
+                "xp_681178"
+            ],
+            "pks_release_type": "Hydrolysis",
+            "pks_subclass": [
+                "Iterative type I"
+            ],
+            "pks_te_type": "Unknown",
+            "starter_unit": "Acetyl-CoA"
+        },
+        "publications": [
+            "pubmed:19666480",
+            "pubmed:20174687"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp",
+        "submitter_institution": "University of Shizuoka",
+        "submitter_name": "Yuta Tsunematsu"
+    }
 }

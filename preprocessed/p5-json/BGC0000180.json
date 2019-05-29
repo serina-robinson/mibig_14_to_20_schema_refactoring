@@ -1,60 +1,53 @@
 {
-    "personal": {
-        "submitter_name": "Helge B. Bode",
-        "submitter_institution": "Molecular Biotechnology, Institute for Molecular Bioscience, Goethe University Frankfurt, 60438 Frankfurt/Main, Germany",
-        "submitter_email": "h.bode@bio.uni-frankfurt.de"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0000180",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:23821465"
+        "compounds": [
+            {
+                "chem_act": [
+                    "fluorescence"
+                ],
+                "chem_struct": "Oc3cccc2C=C(\\\\C=C\\\\C=C\\\\c1ccccc1)OC(=O)c23",
+                "chem_synonyms": [],
+                "compound": "Legioliulin",
+                "mass_ion_type": "[M+H]+",
+                "mol_mass": 291.101571,
+                "molecular_formula": "C19H14O3"
+            }
         ],
+        "genes": {
+            "gene": [
+                {
+                    "evidence_genefunction": [
+                        "Heterologous expression"
+                    ],
+                    "gene_annotation": "PAL phenylalanine ammonia lyase",
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AIU36110.1"
+                }
+            ]
+        },
         "loci": {
+            "accession": "KM222819.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Knock-out studies",
                 "Gene expression correlated with compound production",
                 "Sequence-based prediction"
             ],
-            "accession": "KM222819.1",
-            "start_coord": 4550,
-            "end_coord": 31415
+            "end_coord": 31415,
+            "start_coord": 4550
         },
-        "compounds": [
-            {
-                "compound": "Legioliulin",
-                "chem_synonyms": [],
-                "chem_struct": "Oc3cccc2C=C(\\\\C=C\\\\C=C\\\\c1ccccc1)OC(=O)c23",
-                "molecular_formula": "C19H14O3",
-                "mol_mass": 291.101571,
-                "mass_ion_type": "[M+H]+",
-                "chem_act": [
-                    "fluorescence"
-                ]
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "gene_id": "AIU36110.1",
-                    "gene_annotation": "PAL phenylalanine ammonia lyase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Heterologous expression"
-                    ]
-                }
-            ]
-        },
+        "mibig_accession": "BGC0000180",
         "polyketide": {
-            "pk_subclass": "Other",
             "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Trans-AT type I"
-            ],
-            "starter_unit": "Unknown",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AIU36103.1",
@@ -70,6 +63,7 @@
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "Unknown",
                             "module_nr": "2",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -77,7 +71,6 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ]
@@ -104,13 +97,13 @@
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "Unknown",
                             "module_nr": "5",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -131,15 +124,22 @@
                     ]
                 }
             ],
-            "trans_at": [],
+            "pk_subclass": "Other",
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Trans-AT type I"
+            ],
             "pks_te_type": "Type I",
-            "pks_release_type": "Unknown"
-        }
+            "starter_unit": "Unknown",
+            "trans_at": []
+        },
+        "publications": [
+            "pubmed:23821465"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "h.bode@bio.uni-frankfurt.de",
+        "submitter_institution": "Molecular Biotechnology, Institute for Molecular Bioscience, Goethe University Frankfurt, 60438 Frankfurt/Main, Germany",
+        "submitter_name": "Helge B. Bode"
+    }
 }

@@ -1,70 +1,51 @@
 {
-    "submitter": {
-        "name": "Hyung-Jin Kwon",
-        "institution": "Myongji University",
-        "email": "hjink@mju.ac.kr"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000027",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:23504076"
-        ],
-        "loci": {
-            "accession": "KC148521.1",
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_synonyms": [],
                 "compound": "ankaflavin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:15294091",
-                "chem_acts": [
-                    "Unknown"
-                ]
+                "database_id": "pubchem:15294091"
             },
             {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_synonyms": [],
                 "compound": "monascin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:12118082",
-                "chem_acts": [
-                    "Unknown"
-                ]
+                "database_id": "pubchem:12118082"
             },
             {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_synonyms": [],
                 "compound": "rubropunctatin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:6452445",
-                "chem_acts": [
-                    "Unknown"
-                ]
+                "database_id": "pubchem:6452445"
             },
             {
-                "compound": "monascorubrin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:12118084",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "monascorubrin",
+                "database_id": "pubchem:12118084"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "mppB",
-                    "id": "AGN71607.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -73,14 +54,14 @@
                             ]
                         }
                     ],
+                    "id": "AGN71607.1",
+                    "name": "mppB",
                     "product": "acyltransferase",
                     "tailoring": [
                         "Acylation"
                     ]
                 },
                 {
-                    "name": "mppA",
-                    "id": "AGN71606.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -89,14 +70,14 @@
                             ]
                         }
                     ],
+                    "id": "AGN71606.1",
+                    "name": "mppA",
                     "product": "ketoreductase ",
                     "tailoring": [
                         "Reduction"
                     ]
                 },
                 {
-                    "name": "mppC",
-                    "id": "AGN71608.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -105,13 +86,14 @@
                             ]
                         }
                     ],
+                    "id": "AGN71608.1",
+                    "name": "mppC",
                     "product": "dehydrogenase",
                     "tailoring": [
                         "Reduction"
                     ]
                 },
                 {
-                    "name": "mppD",
                     "functions": [
                         {
                             "category": "Unknown",
@@ -120,11 +102,10 @@
                             ]
                         }
                     ],
+                    "name": "mppD",
                     "product": "esterase-like hydrolase"
                 },
                 {
-                    "name": "mpp7",
-                    "id": "AGN71622.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -133,14 +114,14 @@
                             ]
                         }
                     ],
+                    "id": "AGN71622.1",
+                    "name": "mpp7",
                     "product": "dehydratase",
                     "tailoring": [
                         "Dehydration"
                     ]
                 },
                 {
-                    "name": "mppF",
-                    "id": "AGN71623.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -149,38 +130,57 @@
                             ]
                         }
                     ],
+                    "id": "AGN71623.1",
+                    "name": "mppF",
                     "product": "hydroxylase",
                     "tailoring": [
                         "Monooxygenation"
                     ]
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "KC148521.1",
+            "completeness": "complete",
+            "evidence": [
+                "Sequence-based prediction"
             ]
         },
+        "mibig_accession": "BGC0000027",
         "polyketide": {
-            "starter_unit": "Acetoacetyl-CoA",
-            "subclasses": [
-                "Other"
-            ],
             "cyclic": true,
             "release_type": [
                 "Hydrolysis"
             ],
+            "starter_unit": "Acetoacetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
             "synthases": [
                 {
                     "genes": [
-                        "2362mppks5",
-                        "kc148521"
-                    ],
-                    "subclass": [
-                        "Iterative type I"
+                        "kc148521",
+                        "2362mppks5"
                     ],
                     "iterative": {
+                        "cyclization_type": "C2-C7 first",
                         "nr_iterations": 5,
-                        "subtype": "Non-reducing",
-                        "cyclization_type": "C2-C7 first"
-                    }
+                        "subtype": "Non-reducing"
+                    },
+                    "subclass": [
+                        "Iterative type I"
+                    ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:23504076"
+        ]
+    },
+    "submitter": {
+        "email": "hjink@mju.ac.kr",
+        "institution": "Myongji University",
+        "name": "Hyung-Jin Kwon"
     }
 }

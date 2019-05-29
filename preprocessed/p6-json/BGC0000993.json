@@ -1,48 +1,22 @@
 {
-    "submitter": {
-        "name": "Yi-Qiang Cheng",
-        "institution": "University of North Texas Health Science Center",
-        "email": "yiqiang.cheng@unthsc.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000993",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:17400765",
-            "pubmed:19549597",
-            "pubmed:21183645",
-            "pubmed:21183648",
-            "pubmed:24553401"
-        ],
-        "loci": {
-            "accession": "EF210776.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "FK228",
-                "chem_synonyms": [
-                    "depsipeptide",
-                    "romidepsin"
+                "chem_acts": [
+                    "Antifungal",
+                    "Cytotoxic",
+                    "Inhibitor"
                 ],
-                "chem_struct": "CC=C1C(=O)NC(C(=O)OC2CC(=O)NC(C(=O)NC(CSSCCC=C2)C(=O)N1)C(C)C)C(C)C",
-                "molecular_formula": "C24H36N4O6S2",
-                "mol_mass": 540.2,
                 "chem_moieties": [
                     {
                         "moiety": "Disulfide bond",
@@ -51,24 +25,30 @@
                         ]
                     }
                 ],
-                "database_id": "",
-                "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Antifungal",
-                    "Cytotoxic",
-                    "Inhibitor"
+                "chem_struct": "CC=C1C(=O)NC(C(=O)OC2CC(=O)NC(C(=O)NC(CSSCCC=C2)C(=O)N1)C(C)C)C(C)C",
+                "chem_synonyms": [
+                    "depsipeptide",
+                    "romidepsin"
                 ],
                 "chem_targets": [
                     {
-                        "target": "Histonedeacetylases",
-                        "publications": []
+                        "publications": [],
+                        "target": "Histonedeacetylases"
                     }
-                ]
+                ],
+                "compound": "FK228",
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "mol_mass": 540.2,
+                "molecular_formula": "C24H36N4O6S2"
             }
         ],
         "genes": {
             "operons": [
                 {
+                    "evidence": [
+                        "Unknown"
+                    ],
                     "genes": [
                         "abp57745",
                         "abp57746",
@@ -80,21 +60,36 @@
                         "abp57752",
                         "abp57753",
                         "abp57754"
-                    ],
-                    "evidence": [
-                        "Unknown"
                     ]
                 }
             ]
         },
-        "polyketide": {
-            "starter_unit": "Malonyl-CoA",
-            "subclasses": [
-                "Macrolide"
-            ],
+        "loci": {
+            "accession": "EF210776.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0000993",
+        "nrp": {
             "cyclic": true,
             "release_type": [
                 "Macrolactamization"
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Macrolide"
             ],
             "synthases": [
                 {
@@ -113,12 +108,17 @@
                 }
             ]
         },
-        "nrp": {
-            "subclass": "Cyclic depsipeptide",
-            "cyclic": true,
-            "release_type": [
-                "Macrolactamization"
-            ]
-        }
+        "publications": [
+            "pubmed:17400765",
+            "pubmed:19549597",
+            "pubmed:21183645",
+            "pubmed:21183648",
+            "pubmed:24553401"
+        ]
+    },
+    "submitter": {
+        "email": "yiqiang.cheng@unthsc.edu",
+        "institution": "University of North Texas Health Science Center",
+        "name": "Yi-Qiang Cheng"
     }
 }

@@ -1,103 +1,103 @@
 {
-    "version": "16",
-    "personal": {
-        "submitter_name": "Yuta Tsunematsu",
-        "submitter_institution": "University of Shizuoka",
-        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp"
-    },
     "general_params": {
-        "mibig_accession": "BGC0000665",
+        "Alkaloid": {
+            "alkaloid_subclass": "Indole/benzopyrrole"
+        },
+        "Terpene": {
+            "prenyl_transf": [
+                "cch63739.1"
+            ],
+            "terpene_c_len": "Sesquiterpene",
+            "terpene_precursor": "FPP",
+            "terpene_subclass": "Other",
+            "terpene_synth_cycl": [
+                "cch63731.1"
+            ]
+        },
         "biosyn_class": [
             "Terpene",
             "Alkaloid"
         ],
-        "publications": [
-            "22591327",
-            "22968942",
-            "23205935"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "HE815466",
-                    "start_coord": -1,
-                    "end_coord": -1,
-                    "conn_comp_cluster": [
-                        "Knock-out studies",
-                        "Enzymatic assays",
-                        "Heterologous expression"
-                    ]
-                }
-            ]
-        },
         "compounds": [
             {
-                "compound": "xiamycin A",
+                "chem_act": [
+                    "Other"
+                ],
                 "chem_synonyms": [],
+                "chemspider_id": 26364073,
+                "compound": "xiamycin A",
                 "database_deposited": true,
                 "databases_deposited": [
                     "PubChem",
                     "ChemSpider"
                 ],
-                "pubchem_id": 38358410,
-                "chemspider_id": 26364073,
-                "chem_act": [
-                    "Other"
-                ],
-                "other_chem_act": "anti-HIV R5"
+                "other_chem_act": "anti-HIV R5",
+                "pubchem_id": 38358410
             }
         ],
         "genes": {
+            "gene": [
+                {
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_annotation": "Indole oxygenase ",
+                    "gene_endpos": 12705,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AFK78075",
+                    "gene_name": "xiaI",
+                    "gene_startpos": 11512,
+                    "mut_pheno": "loss of xiamycin A production",
+                    "not_in_gbk": false,
+                    "tailoring": "Oxidation"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_annotation": "Cytochrome P450",
+                    "gene_endpos": 16318,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AFK78079",
+                    "gene_name": "xiaM",
+                    "gene_startpos": 15149,
+                    "mut_pheno": "loss of xiamycin A production",
+                    "not_in_gbk": false,
+                    "tailoring": "Oxidation"
+                }
+            ],
             "operon": [
                 {
                     "operon_genes": []
                 }
-            ],
-            "gene": [
+            ]
+        },
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
                 {
-                    "gene_name": "xiaI",
-                    "not_in_gbk": false,
-                    "gene_startpos": 11512,
-                    "gene_endpos": 12705,
-                    "gene_id": "AFK78075",
-                    "gene_annotation": "Indole oxygenase ",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Activity assay"
+                    "Accession": "HE815466",
+                    "conn_comp_cluster": [
+                        "Knock-out studies",
+                        "Enzymatic assays",
+                        "Heterologous expression"
                     ],
-                    "mut_pheno": "loss of xiamycin A production"
-                },
-                {
-                    "gene_name": "xiaM",
-                    "not_in_gbk": false,
-                    "gene_startpos": 15149,
-                    "gene_endpos": 16318,
-                    "gene_id": "AFK78079",
-                    "gene_annotation": "Cytochrome P450",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "mut_pheno": "loss of xiamycin A production"
+                    "end_coord": -1,
+                    "start_coord": -1
                 }
             ]
         },
-        "Terpene": {
-            "terpene_subclass": "Other",
-            "terpene_c_len": "Sesquiterpene",
-            "terpene_precursor": "FPP",
-            "terpene_synth_cycl": [
-                "cch63731.1"
-            ],
-            "prenyl_transf": [
-                "cch63739.1"
-            ]
-        },
-        "Alkaloid": {
-            "alkaloid_subclass": "Indole/benzopyrrole"
-        }
-    }
+        "mibig_accession": "BGC0000665",
+        "publications": [
+            "22591327",
+            "22968942",
+            "23205935"
+        ]
+    },
+    "personal": {
+        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp",
+        "submitter_institution": "University of Shizuoka",
+        "submitter_name": "Yuta Tsunematsu"
+    },
+    "version": "16"
 }

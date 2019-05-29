@@ -1,55 +1,30 @@
 {
-    "submitter": {
-        "name": "Doug Mitchell, Rainer Borriss",
-        "institution": "University of Illinois at Urbana-Champaign, Humboldt University Berlin",
-        "email": "douglasm@illinois.edu, rainer.borriss@rz.hu-berlin.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001173",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:21950656",
-            "pubmed:23878226",
-            "pubmed:24085393"
-        ],
-        "loci": {
-            "accession": "NZ_ABRX01000001.1",
-            "start_coord": 223361,
-            "end_coord": 233305,
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "plantazolicin",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_synonyms": [
                     "pzn",
                     "plantazolicin a"
                 ],
-                "database_id": "chemspider:28419936",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "compound": "plantazolicin",
+                "database_id": "chemspider:28419936"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "pznK",
-                    "id": "BAT_2474",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -58,11 +33,24 @@
                             ]
                         }
                     ],
+                    "id": "BAT_2474",
+                    "name": "pznK",
                     "product": "regulatory protein"
                 },
                 {
-                    "name": "pznG",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "BAT_2473",
+                    "name": "pznG",
+                    "product": "ABC transporter"
+                },
+                {
                     "functions": [
                         {
                             "category": "Transport",
@@ -71,24 +59,11 @@
                             ]
                         }
                     ],
-                    "product": "ABC transporter"
-                },
-                {
-                    "name": "pznH",
                     "id": "BAT_2472",
-                    "functions": [
-                        {
-                            "category": "Transport",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
+                    "name": "pznH",
                     "product": "ABC transporter"
                 },
                 {
-                    "name": "pznA",
-                    "id": "BAT_4209",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -97,11 +72,11 @@
                             ]
                         }
                     ],
+                    "id": "BAT_4209",
+                    "name": "pznA",
                     "product": "RiPP precursor peptide"
                 },
                 {
-                    "name": "pznC",
-                    "id": "BAT_2469",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -110,11 +85,11 @@
                             ]
                         }
                     ],
+                    "id": "BAT_2469",
+                    "name": "pznC",
                     "product": "cyclodehydratase partner"
                 },
                 {
-                    "name": "pznD",
-                    "id": "BAT_2468",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -123,14 +98,14 @@
                             ]
                         }
                     ],
+                    "id": "BAT_2468",
+                    "name": "pznD",
                     "product": "cyclodehydratase",
                     "tailoring": [
                         "Heterocyclization"
                     ]
                 },
                 {
-                    "name": "pznB",
-                    "id": "BAT_2467",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -139,14 +114,14 @@
                             ]
                         }
                     ],
+                    "id": "BAT_2467",
+                    "name": "pznB",
                     "product": "FMN-dependent dehydrogenase",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "pznE",
-                    "id": "BAT_2466",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -155,11 +130,11 @@
                             ]
                         }
                     ],
+                    "id": "BAT_2466",
+                    "name": "pznE",
                     "product": "protease"
                 },
                 {
-                    "name": "pznL",
-                    "id": "BAT_2465",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -169,29 +144,54 @@
                             ]
                         }
                     ],
+                    "id": "BAT_2465",
+                    "name": "pznL",
                     "product": "SAM-dependent methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "NZ_ABRX01000001.1",
+            "completeness": "complete",
+            "end_coord": 233305,
+            "evidence": [
+                "Enzymatic assays",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 223361
+        },
+        "mibig_accession": "BGC0001173",
+        "publications": [
+            "pubmed:21950656",
+            "pubmed:23878226",
+            "pubmed:24085393"
+        ],
         "ripp": {
-            "subclass": "LAP",
             "cyclic": false,
+            "peptidases": [
+                "bat_2466"
+            ],
             "precursor_genes": [
                 {
-                    "gene_id": "bat_4209",
                     "core_sequence": [
                         "RCTCTTIISSSSTF"
                     ],
-                    "leader_sequence": 27,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "bat_4209",
+                    "leader_sequence": 27
                 }
             ],
-            "peptidases": [
-                "bat_2466"
-            ]
+            "subclass": "LAP"
         }
+    },
+    "submitter": {
+        "email": "douglasm@illinois.edu, rainer.borriss@rz.hu-berlin.de",
+        "institution": "University of Illinois at Urbana-Champaign, Humboldt University Berlin",
+        "name": "Doug Mitchell, Rainer Borriss"
     }
 }

@@ -1,38 +1,20 @@
 {
-    "submitter": {
-        "name": "Russell Cox",
-        "institution": "Institut f\u00c3\u00bcr Organische Chemie, Leibniz Universit\u00c3\u00a4t Hannover",
-        "email": "russell.cox@oci.uni-hannover.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001136",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:21899331"
-        ],
-        "loci": {
-            "accession": "HM243222.1",
-            "completeness": "complete",
-            "evidence": [
-                "Heterologous expression"
-            ]
-        },
         "compounds": [
             {
-                "compound": "desmethylbassianin",
-                "chem_synonyms": [],
-                "chem_struct": "OC1=CC=C(C2=CN(O)C(C(C(/C=C/C=C/C=C/[C@H](C)CC)=O)=C2O)=O)C=C1",
-                "molecular_formula": "C22H23NO5",
-                "mol_mass": 381.1576,
+                "chem_acts": [
+                    "Unknown"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "2-pyridone",
@@ -43,14 +25,76 @@
                         ]
                     }
                 ],
+                "chem_struct": "OC1=CC=C(C2=CN(O)C(C(C(/C=C/C=C/C=C/[C@H](C)CC)=O)=C2O)=O)C=C1",
+                "chem_synonyms": [],
+                "compound": "desmethylbassianin",
                 "database_id": "",
                 "mass_spec_ion_type": "M+",
-                "chem_acts": [
-                    "Unknown"
-                ]
+                "mol_mass": 381.1576,
+                "molecular_formula": "C22H23NO5"
             }
         ],
         "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "DMBS",
+                    "name": "dmbS",
+                    "product": "PKS-NRPS"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "DMBC",
+                    "name": "dmbC",
+                    "product": "ER"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "DMBB",
+                    "name": "dmbB",
+                    "product": "P450",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "DMBA",
+                    "name": "dmbA",
+                    "product": "P450",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                }
+            ],
             "extra_genes": [
                 {
                     "id": "DMBS"
@@ -64,96 +108,76 @@
                 {
                     "id": "DMBA"
                 }
-            ],
-            "annotations": [
-                {
-                    "name": "dmbS",
-                    "id": "DMBS",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Other in vivo study"
-                            ]
-                        }
-                    ],
-                    "product": "PKS-NRPS"
-                },
-                {
-                    "name": "dmbC",
-                    "id": "DMBC",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Other in vivo study"
-                            ]
-                        }
-                    ],
-                    "product": "ER"
-                },
-                {
-                    "name": "dmbB",
-                    "id": "DMBB",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Other in vivo study"
-                            ]
-                        }
-                    ],
-                    "product": "P450",
-                    "tailoring": [
-                        "Oxidation"
-                    ]
-                },
-                {
-                    "name": "dmbA",
-                    "id": "DMBA",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Other in vivo study"
-                            ]
-                        }
-                    ],
-                    "product": "P450",
-                    "tailoring": [
-                        "Oxidation"
-                    ]
-                }
             ]
         },
-        "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "subclasses": [
-                "Other"
+        "loci": {
+            "accession": "HM243222.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0001136",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "DMBS",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Tyrosine"
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "2"
+                        }
+                    ]
+                }
             ],
+            "release_type": [
+                "Unknown"
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "polyketide": {
             "cyclic": false,
             "release_type": [
                 "Unknown"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
                     "genes": [
                         "DMBS"
                     ],
-                    "subclass": [
-                        "Iterative type I"
-                    ],
                     "iterative": {
+                        "cyclization_type": "Unknown",
                         "nr_iterations": 5,
-                        "subtype": "Highly reducing",
-                        "cyclization_type": "Unknown"
+                        "subtype": "Highly reducing"
                     },
                     "modules": [
                         {
-                            "genes": [
-                                "DMBS"
+                            "at_specificities": [
+                                "Multiple (promiscuous)",
+                                "Malonyl-CoA",
+                                "Acetyl-CoA"
                             ],
-                            "module_number": "1",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -163,61 +187,37 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Multiple (promiscuous)",
-                                "Malonyl-CoA",
-                                "Acetyl-CoA"
+                            "genes": [
+                                "DMBS"
                             ],
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": "",
+                            "module_number": "1",
                             "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": true,
                                 "evidence": [
                                     "Structure-based inference"
-                                ]
-                            }
+                                ],
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            },
+                            "pks_mod_doms": [
+                                "None"
+                            ]
                         }
+                    ],
+                    "subclass": [
+                        "Iterative type I"
                     ]
                 }
             ]
         },
-        "nrp": {
-            "subclass": "Unknown",
-            "nrps_genes": [
-                {
-                    "gene_id": "DMBS",
-                    "modules": [
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Tyrosine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "2",
-                            "active": true,
-                            "c_dom_subtype": "Unknown",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "cyclic": false,
-            "thioesterases": [],
-            "release_type": [
-                "Unknown"
-            ]
-        }
+        "publications": [
+            "pubmed:21899331"
+        ]
+    },
+    "submitter": {
+        "email": "russell.cox@oci.uni-hannover.de",
+        "institution": "Institut f\u00c3\u00bcr Organische Chemie, Leibniz Universit\u00c3\u00a4t Hannover",
+        "name": "Russell Cox"
     }
 }

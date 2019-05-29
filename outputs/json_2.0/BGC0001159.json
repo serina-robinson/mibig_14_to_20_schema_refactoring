@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Bradley S Moore",
-        "submitter_institution": "University of California San Diego",
-        "submitter_email": "bsmoore@ucsd.edu"
+    "submitter": {
+        "name": "Bradley S Moore",
+        "institution": "University of California San Diego",
+        "email": "bsmoore@ucsd.edu"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0001159",
         "biosyn_class": [
             "NRP",
@@ -14,12 +20,12 @@
             "pubmed:22800473"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "JX157625.1",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Heterologous expression"
-            ],
-            "accession": "JX157625.1"
+            ]
         },
         "compounds": [
             {
@@ -28,8 +34,9 @@
                 "chem_struct": "O=C(C1=CC=CC=C1O)C2=CC(Cl)=C(Cl)N2C3=C(C(C4=CC=CC=C4O)=O)NC(Cl)=C3Cl",
                 "molecular_formula": "C22H12Cl4N2O4",
                 "mol_mass": 507.9551,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Antibacterial"
                 ]
             },
@@ -39,8 +46,9 @@
                 "chem_struct": "O=C(C1=CC(Br)=CC=C1O)C2=CC(Cl)=C(Cl)N2C3=C(C(C4=CC=CC=C4O)=O)NC(Cl)=C3Cl",
                 "molecular_formula": "C22H11BrCl4N2O4",
                 "mol_mass": 585.8656,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Antibacterial"
                 ]
             },
@@ -50,8 +58,9 @@
                 "chem_struct": "O=C(C1=CC(Cl)=CC=C1O)C2=CC(Cl)=C(Cl)N2C3=C(C(C4=CC=CC=C4O)=O)NC(Cl)=C3Cl",
                 "molecular_formula": "C22H11Cl5N2O4",
                 "mol_mass": 541.9161,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Antibacterial"
                 ]
             },
@@ -61,8 +70,9 @@
                 "chem_struct": "O=C(C1=CC=CC=C1O)C2=CC(Cl)=C(Cl)N2C3=C(C(C4=CC(Cl)=CC=C4O)=O)NC(Cl)=C3Cl",
                 "molecular_formula": "C22H11Cl5N2O4",
                 "mol_mass": 541.9161,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Antibacterial"
                 ]
             },
@@ -72,248 +82,323 @@
                 "chem_struct": "O=C(C1=CC=CC=C1O)C2=C(Br)C(Cl)=C(Cl)N2C3=C(C(C4=CC=CC=C4O)=O)NC(Cl)=C3Cl",
                 "molecular_formula": "C22H11BrCl4N2O4",
                 "mol_mass": 585.8656,
-                "mass_ion_type": "None",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "chem_acts": [
                     "Antibacterial"
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "mpy1",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87518.1",
-                    "gene_annotation": "flavin reductase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "mpy1",
+                    "id": "AFP87518.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "abolish production"
+                    "product": "flavin reductase"
                 },
                 {
-                    "gene_name": "mpy2",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87519.1",
-                    "gene_annotation": "proline adenyltransferase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy3",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87520.1",
-                    "gene_annotation": "acyl-CoA dehydrogenase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy4",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87521.1",
-                    "gene_annotation": "sodium/hydrogen exchanger",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy5",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87522.1",
-                    "gene_annotation": "FADH2-dependent halogenase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy6",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87523.1",
-                    "gene_annotation": "type I polyketide synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy7",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87524.1",
-                    "gene_annotation": "type I polyketide synthase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy8",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87525.1",
-                    "gene_annotation": "4'-phosphopantetheinyl transferase",
-                    "gene_function": "Activation / processing",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy9",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87526.1",
-                    "gene_annotation": "type II thioesterase",
-                    "gene_function": "Activation / processing",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy10",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87527.1",
-                    "gene_annotation": "FADH2-dependent halogenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Halogenation",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "mpy2",
+                    "id": "AFP87519.1",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "monodeoxypyoluteorin"
+                    "product": "proline adenyltransferase"
                 },
                 {
-                    "gene_name": "mpy11",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87528.1",
-                    "gene_annotation": "FADH2-dependent halogenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Halogenation",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "mpy3",
+                    "id": "AFP87520.1",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "monodeoxypyoluteorin"
+                    "product": "acyl-CoA dehydrogenase"
                 },
                 {
-                    "gene_name": "mpy12",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87529.1",
-                    "gene_annotation": "ABC transporter",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy13",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87530.1",
-                    "gene_annotation": "ABC transporter",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy14",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87531.1",
-                    "gene_annotation": "ABC transporter",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy15",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87532.1",
-                    "gene_annotation": "proline carrier protein",
-                    "gene_function": "Activation / processing",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "mpy16",
-                    "not_in_gbk": false,
-                    "gene_id": "AFP87533.1",
-                    "gene_annotation": "FADH2-dependent halogenase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "mpy4",
+                    "id": "AFP87521.1",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "abolish production"
+                    "product": "sodium/hydrogen exchanger"
+                },
+                {
+                    "name": "mpy5",
+                    "id": "AFP87522.1",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "FADH2-dependent halogenase"
+                },
+                {
+                    "name": "mpy6",
+                    "id": "AFP87523.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "type I polyketide synthase"
+                },
+                {
+                    "name": "mpy7",
+                    "id": "AFP87524.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "type I polyketide synthase"
+                },
+                {
+                    "name": "mpy8",
+                    "id": "AFP87525.1",
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "4'-phosphopantetheinyl transferase"
+                },
+                {
+                    "name": "mpy9",
+                    "id": "AFP87526.1",
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "type II thioesterase"
+                },
+                {
+                    "name": "mpy10",
+                    "id": "AFP87527.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "FADH2-dependent halogenase",
+                    "tailoring": [
+                        "Halogenation"
+                    ]
+                },
+                {
+                    "name": "mpy11",
+                    "id": "AFP87528.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "FADH2-dependent halogenase",
+                    "tailoring": [
+                        "Halogenation"
+                    ]
+                },
+                {
+                    "name": "mpy12",
+                    "id": "AFP87529.1",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "ABC transporter"
+                },
+                {
+                    "name": "mpy13",
+                    "id": "AFP87530.1",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "ABC transporter"
+                },
+                {
+                    "name": "mpy14",
+                    "id": "AFP87531.1",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "ABC transporter"
+                },
+                {
+                    "name": "mpy15",
+                    "id": "AFP87532.1",
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "product": "proline carrier protein"
+                },
+                {
+                    "name": "mpy16",
+                    "id": "AFP87533.1",
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "product": "FADH2-dependent halogenase"
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Modular type I"
-            ],
             "starter_unit": "Unknown",
-            "pks_te_type": "Both",
-            "pks_thioesterase": [
-                "afp87523.1",
-                "afp87526.1"
+            "subclasses": [
+                "Other"
             ],
-            "pks_release_type": "Unknown",
-            "mod_pks_genes": [
+            "cyclic": true,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
                 {
-                    "mod_pks_gene": "AFP87524.1",
-                    "pks_module": [
+                    "genes": [
+                        "afp87526.1",
+                        "AFP87523.1",
+                        "afp87523.1",
+                        "AFP87524.1"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": [
                         {
-                            "module_nr": "1",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "gene": "afp87523.1",
+                            "thioesterase_type": "Unknown"
                         },
                         {
-                            "module_nr": "2",
-                            "pks_domains": [
+                            "gene": "afp87526.1",
+                            "thioesterase_type": "Unknown"
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "genes": [
+                                "AFP87524.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "AFP87523.1",
-                    "pks_module": [
+                            "comments": ""
+                        },
                         {
-                            "module_nr": "3",
-                            "pks_domains": [
+                            "genes": [
+                                "AFP87524.1"
+                            ],
+                            "module_number": "2",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "AFP87523.1"
+                            ],
+                            "module_number": "3",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)",
                                 "Thioesterase"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "evidence": "Structure-based inference",
                             "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         }
                     ]
                 }
@@ -321,16 +406,11 @@
         },
         "nrp": {
             "subclass": "Unknown",
-            "lin_cycl_nrp": "Linear",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Unknown"
+            "cyclic": false,
+            "thioesterases": [],
+            "release_type": [
+                "Unknown"
+            ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

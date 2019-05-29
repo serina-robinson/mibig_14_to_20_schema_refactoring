@@ -1,55 +1,35 @@
 {
-    "submitter": {
-        "name": "Xiaohui Yan",
-        "institution": "The Scripps Research Institute",
-        "email": "xyan@scripps.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000081",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:23360970",
-            "pubmed:23633564",
-            "pubmed:23844627"
-        ],
-        "loci": {
-            "accession": "JX679499.1",
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "kedarcidin",
-                "chem_synonyms": [],
-                "chem_moieties": [],
-                "database_id": "pubchem:6477354",
                 "chem_acts": [
                     "Antibacterial",
                     "Cytotoxic"
                 ],
+                "chem_moieties": [],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "DNA",
-                        "publications": []
+                        "publications": [],
+                        "target": "DNA"
                     }
-                ]
+                ],
+                "compound": "kedarcidin",
+                "database_id": "pubchem:6477354"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "kedY4",
-                    "id": "AFV52190.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -58,14 +38,14 @@
                             ]
                         }
                     ],
+                    "id": "AFV52190.1",
+                    "name": "kedY4",
                     "product": "4-Methylideneimidazole-5-one (MIO)-containing aminomutases ",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "kedE",
-                    "id": "AFV52145.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -74,11 +54,11 @@
                                 "Other in vivo study"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AFV52145.1",
+                    "name": "kedE"
                 },
                 {
-                    "name": "kedE10",
-                    "id": "AFV52146.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -87,34 +67,44 @@
                                 "Other in vivo study"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AFV52146.1",
+                    "name": "kedE10"
                 }
             ]
         },
+        "loci": {
+            "accession": "JX679499.1",
+            "completeness": "complete",
+            "evidence": [
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0000081",
         "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "subclasses": [
-                "Enediyine"
-            ],
             "cyclic": true,
             "release_type": [
                 "Hydrolysis"
             ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Enediyine"
+            ],
             "synthases": [
                 {
                     "genes": [
-                        "kede10",
-                        "kede"
+                        "kede",
+                        "kede10"
                     ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 7,
+                        "subtype": "Partially reducing"
+                    },
                     "subclass": [
                         "Iterative type I",
                         "Enediyne type I"
                     ],
-                    "iterative": {
-                        "nr_iterations": 7,
-                        "subtype": "Partially reducing",
-                        "cyclization_type": "Unknown"
-                    },
                     "thioesterases": [
                         {
                             "gene": "kede10",
@@ -123,6 +113,16 @@
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:23360970",
+            "pubmed:23633564",
+            "pubmed:23844627"
+        ]
+    },
+    "submitter": {
+        "email": "xyan@scripps.edu",
+        "institution": "The Scripps Research Institute",
+        "name": "Xiaohui Yan"
     }
 }

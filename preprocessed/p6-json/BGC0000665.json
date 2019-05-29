@@ -1,26 +1,65 @@
 {
-    "submitter": {
-        "name": "Yuta Tsunematsu",
-        "institution": "University of Shizuoka",
-        "email": "tsunematsu@u-shizuoka-ken.ac.jp"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000665",
+        "alkaloid": {
+            "subclass": "Indole/benzopyrrole"
+        },
         "biosyn_class": [
             "Terpene",
             "Alkaloid"
         ],
-        "publications": [
-            "pubmed:22591327",
-            "pubmed:22968942",
-            "pubmed:23205935"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "anti-HIV R5"
+                ],
+                "chem_synonyms": [],
+                "compound": "xiamycin A",
+                "database_id": "pubchem:38358410;chemspider:26364073"
+            }
         ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "AFK78075",
+                    "name": "xiaI",
+                    "product": "Indole oxygenase ",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "AFK78079",
+                    "name": "xiaM",
+                    "product": "Cytochrome P450",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                }
+            ],
+            "extra_genes": []
+        },
         "loci": {
             "accession": "HE815466.1",
             "completeness": "complete",
@@ -30,66 +69,27 @@
                 "Heterologous expression"
             ]
         },
-        "compounds": [
-            {
-                "compound": "xiamycin A",
-                "chem_synonyms": [],
-                "database_id": "pubchem:38358410;chemspider:26364073",
-                "chem_acts": [
-                    "anti-HIV R5"
-                ]
-            }
+        "mibig_accession": "BGC0000665",
+        "publications": [
+            "pubmed:22591327",
+            "pubmed:22968942",
+            "pubmed:23205935"
         ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": [
-                {
-                    "name": "xiaI",
-                    "id": "AFK78075",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Activity assay"
-                            ]
-                        }
-                    ],
-                    "product": "Indole oxygenase ",
-                    "tailoring": [
-                        "Oxidation"
-                    ]
-                },
-                {
-                    "name": "xiaM",
-                    "id": "AFK78079",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Activity assay"
-                            ]
-                        }
-                    ],
-                    "product": "Cytochrome P450",
-                    "tailoring": [
-                        "Oxidation"
-                    ]
-                }
-            ]
-        },
         "terpene": {
-            "terpene_precursor": "FPP",
-            "terpene_synth_cycl": [
-                "cch63731.1"
-            ],
-            "structural_subclass": "Unknown",
             "carbon_count_subclass": "Sesquiterpene",
             "prenyltransferases": [
                 "cch63739.1"
+            ],
+            "structural_subclass": "Unknown",
+            "terpene_precursor": "FPP",
+            "terpene_synth_cycl": [
+                "cch63731.1"
             ]
-        },
-        "alkaloid": {
-            "subclass": "Indole/benzopyrrole"
         }
+    },
+    "submitter": {
+        "email": "tsunematsu@u-shizuoka-ken.ac.jp",
+        "institution": "University of Shizuoka",
+        "name": "Yuta Tsunematsu"
     }
 }

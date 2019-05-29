@@ -1,88 +1,60 @@
 {
-    "submitter": {
-        "name": "Philipp Wiemann",
-        "institution": "University of Wisconsin-Madison",
-        "email": "pwiemann@wisc.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000101",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:19448638",
-            "pubmed:20139316",
-            "pubmed:21351751",
-            "pubmed:22730213",
-            "pubmed:22909031",
-            "pubmed:23848338"
-        ],
-        "loci": {
-            "accession": "BN001302.1",
-            "start_coord": 441042,
-            "end_coord": 446753,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "emodin",
+                "chem_acts": [
+                    "Inhibitor"
+                ],
                 "chem_synonyms": [
                     "frangula emodin",
                     "emodol",
                     "rheum emodin",
                     "schuttgelb"
                 ],
-                "database_id": "pubchem:3220",
-                "chem_acts": [
-                    "Inhibitor"
-                ],
                 "chem_targets": [
                     {
-                        "target": "STAT3",
-                        "publications": []
+                        "publications": [],
+                        "target": "STAT3"
                     }
-                ]
+                ],
+                "compound": "emodin",
+                "database_id": "pubchem:3220"
             },
             {
-                "compound": "monodictyphenone ",
-                "chem_synonyms": [],
-                "database_id": "pubchem:16114922",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "monodictyphenone ",
+                "database_id": "pubchem:16114922"
             },
             {
-                "compound": "shamixanthone",
-                "chem_synonyms": [],
-                "database_id": "pubchem:15596091",
                 "chem_acts": [
                     "Inhibitor"
                 ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "calmodulin",
-                        "publications": []
+                        "publications": [],
+                        "target": "calmodulin"
                     }
-                ]
+                ],
+                "compound": "shamixanthone",
+                "database_id": "pubchem:15596091"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "xptC",
-                    "id": "CBF73676.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -91,6 +63,8 @@
                             ]
                         }
                     ],
+                    "id": "CBF73676.1",
+                    "name": "xptC",
                     "product": "oxidoreductase",
                     "tailoring": [
                         "Oxidation"
@@ -98,14 +72,27 @@
                 }
             ]
         },
-        "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "subclasses": [
-                "Polyphenol"
+        "loci": {
+            "accession": "BN001302.1",
+            "completeness": "complete",
+            "end_coord": 446753,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
             ],
+            "start_coord": 441042
+        },
+        "mibig_accession": "BGC0000101",
+        "polyketide": {
             "cyclic": true,
             "release_type": [
                 "Hydrolysis"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Polyphenol"
             ],
             "synthases": [
                 {
@@ -113,26 +100,17 @@
                         "CBF90097.1",
                         "xm_652661"
                     ],
-                    "subclass": [
-                        "Iterative type I"
-                    ],
                     "iterative": {
+                        "cyclization_type": "C6-C11 first",
                         "nr_iterations": 7,
-                        "subtype": "Non-reducing",
-                        "cyclization_type": "C6-C11 first"
+                        "subtype": "Non-reducing"
                     },
-                    "thioesterases": [
-                        {
-                            "gene": "xm_652661",
-                            "thioesterase_type": "Unknown"
-                        }
-                    ],
                     "modules": [
                         {
-                            "genes": [
-                                "CBF90097.1"
+                            "at_specificities": [
+                                "Malonyl-CoA"
                             ],
-                            "module_number": "1",
+                            "comments": "",
                             "domains": [
                                 "ACP transacylase",
                                 "Ketosynthase",
@@ -140,27 +118,49 @@
                                 "Product Template domain",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
                             "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
+                            "genes": [
+                                "CBF90097.1"
                             ],
-                            "comments": "",
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
                             "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": true,
                                 "evidence": [
                                     "Structure-based inference"
-                                ]
-                            }
+                                ],
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            },
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "xm_652661",
+                            "thioesterase_type": "Unknown"
                         }
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:19448638",
+            "pubmed:20139316",
+            "pubmed:21351751",
+            "pubmed:22730213",
+            "pubmed:22909031",
+            "pubmed:23848338"
+        ]
+    },
+    "submitter": {
+        "email": "pwiemann@wisc.edu",
+        "institution": "University of Wisconsin-Madison",
+        "name": "Philipp Wiemann"
     }
 }

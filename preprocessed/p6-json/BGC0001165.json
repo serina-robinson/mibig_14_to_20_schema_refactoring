@@ -1,49 +1,20 @@
 {
-    "submitter": {
-        "name": "Nathan Moss",
-        "institution": "University of California, San Diego",
-        "email": "namoss@ucsd.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001165",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:15332855",
-            "pubmed:10482399",
-            "pubmed:10496976",
-            "pubmed:9443933",
-            "pubmed:7565634",
-            "pubmed:16834357",
-            "pubmed:17928301",
-            "pubmed:19835378",
-            "pubmed:20660778",
-            "pubmed:21387490",
-            "pubmed:21357626",
-            "pubmed:22103656",
-            "pubmed:22991895"
-        ],
-        "loci": {
-            "accession": "AY652953.1",
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Curacin A",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "anti-tubulin"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "cyclopropyl ring",
@@ -63,19 +34,19 @@
                         ]
                     }
                 ],
-                "database_id": "pubchem:6438908;chebi:3961;chembl:89138;chemspider:4445239",
-                "chem_acts": [
-                    "anti-tubulin"
-                ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "Colchicinesiteoftubulin",
-                        "publications": []
+                        "publications": [],
+                        "target": "Colchicinesiteoftubulin"
                     }
-                ]
+                ],
+                "compound": "Curacin A",
+                "database_id": "pubchem:6438908;chebi:3961;chembl:89138;chemspider:4445239"
             }
         ],
         "genes": {
+            "annotations": [],
             "extra_genes": [
                 {
                     "id": "AAT70108.1"
@@ -83,64 +54,72 @@
                 {
                     "id": "AAT70109.1"
                 }
-            ],
-            "annotations": []
+            ]
         },
-        "polyketide": {
-            "starter_unit": "Malonyl-CoA",
-            "subclasses": [
-                "Other"
-            ],
+        "loci": {
+            "accession": "AY652953.1",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0001165",
+        "nrp": {
             "cyclic": false,
             "release_type": [
                 "Unknown"
             ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
             "synthases": [
                 {
                     "genes": [
-                        "AAT70096.1",
-                        "AAT70106.1",
-                        "AAT70103.1",
-                        "AAT70105.1",
-                        "aat70108.1",
                         "AAT70107.1",
-                        "AAT70104.1",
+                        "AAT70106.1",
+                        "AAT70102.1",
+                        "AAT70103.1",
                         "AAT70101.1",
-                        "AAT70102.1"
-                    ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
-                    "thioesterases": [
-                        {
-                            "gene": "aat70108.1",
-                            "thioesterase_type": "Unknown"
-                        }
+                        "aat70108.1",
+                        "AAT70104.1",
+                        "AAT70096.1",
+                        "AAT70105.1"
                     ],
                     "modules": [
                         {
-                            "genes": [
-                                "AAT70096.1"
+                            "at_specificities": [
+                                "Malonyl-CoA"
                             ],
-                            "module_number": "0",
+                            "comments": "",
                             "domains": [
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "AAT70096.1"
                             ],
-                            "module_number": "1",
+                            "kr_stereochem": "Unknown",
+                            "module_number": "0",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -148,20 +127,20 @@
                                 "Thiolation (ACP/PCP)",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
+                            "genes": [
+                                "AAT70096.1"
                             ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "1",
                             "pks_mod_doms": [
                                 "Oxidation"
-                            ],
-                            "comments": ""
+                            ]
                         },
                         {
-                            "genes": [
-                                "AAT70101.1"
+                            "at_specificities": [
+                                "Cyclohexylcarbonyl-CoA"
                             ],
-                            "module_number": "2",
+                            "comments": "",
                             "domains": [
                                 "Enoylreductase",
                                 "Ketosynthase",
@@ -171,84 +150,84 @@
                                 "Adenlyation",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Cyclohexylcarbonyl-CoA"
+                            "genes": [
+                                "AAT70101.1"
                             ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "2",
                             "pks_mod_doms": [
                                 "Unknown"
-                            ],
-                            "comments": ""
+                            ]
                         },
                         {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
                             "genes": [
                                 "AAT70102.1"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "3",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Malonyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Enoylreductase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
                             ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "AAT70103.1"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
-                                "Enoylreductase",
                                 "Dehydratase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
                             "genes": [
                                 "AAT70104.1"
                             ],
+                            "kr_stereochem": "Unknown",
                             "module_number": "5",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Dehydratase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Malonyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAT70105.1"
-                            ],
-                            "module_number": "6",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -257,40 +236,40 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "genes": [
+                                "AAT70105.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "6",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Malonyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAT70106.1"
-                            ],
-                            "module_number": "7",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "genes": [
+                                "AAT70106.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "7",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
                             "at_specificities": [
                                 "Malonyl-CoA"
                             ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAT70107.1"
-                            ],
-                            "module_number": "8",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -298,26 +277,47 @@
                                 "Thiolation (ACP/PCP)",
                                 "Thioesterase"
                             ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
+                            "genes": [
+                                "AAT70107.1"
                             ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "8",
                             "pks_mod_doms": [
                                 "Unknown"
-                            ],
-                            "comments": ""
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "aat70108.1",
+                            "thioesterase_type": "Unknown"
                         }
                     ]
                 }
             ]
         },
-        "nrp": {
-            "subclass": "Unknown",
-            "cyclic": false,
-            "thioesterases": [],
-            "release_type": [
-                "Unknown"
-            ]
-        }
+        "publications": [
+            "pubmed:15332855",
+            "pubmed:10482399",
+            "pubmed:10496976",
+            "pubmed:9443933",
+            "pubmed:7565634",
+            "pubmed:16834357",
+            "pubmed:17928301",
+            "pubmed:19835378",
+            "pubmed:20660778",
+            "pubmed:21387490",
+            "pubmed:21357626",
+            "pubmed:22103656",
+            "pubmed:22991895"
+        ]
+    },
+    "submitter": {
+        "email": "namoss@ucsd.edu",
+        "institution": "University of California, San Diego",
+        "name": "Nathan Moss"
     }
 }

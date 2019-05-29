@@ -1,28 +1,28 @@
 {
-    "submitter": {
-        "name": "Doug Mitchell and Rainer Borriss",
-        "institution": "University of Illinois at Urbana-Champaign, Humboldt University Berlin",
-        "email": "douglasm@illinois.edu, rainer.borriss@rz.hu-berlin.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000569",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:20971906",
-            "pubmed:21950656",
-            "pubmed:21568297",
-            "pubmed:23823732",
-            "pubmed:23878226",
-            "pubmed:24085393"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial"
+                ],
+                "chem_synonyms": [
+                    "pzn",
+                    "plantazolicin a"
+                ],
+                "compound": "plantazolicin",
+                "database_id": "chemspider:28419936"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "FN668567.1",
             "completeness": "complete",
@@ -34,36 +34,36 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "plantazolicin",
-                "chem_synonyms": [
-                    "pzn",
-                    "plantazolicin a"
-                ],
-                "database_id": "chemspider:28419936",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
-            }
+        "mibig_accession": "BGC0000569",
+        "publications": [
+            "pubmed:20971906",
+            "pubmed:21950656",
+            "pubmed:21568297",
+            "pubmed:23823732",
+            "pubmed:23878226",
+            "pubmed:24085393"
         ],
-        "genes": {},
         "ripp": {
-            "subclass": "LAP",
             "cyclic": false,
+            "peptidases": [
+                "cbj61640"
+            ],
             "precursor_genes": [
                 {
-                    "gene_id": "cbj61635",
                     "core_sequence": [
                         "RCTCTTIISSSSTF"
                     ],
-                    "leader_sequence": 27,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "cbj61635",
+                    "leader_sequence": 27
                 }
             ],
-            "peptidases": [
-                "cbj61640"
-            ]
+            "subclass": "LAP"
         }
+    },
+    "submitter": {
+        "email": "douglasm@illinois.edu, rainer.borriss@rz.hu-berlin.de",
+        "institution": "University of Illinois at Urbana-Champaign, Humboldt University Berlin",
+        "name": "Doug Mitchell and Rainer Borriss"
     }
 }

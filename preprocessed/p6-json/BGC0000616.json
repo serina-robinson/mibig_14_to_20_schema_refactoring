@@ -1,53 +1,31 @@
 {
-    "submitter": {
-        "name": "Rainer Borriss",
-        "institution": "Humboldt-Universitat zu Berlin",
-        "email": "rainer.borriss@rz.hu-berlin.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000616",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:24610713"
-        ],
-        "loci": {
-            "accession": "CP000560.1",
-            "start_coord": 3044506,
-            "end_coord": 3048678,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "amylocyclicin",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_synonyms": [
                     "acn"
                 ],
-                "mol_mass": 6381,
+                "compound": "amylocyclicin",
                 "database_id": "",
                 "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "mol_mass": 6381
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "acnB",
-                    "id": "ABS75255",
                     "functions": [
                         {
                             "category": "Unknown",
@@ -56,11 +34,11 @@
                             ]
                         }
                     ],
+                    "id": "ABS75255",
+                    "name": "acnB",
                     "product": ""
                 },
                 {
-                    "name": "acnA",
-                    "id": "ABS75254",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -69,11 +47,11 @@
                             ]
                         }
                     ],
+                    "id": "ABS75254",
+                    "name": "acnA",
                     "product": ""
                 },
                 {
-                    "name": "acnC",
-                    "id": "ABS75253",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -81,11 +59,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABS75253",
+                    "name": "acnC"
                 },
                 {
-                    "name": "acnD",
-                    "id": "ABS75252",
                     "functions": [
                         {
                             "category": "Transport",
@@ -94,24 +72,24 @@
                             ]
                         }
                     ],
+                    "id": "ABS75252",
+                    "name": "acnD",
                     "product": ""
                 },
                 {
-                    "name": "acnE",
+                    "functions": [
+                        {
+                            "category": "Resistance/immunity",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "ABS75251",
-                    "functions": [
-                        {
-                            "category": "Resistance/immunity",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
+                    "name": "acnE",
                     "product": ""
                 },
                 {
-                    "name": "acnF",
-                    "id": "ABS75250",
                     "functions": [
                         {
                             "category": "Resistance/immunity",
@@ -120,11 +98,17 @@
                             ]
                         }
                     ],
+                    "id": "ABS75250",
+                    "name": "acnF",
                     "product": ""
                 }
             ],
+            "extra_genes": [],
             "operons": [
                 {
+                    "evidence": [
+                        "Unknown"
+                    ],
                     "genes": [
                         "rbam_029190",
                         "rbam_029200",
@@ -132,21 +116,34 @@
                         "rbam_029220",
                         "rbam_029230",
                         "rbam_029240"
-                    ],
-                    "evidence": [
-                        "Unknown"
                     ]
                 }
             ]
         },
+        "loci": {
+            "accession": "CP000560.1",
+            "completeness": "complete",
+            "end_coord": 3048678,
+            "evidence": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 3044506
+        },
+        "mibig_accession": "BGC0000616",
+        "publications": [
+            "pubmed:24610713"
+        ],
         "ripp": {
-            "subclass": "Head-to-tailcyclized peptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "rbam_029230",
                     "cleavage_recogn_site": [
                         "ANAE"
+                    ],
+                    "core_sequence": [
+                        "LASTLGISTAAAKKAIDIIDAASTIASIISLIGIVTGAGAISYAIVATAKTMIKKYGKKYAAAW"
                     ],
                     "crosslinks": [
                         {
@@ -155,14 +152,17 @@
                             "second_AA": 64
                         }
                     ],
-                    "core_sequence": [
-                        "LASTLGISTAAAKKAIDIIDAASTIASIISLIGIVTGAGAISYAIVATAKTMIKKYGKKYAAAW"
-                    ],
-                    "leader_sequence": 48,
-                    "follower_sequence": 64
+                    "follower_sequence": 64,
+                    "gene_id": "rbam_029230",
+                    "leader_sequence": 48
                 }
             ],
-            "peptidases": []
+            "subclass": "Head-to-tailcyclized peptide"
         }
+    },
+    "submitter": {
+        "email": "rainer.borriss@rz.hu-berlin.de",
+        "institution": "Humboldt-Universitat zu Berlin",
+        "name": "Rainer Borriss"
     }
 }

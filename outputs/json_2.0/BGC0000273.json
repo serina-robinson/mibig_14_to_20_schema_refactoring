@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Jose A. Salas",
-        "submitter_institution": "University of Oviedo",
-        "submitter_email": "jasalas@uniovi.es"
+    "submitter": {
+        "name": "Jose A. Salas",
+        "institution": "University of Oviedo",
+        "email": "jasalas@uniovi.es"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000273",
         "biosyn_class": [
             "Polyketide",
@@ -14,13 +20,13 @@
             "pubmed:16751529"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "AM156932.1",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Heterologous expression",
                 "Sequence-based prediction"
-            ],
-            "accession": "AM156932.1"
+            ]
         },
         "compounds": [
             {
@@ -29,68 +35,81 @@
                 "chem_struct": "CC1C(C(C(C(O1)OC2C(C(C(=O)C3=C2C(=C4C(=C3)C(=O)C5=CC(=CC(=C5C4=O)O)OC)O)(C)O)OC)OC)O)O",
                 "molecular_formula": "C28H30O13",
                 "mol_mass": 575.53,
-                "mass_ion_type": "[M+H]+",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
                     "Cytotoxic"
                 ],
-                "chem_target": [
-                    "DNA"
+                "chem_targets": [
+                    {
+                        "target": "DNA",
+                        "publications": []
+                    }
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "stfX",
-                    "gene_id": "CAJ42323.1",
-                    "gene_annotation": "cyclase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "stfX",
+                    "id": "CAJ42323.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "Accumulation of 2-hydroxy-nogalonic acid",
-                    "not_in_gbk": false
+                    "product": "cyclase"
                 },
                 {
-                    "gene_name": "stfG",
-                    "gene_id": "CAJ42338.1",
-                    "gene_annotation": "glycosyltransferase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Glycosylation",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "stfG",
+                    "id": "CAJ42338.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "Accumulation of 8-demethoxy-10-deoxysteffimycinone",
-                    "not_in_gbk": false
+                    "product": "glycosyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Anthracycline",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Type II"
-            ],
             "starter_unit": "Acetyl-CoA",
-            "pks_genes": [
-                "caj42318.1",
-                "caj42320.1"
-            ],
             "ketide_length": 10,
             "cyclases": [
                 "CAJ42323.1",
                 "CAJ42324.1",
                 "CAJ42327.1"
+            ],
+            "subclasses": [
+                "Anthracycline"
+            ],
+            "cyclic": true,
+            "synthases": [
+                {
+                    "genes": [
+                        "CAJ42327.1",
+                        "CAJ42324.1",
+                        "caj42318.1",
+                        "caj42320.1",
+                        "CAJ42323.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
             ]
         },
         "saccharide": {
-            "saccharide_subclass": "hybrid/tailoring"
+            "subclass": "hybrid/tailoring"
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

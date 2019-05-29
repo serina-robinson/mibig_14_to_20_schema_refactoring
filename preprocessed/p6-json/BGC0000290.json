@@ -1,57 +1,33 @@
 {
-    "comments": "Glycopeptide stereochemistry is known not to correlate with the presence of E domains.",
-    "submitter": {
-        "name": "Gerry Wright",
-        "institution": "McMaster University",
-        "email": "wrightge@mcmaster.ca"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000290",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:9177243",
-            "pubmed:12060705",
-            "pubmed:16492565"
-        ],
-        "loci": {
-            "accession": "U82965.2",
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "A47934",
-                "chem_synonyms": [],
-                "database_id": "pubchem:16131155",
                 "chem_acts": [
                     "Antibacterial"
                 ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "D-Ala-D-Alaterminusofpeptidoglycanprecursors",
-                        "publications": []
+                        "publications": [],
+                        "target": "D-Ala-D-Alaterminusofpeptidoglycanprecursors"
                     }
-                ]
+                ],
+                "compound": "A47934",
+                "database_id": "pubchem:16131155"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "staL",
-                    "id": "AAM80529.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -62,58 +38,71 @@
                             ]
                         }
                     ],
+                    "id": "AAM80529.1",
+                    "name": "staL",
                     "tailoring": [
                         "Sulfation"
                     ]
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "U82965.2",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
             ]
         },
+        "mibig_accession": "BGC0000290",
         "nrp": {
-            "subclass": "Glycopeptide",
+            "cyclic": false,
             "nrps_genes": [
                 {
                     "gene_id": "AAM80539.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "4-Hydroxyphenylglycine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": true,
                                 "aa_subcluster": [
                                     "aam80549.1",
                                     "aam80550.1",
                                     "aam80551.1",
                                     "aam80552.1"
-                                ]
-                            },
-                            "module_number": "1",
-                            "active": false,
-                            "c_dom_subtype": "Unknown",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Tyrosine"
                                 ],
+                                "epimerized": true,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "4-Hydroxyphenylglycine"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Tyrosine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 },
@@ -122,27 +111,27 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "3,5-Dihydroxy-phenylglycine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
                                 "aa_subcluster": [
                                     "aam80549.1",
                                     "aam80545.1",
                                     "aam80546.1",
                                     "aam80547.1",
                                     "aam80548.1"
+                                ],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "3,5-Dihydroxy-phenylglycine"
                                 ]
                             },
-                            "module_number": "3",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "3"
                         }
                     ]
                 },
@@ -151,69 +140,69 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "4-Hydroxyphenylglycine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": true,
                                 "aa_subcluster": [
                                     "aam80549.1",
                                     "aam80550.1",
                                     "aam80551.1",
                                     "aam80552.1"
+                                ],
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "4-Hydroxyphenylglycine"
                                 ]
                             },
-                            "module_number": "4",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "4"
                         },
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "4-Hydroxyphenylglycine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": true,
                                 "aa_subcluster": [
                                     "aam80549.1",
                                     "aam80550.1",
                                     "aam80551.1",
                                     "aam80552.1"
+                                ],
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "4-Hydroxyphenylglycine"
                                 ]
                             },
-                            "module_number": "5",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "5"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Tyrosine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
                                 "aa_subcluster": [
                                     "aam80528.1"
+                                ],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Tyrosine"
                                 ]
                             },
-                            "module_number": "6",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "6"
                         }
                     ]
                 },
@@ -222,41 +211,52 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "3,5-Dihydroxy-phenylglycine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
                                 "aa_subcluster": [
                                     "aam80549.1",
                                     "aam80545.1",
                                     "aam80546.1",
                                     "aam80547.1",
                                     "aam80548.1"
+                                ],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "3,5-Dihydroxy-phenylglycine"
                                 ]
                             },
-                            "module_number": "7",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "7"
                         }
                     ]
                 }
             ],
-            "cyclic": false,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "subclass": "Glycopeptide",
             "thioesterases": [
                 {
                     "gene": "aam80536.1",
                     "thioesterase_type": "Type I"
                 }
-            ],
-            "release_type": [
-                "Hydrolysis"
             ]
-        }
+        },
+        "publications": [
+            "pubmed:9177243",
+            "pubmed:12060705",
+            "pubmed:16492565"
+        ]
+    },
+    "comments": "Glycopeptide stereochemistry is known not to correlate with the presence of E domains.",
+    "submitter": {
+        "email": "wrightge@mcmaster.ca",
+        "institution": "McMaster University",
+        "name": "Gerry Wright"
     }
 }

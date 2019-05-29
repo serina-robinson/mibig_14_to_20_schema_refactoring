@@ -1,21 +1,31 @@
 {
-    "general_params": {
+    "submitter": {
+        "name": "mibig.secondarymetabolites.org",
+        "institution": "MIBiG",
+        "email": "info@mibig.secondarymetabolites.org"
+    },
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "compounds": [
             {
                 "compound": "tambromycin",
                 "chem_struct": "CN1C=C(C2=N[C@@](C)(CO2)C(=O)N[C@@H]([C@H]2CCCN2)C(=O)N[C@@](C)(CO)C(O)=O)C2=C1C=C(Cl)C=C2O",
                 "molecular_formula": "C24H30ClN5O7",
-                "mol_mass": 535.985
+                "mol_mass": 535.985,
+                "database_id": ""
             }
         ],
         "loci": {
             "accession": "NZ_JOIB01000012.1",
             "start_coord": 141495,
             "end_coord": 183631,
-            "conn_comp_cluster": [
-                "Unknown"
-            ],
-            "complete": "Unknown"
+            "completeness": "Unknown",
+            "evidence": []
         },
         "mibig_accession": "BGC0001368",
         "publications": [
@@ -24,17 +34,40 @@
         "minimal": true,
         "biosyn_class": [
             "NRP"
-        ]
-    },
-    "personal": {
-        "submitter_name": "mibig.secondarymetabolites.org",
-        "submitter_institution": "MIBiG",
-        "submitter_email": "info@mibig.secondarymetabolites.org"
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
+        ],
+        "genes": {
+            "extra_genes": [
+                {
+                    "id": "IF33_RS0114760",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 141498,
+                                "end": 142709
+                            }
+                        ],
+                        "strand": -1
+                    },
+                    "translation": "VSSADPLPALLVAVPAVILACQVGASVCRRFGQPPVVGEIATGILLGPSLLGWIWPQAQHALFPAPVLPYTSVLGQLGLLAFMFLVGLELDLKNLRGHTRVAVAVSQAGMLLPLALGALLAVAMYDGFAPDGVGRTPFILFMSVAMSITAFPVLARILIDRGLYGTPLGALAMACAAVDDVVAWCLLALVVALSSAGSPVEAATTAGLAVAFTLVMLYAVRPLLARWAARADRAGDAAVLVALFSGLSVSALATDLIGVHALFGAFLFGVVTPRTGGRIEVSAARLRAFTVPVLLPLFFVHTGLRTDIGGLTASPELWLWTGAILAVAFLGKWGGASGAARACGRPWREALSIGALMNCRGLTELVVLNVGLELGVIGPQLFTMLVLMALVTTAITSPALTRLR",
+                    "product": "potassium transporter",
+                    "comments": "incomplete; partial in the middle of a contig; missing stop; Derived by automated computational analysis using gene prediction method: Protein Homology."
+                },
+                {
+                    "id": "IF33_RS0114890",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 183161,
+                                "end": 183631
+                            }
+                        ],
+                        "strand": -1
+                    },
+                    "translation": "MTRTAESREAEAFSRAAVAVFRLNGRFTAAVDRLALSFGLSAARWQVLSTVTGESLSVSEVARRVGTTRQSVQRIADLLVSQGLAVYLDNPAHRRAKLLAATERGAAAKREIDSCLAELARHLCESLGGEAEVHRTAEIIRGLSGALASVGTGDSP",
+                    "product": "hypothetical protein",
+                    "comments": "Derived by automated computational analysis using gene prediction method: Protein Homology."
+                }
+            ]
         }
-    ]
+    }
 }

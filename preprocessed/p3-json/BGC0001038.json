@@ -1,42 +1,109 @@
 {
-    "version": "17",
-    "personal": {
-        "submitter_name": "Taifo Mahmud",
-        "submitter_institution": "Oregon State University",
-        "submitter_email": "Taifo.Mahmud@oregonstate.edu"
-    },
     "general_params": {
-        "mibig_accession": "BGC0001038",
+        "NRP": {
+            "lin_cycl_nrp": "Linear",
+            "nrps_genes": [
+                {
+                    "nrps_gene": "AGC24265.1",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Proline"
+                            },
+                            "cdom_subtype": "N/A",
+                            "module_nr": "0",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                }
+            ],
+            "nrps_release_type": "Other",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": [],
+            "subclass": "Other"
+        },
+        "Polyketide": {
+            "lin_cycl_pk": "Cyclic",
+            "mod_pks_genes": [
+                {
+                    "mod_pks_gene": "AGC24270.1",
+                    "pks_module": [
+                        {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "module_nr": "1",
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "T"
+                            ],
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_mod_skip_iter": "Neither"
+                        }
+                    ]
+                },
+                {
+                    "mod_pks_gene": "AGC24271.1",
+                    "pks_module": [
+                        {
+                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
+                            "module_nr": "2",
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "KR",
+                                "T"
+                            ],
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "at_substr_spec": "Malonyl-CoA",
+                            "evidence_at_spec": "Structure-based inference",
+                            "kr_stereochem": "Unknown",
+                            "module_nr": "3",
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "DH",
+                                "KR",
+                                "T"
+                            ],
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_mod_skip_iter": "Neither"
+                        }
+                    ]
+                }
+            ],
+            "pk_subclass": "Other",
+            "pks_release_type": "Claisen condensation",
+            "pks_subclass": [
+                "Modular type I"
+            ],
+            "pks_te_type": "Type II",
+            "pks_thioesterase": [
+                "agc24272"
+            ],
+            "starter_unit": "Other"
+        },
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "23607523",
-            "12195964"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "JX424761",
-                    "start_coord": -1,
-                    "end_coord": -1,
-                    "conn_comp_cluster": [
-                        "Enzymatic assays"
-                    ]
-                }
-            ]
-        },
         "compounds": [
             {
-                "compound": "pyralomicin 1a",
-                "chem_synonyms": [],
-                "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
-                "pubchem_id": 3072006,
                 "chem_act": [
                     "Antibacterial"
                 ],
@@ -51,7 +118,6 @@
                     },
                     {
                         "chem_moiety": "Other",
-                        "other_chem_moiety": "cyclitol",
                         "moiety_subcluster": [
                             "prla",
                             "prlu",
@@ -60,443 +126,377 @@
                             "prlv",
                             "prlb",
                             "prlg"
-                        ]
+                        ],
+                        "other_chem_moiety": "cyclitol"
                     }
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "pyralomicin 1a",
+                "database_deposited": true,
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "pubchem_id": 3072006
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "prlZ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 697,
-                    "gene_endpos": 1515,
-                    "gene_id": "AGC24248.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlZ",
+                    "gene_endpos": 1515,
                     "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24248.1",
+                    "gene_name": "prlZ",
+                    "gene_startpos": 697,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlY2",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1529,
-                    "gene_endpos": 2368,
-                    "gene_id": "AGC24249.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlY2",
+                    "gene_endpos": 2368,
                     "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24249.1",
+                    "gene_name": "prlY2",
+                    "gene_startpos": 1529,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlY1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 2244,
-                    "gene_endpos": 2486,
-                    "gene_id": "AGC24250.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlY1",
+                    "gene_endpos": 2486,
                     "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24250.1",
+                    "gene_name": "prlY1",
+                    "gene_startpos": 2244,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlX",
-                    "not_in_gbk": false,
-                    "gene_startpos": 2536,
-                    "gene_endpos": 3363,
-                    "gene_id": "AGC24251.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlX",
+                    "gene_endpos": 3363,
                     "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24251.1",
+                    "gene_name": "prlX",
+                    "gene_startpos": 2536,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlW",
-                    "not_in_gbk": false,
-                    "gene_startpos": 3381,
-                    "gene_endpos": 4202,
-                    "gene_id": "AGC24252.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlW",
+                    "gene_endpos": 4202,
                     "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24252.1",
+                    "gene_name": "prlW",
+                    "gene_startpos": 3381,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlV",
-                    "not_in_gbk": false,
-                    "gene_startpos": 4192,
-                    "gene_endpos": 5511,
-                    "gene_id": "AGC24253.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlV",
+                    "gene_endpos": 5511,
                     "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24253.1",
+                    "gene_name": "prlV",
+                    "gene_startpos": 4192,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlU",
-                    "not_in_gbk": false,
-                    "gene_startpos": 5508,
-                    "gene_endpos": 6356,
-                    "gene_id": "AGC24254.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlU",
+                    "gene_endpos": 6356,
                     "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24254.1",
+                    "gene_name": "prlU",
+                    "gene_startpos": 5508,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlA",
-                    "not_in_gbk": false,
-                    "gene_startpos": 6768,
-                    "gene_endpos": 8003,
-                    "gene_id": "AGC24255.1",
-                    "gene_annotation": "PrlA",
-                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Activity assay"
-                    ]
+                    ],
+                    "gene_annotation": "PrlA",
+                    "gene_endpos": 8003,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGC24255.1",
+                    "gene_name": "prlA",
+                    "gene_startpos": 6768,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlB",
-                    "not_in_gbk": false,
-                    "gene_startpos": 8190,
-                    "gene_endpos": 8747,
-                    "gene_id": "AGC24256.1",
-                    "gene_annotation": "PrlB",
-                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "gene_annotation": "PrlB",
+                    "gene_endpos": 8747,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGC24256.1",
+                    "gene_name": "prlB",
+                    "gene_startpos": 8190,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlC",
-                    "not_in_gbk": false,
-                    "gene_startpos": 8811,
-                    "gene_endpos": 9455,
-                    "gene_id": "AGC24257.1",
-                    "gene_annotation": "PrlC",
-                    "gene_function": "Unknown",
                     "evidence_genefunction": [
                         "N/A"
-                    ]
-                },
-                {
-                    "gene_name": "prlD",
-                    "not_in_gbk": false,
-                    "gene_startpos": 9973,
-                    "gene_endpos": 11370,
-                    "gene_id": "AGC24258.1",
-                    "gene_annotation": "PrlD",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
-                },
-                {
-                    "gene_name": "prlE",
-                    "not_in_gbk": false,
-                    "gene_startpos": 12108,
-                    "gene_endpos": 12515,
-                    "gene_id": "AGC24259.1",
-                    "gene_annotation": "PrlE",
+                    ],
+                    "gene_annotation": "PrlC",
+                    "gene_endpos": 9455,
                     "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24257.1",
+                    "gene_name": "prlC",
+                    "gene_startpos": 8811,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlF",
-                    "not_in_gbk": false,
-                    "gene_startpos": 12608,
-                    "gene_endpos": 13444,
-                    "gene_id": "AGC24260.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "PrlD",
+                    "gene_endpos": 11370,
+                    "gene_function": "Transport",
+                    "gene_id": "AGC24258.1",
+                    "gene_name": "prlD",
+                    "gene_startpos": 9973,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "PrlE",
+                    "gene_endpos": 12515,
+                    "gene_function": "Unknown",
+                    "gene_id": "AGC24259.1",
+                    "gene_name": "prlE",
+                    "gene_startpos": 12108,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlF",
+                    "gene_endpos": 13444,
                     "gene_function": "Tailoring",
-                    "tailoring": "Methylation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24260.1",
+                    "gene_name": "prlF",
+                    "gene_startpos": 12608,
+                    "not_in_gbk": false,
+                    "tailoring": "Methylation"
                 },
                 {
-                    "gene_name": "prlG",
-                    "not_in_gbk": false,
-                    "gene_startpos": 13496,
-                    "gene_endpos": 14596,
-                    "gene_id": "AGC24261.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlG",
+                    "gene_endpos": 14596,
                     "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24261.1",
+                    "gene_name": "prlG",
+                    "gene_startpos": 13496,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlH",
-                    "not_in_gbk": false,
-                    "gene_startpos": 14593,
-                    "gene_endpos": 15915,
-                    "gene_id": "AGC24262.1",
-                    "gene_annotation": "PrlH",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Glycosylation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "no pyralomicin 1a production"
+                    "gene_annotation": "PrlH",
+                    "gene_endpos": 15915,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AGC24262.1",
+                    "gene_name": "prlH",
+                    "gene_startpos": 14593,
+                    "mut_pheno": "no pyralomicin 1a production",
+                    "not_in_gbk": false,
+                    "tailoring": "Glycosylation"
                 },
                 {
-                    "gene_name": "prlI",
-                    "not_in_gbk": false,
-                    "gene_startpos": 16126,
-                    "gene_endpos": 17400,
-                    "gene_id": "AGC24263.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlI",
+                    "gene_endpos": 17400,
                     "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24263.1",
+                    "gene_name": "prlI",
+                    "gene_startpos": 16126,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlJ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 17413,
-                    "gene_endpos": 18555,
-                    "gene_id": "AGC24264.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlJ",
+                    "gene_endpos": 18555,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24264.1",
+                    "gene_name": "prlJ",
+                    "gene_startpos": 17413,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlK",
-                    "not_in_gbk": false,
-                    "gene_startpos": 18609,
-                    "gene_endpos": 20027,
-                    "gene_id": "AGC24265.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlK",
+                    "gene_endpos": 20027,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24265.1",
+                    "gene_name": "prlK",
+                    "gene_startpos": 18609,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlL",
-                    "not_in_gbk": false,
-                    "gene_startpos": 20024,
-                    "gene_endpos": 20614,
-                    "gene_id": "AGC24266.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlL",
+                    "gene_endpos": 20614,
                     "gene_function": "Activation / processing",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24266.1",
+                    "gene_name": "prlL",
+                    "gene_startpos": 20024,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlM",
-                    "not_in_gbk": false,
-                    "gene_startpos": 20696,
-                    "gene_endpos": 22330,
-                    "gene_id": "AGC24267.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlM",
+                    "gene_endpos": 22330,
                     "gene_function": "Tailoring",
-                    "tailoring": "Halogenation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24267.1",
+                    "gene_name": "prlM",
+                    "gene_startpos": 20696,
+                    "not_in_gbk": false,
+                    "tailoring": "Halogenation"
                 },
                 {
-                    "gene_name": "prlN",
-                    "not_in_gbk": false,
-                    "gene_startpos": 22350,
-                    "gene_endpos": 24017,
-                    "gene_id": "AGC24268.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlN",
+                    "gene_endpos": 24017,
                     "gene_function": "Tailoring",
-                    "tailoring": "Halogenation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24268.1",
+                    "gene_name": "prlN",
+                    "gene_startpos": 22350,
+                    "not_in_gbk": false,
+                    "tailoring": "Halogenation"
                 },
                 {
-                    "gene_name": "prlO",
-                    "not_in_gbk": false,
-                    "gene_startpos": 24049,
-                    "gene_endpos": 25668,
-                    "gene_id": "AGC24269.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlO",
+                    "gene_endpos": 25668,
                     "gene_function": "Tailoring",
-                    "tailoring": "Halogenation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24269.1",
+                    "gene_name": "prlO",
+                    "gene_startpos": 24049,
+                    "not_in_gbk": false,
+                    "tailoring": "Halogenation"
                 },
                 {
-                    "gene_name": "prlP",
-                    "not_in_gbk": false,
-                    "gene_startpos": 25707,
-                    "gene_endpos": 30875,
-                    "gene_id": "AGC24270.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlP",
+                    "gene_endpos": 30875,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24270.1",
+                    "gene_name": "prlP",
+                    "gene_startpos": 25707,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlQ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 33112,
-                    "gene_endpos": 36882,
-                    "gene_id": "AGC24271.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlQ",
+                    "gene_endpos": 36882,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24271.1",
+                    "gene_name": "prlQ",
+                    "gene_startpos": 33112,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlR",
-                    "not_in_gbk": false,
-                    "gene_startpos": 37552,
-                    "gene_endpos": 37782,
-                    "gene_id": "AGC24272.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlR",
+                    "gene_endpos": 37782,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24272.1",
+                    "gene_name": "prlR",
+                    "gene_startpos": 37552,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlS",
-                    "not_in_gbk": false,
-                    "gene_startpos": 37858,
-                    "gene_endpos": 38178,
-                    "gene_id": "AGC24273.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlS",
+                    "gene_endpos": 38178,
                     "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24273.1",
+                    "gene_name": "prlS",
+                    "gene_startpos": 37858,
+                    "not_in_gbk": false
                 },
                 {
-                    "gene_name": "prlT",
-                    "not_in_gbk": false,
-                    "gene_startpos": 38390,
-                    "gene_endpos": 39550,
-                    "gene_id": "AGC24274.1",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_annotation": "PrlT",
+                    "gene_endpos": 39550,
                     "gene_function": "Tailoring",
-                    "tailoring": "Halogenation",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ]
+                    "gene_id": "AGC24274.1",
+                    "gene_name": "prlT",
+                    "gene_startpos": 38390,
+                    "not_in_gbk": false,
+                    "tailoring": "Halogenation"
                 }
             ]
         },
-        "NRP": {
-            "subclass": "Other",
-            "lin_cycl_nrp": "Linear",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Other",
-            "nrps_genes": [
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
                 {
-                    "nrps_gene": "AGC24265.1",
-                    "nrps_module": [
-                        {
-                            "module_nr": "0",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Proline",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "N/A",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
+                    "Accession": "JX424761",
+                    "conn_comp_cluster": [
+                        "Enzymatic assays"
+                    ],
+                    "end_coord": -1,
+                    "start_coord": -1
                 }
             ]
         },
-        "Polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "starter_unit": "Other",
-            "pks_te_type": "Type II",
-            "pks_thioesterase": [
-                "agc24272"
-            ],
-            "pks_release_type": "Claisen condensation",
-            "mod_pks_genes": [
-                {
-                    "mod_pks_gene": "AGC24270.1",
-                    "pks_module": [
-                        {
-                            "module_nr": "1",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "T"
-                            ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "AGC24271.1",
-                    "pks_module": [
-                        {
-                            "module_nr": "2",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "KR",
-                                "T"
-                            ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "3",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "DH",
-                                "KR",
-                                "T"
-                            ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ]
-        }
-    }
+        "mibig_accession": "BGC0001038",
+        "publications": [
+            "23607523",
+            "12195964"
+        ]
+    },
+    "personal": {
+        "submitter_email": "Taifo.Mahmud@oregonstate.edu",
+        "submitter_institution": "Oregon State University",
+        "submitter_name": "Taifo Mahmud"
+    },
+    "version": "17"
 }

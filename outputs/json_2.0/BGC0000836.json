@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Jan Claesen",
-        "submitter_institution": "UCSF",
-        "submitter_email": "jan.claesen@ucsf.edu"
+    "submitter": {
+        "name": "Jan Claesen",
+        "institution": "UCSF",
+        "email": "jan.claesen@ucsf.edu"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000836",
         "biosyn_class": [
             "Other"
@@ -13,13 +19,13 @@
             "pubmed:25036635"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Heterologous expression"
-            ],
             "accession": "AE014075.1",
             "start_coord": 1143727,
-            "end_coord": 1158748
+            "end_coord": 1158748,
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
         },
         "compounds": [
             {
@@ -30,8 +36,9 @@
                 "chem_struct": "CC1=C(O)C=CC(/C=C/C=C/C=C/C=C/C=C/C=C/C(OC)=O)=C1",
                 "molecular_formula": "C21H22O3",
                 "mol_mass": 321.1496,
-                "mass_ion_type": "[M-H]-",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "[M-H]-",
+                "chem_acts": [
                     "Unknown",
                     "Antioxidant"
                 ]
@@ -39,13 +46,7 @@
         ],
         "genes": {},
         "other": {
-            "other_subclass": "Unknown"
+            "subclass": "Unknown"
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

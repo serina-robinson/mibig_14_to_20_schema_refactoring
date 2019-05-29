@@ -1,24 +1,33 @@
 {
-    "comments": "The corresponding author for this entry should be both Yang Hai and Prof. Yi Tang, (yitang@ucla.edu)",
-    "submitter": {
-        "name": "Yang Hai",
-        "institution": "UCLA",
-        "email": "YANGHAI62@UCLA.EDU"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001466",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "doi:10.1021/jacs.7b13350"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_struct": "OC(CCCCNC(/C=C/CCCCCCCC/C=C/C[C@H](O)C)=O)=O",
+                "chem_synonyms": [],
+                "compound": "Wortmanamide",
+                "database_id": "",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 366.2635
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "MG837519.1",
             "completeness": "complete",
@@ -28,49 +37,40 @@
                 "Heterologous expression"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Wortmanamide",
-                "chem_synonyms": [],
-                "chem_struct": "OC(CCCCNC(/C=C/CCCCCCCC/C=C/C[C@H](O)C)=O)=O",
-                "mol_mass": 366.2635,
-                "database_id": "",
-                "mass_spec_ion_type": "[M-H]-",
-                "evidence": [
-                    "NMR",
-                    "Mass spectrometry",
-                    "Chemical derivatization"
-                ],
-                "chem_acts": [
-                    "Unknown"
-                ]
-            }
-        ],
-        "genes": {},
+        "mibig_accession": "BGC0001466",
         "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "subclasses": [
-                "Other"
-            ],
             "cyclic": false,
             "release_type": [
                 "Unknown"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
                     "genes": [
                         "mg837519.1"
                     ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 7,
+                        "subtype": "Highly reducing"
+                    },
                     "subclass": [
                         "Iterative type I"
-                    ],
-                    "iterative": {
-                        "nr_iterations": 7,
-                        "subtype": "Highly reducing",
-                        "cyclization_type": "Unknown"
-                    }
+                    ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "doi:10.1021/jacs.7b13350"
+        ]
+    },
+    "comments": "The corresponding author for this entry should be both Yang Hai and Prof. Yi Tang, (yitang@ucla.edu)",
+    "submitter": {
+        "email": "YANGHAI62@UCLA.EDU",
+        "institution": "UCLA",
+        "name": "Yang Hai"
     }
 }

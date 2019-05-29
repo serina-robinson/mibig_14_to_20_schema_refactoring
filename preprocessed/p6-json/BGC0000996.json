@@ -1,55 +1,32 @@
 {
-    "comments": "The ftdB gene is present in three parts, and must be merged. A new paper includes the publication of a fragment that closed a genome sequencing gap within FtdB. Locus tags and protein ID comprising FtdB from N-C terminus: SSLG_04251, protein_id=ADJ54381.1,SSLG_04252. This is why there are two loci listed, which is technically incorrect. Only one locus but in GenBank as the sum of two accession numbers.",
-    "submitter": {
-        "name": "Joshua Blodgett",
-        "institution": "Washington Univeristy in St Louis",
-        "email": "jblodgett@wustl.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000996",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:20547882"
-        ],
-        "loci": {
-            "accession": "GG657742.1",
-            "start_coord": 4892742,
-            "end_coord": 4909316,
-            "completeness": "incomplete",
-            "evidence": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "frontalamide B",
-                "chem_synonyms": [],
-                "chem_struct": "O=C(NCCC(O)C1C(O)=C(C(/C=C/2)=O)C(N1)=O)/C=C\\\\C[C@H]([C@]3([H])[C@]4([H])[C@@]5([H])[C@@](C[C@H](C=C)[C@@H]5C)([H])C3)[C@H]2CC4=O",
-                "molecular_formula": "C29H36N2O6",
-                "mol_mass": 509.2662,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Antifungal"
-                ]
+                ],
+                "chem_struct": "O=C(NCCC(O)C1C(O)=C(C(/C=C/2)=O)C(N1)=O)/C=C\\\\C[C@H]([C@]3([H])[C@]4([H])[C@@]5([H])[C@@](C[C@H](C=C)[C@@H]5C)([H])C3)[C@H]2CC4=O",
+                "chem_synonyms": [],
+                "compound": "frontalamide B",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 509.2662,
+                "molecular_formula": "C29H36N2O6"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "ftdB",
-                    "id": "SSLG_04251",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -59,11 +36,11 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "SSLG_04251",
+                    "name": "ftdB"
                 },
                 {
-                    "name": "ftdA",
-                    "id": "SSLG_04250",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -74,14 +51,20 @@
                             ]
                         }
                     ],
+                    "id": "SSLG_04250",
+                    "name": "ftdA",
                     "product": "frontalamide hydroxylase",
                     "tailoring": [
                         "Hydroxylation"
                     ]
                 }
             ],
+            "extra_genes": [],
             "operons": [
                 {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
                     "genes": [
                         "sslg_04250",
                         "sslg_04251",
@@ -89,21 +72,67 @@
                         "sslg_04254",
                         "sslg_04255",
                         "sslg_04256"
-                    ],
-                    "evidence": [
-                        "Sequence-based prediction"
                     ]
                 }
             ]
         },
-        "polyketide": {
-            "starter_unit": "Unknown",
-            "subclasses": [
-                "Other"
+        "loci": {
+            "accession": "GG657742.1",
+            "completeness": "incomplete",
+            "end_coord": 4909316,
+            "evidence": [
+                "Knock-out studies",
+                "Sequence-based prediction"
             ],
+            "start_coord": 4892742
+        },
+        "mibig_accession": "BGC0000996",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "EFL02193.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "Ornithine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "1"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Unknown"
+            ],
+            "subclass": "Unknown",
+            "thioesterases": [
+                {
+                    "gene": "sslg_04251",
+                    "thioesterase_type": "Type I"
+                }
+            ]
+        },
+        "polyketide": {
             "cyclic": true,
             "release_type": [
                 "Unknown"
+            ],
+            "starter_unit": "Unknown",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
@@ -111,84 +140,55 @@
                         "EFL02193.1",
                         "None"
                     ],
-                    "subclass": [
-                        "Iterative type I"
-                    ],
                     "iterative": {
+                        "cyclization_type": "Unknown",
                         "nr_iterations": 12,
-                        "subtype": "Partially reducing",
-                        "cyclization_type": "Unknown"
+                        "subtype": "Partially reducing"
                     },
                     "modules": [
                         {
-                            "genes": [
-                                "EFL02193.1"
+                            "at_specificities": [
+                                "Malonyl-CoA"
                             ],
-                            "module_number": "12",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Dehydratase"
                             ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
+                            "genes": [
+                                "EFL02193.1"
                             ],
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": "",
+                            "module_number": "12",
                             "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": true,
                                 "evidence": [
                                     "Sequence-based prediction"
-                                ]
-                            }
+                                ],
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            },
+                            "pks_mod_doms": [
+                                "None"
+                            ]
                         }
+                    ],
+                    "subclass": [
+                        "Iterative type I"
                     ]
                 }
             ]
         },
-        "nrp": {
-            "subclass": "Unknown",
-            "nrps_genes": [
-                {
-                    "gene_id": "EFL02193.1",
-                    "modules": [
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "Ornithine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "1",
-                            "active": false,
-                            "c_dom_subtype": "Unknown",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "cyclic": true,
-            "thioesterases": [
-                {
-                    "gene": "sslg_04251",
-                    "thioesterase_type": "Type I"
-                }
-            ],
-            "release_type": [
-                "Unknown"
-            ]
-        }
+        "publications": [
+            "pubmed:20547882"
+        ]
+    },
+    "comments": "The ftdB gene is present in three parts, and must be merged. A new paper includes the publication of a fragment that closed a genome sequencing gap within FtdB. Locus tags and protein ID comprising FtdB from N-C terminus: SSLG_04251, protein_id=ADJ54381.1,SSLG_04252. This is why there are two loci listed, which is technically incorrect. Only one locus but in GenBank as the sum of two accession numbers.",
+    "submitter": {
+        "email": "jblodgett@wustl.edu",
+        "institution": "Washington Univeristy in St Louis",
+        "name": "Joshua Blodgett"
     }
 }

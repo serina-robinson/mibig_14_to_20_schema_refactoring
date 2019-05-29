@@ -1,23 +1,29 @@
 {
-    "submitter": {
-        "name": "Douglas A. Mitchell",
-        "institution": "University of Illinois at Urbana-Champaign",
-        "email": "douglasm@illinois.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001146",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:24937678"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial"
+                ],
+                "chem_struct": "O=C([C@H]1CSC(C2=CSC(C3=CSC(C(NC([C@@H]4CSC(C5=CSC(C6=CC=C(C(N[C@@H](CC(N)=O)C7=N[C@H](C(N/C8=C\\\\C)=O)CS7)=O)C([C@H](NC9=O)C)=N6)=N5)=N4)=O)=C)=N3)=N2)=N1)N[C@H](C(O)=O)CS[C@@](C)(C(N[C@@H](CCCCN)C(NCC(NC(C(N%10[C@H]9CCC%10)=O)=C)=O)=O)=O)NC8=O",
+                "chem_synonyms": [],
+                "compound": "cyclothiazomycin C",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1486.3309,
+                "molecular_formula": "C60H67N19O13S7"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "KJ651958.1",
             "completeness": "incomplete",
@@ -25,27 +31,18 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "cyclothiazomycin C",
-                "chem_synonyms": [],
-                "chem_struct": "O=C([C@H]1CSC(C2=CSC(C3=CSC(C(NC([C@@H]4CSC(C5=CSC(C6=CC=C(C(N[C@@H](CC(N)=O)C7=N[C@H](C(N/C8=C\\\\C)=O)CS7)=O)C([C@H](NC9=O)C)=N6)=N5)=N4)=O)=C)=N3)=N2)=N1)N[C@H](C(O)=O)CS[C@@](C)(C(N[C@@H](CCCCN)C(NCC(NC(C(N%10[C@H]9CCC%10)=O)=C)=O)=O)=O)NC8=O",
-                "molecular_formula": "C60H67N19O13S7",
-                "mol_mass": 1486.3309,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
-            }
+        "mibig_accession": "BGC0001146",
+        "publications": [
+            "pubmed:24937678"
         ],
-        "genes": {},
         "ripp": {
-            "subclass": "Thiopeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "aid54693",
+                    "core_sequence": [
+                        "SNCTSKGSPASCCSCCCC"
+                    ],
                     "crosslinks": [
                         {
                             "crosslink_type": "Unknown",
@@ -58,14 +55,17 @@
                             "second_AA": 18
                         }
                     ],
-                    "core_sequence": [
-                        "SNCTSKGSPASCCSCCCC"
-                    ],
-                    "leader_sequence": 42,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "aid54693",
+                    "leader_sequence": 42
                 }
             ],
-            "peptidases": []
+            "subclass": "Thiopeptide"
         }
+    },
+    "submitter": {
+        "email": "douglasm@illinois.edu",
+        "institution": "University of Illinois at Urbana-Champaign",
+        "name": "Douglas A. Mitchell"
     }
 }

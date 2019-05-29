@@ -1,21 +1,101 @@
 {
-    "submitter": {
-        "name": "Andreas Bechthold",
-        "institution": "Albert-Ludwigs-University of Freiburg, Germany ",
-        "email": "andreas.bechthold@pharmazie.uni-freiburg.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000197",
         "biosyn_class": [
             "Polyketide",
             "Saccharide"
         ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial",
+                    "Cytotoxic"
+                ],
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "collagenase"
+                    },
+                    {
+                        "publications": [],
+                        "target": "DNAsynthesis"
+                    }
+                ],
+                "compound": "Aranciamycin",
+                "database_id": "pubchem:15177995;chembl:1096602"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABL09959.1",
+                    "name": "No gene ID",
+                    "product": "ketoacyl synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "ABL09968.1",
+                    "name": "No gene ID",
+                    "product": "L-rhamnosyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "DQ915964.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000197",
+        "polyketide": {
+            "cyclases": [
+                "ABL09954.1",
+                "ABL09960.1"
+            ],
+            "cyclic": true,
+            "ketide_length": 10,
+            "subclasses": [
+                "Anthracycline"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ABL09960.1",
+                        "abl09959.1",
+                        "ABL09954.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
+            ]
+        },
         "publications": [
             "pubmed:17357167",
             "pubmed:5433438",
@@ -25,102 +105,22 @@
             "pubmed:16713002",
             "pubmed:18553079"
         ],
-        "loci": {
-            "accession": "DQ915964.1",
-            "completeness": "complete",
-            "evidence": [
-                "Heterologous expression"
-            ]
-        },
-        "compounds": [
-            {
-                "compound": "Aranciamycin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:15177995;chembl:1096602",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Cytotoxic"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "collagenase",
-                        "publications": []
-                    },
-                    {
-                        "target": "DNAsynthesis",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": [
-                {
-                    "name": "No gene ID",
-                    "id": "ABL09959.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
-                    "product": "ketoacyl synthase"
-                },
-                {
-                    "name": "No gene ID",
-                    "id": "ABL09968.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Activity assay"
-                            ]
-                        }
-                    ],
-                    "product": "L-rhamnosyltransferase",
-                    "tailoring": [
-                        "Glycosylation"
-                    ]
-                }
-            ]
-        },
-        "polyketide": {
-            "ketide_length": 10,
-            "cyclases": [
-                "ABL09954.1",
-                "ABL09960.1"
-            ],
-            "subclasses": [
-                "Anthracycline"
-            ],
-            "cyclic": true,
-            "synthases": [
-                {
-                    "genes": [
-                        "ABL09954.1",
-                        "abl09959.1",
-                        "ABL09960.1"
-                    ],
-                    "subclass": [
-                        "Type II"
-                    ]
-                }
-            ]
-        },
         "saccharide": {
-            "subclass": "hybrid/tailoring",
             "glycosyltransferases": [
                 {
-                    "gene_id": "ABL09968.1",
-                    "specificity": "Multiple (promiscuous)",
                     "evidence": [
                         "Knock-out construct"
-                    ]
+                    ],
+                    "gene_id": "ABL09968.1",
+                    "specificity": "Multiple (promiscuous)"
                 }
-            ]
+            ],
+            "subclass": "hybrid/tailoring"
         }
+    },
+    "submitter": {
+        "email": "andreas.bechthold@pharmazie.uni-freiburg.de",
+        "institution": "Albert-Ludwigs-University of Freiburg, Germany ",
+        "name": "Andreas Bechthold"
     }
 }

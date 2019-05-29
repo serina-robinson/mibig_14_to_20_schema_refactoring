@@ -1,55 +1,51 @@
 {
-    "comments": "The SRO15-2212 prepropeptide sequence is identical with AmfS from Streptomyces griseus IFO13350",
-    "submitter": {
-        "name": "Neha Garg",
-        "institution": "University of California at San Diego",
-        "email": "negarg@ucsd.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000553",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:21983601"
-        ],
-        "loci": {
-            "accession": "NZ_DS999644.1",
-            "start_coord": 5221350,
-            "end_coord": 5228789,
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "SRO15-2212",
-                "chem_synonyms": [],
-                "mol_mass": 2212.18,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "SRO15-2212",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 2212.18
             }
         ],
         "genes": {
-            "extra_genes": [],
-            "annotations": []
+            "annotations": [],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "NZ_DS999644.1",
+            "completeness": "complete",
+            "end_coord": 5228789,
+            "evidence": [
+                "Sequence-based prediction"
+            ],
+            "start_coord": 5221350
+        },
+        "mibig_accession": "BGC0000553",
+        "publications": [
+            "pubmed:21983601"
+        ],
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "ssgg_rs09925",
+                    "core_sequence": [
+                        "TGSQVSLLVCEYSSLSVVLCTP"
+                    ],
                     "crosslinks": [
                         {
                             "crosslink_type": "Thioether",
@@ -62,14 +58,18 @@
                             "second_AA": 20
                         }
                     ],
-                    "core_sequence": [
-                        "TGSQVSLLVCEYSSLSVVLCTP"
-                    ],
-                    "leader_sequence": 21,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "ssgg_rs09925",
+                    "leader_sequence": 21
                 }
             ],
-            "peptidases": []
+            "subclass": "Lanthipeptide"
         }
+    },
+    "comments": "The SRO15-2212 prepropeptide sequence is identical with AmfS from Streptomyces griseus IFO13350",
+    "submitter": {
+        "email": "negarg@ucsd.edu",
+        "institution": "University of California at San Diego",
+        "name": "Neha Garg"
     }
 }

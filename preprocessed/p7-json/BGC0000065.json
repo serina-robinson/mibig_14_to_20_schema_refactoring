@@ -1,56 +1,36 @@
 {
-    "comments": "GalABC is proposed as a novel type of PKS: bacterial highly-reducing type iterative PKS incorporating methylmalonyl-CoA with highly programmed \u00ce\u00b2-keto group modifications, a discrete AT, and no distinctive releasing domain. \\n",
-    "submitter": {
-        "name": "Hyung-Jin Kwon",
-        "institution": "Myongji University",
-        "email": "hjink@mju.ac.kr"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000065",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:20662933",
-            "pubmed:25336658"
-        ],
-        "loci": {
-            "accession": "GU300145.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "galbonolide A",
-                "chem_synonyms": [
-                    "rustmicin"
-                ],
-                "chem_moieties": [],
-                "database_id": "pubchem:6438453",
                 "chem_acts": [
                     "Antifungal"
                 ],
+                "chem_moieties": [],
+                "chem_synonyms": [
+                    "rustmicin"
+                ],
                 "chem_targets": [
                     {
-                        "target": "inositolphosphoceramidesynthase",
-                        "publications": []
+                        "publications": [],
+                        "target": "inositolphosphoceramidesynthase"
                     }
-                ]
+                ],
+                "compound": "galbonolide A",
+                "database_id": "pubchem:6438453"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "galA",
-                    "id": "ADE22340.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -59,11 +39,11 @@
                             ]
                         }
                     ],
+                    "id": "ADE22340.1",
+                    "name": "galA",
                     "product": "standing alone acyltransferase working with iterative type I PKS, GalB"
                 },
                 {
-                    "name": "galB",
-                    "id": "ADE22339.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -72,11 +52,11 @@
                             ]
                         }
                     ],
+                    "id": "ADE22339.1",
+                    "name": "galB",
                     "product": "iterative type I PKS (highly reducing type)"
                 },
                 {
-                    "name": "galC",
-                    "id": "ADE22338.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -85,11 +65,11 @@
                             ]
                         }
                     ],
+                    "id": "ADE22338.1",
+                    "name": "galC",
                     "product": "KS fold with no cysteine catalytic residue; a partner of GalB"
                 },
                 {
-                    "name": "galD",
-                    "id": "ADE22337.1",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -98,39 +78,59 @@
                             ]
                         }
                     ],
+                    "id": "ADE22337.1",
+                    "name": "galD",
                     "product": "cytochrome P450-type monooxygenase"
                 },
                 {
-                    "name": "galE",
                     "id": "ADE22336.1",
+                    "name": "galE",
                     "product": "Rieske domain protein"
                 }
             ]
         },
+        "loci": {
+            "accession": "GU300145.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000065",
         "polyketide": {
-            "starter_unit": "Propionyl-CoA",
-            "subclasses": [
-                "Macrolide"
-            ],
             "cyclic": true,
             "release_type": [
                 "Macrolactonization"
+            ],
+            "starter_unit": "Propionyl-CoA",
+            "subclasses": [
+                "Macrolide"
             ],
             "synthases": [
                 {
                     "genes": [
                         "ade22339.1"
                     ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 6,
+                        "subtype": "Highly reducing"
+                    },
                     "subclass": [
                         "Iterative type I"
-                    ],
-                    "iterative": {
-                        "nr_iterations": 6,
-                        "subtype": "Highly reducing",
-                        "cyclization_type": "Unknown"
-                    }
+                    ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:20662933",
+            "pubmed:25336658"
+        ]
+    },
+    "comments": "GalABC is proposed as a novel type of PKS: bacterial highly-reducing type iterative PKS incorporating methylmalonyl-CoA with highly programmed \u00ce\u00b2-keto group modifications, a discrete AT, and no distinctive releasing domain. \\n",
+    "submitter": {
+        "email": "hjink@mju.ac.kr",
+        "institution": "Myongji University",
+        "name": "Hyung-Jin Kwon"
     }
 }

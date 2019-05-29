@@ -1,41 +1,20 @@
 {
-    "submitter": {
-        "name": "Andreas Bechthold",
-        "institution": "Albert-Ludwigs-University of Freiburg, Germany",
-        "email": "andreas.bechthold@pharmazie.uni-freiburg.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000654",
         "biosyn_class": [
             "Terpene",
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:16632249",
-            "pubmed:18157854",
-            "pubmed:20540056",
-            "pubmed:21179045",
-            "pubmed:21685164",
-            "pubmed:24861595"
-        ],
-        "loci": {
-            "accession": "DQ230532.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Heterologous expression"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Phenalinolactone A",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "Gamma-butyrolactone",
@@ -59,17 +38,14 @@
                         ]
                     }
                 ],
-                "database_id": "chemspider:28288564",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "chem_synonyms": [],
+                "compound": "Phenalinolactone A",
+                "database_id": "chemspider:28288564"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "PlaM1",
-                    "id": "ABB69739.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -78,13 +54,13 @@
                             ]
                         }
                     ],
+                    "id": "ABB69739.1",
+                    "name": "PlaM1",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "PlaO4",
-                    "id": "ABB69759.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -93,13 +69,13 @@
                             ]
                         }
                     ],
+                    "id": "ABB69759.1",
+                    "name": "PlaO4",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "PlaO1",
-                    "id": "ABB69741.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -109,13 +85,13 @@
                             ]
                         }
                     ],
+                    "id": "ABB69741.1",
+                    "name": "PlaO1",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "PlaA6",
-                    "id": "ABB69761.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -124,13 +100,13 @@
                             ]
                         }
                     ],
+                    "id": "ABB69761.1",
+                    "name": "PlaA6",
                     "tailoring": [
                         "Glycosylation"
                     ]
                 },
                 {
-                    "name": "PlaV",
-                    "id": "ABB69758.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -139,14 +115,14 @@
                             ]
                         }
                     ],
+                    "id": "ABB69758.1",
+                    "name": "PlaV",
                     "product": "3-O-acetyl transferase",
                     "tailoring": [
                         "Acetylation"
                     ]
                 },
                 {
-                    "name": "PlaO5",
-                    "id": "ABB69764.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -156,40 +132,54 @@
                             ]
                         }
                     ],
+                    "id": "ABB69764.1",
+                    "name": "PlaO5",
                     "tailoring": [
                         "Hydroxylation"
                     ]
                 },
                 {
-                    "name": "PlaR2",
-                    "id": "ABB69734.1"
+                    "id": "ABB69734.1",
+                    "name": "PlaR2"
                 },
                 {
-                    "name": "PlaR3",
-                    "id": "ABB69766.1"
+                    "id": "ABB69766.1",
+                    "name": "PlaR3"
                 },
                 {
-                    "name": "PlaR1",
-                    "id": "ABB69733.1"
+                    "id": "ABB69733.1",
+                    "name": "PlaR1"
                 }
             ]
         },
-        "terpene": {
-            "terpene_precursor": "IPP",
-            "terpene_synth_cycl": [
-                "abb69742.1",
-                "abb69743.1",
-                "abb69754.1",
-                "abb69755.1",
-                "abb69756.1"
-            ],
-            "structural_subclass": "Unknown",
-            "carbon_count_subclass": "Diterpene",
-            "prenyltransferases": [
-                "abb69744.1"
+        "loci": {
+            "accession": "DQ230532.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression"
             ]
         },
+        "mibig_accession": "BGC0000654",
+        "publications": [
+            "pubmed:16632249",
+            "pubmed:18157854",
+            "pubmed:20540056",
+            "pubmed:21179045",
+            "pubmed:21685164",
+            "pubmed:24861595"
+        ],
         "saccharide": {
+            "glycosyltransferases": [
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABB69761.1",
+                    "specificity": "L-amicetose"
+                }
+            ],
+            "subclass": "hybrid/tailoring",
             "sugar_subclusters": [
                 [
                     "ABB69735.1",
@@ -200,17 +190,27 @@
                     "ABB69762.1",
                     "ABB69763.1"
                 ]
+            ]
+        },
+        "terpene": {
+            "carbon_count_subclass": "Diterpene",
+            "prenyltransferases": [
+                "abb69744.1"
             ],
-            "subclass": "hybrid/tailoring",
-            "glycosyltransferases": [
-                {
-                    "gene_id": "ABB69761.1",
-                    "specificity": "L-amicetose",
-                    "evidence": [
-                        "Knock-out construct"
-                    ]
-                }
+            "structural_subclass": "Unknown",
+            "terpene_precursor": "IPP",
+            "terpene_synth_cycl": [
+                "abb69742.1",
+                "abb69743.1",
+                "abb69754.1",
+                "abb69755.1",
+                "abb69756.1"
             ]
         }
+    },
+    "submitter": {
+        "email": "andreas.bechthold@pharmazie.uni-freiburg.de",
+        "institution": "Albert-Ludwigs-University of Freiburg, Germany",
+        "name": "Andreas Bechthold"
     }
 }

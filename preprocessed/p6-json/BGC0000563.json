@@ -1,24 +1,32 @@
 {
-    "submitter": {
-        "name": "Xi Zhao",
-        "institution": "University of Illinois at Urbana-Champaign",
-        "email": "xzhao19@illinois.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000563",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:20351769",
-            "pubmed:21229987"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_synonyms": [
+                    "vena"
+                ],
+                "compound": "Venezuelin",
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "mol_mass": -1
+            }
         ],
+        "genes": {
+            "annotations": [],
+            "extra_genes": []
+        },
         "loci": {
             "accession": "HQ328852.1",
             "completeness": "complete",
@@ -26,32 +34,23 @@
                 "Enzymatic assays"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Venezuelin",
-                "chem_synonyms": [
-                    "vena"
-                ],
-                "mol_mass": -1,
-                "database_id": "",
-                "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Unknown"
-                ]
-            }
+        "mibig_accession": "BGC0000563",
+        "publications": [
+            "pubmed:20351769",
+            "pubmed:21229987"
         ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": []
-        },
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [
+                "Unknown"
+            ],
             "precursor_genes": [
                 {
-                    "gene_id": "AEA03263.1",
                     "cleavage_recogn_site": [
                         ""
+                    ],
+                    "core_sequence": [
+                        "ATCECVGLLTLLNTVCIGISCA"
                     ],
                     "crosslinks": [
                         {
@@ -75,16 +74,17 @@
                             "second_AA": 18
                         }
                     ],
-                    "core_sequence": [
-                        "ATCECVGLLTLLNTVCIGISCA"
-                    ],
-                    "leader_sequence": 29,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "AEA03263.1",
+                    "leader_sequence": 29
                 }
             ],
-            "peptidases": [
-                "Unknown"
-            ]
+            "subclass": "Lanthipeptide"
         }
+    },
+    "submitter": {
+        "email": "xzhao19@illinois.edu",
+        "institution": "University of Illinois at Urbana-Champaign",
+        "name": "Xi Zhao"
     }
 }

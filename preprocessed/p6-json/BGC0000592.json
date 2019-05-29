@@ -1,24 +1,35 @@
 {
-    "submitter": {
-        "name": "Nadine Ziemert",
-        "institution": "University of Tuebingen",
-        "email": "nziemert@ucsd.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000592",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:18683268",
-            "pubmed:22118675"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_struct": "CC(C)C[C@H]1NC(=O)[C@H](NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CC2=CC=CC=C2)NC(C)=O)[C@@H](C)O)[C@@H](C)OC(=O)C[C@@H]2NC(=O)[C@@H]3COC(=O)CC[C@@H](NC(=O)[C@H](CC4=CNC5=C4C=CC=C5)NC2=O)C(=O)N[C@@H](CCC(=O)NCCCC[C@H](NC1=O)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(=O)N1CCC[C@H]1C(=O)N3)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(O)=O",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "elastase"
+                    }
+                ],
+                "compound": "Microviridin B",
+                "database_id": "",
+                "mass_spec_ion_type": "Molecular ion",
+                "mol_mass": 1723.8332,
+                "molecular_formula": "C84H106N16O24"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "AM943877.1",
             "completeness": "complete",
@@ -26,35 +37,21 @@
                 "Heterologous expression"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Microviridin B",
-                "chem_synonyms": [],
-                "chem_struct": "CC(C)C[C@H]1NC(=O)[C@H](NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CC2=CC=CC=C2)NC(C)=O)[C@@H](C)O)[C@@H](C)OC(=O)C[C@@H]2NC(=O)[C@@H]3COC(=O)CC[C@@H](NC(=O)[C@H](CC4=CNC5=C4C=CC=C5)NC2=O)C(=O)N[C@@H](CCC(=O)NCCCC[C@H](NC1=O)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(=O)N1CCC[C@H]1C(=O)N3)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(O)=O",
-                "molecular_formula": "C84H106N16O24",
-                "mol_mass": 1723.8332,
-                "database_id": "",
-                "mass_spec_ion_type": "Molecular ion",
-                "chem_acts": [
-                    "Inhibitor"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "elastase",
-                        "publications": []
-                    }
-                ]
-            }
+        "mibig_accession": "BGC0000592",
+        "publications": [
+            "pubmed:18683268",
+            "pubmed:22118675"
         ],
-        "genes": {},
         "ripp": {
-            "subclass": "Microviridin",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "caq16116,mdna",
                     "cleavage_recogn_site": [
                         "PFFARFL"
+                    ],
+                    "core_sequence": [
+                        "MAYPNDQQGKALPFFARFLSVSKEESSIKSPSPEPTFGTTLKYPSDWEEY"
                     ],
                     "crosslinks": [
                         {
@@ -73,14 +70,17 @@
                             "second_AA": 12
                         }
                     ],
-                    "core_sequence": [
-                        "MAYPNDQQGKALPFFARFLSVSKEESSIKSPSPEPTFGTTLKYPSDWEEY"
-                    ],
-                    "leader_sequence": 36,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "caq16116,mdna",
+                    "leader_sequence": 36
                 }
             ],
-            "peptidases": []
+            "subclass": "Microviridin"
         }
+    },
+    "submitter": {
+        "email": "nziemert@ucsd.edu",
+        "institution": "University of Tuebingen",
+        "name": "Nadine Ziemert"
     }
 }

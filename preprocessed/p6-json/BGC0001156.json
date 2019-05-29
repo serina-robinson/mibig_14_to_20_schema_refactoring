@@ -1,40 +1,19 @@
 {
-    "submitter": {
-        "name": "Michael Smanski",
-        "institution": "University of Minnesota",
-        "email": "smanski@umn.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001156",
         "biosyn_class": [
             "Terpene"
         ],
-        "publications": [
-            "pubmed:20232845",
-            "pubmed:21825154",
-            "pubmed:23157615"
-        ],
-        "loci": {
-            "accession": "GQ398492.1",
-            "start_coord": 2491,
-            "end_coord": 38278,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Platencin",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "3-amino-4-hydroxybenzoic acid",
@@ -44,33 +23,29 @@
                         ]
                     }
                 ],
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "FabF"
+                    },
+                    {
+                        "publications": [],
+                        "target": "FabH"
+                    }
+                ],
+                "compound": "Platencin",
                 "database_id": "pubchem:44450228",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry",
                     "Total synthesis"
-                ],
-                "chem_acts": [
-                    "Antibacterial"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "FabF",
-                        "publications": []
-                    },
-                    {
-                        "target": "FabH",
-                        "publications": []
-                    }
                 ]
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "PtnT4",
-                    "id": "ADD83016.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -79,11 +54,11 @@
                             ]
                         }
                     ],
+                    "id": "ADD83016.1",
+                    "name": "PtnT4",
                     "product": "GGPP synthease"
                 },
                 {
-                    "name": "PtnM1",
-                    "id": "ADD82999.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -92,11 +67,11 @@
                             ]
                         }
                     ],
+                    "id": "ADD82999.1",
+                    "name": "PtnM1",
                     "product": "HMBDP reductase"
                 },
                 {
-                    "name": "PtnM2",
-                    "id": "ADD83000.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -105,11 +80,11 @@
                             ]
                         }
                     ],
+                    "id": "ADD83000.1",
+                    "name": "PtnM2",
                     "product": "HMBDP synthase"
                 },
                 {
-                    "name": "PtnM3",
-                    "id": "ADD83001.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -118,11 +93,11 @@
                             ]
                         }
                     ],
+                    "id": "ADD83001.1",
+                    "name": "PtnM3",
                     "product": "DXP synthase"
                 },
                 {
-                    "name": "PtnB1",
-                    "id": "ADD82993.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -131,11 +106,11 @@
                             ]
                         }
                     ],
+                    "id": "ADD82993.1",
+                    "name": "PtnB1",
                     "product": "ADHOHP synthase"
                 },
                 {
-                    "name": "PtnB2",
-                    "id": "ADD82994.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -144,21 +119,46 @@
                             ]
                         }
                     ],
+                    "id": "ADD82994.1",
+                    "name": "PtnB2",
                     "product": "3,4-AHBA synthase"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "GQ398492.1",
+            "completeness": "complete",
+            "end_coord": 38278,
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 2491
+        },
+        "mibig_accession": "BGC0001156",
+        "publications": [
+            "pubmed:20232845",
+            "pubmed:21825154",
+            "pubmed:23157615"
+        ],
         "terpene": {
+            "carbon_count_subclass": "Diterpene",
+            "prenyltransferases": [
+                "add83016"
+            ],
+            "structural_subclass": "Unknown",
             "terpene_precursor": "GGPP",
             "terpene_synth_cycl": [
                 "add83014",
                 "add83004"
-            ],
-            "structural_subclass": "Unknown",
-            "carbon_count_subclass": "Diterpene",
-            "prenyltransferases": [
-                "add83016"
             ]
         }
+    },
+    "submitter": {
+        "email": "smanski@umn.edu",
+        "institution": "University of Minnesota",
+        "name": "Michael Smanski"
     }
 }

@@ -1,74 +1,74 @@
 {
-    "submitter": {
-        "name": "Roland Kersten",
-        "institution": "Salk Institute of Biological Studies",
-        "email": "rkersten@salk.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000212",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24191063"
-        ],
-        "loci": {
-            "accession": "GG770539.1",
-            "start_coord": 5086070,
-            "end_coord": 5121186,
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Cinerubin B",
-                "chem_synonyms": [],
-                "database_id": "chemspider:66267",
                 "chem_acts": [
                     "Cytotoxic"
                 ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "DNA",
-                        "publications": []
+                        "publications": [],
+                        "target": "DNA"
                     }
-                ]
+                ],
+                "compound": "Cinerubin B",
+                "database_id": "chemspider:66267"
             }
         ],
         "genes": {},
+        "loci": {
+            "accession": "GG770539.1",
+            "completeness": "complete",
+            "end_coord": 5121186,
+            "evidence": [
+                "Sequence-based prediction"
+            ],
+            "start_coord": 5086070
+        },
+        "mibig_accession": "BGC0000212",
         "polyketide": {
-            "starter_unit": "Propionyl-CoA",
-            "ketide_length": 10,
             "cyclases": [
                 "SSBG_00488",
                 "SSBG_00497",
                 "SSBG_00505"
             ],
+            "cyclic": true,
+            "ketide_length": 10,
+            "starter_unit": "Propionyl-CoA",
             "subclasses": [
                 "Anthracycline"
             ],
-            "cyclic": true,
             "synthases": [
                 {
                     "genes": [
-                        "SSBG_00488",
+                        "SSBG_00505",
                         "ssbg_00494",
-                        "SSBG_00497",
-                        "SSBG_00505"
+                        "SSBG_00488",
+                        "SSBG_00497"
                     ],
                     "subclass": [
                         "Type II"
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:24191063"
+        ]
+    },
+    "submitter": {
+        "email": "rkersten@salk.edu",
+        "institution": "Salk Institute of Biological Studies",
+        "name": "Roland Kersten"
     }
 }

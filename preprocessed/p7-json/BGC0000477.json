@@ -1,23 +1,34 @@
 {
-    "submitter": {
-        "name": "Mohamed Donia",
-        "institution": "Princeton University",
-        "email": "donia@princeton.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000477",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:18425112"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_moieties": [],
+                "chem_synonyms": [],
+                "compound": "patellin 2 ",
+                "database_id": "pubchem:24762149"
+            },
+            {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_synonyms": [],
+                "compound": "patellin 3",
+                "database_id": "pubchem:24762150"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "EU290742.1",
             "completeness": "complete",
@@ -25,32 +36,15 @@
                 "Heterologous expression"
             ]
         },
-        "compounds": [
-            {
-                "compound": "patellin 2 ",
-                "chem_synonyms": [],
-                "chem_moieties": [],
-                "database_id": "pubchem:24762149",
-                "chem_acts": [
-                    "Unknown"
-                ]
-            },
-            {
-                "compound": "patellin 3",
-                "chem_synonyms": [],
-                "database_id": "pubchem:24762150",
-                "chem_acts": [
-                    "Unknown"
-                ]
-            }
+        "mibig_accession": "BGC0000477",
+        "publications": [
+            "pubmed:18425112"
         ],
-        "genes": {},
         "ripp": {
-            "subclass": "Cyanobactin",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "aca04491.1",
                     "cleavage_recogn_site": [
                         "GVDAS",
                         "SYD",
@@ -61,11 +55,17 @@
                         "TLPVPTLC",
                         "TVPTLC"
                     ],
-                    "leader_sequence": 40,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "aca04491.1",
+                    "leader_sequence": 40
                 }
             ],
-            "peptidases": []
+            "subclass": "Cyanobactin"
         }
+    },
+    "submitter": {
+        "email": "donia@princeton.edu",
+        "institution": "Princeton University",
+        "name": "Mohamed Donia"
     }
 }

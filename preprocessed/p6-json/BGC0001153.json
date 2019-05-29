@@ -1,56 +1,35 @@
 {
-    "submitter": {
-        "name": "Susan Jensen",
-        "institution": "University of Alberta",
-        "email": "susan.jensen@ualberta.ca"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001153",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:22195566"
-        ],
-        "loci": {
-            "accession": "JN660148.1",
-            "start_coord": 1,
-            "end_coord": 40826,
-            "completeness": "Unknown",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "polymyxin B",
-                "chem_synonyms": [
-                    "d-dab polymyxin b"
-                ],
-                "database_id": "pubchem:9833652",
                 "chem_acts": [
                     "Antibacterial"
                 ],
+                "chem_synonyms": [
+                    "d-dab polymyxin b"
+                ],
                 "chem_targets": [
                     {
-                        "target": "bacterialcellenvelope",
-                        "publications": []
+                        "publications": [],
+                        "target": "bacterialcellenvelope"
                     }
-                ]
+                ],
+                "compound": "polymyxin B",
+                "database_id": "pubchem:9833652"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "pmxA",
-                    "id": "AEZ51516.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -59,11 +38,11 @@
                             ]
                         }
                     ],
+                    "id": "AEZ51516.1",
+                    "name": "pmxA",
                     "product": "PmxA"
                 },
                 {
-                    "name": "pmxB",
-                    "id": "AEZ51517.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -72,11 +51,11 @@
                             ]
                         }
                     ],
+                    "id": "AEZ51517.1",
+                    "name": "pmxB",
                     "product": "PmxB"
                 },
                 {
-                    "name": "pmxC",
-                    "id": "AEZ51518.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -85,11 +64,11 @@
                             ]
                         }
                     ],
+                    "id": "AEZ51518.1",
+                    "name": "pmxC",
                     "product": "PmxC"
                 },
                 {
-                    "name": "pmxD",
-                    "id": "AEZ51519.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -98,11 +77,11 @@
                             ]
                         }
                     ],
+                    "id": "AEZ51519.1",
+                    "name": "pmxD",
                     "product": "PmxD"
                 },
                 {
-                    "name": "pmxE",
-                    "id": "AEZ51520.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -111,12 +90,25 @@
                             ]
                         }
                     ],
+                    "id": "AEZ51520.1",
+                    "name": "pmxE",
                     "product": "PmxE"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "JN660148.1",
+            "completeness": "Unknown",
+            "end_coord": 40826,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0001153",
         "nrp": {
-            "subclass": "Other lipopeptide",
+            "cyclic": true,
             "lipid_moiety": "isooctanoic acid",
             "nrps_genes": [
                 {
@@ -124,101 +116,101 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "2,4-Diaminobutyric acid"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "2,4-Diaminobutyric acid"
+                                ]
                             },
-                            "module_number": "0",
                             "active": false,
                             "c_dom_subtype": "Starter",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "0"
                         },
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
                                 "proteinogenic": [
                                     "Threonine"
-                                ],
-                                "evidence": [
-                                    "Sequence-based prediction"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "1"
                         },
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "L-2,4-Diaminobutyric acid"
-                                ],
-                                "evidence": [
-                                    "Sequence-based prediction"
-                                ],
+                                "aa_subcluster": [],
                                 "epimerized": true,
-                                "aa_subcluster": []
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "nonproteinogenic": [
+                                    "L-2,4-Diaminobutyric acid"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         },
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "L-2,4-Diaminobutyric acid"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "L-2,4-Diaminobutyric acid"
+                                ]
                             },
-                            "module_number": "3",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "3"
                         },
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "L-2,4-Diaminobutyric acid"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "L-2,4-Diaminobutyric acid"
+                                ]
                             },
-                            "module_number": "4",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "4"
                         },
                         {
-                            "module_number": "5",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "5"
                         }
                     ]
                 },
@@ -226,83 +218,83 @@
                     "gene_id": "AEZ51516.1",
                     "modules": [
                         {
-                            "module_number": "10",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "10"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Phenylalanine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Phenylalanine"
+                                ]
                             },
-                            "module_number": "6",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "6"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Leucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Leucine"
+                                ]
                             },
-                            "module_number": "7",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "7"
                         },
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "L-2,4-Diaminobutyric acid"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "L-2,4-Diaminobutyric acid"
+                                ]
                             },
-                            "module_number": "8",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "8"
                         },
                         {
                             "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "L-2,4-Diaminobutyric acid"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "nonproteinogenic": [
+                                    "L-2,4-Diaminobutyric acid"
+                                ]
                             },
-                            "module_number": "9",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "9"
                         }
                     ]
                 },
@@ -311,34 +303,42 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Threonine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Threonine"
+                                ]
                             },
-                            "module_number": "11",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "11"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "subclass": "Other lipopeptide",
             "thioesterases": [
                 {
                     "gene": "aez51517.1",
                     "thioesterase_type": "Type I"
                 }
-            ],
-            "release_type": [
-                "Macrolactamization"
             ]
-        }
+        },
+        "publications": [
+            "pubmed:22195566"
+        ]
+    },
+    "submitter": {
+        "email": "susan.jensen@ualberta.ca",
+        "institution": "University of Alberta",
+        "name": "Susan Jensen"
     }
 }

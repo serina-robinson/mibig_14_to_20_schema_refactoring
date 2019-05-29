@@ -1,46 +1,27 @@
 {
-    "submitter": {
-        "name": "Andreas Bechthold",
-        "institution": "Albert-Ludwigs-Universit\u00c3\u00a4t Freiburg",
-        "email": "andreas.bechthold@pharmazie.uni-freiburg.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001177",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:22162248",
-            "pubmed:24554499"
-        ],
-        "loci": {
-            "accession": "KJ437437.1",
-            "completeness": "complete",
-            "evidence": [
-                "Heterologous expression"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Mensacaricin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:403671",
                 "chem_acts": [
                     "Cytotoxic"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "Mensacaricin",
+                "database_id": "pubchem:403671"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "MsnM6",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -50,14 +31,13 @@
                             ]
                         }
                     ],
+                    "name": "MsnM6",
                     "product": "O-methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "MsnO8",
-                    "id": "AHL46694.1",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -66,11 +46,11 @@
                                 "Activity assay"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AHL46694.1",
+                    "name": "MsnO8"
                 },
                 {
-                    "name": "MsnO3",
-                    "id": "AHL46683.1",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -78,36 +58,56 @@
                                 "Activity assay"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AHL46683.1",
+                    "name": "MsnO3"
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "KJ437437.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
             ]
         },
+        "mibig_accession": "BGC0001177",
         "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "ketide_length": 10,
             "cyclases": [
                 "AHL46690.1",
                 "AHL46693.1",
                 "AHL46699.1"
             ],
+            "cyclic": true,
+            "ketide_length": 10,
+            "starter_unit": "Acetyl-CoA",
             "subclasses": [
                 "Other"
             ],
-            "cyclic": true,
             "synthases": [
                 {
                     "genes": [
+                        "AHL46690.1",
                         "AHL46693.1",
                         "ahl46686.1",
-                        "ahl46697.1",
-                        "AHL46690.1",
-                        "AHL46699.1"
+                        "AHL46699.1",
+                        "ahl46697.1"
                     ],
                     "subclass": [
                         "Type II"
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:22162248",
+            "pubmed:24554499"
+        ]
+    },
+    "submitter": {
+        "email": "andreas.bechthold@pharmazie.uni-freiburg.de",
+        "institution": "Albert-Ludwigs-Universit\u00c3\u00a4t Freiburg",
+        "name": "Andreas Bechthold"
     }
 }

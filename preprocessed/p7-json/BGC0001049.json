@@ -1,41 +1,20 @@
 {
-    "submitter": {
-        "name": "Russell Cox",
-        "institution": "Leibniz Universit\u00c3\u00a4t Hannover, Institut f\u00c3\u00bcr Organische Chemie",
-        "email": "russell.cox@oci.uni-hannover.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001049",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:21899331",
-            "pubmed:21675761",
-            "pubmed:20575135",
-            "pubmed:19067514",
-            "pubmed:17216664",
-            "pubmed:18266306"
-        ],
-        "loci": {
-            "accession": "AM409327.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Heterologous expression"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Tenellin",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Unknown"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "2-pyridone",
@@ -46,17 +25,30 @@
                         ]
                     }
                 ],
-                "database_id": "chemspider:10207541",
-                "chem_acts": [
-                    "Unknown"
-                ]
+                "chem_synonyms": [],
+                "compound": "Tenellin",
+                "database_id": "chemspider:10207541"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "tenA",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
                     "id": "CAL69594.1",
+                    "name": "tenA",
+                    "product": "hypothetical protein",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -65,30 +57,14 @@
                             ]
                         }
                     ],
-                    "product": "hypothetical protein",
-                    "tailoring": [
-                        "Oxidation"
-                    ]
-                },
-                {
-                    "name": "tenB",
                     "id": "CAL69595.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
+                    "name": "tenB",
                     "product": "hypothetical protein",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "tenC",
-                    "id": "CAL69596.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -97,11 +73,11 @@
                             ]
                         }
                     ],
+                    "id": "CAL69596.1",
+                    "name": "tenC",
                     "product": "hypothetical protein"
                 },
                 {
-                    "name": "tenS",
-                    "id": "CAL69597.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -110,98 +86,122 @@
                             ]
                         }
                     ],
+                    "id": "CAL69597.1",
+                    "name": "tenS",
                     "product": "PKS-NRPS"
                 }
             ]
         },
-        "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "subclasses": [
-                "Other"
-            ],
-            "cyclic": false,
-            "release_type": [
-                "Unknown"
-            ],
-            "synthases": [
-                {
-                    "genes": [
-                        "CAL69597.1"
-                    ],
-                    "subclass": [
-                        "Iterative type I"
-                    ],
-                    "iterative": {
-                        "nr_iterations": 4,
-                        "subtype": "Highly reducing",
-                        "cyclization_type": "Unknown"
-                    },
-                    "modules": [
-                        {
-                            "genes": [
-                                "CAL69597.1"
-                            ],
-                            "module_number": "1",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Dehydratase",
-                                "Ketoreductase"
-                            ],
-                            "at_specificities": [
-                                "Acetyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "comments": "",
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": true,
-                                "evidence": [
-                                    "Activity assay"
-                                ]
-                            }
-                        }
-                    ]
-                }
+        "loci": {
+            "accession": "AM409327.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression"
             ]
         },
+        "mibig_accession": "BGC0001049",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "CAL69597.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Tyrosine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Structure-based inference"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Tyrosine"
+                                ]
                             },
-                            "module_number": "2",
                             "active": true,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "2"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Unknown"
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "CAL69597.1"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 4,
+                        "subtype": "Highly reducing"
+                    },
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Acetyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "CAL69597.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            },
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ]
+                }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:21899331",
+            "pubmed:21675761",
+            "pubmed:20575135",
+            "pubmed:19067514",
+            "pubmed:17216664",
+            "pubmed:18266306"
+        ]
+    },
+    "submitter": {
+        "email": "russell.cox@oci.uni-hannover.de",
+        "institution": "Leibniz Universit\u00c3\u00a4t Hannover, Institut f\u00c3\u00bcr Organische Chemie",
+        "name": "Russell Cox"
     }
 }

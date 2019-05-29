@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Jianhua Ju",
-        "submitter_institution": "South China Sea Institute of Oceanology, Chinese Academy of Sciences (CAS) 164 XinGang Road West  Guangzhou 510301, China",
-        "submitter_email": "jju@scsio.ac.cn"
+    "submitter": {
+        "name": "Jianhua Ju",
+        "institution": "South China Sea Institute of Oceanology, Chinese Academy of Sciences (CAS) 164 XinGang Road West  Guangzhou 510301, China",
+        "email": "jju@scsio.ac.cn"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000171",
         "biosyn_class": [
             "Polyketide"
@@ -13,11 +19,11 @@
             "pubmed:23438151"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "FR878059.1",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies"
-            ],
-            "accession": "FR878059.1"
+            ]
         },
         "compounds": [
             {
@@ -26,138 +32,146 @@
                 "chem_struct": "C/C=C\\\\C(C)=C\\\\[C@@H](C(C[C@H](O)CC(CC(N1)=O)CC1=O)=O)C",
                 "molecular_formula": "C17H25NO4",
                 "mol_mass": 307.18,
-                "mass_ion_type": "M+",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "M+",
+                "chem_acts": [
                     "Antifungal"
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "smdC",
-                    "gene_id": "CCC21117.1",
-                    "gene_annotation": "signal transduction histidine kinase",
-                    "gene_function": "Unknown",
-                    "mut_pheno": "still produced 9-methylstreptimidone",
-                    "not_in_gbk": false
-                },
-                {
-                    "gene_name": "smdB",
-                    "gene_id": "CCC21116.1",
-                    "gene_annotation": "lysr family transcriptional regulator",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "smdB",
+                    "id": "CCC21116.1",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "still produced 9-methylstreptimidone",
-                    "not_in_gbk": false
+                    "product": "lysr family transcriptional regulator"
                 },
                 {
-                    "gene_name": "smdA",
-                    "gene_id": "CCC21115.1",
-                    "gene_annotation": "drug resistance transporter",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "smdA",
+                    "id": "CCC21115.1",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "still produced 9-methylstreptimidone",
-                    "not_in_gbk": false
+                    "product": "drug resistance transporter"
                 },
                 {
-                    "gene_name": "smdD",
-                    "gene_id": "CCC21118.1",
-                    "gene_annotation": "two component transcriptional regulator",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "smdD",
+                    "id": "CCC21118.1",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "still produced 9-methylstreptimidone",
-                    "not_in_gbk": false
+                    "product": "two component transcriptional regulator"
                 },
                 {
-                    "gene_name": "smdE",
-                    "gene_id": "CCC21119.1",
-                    "gene_annotation": "thioesterase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "smdE",
+                    "id": "CCC21119.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "failed to produce 9-methylstreptimidone",
-                    "not_in_gbk": false
+                    "product": "thioesterase"
                 },
                 {
-                    "gene_name": "smdF",
-                    "gene_id": "CCC21120.1",
-                    "gene_annotation": "malonyl coa-ACP transferase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "smdF",
+                    "id": "CCC21120.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "failed to produce 9-methylstreptimidone",
-                    "not_in_gbk": false
+                    "product": "malonyl coa-ACP transferase"
                 },
                 {
-                    "gene_name": "smdG",
-                    "gene_id": "CCC21121.1",
-                    "gene_annotation": "acyl carrier protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "smdG",
+                    "id": "CCC21121.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "failed to produce 9-methylstreptimidone",
-                    "not_in_gbk": false
+                    "product": "acyl carrier protein"
                 },
                 {
-                    "gene_name": "smdI",
-                    "gene_id": "CCC21123.1",
-                    "gene_annotation": "type-I polyketide synthases",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "smdI",
+                    "id": "CCC21123.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "failed to produce 9-methylstreptimidone",
-                    "not_in_gbk": false
+                    "product": "type-I polyketide synthases"
                 },
                 {
-                    "gene_name": "smdJ",
-                    "gene_id": "CCC21124.1",
-                    "gene_annotation": "putative flavoprotein decarboxylase",
-                    "gene_function": "Unknown",
-                    "mut_pheno": "still produced 9-methylstreptimidone",
-                    "not_in_gbk": false
-                },
-                {
-                    "gene_name": "smdK",
-                    "gene_id": "CCC21125.1",
-                    "gene_annotation": "putative 3-octaprenyl-4-hydroxybenzoate",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "smdK",
+                    "id": "CCC21125.1",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "failed to produce 9-methylstreptimidone",
-                    "not_in_gbk": false
+                    "product": "putative 3-octaprenyl-4-hydroxybenzoate"
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Modular type I"
-            ],
             "starter_unit": "Propionyl-CoA",
-            "pks_te_type": "Type II",
-            "pks_thioesterase": [
-                "smde"
+            "subclasses": [
+                "Other"
             ],
-            "pks_release_type": "Unknown"
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "smde"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "smde",
+                            "thioesterase_type": "Type II"
+                        }
+                    ]
+                }
+            ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

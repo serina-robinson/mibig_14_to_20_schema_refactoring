@@ -1,108 +1,63 @@
 {
-    "submitter": {
-        "name": "Neha Garg",
-        "institution": "University of California at San Diego",
-        "email": "negarg@ucsd.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000314",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:23798442",
-            "pubmed:25140825"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial",
+                    "Cytotoxic"
+                ],
+                "chem_struct": "O=C([C@H](CC(N)=O)NC1=O)N[C@H](CC(N)=O)C(N[C@H]([C@@H](C)CC)C(O[C@H](C)[C@H](C(N[C@@H]1C(C)C)=O)NC(/C=C/C=C/C=C/C=C/C2=CC=C(O)C(Br)=C2)=O)=O)=O",
+                "chem_synonyms": [],
+                "compound": "bromoalterochromide A",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 844.2881,
+                "molecular_formula": "C38H50BrN7O10"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "NZ_AHCC01000002.1",
-            "start_coord": 204471,
-            "end_coord": 238338,
             "completeness": "complete",
+            "end_coord": 238338,
             "evidence": [
                 "Knock-out studies",
                 "Heterologous expression",
                 "Gene expression correlated with compound production",
                 "Sequence-based prediction"
-            ]
+            ],
+            "start_coord": 204471
         },
-        "compounds": [
-            {
-                "compound": "bromoalterochromide A",
-                "chem_synonyms": [],
-                "chem_struct": "O=C([C@H](CC(N)=O)NC1=O)N[C@H](CC(N)=O)C(N[C@H]([C@@H](C)CC)C(O[C@H](C)[C@H](C(N[C@@H]1C(C)C)=O)NC(/C=C/C=C/C=C/C=C/C2=CC=C(O)C(Br)=C2)=O)=O)=O",
-                "molecular_formula": "C38H50BrN7O10",
-                "mol_mass": 844.2881,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Cytotoxic"
-                ]
-            }
-        ],
-        "genes": {},
-        "polyketide": {
-            "synthases": [
-                {
-                    "genes": [
-                        "WP_010369404.1"
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "WP_010369404.1"
-                            ],
-                            "module_number": "A1",
-                            "domains": [
-                                "Ketosynthase"
-                            ],
-                            "at_specificities": [
-                                "Unknown"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": "",
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": true,
-                                "evidence": [
-                                    "Structure-based inference"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
+        "mibig_accession": "BGC0000314",
         "nrp": {
-            "subclass": "Cyclic depsipeptide",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "WP_010369400.1",
                     "modules": [
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "nonproteinogenic": [
                                     "Coumaric acid"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "A0",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "A0"
                         }
                     ]
                 },
@@ -111,21 +66,21 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Threonine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Threonine"
+                                ]
                             },
-                            "module_number": "B1",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B1"
                         }
                     ]
                 },
@@ -134,39 +89,39 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Valine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Valine"
+                                ]
                             },
-                            "module_number": "B2",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B2"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Asparagine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Asparagine"
+                                ]
                             },
-                            "module_number": "B3",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B3"
                         }
                     ]
                 },
@@ -175,50 +130,95 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Asparagine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Asparagine"
+                                ]
                             },
-                            "module_number": "B4",
                             "active": false,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B4"
                         },
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Isoleucine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": true,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": true,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Isoleucine"
+                                ]
                             },
-                            "module_number": "B5",
                             "active": false,
                             "c_dom_subtype": "DCL",
                             "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "B5"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "other": {
+            "subclass": "Aminocoumarin"
+        },
+        "polyketide": {
+            "synthases": [
+                {
+                    "genes": [
+                        "WP_010369404.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "genes": [
+                                "WP_010369404.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "A1",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            },
+                            "pks_mod_doms": [
                                 "None"
                             ]
                         }
                     ]
                 }
-            ],
-            "cyclic": true,
-            "release_type": [
-                "Macrolactamization"
             ]
         },
-        "other": {
-            "subclass": "Aminocoumarin"
-        }
+        "publications": [
+            "pubmed:23798442",
+            "pubmed:25140825"
+        ]
+    },
+    "submitter": {
+        "email": "negarg@ucsd.edu",
+        "institution": "University of California at San Diego",
+        "name": "Neha Garg"
     }
 }

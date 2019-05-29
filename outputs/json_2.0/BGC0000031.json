@@ -1,10 +1,16 @@
 {
-    "personal": {
-        "submitter_name": "Jose A. Salas",
-        "submitter_institution": "University of Oviedo",
-        "submitter_email": "jasalas@uniovi.es"
+    "submitter": {
+        "name": "Jose A. Salas",
+        "institution": "University of Oviedo",
+        "email": "jasalas@uniovi.es"
     },
-    "general_params": {
+    "changelog": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ],
+    "cluster": {
         "mibig_accession": "BGC0000031",
         "biosyn_class": [
             "Polyketide"
@@ -15,12 +21,12 @@
             "pubmed:15186422"
         ],
         "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
+            "accession": "AJ580915.1",
+            "completeness": "complete",
+            "evidence": [
                 "Knock-out studies",
                 "Sequence-based prediction"
-            ],
-            "accession": "AJ580915.1"
+            ]
         },
         "compounds": [
             {
@@ -31,156 +37,199 @@
                 "chem_struct": "C[C@H]1C[C@H](C[C@@H]([C@H](/C(=C\\\\C=C\\\\C[C@H](OC(=O)C[C@@H]([C@H](C1)C)O)[C@@H]2CCC[C@H]2C(=O)O)/C#N)O)C)C",
                 "molecular_formula": "C28H43NO6",
                 "mol_mass": 490.64,
-                "mass_ion_type": "[M+H]+",
-                "chem_act": [
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "chem_acts": [
                     "Antibacterial",
                     "Cytotoxic"
                 ],
-                "chem_target": [
-                    "Threonyl-tRNAsynthetase"
+                "chem_targets": [
+                    {
+                        "target": "Threonyl-tRNAsynthetase",
+                        "publications": []
+                    }
                 ]
             }
         ],
         "genes": {
-            "gene": [
+            "annotations": [
                 {
-                    "gene_name": "borI",
-                    "gene_id": "CAE45673.1",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Hydroxylation",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "borI",
+                    "id": "CAE45673.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "Accumulation of 12-desnitrile-12-methylborrelidin",
-                    "not_in_gbk": false
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
                 },
                 {
-                    "gene_name": "borO",
-                    "gene_id": "CAE45679.1",
-                    "gene_function": "Resistance/immunity",
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "not_in_gbk": false
+                    "name": "borO",
+                    "id": "CAE45679.1"
                 },
                 {
-                    "gene_name": "borJ",
-                    "gene_id": "CAE45674.1",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Amination",
-                    "evidence_genefunction": [
-                        "Knock-out"
+                    "name": "borJ",
+                    "id": "CAE45674.1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
                     ],
-                    "mut_pheno": "Accumulation of 12-desnitrile-12-carboxylborrelidin",
-                    "not_in_gbk": false
+                    "tailoring": [
+                        "Amination"
+                    ]
                 }
             ]
         },
         "polyketide": {
-            "pk_subclass": "Macrolide",
-            "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Modular type I"
-            ],
             "starter_unit": "Trans-cyclopentane-(1R,2R)-dicarboxylic acid",
-            "mod_pks_genes": [
+            "subclasses": [
+                "Macrolide"
+            ],
+            "cyclic": true,
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "synthases": [
                 {
-                    "mod_pks_gene": "CAE45667.1 ",
-                    "pks_module": [
+                    "genes": [
+                        "CAE45671.1 ",
+                        "CAE45672.1 ",
+                        "CAE45668.1",
+                        "CAE45667.1 ",
+                        "CAE45669.1",
+                        "cae45660.1",
+                        "CAE45670.1 ",
+                        "cae45672.1"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": [
                         {
-                            "module_nr": "A0",
-                            "pks_domains": [
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_substr_spec": "Trans-cyclopentane-(1R, 2R)-dicarboxylic acid",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "gene": "cae45660.1",
+                            "thioesterase_type": "Unknown"
+                        },
+                        {
+                            "gene": "cae45672.1",
+                            "thioesterase_type": "Unknown"
                         }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAE45668.1",
-                    "pks_module": [
+                    ],
+                    "modules": [
                         {
-                            "module_nr": "1",
-                            "pks_domains": [
-                                "Ketosynthase",
+                            "genes": [
+                                "CAE45667.1 "
+                            ],
+                            "module_number": "A0",
+                            "domains": [
                                 "Acyltransferase",
-                                "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
+                            "at_specificities": [
+                                "Trans-cyclopentane-(1R, 2R)-dicarboxylic acid"
+                            ],
                             "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAE45669.1",
-                    "pks_module": [
-                        {
-                            "module_nr": "2",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         },
                         {
-                            "module_nr": "3",
-                            "pks_domains": [
+                            "genes": [
+                                "CAE45668.1"
+                            ],
+                            "module_number": "1",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "CAE45669.1"
+                            ],
+                            "module_number": "2",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAE45670.1 ",
-                    "pks_module": [
+                            "comments": ""
+                        },
                         {
-                            "module_nr": "4",
-                            "pks_domains": [
+                            "genes": [
+                                "CAE45669.1"
+                            ],
+                            "module_number": "3",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "comments": ""
+                        },
+                        {
+                            "genes": [
+                                "CAE45670.1 "
+                            ],
+                            "module_number": "4",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAE45671.1 ",
-                    "pks_module": [
+                            "comments": ""
+                        },
                         {
-                            "module_nr": "5",
-                            "pks_domains": [
+                            "genes": [
+                                "CAE45671.1 "
+                            ],
+                            "module_number": "5",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
@@ -188,47 +237,43 @@
                                 "Enoylreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Iterated",
-                            "pks_evidence_skip_iter": "Unknown"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "CAE45672.1 ",
-                    "pks_module": [
+                            "comments": "",
+                            "non_canonical": {
+                                "skipped": false,
+                                "non_elongating": false,
+                                "iterated": true
+                            }
+                        },
                         {
-                            "module_nr": "6",
-                            "pks_domains": [
+                            "genes": [
+                                "CAE45672.1 "
+                            ],
+                            "module_number": "6",
+                            "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_substr_spec": "Malonyl-CoA",
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "comments": ""
                         }
                     ]
                 }
-            ],
-            "pks_te_type": "Both",
-            "pks_thioesterase": [
-                "cae45660.1",
-                "cae45672.1"
-            ],
-            "pks_release_type": "Macrolactonization"
+            ]
         }
-    },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    }
 }

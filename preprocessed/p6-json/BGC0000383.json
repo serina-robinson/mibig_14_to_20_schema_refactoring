@@ -1,72 +1,38 @@
 {
-    "comments": "origin of polyketide tail currently unknown",
-    "submitter": {
-        "name": "Daniel Krug",
-        "institution": "HIPS",
-        "email": "daniel.krug@helmholtz-hzi.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000383",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:22909174"
-        ],
-        "loci": {
-            "accession": "BX470251.1",
-            "start_coord": 2221617,
-            "end_coord": 2239965,
-            "completeness": "complete",
-            "evidence": [
-                "Heterologous expression"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Luminmycin",
-                "chem_synonyms": [],
-                "chem_struct": "C1CCC[C@H](NC([C@H](C(O)C)NC(/C=C/C=C/CCCCCCC)=O)=O)C(=O)N[C@@H](C)C=CC(=O)N1",
-                "molecular_formula": "C27H44O5N4",
-                "mol_mass": 505.3385,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Cytotoxic"
                 ],
+                "chem_struct": "C1CCC[C@H](NC([C@H](C(O)C)NC(/C=C/C=C/CCCCCCC)=O)=O)C(=O)N[C@@H](C)C=CC(=O)N1",
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "proteasome",
-                        "publications": []
+                        "publications": [],
+                        "target": "proteasome"
                     }
-                ]
+                ],
+                "compound": "Luminmycin",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 505.3385,
+                "molecular_formula": "C27H44O5N4"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "plu1878",
-                    "id": "CAE14171.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Heterologous expression"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "plu1880",
-                    "id": "CAE14173.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -75,24 +41,147 @@
                             ]
                         }
                     ],
+                    "id": "CAE14171.1",
+                    "name": "plu1878"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "id": "CAE14173.1",
+                    "name": "plu1880",
                     "product": "hypothetical protein"
                 }
-            ]
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "BX470251.1",
+            "completeness": "complete",
+            "end_coord": 2239965,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 2221617
+        },
+        "mibig_accession": "BGC0000383",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "plu1878",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Threonine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Starter",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "1"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "plu1880",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Lysine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Alanine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "3"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
         },
         "polyketide": {
-            "starter_unit": "Unknown",
-            "subclasses": [
-                "Other"
-            ],
             "cyclic": false,
             "release_type": [
                 "Macrolactamization"
+            ],
+            "starter_unit": "Unknown",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
                     "genes": [
                         "plu1880",
                         "np_929147.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "plu1880"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        }
                     ],
                     "subclass": [
                         "Modular type I"
@@ -102,107 +191,18 @@
                             "gene": "np_929147.1",
                             "thioesterase_type": "Type I"
                         }
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "plu1880"
-                            ],
-                            "module_number": "4",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "D-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        }
                     ]
                 }
             ]
         },
-        "nrp": {
-            "subclass": "Unknown",
-            "nrps_genes": [
-                {
-                    "gene_id": "plu1878",
-                    "modules": [
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Threonine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "1",
-                            "active": false,
-                            "c_dom_subtype": "Starter",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "gene_id": "plu1880",
-                    "modules": [
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Lysine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "2",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Alanine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "3",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "cyclic": false,
-            "thioesterases": [],
-            "release_type": [
-                "Macrolactamization"
-            ]
-        }
+        "publications": [
+            "pubmed:22909174"
+        ]
+    },
+    "comments": "origin of polyketide tail currently unknown",
+    "submitter": {
+        "email": "daniel.krug@helmholtz-hzi.de",
+        "institution": "HIPS",
+        "name": "Daniel Krug"
     }
 }

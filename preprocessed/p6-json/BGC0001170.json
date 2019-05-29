@@ -1,55 +1,29 @@
 {
-    "submitter": {
-        "name": "Professor Douglas Mitchell",
-        "institution": "University of Illinois at Urbana-Champaign",
-        "email": "douglasm@illinois.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001170",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:18375757",
-            "pubmed:19286651",
-            "pubmed:20581111",
-            "pubmed:21822292"
-        ],
-        "loci": {
-            "accession": "NZ_DS981518.1",
-            "start_coord": 691338,
-            "end_coord": 699823,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Clostridiolysin S",
-                "chem_synonyms": [],
-                "mol_mass": -1,
-                "database_id": "",
-                "mass_spec_ion_type": "None",
                 "chem_acts": [
                     "Cytotoxic"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "Clostridiolysin S",
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "mol_mass": -1
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "closA",
-                    "id": "CLOSPO_01168",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -61,11 +35,11 @@
                             ]
                         }
                     ],
+                    "id": "CLOSPO_01168",
+                    "name": "closA",
                     "product": "RiPP precursor peptide"
                 },
                 {
-                    "name": "closB",
-                    "id": "CLOSPO_01169",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -74,14 +48,14 @@
                             ]
                         }
                     ],
+                    "id": "CLOSPO_01169",
+                    "name": "closB",
                     "product": "Dehydrogenase",
                     "tailoring": [
                         "Oxidation"
                     ]
                 },
                 {
-                    "name": "closC",
-                    "id": "CLOSPO_01170",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -91,14 +65,14 @@
                             ]
                         }
                     ],
+                    "id": "CLOSPO_01170",
+                    "name": "closC",
                     "product": "Cyclodehydratase partner",
                     "tailoring": [
                         "Heterocyclization"
                     ]
                 },
                 {
-                    "name": "closD",
-                    "id": "CLOSPO_01171",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -108,14 +82,14 @@
                             ]
                         }
                     ],
+                    "id": "CLOSPO_01171",
+                    "name": "closD",
                     "product": "Cyclodehydratase",
                     "tailoring": [
                         "Heterocyclization"
                     ]
                 },
                 {
-                    "name": "closE",
-                    "id": "CLOSPO_01172",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -124,11 +98,24 @@
                             ]
                         }
                     ],
+                    "id": "CLOSPO_01172",
+                    "name": "closE",
                     "product": "Putative protease"
                 },
                 {
-                    "name": "closG",
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "CLOSPO_01174",
+                    "name": "closG",
+                    "product": "ABC transporter "
+                },
+                {
                     "functions": [
                         {
                             "category": "Transport",
@@ -137,24 +124,11 @@
                             ]
                         }
                     ],
-                    "product": "ABC transporter "
-                },
-                {
-                    "name": "closH",
                     "id": "CLOSPO_01175",
-                    "functions": [
-                        {
-                            "category": "Transport",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
+                    "name": "closH",
                     "product": "ABC transporter "
                 },
                 {
-                    "name": "closI",
-                    "id": "CLOSPO_01176",
                     "functions": [
                         {
                             "category": "Transport",
@@ -163,11 +137,17 @@
                             ]
                         }
                     ],
+                    "id": "CLOSPO_01176",
+                    "name": "closI",
                     "product": "ABC transporter "
                 }
             ],
+            "extra_genes": [],
             "operons": [
                 {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
                     "genes": [
                         "clospo_01168",
                         "clospo_01169",
@@ -178,29 +158,49 @@
                         "clospo_01174",
                         "clospo_01175",
                         "clospo_01176"
-                    ],
-                    "evidence": [
-                        "Sequence-based prediction"
                     ]
                 }
             ]
         },
+        "loci": {
+            "accession": "NZ_DS981518.1",
+            "completeness": "complete",
+            "end_coord": 699823,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 691338
+        },
+        "mibig_accession": "BGC0001170",
+        "publications": [
+            "pubmed:18375757",
+            "pubmed:19286651",
+            "pubmed:20581111",
+            "pubmed:21822292"
+        ],
         "ripp": {
-            "subclass": "LAP",
             "cyclic": false,
+            "peptidases": [
+                "clospo_01172"
+            ],
             "precursor_genes": [
                 {
-                    "gene_id": "clospo_01168",
                     "core_sequence": [
                         "SCCCCSCCCCVSVSVGGGSASTGGGAAAGQGGN"
                     ],
-                    "leader_sequence": 24,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "clospo_01168",
+                    "leader_sequence": 24
                 }
             ],
-            "peptidases": [
-                "clospo_01172"
-            ]
+            "subclass": "LAP"
         }
+    },
+    "submitter": {
+        "email": "douglasm@illinois.edu",
+        "institution": "University of Illinois at Urbana-Champaign",
+        "name": "Professor Douglas Mitchell"
     }
 }

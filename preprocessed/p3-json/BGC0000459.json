@@ -1,563 +1,21 @@
 {
-    "version": "16",
-    "personal": {
-        "submitter_name": "Jianhua Ju",
-        "submitter_institution": "Guangdong Key Laboratory of Marine Materia Medica Deputy director, Key Laboratory of Marine Bio-resources Sustainable Utilization,CAS South China Sea Institute of Oceanology, Chinese Academy of Sciences (CAS) 164 XinGang Road West Guangzhou 510301, China",
-        "submitter_email": "jju@scsio.ac.cn"
-    },
+    "comments": "VG is synthesised by the NRPS within this cluster whereas GV is hybrid PK-NRP and as such utilises the PKS machinery also.",
     "general_params": {
-        "mibig_accession": "BGC0000459",
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
-        "publications": [
-            "23161816",
-            "24782066",
-            "24617259"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "JX508597",
-                    "start_coord": 13530,
-                    "end_coord": 118200,
-                    "conn_comp_cluster": [
-                        "Knock-out studies",
-                        "Sequence-based prediction"
-                    ]
-                }
-            ]
-        },
-        "compounds": [
-            {
-                "compound": "griseoviridin",
-                "chem_synonyms": [
-                    "virginiamycin m",
-                    "pristinamycin IIA"
-                ],
-                "chem_struct": "O=C(NC/C=C/C=C/[C@@H](O)C[C@H](CC1=NC2=CO1)O)/C(SC[C@H]3NC2=O)=C/C[C@@H](C)OC3=O",
-                "molecular_formula": "C22H27N3O7S",
-                "mol_mass": 477.157,
-                "mass_ion_type": "M+",
-                "chem_act": [
-                    "Antibacterial"
-                ],
-                "chem_target": [
-                    "Asiteof50Sbacterialribosomalsubunit"
-                ]
-            },
-            {
-                "compound": "viridogrisein",
-                "chem_synonyms": [
-                    "virginiamycin s",
-                    "pristinamycin ?"
-                ],
-                "chem_struct": "O=C(N1[C@@H](C(N(C)C2)=O)C[C@@H](O)C1)[C@@H](CC(C)C)NC([C@@H](NC(C3=C(O)C=CC=N3)=O)[C@@H](C)OC([C@@](C4=CC=CC=C4)([H])N(C)C([C@@H](C)NC([C@H]([C@@H](C)C(C)C)N(C)C2=O)=O)=O)=O)=O",
-                "molecular_formula": "C44H62N8011",
-                "mol_mass": 878.4538,
-                "mass_ion_type": "M+",
-                "chem_act": [
-                    "Antibacterial"
-                ],
-                "chem_target": [
-                    "Psiteof50Sbacterialribosomalsubunit"
-                ]
-            }
-        ],
-        "genes": {
-            "operon": [],
-            "gene": [
-                {
-                    "gene_name": "sgvR3",
-                    "not_in_gbk": false,
-                    "gene_startpos": 13530,
-                    "gene_endpos": 14696,
-                    "gene_id": "AGN74872.1",
-                    "gene_annotation": "SARP-type regulator",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of griseoviridin and viridogrisein production"
-                },
-                {
-                    "gene_name": "sgvT1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 14816,
-                    "gene_endpos": 16408,
-                    "gene_id": "AGN74873.1",
-                    "gene_annotation": "major facilitator transporter",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvG",
-                    "not_in_gbk": false,
-                    "gene_startpos": 16726,
-                    "gene_endpos": 17847,
-                    "gene_id": "AGN74874.1",
-                    "gene_annotation": "branched-chain amino acid aminotransferase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvM",
-                    "not_in_gbk": false,
-                    "gene_startpos": 17916,
-                    "gene_endpos": 18935,
-                    "gene_id": "AGN74875.1",
-                    "gene_annotation": "methyltransferase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvD2",
-                    "not_in_gbk": false,
-                    "gene_startpos": 19073,
-                    "gene_endpos": 26989,
-                    "gene_id": "AGN74876.1",
-                    "gene_annotation": "nonribosomal peptide synthetase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvI",
-                    "not_in_gbk": false,
-                    "gene_startpos": 27311,
-                    "gene_endpos": 28057,
-                    "gene_id": "AGN74877.1",
-                    "gene_annotation": "type ii thioestrerase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Decreasing yield of griseoviridin and viridogrisein"
-                },
-                {
-                    "gene_name": "sgvF",
-                    "not_in_gbk": false,
-                    "gene_startpos": 28052,
-                    "gene_endpos": 29134,
-                    "gene_id": "AGN74878.1",
-                    "gene_annotation": "flavin-dependent oxidoreductase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "No effect"
-                },
-                {
-                    "gene_name": "sgvU",
-                    "not_in_gbk": false,
-                    "gene_startpos": 29368,
-                    "gene_endpos": 29613,
-                    "gene_id": "AGN74879.1",
-                    "gene_annotation": "hypothetical protein",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvD1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 29782,
-                    "gene_endpos": 31404,
-                    "gene_id": "AGN74880.1",
-                    "gene_annotation": "3-hydroxypicolinic acid:AMP ligase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of the viridogrisein production"
-                },
-                {
-                    "gene_name": "sgvL",
-                    "not_in_gbk": false,
-                    "gene_startpos": 31408,
-                    "gene_endpos": 32709,
-                    "gene_id": "AGN74881.1",
-                    "gene_annotation": "L-lysine 2-aminotransferase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvO",
-                    "not_in_gbk": false,
-                    "gene_startpos": 32763,
-                    "gene_endpos": 32951,
-                    "gene_id": "AGN74882.1",
-                    "gene_annotation": "4-oxalocrotonate tautomerase",
-                    "gene_function": "Unknown",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvN",
-                    "not_in_gbk": false,
-                    "gene_startpos": 33036,
-                    "gene_endpos": 34343,
-                    "gene_id": "AGN74883.1",
-                    "gene_annotation": "phenylacetyl-CoA dioxygenase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Other"
-                    ],
-                    "mut_pheno": "Loss of the viridogrisein production"
-                },
-                {
-                    "gene_name": "sgvJ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 34358,
-                    "gene_endpos": 34609,
-                    "gene_id": "AGN74884.1",
-                    "gene_annotation": "MbtH domain-containing protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of the viridogrisein production"
-                },
-                {
-                    "gene_name": "sgvD4",
-                    "not_in_gbk": false,
-                    "gene_startpos": 34683,
-                    "gene_endpos": 51854,
-                    "gene_id": "AGN74885.1",
-                    "gene_annotation": "nonribosomal peptide synthetase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvD3",
-                    "not_in_gbk": false,
-                    "gene_startpos": 51851,
-                    "gene_endpos": 56554,
-                    "gene_id": "AGN74886.1",
-                    "gene_annotation": "nonribosomal peptide synthetase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvH1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 57108,
-                    "gene_endpos": 58265,
-                    "gene_id": "AGN74887.1",
-                    "gene_annotation": "branched-chain alpha-keto acid dehydrogenase E1 subunit alpha",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "No effect"
-                },
-                {
-                    "gene_name": "sgvH2",
-                    "not_in_gbk": false,
-                    "gene_startpos": 58262,
-                    "gene_endpos": 59317,
-                    "gene_id": "AGN74888.1",
-                    "gene_annotation": "branched-chain alpha-keto acid dehydrogenase E1 subnuit beta",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "No effect"
-                },
-                {
-                    "gene_name": "sgvH3",
-                    "not_in_gbk": false,
-                    "gene_startpos": 59323,
-                    "gene_endpos": 60720,
-                    "gene_id": "AGN74889.1",
-                    "gene_annotation": "branched-chain alpha-keto acid dehydrogenase E2",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "No effect"
-                },
-                {
-                    "gene_name": "sgvT2",
-                    "not_in_gbk": false,
-                    "gene_startpos": 60959,
-                    "gene_endpos": 62614,
-                    "gene_id": "AGN74890.1",
-                    "gene_annotation": "ABC transporter",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvP",
-                    "not_in_gbk": false,
-                    "gene_startpos": 62773,
-                    "gene_endpos": 63963,
-                    "gene_id": "AGN74891.1",
-                    "gene_annotation": "P450-like monooxygenase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Other",
-                    "evidence_genefunction": [
-                        "Other"
-                    ],
-                    "mut_pheno": "Two new compounds: GV-1,GV-2; Loss of griseoviridin production"
-                },
-                {
-                    "gene_name": "sgvE1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 64158,
-                    "gene_endpos": 77825,
-                    "gene_id": "AGN74892.1",
-                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvE2",
-                    "not_in_gbk": false,
-                    "gene_startpos": 77828,
-                    "gene_endpos": 84568,
-                    "gene_id": "AGN74893.1",
-                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvE3",
-                    "not_in_gbk": false,
-                    "gene_startpos": 84740,
-                    "gene_endpos": 91246,
-                    "gene_id": "AGN74894.1",
-                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvE4",
-                    "not_in_gbk": false,
-                    "gene_startpos": 91257,
-                    "gene_endpos": 99092,
-                    "gene_id": "AGN74895.1",
-                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvE5",
-                    "not_in_gbk": false,
-                    "gene_startpos": 99089,
-                    "gene_endpos": 104953,
-                    "gene_id": "AGN74896.1",
-                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of griseoviridin production"
-                },
-                {
-                    "gene_name": "sgvQ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 104950,
-                    "gene_endpos": 105900,
-                    "gene_id": "AGN74897.1",
-                    "gene_annotation": "acyltransferase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of griseoviridin production"
-                },
-                {
-                    "gene_name": "sgvE6",
-                    "not_in_gbk": false,
-                    "gene_startpos": 105894,
-                    "gene_endpos": 108320,
-                    "gene_id": "AGN74898.1",
-                    "gene_annotation": "nonribosomal peptide synthetase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of griseoviridin production"
-                },
-                {
-                    "gene_name": "sgvT3",
-                    "not_in_gbk": false,
-                    "gene_startpos": 108570,
-                    "gene_endpos": 109964,
-                    "gene_id": "AGN74899.1",
-                    "gene_annotation": "major facilitator transporter",
-                    "gene_function": "Transport",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvY",
-                    "not_in_gbk": false,
-                    "gene_startpos": 109996,
-                    "gene_endpos": 110889,
-                    "gene_id": "AGN74900.1",
-                    "gene_annotation": "streptogramin B lyase",
-                    "gene_function": "Resistance/immunity",
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": null
-                },
-                {
-                    "gene_name": "sgvS",
-                    "not_in_gbk": false,
-                    "gene_startpos": 111137,
-                    "gene_endpos": 112285,
-                    "gene_id": "AGN74901.1",
-                    "gene_annotation": "sarcosine oxidase",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Other"
-                    ],
-                    "mut_pheno": "Loss of viridogrisein production"
-                },
-                {
-                    "gene_name": "sgvR2",
-                    "not_in_gbk": false,
-                    "gene_startpos": 112395,
-                    "gene_endpos": 113237,
-                    "gene_id": "AGN74902.1",
-                    "gene_annotation": "SARP-type regulator",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of griseoviridin and viridogrisein production"
-                },
-                {
-                    "gene_name": "sgvR1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 113627,
-                    "gene_endpos": 114274,
-                    "gene_id": "AGN74903.1",
-                    "gene_annotation": "TetR-type regulator",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Increasing yield of griseoviridin and viridogrisein"
-                },
-                {
-                    "gene_name": "sgvK",
-                    "not_in_gbk": false,
-                    "gene_startpos": 114756,
-                    "gene_endpos": 115520,
-                    "gene_id": "AGN74904.1",
-                    "gene_annotation": "ketoreductase",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Decreasing yield of griseoviridin and viridogrisein"
-                },
-                {
-                    "gene_name": "sgvA",
-                    "not_in_gbk": false,
-                    "gene_startpos": 115710,
-                    "gene_endpos": 116678,
-                    "gene_id": "AGN74905.1",
-                    "gene_annotation": "AfsA-like gamma-butyrolactone biosynthetic protein",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of griseoviridin and viridogrisein production"
-                },
-                {
-                    "gene_name": "sgvB",
-                    "not_in_gbk": false,
-                    "gene_startpos": 116703,
-                    "gene_endpos": 117386,
-                    "gene_id": "AGN74906.1",
-                    "gene_annotation": "gamma-butyrolactone receptor",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Increasing yield of griseoviridin and viridogrisein"
-                },
-                {
-                    "gene_name": "sgvC",
-                    "not_in_gbk": false,
-                    "gene_startpos": 117511,
-                    "gene_endpos": 118200,
-                    "gene_id": "AGN74862.1",
-                    "gene_annotation": "phosphatase",
-                    "gene_function": "Regulation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of griseoviridin and viridogrisein production"
-                }
-            ]
-        },
         "NRP": {
-            "subclass": "Cyclic depsipeptide",
             "lin_cycl_nrp": "Cyclic",
-            "nrps_te_type": "Both",
-            "nrps_release_type": "Macrolactonization",
             "nrps_genes": [
                 {
                     "nrps_gene": "AGN74880.1",
                     "nrps_module": [
                         {
-                            "module_nr": "0",
                             "a_substr_spec": {
                                 "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "3-hydroxypicolinic acid",
+                                "epimerized": false,
                                 "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
+                                "nonprot_adom_spec": "3-hydroxypicolinic acid"
                             },
                             "cdom_subtype": "N/A",
+                            "module_nr": "0",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -567,26 +25,26 @@
                     "nrps_gene": "AGN74876.1",
                     "nrps_module": [
                         {
-                            "module_nr": "1",
                             "a_substr_spec": {
                                 "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Threonine",
+                                "epimerized": false,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "prot_adom_spec": "Threonine"
                             },
                             "cdom_subtype": "LCL",
+                            "module_nr": "1",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         },
                         {
-                            "module_nr": "2",
                             "a_substr_spec": {
                                 "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Leucine",
+                                "epimerized": true,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": true
+                                "prot_adom_spec": "Leucine"
                             },
                             "cdom_subtype": "LCL",
+                            "module_nr": "2",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -596,14 +54,14 @@
                     "nrps_gene": "AGN74886.1",
                     "nrps_module": [
                         {
-                            "module_nr": "A3",
                             "a_substr_spec": {
                                 "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "4-Hydroxyproline",
+                                "epimerized": true,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": true
+                                "nonprot_adom_spec": "4-Hydroxyproline"
                             },
                             "cdom_subtype": "DCL",
+                            "module_nr": "A3",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -613,50 +71,50 @@
                     "nrps_gene": "AGN74885.1",
                     "nrps_module": [
                         {
-                            "module_nr": "4",
                             "a_substr_spec": {
                                 "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "Sarcosine",
+                                "epimerized": false,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "nonprot_adom_spec": "Sarcosine"
                             },
                             "cdom_subtype": "DCL",
+                            "module_nr": "4",
                             "nrps_mod_doms": "Methylation",
                             "nrps_mod_skip_iter": "Neither"
                         },
                         {
-                            "module_nr": "5",
                             "a_substr_spec": {
                                 "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "Beta-methylleucine",
+                                "epimerized": false,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "nonprot_adom_spec": "Beta-methylleucine"
                             },
                             "cdom_subtype": "LCL",
+                            "module_nr": "5",
                             "nrps_mod_doms": "Methylation",
                             "nrps_mod_skip_iter": "Neither"
                         },
                         {
-                            "module_nr": "6",
                             "a_substr_spec": {
                                 "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Alanine",
+                                "epimerized": false,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "prot_adom_spec": "Alanine"
                             },
                             "cdom_subtype": "LCL",
+                            "module_nr": "6",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         },
                         {
-                            "module_nr": "A7",
                             "a_substr_spec": {
                                 "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "Phenylglycine",
+                                "epimerized": false,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "nonprot_adom_spec": "Phenylglycine"
                             },
                             "cdom_subtype": "LCL",
+                            "module_nr": "A7",
                             "nrps_mod_doms": "Methylation",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -666,14 +124,14 @@
                     "nrps_gene": "AGN74892.1",
                     "nrps_module": [
                         {
-                            "module_nr": "B3",
                             "a_substr_spec": {
                                 "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Glycine",
+                                "epimerized": false,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "prot_adom_spec": "Glycine"
                             },
                             "cdom_subtype": "Other",
+                            "module_nr": "B3",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -683,14 +141,14 @@
                     "nrps_gene": "AGN74895.1",
                     "nrps_module": [
                         {
-                            "module_nr": "B7",
                             "a_substr_spec": {
                                 "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Serine",
+                                "epimerized": false,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "prot_adom_spec": "Serine"
                             },
                             "cdom_subtype": "N/A",
+                            "module_nr": "B7",
                             "nrps_mod_doms": "Other",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -700,14 +158,14 @@
                     "nrps_gene": "AGN74898.1",
                     "nrps_module": [
                         {
-                            "module_nr": "B9",
                             "a_substr_spec": {
                                 "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Cysteine",
+                                "epimerized": false,
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "prot_adom_spec": "Cysteine"
                             },
                             "cdom_subtype": "N/A",
+                            "module_nr": "B9",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -717,43 +175,33 @@
                     "nrps_gene": "AGN74896.1",
                     "nrps_module": [
                         {
-                            "module_nr": "B10",
                             "a_substr_spec": {
                                 "epimerized": false
                             },
                             "cdom_subtype": "Other",
+                            "module_nr": "B10",
+                            "nrps_evidence_skip_iter": "None",
                             "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Skipped",
-                            "nrps_evidence_skip_iter": "None"
+                            "nrps_mod_skip_iter": "Skipped"
                         },
                         {
-                            "module_nr": "9",
                             "a_substr_spec": {
                                 "epimerized": true
                             },
                             "cdom_subtype": "Other",
+                            "module_nr": "9",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         }
                     ]
                 }
-            ]
+            ],
+            "nrps_release_type": "Macrolactonization",
+            "nrps_te_type": "Both",
+            "subclass": "Cyclic depsipeptide"
         },
         "Polyketide": {
-            "pk_subclass": "Other",
             "lin_cycl_pk": "Cyclic",
-            "pks_subclass": [
-                "Trans-AT type I"
-            ],
-            "starter_unit": "Acetyl-CoA",
-            "trans_at": [
-                "sgvq"
-            ],
-            "pks_te_type": "Both",
-            "pks_thioesterase": [
-                "sgvi"
-            ],
-            "pks_release_type": "Macrolactonization",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AGN74892.1",
@@ -769,19 +217,20 @@
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "A-group",
                             "module_nr": "B1",
                             "pks_domains": [
                                 "KS",
                                 "KR",
                                 "T"
                             ],
-                            "kr_stereochem": "A-group",
                             "pks_mod_doms": [
                                 "None"
                             ],
                             "pks_mod_skip_iter": "Neither"
                         },
                         {
+                            "kr_stereochem": "A-group",
                             "module_nr": "B2",
                             "pks_domains": [
                                 "KS",
@@ -789,7 +238,6 @@
                                 "KR",
                                 "T"
                             ],
-                            "kr_stereochem": "A-group",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -801,6 +249,7 @@
                     "mod_pks_gene": "AGN74893.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "A-group",
                             "module_nr": "B4",
                             "pks_domains": [
                                 "KS",
@@ -809,7 +258,6 @@
                                 "T",
                                 "KS"
                             ],
-                            "kr_stereochem": "A-group",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -821,13 +269,13 @@
                     "mod_pks_gene": "AGN74894.1",
                     "pks_module": [
                         {
+                            "kr_stereochem": "B-group",
                             "module_nr": "B5",
                             "pks_domains": [
                                 "KS",
                                 "KR",
                                 "T"
                             ],
-                            "kr_stereochem": "B-group",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -862,8 +310,560 @@
                         }
                     ]
                 }
+            ],
+            "pk_subclass": "Other",
+            "pks_release_type": "Macrolactonization",
+            "pks_subclass": [
+                "Trans-AT type I"
+            ],
+            "pks_te_type": "Both",
+            "pks_thioesterase": [
+                "sgvi"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "trans_at": [
+                "sgvq"
             ]
-        }
+        },
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_act": [
+                    "Antibacterial"
+                ],
+                "chem_struct": "O=C(NC/C=C/C=C/[C@@H](O)C[C@H](CC1=NC2=CO1)O)/C(SC[C@H]3NC2=O)=C/C[C@@H](C)OC3=O",
+                "chem_synonyms": [
+                    "virginiamycin m",
+                    "pristinamycin IIA"
+                ],
+                "chem_target": [
+                    "Asiteof50Sbacterialribosomalsubunit"
+                ],
+                "compound": "griseoviridin",
+                "mass_ion_type": "M+",
+                "mol_mass": 477.157,
+                "molecular_formula": "C22H27N3O7S"
+            },
+            {
+                "chem_act": [
+                    "Antibacterial"
+                ],
+                "chem_struct": "O=C(N1[C@@H](C(N(C)C2)=O)C[C@@H](O)C1)[C@@H](CC(C)C)NC([C@@H](NC(C3=C(O)C=CC=N3)=O)[C@@H](C)OC([C@@](C4=CC=CC=C4)([H])N(C)C([C@@H](C)NC([C@H]([C@@H](C)C(C)C)N(C)C2=O)=O)=O)=O)=O",
+                "chem_synonyms": [
+                    "virginiamycin s",
+                    "pristinamycin ?"
+                ],
+                "chem_target": [
+                    "Psiteof50Sbacterialribosomalsubunit"
+                ],
+                "compound": "viridogrisein",
+                "mass_ion_type": "M+",
+                "mol_mass": 878.4538,
+                "molecular_formula": "C44H62N8011"
+            }
+        ],
+        "genes": {
+            "gene": [
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "SARP-type regulator",
+                    "gene_endpos": 14696,
+                    "gene_function": "Regulation",
+                    "gene_id": "AGN74872.1",
+                    "gene_name": "sgvR3",
+                    "gene_startpos": 13530,
+                    "mut_pheno": "Loss of griseoviridin and viridogrisein production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "major facilitator transporter",
+                    "gene_endpos": 16408,
+                    "gene_function": "Transport",
+                    "gene_id": "AGN74873.1",
+                    "gene_name": "sgvT1",
+                    "gene_startpos": 14816,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "branched-chain amino acid aminotransferase",
+                    "gene_endpos": 17847,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGN74874.1",
+                    "gene_name": "sgvG",
+                    "gene_startpos": 16726,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "methyltransferase",
+                    "gene_endpos": 18935,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGN74875.1",
+                    "gene_name": "sgvM",
+                    "gene_startpos": 17916,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "nonribosomal peptide synthetase",
+                    "gene_endpos": 26989,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74876.1",
+                    "gene_name": "sgvD2",
+                    "gene_startpos": 19073,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "type ii thioestrerase",
+                    "gene_endpos": 28057,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74877.1",
+                    "gene_name": "sgvI",
+                    "gene_startpos": 27311,
+                    "mut_pheno": "Decreasing yield of griseoviridin and viridogrisein",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "flavin-dependent oxidoreductase",
+                    "gene_endpos": 29134,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGN74878.1",
+                    "gene_name": "sgvF",
+                    "gene_startpos": 28052,
+                    "mut_pheno": "No effect",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "hypothetical protein",
+                    "gene_endpos": 29613,
+                    "gene_function": "Unknown",
+                    "gene_id": "AGN74879.1",
+                    "gene_name": "sgvU",
+                    "gene_startpos": 29368,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "3-hydroxypicolinic acid:AMP ligase",
+                    "gene_endpos": 31404,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74880.1",
+                    "gene_name": "sgvD1",
+                    "gene_startpos": 29782,
+                    "mut_pheno": "Loss of the viridogrisein production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "L-lysine 2-aminotransferase",
+                    "gene_endpos": 32709,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGN74881.1",
+                    "gene_name": "sgvL",
+                    "gene_startpos": 31408,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "4-oxalocrotonate tautomerase",
+                    "gene_endpos": 32951,
+                    "gene_function": "Unknown",
+                    "gene_id": "AGN74882.1",
+                    "gene_name": "sgvO",
+                    "gene_startpos": 32763,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Other"
+                    ],
+                    "gene_annotation": "phenylacetyl-CoA dioxygenase",
+                    "gene_endpos": 34343,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGN74883.1",
+                    "gene_name": "sgvN",
+                    "gene_startpos": 33036,
+                    "mut_pheno": "Loss of the viridogrisein production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "MbtH domain-containing protein",
+                    "gene_endpos": 34609,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74884.1",
+                    "gene_name": "sgvJ",
+                    "gene_startpos": 34358,
+                    "mut_pheno": "Loss of the viridogrisein production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "nonribosomal peptide synthetase",
+                    "gene_endpos": 51854,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74885.1",
+                    "gene_name": "sgvD4",
+                    "gene_startpos": 34683,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "nonribosomal peptide synthetase",
+                    "gene_endpos": 56554,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74886.1",
+                    "gene_name": "sgvD3",
+                    "gene_startpos": 51851,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "branched-chain alpha-keto acid dehydrogenase E1 subunit alpha",
+                    "gene_endpos": 58265,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGN74887.1",
+                    "gene_name": "sgvH1",
+                    "gene_startpos": 57108,
+                    "mut_pheno": "No effect",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "branched-chain alpha-keto acid dehydrogenase E1 subnuit beta",
+                    "gene_endpos": 59317,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGN74888.1",
+                    "gene_name": "sgvH2",
+                    "gene_startpos": 58262,
+                    "mut_pheno": "No effect",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "branched-chain alpha-keto acid dehydrogenase E2",
+                    "gene_endpos": 60720,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGN74889.1",
+                    "gene_name": "sgvH3",
+                    "gene_startpos": 59323,
+                    "mut_pheno": "No effect",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "ABC transporter",
+                    "gene_endpos": 62614,
+                    "gene_function": "Transport",
+                    "gene_id": "AGN74890.1",
+                    "gene_name": "sgvT2",
+                    "gene_startpos": 60959,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Other"
+                    ],
+                    "gene_annotation": "P450-like monooxygenase",
+                    "gene_endpos": 63963,
+                    "gene_function": "Tailoring",
+                    "gene_id": "AGN74891.1",
+                    "gene_name": "sgvP",
+                    "gene_startpos": 62773,
+                    "mut_pheno": "Two new compounds: GV-1,GV-2; Loss of griseoviridin production",
+                    "not_in_gbk": false,
+                    "tailoring": "Other"
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
+                    "gene_endpos": 77825,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74892.1",
+                    "gene_name": "sgvE1",
+                    "gene_startpos": 64158,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
+                    "gene_endpos": 84568,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74893.1",
+                    "gene_name": "sgvE2",
+                    "gene_startpos": 77828,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
+                    "gene_endpos": 91246,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74894.1",
+                    "gene_name": "sgvE3",
+                    "gene_startpos": 84740,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
+                    "gene_endpos": 99092,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74895.1",
+                    "gene_name": "sgvE4",
+                    "gene_startpos": 91257,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "nonribosomal peptide synthetase/polyketide synthase hybrid protein",
+                    "gene_endpos": 104953,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74896.1",
+                    "gene_name": "sgvE5",
+                    "gene_startpos": 99089,
+                    "mut_pheno": "Loss of griseoviridin production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "acyltransferase",
+                    "gene_endpos": 105900,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74897.1",
+                    "gene_name": "sgvQ",
+                    "gene_startpos": 104950,
+                    "mut_pheno": "Loss of griseoviridin production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "nonribosomal peptide synthetase",
+                    "gene_endpos": 108320,
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "AGN74898.1",
+                    "gene_name": "sgvE6",
+                    "gene_startpos": 105894,
+                    "mut_pheno": "Loss of griseoviridin production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "major facilitator transporter",
+                    "gene_endpos": 109964,
+                    "gene_function": "Transport",
+                    "gene_id": "AGN74899.1",
+                    "gene_name": "sgvT3",
+                    "gene_startpos": 108570,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "streptogramin B lyase",
+                    "gene_endpos": 110889,
+                    "gene_function": "Resistance/immunity",
+                    "gene_id": "AGN74900.1",
+                    "gene_name": "sgvY",
+                    "gene_startpos": 109996,
+                    "mut_pheno": null,
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Other"
+                    ],
+                    "gene_annotation": "sarcosine oxidase",
+                    "gene_endpos": 112285,
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_id": "AGN74901.1",
+                    "gene_name": "sgvS",
+                    "gene_startpos": 111137,
+                    "mut_pheno": "Loss of viridogrisein production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "SARP-type regulator",
+                    "gene_endpos": 113237,
+                    "gene_function": "Regulation",
+                    "gene_id": "AGN74902.1",
+                    "gene_name": "sgvR2",
+                    "gene_startpos": 112395,
+                    "mut_pheno": "Loss of griseoviridin and viridogrisein production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "TetR-type regulator",
+                    "gene_endpos": 114274,
+                    "gene_function": "Regulation",
+                    "gene_id": "AGN74903.1",
+                    "gene_name": "sgvR1",
+                    "gene_startpos": 113627,
+                    "mut_pheno": "Increasing yield of griseoviridin and viridogrisein",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "ketoreductase",
+                    "gene_endpos": 115520,
+                    "gene_function": "Regulation",
+                    "gene_id": "AGN74904.1",
+                    "gene_name": "sgvK",
+                    "gene_startpos": 114756,
+                    "mut_pheno": "Decreasing yield of griseoviridin and viridogrisein",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "AfsA-like gamma-butyrolactone biosynthetic protein",
+                    "gene_endpos": 116678,
+                    "gene_function": "Regulation",
+                    "gene_id": "AGN74905.1",
+                    "gene_name": "sgvA",
+                    "gene_startpos": 115710,
+                    "mut_pheno": "Loss of griseoviridin and viridogrisein production",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "gamma-butyrolactone receptor",
+                    "gene_endpos": 117386,
+                    "gene_function": "Regulation",
+                    "gene_id": "AGN74906.1",
+                    "gene_name": "sgvB",
+                    "gene_startpos": 116703,
+                    "mut_pheno": "Increasing yield of griseoviridin and viridogrisein",
+                    "not_in_gbk": false
+                },
+                {
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_annotation": "phosphatase",
+                    "gene_endpos": 118200,
+                    "gene_function": "Regulation",
+                    "gene_id": "AGN74862.1",
+                    "gene_name": "sgvC",
+                    "gene_startpos": 117511,
+                    "mut_pheno": "Loss of griseoviridin and viridogrisein production",
+                    "not_in_gbk": false
+                }
+            ],
+            "operon": []
+        },
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
+                {
+                    "Accession": "JX508597",
+                    "conn_comp_cluster": [
+                        "Knock-out studies",
+                        "Sequence-based prediction"
+                    ],
+                    "end_coord": 118200,
+                    "start_coord": 13530
+                }
+            ]
+        },
+        "mibig_accession": "BGC0000459",
+        "publications": [
+            "23161816",
+            "24782066",
+            "24617259"
+        ]
     },
-    "comments": "VG is synthesised by the NRPS within this cluster whereas GV is hybrid PK-NRP and as such utilises the PKS machinery also."
+    "personal": {
+        "submitter_email": "jju@scsio.ac.cn",
+        "submitter_institution": "Guangdong Key Laboratory of Marine Materia Medica Deputy director, Key Laboratory of Marine Bio-resources Sustainable Utilization,CAS South China Sea Institute of Oceanology, Chinese Academy of Sciences (CAS) 164 XinGang Road West Guangzhou 510301, China",
+        "submitter_name": "Jianhua Ju"
+    },
+    "version": "16"
 }

@@ -1,56 +1,33 @@
 {
-    "submitter": {
-        "name": "Keishi Ishida",
-        "institution": "Leipniz Institute for Natural Product Research and Infection Biology",
-        "email": "keishi.ishida@hki-jena.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001120",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:23055407",
-            "pubmed:22765305"
-        ],
-        "loci": {
-            "accession": "CP000086.1",
-            "start_coord": 2543245,
-            "end_coord": 2580940,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Gene expression correlated with compound production"
-            ]
-        },
         "compounds": [
             {
-                "compound": "burkholderic acid",
-                "chem_synonyms": [
-                    "malleilactone"
-                ],
-                "database_id": "chemspider:28536046",
                 "chem_acts": [
                     "Antibacterial",
                     "Cytotoxic",
                     "Siderophore",
                     "Virulence factor"
-                ]
+                ],
+                "chem_synonyms": [
+                    "malleilactone"
+                ],
+                "compound": "burkholderic acid",
+                "database_id": "chemspider:28536046"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "burA",
-                    "id": "ABC36203",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -58,11 +35,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ABC36203",
+                    "name": "burA"
                 },
                 {
-                    "name": "burF",
-                    "id": "ABC35796",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -70,122 +47,36 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
-                }
-            ]
-        },
-        "polyketide": {
-            "starter_unit": "Unknown",
-            "subclasses": [
-                "Other"
-            ],
-            "cyclic": true,
-            "release_type": [
-                "Reductive release"
-            ],
-            "synthases": [
-                {
-                    "genes": [
-                        "ABC35796",
-                        "ABC36203"
                     ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "ABC36203"
-                            ],
-                            "module_number": "A2",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Sequence-based prediction",
-                            "kr_stereochem": "Inactive",
-                            "pks_mod_doms": [
-                                "Hydroxylation"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABC35796"
-                            ],
-                            "module_number": "B0",
-                            "domains": [
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Unknown"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABC35796"
-                            ],
-                            "module_number": "B1",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "L-OH",
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "ABC35796"
-                            ],
-                            "module_number": "B2",
-                            "domains": [
-                                "Ketosynthase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Unknown"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        }
-                    ]
+                    "id": "ABC35796",
+                    "name": "burF"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "CP000086.1",
+            "completeness": "complete",
+            "end_coord": 2580940,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 2543245
+        },
+        "mibig_accession": "BGC0001120",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "ABC36203",
                     "modules": [
                         {
-                            "module_number": "A1",
                             "active": false,
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "A1"
                         }
                     ]
                 },
@@ -193,20 +84,129 @@
                     "gene_id": "ABC35796",
                     "modules": [
                         {
-                            "module_number": "B3",
                             "active": false,
                             "c_dom_subtype": "Unknown",
                             "modification_domains": [
                                 "None"
-                            ]
+                            ],
+                            "module_number": "B3"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
             "release_type": [
                 "Unknown"
+            ],
+            "subclass": "Unknown"
+        },
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Reductive release"
+            ],
+            "starter_unit": "Unknown",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ABC35796",
+                        "ABC36203"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ABC36203"
+                            ],
+                            "kr_stereochem": "Inactive",
+                            "module_number": "A2",
+                            "pks_mod_doms": [
+                                "Hydroxylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ABC35796"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "B0",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABC35796"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "B1",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ABC35796"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "B2",
+                            "pks_mod_doms": [
+                                "None"
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:23055407",
+            "pubmed:22765305"
+        ]
+    },
+    "submitter": {
+        "email": "keishi.ishida@hki-jena.de",
+        "institution": "Leipniz Institute for Natural Product Research and Infection Biology",
+        "name": "Keishi Ishida"
     }
 }

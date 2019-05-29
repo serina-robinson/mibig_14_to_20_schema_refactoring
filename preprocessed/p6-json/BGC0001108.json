@@ -1,96 +1,67 @@
 {
-    "comments": "Pederin is most likely not released by the TE domain but by PedG.",
-    "submitter": {
-        "name": "Eric J. N. Helfrich",
-        "institution": "Institute of Microbiology, Eidgen\u00c3\u00b6ssische Technische Hochschule (ETH) Zurich, Piel lab",
-        "email": "ehelfrich@ethz.ch"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001108",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:12381784",
-            "pubmed:24307486",
-            "pubmed:19206228",
-            "pubmed:15958059",
-            "pubmed:15598566",
-            "pubmed:20464003",
-            "doi:10.1016/S0040-4039(01)96058-7",
-            "doi:10.1016/S0040-4039(00)75458-X",
-            "doi:10.1016/S0040-4039(01)89729-X",
-            "doi:10.1016/0005-2787(71)90665-4"
-        ],
-        "loci": {
-            "accession": "AY328023.1",
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "pederin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:5381287",
-                "evidence": [
-                    "NMR",
-                    "Mass spectrometry",
-                    "Chemical derivatization"
-                ],
                 "chem_acts": [
                     "Cytotoxic",
                     "Inhibitor",
                     "dermatotoxic"
                 ],
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "inhibitionofproteinbiosynthesiscausedbybindingtotheribosome.Thismechanismcausesaribotoxicstressresponseandultimatelyapoptosis.",
-                        "publications": []
+                        "publications": [],
+                        "target": "inhibitionofproteinbiosynthesiscausedbybindingtotheribosome.Thismechanismcausesaribotoxicstressresponseandultimatelyapoptosis."
                     }
+                ],
+                "compound": "pederin",
+                "database_id": "pubchem:5381287",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry",
+                    "Chemical derivatization"
                 ]
             },
             {
-                "compound": "pseudopederin",
+                "chem_acts": [
+                    "Cytotoxic",
+                    "Inhibitor"
+                ],
                 "chem_synonyms": [],
+                "compound": "pseudopederin",
                 "database_id": "pubchem:12314693",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
-                ],
-                "chem_acts": [
-                    "Cytotoxic",
-                    "Inhibitor"
                 ]
             },
             {
-                "compound": "pederone",
+                "chem_acts": [
+                    "Cytotoxic",
+                    "Inhibitor"
+                ],
                 "chem_synonyms": [],
+                "compound": "pederone",
                 "database_id": "pubchem:177799",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
-                ],
-                "chem_acts": [
-                    "Cytotoxic",
-                    "Inhibitor"
                 ]
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "No gene ID",
-                    "id": "AAS47548.1",
+                    "comments": "AY328023 and AY850690\\n together build up the pederin gene cluster (BGC0001108\\n and BGC0000255\\n) BGC0001109\\n is not complete.",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -99,15 +70,14 @@
                             ]
                         }
                     ],
+                    "id": "AAS47548.1",
+                    "name": "No gene ID",
                     "product": "putative isocitrate dehydrogenase kinase/phosphatase",
                     "publications": [
                         "None"
-                    ],
-                    "comments": "AY328023 and AY850690\\n together build up the pederin gene cluster (BGC0001108\\n and BGC0000255\\n) BGC0001109\\n is not complete."
+                    ]
                 },
                 {
-                    "name": "pedA",
-                    "id": "AAS47549.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -116,14 +86,14 @@
                             ]
                         }
                     ],
+                    "id": "AAS47549.1",
+                    "name": "pedA",
                     "product": "putative dioxygenase",
                     "tailoring": [
                         "Dioxygenation"
                     ]
                 },
                 {
-                    "name": "pedA",
-                    "id": "AAS47557.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -132,14 +102,14 @@
                             ]
                         }
                     ],
+                    "id": "AAS47557.1",
+                    "name": "pedA",
                     "product": "putative methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "pedB",
-                    "id": "AAS47558.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -148,14 +118,27 @@
                             ]
                         }
                     ],
+                    "id": "AAS47558.1",
+                    "name": "pedB",
                     "product": "putative FMN-dependent oxidoreductase",
                     "tailoring": [
                         "Monooxygenation"
                     ]
                 },
                 {
-                    "name": "pedC",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "AAS47559.1",
+                    "name": "pedC",
+                    "product": "putative acyltransferase"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -164,24 +147,11 @@
                             ]
                         }
                     ],
-                    "product": "putative acyltransferase"
-                },
-                {
-                    "name": "pedD",
                     "id": "AAS47563.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
+                    "name": "pedD",
                     "product": "putative acyltransferase"
                 },
                 {
-                    "name": "pedE",
-                    "id": "AAS47560.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -190,14 +160,14 @@
                             ]
                         }
                     ],
+                    "id": "AAS47560.1",
+                    "name": "pedE",
                     "product": "putative methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "pedE",
-                    "id": "AAS47560.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -206,30 +176,30 @@
                             ]
                         }
                     ],
+                    "id": "AAS47560.1",
+                    "name": "pedE",
                     "product": "putative methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "pedG",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "AAS47561.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
+                    "name": "pedG",
                     "product": "putative FAD-dependent monooxygenase",
                     "tailoring": [
                         "Monooxygenation"
                     ]
                 },
                 {
-                    "name": "pedH",
-                    "id": "AAS47562.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -238,11 +208,12 @@
                             ]
                         }
                     ],
+                    "id": "AAS47562.1",
+                    "name": "pedH",
                     "product": "mixed type I polyketide synthase - peptide synthetase"
                 },
                 {
-                    "name": "No gene ID",
-                    "id": "AAS47550.1",
+                    "comments": "",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -251,15 +222,14 @@
                             ]
                         }
                     ],
+                    "id": "AAS47550.1",
+                    "name": "No gene ID",
                     "product": "putative acyl carrier protein",
                     "publications": [
                         "None"
-                    ],
-                    "comments": ""
+                    ]
                 },
                 {
-                    "name": "No gene ID",
-                    "id": "AAS47551.1",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -268,11 +238,11 @@
                             ]
                         }
                     ],
+                    "id": "AAS47551.1",
+                    "name": "No gene ID",
                     "product": "putative DNA helicase"
                 },
                 {
-                    "name": "No gene ID",
-                    "id": "AAS47552.1",
                     "functions": [
                         {
                             "category": "Unknown",
@@ -281,11 +251,11 @@
                             ]
                         }
                     ],
+                    "id": "AAS47552.1",
+                    "name": "No gene ID",
                     "product": "hypothetical protein"
                 },
                 {
-                    "name": "No gene ID",
-                    "id": "AAS47553.1",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -294,11 +264,11 @@
                             ]
                         }
                     ],
+                    "id": "AAS47553.1",
+                    "name": "No gene ID",
                     "product": "putative RNA methylase"
                 },
                 {
-                    "name": "No gene ID",
-                    "id": "AAS47554.1",
                     "functions": [
                         {
                             "category": "Unknown",
@@ -307,11 +277,11 @@
                             ]
                         }
                     ],
+                    "id": "AAS47554.1",
+                    "name": "No gene ID",
                     "product": "hypothetical protein"
                 },
                 {
-                    "name": "No gene ID",
-                    "id": "AAS47555.1",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -320,11 +290,12 @@
                             ]
                         }
                     ],
+                    "id": "AAS47555.1",
+                    "name": "No gene ID",
                     "product": "putative aldehyde dehydrogenase"
                 },
                 {
-                    "name": "No gene ID",
-                    "id": "AAW33970.1",
+                    "comments": "",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -333,15 +304,15 @@
                             ]
                         }
                     ],
+                    "id": "AAW33970.1",
+                    "name": "No gene ID",
                     "product": "putative formamidopyrimidine-DNA glycosylase",
                     "publications": [
                         "None"
-                    ],
-                    "comments": ""
+                    ]
                 },
                 {
-                    "name": "PedL",
-                    "id": "AAW33971.1",
+                    "comments": "",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -350,15 +321,15 @@
                             ]
                         }
                     ],
+                    "id": "AAW33971.1",
+                    "name": "PedL",
                     "product": "crotonase superfamily",
                     "publications": [
                         "None"
-                    ],
-                    "comments": ""
+                    ]
                 },
                 {
-                    "name": "PedM",
-                    "id": "AAW33972.1",
+                    "comments": "",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -367,15 +338,15 @@
                             ]
                         }
                     ],
+                    "id": "AAW33972.1",
+                    "name": "PedM",
                     "product": "putative ketoacyl synthase",
                     "publications": [
                         "None"
-                    ],
-                    "comments": ""
+                    ]
                 },
                 {
-                    "name": "PedN",
-                    "id": "AAW33973.1",
+                    "comments": "",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -384,15 +355,15 @@
                             ]
                         }
                     ],
+                    "id": "AAW33973.1",
+                    "name": "PedN",
                     "product": "putative acyl carrier protein",
                     "publications": [
                         "None"
-                    ],
-                    "comments": ""
+                    ]
                 },
                 {
-                    "name": "PedO",
-                    "id": "AAW33974.1",
+                    "comments": "",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -401,18 +372,18 @@
                             ]
                         }
                     ],
+                    "id": "AAW33974.1",
+                    "name": "PedO",
                     "product": "putative methyltransferase",
-                    "tailoring": [
-                        "Methylation"
-                    ],
                     "publications": [
                         "19206228"
                     ],
-                    "comments": ""
+                    "tailoring": [
+                        "Methylation"
+                    ]
                 },
                 {
-                    "name": "PedP",
-                    "id": "AAW33975.1",
+                    "comments": "",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -421,15 +392,15 @@
                             ]
                         }
                     ],
+                    "id": "AAW33975.1",
+                    "name": "PedP",
                     "product": "putative 3-hydroxy-3-methylglutaryl coenzyme A-like protein",
                     "publications": [
                         "None"
-                    ],
-                    "comments": ""
+                    ]
                 },
                 {
-                    "name": "PedQ",
-                    "id": "AAW33976.1",
+                    "comments": "",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -438,15 +409,15 @@
                             ]
                         }
                     ],
+                    "id": "AAW33976.1",
+                    "name": "PedQ",
                     "product": "putative hydrolase",
                     "publications": [
                         "None"
-                    ],
-                    "comments": ""
+                    ]
                 },
                 {
-                    "name": "PedR",
-                    "id": "AAW33977.1",
+                    "comments": "",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -455,22 +426,33 @@
                             ]
                         }
                     ],
+                    "id": "AAW33977.1",
+                    "name": "PedR",
                     "product": "putative LysR-type regulatory protei",
                     "publications": [
                         "None"
-                    ],
-                    "comments": ""
+                    ]
                 }
+            ],
+            "extra_genes": []
+        },
+        "loci": {
+            "accession": "AY328023.1",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays",
+                "Sequence-based prediction"
             ]
         },
+        "mibig_accession": "BGC0001108",
         "polyketide": {
-            "starter_unit": "Acetyl-CoA",
-            "subclasses": [
-                "Other"
-            ],
             "cyclic": false,
             "release_type": [
                 "Unknown"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
@@ -489,6 +471,24 @@
                     }
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:12381784",
+            "pubmed:24307486",
+            "pubmed:19206228",
+            "pubmed:15958059",
+            "pubmed:15598566",
+            "pubmed:20464003",
+            "doi:10.1016/S0040-4039(01)96058-7",
+            "doi:10.1016/S0040-4039(00)75458-X",
+            "doi:10.1016/S0040-4039(01)89729-X",
+            "doi:10.1016/0005-2787(71)90665-4"
+        ]
+    },
+    "comments": "Pederin is most likely not released by the TE domain but by PedG.",
+    "submitter": {
+        "email": "ehelfrich@ethz.ch",
+        "institution": "Institute of Microbiology, Eidgen\u00c3\u00b6ssische Technische Hochschule (ETH) Zurich, Piel lab",
+        "name": "Eric J. N. Helfrich"
     }
 }

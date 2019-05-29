@@ -1,40 +1,18 @@
 {
-    "submitter": {
-        "name": "Natalia Miguel-Vior",
-        "institution": "John Innes Centre",
-        "email": "natalia.miguel-vior@jic.ac.uk"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001468",
         "biosyn_class": [
             "Other"
         ],
-        "publications": [
-            "pubmed:29500259"
-        ],
-        "loci": {
-            "accession": "PKFQ01000001.1",
-            "start_coord": 5989046,
-            "end_coord": 5998011,
-            "completeness": "complete",
-            "evidence": [
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Bicyclomycin",
-                "chem_synonyms": [
-                    "bicozamycin",
-                    "aizumycin"
+                "chem_acts": [
+                    "Antibacterial"
                 ],
                 "chem_moieties": [
                     {
@@ -44,27 +22,43 @@
                         ]
                     }
                 ],
+                "chem_synonyms": [
+                    "bicozamycin",
+                    "aizumycin"
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "transcriptionterminationfactorrho"
+                    }
+                ],
+                "compound": "Bicyclomycin",
                 "database_id": "pubchem:70685091",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
-                ],
-                "chem_acts": [
-                    "Antibacterial"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "transcriptionterminationfactorrho",
-                        "publications": []
-                    }
                 ]
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "bcmG",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "PPT15944.1",
+                    "name": "bcmG",
+                    "product": "2OG-Fe(II) oxygenase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -73,14 +67,14 @@
                             ]
                         }
                     ],
-                    "product": "2OG-Fe(II) oxygenase",
-                    "tailoring": [
-                        "Unknown"
-                    ]
-                },
-                {
-                    "name": "bcmF",
                     "id": "PPT15945.1",
+                    "name": "bcmF",
+                    "product": "2OG-Fe(II) oxygenase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -89,30 +83,14 @@
                             ]
                         }
                     ],
-                    "product": "2OG-Fe(II) oxygenase",
-                    "tailoring": [
-                        "Unknown"
-                    ]
-                },
-                {
-                    "name": "bcmE",
                     "id": "PPT16816.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
+                    "name": "bcmE",
                     "product": "2OG-Fe(II) oxygenase",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "bcmD",
-                    "id": "PPT15946.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -121,14 +99,14 @@
                             ]
                         }
                     ],
+                    "id": "PPT15946.1",
+                    "name": "bcmD",
                     "product": "cytochrome P450",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "bcmC",
-                    "id": "PPT15947.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -137,14 +115,14 @@
                             ]
                         }
                     ],
+                    "id": "PPT15947.1",
+                    "name": "bcmC",
                     "product": "2OG-Fe(II) oxygenase",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "bcmB",
-                    "id": "PPT16817.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -153,14 +131,14 @@
                             ]
                         }
                     ],
+                    "id": "PPT16817.1",
+                    "name": "bcmB",
                     "product": "isopenicillin N synthase family oxygenase",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "bcmA",
-                    "id": "PPT15948.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -169,11 +147,11 @@
                             ]
                         }
                     ],
+                    "id": "PPT15948.1",
+                    "name": "bcmA",
                     "product": "tRNA-dependent cyclodipeptide synthase"
                 },
                 {
-                    "name": "bcmT",
-                    "id": "PPT15949.1",
                     "functions": [
                         {
                             "category": "Resistance/immunity",
@@ -182,12 +160,34 @@
                             ]
                         }
                     ],
+                    "id": "PPT15949.1",
+                    "name": "bcmT",
                     "product": "MFS transporter"
                 }
             ]
         },
+        "loci": {
+            "accession": "PKFQ01000001.1",
+            "completeness": "complete",
+            "end_coord": 5998011,
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 5989046
+        },
+        "mibig_accession": "BGC0001468",
         "other": {
             "subclass": "tRNA-derived"
-        }
+        },
+        "publications": [
+            "pubmed:29500259"
+        ]
+    },
+    "submitter": {
+        "email": "natalia.miguel-vior@jic.ac.uk",
+        "institution": "John Innes Centre",
+        "name": "Natalia Miguel-Vior"
     }
 }

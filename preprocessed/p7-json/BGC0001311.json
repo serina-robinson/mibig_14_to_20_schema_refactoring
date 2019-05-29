@@ -1,72 +1,73 @@
 {
-    "submitter": {
-        "name": "Wilfred A. Van Der Donk",
-        "institution": "University of Illinois at Urbana-Champaign",
-        "email": "vddonk@illinois.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001311",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:27028884"
-        ],
-        "loci": {
-            "accession": "NZ_ACOK01000098.1",
-            "start_coord": 1,
-            "end_coord": 15400,
-            "completeness": "Unknown",
-            "evidence": [
-                "Heterologous expression"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Flavecins",
+                "chem_acts": [
+                    "Antibacterial"
+                ],
                 "chem_synonyms": [],
-                "mol_mass": -1,
+                "compound": "Flavecins",
                 "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "evidence": [
                     "Mass spectrometry"
                 ],
-                "chem_acts": [
-                    "Antibacterial"
-                ]
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": -1
             }
         ],
         "genes": {
             "extra_genes": [
                 {
+                    "comments": "Derived by automated computational analysis using gene prediction method: Protein Homology.",
                     "id": "RUMFLAFD1_RS22795",
-                    "strand": -1,
-                    "location": [
-                        {
-                            "start": 14666,
-                            "end": 15400
-                        }
-                    ],
-                    "translation": "MFKQSVLESIEVIDHSGIRINSSKVIYIDPISVSGTPHDADLILFTHPHGDHFSPKDVKKLLKADTVIAAPTGMSTRCRMFLGKEPVPLMPSQSCKLCDIPVETVAAYNIKKPNHRKAKNWLGYILDIDGTRVYIAGDTDITEESRRVSCDIALLPVGGSFTMDPKQAAELANFISPHTVIPIHYGKLIGGAEAAENFRSTVDPHIETDIRPSACSDVLVKMYAKIGVMAVTVGILIYLIEKLI",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 15400,
+                                "start": 14666
+                            }
+                        ],
+                        "strand": -1
+                    },
                     "product": "metal-dependent hydrolase",
-                    "comments": "Derived by automated computational analysis using gene prediction method: Protein Homology."
+                    "translation": "MFKQSVLESIEVIDHSGIRINSSKVIYIDPISVSGTPHDADLILFTHPHGDHFSPKDVKKLLKADTVIAAPTGMSTRCRMFLGKEPVPLMPSQSCKLCDIPVETVAAYNIKKPNHRKAKNWLGYILDIDGTRVYIAGDTDITEESRRVSCDIALLPVGGSFTMDPKQAAELANFISPHTVIPIHYGKLIGGAEAAENFRSTVDPHIETDIRPSACSDVLVKMYAKIGVMAVTVGILIYLIEKLI"
                 }
             ]
         },
+        "loci": {
+            "accession": "NZ_ACOK01000098.1",
+            "completeness": "Unknown",
+            "end_coord": 15400,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0001311",
+        "publications": [
+            "pubmed:27028884"
+        ],
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [
+                "rumflafd1_rs0111200"
+            ],
             "precursor_genes": [
                 {
-                    "gene_id": "rumflafd1_rs0111140",
                     "cleavage_recogn_site": [
                         "GG"
+                    ],
+                    "core_sequence": [
+                        "ASTVNTVGIHTTYLISKGLQNCPLKPTTILPILPRK"
                     ],
                     "crosslinks": [
                         {
@@ -75,15 +76,15 @@
                             "second_AA": 21
                         }
                     ],
-                    "core_sequence": [
-                        "ASTVNTVGIHTTYLISKGLQNCPLKPTTILPILPRK"
-                    ],
+                    "gene_id": "rumflafd1_rs0111140",
                     "leader_sequence": 27
                 },
                 {
-                    "gene_id": "rumflafd1_rs0111175",
                     "cleavage_recogn_site": [
                         "GA"
+                    ],
+                    "core_sequence": [
+                        "GWKQTIVCTIAQGTVGCLVSYGLGNGGYCCTYTVECSKTCNK"
                     ],
                     "crosslinks": [
                         {
@@ -107,13 +108,13 @@
                             "second_AA": 40
                         }
                     ],
-                    "core_sequence": [
-                        "GWKQTIVCTIAQGTVGCLVSYGLGNGGYCCTYTVECSKTCNK"
-                    ],
+                    "gene_id": "rumflafd1_rs0111175",
                     "leader_sequence": 38
                 },
                 {
-                    "gene_id": "rumflafd1_rs0111195",
+                    "core_sequence": [
+                        "TSSIDCVRLASNTPEGTVNLTVRIEFCPSAACTYSCRL"
+                    ],
                     "crosslinks": [
                         {
                             "crosslink_type": "Thioether",
@@ -136,16 +137,16 @@
                             "second_AA": 36
                         }
                     ],
-                    "core_sequence": [
-                        "TSSIDCVRLASNTPEGTVNLTVRIEFCPSAACTYSCRL"
-                    ],
+                    "gene_id": "rumflafd1_rs0111195",
                     "leader_sequence": 27,
                     "recognition_motif": "GG"
                 },
                 {
-                    "gene_id": "rumflafd1_rs0111170",
                     "cleavage_recogn_site": [
                         "GA"
+                    ],
+                    "core_sequence": [
+                        "ASTLPCAEVVVTVTGIIVKATTGFDWCPTGACTHSCRF"
                     ],
                     "crosslinks": [
                         {
@@ -169,15 +170,15 @@
                             "second_AA": 36
                         }
                     ],
-                    "core_sequence": [
-                        "ASTLPCAEVVVTVTGIIVKATTGFDWCPTGACTHSCRF"
-                    ],
+                    "gene_id": "rumflafd1_rs0111170",
                     "leader_sequence": 34
                 },
                 {
-                    "gene_id": "rumflafd1_rs0111165",
                     "cleavage_recogn_site": [
                         "GA"
+                    ],
+                    "core_sequence": [
+                        "VGYTTYWGILPLVTKNPQICPVSENTVKCRLL"
                     ],
                     "crosslinks": [
                         {
@@ -191,15 +192,15 @@
                             "second_AA": 29
                         }
                     ],
-                    "core_sequence": [
-                        "VGYTTYWGILPLVTKNPQICPVSENTVKCRLL"
-                    ],
+                    "gene_id": "rumflafd1_rs0111165",
                     "leader_sequence": 27
                 },
                 {
-                    "gene_id": "rumflafd1_rs0111160",
                     "cleavage_recogn_site": [
                         "GA"
+                    ],
+                    "core_sequence": [
+                        "ASSIPCAKVVVKVTTVVVAATTGFDWCPTGACTTSCRF"
                     ],
                     "crosslinks": [
                         {
@@ -223,15 +224,15 @@
                             "second_AA": 36
                         }
                     ],
-                    "core_sequence": [
-                        "ASSIPCAKVVVKVTTVVVAATTGFDWCPTGACTTSCRF"
-                    ],
+                    "gene_id": "rumflafd1_rs0111160",
                     "leader_sequence": 34
                 },
                 {
-                    "gene_id": "rumflafd1_rs0111155",
                     "cleavage_recogn_site": [
                         "GA"
+                    ],
+                    "core_sequence": [
+                        "GSTIQCVNTTIGTILSVVFDCCPTSACTPPCRF"
                     ],
                     "crosslinks": [
                         {
@@ -260,15 +261,15 @@
                             "second_AA": 31
                         }
                     ],
-                    "core_sequence": [
-                        "GSTIQCVNTTIGTILSVVFDCCPTSACTPPCRF"
-                    ],
+                    "gene_id": "rumflafd1_rs0111155",
                     "leader_sequence": 31
                 },
                 {
-                    "gene_id": "rumflafd1_rs0111150",
                     "cleavage_recogn_site": [
                         "GA"
+                    ],
+                    "core_sequence": [
+                        "GSSNDCADLILKITGVVVSATSKFDWCPTGACTTSCRF"
                     ],
                     "crosslinks": [
                         {
@@ -292,15 +293,15 @@
                             "second_AA": 36
                         }
                     ],
-                    "core_sequence": [
-                        "GSSNDCADLILKITGVVVSATSKFDWCPTGACTTSCRF"
-                    ],
+                    "gene_id": "rumflafd1_rs0111150",
                     "leader_sequence": 33
                 },
                 {
-                    "gene_id": "rumflafd1_rs0111145",
                     "cleavage_recogn_site": [
                         "GA"
+                    ],
+                    "core_sequence": [
+                        "GSPLTVTITGLIVAATTGFDWCPTGACTYSCRV"
                     ],
                     "crosslinks": [
                         {
@@ -319,15 +320,16 @@
                             "second_AA": 31
                         }
                     ],
-                    "core_sequence": [
-                        "GSPLTVTITGLIVAATTGFDWCPTGACTYSCRV"
-                    ],
+                    "gene_id": "rumflafd1_rs0111145",
                     "leader_sequence": 34
                 }
             ],
-            "peptidases": [
-                "rumflafd1_rs0111200"
-            ]
+            "subclass": "Lanthipeptide"
         }
+    },
+    "submitter": {
+        "email": "vddonk@illinois.edu",
+        "institution": "University of Illinois at Urbana-Champaign",
+        "name": "Wilfred A. Van Der Donk"
     }
 }

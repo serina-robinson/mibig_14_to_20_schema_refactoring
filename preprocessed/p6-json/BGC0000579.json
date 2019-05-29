@@ -1,49 +1,29 @@
 {
-    "submitter": {
-        "name": "Alexey Melnik",
-        "institution": "UCSD",
-        "email": "alexvmelnik@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000579",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:21983601"
-        ],
-        "loci": {
-            "accession": "NZ_CM000951.1",
-            "start_coord": 7626723,
-            "end_coord": 7632847,
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "SSV-2083",
-                "chem_synonyms": [],
-                "mol_mass": 2082.83,
-                "database_id": "",
-                "mass_spec_ion_type": "M+",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "SSV-2083",
+                "database_id": "",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 2082.83
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "id": "SSEG_05172",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -52,10 +32,10 @@
                             ]
                         }
                     ],
+                    "id": "SSEG_05172",
                     "product": "prepropeptide"
                 },
                 {
-                    "id": "SSEG_09672",
                     "functions": [
                         {
                             "category": "Resistance/immunity",
@@ -64,10 +44,10 @@
                             ]
                         }
                     ],
+                    "id": "SSEG_09672",
                     "product": "lactamase"
                 },
                 {
-                    "id": "SSEG_09764",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -76,10 +56,22 @@
                             ]
                         }
                     ],
+                    "id": "SSEG_09764",
                     "product": "Peptidase"
                 },
                 {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "SSEG_09675",
+                    "product": "Antibiotic resistance ABC transporter"
+                },
+                {
                     "functions": [
                         {
                             "category": "Transport",
@@ -88,22 +80,10 @@
                             ]
                         }
                     ],
-                    "product": "Antibiotic resistance ABC transporter"
-                },
-                {
                     "id": "SSEG_05178",
-                    "functions": [
-                        {
-                            "category": "Transport",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
                     "product": "Antibiotic resistance ABC transporter"
                 },
                 {
-                    "id": "SSEG_05179",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -111,10 +91,10 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "SSEG_05179"
                 },
                 {
-                    "id": "SSEG_05180",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -123,24 +103,44 @@
                             ]
                         }
                     ],
+                    "id": "SSEG_05180",
                     "product": "protein disulfide isomerase"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "NZ_CM000951.1",
+            "completeness": "complete",
+            "end_coord": 7632847,
+            "evidence": [
+                "Sequence-based prediction"
+            ],
+            "start_coord": 7626723
+        },
+        "mibig_accession": "BGC0000579",
+        "publications": [
+            "pubmed:21983601"
+        ],
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "sseg_05172",
                     "core_sequence": [
                         "CVWGGDCTDFLGCGTAWICV"
                     ],
-                    "leader_sequence": 36,
-                    "follower_sequence": 20
+                    "follower_sequence": 20,
+                    "gene_id": "sseg_05172",
+                    "leader_sequence": 36
                 }
             ],
-            "peptidases": []
+            "subclass": "Lanthipeptide"
         }
+    },
+    "submitter": {
+        "email": "alexvmelnik@gmail.com",
+        "institution": "UCSD",
+        "name": "Alexey Melnik"
     }
 }

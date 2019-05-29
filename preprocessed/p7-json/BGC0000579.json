@@ -1,75 +1,29 @@
 {
-    "submitter": {
-        "name": "Alexey Melnik",
-        "institution": "UCSD",
-        "email": "alexvmelnik@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000579",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:21983601"
-        ],
-        "loci": {
-            "accession": "NZ_CM000951.1",
-            "start_coord": 7626723,
-            "end_coord": 7632847,
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "SSV-2083",
-                "chem_synonyms": [],
-                "mol_mass": 2082.83,
-                "database_id": "",
-                "mass_spec_ion_type": "M+",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "SSV-2083",
+                "database_id": "",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 2082.83
             }
         ],
         "genes": {
-            "extra_genes": [
-                {
-                    "id": "SSEG_05172",
-                    "strand": 1,
-                    "location": [
-                        {
-                            "start": 7626723,
-                            "end": 7626893
-                        }
-                    ],
-                    "translation": "MLISTTNGQGTPMTSTDELYEAPELIEIGDYAELTRCVWGGDCTDFLGCGTAWICV",
-                    "product": "hypothetical protein"
-                },
-                {
-                    "id": "SSEG_09672",
-                    "strand": 1,
-                    "location": [
-                        {
-                            "start": 7627561,
-                            "end": 7628883
-                        }
-                    ],
-                    "translation": "MSVPPVGHWTLLGPTGPARTVHWWSPPAPEVPLPEAAGTLRAALHDAVGVRTAGPGTVSADLSGGMDSTTLCFVAAAEGADLLTYHVEPLDRANEDARWARLAAERLTDARHLTVPSQGASSWFDLPVSDGHLGEGPLPWHGGRTHLEGLAHTVAEHGSRTHLTGLGGDELFGIMPSILWSLAHRHPLRSLPVLRRYQLLNRWGLFAMARGLTDRTGFAQAVGGAADTLTCSRPPAGRLALGWSIDPRMPPWATPDTVDTVRRLLRETAETAPVPLDPDRFRHRVLESLVLEGSTVRQLGRYTEPYGVTWEAPFLDDRVVEAALSVRVEDRAVPGRFKPLLTAAMRGLVPDALLDRPDKGEFSAEMFRGLNDNKRRLRELCADLRAADRGLVDAGALREALTRPVPDARHLGPFQNTLACESWLRTLASAPAAHSGGGSR",
-                    "product": "predicted protein",
-                    "comments": "smCOG: SMCOG1177:asparagine_synthase_(glutamine-hydrolyzing) (Score: 98.8; E-value: 5.1e-30);"
-                }
-            ],
             "annotations": [
                 {
-                    "id": "SSEG_05172",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -78,10 +32,10 @@
                             ]
                         }
                     ],
+                    "id": "SSEG_05172",
                     "product": "prepropeptide"
                 },
                 {
-                    "id": "SSEG_09672",
                     "functions": [
                         {
                             "category": "Resistance/immunity",
@@ -90,24 +44,74 @@
                             ]
                         }
                     ],
+                    "id": "SSEG_09672",
                     "product": "lactamase"
+                }
+            ],
+            "extra_genes": [
+                {
+                    "id": "SSEG_05172",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 7626893,
+                                "start": 7626723
+                            }
+                        ],
+                        "strand": 1
+                    },
+                    "product": "hypothetical protein",
+                    "translation": "MLISTTNGQGTPMTSTDELYEAPELIEIGDYAELTRCVWGGDCTDFLGCGTAWICV"
+                },
+                {
+                    "comments": "smCOG: SMCOG1177:asparagine_synthase_(glutamine-hydrolyzing) (Score: 98.8; E-value: 5.1e-30);",
+                    "id": "SSEG_09672",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 7628883,
+                                "start": 7627561
+                            }
+                        ],
+                        "strand": 1
+                    },
+                    "product": "predicted protein",
+                    "translation": "MSVPPVGHWTLLGPTGPARTVHWWSPPAPEVPLPEAAGTLRAALHDAVGVRTAGPGTVSADLSGGMDSTTLCFVAAAEGADLLTYHVEPLDRANEDARWARLAAERLTDARHLTVPSQGASSWFDLPVSDGHLGEGPLPWHGGRTHLEGLAHTVAEHGSRTHLTGLGGDELFGIMPSILWSLAHRHPLRSLPVLRRYQLLNRWGLFAMARGLTDRTGFAQAVGGAADTLTCSRPPAGRLALGWSIDPRMPPWATPDTVDTVRRLLRETAETAPVPLDPDRFRHRVLESLVLEGSTVRQLGRYTEPYGVTWEAPFLDDRVVEAALSVRVEDRAVPGRFKPLLTAAMRGLVPDALLDRPDKGEFSAEMFRGLNDNKRRLRELCADLRAADRGLVDAGALREALTRPVPDARHLGPFQNTLACESWLRTLASAPAAHSGGGSR"
                 }
             ]
         },
+        "loci": {
+            "accession": "NZ_CM000951.1",
+            "completeness": "complete",
+            "end_coord": 7632847,
+            "evidence": [
+                "Sequence-based prediction"
+            ],
+            "start_coord": 7626723
+        },
+        "mibig_accession": "BGC0000579",
+        "publications": [
+            "pubmed:21983601"
+        ],
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "sseg_05172",
                     "core_sequence": [
                         "CVWGGDCTDFLGCGTAWICV"
                     ],
-                    "leader_sequence": 36,
-                    "follower_sequence": 20
+                    "follower_sequence": 20,
+                    "gene_id": "sseg_05172",
+                    "leader_sequence": 36
                 }
             ],
-            "peptidases": []
+            "subclass": "Lanthipeptide"
         }
+    },
+    "submitter": {
+        "email": "alexvmelnik@gmail.com",
+        "institution": "UCSD",
+        "name": "Alexey Melnik"
     }
 }

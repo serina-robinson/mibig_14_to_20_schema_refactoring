@@ -1,38 +1,22 @@
 {
-    "submitter": {
-        "name": "Eric J. N. Helfrich",
-        "institution": "Institute of Microbiology, Eidgen\u00c3\u00b6ssische Technische Hochschule (ETH) Zurich, Piel lab",
-        "email": "ehelfrich@ethz.ch"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000230",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:12323376",
-            "pubmed:19175308",
-            "pubmed:17625850"
-        ],
-        "loci": {
-            "accession": "AF509565.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "griseorhodin A",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Antibacterial",
+                    "Cytotoxic",
+                    "Inhibitor",
+                    "anti-viral"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "epoxyspiroketal",
@@ -47,36 +31,43 @@
                         ]
                     }
                 ],
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "HIVreversetranscriptase"
+                    },
+                    {
+                        "publications": [],
+                        "target": "humantelomerase"
+                    }
+                ],
+                "compound": "griseorhodin A",
                 "database_id": "pubchem:5458191",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry",
                     "Total synthesis",
                     "Unknown"
-                ],
-                "chem_acts": [
-                    "Antibacterial",
-                    "Cytotoxic",
-                    "Inhibitor",
-                    "anti-viral"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "HIVreversetranscriptase",
-                        "publications": []
-                    },
-                    {
-                        "target": "humantelomerase",
-                        "publications": []
-                    }
                 ]
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "grhR1",
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "AAM33679.1",
+                    "name": "grhR1",
+                    "product": "putative transcriptional activator"
+                },
+                {
                     "functions": [
                         {
                             "category": "Regulation",
@@ -85,24 +76,11 @@
                             ]
                         }
                     ],
-                    "product": "putative transcriptional activator"
-                },
-                {
-                    "name": "grhR2",
                     "id": "AAM33680.1",
-                    "functions": [
-                        {
-                            "category": "Regulation",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "putative transcriptional activator"
-                },
-                {
                     "name": "grhR2",
-                    "id": "AAM33680.1",
+                    "product": "putative transcriptional activator"
+                },
+                {
                     "functions": [
                         {
                             "category": "Regulation",
@@ -111,11 +89,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33680.1",
+                    "name": "grhR2",
                     "product": "putative transcriptional activator"
                 },
                 {
-                    "name": "grhC",
-                    "id": "AAM33655.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -124,11 +102,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33655.1",
+                    "name": "grhC",
                     "product": "putative acyl carrier protein"
                 },
                 {
-                    "name": "grhE",
-                    "id": "AAM33657.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -137,11 +115,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33657.1",
+                    "name": "grhE",
                     "product": "putative cyclase"
                 },
                 {
-                    "name": "grhF",
-                    "id": "AAM33658.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -150,11 +128,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33658.1",
+                    "name": "grhF",
                     "product": "putative phosphopantetheinyl transferase"
                 },
                 {
-                    "name": "grhG",
-                    "id": "AAM33659.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -163,11 +141,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33659.1",
+                    "name": "grhG",
                     "product": "putative transcarboxylase component of acyl-CoA carboxylase"
                 },
                 {
-                    "name": "grhG",
-                    "id": "AAM33659.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -176,11 +154,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33659.1",
+                    "name": "grhG",
                     "product": "putative transcarboxylase component of acyl-CoA carboxylase"
                 },
                 {
-                    "name": "grhG",
-                    "id": "AAM33659.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -189,11 +167,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33659.1",
+                    "name": "grhG",
                     "product": "putative transcarboxylase component of acyl-CoA carboxylase"
                 },
                 {
-                    "name": "grhO1",
-                    "id": "AAM33667.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -202,14 +180,14 @@
                             ]
                         }
                     ],
+                    "id": "AAM33667.1",
+                    "name": "grhO1",
                     "product": "putative FAD-binding oxidoreductase",
                     "tailoring": [
                         "Monooxygenation"
                     ]
                 },
                 {
-                    "name": "grhO1",
-                    "id": "AAM33667.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -218,14 +196,14 @@
                             ]
                         }
                     ],
+                    "id": "AAM33667.1",
+                    "name": "grhO1",
                     "product": "putative FAD-binding oxidoreductase",
                     "tailoring": [
                         "Monooxygenation"
                     ]
                 },
                 {
-                    "name": "grhO1",
-                    "id": "AAM33667.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -234,14 +212,14 @@
                             ]
                         }
                     ],
+                    "id": "AAM33667.1",
+                    "name": "grhO1",
                     "product": "putative FAD-binding oxidoreductase",
                     "tailoring": [
                         "Monooxygenation"
                     ]
                 },
                 {
-                    "name": "grhO4",
-                    "id": "AAM33671.1",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -250,11 +228,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33671.1",
+                    "name": "grhO4",
                     "product": "putative ferredoxin"
                 },
                 {
-                    "name": "grhO4",
-                    "id": "AAM33671.1",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -263,11 +241,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33671.1",
+                    "name": "grhO4",
                     "product": "putative ferredoxin"
                 },
                 {
-                    "name": "grhO4",
-                    "id": "AAM33671.1",
                     "functions": [
                         {
                             "category": "Other enzymatic",
@@ -276,11 +254,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33671.1",
+                    "name": "grhO4",
                     "product": "putative ferredoxin"
                 },
                 {
-                    "name": "grhR3",
-                    "id": "AAM33681.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -289,11 +267,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33681.1",
+                    "name": "grhR3",
                     "product": "putative transcriptional repressor"
                 },
                 {
-                    "name": "grhR3",
-                    "id": "AAM33681.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -302,11 +280,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33681.1",
+                    "name": "grhR3",
                     "product": "putative transcriptional repressor"
                 },
                 {
-                    "name": "grhR3",
-                    "id": "AAM33681.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -315,11 +293,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33681.1",
+                    "name": "grhR3",
                     "product": "putative transcriptional repressor"
                 },
                 {
-                    "name": "grhK",
-                    "id": "AAM33663.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -328,11 +306,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33663.1",
+                    "name": "grhK",
                     "product": "putative efflux protein"
                 },
                 {
-                    "name": "grhL",
-                    "id": "AAM33664.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -341,14 +319,14 @@
                             ]
                         }
                     ],
+                    "id": "AAM33664.1",
+                    "name": "grhL",
                     "product": "putative methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "grhL",
-                    "id": "AAM33664.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -357,14 +335,14 @@
                             ]
                         }
                     ],
+                    "id": "AAM33664.1",
+                    "name": "grhL",
                     "product": "putative methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "grhL",
-                    "id": "AAM33664.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -373,14 +351,14 @@
                             ]
                         }
                     ],
+                    "id": "AAM33664.1",
+                    "name": "grhL",
                     "product": "putative methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "grhL",
-                    "id": "AAM33664.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -389,14 +367,14 @@
                             ]
                         }
                     ],
+                    "id": "AAM33664.1",
+                    "name": "grhL",
                     "product": "putative methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "grhL",
-                    "id": "AAM33664.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -405,14 +383,14 @@
                             ]
                         }
                     ],
+                    "id": "AAM33664.1",
+                    "name": "grhL",
                     "product": "putative methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "grhL",
-                    "id": "AAM33664.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -421,14 +399,14 @@
                             ]
                         }
                     ],
+                    "id": "AAM33664.1",
+                    "name": "grhL",
                     "product": "putative methyltransferase",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "grhRQ",
-                    "id": "AAM33678.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -437,16 +415,16 @@
                             ]
                         }
                     ],
+                    "id": "AAM33678.1",
+                    "name": "grhRQ",
                     "product": "putative cyclase"
                 },
                 {
-                    "name": "grhS",
                     "id": "AAM33682.1",
+                    "name": "grhS",
                     "product": "Unknown"
                 },
                 {
-                    "name": "grhA",
-                    "id": "AAM33653.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -455,11 +433,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33653.1",
+                    "name": "grhA",
                     "product": "putative ketosynthase alpha"
                 },
                 {
-                    "name": "grhB",
-                    "id": "AAM33654.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -468,11 +446,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33654.1",
+                    "name": "grhB",
                     "product": "putative ketosynthase beta"
                 },
                 {
-                    "name": "grhT",
-                    "id": "AAM33685.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -481,11 +459,11 @@
                             ]
                         }
                     ],
+                    "id": "AAM33685.1",
+                    "name": "grhT",
                     "product": "putative bifunctional cyclase/3-oxoacyl-ACP reductase"
                 },
                 {
-                    "name": "grhO10",
-                    "id": "AAM33668.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -494,48 +472,70 @@
                             ]
                         }
                     ],
+                    "id": "AAM33668.1",
+                    "name": "grhO10",
                     "product": "putative 3-oxoacyl-ACP reductase"
                 },
                 {
-                    "name": "grhU",
                     "id": "AAM33683.1",
+                    "name": "grhU",
                     "product": "Unknown"
                 },
                 {
-                    "name": "grhV",
                     "id": "AAM33684.1",
+                    "name": "grhV",
                     "product": "Unknown"
                 }
             ]
         },
+        "loci": {
+            "accession": "AF509565.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0000230",
         "polyketide": {
-            "starter_unit": "Unknown",
-            "ketide_length": 13,
             "cyclases": [
                 "AAM33657.1",
                 "AAM33678.1",
                 "AAM33685.1",
                 ""
             ],
+            "cyclic": false,
+            "ketide_length": 13,
+            "starter_unit": "Unknown",
             "subclasses": [
                 "Polyphenol"
             ],
-            "cyclic": false,
             "synthases": [
                 {
                     "genes": [
                         "",
-                        "AAM33685.1",
-                        "aam33653.1",
+                        "AAM33678.1",
                         "AAM33657.1",
-                        "aam33655.1",
-                        "AAM33678.1"
+                        "aam33653.1",
+                        "AAM33685.1",
+                        "aam33655.1"
                     ],
                     "subclass": [
                         "Type II"
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:12323376",
+            "pubmed:19175308",
+            "pubmed:17625850"
+        ]
+    },
+    "submitter": {
+        "email": "ehelfrich@ethz.ch",
+        "institution": "Institute of Microbiology, Eidgen\u00c3\u00b6ssische Technische Hochschule (ETH) Zurich, Piel lab",
+        "name": "Eric J. N. Helfrich"
     }
 }

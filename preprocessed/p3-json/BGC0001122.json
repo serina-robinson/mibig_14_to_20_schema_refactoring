@@ -1,52 +1,64 @@
 {
-    "version": "15",
-    "personal": {
-        "submitter_name": "Yuta Tsunematsu",
-        "submitter_institution": "University of Shizuoka",
-        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp"
-    },
+    "embargo": true,
     "general_params": {
-        "mibig_accession": "BGC0001122",
+        "NRP": {
+            "lin_cycl_nrp": "Linear",
+            "nrps_genes": [
+                {
+                    "nrps_gene": "EAU38971",
+                    "nrps_module": [
+                        {
+                            "a_substr_spec": {
+                                "aa_type": "Proteinogenic",
+                                "evidence_a_spec": "Other",
+                                "prot_adom_spec": "Leucine"
+                            },
+                            "cdom_subtype": "Unknown",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ]
+                }
+            ],
+            "nrps_release_type": "Unknown",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": [],
+            "subclass": "Other"
+        },
+        "Polyketide": {
+            "iter_cycl_type": "Other",
+            "iterative_subtype": "Non-reducing",
+            "lin_cycl_pk": "Linear",
+            "nr_iterations": 2,
+            "pk_subclass": "Other",
+            "pks_genes": [
+                "EAU38971"
+            ],
+            "pks_release_type": "Unknown",
+            "pks_subclass": [
+                "Iterative type I"
+            ],
+            "pks_te_type": "None",
+            "starter_unit": "Acetyl-CoA"
+        },
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "21236704"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "CH476594",
-                    "start_coord": 919949,
-                    "end_coord": 944781,
-                    "conn_comp_cluster": [
-                        "Knock-out studies",
-                        "Gene expression correlated with compound production"
-                    ]
-                }
-            ]
-        },
         "compounds": [
             {
-                "compound": "dihydroisoflavipucine",
-                "chem_synonyms": [],
-                "chem_struct": "OC(CC(C)C)C(O1)OC2=C1C=C(C)NC2=O",
-                "molecular_formula": "C12H17NO4",
-                "mol_mass": -1,
-                "mass_ion_type": "None",
                 "chem_act": [
                     "Unknown"
-                ]
+                ],
+                "chem_struct": "OC(CC(C)C)C(O1)OC2=C1C=C(C)NC2=O",
+                "chem_synonyms": [],
+                "compound": "dihydroisoflavipucine",
+                "mass_ion_type": "None",
+                "mol_mass": -1,
+                "molecular_formula": "C12H17NO4"
             },
             {
-                "compound": "isoflavipucine",
-                "chem_synonyms": [],
-                "chem_struct": "O=C(CC(C)C)C(O1)OC2=C1C=C(C)NC2=O",
-                "molecular_formula": "C12H15NO4",
-                "mol_mass": -1,
-                "mass_ion_type": "M+",
                 "chem_act": [
                     "Unknown"
                 ],
@@ -54,29 +66,35 @@
                     {
                         "moiety_subcluster": []
                     }
-                ]
+                ],
+                "chem_struct": "O=C(CC(C)C)C(O1)OC2=C1C=C(C)NC2=O",
+                "chem_synonyms": [],
+                "compound": "isoflavipucine",
+                "mass_ion_type": "M+",
+                "mol_mass": -1,
+                "molecular_formula": "C12H15NO4"
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "ATEG_00325",
-                    "gene_id": "EAU38971",
-                    "gene_annotation": "PKS-NRPS hybrid",
-                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
+                    "gene_annotation": "PKS-NRPS hybrid",
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_id": "EAU38971",
+                    "gene_name": "ATEG_00325",
                     "mut_pheno": "abolishment of isoflavipucine production"
                 },
                 {
-                    "gene_name": "ATEG_00326",
-                    "gene_id": "EAU38972",
-                    "gene_annotation": "transcription factor",
-                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Other in vivo study"
-                    ]
+                    ],
+                    "gene_annotation": "transcription factor",
+                    "gene_function": "Regulation",
+                    "gene_id": "EAU38972",
+                    "gene_name": "ATEG_00326"
                 }
             ],
             "operon": [
@@ -85,47 +103,29 @@
                 }
             ]
         },
-        "NRP": {
-            "subclass": "Other",
-            "lin_cycl_nrp": "Linear",
-            "nrps_genes": [
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
                 {
-                    "nrps_gene": "EAU38971",
-                    "nrps_module": [
-                        {
-                            "module_nr": "1",
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Leucine",
-                                "evidence_a_spec": "Other"
-                            },
-                            "cdom_subtype": "Unknown",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
+                    "Accession": "CH476594",
+                    "conn_comp_cluster": [
+                        "Knock-out studies",
+                        "Gene expression correlated with compound production"
+                    ],
+                    "end_coord": 944781,
+                    "start_coord": 919949
                 }
-            ],
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Unknown"
+            ]
         },
-        "Polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
-            "starter_unit": "Acetyl-CoA",
-            "pks_genes": [
-                "EAU38971"
-            ],
-            "nr_iterations": 2,
-            "iterative_subtype": "Non-reducing",
-            "iter_cycl_type": "Other",
-            "pks_te_type": "None",
-            "pks_release_type": "Unknown"
-        }
+        "mibig_accession": "BGC0001122",
+        "publications": [
+            "21236704"
+        ]
     },
-    "embargo": true
+    "personal": {
+        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp",
+        "submitter_institution": "University of Shizuoka",
+        "submitter_name": "Yuta Tsunematsu"
+    },
+    "version": "15"
 }

@@ -1,38 +1,42 @@
 {
-    "personal": {
-        "submitter_name": "Keishi Ishida",
-        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology",
-        "submitter_email": "keishi.ishida@hki-jena.de"
-    },
+    "changelogs": [
+        {
+            "comment": "Submitted",
+            "version": "2.0"
+        }
+    ],
     "general_params": {
-        "mibig_accession": "BGC0000298",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:20863139",
-            "pubmed:17524987",
-            "pubmed:18614525"
-        ],
-        "loci": {
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Sequence-based prediction"
-            ],
-            "accession": "FJ609416.1"
-        },
         "compounds": [
             {
-                "compound": "Aeruginosin 98-A",
+                "chem_act": [
+                    "Inhibitor"
+                ],
+                "chem_moieties": [
+                    {
+                        "chem_moiety": "2-carboxy-6-hydroxyoctahydroindole",
+                        "moiety_subcluster": [
+                            "acm68685.1",
+                            "acm68686.1",
+                            "acm68687.1",
+                            "acm68688.1"
+                        ]
+                    }
+                ],
                 "chem_synonyms": [],
+                "chem_target": [
+                    "Trypsin",
+                    "Plasmin",
+                    "Thrombin"
+                ],
                 "chemspider_id": 8502749,
+                "compound": "Aeruginosin 98-A"
+            },
+            {
                 "chem_act": [
                     "Inhibitor"
-                ],
-                "chem_target": [
-                    "Trypsin",
-                    "Plasmin",
-                    "Thrombin"
                 ],
                 "chem_moieties": [
                     {
@@ -44,44 +48,20 @@
                             "acm68688.1"
                         ]
                     }
-                ]
-            },
-            {
-                "compound": "Aeruginosin 98-B",
+                ],
                 "chem_synonyms": [],
-                "pubchem_id": 444346,
+                "chem_target": [
+                    "Trypsin",
+                    "Plasmin",
+                    "Thrombin"
+                ],
                 "chemspider_id": 392303,
-                "chem_act": [
-                    "Inhibitor"
-                ],
-                "chem_target": [
-                    "Trypsin",
-                    "Plasmin",
-                    "Thrombin"
-                ],
-                "chem_moieties": [
-                    {
-                        "chem_moiety": "2-carboxy-6-hydroxyoctahydroindole",
-                        "moiety_subcluster": [
-                            "acm68685.1",
-                            "acm68686.1",
-                            "acm68687.1",
-                            "acm68688.1"
-                        ]
-                    }
-                ]
+                "compound": "Aeruginosin 98-B",
+                "pubchem_id": 444346
             },
             {
-                "compound": "Aeruginosin 98-C",
-                "chem_synonyms": [],
-                "chemspider_id": 9977735,
                 "chem_act": [
                     "Inhibitor"
-                ],
-                "chem_target": [
-                    "Trypsin",
-                    "Plasmin",
-                    "Thrombin"
                 ],
                 "chem_moieties": [
                     {
@@ -93,33 +73,48 @@
                             "acm68688.1"
                         ]
                     }
-                ]
+                ],
+                "chem_synonyms": [],
+                "chem_target": [
+                    "Trypsin",
+                    "Plasmin",
+                    "Thrombin"
+                ],
+                "chemspider_id": 9977735,
+                "compound": "Aeruginosin 98-C"
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_id": "ACM68683.1",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Halogenation",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "gene_function": "Tailoring",
+                    "gene_id": "ACM68683.1",
+                    "tailoring": "Halogenation"
                 }
             ]
         },
+        "loci": {
+            "accession": "FJ609416.1",
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Sequence-based prediction"
+            ]
+        },
+        "mibig_accession": "BGC0000298",
         "nrp": {
-            "subclass": "Unknown",
             "lin_cycl_nrp": "Linear",
             "nrps_genes": [
                 {
                     "nrps_gene": "ACM68682.1",
                     "nrps_module": [
                         {
-                            "module_nr": "0",
                             "a_substr_spec": {
                                 "aa_type": "Unknown"
                             },
+                            "module_nr": "0",
                             "nrps_mod_doms": "Keto reductase",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -129,14 +124,14 @@
                     "nrps_gene": "ACM68684.1",
                     "nrps_module": [
                         {
-                            "module_nr": "1",
                             "a_substr_spec": {
                                 "aa_type": "Proteinogenic",
-                                "prot_adom_spec": "Isoleucine",
                                 "epimerized": true,
-                                "evidence_a_spec": "Sequence-based prediction"
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "prot_adom_spec": "Isoleucine"
                             },
                             "cdom_subtype": "Unknown",
+                            "module_nr": "1",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -146,18 +141,18 @@
                     "nrps_gene": "ACM68690.1",
                     "nrps_module": [
                         {
-                            "module_nr": "2",
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "2-carboxy-6-hydroxyoctahydroindole",
                                 "aa_subcluster": [
                                     "acm68685.1",
                                     "acm68686.1",
                                     "acm68687.1",
                                     "acm68688.1"
-                                ]
+                                ],
+                                "aa_type": "Nonproteinogenic",
+                                "nonprot_adom_spec": "2-carboxy-6-hydroxyoctahydroindole"
                             },
                             "cdom_subtype": "DCL",
+                            "module_nr": "2",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         }
@@ -167,26 +162,31 @@
                     "nrps_gene": "ACM68691.1",
                     "nrps_module": [
                         {
-                            "module_nr": "3",
                             "a_substr_spec": {
                                 "aa_type": "None"
                             },
                             "cdom_subtype": "LCL",
+                            "module_nr": "3",
                             "nrps_mod_doms": "None",
                             "nrps_mod_skip_iter": "Neither"
                         }
                     ]
                 }
             ],
+            "nrps_release_type": "Unknown",
             "nrps_te_type": "None",
             "nrps_thioesterase": [],
-            "nrps_release_type": "Unknown"
-        }
+            "subclass": "Unknown"
+        },
+        "publications": [
+            "pubmed:20863139",
+            "pubmed:17524987",
+            "pubmed:18614525"
+        ]
     },
-    "changelogs": [
-        {
-            "version": "2.0",
-            "comment": "Submitted"
-        }
-    ]
+    "personal": {
+        "submitter_email": "keishi.ishida@hki-jena.de",
+        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology",
+        "submitter_name": "Keishi Ishida"
+    }
 }

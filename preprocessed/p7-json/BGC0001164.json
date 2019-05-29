@@ -1,48 +1,29 @@
 {
-    "submitter": {
-        "name": "R. Cameron Coates",
-        "institution": "DOE Joint Genome Institute",
-        "email": "rccoates@lbl.gov"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001164",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24475038"
-        ],
-        "loci": {
-            "accession": "CP002198.1",
-            "start_coord": 2029235,
-            "end_coord": 2037562,
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "1-heptadecene",
+                "chem_acts": [
+                    "Unknown"
+                ],
                 "chem_synonyms": [
                     "heptadec-1-ene"
                 ],
-                "database_id": "pubchem:23217",
-                "chem_acts": [
-                    "Unknown"
-                ]
+                "compound": "1-heptadecene",
+                "database_id": "pubchem:23217"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "id": "ADN13832.1",
                     "functions": [
                         {
                             "category": "Activation / processing",
@@ -51,33 +32,41 @@
                             ]
                         }
                     ],
+                    "id": "ADN13832.1",
                     "product": "Polyketide Synthase"
                 }
             ]
         },
-        "polyketide": {
-            "starter_unit": "Malonyl-CoA",
-            "subclasses": [
-                "Other"
+        "loci": {
+            "accession": "CP002198.1",
+            "completeness": "complete",
+            "end_coord": 2037562,
+            "evidence": [
+                "Sequence-based prediction"
             ],
+            "start_coord": 2029235
+        },
+        "mibig_accession": "BGC0001164",
+        "polyketide": {
             "cyclic": false,
             "release_type": [
                 "Unknown"
+            ],
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
                     "genes": [
                         "ADN13832.1"
                     ],
-                    "subclass": [
-                        "Modular type I"
-                    ],
                     "modules": [
                         {
-                            "genes": [
-                                "ADN13832.1"
+                            "at_specificities": [
+                                "Malonamyl-CoA"
                             ],
-                            "module_number": "1",
+                            "comments": "",
                             "domains": [
                                 "CoA-ligase",
                                 "Thiolation (ACP/PCP)",
@@ -88,19 +77,30 @@
                                 "Sulfotransferase",
                                 "Thioesterase"
                             ],
-                            "at_specificities": [
-                                "Malonamyl-CoA"
-                            ],
                             "evidence": "Structure-based inference",
+                            "genes": [
+                                "ADN13832.1"
+                            ],
                             "kr_stereochem": "Unknown",
+                            "module_number": "1",
                             "pks_mod_doms": [
                                 "Unknown"
-                            ],
-                            "comments": ""
+                            ]
                         }
+                    ],
+                    "subclass": [
+                        "Modular type I"
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:24475038"
+        ]
+    },
+    "submitter": {
+        "email": "rccoates@lbl.gov",
+        "institution": "DOE Joint Genome Institute",
+        "name": "R. Cameron Coates"
     }
 }

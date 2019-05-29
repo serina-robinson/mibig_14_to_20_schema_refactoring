@@ -1,40 +1,20 @@
 {
-    "submitter": {
-        "name": "Li Chen",
-        "institution": "university of Texas Health Science Center at Houston",
-        "email": "chenli.1983@163.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001035",
         "biosyn_class": [
             "Other"
         ],
-        "publications": [
-            "pubmed:23688303",
-            "pubmed:25879325",
-            "pubmed:25527531",
-            "pubmed:25270390",
-            "pubmed:27494047"
-        ],
-        "loci": {
-            "accession": "KE145356.1",
-            "start_coord": 180393,
-            "end_coord": 296227,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "pneumocandin B0",
+                "chem_acts": [
+                    "Antifungal"
+                ],
+                "chem_moieties": [],
                 "chem_synonyms": [
                     "(3s)-(4r",
                     "5r)-n2-[(10r",
@@ -42,24 +22,23 @@
                     "12-dimethyl-1-oxotetradecyl]- 4",
                     "5-dihydroxy-l-ornithyl-l-threonyl-(4r)-4-hydroxy-l-prolyl-(4s)-4-hydroxy-4-(4-hydroxyphenyl)-l-threonyl-(3r)-3-hydroxy-l-glutaminyl-3-hydroxy-l-proline (6\u00e2\u0086\u00921)-lactam"
                 ],
-                "chem_moieties": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "Glucansynthase"
+                    }
+                ],
+                "compound": "pneumocandin B0",
                 "database_id": "pubchem:5742645",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
-                ],
-                "chem_acts": [
-                    "Antifungal"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "Glucansynthase",
-                        "publications": []
-                    }
                 ]
             },
             {
-                "compound": "pneumocandin A0",
+                "chem_acts": [
+                    "Antifungal"
+                ],
                 "chem_synonyms": [
                     "cyclo[threonyl-(4-hydroxyprolyl)-(3",
                     "4-dihydroxyhomotyrosyl)-(3-hydroxyglutaminyl)-(3-hydroxy-4-methylprolyl)-ngamma-(4",
@@ -68,27 +47,39 @@
                     "2-dihydroxy-2-(4-hydroxyphenyl)ethyl]-tetrahydroxy-[(1r)-1-hydroxyethyl]-methyl-hexaoxo-[?]yl]-10",
                     "12-dimethyl-tetradecanamide"
                 ],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "Glucansynthase"
+                    }
+                ],
+                "compound": "pneumocandin A0",
                 "database_id": "pubchem:456419",
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
-                ],
-                "chem_acts": [
-                    "Antifungal"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "Glucansynthase",
-                        "publications": []
-                    }
                 ]
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "GLP450-1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
                     "id": "EPE34336.1",
+                    "name": "GLP450-1",
+                    "product": "Cytochrome P450",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -97,30 +88,14 @@
                             ]
                         }
                     ],
-                    "product": "Cytochrome P450",
-                    "tailoring": [
-                        "Hydroxylation"
-                    ]
-                },
-                {
-                    "name": "GLP450-2",
                     "id": "EPE34337.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
+                    "name": "GLP450-2",
                     "product": "Cytochrome P450",
                     "tailoring": [
                         "Hydroxylation"
                     ]
                 },
                 {
-                    "name": "GLHYD",
-                    "id": "EPE34338.1",
                     "functions": [
                         {
                             "category": "Unknown",
@@ -129,11 +104,11 @@
                             ]
                         }
                     ],
+                    "id": "EPE34338.1",
+                    "name": "GLHYD",
                     "product": "alpha/beta-Hydrolase"
                 },
                 {
-                    "name": "GLOXY1",
-                    "id": "EPE34339.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -142,14 +117,14 @@
                             ]
                         }
                     ],
+                    "id": "EPE34339.1",
+                    "name": "GLOXY1",
                     "product": "nonheme mononuclear iron oxygenase",
                     "tailoring": [
                         "Hydroxylation"
                     ]
                 },
                 {
-                    "name": "GLPKS4",
-                    "id": "EPE34340.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -158,11 +133,11 @@
                             ]
                         }
                     ],
+                    "id": "EPE34340.1",
+                    "name": "GLPKS4",
                     "product": "polyketide synthase"
                 },
                 {
-                    "name": "GLNRPS4",
-                    "id": "EPE34341.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -171,11 +146,11 @@
                             ]
                         }
                     ],
+                    "id": "EPE34341.1",
+                    "name": "GLNRPS4",
                     "product": "non-ribosomal peptide synthetase"
                 },
                 {
-                    "name": "GLTRT",
-                    "id": "EPE34342.1",
                     "functions": [
                         {
                             "category": "Unknown",
@@ -184,11 +159,11 @@
                             ]
                         }
                     ],
+                    "id": "EPE34342.1",
+                    "name": "GLTRT",
                     "product": "ABC-transporter"
                 },
                 {
-                    "name": "GLHtyD",
-                    "id": "EPE34343.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -197,11 +172,11 @@
                             ]
                         }
                     ],
+                    "id": "EPE34343.1",
+                    "name": "GLHtyD",
                     "product": "Aconitase"
                 },
                 {
-                    "name": "GLHtyC",
-                    "id": "EPE34344.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -210,11 +185,11 @@
                             ]
                         }
                     ],
+                    "id": "EPE34344.1",
+                    "name": "GLHtyC",
                     "product": "Isopropylmalate dehydrogenase"
                 },
                 {
-                    "name": "GLHtyA",
-                    "id": "EPE34345.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -223,11 +198,11 @@
                             ]
                         }
                     ],
+                    "id": "EPE34345.1",
+                    "name": "GLHtyA",
                     "product": "isopropyl malate synthase"
                 },
                 {
-                    "name": "GLHtyB",
-                    "id": "EPE34346.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -236,11 +211,11 @@
                             ]
                         }
                     ],
+                    "id": "EPE34346.1",
+                    "name": "GLHtyB",
                     "product": "D-aminoacid aminotransferase"
                 },
                 {
-                    "name": "GLOXY2",
-                    "id": "EPE34347.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -249,14 +224,14 @@
                             ]
                         }
                     ],
+                    "id": "EPE34347.1",
+                    "name": "GLOXY2",
                     "product": "nonheme mononuclear iron oxygenase",
                     "tailoring": [
                         "Hydroxylation"
                     ]
                 },
                 {
-                    "name": "GLOXY3",
-                    "id": "EPE34348.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -265,14 +240,14 @@
                             ]
                         }
                     ],
+                    "id": "EPE34348.1",
+                    "name": "GLOXY3",
                     "product": "nonheme mononuclear iron oxygenase",
                     "tailoring": [
                         "Hydroxylation"
                     ]
                 },
                 {
-                    "name": "GLligase",
-                    "id": "EPE34349.1",
                     "functions": [
                         {
                             "category": "Transport",
@@ -281,11 +256,11 @@
                             ]
                         }
                     ],
+                    "id": "EPE34349.1",
+                    "name": "GLligase",
                     "product": "acyl-AMP ligase"
                 },
                 {
-                    "name": "GLOXY4",
-                    "id": "EPE34350.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -294,17 +269,165 @@
                             ]
                         }
                     ],
+                    "id": "EPE34350.1",
+                    "name": "GLOXY4",
                     "product": "nonheme mononuclear iron oxygenase",
                     "tailoring": [
                         "Hydroxylation"
                     ]
                 },
                 {
-                    "name": "GLHYP",
                     "id": "EPE34351.1",
+                    "name": "GLHYP",
                     "product": "hypothetical protein"
                 }
             ]
+        },
+        "loci": {
+            "accession": "KE145356.1",
+            "completeness": "complete",
+            "end_coord": 296227,
+            "evidence": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 180393
+        },
+        "mibig_accession": "BGC0001035",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "EPE34341.1",
+                    "modules": [
+                        {
+                            "active": false,
+                            "c_dom_subtype": "Starter",
+                            "comments": "",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "4,5-dihydroxyornithine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "comments": "",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Threonine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "comments": "",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "4-Hydroxyproline"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "comments": "",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "3,4-hydroxyhomotyrosine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "comments": "",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "3-hydroxyglutamine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "comments": "",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "6"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "nonproteinogenic": [
+                                    "3-hydroxy-4-methylproline"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Unknown",
+                            "comments": "",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "7"
+                        }
+                    ]
+                }
+            ]
+        },
+        "other": {
+            "subclass": "Aminocoumarin"
         },
         "polyketide": {
             "synthases": [
@@ -314,10 +437,10 @@
                     ],
                     "modules": [
                         {
-                            "genes": [
-                                "EPE34340.1"
+                            "at_specificities": [
+                                "Malonyl-CoA"
                             ],
-                            "module_number": "1",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -325,161 +448,38 @@
                                 "Enoylreductase",
                                 "Ketoreductase"
                             ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
+                            "genes": [
+                                "EPE34340.1"
                             ],
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "comments": "",
+                            "module_number": "1",
                             "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": true,
                                 "evidence": [
                                     "Sequence-based prediction"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        "nrp": {
-            "nrps_genes": [
-                {
-                    "gene_id": "EPE34341.1",
-                    "modules": [
-                        {
-                            "comments": "",
-                            "module_number": "1",
-                            "active": false,
-                            "c_dom_subtype": "Starter",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "4,5-dihydroxyornithine"
                                 ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
                             },
-                            "comments": "",
-                            "module_number": "2",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Threonine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "comments": "",
-                            "module_number": "3",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "4-Hydroxyproline"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "comments": "",
-                            "module_number": "4",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "3,4-hydroxyhomotyrosine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "comments": "",
-                            "module_number": "5",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "3-hydroxyglutamine"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "comments": "",
-                            "module_number": "6",
-                            "active": false,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        },
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "3-hydroxy-4-methylproline"
-                                ],
-                                "evidence": [
-                                    "Structure-based inference"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "comments": "",
-                            "module_number": "7",
-                            "active": false,
-                            "c_dom_subtype": "Unknown",
-                            "modification_domains": [
-                                "None"
+                            "pks_mod_doms": [
+                                "Methylation"
                             ]
                         }
                     ]
                 }
             ]
         },
-        "other": {
-            "subclass": "Aminocoumarin"
-        }
+        "publications": [
+            "pubmed:23688303",
+            "pubmed:25879325",
+            "pubmed:25527531",
+            "pubmed:25270390",
+            "pubmed:27494047"
+        ]
+    },
+    "submitter": {
+        "email": "chenli.1983@163.com",
+        "institution": "university of Texas Health Science Center at Houston",
+        "name": "Li Chen"
     }
 }

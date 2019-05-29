@@ -1,20 +1,218 @@
 {
-    "submitter": {
-        "name": "Monika Ehling-Schulz",
-        "institution": "Veterinary University of Vienna",
-        "email": "monika.ehling-schulz@vetmeduni.ac.at"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000320",
         "biosyn_class": [
             "NRP"
         ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
+                "chem_moieties": [],
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "membrane(K+ionophore)"
+                    }
+                ],
+                "compound": "Cereulide",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+NH4]+",
+                "mol_mass": -1,
+                "molecular_formula": "C57H96N6O18"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "ABD14711.1",
+                    "name": "cesA",
+                    "product": "CesA"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABD14712.1",
+                    "name": "cesB",
+                    "product": "CesB"
+                }
+            ],
+            "extra_genes": [],
+            "operons": [
+                {
+                    "evidence": [
+                        "RACE"
+                    ],
+                    "genes": [
+                        "abd14709.1",
+                        "abd14710.1",
+                        "abd14711.1",
+                        "abd14712.1",
+                        "abd14713.1",
+                        "abd14714.1"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "DQ360825.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ]
+        },
+        "mibig_accession": "BGC0000320",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "ABD14711.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "nonproteinogenic": [
+                                    "alpha-ketoisocaproic acid"
+                                ]
+                            },
+                            "active": true,
+                            "modification_domains": [
+                                "Unknown"
+                            ],
+                            "module_number": "0",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": true,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "proteinogenic": [
+                                    "Alanine"
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "1",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "2"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABD14712.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "nonproteinogenic": [
+                                    "alpha-ketoisovaleric acid"
+                                ]
+                            },
+                            "active": true,
+                            "modification_domains": [
+                                "Unknown"
+                            ],
+                            "module_number": "2",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "proteinogenic": [
+                                    "Valine"
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "None"
+                            ],
+                            "module_number": "3",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Unknown"
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
         "publications": [
             "pubmed:15640177",
             "pubmed:16512902",
@@ -26,209 +224,11 @@
             "pubmed:22571587",
             "pubmed:8082824",
             "pubmed:10429194"
-        ],
-        "loci": {
-            "accession": "DQ360825.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Enzymatic assays"
-            ]
-        },
-        "compounds": [
-            {
-                "compound": "Cereulide",
-                "chem_synonyms": [],
-                "molecular_formula": "C57H96N6O18",
-                "mol_mass": -1,
-                "chem_moieties": [],
-                "database_id": "",
-                "mass_spec_ion_type": "[M+NH4]+",
-                "chem_acts": [
-                    "Cytotoxic"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "membrane(K+ionophore)",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": [
-                {
-                    "name": "cesA",
-                    "id": "ABD14711.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Activity assay"
-                            ]
-                        }
-                    ],
-                    "product": "CesA"
-                },
-                {
-                    "name": "cesB",
-                    "id": "ABD14712.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
-                    "product": "CesB"
-                }
-            ],
-            "operons": [
-                {
-                    "genes": [
-                        "abd14709.1",
-                        "abd14710.1",
-                        "abd14711.1",
-                        "abd14712.1",
-                        "abd14713.1",
-                        "abd14714.1"
-                    ],
-                    "evidence": [
-                        "RACE"
-                    ]
-                }
-            ]
-        },
-        "nrp": {
-            "subclass": "Cyclic depsipeptide",
-            "nrps_genes": [
-                {
-                    "gene_id": "ABD14711.1",
-                    "modules": [
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "alpha-ketoisocaproic acid"
-                                ],
-                                "evidence": [
-                                    "Activity assay"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "0",
-                            "active": true,
-                            "modification_domains": [
-                                "Unknown"
-                            ],
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": false,
-                                "evidence": [
-                                    "Structure-based inference"
-                                ]
-                            }
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Alanine"
-                                ],
-                                "evidence": [
-                                    "Sequence-based prediction"
-                                ],
-                                "epimerized": true,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "1",
-                            "active": true,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ],
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": false,
-                                "evidence": [
-                                    "Structure-based inference"
-                                ]
-                            }
-                        },
-                        {
-                            "module_number": "2",
-                            "active": false,
-                            "c_dom_subtype": "DCL",
-                            "modification_domains": [
-                                "None"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "gene_id": "ABD14712.1",
-                    "modules": [
-                        {
-                            "a_substr_spec": {
-                                "nonproteinogenic": [
-                                    "alpha-ketoisovaleric acid"
-                                ],
-                                "evidence": [
-                                    "Activity assay"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "2",
-                            "active": true,
-                            "modification_domains": [
-                                "Unknown"
-                            ],
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": false,
-                                "evidence": [
-                                    "Structure-based inference"
-                                ]
-                            }
-                        },
-                        {
-                            "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Valine"
-                                ],
-                                "evidence": [
-                                    "Sequence-based prediction"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
-                            },
-                            "module_number": "3",
-                            "active": true,
-                            "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ],
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": false,
-                                "evidence": [
-                                    "Structure-based inference"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ],
-            "cyclic": true,
-            "release_type": [
-                "Unknown"
-            ]
-        }
+        ]
+    },
+    "submitter": {
+        "email": "monika.ehling-schulz@vetmeduni.ac.at",
+        "institution": "Veterinary University of Vienna",
+        "name": "Monika Ehling-Schulz"
     }
 }

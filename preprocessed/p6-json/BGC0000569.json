@@ -1,28 +1,195 @@
 {
-    "submitter": {
-        "name": "Doug Mitchell and Rainer Borriss",
-        "institution": "University of Illinois at Urbana-Champaign, Humboldt University Berlin",
-        "email": "douglasm@illinois.edu, rainer.borriss@rz.hu-berlin.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000569",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:20971906",
-            "pubmed:21950656",
-            "pubmed:21568297",
-            "pubmed:23823732",
-            "pubmed:23878226",
-            "pubmed:24085393"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial"
+                ],
+                "chem_synonyms": [
+                    "pzn",
+                    "plantazolicin a"
+                ],
+                "compound": "plantazolicin",
+                "database_id": "chemspider:28419936"
+            }
         ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CBJ61631",
+                    "name": "pznK"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CBJ61632",
+                    "name": "pznG"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CBJ61633",
+                    "name": "pznH"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CBJ61635",
+                    "name": "pznA",
+                    "product": "RiPP precursor peptide"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Other enzymatic",
+                            "evidence": [
+                                "Knock-out",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CBJ61637",
+                    "name": "pznC",
+                    "product": "cyclodehydratase partner"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CBJ61638",
+                    "name": "pznD",
+                    "product": "cyclodehydratase",
+                    "tailoring": [
+                        "Heterocyclization"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CBJ61639",
+                    "name": "pznB",
+                    "product": "FMN-dependent dehydrogenase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CBJ61640",
+                    "name": "pznE",
+                    "product": "protease"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CBJ61641",
+                    "name": "pznL",
+                    "product": "SAM-dependent methyltransferase",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                }
+            ],
+            "extra_genes": [],
+            "operons": [
+                {
+                    "evidence": [
+                        "Unknown"
+                    ],
+                    "genes": [
+                        "cbj61630",
+                        "cbj61631",
+                        "cbj61632",
+                        "cbj61633",
+                        "cbj61634"
+                    ]
+                },
+                {
+                    "evidence": [
+                        "Unknown"
+                    ],
+                    "genes": [
+                        "cbj61635"
+                    ]
+                },
+                {
+                    "evidence": [
+                        "Unknown"
+                    ],
+                    "genes": [
+                        "cbj61636",
+                        "cbj61637",
+                        "cbj61638",
+                        "cbj61639",
+                        "cbj61640",
+                        "cbj61641"
+                    ]
+                }
+            ]
+        },
         "loci": {
             "accession": "FN668567.1",
             "completeness": "complete",
@@ -34,203 +201,36 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "plantazolicin",
-                "chem_synonyms": [
-                    "pzn",
-                    "plantazolicin a"
-                ],
-                "database_id": "chemspider:28419936",
-                "chem_acts": [
-                    "Antibacterial"
-                ]
-            }
+        "mibig_accession": "BGC0000569",
+        "publications": [
+            "pubmed:20971906",
+            "pubmed:21950656",
+            "pubmed:21568297",
+            "pubmed:23823732",
+            "pubmed:23878226",
+            "pubmed:24085393"
         ],
-        "genes": {
-            "extra_genes": [],
-            "annotations": [
-                {
-                    "name": "pznK",
-                    "id": "CBJ61631",
-                    "functions": [
-                        {
-                            "category": "Regulation",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "pznG",
-                    "id": "CBJ61632",
-                    "functions": [
-                        {
-                            "category": "Transport",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "pznH",
-                    "id": "CBJ61633",
-                    "functions": [
-                        {
-                            "category": "Transport",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "pznA",
-                    "id": "CBJ61635",
-                    "functions": [
-                        {
-                            "category": "Precursor biosynthesis",
-                            "evidence": [
-                                "Knock-out",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "RiPP precursor peptide"
-                },
-                {
-                    "name": "pznC",
-                    "id": "CBJ61637",
-                    "functions": [
-                        {
-                            "category": "Other enzymatic",
-                            "evidence": [
-                                "Knock-out",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "cyclodehydratase partner"
-                },
-                {
-                    "name": "pznD",
-                    "id": "CBJ61638",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "cyclodehydratase",
-                    "tailoring": [
-                        "Heterocyclization"
-                    ]
-                },
-                {
-                    "name": "pznB",
-                    "id": "CBJ61639",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Knock-out",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "FMN-dependent dehydrogenase",
-                    "tailoring": [
-                        "Oxidation"
-                    ]
-                },
-                {
-                    "name": "pznE",
-                    "id": "CBJ61640",
-                    "functions": [
-                        {
-                            "category": "Activation / processing",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "protease"
-                },
-                {
-                    "name": "pznL",
-                    "id": "CBJ61641",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Knock-out",
-                                "Activity assay",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "product": "SAM-dependent methyltransferase",
-                    "tailoring": [
-                        "Methylation"
-                    ]
-                }
-            ],
-            "operons": [
-                {
-                    "genes": [
-                        "cbj61630",
-                        "cbj61631",
-                        "cbj61632",
-                        "cbj61633",
-                        "cbj61634"
-                    ],
-                    "evidence": [
-                        "Unknown"
-                    ]
-                },
-                {
-                    "genes": [
-                        "cbj61635"
-                    ],
-                    "evidence": [
-                        "Unknown"
-                    ]
-                },
-                {
-                    "genes": [
-                        "cbj61636",
-                        "cbj61637",
-                        "cbj61638",
-                        "cbj61639",
-                        "cbj61640",
-                        "cbj61641"
-                    ],
-                    "evidence": [
-                        "Unknown"
-                    ]
-                }
-            ]
-        },
         "ripp": {
-            "subclass": "LAP",
             "cyclic": false,
+            "peptidases": [
+                "cbj61640"
+            ],
             "precursor_genes": [
                 {
-                    "gene_id": "cbj61635",
                     "core_sequence": [
                         "RCTCTTIISSSSTF"
                     ],
-                    "leader_sequence": 27,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "cbj61635",
+                    "leader_sequence": 27
                 }
             ],
-            "peptidases": [
-                "cbj61640"
-            ]
+            "subclass": "LAP"
         }
+    },
+    "submitter": {
+        "email": "douglasm@illinois.edu, rainer.borriss@rz.hu-berlin.de",
+        "institution": "University of Illinois at Urbana-Champaign, Humboldt University Berlin",
+        "name": "Doug Mitchell and Rainer Borriss"
     }
 }

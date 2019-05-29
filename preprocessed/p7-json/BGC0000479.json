@@ -1,23 +1,37 @@
 {
-    "submitter": {
-        "name": "Mohamed Donia",
-        "institution": "Princeton University",
-        "email": "donia@princeton.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000479",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:21513887"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_synonyms": [],
+                "compound": "prenylagaramide B",
+                "database_id": "pubchem:10629643"
+            },
+            {
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_struct": "O=C([C@H]([C@H](CC)C)NC(CNC([C@@H](NC([C@H](CC1=CC=C(OC/C=C(C)/C)C=C1)NC([C@H](C)NC([C@@H](NC([C@@H]2CCCN23)=O)CCC(N)=O)=O)=O)=O)CC(C)C)=O)=O)N4[C@H](C(N[C@@H](CC(C)C)C3=O)=O)CCC4",
+                "chem_synonyms": [],
+                "compound": "prenylagaramide C",
+                "database_id": "",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1021.60972,
+                "molecular_formula": "C52H80N10O11"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "HQ655154.1",
             "completeness": "complete",
@@ -25,51 +39,37 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "prenylagaramide B",
-                "chem_synonyms": [],
-                "database_id": "pubchem:10629643",
-                "chem_acts": [
-                    "Unknown"
-                ]
-            },
-            {
-                "compound": "prenylagaramide C",
-                "chem_synonyms": [],
-                "chem_struct": "O=C([C@H]([C@H](CC)C)NC(CNC([C@@H](NC([C@H](CC1=CC=C(OC/C=C(C)/C)C=C1)NC([C@H](C)NC([C@@H](NC([C@@H]2CCCN23)=O)CCC(N)=O)=O)=O)=O)CC(C)C)=O)=O)N4[C@H](C(N[C@@H](CC(C)C)C3=O)=O)CCC4",
-                "molecular_formula": "C52H80N10O11",
-                "mol_mass": 1021.60972,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Unknown"
-                ]
-            }
+        "mibig_accession": "BGC0000479",
+        "publications": [
+            "pubmed:21513887"
         ],
-        "genes": {},
         "ripp": {
-            "subclass": "Lanthipeptide",
             "cyclic": true,
+            "peptidases": [],
             "precursor_genes": [
                 {
-                    "gene_id": "aed99431.1",
                     "core_sequence": [
                         "QAYLGIPLP"
                     ],
-                    "leader_sequence": 34,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "aed99431.1",
+                    "leader_sequence": 34
                 },
                 {
-                    "gene_id": "aed99432.1",
                     "core_sequence": [
                         "INPYLYP"
                     ],
-                    "leader_sequence": 34,
-                    "follower_sequence": -1
+                    "follower_sequence": -1,
+                    "gene_id": "aed99432.1",
+                    "leader_sequence": 34
                 }
             ],
-            "peptidases": []
+            "subclass": "Lanthipeptide"
         }
+    },
+    "submitter": {
+        "email": "donia@princeton.edu",
+        "institution": "Princeton University",
+        "name": "Mohamed Donia"
     }
 }

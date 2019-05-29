@@ -1,50 +1,30 @@
 {
-    "submitter": {
-        "name": "David Fewer",
-        "institution": "University of Helsinki",
-        "email": "david.fewer@helsinki.fi"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000471",
         "biosyn_class": [
             "RiPP"
         ],
-        "publications": [
-            "pubmed:23911585"
-        ],
-        "loci": {
-            "accession": "CP003614.1",
-            "start_coord": 4308240,
-            "end_coord": 4321209,
-            "completeness": "complete",
-            "evidence": [
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "viridisamide A",
-                "chem_synonyms": [],
-                "mol_mass": -1,
-                "chem_moieties": [],
-                "database_id": "",
-                "mass_spec_ion_type": "None",
                 "chem_acts": [
                     "Unknown"
-                ]
+                ],
+                "chem_moieties": [],
+                "chem_synonyms": [],
+                "compound": "viridisamide A",
+                "database_id": "",
+                "mass_spec_ion_type": "None",
+                "mol_mass": -1
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "VirA",
-                    "id": "AFZ08002.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -53,11 +33,24 @@
                             ]
                         }
                     ],
+                    "id": "AFZ08002.1",
+                    "name": "VirA",
                     "product": "N-terminal protease"
                 },
                 {
-                    "name": "VirB",
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "AFZ08003.1",
+                    "name": "VirB",
+                    "product": "hypothetical protein"
+                },
+                {
                     "functions": [
                         {
                             "category": "Unknown",
@@ -66,24 +59,11 @@
                             ]
                         }
                     ],
-                    "product": "hypothetical protein"
-                },
-                {
-                    "name": "VirC",
                     "id": "AFZ08004.1",
-                    "functions": [
-                        {
-                            "category": "Unknown",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
+                    "name": "VirC",
                     "product": "hypothetical protein"
                 },
                 {
-                    "name": "VirD",
-                    "id": "AFZ08005.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -92,14 +72,14 @@
                             ]
                         }
                     ],
+                    "id": "AFZ08005.1",
+                    "name": "VirD",
                     "product": "Heterocyclase",
                     "tailoring": [
                         "Heterocyclization"
                     ]
                 },
                 {
-                    "name": "VirE",
-                    "id": "AFZ08006.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -108,11 +88,11 @@
                             ]
                         }
                     ],
+                    "id": "AFZ08006.1",
+                    "name": "VirE",
                     "product": "Precursor peptide"
                 },
                 {
-                    "name": "VirF1",
-                    "id": "AFZ08007.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -121,14 +101,14 @@
                             ]
                         }
                     ],
+                    "id": "AFZ08007.1",
+                    "name": "VirF1",
                     "product": "Methyltransferase-putative prenyl transferase",
                     "tailoring": [
                         "Prenylation"
                     ]
                 },
                 {
-                    "name": "VirF2",
-                    "id": "AFZ08008.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -137,14 +117,14 @@
                             ]
                         }
                     ],
+                    "id": "AFZ08008.1",
+                    "name": "VirF2",
                     "product": "Prenyl transferase",
                     "tailoring": [
                         "Prenylation"
                     ]
                 },
                 {
-                    "name": "VirG",
-                    "id": "AFZ08009.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -153,15 +133,35 @@
                             ]
                         }
                     ],
+                    "id": "AFZ08009.1",
+                    "name": "VirG",
                     "product": "C-terminal protease"
                 }
             ]
         },
-        "ripp": {
-            "subclass": "Cyanobactin",
-            "cyclic": true,
-            "peptidases": []
+        "loci": {
+            "accession": "CP003614.1",
+            "completeness": "complete",
+            "end_coord": 4321209,
+            "evidence": [
+                "Sequence-based prediction"
+            ],
+            "start_coord": 4308240
         },
-        "minimal": true
+        "mibig_accession": "BGC0000471",
+        "minimal": true,
+        "publications": [
+            "pubmed:23911585"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "peptidases": [],
+            "subclass": "Cyanobactin"
+        }
+    },
+    "submitter": {
+        "email": "david.fewer@helsinki.fi",
+        "institution": "University of Helsinki",
+        "name": "David Fewer"
     }
 }

@@ -1,66 +1,55 @@
 {
-    "submitter": {
-        "name": "Helge Bode",
-        "institution": "Goethe Universit\u00c3\u00a4t Frankfurt",
-        "email": "h.bode@bio.uni-frankfurt.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001180",
         "biosyn_class": [
             "Other"
         ],
-        "publications": [
-            "pubmed:25346446",
-            "pubmed:18236486"
-        ],
-        "loci": {
-            "accession": "BX470251.1",
-            "start_coord": 2244049,
-            "end_coord": 2249545,
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ]
-        },
         "compounds": [
             {
-                "compound": "isopropylstilbene",
-                "chem_synonyms": [],
-                "database_id": "pubchem:6439522",
                 "chem_acts": [
                     "Antibacterial",
                     "Signalling",
                     "insecticidal"
-                ]
+                ],
+                "chem_synonyms": [],
+                "compound": "isopropylstilbene",
+                "database_id": "pubchem:6439522"
             },
             {
-                "compound": "2,5-dialkylresorcinols",
+                "chem_acts": [
+                    "Unknown"
+                ],
+                "chem_struct": "CC(C)CCCC1=CC(O)=C(C(C)C)C(O)=C1",
                 "chem_synonyms": [
                     "dar"
                 ],
-                "chem_struct": "CC(C)CCCC1=CC(O)=C(C(C)C)C(O)=C1",
-                "molecular_formula": "C15H24O2",
-                "mol_mass": 236.18,
+                "compound": "2,5-dialkylresorcinols",
                 "database_id": "",
                 "mass_spec_ion_type": "None",
-                "chem_acts": [
-                    "Unknown"
-                ]
+                "mol_mass": 236.18,
+                "molecular_formula": "C15H24O2"
             }
         ],
         "genes": {
-            "extra_genes": [],
             "annotations": [
                 {
-                    "name": "bkdA",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
                     "id": "plu1883",
+                    "name": "bkdA"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -68,11 +57,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "bkdB",
+                    ],
                     "id": "plu1884",
+                    "name": "bkdB"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -80,11 +69,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "bkdC",
+                    ],
                     "id": "plu1885",
+                    "name": "bkdC"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -92,23 +81,23 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "stlA",
+                    ],
                     "id": "plu2234",
+                    "name": "stlA"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
                             "evidence": [
-                                "Knock-out"
+                                "Unknown"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "stlC",
+                    ],
                     "id": "plu2163",
+                    "name": "stlC"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -116,23 +105,11 @@
                                 "Unknown"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "stlD",
+                    ],
                     "id": "plu2164",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Unknown"
-                            ]
-                        }
-                    ]
+                    "name": "stlD"
                 },
                 {
-                    "name": "stlE",
-                    "id": "plu2165",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -140,12 +117,35 @@
                                 "Unknown"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "plu2165",
+                    "name": "stlE"
                 }
-            ]
+            ],
+            "extra_genes": []
         },
+        "loci": {
+            "accession": "BX470251.1",
+            "completeness": "complete",
+            "end_coord": 2249545,
+            "evidence": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 2244049
+        },
+        "mibig_accession": "BGC0001180",
         "other": {
             "subclass": "Unknown"
-        }
+        },
+        "publications": [
+            "pubmed:25346446",
+            "pubmed:18236486"
+        ]
+    },
+    "submitter": {
+        "email": "h.bode@bio.uni-frankfurt.de",
+        "institution": "Goethe Universit\u00c3\u00a4t Frankfurt",
+        "name": "Helge Bode"
     }
 }
