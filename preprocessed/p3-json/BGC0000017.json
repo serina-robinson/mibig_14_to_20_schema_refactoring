@@ -1,17 +1,125 @@
 {
+    "version": "14",
+    "personal": {
+        "submitter_name": "Olivier Ploux",
+        "submitter_institution": "University Paris Diderot",
+        "submitter_email": "olivier.ploux@chimie-paristech.fr"
+    },
     "general_params": {
-        "Alkaloid": {
-            "alkaloid_subclass": "Other"
+        "mibig_accession": "BGC0000017",
+        "biosyn_class": [
+            "Polyketide",
+            "Alkaloid"
+        ],
+        "publications": [
+            "25108149",
+            "24311576",
+            "21786780",
+            "20675499",
+            "19954230",
+            "19489636",
+            "19447947",
+            "21873484",
+            "23277585"
+        ],
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
+                {
+                    "Accession": "FJ477836",
+                    "start_coord": -1,
+                    "end_coord": -1,
+                    "conn_comp_cluster": [
+                        "Enzymatic assays",
+                        "Sequence-based prediction"
+                    ]
+                }
+            ]
+        },
+        "compounds": [
+            {
+                "compound": "Anatoxin-a",
+                "chem_synonyms": [],
+                "database_deposited": true,
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "pubchem_id": 3034748,
+                "chem_act": [
+                    "Other"
+                ],
+                "other_chem_act": "Neurotoxic",
+                "chem_target": [
+                    "Nicotinic acetylcholine receptor"
+                ]
+            },
+            {
+                "compound": "Homoanatoxin-a",
+                "chem_synonyms": [],
+                "database_deposited": true,
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "pubchem_id": 126727,
+                "chem_act": [
+                    "Other"
+                ],
+                "other_chem_act": "Neurotoxic",
+                "chem_target": [
+                    "Nicotinic acetylcholine receptor"
+                ]
+            }
+        ],
+        "genes": {
+            "gene": [
+                {
+                    "gene_name": "anaB",
+                    "gene_id": "ACR33074.1",
+                    "gene_annotation": "Prolyl-ACP oxidase",
+                    "gene_function": "Other enzymatic",
+                    "evidence_genefunction": [
+                        "Heterologous expression",
+                        "Activity assay",
+                        "Sequence-based prediction",
+                        "Other"
+                    ]
+                },
+                {
+                    "gene_name": "anaC",
+                    "gene_id": "ACR33075.1",
+                    "gene_annotation": "Proline adenylation protein",
+                    "gene_function": "Precursor biosynthesis",
+                    "evidence_genefunction": [
+                        "Heterologous expression",
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ]
+                },
+                {
+                    "gene_name": "anaD",
+                    "gene_id": "ACR33076.1",
+                    "gene_annotation": "Acyl carrier protein",
+                    "gene_function": "Precursor biosynthesis",
+                    "evidence_genefunction": [
+                        "Heterologous expression",
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ]
+                }
+            ]
         },
         "Polyketide": {
+            "pk_subclass": "Other",
             "lin_cycl_pk": "Cyclic",
+            "pks_subclass": [
+                "Modular type I"
+            ],
+            "starter_unit": "Other",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "anaE",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Unknown",
-                            "kr_stereochem": "Unknown",
                             "module_nr": "1",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -21,6 +129,8 @@
                                 "Enoylreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "at_substr_spec": "Unknown",
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -32,8 +142,6 @@
                     "mod_pks_gene": "anaF",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Unknown",
-                            "kr_stereochem": "Unknown",
                             "module_nr": "2",
                             "pks_domains": [
                                 "Ketosynthase",
@@ -42,6 +150,8 @@
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
                             ],
+                            "at_substr_spec": "Unknown",
+                            "kr_stereochem": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -53,12 +163,12 @@
                     "mod_pks_gene": "anaG",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Unknown",
                             "module_nr": "3",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase"
                             ],
+                            "at_substr_spec": "Unknown",
                             "pks_mod_doms": [
                                 "None"
                             ],
@@ -67,124 +177,14 @@
                     ]
                 }
             ],
-            "pk_subclass": "Other",
-            "pks_release_type": "Unknown",
-            "pks_subclass": [
-                "Modular type I"
-            ],
             "pks_te_type": "Type II",
             "pks_thioesterase": [
                 "anaA"
             ],
-            "starter_unit": "Other"
+            "pks_release_type": "Unknown"
         },
-        "biosyn_class": [
-            "Polyketide",
-            "Alkaloid"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Other"
-                ],
-                "chem_synonyms": [],
-                "chem_target": [
-                    "Nicotinicacetylcholinereceptor"
-                ],
-                "compound": "Anatoxin-a",
-                "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
-                "other_chem_act": "Neurotoxic",
-                "pubchem_id": 3034748
-            },
-            {
-                "chem_act": [
-                    "Other"
-                ],
-                "chem_synonyms": [],
-                "chem_target": [
-                    "Nicotinicacetylcholinereceptor"
-                ],
-                "compound": "Homoanatoxin-a",
-                "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
-                "other_chem_act": "Neurotoxic",
-                "pubchem_id": 126727
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Heterologous expression",
-                        "Activity assay",
-                        "Sequence-based prediction",
-                        "Other"
-                    ],
-                    "gene_annotation": "Prolyl-ACP oxidase",
-                    "gene_function": "Other enzymatic",
-                    "gene_id": "ACR33074.1",
-                    "gene_name": "anaB"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Heterologous expression",
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Proline adenylation protein",
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ACR33075.1",
-                    "gene_name": "anaC"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Heterologous expression",
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Acyl carrier protein",
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ACR33076.1",
-                    "gene_name": "anaD"
-                }
-            ]
-        },
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "FJ477836",
-                    "conn_comp_cluster": [
-                        "Enzymatic assays",
-                        "Sequence-based prediction"
-                    ],
-                    "end_coord": -1,
-                    "start_coord": -1
-                }
-            ]
-        },
-        "mibig_accession": "BGC0000017",
-        "publications": [
-            "25108149",
-            "24311576",
-            "21786780",
-            "20675499",
-            "19954230",
-            "19489636",
-            "19447947",
-            "21873484",
-            "23277585"
-        ]
-    },
-    "personal": {
-        "submitter_email": "olivier.ploux@chimie-paristech.fr",
-        "submitter_institution": "University Paris Diderot",
-        "submitter_name": "Olivier Ploux"
-    },
-    "version": "14"
+        "Alkaloid": {
+            "alkaloid_subclass": "Other"
+        }
+    }
 }

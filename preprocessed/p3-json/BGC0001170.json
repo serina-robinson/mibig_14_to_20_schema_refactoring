@@ -1,132 +1,140 @@
 {
+    "version": "17",
+    "personal": {
+        "submitter_name": "Professor Douglas Mitchell",
+        "submitter_institution": "University of Illinois at Urbana-Champaign",
+        "submitter_email": "douglasm@illinois.edu"
+    },
     "general_params": {
-        "RiPP": {
-            "lin_cycl_ripp": "Linear",
-            "precursor_loci": [
-                {
-                    "core_pept_aa": [
-                        "SCCCCSCCCCVSVSVGGGSASTGGGAAAGQGGN"
-                    ],
-                    "foll_pept_len": -1,
-                    "gene_id": [
-                        "clospo_01168"
-                    ],
-                    "lead_pept_len": 24,
-                    "peptidase": [
-                        "clospo_01172"
-                    ]
-                }
-            ],
-            "ripp_subclass": "LAP"
-        },
+        "mibig_accession": "BGC0001170",
         "biosyn_class": [
             "RiPP"
         ],
+        "publications": [
+            "18375757",
+            "19286651",
+            "20581111",
+            "21822292"
+        ],
+        "loci": {
+            "complete": "complete",
+            "nucl_acc": [
+                {
+                    "Accession": "NZ_DS981518.1",
+                    "start_coord": 691338,
+                    "end_coord": 699823,
+                    "conn_comp_cluster": [
+                        "Knock-out studies",
+                        "Enzymatic assays",
+                        "Sequence-based prediction"
+                    ]
+                }
+            ]
+        },
         "compounds": [
             {
+                "compound": "Clostridiolysin S",
+                "chem_synonyms": [],
+                "mol_mass": -1,
+                "mass_ion_type": "None",
                 "chem_act": [
                     "Cytotoxic"
-                ],
-                "chem_synonyms": [],
-                "compound": "Clostridiolysin S",
-                "mass_ion_type": "None",
-                "mol_mass": -1
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_name": "closA",
+                    "gene_id": "CLOSPO_01168",
+                    "gene_annotation": "RiPP precursor peptide",
+                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Heterologous expression",
                         "Activity assay",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "RiPP precursor peptide",
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "CLOSPO_01168",
-                    "gene_name": "closA",
                     "mut_pheno": "Loss of hemolytic activity."
                 },
                 {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
+                    "gene_name": "closB",
+                    "gene_id": "CLOSPO_01169",
                     "gene_annotation": "Dehydrogenase",
                     "gene_function": "Tailoring",
-                    "gene_id": "CLOSPO_01169",
-                    "gene_name": "closB",
-                    "tailoring": "Oxidation"
+                    "tailoring": "Oxidation",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ]
                 },
                 {
-                    "evidence_genefunction": [
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
+                    "gene_name": "closC",
+                    "gene_id": "CLOSPO_01170",
                     "gene_annotation": "Cyclodehydratase partner",
                     "gene_function": "Tailoring",
-                    "gene_id": "CLOSPO_01170",
-                    "gene_name": "closC",
-                    "mut_pheno": "Loss of hemolytic activity.",
-                    "tailoring": "Heterocyclization"
-                },
-                {
+                    "tailoring": "Heterocyclization",
                     "evidence_genefunction": [
                         "Activity assay",
                         "Sequence-based prediction"
                     ],
+                    "mut_pheno": "Loss of hemolytic activity."
+                },
+                {
+                    "gene_name": "closD",
+                    "gene_id": "CLOSPO_01171",
                     "gene_annotation": "Cyclodehydratase",
                     "gene_function": "Tailoring",
-                    "gene_id": "CLOSPO_01171",
-                    "gene_name": "closD",
-                    "tailoring": "Heterocyclization"
+                    "tailoring": "Heterocyclization",
+                    "evidence_genefunction": [
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ]
                 },
                 {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
+                    "gene_name": "closE",
+                    "gene_id": "CLOSPO_01172",
                     "gene_annotation": "Putative protease",
                     "gene_function": "Activation / processing",
-                    "gene_id": "CLOSPO_01172",
-                    "gene_name": "closE"
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ]
                 },
                 {
-                    "gene_annotation": "Conserved unknown",
-                    "gene_function": "Unknown",
+                    "gene_name": "closF",
                     "gene_id": "CLOSPO_01173",
-                    "gene_name": "closF"
+                    "gene_annotation": "Conserved unknown",
+                    "gene_function": "Unknown"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "ABC transporter ",
-                    "gene_function": "Transport",
+                    "gene_name": "closG",
                     "gene_id": "CLOSPO_01174",
-                    "gene_name": "closG"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
                     "gene_annotation": "ABC transporter ",
                     "gene_function": "Transport",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ]
+                },
+                {
+                    "gene_name": "closH",
                     "gene_id": "CLOSPO_01175",
-                    "gene_name": "closH"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
                     "gene_annotation": "ABC transporter ",
                     "gene_function": "Transport",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ]
+                },
+                {
+                    "gene_name": "closI",
                     "gene_id": "CLOSPO_01176",
-                    "gene_name": "closI"
+                    "gene_annotation": "ABC transporter ",
+                    "gene_function": "Transport",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ]
                 }
             ],
             "operon": [
                 {
-                    "evidence_operon": "Sequence-based prediction",
                     "operon_genes": [
                         "clospo_01168",
                         "clospo_01169",
@@ -137,37 +145,29 @@
                         "clospo_01174",
                         "clospo_01175",
                         "clospo_01176"
+                    ],
+                    "evidence_operon": "Sequence-based prediction"
+                }
+            ]
+        },
+        "RiPP": {
+            "ripp_subclass": "LAP",
+            "lin_cycl_ripp": "Linear",
+            "precursor_loci": [
+                {
+                    "gene_id": [
+                        "clospo_01168"
+                    ],
+                    "core_pept_aa": [
+                        "SCCCCSCCCCVSVSVGGGSASTGGGAAAGQGGN"
+                    ],
+                    "lead_pept_len": 24,
+                    "foll_pept_len": -1,
+                    "peptidase": [
+                        "clospo_01172"
                     ]
                 }
             ]
-        },
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "NZ_DS981518.1",
-                    "conn_comp_cluster": [
-                        "Knock-out studies",
-                        "Enzymatic assays",
-                        "Sequence-based prediction"
-                    ],
-                    "end_coord": 699823,
-                    "start_coord": 691338
-                }
-            ]
-        },
-        "mibig_accession": "BGC0001170",
-        "publications": [
-            "18375757",
-            "19286651",
-            "20581111",
-            "21822292"
-        ]
-    },
-    "personal": {
-        "submitter_email": "douglasm@illinois.edu",
-        "submitter_institution": "University of Illinois at Urbana-Champaign",
-        "submitter_name": "Professor Douglas Mitchell"
-    },
-    "version": "17"
+        }
+    }
 }
