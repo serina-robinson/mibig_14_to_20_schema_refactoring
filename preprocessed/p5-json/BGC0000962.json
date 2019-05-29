@@ -1,171 +1,171 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "fenganyu@umich.edu",
+        "submitter_name": "Fengan Yu",
+        "submitter_institution": "University of Michigan"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Sequence-based prediction"
+            ],
+            "accession": "AF516145.1"
+        },
         "compounds": [
             {
+                "mol_mass": 460.0546,
+                "chem_struct": "CC(C/C(=C\\\\C(=O)N(C)C(CC1=CC=CC=C1)C2=NC=CS2)/OC)C(Cl)(Cl)Cl",
+                "mass_ion_type": "[M+H]+",
+                "compound": "barbamide",
+                "molecular_formula": "C20H23Cl3N2O2S",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Cytotoxic"
-                ],
-                "chem_struct": "CC(C/C(=C\\\\C(=O)N(C)C(CC1=CC=CC=C1)C2=NC=CS2)/OC)C(Cl)(Cl)Cl",
-                "chem_synonyms": [],
-                "compound": "barbamide",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 460.0546,
-                "molecular_formula": "C20H23Cl3N2O2S"
+                ]
             }
         ],
         "genes": {
             "operon": []
         },
-        "loci": {
-            "accession": "AF516145.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Sequence-based prediction"
-            ]
-        },
         "mibig_accession": "BGC0000962",
-        "nrp": {
-            "lin_cycl_nrp": "Linear",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "AAN32974.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "epimerized": false
-                            },
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "AAN32977.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Activity assay",
-                                "prot_adom_spec": "Leucine"
-                            },
-                            "module_nr": "0",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "AAN32978.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Activity assay",
-                                "nonprot_adom_spec": "(4S)-5,5,5-trichloroleucine"
-                            },
-                            "module_nr": "1",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "AAN32979.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "epimerized": false
-                            },
-                            "module_nr": "2",
-                            "nrps_mod_doms": "Methylation",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "AAN32980.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Phenylalanine"
-                            },
-                            "cdom_subtype": "LCL",
-                            "module_nr": "3",
-                            "nrps_mod_doms": "Methylation",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Activity assay",
-                                "prot_adom_spec": "Cysteine"
-                            },
-                            "cdom_subtype": "LCL",
-                            "module_nr": "4",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "subclass": "Unknown"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:12383521"
+        ],
         "polyketide": {
-            "lin_cycl_pk": "Linear",
+            "pks_te_type": "None",
+            "pks_subclass": [
+                "Modular type I"
+            ],
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AAN32978.1",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "module_nr": "2",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase"
                             ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "2",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
             ],
+            "starter_unit": "Malonyl-CoA",
             "pk_subclass": "Other",
-            "pks_release_type": "Unknown",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "pks_te_type": "None",
-            "starter_unit": "Malonyl-CoA"
+            "lin_cycl_pk": "Linear",
+            "pks_release_type": "Unknown"
         },
-        "publications": [
-            "pubmed:12383521"
-        ]
+        "nrp": {
+            "nrps_release_type": "Unknown",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false
+                            }
+                        }
+                    ],
+                    "nrps_gene": "AAN32974.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "0",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Leucine",
+                                "evidence_a_spec": "Activity assay",
+                                "aa_type": "Proteinogenic"
+                            }
+                        }
+                    ],
+                    "nrps_gene": "AAN32977.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence_a_spec": "Activity assay",
+                                "nonprot_adom_spec": "(4S)-5,5,5-trichloroleucine",
+                                "aa_type": "Nonproteinogenic"
+                            }
+                        }
+                    ],
+                    "nrps_gene": "AAN32978.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "2",
+                            "nrps_mod_doms": "Methylation",
+                            "a_substr_spec": {
+                                "epimerized": false
+                            }
+                        }
+                    ],
+                    "nrps_gene": "AAN32979.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "3",
+                            "nrps_mod_doms": "Methylation",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Phenylalanine",
+                                "evidence_a_spec": "Structure-based inference",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "LCL"
+                        },
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "4",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Cysteine",
+                                "evidence_a_spec": "Activity assay",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "LCL"
+                        }
+                    ],
+                    "nrps_gene": "AAN32980.1"
+                }
+            ],
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Linear",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": []
+        }
     },
-    "personal": {
-        "submitter_email": "fenganyu@umich.edu",
-        "submitter_institution": "University of Michigan",
-        "submitter_name": "Fengan Yu"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

@@ -1,28 +1,66 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "douglasm@illinois.edu, rainer.borriss@rz.hu-berlin.de",
+        "submitter_name": "Doug Mitchell and Rainer Borriss",
+        "submitter_institution": "University of Illinois at Urbana-Champaign, Humboldt University Berlin"
+    },
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ],
+            "accession": "FN668567.1"
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Antibacterial"
-                ],
+                "chemspider_id": 28419936,
+                "chem_struct": "",
                 "chem_synonyms": [
                     "pzn",
                     "plantazolicin a"
                 ],
-                "chemspider_id": 28419936,
-                "compound": "plantazolicin"
+                "compound": "plantazolicin",
+                "molecular_formula": "",
+                "chem_act": [
+                    "Antibacterial"
+                ]
             }
         ],
         "genes": {
+            "operon": [
+                {
+                    "operon_genes": [
+                        "cbj61630",
+                        "cbj61631",
+                        "cbj61632",
+                        "cbj61633",
+                        "cbj61634"
+                    ],
+                    "evidence_operon": "Unknown"
+                },
+                {
+                    "operon_genes": [
+                        "cbj61635"
+                    ],
+                    "evidence_operon": "Unknown"
+                },
+                {
+                    "operon_genes": [
+                        "cbj61636",
+                        "cbj61637",
+                        "cbj61638",
+                        "cbj61639",
+                        "cbj61640",
+                        "cbj61641"
+                    ],
+                    "evidence_operon": "Unknown"
+                }
+            ],
             "gene": [
                 {
                     "gene_annotation": "Unknown",
@@ -31,152 +69,115 @@
                     "gene_name": "pznF"
                 },
                 {
+                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Regulation",
                     "gene_id": "CBJ61631",
                     "gene_name": "pznK"
                 },
                 {
+                    "gene_function": "Transport",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Transport",
                     "gene_id": "CBJ61632",
                     "gene_name": "pznG"
                 },
                 {
+                    "gene_function": "Transport",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Transport",
                     "gene_id": "CBJ61633",
                     "gene_name": "pznH"
                 },
                 {
+                    "mut_pheno": "no change",
                     "gene_annotation": "Unknown",
                     "gene_function": "Unknown",
                     "gene_id": "CBJ61634",
-                    "gene_name": "pznI",
-                    "mut_pheno": "no change"
+                    "gene_name": "pznI"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "loss of plantazolicin production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "RiPP precursor peptide",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "CBJ61635",
-                    "gene_name": "pznA",
-                    "mut_pheno": "loss of plantazolicin production"
+                    "gene_annotation": "RiPP precursor peptide",
+                    "gene_name": "pznA"
                 },
                 {
+                    "mut_pheno": "loss of plantazolicin production",
                     "gene_annotation": "Unknown",
                     "gene_function": "Unknown",
                     "gene_id": "CBJ61636",
-                    "gene_name": "pznJ",
-                    "mut_pheno": "loss of plantazolicin production"
+                    "gene_name": "pznJ"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "cyclodehydratase partner",
                     "gene_function": "Other enzymatic",
-                    "gene_id": "CBJ61637",
-                    "gene_name": "pznC",
-                    "mut_pheno": "loss of plantazolicin production"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "cyclodehydratase",
-                    "gene_function": "Tailoring",
-                    "gene_id": "CBJ61638",
-                    "gene_name": "pznD",
-                    "tailoring": "Heterocyclization"
-                },
-                {
+                    "mut_pheno": "loss of plantazolicin production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "FMN-dependent dehydrogenase",
-                    "gene_function": "Tailoring",
-                    "gene_id": "CBJ61639",
-                    "gene_name": "pznB",
-                    "mut_pheno": "loss of plantazolicin production",
-                    "tailoring": "Oxidation"
+                    "gene_id": "CBJ61637",
+                    "gene_annotation": "cyclodehydratase partner",
+                    "gene_name": "pznC"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Heterocyclization",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
+                    "gene_id": "CBJ61638",
+                    "gene_annotation": "cyclodehydratase",
+                    "gene_name": "pznD"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Oxidation",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CBJ61639",
+                    "gene_annotation": "FMN-dependent dehydrogenase",
+                    "mut_pheno": "loss of plantazolicin production",
+                    "gene_name": "pznB"
+                },
+                {
                     "gene_annotation": "protease",
                     "gene_function": "Activation / processing",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_id": "CBJ61640",
                     "gene_name": "pznE"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Methylation",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Activity assay",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "SAM-dependent methyltransferase",
-                    "gene_function": "Tailoring",
                     "gene_id": "CBJ61641",
-                    "gene_name": "pznL",
+                    "gene_annotation": "SAM-dependent methyltransferase",
                     "mut_pheno": "production of desmethylplantazolicin",
-                    "tailoring": "Methylation"
+                    "gene_name": "pznL"
                 }
-            ],
-            "operon": [
-                {
-                    "evidence_operon": "Unknown",
-                    "operon_genes": [
-                        "cbj61630",
-                        "cbj61631",
-                        "cbj61632",
-                        "cbj61633",
-                        "cbj61634"
-                    ]
-                },
-                {
-                    "evidence_operon": "Unknown",
-                    "operon_genes": [
-                        "cbj61635"
-                    ]
-                },
-                {
-                    "evidence_operon": "Unknown",
-                    "operon_genes": [
-                        "cbj61636",
-                        "cbj61637",
-                        "cbj61638",
-                        "cbj61639",
-                        "cbj61640",
-                        "cbj61641"
-                    ]
-                }
-            ]
-        },
-        "loci": {
-            "accession": "FN668567.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
             ]
         },
         "mibig_accession": "BGC0000569",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:20971906",
             "pubmed:21950656",
@@ -186,28 +187,29 @@
             "pubmed:24085393"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Linear",
+            "ripp_subclass": "LAP",
             "precursor_loci": [
                 {
+                    "lead_pept_len": 27,
                     "core_pept_aa": [
                         "RCTCTTIISSSSTF"
                     ],
                     "foll_pept_len": -1,
-                    "gene_id": [
-                        "cbj61635"
-                    ],
-                    "lead_pept_len": 27,
                     "peptidase": [
                         "cbj61640"
+                    ],
+                    "gene_id": [
+                        "cbj61635"
                     ]
                 }
             ],
-            "ripp_subclass": "LAP"
+            "lin_cycl_ripp": "Linear"
         }
     },
-    "personal": {
-        "submitter_email": "douglasm@illinois.edu, rainer.borriss@rz.hu-berlin.de",
-        "submitter_institution": "University of Illinois at Urbana-Champaign, Humboldt University Berlin",
-        "submitter_name": "Doug Mitchell and Rainer Borriss"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

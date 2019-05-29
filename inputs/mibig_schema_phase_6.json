@@ -170,8 +170,25 @@
                         "title": "Chemical compound",
                         "properties": {
                             "database_id": {
-                                "type": "string",
-                                "title": "Database ID (ChEBI/ChEMBL/ChemSpider/PubChem)"
+                                "type": "array",
+                                "title": "Database Compound IDs (PubChem/ChEBI/ChEMBL/ChemSpider)",
+                                "items": {
+                                    "type": "string",
+                                    "oneOf": [
+                                        {
+                                            "pattern": "^pubchem:(\\d+)$"
+                                        },
+                                        {
+                                            "pattern": "^chebi:(\\d+)$"
+                                        },
+                                        {
+                                            "pattern": "^chembl:(\\d+)$"
+                                        },
+                                        {
+                                            "pattern": "^chemspider:(\\d+)$"
+                                        }
+                                    ]
+                                }
                             },
                             "evidence": {
                                 "title": "Technique(s) used to elucidate/verify the structure",

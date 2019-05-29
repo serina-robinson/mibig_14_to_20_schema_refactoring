@@ -1,19 +1,24 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "daniel.krug@helmholtz-hzi.de",
+        "submitter_name": "Daniel Krug",
+        "submitter_institution": "Helmholtz Institute for Pharmaceutical Research Saarland"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Heterologous expression"
+            ],
+            "accession": "FR831800.1"
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Antibacterial"
+                "chemspider_id": 4576669,
+                "chem_struct": "",
+                "chem_synonyms": [
+                    "matamycin"
                 ],
                 "chem_moieties": [
                     {
@@ -23,209 +28,206 @@
                         ]
                     }
                 ],
-                "chem_synonyms": [
-                    "matamycin"
-                ],
                 "chem_target": [
                     "ribosome"
                 ],
-                "chemspider_id": 4576669,
-                "compound": "Althiomycin"
+                "compound": "Althiomycin",
+                "molecular_formula": "",
+                "chem_act": [
+                    "Antibacterial"
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_function": "Scaffold biosynthesis",
+                    "mut_pheno": "loss of althiomycin production",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "non-ribosomal peptide synthetase",
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "CCA29202.1",
-                    "gene_name": "almA",
-                    "mut_pheno": "loss of althiomycin production"
+                    "gene_annotation": "non-ribosomal peptide synthetase",
+                    "gene_name": "almA"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "gene_annotation": "non-ribosomal peptide synthetase/polyketide synthase",
                     "gene_function": "Scaffold biosynthesis",
+                    "mut_pheno": "loss of althiomycin production",
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "CCA29203.1",
-                    "gene_name": "almB",
-                    "mut_pheno": "loss of althiomycin production"
+                    "gene_annotation": "non-ribosomal peptide synthetase/polyketide synthase",
+                    "gene_name": "almB"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Methylation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "SAM-dependent methyltransferase",
-                    "gene_function": "Tailoring",
                     "gene_id": "CCA29201.1",
-                    "gene_name": "almC",
+                    "gene_annotation": "SAM-dependent methyltransferase",
                     "mut_pheno": "loss of althiomycin production",
-                    "tailoring": "Methylation"
+                    "gene_name": "almC"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Oxidation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "N-oxygenase",
-                    "gene_function": "Tailoring",
                     "gene_id": "CCA29200.1",
-                    "gene_name": "almD",
+                    "gene_annotation": "N-oxygenase",
                     "mut_pheno": "loss of althiomycin production",
-                    "tailoring": "Oxidation"
+                    "gene_name": "almD"
                 },
                 {
+                    "gene_function": "Transport",
+                    "mut_pheno": "confers althiomycin resistance upon heterologous expression",
                     "evidence_genefunction": [
                         "Other in vivo study"
                     ],
-                    "gene_annotation": "drug resistance transporter",
-                    "gene_function": "Transport",
                     "gene_id": "CCA29199.1",
-                    "gene_name": "almE",
-                    "mut_pheno": "confers althiomycin resistance upon heterologous expression"
+                    "gene_annotation": "drug resistance transporter",
+                    "gene_name": "almE"
                 },
                 {
+                    "gene_function": "Activation / processing",
+                    "mut_pheno": "reduced althiomycin production",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "putative type-II thioesterase",
-                    "gene_function": "Activation / processing",
                     "gene_id": "CCA29204.1",
-                    "gene_name": "almF",
-                    "mut_pheno": "reduced althiomycin production"
+                    "gene_annotation": "putative type-II thioesterase",
+                    "gene_name": "almF"
                 }
-            ]
-        },
-        "loci": {
-            "accession": "FR831800.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Heterologous expression"
             ]
         },
         "mibig_accession": "BGC0000955",
-        "nrp": {
-            "lin_cycl_nrp": "Linear",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "CCA29202.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Glycine"
-                            },
-                            "cdom_subtype": "Starter",
-                            "module_nr": "0",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Cysteine"
-                            },
-                            "cdom_subtype": "Heterocyclization",
-                            "module_nr": "1",
-                            "nrps_mod_doms": "Oxidation",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "CCA29203.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": true,
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Serine"
-                            },
-                            "cdom_subtype": "LCL",
-                            "module_nr": "2",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": true,
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Cysteine"
-                            },
-                            "cdom_subtype": "Heterocyclization",
-                            "module_nr": "3",
-                            "nrps_mod_doms": "Oxidation",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Glycine"
-                            },
-                            "cdom_subtype": "DCL",
-                            "module_nr": "4",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [
-                "cca29203.1"
-            ],
-            "subclass": "Unknown"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:21626639",
+            "pubmed:4917791",
+            "pubmed:6809724"
+        ],
         "polyketide": {
-            "lin_cycl_pk": "Linear",
+            "pks_te_type": "None",
+            "pks_subclass": [
+                "Modular type I"
+            ],
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "CCA29203.1",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "module_nr": "5",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "5",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
             ],
+            "starter_unit": "Unknown",
             "pk_subclass": "Other",
-            "pks_release_type": "Unknown",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "pks_te_type": "None",
-            "starter_unit": "Unknown"
+            "lin_cycl_pk": "Linear",
+            "pks_release_type": "Unknown"
         },
-        "publications": [
-            "pubmed:21626639",
-            "pubmed:4917791",
-            "pubmed:6809724"
-        ]
+        "nrp": {
+            "nrps_release_type": "Unknown",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "0",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Glycine",
+                                "evidence_a_spec": "Structure-based inference",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Starter"
+                        },
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "Oxidation",
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Cysteine",
+                                "evidence_a_spec": "Structure-based inference",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Heterocyclization"
+                        }
+                    ],
+                    "nrps_gene": "CCA29202.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "2",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Serine",
+                                "epimerized": true,
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "LCL"
+                        },
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "3",
+                            "nrps_mod_doms": "Oxidation",
+                            "a_substr_spec": {
+                                "evidence_a_spec": "Structure-based inference",
+                                "prot_adom_spec": "Cysteine",
+                                "epimerized": true,
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Heterocyclization"
+                        },
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "4",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Glycine",
+                                "evidence_a_spec": "Structure-based inference",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "DCL"
+                        }
+                    ],
+                    "nrps_gene": "CCA29203.1"
+                }
+            ],
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Linear",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": [
+                "cca29203.1"
+            ]
+        }
     },
-    "personal": {
-        "submitter_email": "daniel.krug@helmholtz-hzi.de",
-        "submitter_institution": "Helmholtz Institute for Pharmaceutical Research Saarland",
-        "submitter_name": "Daniel Krug"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

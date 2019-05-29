@@ -1,73 +1,75 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "jasalas@uniovi.es",
+        "submitter_name": "Jose A. Salas",
+        "submitter_institution": "University of Oviedo"
+    },
     "comments": "Elloramycin is a hybrid compound comprising a tetracenomycin scaffold and a sugar moiety. A second genomic loci comprises the Rha cluster - accession number: AM889123, Responsible for saccharide biosynthesis. Biosynthesis is discussed in PubMed ID: 18310024.",
     "general_params": {
-        "biosyn_class": [
-            "Polyketide",
-            "Saccharide"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Cytotoxic"
-                ],
-                "chem_struct": "C[C@H]1[C@H]([C@@H]([C@H](O[C@@H]1OC2=CC3=CC4=C(C(=C3C(=C2C(=O)OC)C)O)C(=O)[C@@]5(C(=O)C=C([C@H]([C@@]5(C4=O)O)O)OC)OC)OC)OC)OC",
-                "chem_synonyms": [],
-                "chem_target": [
-                    "DNA"
-                ],
-                "compound": "elloramycin",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 663.64,
-                "molecular_formula": "C32H38O15"
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_function": "Tailoring",
-                    "gene_id": "CAP12606.1",
-                    "gene_name": "elmMI",
-                    "tailoring": "Methylation"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_function": "Tailoring",
-                    "gene_id": "CAP12609.1",
-                    "gene_name": "elmMIII",
-                    "tailoring": "Methylation"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_function": "Tailoring",
-                    "gene_id": "CAP12608.1",
-                    "gene_name": "elmMII",
-                    "tailoring": "Methylation"
-                }
-            ]
-        },
         "loci": {
-            "accession": "AM900040.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Knock-out studies",
                 "Heterologous expression",
                 "Sequence-based prediction"
+            ],
+            "accession": "AM900040.1"
+        },
+        "compounds": [
+            {
+                "mol_mass": 663.64,
+                "chem_struct": "C[C@H]1[C@H]([C@@H]([C@H](O[C@@H]1OC2=CC3=CC4=C(C(=C3C(=C2C(=O)OC)C)O)C(=O)[C@@]5(C(=O)C=C([C@H]([C@@]5(C4=O)O)O)OC)OC)OC)OC)OC",
+                "mass_ion_type": "[M+H]+",
+                "chem_target": [
+                    "DNA"
+                ],
+                "compound": "elloramycin",
+                "molecular_formula": "C32H38O15",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Cytotoxic"
+                ]
+            }
+        ],
+        "genes": {
+            "gene": [
+                {
+                    "tailoring": "Methylation",
+                    "gene_function": "Tailoring",
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAP12606.1",
+                    "gene_name": "elmMI"
+                },
+                {
+                    "tailoring": "Methylation",
+                    "gene_function": "Tailoring",
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAP12609.1",
+                    "gene_name": "elmMIII"
+                },
+                {
+                    "tailoring": "Methylation",
+                    "gene_function": "Tailoring",
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAP12608.1",
+                    "gene_name": "elmMII"
+                }
             ]
         },
         "mibig_accession": "BGC0000219",
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "publications": [
+            "pubmed:18310024"
+        ],
         "polyketide": {
             "cyclases": [
                 "CAP12598.1",
@@ -76,27 +78,25 @@
                 ""
             ],
             "ketide_length": 10,
+            "pks_subclass": [
+                "Type II"
+            ],
             "lin_cycl_pk": "Cyclic",
+            "starter_unit": "Acetyl-CoA",
             "pk_subclass": "Tetracenomycin",
             "pks_genes": [
                 "cap12600.1",
                 "cap12602.1"
-            ],
-            "pks_subclass": [
-                "Type II"
-            ],
-            "starter_unit": "Acetyl-CoA"
+            ]
         },
-        "publications": [
-            "pubmed:18310024"
-        ],
         "saccharide": {
             "saccharide_subclass": "hybrid/tailoring"
         }
     },
-    "personal": {
-        "submitter_email": "jasalas@uniovi.es",
-        "submitter_institution": "University of Oviedo",
-        "submitter_name": "Jose A. Salas"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

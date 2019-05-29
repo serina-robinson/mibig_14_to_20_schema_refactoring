@@ -1,71 +1,74 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "cruzmoralesp@gmail.com",
+        "submitter_name": "Pablo Cruz Morales",
+        "submitter_institution": "University of Queensland/Langebio-CINVESTAV"
+    },
     "comments": "Please note that I was  not involved in the studies on the mechanism and genes involved in the biosynthesis of Ikarugamycin, I am submitting this entry as part of study on the evolution of polycyclic tetramate macromalctams.",
     "general_params": {
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Heterologous expression"
+            ],
+            "accession": "KF954512.1"
+        },
+        "compounds": [
+            {
+                "evidence_struct": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 478.633,
+                "chem_struct": "CC[C@@H]1[C@@H](C[C@H]2[C@H]1C=C[C@H]3[C@@H]2C[C@@H]\\4[C@@H]3C/C=C/C(=O)NCCC[C@H]5C(=O)C(=C(/C=C4)O)C(=O)N5)C",
+                "chem_synonyms": [],
+                "pubchem_id": 101647494,
+                "compound": "ikarugamycin",
+                "molecular_formula": "C29H38N2O4",
+                "chem_act": [
+                    "Antibacterial",
+                    "Antifungal"
+                ]
+            }
+        ],
+        "genes": {},
+        "mibig_accession": "BGC0001435",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Antibacterial",
-                    "Antifungal"
-                ],
-                "chem_synonyms": [],
-                "compound": "ikarugamycin",
-                "evidence_struct": [
-                    "Mass spectrometry"
-                ],
-                "pubchem_id": 101647494
-            }
+        "publications": [
+            "pubmed:24519911",
+            "pubmed:24706593"
         ],
-        "genes": {},
-        "loci": {
-            "accession": "KF954512.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Heterologous expression"
-            ]
-        },
-        "mibig_accession": "BGC0001435",
-        "nrp": {
-            "lin_cycl_nrp": "Linear",
-            "nrps_release_type": "Hydrolysis",
-            "nrps_te_type": "Type I",
-            "nrps_thioesterase": [
-                "ajd77023.1"
-            ],
-            "subclass": "Unknown"
-        },
         "polyketide": {
-            "iterative_subtype": "Partially reducing",
-            "lin_cycl_pk": "Cyclic",
             "nr_iterations": 6,
+            "pks_te_type": "Type I",
+            "pks_subclass": [
+                "Iterative type I"
+            ],
+            "lin_cycl_pk": "Cyclic",
+            "iterative_subtype": "Partially reducing",
+            "starter_unit": "Malonyl-CoA",
             "pk_subclass": "Other",
             "pks_genes": [
                 "ajd77023.1"
             ],
-            "pks_release_type": "Hydrolysis",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
-            "pks_te_type": "Type I",
-            "starter_unit": "Malonyl-CoA"
+            "pks_release_type": "Hydrolysis"
         },
-        "publications": [
-            "pubmed:24519911",
-            "pubmed:24706593"
-        ]
+        "nrp": {
+            "lin_cycl_nrp": "Linear",
+            "nrps_release_type": "Hydrolysis",
+            "nrps_te_type": "Type I",
+            "subclass": "Unknown",
+            "nrps_thioesterase": [
+                "ajd77023.1"
+            ]
+        }
     },
-    "personal": {
-        "submitter_email": "cruzmoralesp@gmail.com",
-        "submitter_institution": "University of Queensland/Langebio-CINVESTAV",
-        "submitter_name": "Pablo Cruz Morales"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

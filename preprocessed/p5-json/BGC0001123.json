@@ -1,86 +1,89 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp",
+        "submitter_name": "Yuta Tsunematsu",
+        "submitter_institution": "University of Shizuoka"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Antifungal",
-                    "Cytotoxic"
-                ],
-                "chem_synonyms": [],
-                "chemspider_id": 23326711,
-                "compound": "aspirochlorine",
-                "pubchem_id": 44559211
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "FAD-dependent halogenase",
-                    "gene_function": "Tailoring",
-                    "gene_id": "AOR_1_34164, XP_001818590",
-                    "gene_name": "aclH",
-                    "mut_pheno": "abolishment of aspirochlorine production",
-                    "tailoring": "Halogenation"
-                }
-            ]
-        },
         "loci": {
-            "accession": "AP007154.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Knock-out studies",
                 "Enzymatic assays"
             ],
-            "end_coord": 103337,
-            "start_coord": 59595
+            "accession": "AP007154.1",
+            "start_coord": 59595,
+            "end_coord": 103337
+        },
+        "compounds": [
+            {
+                "chemspider_id": 23326711,
+                "mol_mass": 360.783,
+                "chem_struct": "CON1C(=O)[C@H]2NC(=O)[C@@]13[C@H](C4=CC(=C(C=C4O3)O)Cl)SS2",
+                "chem_synonyms": [],
+                "pubchem_id": 44559211,
+                "compound": "aspirochlorine",
+                "molecular_formula": "C12H9ClN2O5S2",
+                "chem_act": [
+                    "Antifungal",
+                    "Cytotoxic"
+                ]
+            }
+        ],
+        "genes": {
+            "gene": [
+                {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Halogenation",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Activity assay"
+                    ],
+                    "gene_id": "AOR_1_34164, XP_001818590",
+                    "gene_annotation": "FAD-dependent halogenase",
+                    "mut_pheno": "abolishment of aspirochlorine production",
+                    "gene_name": "aclH"
+                }
+            ]
         },
         "mibig_accession": "BGC0001123",
+        "biosyn_class": [
+            "NRP"
+        ],
+        "publications": [
+            "pubmed:25302411"
+        ],
         "nrp": {
-            "lin_cycl_nrp": "Cyclic",
+            "nrps_release_type": "Unknown",
             "nrps_genes": [
                 {
-                    "nrps_gene": "AOR_1_68164, XP_001818608",
                     "nrps_module": [
                         {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "evidence_a_spec": "Activity assay",
-                                "prot_adom_spec": "Phenylalanine"
-                            },
-                            "cdom_subtype": "Unknown",
                             "module_nr": "1",
                             "nrps_evidence_skip_iter": "Sequence-based prediction",
                             "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Phenylalanine",
+                                "evidence_a_spec": "Activity assay",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Unknown",
                             "nrps_mod_skip_iter": "Iterated"
                         }
-                    ]
+                    ],
+                    "nrps_gene": "AOR_1_68164, XP_001818608"
                 }
             ],
-            "nrps_release_type": "Unknown",
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Cyclic",
             "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "subclass": "Unknown"
-        },
-        "publications": [
-            "pubmed:25302411"
-        ]
+            "nrps_thioesterase": []
+        }
     },
-    "personal": {
-        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp",
-        "submitter_institution": "University of Shizuoka",
-        "submitter_name": "Yuta Tsunematsu"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

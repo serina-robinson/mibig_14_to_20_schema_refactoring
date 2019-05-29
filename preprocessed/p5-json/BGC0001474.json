@@ -1,19 +1,27 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "cschwal@gmail.com",
+        "submitter_name": "Christopher Schwalen",
+        "submitter_institution": "University of Illinois at Urbana-Champaign"
+    },
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Sequence-based prediction"
+            ],
+            "accession": "PYBW01000040.1",
+            "start_coord": 24523,
+            "end_coord": 52894
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Antibacterial"
+                "evidence_struct": [
+                    "Mass spectrometry"
                 ],
+                "mol_mass": 1668.45,
+                "chem_struct": "C[C@H]([C@H](NC1=S)C2=NC([C@@H](N3)[C@](C4=NC(C(N[C@@](C(N/C(C5=N[C@@H](C(N[C@](C(C)(O)[C@@H](C)O)([H])C6=NC1=CS6)=O)CS5)=C\\\\C)=O)([H])[C@@H](C)O)=O)=CS4)(NC([C@H](C)NC(C(NC([C@H](C)NC([C@H](C(C)C)N[C@@H]7C=CC8=C(N=C9C=C8[C@@H](O)C)[C@H]7O)=O)=O)=C)=O)=O)CC[C@@H]3C%10=NC(C(NC(C(NC(C(O)=O)=C)=O)=C)=O)=CS%10)=CS2)OC9=O",
+                "mass_ion_type": "None",
                 "chem_moieties": [
                     {
                         "chem_moiety": "thioamide",
@@ -23,53 +31,45 @@
                         ]
                     }
                 ],
-                "chem_struct": "C[C@H]([C@H](NC1=S)C2=NC([C@@H](N3)[C@](C4=NC(C(N[C@@](C(N/C(C5=N[C@@H](C(N[C@](C(C)(O)[C@@H](C)O)([H])C6=NC1=CS6)=O)CS5)=C\\\\C)=O)([H])[C@@H](C)O)=O)=CS4)(NC([C@H](C)NC(C(NC([C@H](C)NC([C@H](C(C)C)N[C@@H]7C=CC8=C(N=C9C=C8[C@@H](O)C)[C@H]7O)=O)=O)=C)=O)=O)CC[C@@H]3C%10=NC(C(NC(C(NC(C(O)=O)=C)=O)=C)=O)=CS%10)=CS2)OC9=O",
-                "chem_synonyms": [],
                 "compound": "thiopeptin",
-                "evidence_struct": [
-                    "Mass spectrometry"
-                ],
-                "mass_ion_type": "None",
-                "mol_mass": 1668.45,
-                "molecular_formula": "C71H84N18O18S6"
+                "molecular_formula": "C71H84N18O18S6",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Antibacterial"
+                ]
             }
         ],
         "genes": {},
-        "loci": {
-            "accession": "PYBW01000040.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Sequence-based prediction"
-            ],
-            "end_coord": 52894,
-            "start_coord": 24523
-        },
         "mibig_accession": "BGC0001474",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:29983054",
             "pubmed:5045467"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Thiopeptide",
             "precursor_loci": [
                 {
+                    "lead_pept_len": 43,
                     "core_pept_aa": [
                         "VASASCTTCICTCSCSS"
                     ],
                     "foll_pept_len": -1,
+                    "peptidase": [],
                     "gene_id": [
                         "pyc80213.1"
-                    ],
-                    "lead_pept_len": 43,
-                    "peptidase": []
+                    ]
                 }
             ],
-            "ripp_subclass": "Thiopeptide"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "cschwal@gmail.com",
-        "submitter_institution": "University of Illinois at Urbana-Champaign",
-        "submitter_name": "Christopher Schwalen"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

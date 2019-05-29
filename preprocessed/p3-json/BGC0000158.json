@@ -1,283 +1,278 @@
 {
-    "version": "17",
     "personal": {
+        "submitter_email": "xyan@scripps.edu",
         "submitter_name": "Xiaohui Yan",
-        "submitter_institution": "The Scripps Research Institute",
-        "submitter_email": "xyan@scripps.edu"
+        "submitter_institution": "The Scripps Research Institute"
     },
+    "version": "17",
     "general_params": {
-        "mibig_accession": "BGC0000158",
-        "biosyn_class": [
-            "Polyketide"
-        ],
-        "publications": [
-            "19191560",
-            "20426415",
-            "21276943",
-            "22339318"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "EU035755",
-                    "start_coord": 1777,
                     "end_coord": 76596,
+                    "Accession": "EU035755",
                     "conn_comp_cluster": [
                         "Knock-out studies"
-                    ]
+                    ],
+                    "start_coord": 1777
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "tautomycetin",
+                "mol_mass": "606.753",
+                "chem_struct": "CC/C(=C\\C(=O)C[C@H](C)C[C@@H](C)CC[C@@H]([C@H](C)C(=O)C[C@H]([C@H](C)[C@@H](C)OC(=O)C[C@H](C1=C(C(=O)OC1=O)C)O)O)O)/C=C",
                 "chem_synonyms": [],
                 "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
                 "pubchem_id": 16759609,
-                "chem_act": [
-                    "Inhibitor"
-                ],
                 "chem_target": [
                     "Protein Phosphatase"
                 ],
+                "compound": "tautomycetin",
+                "molecular_formula": "C33H50O10",
                 "chem_moieties": [
                     {
                         "chem_moiety": "Other",
-                        "other_chem_moiety": "dialkylmaleic anhydride",
                         "moiety_subcluster": [
                             "abv91300",
                             "abv91301",
                             "abv91303",
                             "abv91298",
                             "abv91296"
-                        ]
+                        ],
+                        "other_chem_moiety": "dialkylmaleic anhydride"
                     }
+                ],
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "chem_act": [
+                    "Inhibitor"
                 ]
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "ttnQ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1777,
+                    "gene_function": "Regulation",
                     "gene_endpos": 3195,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "ABV91302",
                     "gene_annotation": "regulator",
-                    "gene_function": "Regulation",
+                    "gene_startpos": 1777,
+                    "not_in_gbk": false,
+                    "mut_pheno": "TTN-non-producing",
+                    "gene_name": "ttnQ"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 70025,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "TTN-non-producing"
-                },
-                {
-                    "gene_name": "ttnA",
-                    "not_in_gbk": false,
-                    "gene_startpos": 41439,
-                    "gene_endpos": 70025,
                     "gene_id": "ABV91286",
                     "gene_annotation": "type I modular polyketide synthase",
-                    "gene_function": "Scaffold biosynthesis",
+                    "gene_startpos": 41439,
+                    "not_in_gbk": false,
+                    "mut_pheno": "TTN-non-producing",
+                    "gene_name": "ttnA"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 75939,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "TTN-non-producing"
-                },
-                {
-                    "gene_name": "ttnM",
-                    "not_in_gbk": false,
-                    "gene_startpos": 74920,
-                    "gene_endpos": 75939,
                     "gene_id": "ABV91298",
                     "gene_annotation": "predicted hydroxylase",
-                    "gene_function": "Tailoring",
+                    "mut_pheno": "accumulation of TTN-M1",
+                    "gene_startpos": 74920,
+                    "not_in_gbk": false,
                     "tailoring": "Hydroxylation",
+                    "gene_name": "ttnM"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 72862,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "accumulation of TTN-M1"
-                },
-                {
-                    "gene_name": "ttnP",
-                    "not_in_gbk": false,
-                    "gene_startpos": 71711,
-                    "gene_endpos": 72862,
                     "gene_id": "ABV91301",
                     "gene_annotation": "acyl-CoA transferases",
-                    "gene_function": "Precursor biosynthesis",
+                    "gene_startpos": 71711,
+                    "not_in_gbk": false,
+                    "mut_pheno": "TTN-non-producing",
+                    "gene_name": "ttnP"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 7934,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "TTN-non-producing"
-                },
-                {
-                    "gene_name": "ttnR",
-                    "not_in_gbk": false,
-                    "gene_startpos": 6522,
-                    "gene_endpos": 7934,
                     "gene_id": "ABV91303",
                     "gene_annotation": "MmgE/PrpD family protein",
-                    "gene_function": "Tailoring",
+                    "mut_pheno": "TTN-non-producing",
+                    "gene_startpos": 6522,
+                    "not_in_gbk": false,
                     "tailoring": "Dehydration",
+                    "gene_name": "ttnR"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 8743,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "TTN-non-producing"
-                },
-                {
-                    "gene_name": "ttnS",
-                    "not_in_gbk": false,
-                    "gene_startpos": 7931,
-                    "gene_endpos": 8743,
                     "gene_id": "ABV91304",
                     "gene_annotation": "putative cyclase",
-                    "gene_function": "Unknown",
+                    "gene_startpos": 7931,
+                    "not_in_gbk": false,
+                    "mut_pheno": "TTN-non-producing",
+                    "gene_name": "ttnS"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 18057,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "TTN-non-producing"
-                },
-                {
-                    "gene_name": "ttnD",
-                    "not_in_gbk": false,
-                    "gene_startpos": 16600,
-                    "gene_endpos": 18057,
                     "gene_id": "ABV91289",
                     "gene_annotation": "decarboxylase",
-                    "gene_function": "Tailoring",
+                    "mut_pheno": "TTN-non-producing, accumulating intermediates: TTN D-1, TTN D-2, TTN D-3, and TTN D-4",
+                    "gene_startpos": 16600,
+                    "not_in_gbk": false,
                     "tailoring": "Decarboxylation",
+                    "gene_name": "ttnD"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 14287,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "TTN-non-producing, accumulating intermediates: TTN D-1, TTN D-2, TTN D-3, and TTN D-4"
-                },
-                {
-                    "gene_name": "ttnF",
-                    "not_in_gbk": false,
-                    "gene_startpos": 12770,
-                    "gene_endpos": 14287,
                     "gene_id": "ABV91291",
                     "gene_annotation": "dehydratase",
-                    "gene_function": "Tailoring",
+                    "mut_pheno": "TTN-non-producing, accumulating TTN F-1",
+                    "gene_startpos": 12770,
+                    "not_in_gbk": false,
                     "tailoring": "Dehydration",
+                    "gene_name": "ttnF"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 6525,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "TTN-non-producing, accumulating TTN F-1"
-                },
-                {
-                    "gene_name": "ttnI",
-                    "not_in_gbk": false,
-                    "gene_startpos": 5176,
-                    "gene_endpos": 6525,
                     "gene_id": "ABV91294",
                     "gene_annotation": "cytochrome P450",
-                    "gene_function": "Tailoring",
+                    "mut_pheno": "TTN-non-producing",
+                    "gene_startpos": 5176,
+                    "not_in_gbk": false,
                     "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "TTN-non-producing"
+                    "gene_name": "ttnI"
                 },
                 {
-                    "gene_name": "ttnC",
-                    "not_in_gbk": false,
-                    "gene_startpos": 18054,
-                    "gene_endpos": 18683,
-                    "gene_id": "ABV91288",
-                    "gene_annotation": "decarboxylase",
                     "gene_function": "Tailoring",
-                    "tailoring": "Unknown",
+                    "gene_endpos": 18683,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "no effect on TTN production"
+                    "gene_id": "ABV91288",
+                    "gene_annotation": "decarboxylase",
+                    "mut_pheno": "no effect on TTN production",
+                    "gene_startpos": 18054,
+                    "not_in_gbk": false,
+                    "tailoring": "Unknown",
+                    "gene_name": "ttnC"
                 }
             ]
         },
+        "mibig_accession": "BGC0000158",
+        "biosyn_class": [
+            "Polyketide"
+        ],
         "Polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
+            "pks_te_type": "Type I",
             "pks_subclass": [
                 "Modular type I"
             ],
-            "starter_unit": "Malonyl-CoA",
-            "pks_te_type": "Type I",
-            "pks_release_type": "Unknown",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ABV91286",
                     "pks_module": [
                         {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "ACP"
+                            ],
                             "module_nr": "0",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "ACP"
-                            ],
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "DH",
+                                "KR",
+                                "ACP"
+                            ],
                             "module_nr": "1",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "DH",
-                                "KR",
-                                "ACP"
-                            ],
                             "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "KR",
+                                "ACP"
+                            ],
                             "module_nr": "2",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "KR",
-                                "ACP"
-                            ],
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "DH",
+                                "KR",
+                                "ACP"
+                            ],
                             "module_nr": "3",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "DH",
-                                "KR",
-                                "ACP"
-                            ],
                             "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "4",
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -285,16 +280,16 @@
                                 "KR",
                                 "ACP"
                             ],
+                            "module_nr": "4",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "5",
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -303,13 +298,11 @@
                                 "KR",
                                 "ACP"
                             ],
+                            "module_nr": "5",
                             "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 },
@@ -317,25 +310,27 @@
                     "mod_pks_gene": "ABV91287",
                     "pks_module": [
                         {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "DH",
+                                "ER",
+                                "KR",
+                                "ACP"
+                            ],
                             "module_nr": "6",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "DH",
-                                "ER",
-                                "KR",
-                                "ACP"
-                            ],
                             "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "7",
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -344,16 +339,16 @@
                                 "KR",
                                 "ACP"
                             ],
+                            "module_nr": "7",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "8",
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -361,16 +356,16 @@
                                 "KR",
                                 "ACP"
                             ],
+                            "module_nr": "8",
                             "at_substr_spec": "Ethylmalonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "9",
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -378,17 +373,25 @@
                                 "ACP",
                                 "TE"
                             ],
+                            "module_nr": "9",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
-            ]
-        }
+            ],
+            "starter_unit": "Malonyl-CoA",
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Linear",
+            "pks_release_type": "Unknown"
+        },
+        "publications": [
+            "19191560",
+            "20426415",
+            "21276943",
+            "22339318"
+        ]
     }
 }

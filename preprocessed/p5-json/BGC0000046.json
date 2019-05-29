@@ -1,104 +1,107 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "walton@msu.edu",
+        "submitter_name": "Jonathan Walton",
+        "submitter_institution": "Michigan State University"
+    },
     "general_params": {
-        "biosyn_class": [
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies"
+            ],
+            "accession": "FJ977165.1"
+        },
         "compounds": [
             {
+                "chemspider_id": 21169370,
+                "mol_mass": 212.245,
+                "chem_struct": "C[C@H]([C@H]1C(O1)/C=C/[C@H]2[C@@H](O2)[C@@H](C=C)O)O",
+                "chem_synonyms": [],
                 "chebi_id": 64143,
+                "pubchem_id": 6438725,
+                "chem_target": [
+                    "Histone deacetylase (HDAC)"
+                ],
+                "compound": "depudecin",
+                "molecular_formula": "C11H16O4",
                 "chem_act": [
                     "Inhibitor"
-                ],
-                "chem_synonyms": [],
-                "chem_target": [
-                    "Histonedeacetylase(HDAC)"
-                ],
-                "chemspider_id": 21169370,
-                "compound": "depudecin",
-                "pubchem_id": 6438725
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Monooxygenation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "Monooxygenase",
-                    "gene_function": "Tailoring",
                     "gene_id": "ACZ57545.1",
-                    "gene_name": "DEP2",
-                    "mut_pheno": "No depudecin production, but production of epoxide-containing metabolite of slightly higher retention factor.",
-                    "tailoring": "Monooxygenation"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
                     "gene_annotation": "Monooxygenase",
+                    "mut_pheno": "No depudecin production, but production of epoxide-containing metabolite of slightly higher retention factor.",
+                    "gene_name": "DEP2"
+                },
+                {
                     "gene_function": "Tailoring",
+                    "tailoring": "Monooxygenation",
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "ACZ57547.1",
-                    "gene_name": "DEP4",
+                    "gene_annotation": "Monooxygenase",
                     "mut_pheno": "No depudecin production, but production of a trace of an epoxide-containing compound of the same Rf as native depudecin.",
-                    "tailoring": "Monooxygenation"
+                    "gene_name": "DEP4"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
+                    "mut_pheno": "No depudecin production",
                     "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "ACZ57548.1",
-                    "gene_name": "DEP5",
-                    "mut_pheno": "No depudecin production"
-                },
-                {
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "Transcription factor",
+                    "gene_id": "ACZ57548.1",
+                    "gene_name": "DEP5"
+                },
+                {
                     "gene_function": "Regulation",
+                    "mut_pheno": "No depudecin production",
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "ACZ57549.1",
-                    "gene_name": "DEP6",
-                    "mut_pheno": "No depudecin production"
+                    "gene_annotation": "Transcription factor",
+                    "gene_name": "DEP6"
                 }
             ]
         },
-        "loci": {
-            "accession": "FJ977165.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies"
-            ]
-        },
         "mibig_accession": "BGC0000046",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:19737099"
+        ],
         "polyketide": {
-            "iterative_subtype": "Partially reducing",
-            "lin_cycl_pk": "Linear",
             "nr_iterations": 6,
+            "pks_te_type": "None",
+            "pks_subclass": [
+                "Iterative type I"
+            ],
+            "lin_cycl_pk": "Linear",
+            "iterative_subtype": "Partially reducing",
+            "starter_unit": "Acetyl-CoA",
             "pk_subclass": "Other",
             "pks_genes": [
                 "acz57548.1"
             ],
-            "pks_release_type": "Hydrolysis",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
-            "pks_te_type": "None",
-            "starter_unit": "Acetyl-CoA"
-        },
-        "publications": [
-            "pubmed:19737099"
-        ]
+            "pks_release_type": "Hydrolysis"
+        }
     },
-    "personal": {
-        "submitter_email": "walton@msu.edu",
-        "submitter_institution": "Michigan State University",
-        "submitter_name": "Jonathan Walton"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

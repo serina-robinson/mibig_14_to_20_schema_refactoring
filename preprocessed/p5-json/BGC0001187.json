@@ -1,95 +1,71 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "qun.yue@uth.tmc.edu",
+        "submitter_name": "Qun Yue",
+        "submitter_institution": "University of Texas Health Science Center at Houston"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "incomplete",
+            "conn_comp_cluster": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "accession": "KM603664.1"
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Unknown"
-                ],
-                "chem_struct": "CCCCCC/C=C/C=C/C=C/C(O)=C1C(N(O)CC/1=O)=O",
-                "chem_synonyms": [],
-                "compound": "xenolozoyenone",
                 "evidence_struct": [
                     "NMR",
                     "Mass spectrometry"
                 ],
-                "mass_ion_type": "[M+H]+",
                 "mol_mass": 306.1708,
-                "molecular_formula": "C17H23NO4"
+                "chem_struct": "CCCCCC/C=C/C=C/C=C/C(O)=C1C(N(O)CC/1=O)=O",
+                "mass_ion_type": "[M+H]+",
+                "compound": "xenolozoyenone",
+                "molecular_formula": "C17H23NO4",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Unknown"
+                ]
             }
         ],
         "genes": {
             "operon": [
                 {
-                    "evidence_operon": "RACE",
                     "operon_genes": [
                         "akl78824.1",
                         "akl78825.1"
-                    ]
+                    ],
+                    "evidence_operon": "RACE"
                 }
-            ]
-        },
-        "loci": {
-            "accession": "KM603664.1",
-            "complete": "incomplete",
-            "conn_comp_cluster": [
-                "Heterologous expression",
-                "Gene expression correlated with compound production"
             ]
         },
         "mibig_accession": "BGC0001187",
-        "nrp": {
-            "lin_cycl_nrp": "Cyclic",
-            "lipid_moiety": "(4E,6E,8E)-3-oxopentadeca-4,6,8-trienoic acid",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "AKL78825.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Glycine"
-                            },
-                            "cdom_subtype": "Unknown",
-                            "comments": "",
-                            "module_nr": "2",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "Unknown",
-            "nrps_thioesterase": [
-                "akl78825.1"
-            ],
-            "subclass": "Other lipopeptide"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:26081635"
+        ],
         "polyketide": {
+            "nr_iterations": 6,
+            "pks_te_type": "None",
             "iter_cycl_type": "Unknown",
-            "iterative_subtype": "Highly reducing",
+            "pks_subclass": [
+                "Iterative type I"
+            ],
             "lin_cycl_pk": "Cyclic",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AKL78824.1",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Propionyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "module_nr": "1",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_evidence_skip_iter": "Structure-based inference",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -99,34 +75,58 @@
                                 "Thiolation (ACP/PCP)",
                                 "Condensation"
                             ],
-                            "pks_evidence_skip_iter": "Structure-based inference",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Iterated"
+                            "module_nr": "1",
+                            "at_substr_spec": "Propionyl-CoA",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Iterated",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
             ],
-            "nr_iterations": 6,
+            "iterative_subtype": "Highly reducing",
+            "starter_unit": "Propionyl-CoA",
             "pk_subclass": "Other",
             "pks_genes": [
                 "akl78824.1"
             ],
-            "pks_release_type": "Unknown",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
-            "pks_te_type": "None",
-            "starter_unit": "Propionyl-CoA"
+            "pks_release_type": "Unknown"
         },
-        "publications": [
-            "pubmed:26081635"
-        ]
+        "nrp": {
+            "lipid_moiety": "(4E,6E,8E)-3-oxopentadeca-4,6,8-trienoic acid",
+            "nrps_release_type": "Unknown",
+            "subclass": "Other lipopeptide",
+            "nrps_thioesterase": [
+                "akl78825.1"
+            ],
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "module_nr": "2",
+                            "comments": "",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Glycine",
+                                "evidence_a_spec": "Structure-based inference",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Unknown",
+                            "nrps_mod_skip_iter": "Neither"
+                        }
+                    ],
+                    "nrps_gene": "AKL78825.1"
+                }
+            ],
+            "nrps_te_type": "Unknown"
+        }
     },
-    "personal": {
-        "submitter_email": "qun.yue@uth.tmc.edu",
-        "submitter_institution": "University of Texas Health Science Center at Houston",
-        "submitter_name": "Qun Yue"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

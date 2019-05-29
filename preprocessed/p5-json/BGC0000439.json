@@ -1,25 +1,28 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "bsmoore@ucsd.edu",
+        "submitter_name": "Bradley Moore",
+        "submitter_institution": "Scripps Institution of Oceanography"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Heterologous expression"
+            ],
+            "accession": "KF301601.1"
+        },
         "compounds": [
             {
+                "mol_mass": 1640.58273,
+                "chem_struct": "O=C(N[C@H](C(N[C@@H](C(N[C@@H](CC(O)=O)C(N[C@H](C(NCC(N[C@H](C(N[C@@H](CC(O)=O)C(N[C@H](C)C(N[C@H](C(NCC(N[C@@H](C(N[C@H](C(N[C@H]1CC(C2=CC=C(Cl)C=C2N)=O)=O)[C@H](C)CC(O)=O)=O)C)=O)=O)CC(O)=O)=O)=O)=O)CCCN)=O)=O)[C@@H](C)OC1=O)=O)=O)CC(N)=O)=O)CC3=CNC4=C3C=CC(Cl)=C4)/C=C/C=C/CCC",
+                "mass_ion_type": "[M+H]+",
+                "compound": "Taromycin A",
+                "molecular_formula": " C70H92Cl2N17O25",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Antibacterial"
-                ],
-                "chem_struct": "O=C(N[C@H](C(N[C@@H](C(N[C@@H](CC(O)=O)C(N[C@H](C(NCC(N[C@H](C(N[C@@H](CC(O)=O)C(N[C@H](C)C(N[C@H](C(NCC(N[C@@H](C(N[C@H](C(N[C@H]1CC(C2=CC=C(Cl)C=C2N)=O)=O)[C@H](C)CC(O)=O)=O)C)=O)=O)CC(O)=O)=O)=O)=O)CCCN)=O)=O)[C@@H](C)OC1=O)=O)=O)CC(N)=O)=O)CC3=CNC4=C3C=CC(Cl)=C4)/C=C/C=C/CCC",
-                "chem_synonyms": [],
-                "compound": "Taromycin A",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 1640.58273,
-                "molecular_formula": " C70H92Cl2N17O25"
+                ]
             }
         ],
         "genes": {
@@ -115,10 +118,10 @@
                     "gene_name": "tar15"
                 },
                 {
+                    "mut_pheno": "kynurenine formamidase",
                     "gene_function": "Unknown",
                     "gene_id": "AHH53514.1",
-                    "gene_name": "tar16",
-                    "mut_pheno": "kynurenine formamidase"
+                    "gene_name": "tar16"
                 },
                 {
                     "gene_annotation": "thioesterase",
@@ -133,11 +136,11 @@
                     "gene_name": "tar18"
                 },
                 {
+                    "gene_annotation": "transcriptional activator",
+                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "transcriptional activator",
-                    "gene_function": "Regulation",
                     "gene_id": "AHH53517.1",
                     "gene_name": "tar19"
                 },
@@ -149,28 +152,25 @@
                 }
             ]
         },
-        "loci": {
-            "accession": "KF301601.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Heterologous expression"
-            ]
-        },
         "mibig_accession": "BGC0000439",
+        "biosyn_class": [
+            "NRP"
+        ],
+        "publications": [
+            "pubmed:24449899"
+        ],
         "nrp": {
             "lin_cycl_nrp": "Cyclic",
             "nrps_release_type": "Macrolactonization",
             "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "subclass": "Ca+-dependent lipopeptide"
-        },
-        "publications": [
-            "pubmed:24449899"
-        ]
+            "subclass": "Ca+-dependent lipopeptide",
+            "nrps_thioesterase": []
+        }
     },
-    "personal": {
-        "submitter_email": "bsmoore@ucsd.edu",
-        "submitter_institution": "Scripps Institution of Oceanography",
-        "submitter_name": "Bradley Moore"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

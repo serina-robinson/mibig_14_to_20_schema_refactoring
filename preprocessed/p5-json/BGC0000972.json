@@ -1,352 +1,67 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "balskus@chemistry.harvard.edu",
+        "submitter_name": "Emily Balskus",
+        "submitter_institution": "Harvard University"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Heterologous expression"
+            ],
+            "accession": "AM229678.1"
+        },
         "compounds": [
             {
+                "mol_mass": -1,
+                "chem_struct": "CCCCCCCCCCCCCC(N[C@@H](C(O)=O)CC(N)=O)=O",
+                "mass_ion_type": "None",
+                "compound": "N-myristoyl-D-asparagine",
+                "molecular_formula": "C18H34N2O4",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Antibacterial",
                     "moderate antagonist of dopamine 5 and 5-hydroxytryptamine 7 receptors "
-                ],
-                "chem_struct": "CCCCCCCCCCCCCC(N[C@@H](C(O)=O)CC(N)=O)=O",
-                "chem_synonyms": [],
-                "compound": "N-myristoyl-D-asparagine",
-                "mass_ion_type": "None",
-                "mol_mass": -1,
-                "molecular_formula": "C18H34N2O4"
+                ]
             },
             {
-                "chem_act": [
-                    "Unknown"
-                ],
+                "mol_mass": -1,
                 "chem_struct": "CCCCCCC=CCCCCCC(N[C@@H](C(O)=O)CC(N)=O)=O",
-                "chem_synonyms": [],
-                "compound": "cis-7-tetradecenoyl-D-asparagine",
                 "mass_ion_type": "None",
-                "mol_mass": -1,
-                "molecular_formula": "C18H32N2O4"
-            },
-            {
+                "compound": "cis-7-tetradecenoyl-D-asparagine",
+                "molecular_formula": "C18H32N2O4",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Unknown"
-                ],
-                "chem_struct": "CCCCCCCCCCCCCC(N[C@@H](C(N[C@@H](C)CCC(C)=O)=O)CC(N)=O)=O",
-                "chem_synonyms": [],
-                "compound": "(R)-N1-((S)-5-oxohexan-2-yl)-2-tetradecanamidosuccinamide",
-                "mass_ion_type": "None",
+                ]
+            },
+            {
                 "mol_mass": -1,
-                "molecular_formula": "C24H45N3O4"
+                "chem_struct": "CCCCCCCCCCCCCC(N[C@@H](C(N[C@@H](C)CCC(C)=O)=O)CC(N)=O)=O",
+                "mass_ion_type": "None",
+                "compound": "(R)-N1-((S)-5-oxohexan-2-yl)-2-tetradecanamidosuccinamide",
+                "molecular_formula": "C24H45N3O4",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Unknown"
+                ]
             }
         ],
         "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_annotation": "bacteriophage integrase",
-                    "gene_endpos": 1740,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76281.1",
-                    "gene_name": "intP4",
-                    "gene_startpos": 469,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_annotation": "hypothetical protein",
-                    "gene_endpos": 2532,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76282.1",
-                    "gene_name": "clbQ",
-                    "gene_startpos": 2020,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_annotation": "putative thioesterase",
-                    "gene_endpos": 3289,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76283.1",
-                    "gene_name": "clbQ",
-                    "gene_startpos": 2567,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "putative penicillin binding protein",
-                    "gene_endpos": 4796,
-                    "gene_function": "Tailoring",
-                    "gene_id": "CAJ76284.1",
-                    "gene_name": "clbP",
-                    "gene_startpos": 3282,
-                    "mut_pheno": "Essential for genooxicity",
-                    "not_in_gbk": false,
-                    "tailoring": "Hydrolysis"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative polyketide synthase",
-                    "gene_endpos": 7268,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAJ76285.1",
-                    "gene_name": "clbO",
-                    "gene_startpos": 4809,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "putative non-ribosomal peptide synthetase",
-                    "gene_endpos": 11666,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAJ76286.1",
-                    "gene_name": "clbN",
-                    "gene_startpos": 7299,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative drug/sodium antiporter",
-                    "gene_endpos": 13102,
-                    "gene_function": "Transport",
-                    "gene_id": "CAJ76287.1",
-                    "gene_name": "clbM",
-                    "gene_startpos": 11663,
-                    "mut_pheno": "Not essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_annotation": "putative amidase",
-                    "gene_endpos": 14627,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76288.1",
-                    "gene_name": "clbL",
-                    "gene_startpos": 13164,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative hybrid non-ribosomal peptide-polyketide synthetase",
-                    "gene_endpos": 21084,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAJ76289.1",
-                    "gene_name": "clbK",
-                    "gene_startpos": 14620,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative non-ribosomal peptide synthase",
-                    "gene_endpos": 27595,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAJ76290.1",
-                    "gene_name": "clbJ",
-                    "gene_startpos": 21095,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative polyketide synthase",
-                    "gene_endpos": 30671,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAJ76291.1",
-                    "gene_name": "clbI",
-                    "gene_startpos": 27639,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative non-ribosomal peptide synthase",
-                    "gene_endpos": 35517,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAJ76292.1",
-                    "gene_name": "clbH",
-                    "gene_startpos": 30721,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative malonyl-CoA transacylase",
-                    "gene_endpos": 36833,
-                    "gene_function": "Activation / processing",
-                    "gene_id": "CAJ76293.1",
-                    "gene_name": "clbG",
-                    "gene_startpos": 35565,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_annotation": "putative acyl-CoA dehydrogenase",
-                    "gene_endpos": 37960,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76294.1",
-                    "gene_name": "clbF",
-                    "gene_startpos": 36830,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_annotation": "putative D-alanyl carrier protein",
-                    "gene_endpos": 38212,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76295.1",
-                    "gene_name": "clbE",
-                    "gene_startpos": 37964,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Unknown"
-                    ],
-                    "gene_annotation": "putative 3-hydroxyacyl-CoA dehydrogenase",
-                    "gene_endpos": 39111,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76296.1",
-                    "gene_name": "clbD",
-                    "gene_startpos": 38242,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative polyketide synthase",
-                    "gene_endpos": 41721,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAJ76297.1",
-                    "gene_name": "clbC",
-                    "gene_startpos": 39121,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction",
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "putative hybrid polyketide-non-ribosomal peptide synthetase",
-                    "gene_endpos": 51382,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAJ76298.1",
-                    "gene_name": "clbB",
-                    "gene_startpos": 41762,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative regulatory protein",
-                    "gene_endpos": 52052,
-                    "gene_function": "Regulation",
-                    "gene_id": "CAJ76299.1",
-                    "gene_name": "clbR",
-                    "gene_startpos": 51840,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative 4'-phosphopantetheinyl transferase",
-                    "gene_endpos": 52787,
-                    "gene_function": "Activation / processing",
-                    "gene_id": "CAJ76300.1",
-                    "gene_name": "clbA",
-                    "gene_startpos": 52053,
-                    "mut_pheno": "Essential for genotoxicity",
-                    "not_in_gbk": false
-                },
-                {
-                    "gene_annotation": "IS1400 transposase A",
-                    "gene_endpos": 53199,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76301.1",
-                    "gene_name": "No gene ID",
-                    "gene_startpos": 52933,
-                    "not_in_gbk": false
-                },
-                {
-                    "gene_annotation": "IS1400 transposase B",
-                    "gene_endpos": 53783,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76302.1",
-                    "gene_name": "No gene ID",
-                    "gene_startpos": 53304,
-                    "not_in_gbk": false
-                },
-                {
-                    "gene_annotation": "putative transposase",
-                    "gene_endpos": 54001,
-                    "gene_function": "Unknown",
-                    "gene_id": "CAJ76303.1",
-                    "gene_name": "No gene ID",
-                    "gene_startpos": 53774,
-                    "not_in_gbk": false
-                }
-            ],
             "operon": [
                 {
-                    "evidence_operon": "Unknown",
                     "operon_genes": [
                         "caj76297",
                         "caj76296",
                         "caj76295",
                         "caj76294",
                         "caj76293"
-                    ]
+                    ],
+                    "evidence_operon": "Unknown"
                 },
                 {
-                    "evidence_operon": "Unknown",
                     "operon_genes": [
                         "caj76291",
                         "caj76290",
@@ -354,157 +69,338 @@
                         "caj76288",
                         "caj76287",
                         "caj76286"
-                    ]
+                    ],
+                    "evidence_operon": "Unknown"
                 },
                 {
-                    "evidence_operon": "Unknown",
                     "operon_genes": [
                         "caj76285",
                         "caj76284"
-                    ]
+                    ],
+                    "evidence_operon": "Unknown"
                 },
                 {
-                    "evidence_operon": "Unknown",
                     "operon_genes": [
                         "caj76299",
                         "caj76300"
-                    ]
+                    ],
+                    "evidence_operon": "Unknown"
                 }
-            ]
-        },
-        "loci": {
-            "accession": "AM229678.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Heterologous expression"
+            ],
+            "gene": [
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 1740,
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAJ76281.1",
+                    "gene_annotation": "bacteriophage integrase",
+                    "gene_startpos": 469,
+                    "not_in_gbk": false,
+                    "gene_name": "intP4"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 2532,
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAJ76282.1",
+                    "gene_annotation": "hypothetical protein",
+                    "gene_startpos": 2020,
+                    "not_in_gbk": false,
+                    "gene_name": "clbQ"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 3289,
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAJ76283.1",
+                    "gene_annotation": "putative thioesterase",
+                    "gene_startpos": 2567,
+                    "not_in_gbk": false,
+                    "gene_name": "clbQ"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 4796,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "CAJ76284.1",
+                    "gene_annotation": "putative penicillin binding protein",
+                    "mut_pheno": "Essential for genooxicity",
+                    "gene_startpos": 3282,
+                    "not_in_gbk": false,
+                    "tailoring": "Hydrolysis",
+                    "gene_name": "clbP"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 7268,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76285.1",
+                    "gene_annotation": "putative polyketide synthase",
+                    "gene_startpos": 4809,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbO"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 11666,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "CAJ76286.1",
+                    "gene_annotation": "putative non-ribosomal peptide synthetase",
+                    "gene_startpos": 7299,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbN"
+                },
+                {
+                    "gene_function": "Transport",
+                    "gene_endpos": 13102,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76287.1",
+                    "gene_annotation": "putative drug/sodium antiporter",
+                    "gene_startpos": 11663,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Not essential for genotoxicity",
+                    "gene_name": "clbM"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 14627,
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAJ76288.1",
+                    "gene_annotation": "putative amidase",
+                    "gene_startpos": 13164,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbL"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 21084,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76289.1",
+                    "gene_annotation": "putative hybrid non-ribosomal peptide-polyketide synthetase",
+                    "gene_startpos": 14620,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbK"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 27595,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76290.1",
+                    "gene_annotation": "putative non-ribosomal peptide synthase",
+                    "gene_startpos": 21095,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbJ"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 30671,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76291.1",
+                    "gene_annotation": "putative polyketide synthase",
+                    "gene_startpos": 27639,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbI"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 35517,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76292.1",
+                    "gene_annotation": "putative non-ribosomal peptide synthase",
+                    "gene_startpos": 30721,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbH"
+                },
+                {
+                    "gene_function": "Activation / processing",
+                    "gene_endpos": 36833,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76293.1",
+                    "gene_annotation": "putative malonyl-CoA transacylase",
+                    "gene_startpos": 35565,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbG"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 37960,
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAJ76294.1",
+                    "gene_annotation": "putative acyl-CoA dehydrogenase",
+                    "gene_startpos": 36830,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbF"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 38212,
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAJ76295.1",
+                    "gene_annotation": "putative D-alanyl carrier protein",
+                    "gene_startpos": 37964,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbE"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 39111,
+                    "evidence_genefunction": [
+                        "Unknown"
+                    ],
+                    "gene_id": "CAJ76296.1",
+                    "gene_annotation": "putative 3-hydroxyacyl-CoA dehydrogenase",
+                    "gene_startpos": 38242,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbD"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 41721,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76297.1",
+                    "gene_annotation": "putative polyketide synthase",
+                    "gene_startpos": 39121,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbC"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 51382,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction",
+                        "Activity assay"
+                    ],
+                    "gene_id": "CAJ76298.1",
+                    "gene_annotation": "putative hybrid polyketide-non-ribosomal peptide synthetase",
+                    "gene_startpos": 41762,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbB"
+                },
+                {
+                    "gene_function": "Regulation",
+                    "gene_endpos": 52052,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76299.1",
+                    "gene_annotation": "putative regulatory protein",
+                    "gene_startpos": 51840,
+                    "not_in_gbk": false,
+                    "gene_name": "clbR"
+                },
+                {
+                    "gene_function": "Activation / processing",
+                    "gene_endpos": 52787,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAJ76300.1",
+                    "gene_annotation": "putative 4'-phosphopantetheinyl transferase",
+                    "gene_startpos": 52053,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Essential for genotoxicity",
+                    "gene_name": "clbA"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 53199,
+                    "gene_id": "CAJ76301.1",
+                    "gene_annotation": "IS1400 transposase A",
+                    "gene_startpos": 52933,
+                    "not_in_gbk": false,
+                    "gene_name": "No gene ID"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 53783,
+                    "gene_id": "CAJ76302.1",
+                    "gene_annotation": "IS1400 transposase B",
+                    "gene_startpos": 53304,
+                    "not_in_gbk": false,
+                    "gene_name": "No gene ID"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 54001,
+                    "gene_id": "CAJ76303.1",
+                    "gene_annotation": "putative transposase",
+                    "gene_startpos": 53774,
+                    "not_in_gbk": false,
+                    "gene_name": "No gene ID"
+                }
             ]
         },
         "mibig_accession": "BGC0000972",
-        "nrp": {
-            "lin_cycl_nrp": "Linear",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "CAJ76298.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Activity assay",
-                                "prot_adom_spec": "Alanine"
-                            },
-                            "cdom_subtype": "DCL",
-                            "module_nr": "2",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "CAJ76292.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "prot_adom_spec": "Serine"
-                            },
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "None",
-                                "epimerized": false,
-                                "evidence_a_spec": "None"
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "CAJ76290.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "prot_adom_spec": "Glycine"
-                            },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "prot_adom_spec": "Cysteine"
-                            },
-                            "cdom_subtype": "Heterocyclization",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "CAJ76289.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "prot_adom_spec": "Cysteine"
-                            },
-                            "cdom_subtype": "Heterocyclization",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "CAJ76286.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "epimerized": true,
-                                "evidence_a_spec": "Activity assay",
-                                "nonprot_adom_spec": "Asparigine"
-                            },
-                            "cdom_subtype": "Starter",
-                            "module_nr": "1",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "Unknown",
-            "nrps_thioesterase": [
-                "caj76283"
-            ],
-            "subclass": "Unknown"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:16902142",
+            "pubmed:17714479",
+            "pubmed:23406518",
+            "pubmed:23744512",
+            "pubmed:24932672"
+        ],
         "polyketide": {
-            "lin_cycl_pk": "Linear",
+            "pks_te_type": "Unknown",
+            "pks_subclass": [
+                "Modular type I",
+                "Trans-AT type I"
+            ],
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "CAJ76298.1",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "module_nr": "3",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -513,10 +409,11 @@
                                 "Enoylreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "3",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 },
@@ -524,15 +421,15 @@
                     "mod_pks_gene": "CAJ76297.1",
                     "pks_module": [
                         {
-                            "module_nr": "x",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Thiolation (ACP/PCP)"
-                            ],
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "x",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ]
                         }
                     ]
                 },
@@ -540,18 +437,18 @@
                     "mod_pks_gene": "CAJ76291.1",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
-                            "module_nr": "x",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "x",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 },
@@ -559,15 +456,15 @@
                     "mod_pks_gene": "CAJ76289.1",
                     "pks_module": [
                         {
-                            "module_nr": "x",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Thiolation (ACP/PCP)"
-                            ],
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "x",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ]
                         }
                     ]
                 },
@@ -575,39 +472,142 @@
                     "mod_pks_gene": "CAJ76285.1",
                     "pks_module": [
                         {
-                            "module_nr": "x",
-                            "pks_domains": [
-                                "Ketosynthase"
-                            ],
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "x",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Ketosynthase"
+                            ]
                         }
                     ]
                 }
             ],
-            "pk_subclass": "Other",
-            "pks_release_type": "Unknown",
-            "pks_subclass": [
-                "Modular type I",
-                "Trans-AT type I"
-            ],
-            "pks_te_type": "Unknown",
+            "trans_at": [],
             "starter_unit": "Unknown",
-            "trans_at": []
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Linear",
+            "pks_release_type": "Unknown"
         },
-        "publications": [
-            "pubmed:16902142",
-            "pubmed:17714479",
-            "pubmed:23406518",
-            "pubmed:23744512",
-            "pubmed:24932672"
-        ]
+        "nrp": {
+            "nrps_release_type": "Unknown",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "2",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Alanine",
+                                "evidence_a_spec": "Activity assay",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "DCL"
+                        }
+                    ],
+                    "nrps_gene": "CAJ76298.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Serine",
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "aa_type": "Proteinogenic"
+                            }
+                        },
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence_a_spec": "None",
+                                "aa_type": "None"
+                            },
+                            "cdom_subtype": "LCL"
+                        }
+                    ],
+                    "nrps_gene": "CAJ76292.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Glycine",
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "LCL"
+                        },
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Cysteine",
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Heterocyclization"
+                        }
+                    ],
+                    "nrps_gene": "CAJ76290.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Cysteine",
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Heterocyclization"
+                        }
+                    ],
+                    "nrps_gene": "CAJ76289.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence_a_spec": "Activity assay",
+                                "nonprot_adom_spec": "Asparigine",
+                                "aa_type": "Nonproteinogenic"
+                            },
+                            "cdom_subtype": "Starter"
+                        }
+                    ],
+                    "nrps_gene": "CAJ76286.1"
+                }
+            ],
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Linear",
+            "nrps_te_type": "Unknown",
+            "nrps_thioesterase": [
+                "caj76283"
+            ]
+        }
     },
-    "personal": {
-        "submitter_email": "balskus@chemistry.harvard.edu",
-        "submitter_institution": "Harvard University",
-        "submitter_name": "Emily Balskus"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

@@ -1,33 +1,38 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "alexvmelnik@gmail.com",
+        "submitter_name": "Alexey Melnik",
+        "submitter_institution": "UCSD"
+    },
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Sequence-based prediction"
+            ],
+            "accession": "NZ_GG753626.1",
+            "start_coord": 1489807,
+            "end_coord": 1500652
+        },
         "compounds": [
             {
+                "mol_mass": 2138.18,
+                "mass_ion_type": "M+",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Unknown"
                 ],
-                "chem_synonyms": [],
-                "compound": "SWA-2138",
-                "mass_ion_type": "M+",
-                "mol_mass": 2138.18
+                "compound": "SWA-2138"
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_annotation": "FAD binding domain",
+                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "FAD binding domain",
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "SSTG_01176"
                 },
                 {
@@ -36,11 +41,11 @@
                     "gene_id": "SSTG_01179"
                 },
                 {
+                    "gene_annotation": "acyl-CoA synthetase",
+                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "acyl-CoA synthetase",
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "SSTG_01180"
                 },
                 {
@@ -53,40 +58,35 @@
                 }
             ]
         },
-        "loci": {
-            "accession": "NZ_GG753626.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Sequence-based prediction"
-            ],
-            "end_coord": 1500652,
-            "start_coord": 1489807
-        },
         "mibig_accession": "BGC0000597",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:21983601"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Linear",
+            "ripp_subclass": "Proteusin",
             "precursor_loci": [
                 {
+                    "lead_pept_len": 19,
                     "core_pept_aa": [
                         "MNLITDVLAGLVHFIGWLV"
                     ],
                     "foll_pept_len": -1,
+                    "peptidase": [],
                     "gene_id": [
                         "Unknown"
-                    ],
-                    "lead_pept_len": 19,
-                    "peptidase": []
+                    ]
                 }
             ],
-            "ripp_subclass": "Proteusin"
+            "lin_cycl_ripp": "Linear"
         }
     },
-    "personal": {
-        "submitter_email": "alexvmelnik@gmail.com",
-        "submitter_institution": "UCSD",
-        "submitter_name": "Alexey Melnik"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

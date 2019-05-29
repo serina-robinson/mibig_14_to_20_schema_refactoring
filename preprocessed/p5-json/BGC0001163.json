@@ -1,83 +1,90 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "rccoates@lbl.gov",
+        "submitter_name": "R. Cameron Coates",
+        "submitter_institution": "DOE Joint Genome Institute"
+    },
     "general_params": {
-        "biosyn_class": [
-            "Polyketide"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Unknown"
-                ],
-                "chem_synonyms": [
-                    "heptadec-1-ene"
-                ],
-                "compound": "1-heptadecene",
-                "pubchem_id": 23217
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Fatty-acyl-ACP ligase",
-                    "gene_endpos": 310794,
-                    "gene_function": "Activation / processing",
-                    "gene_id": "EGJ35087.1",
-                    "gene_name": "",
-                    "gene_startpos": 308353,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Polyketide synthase",
-                    "gene_endpos": 317651,
-                    "gene_function": "Activation / processing",
-                    "gene_id": "EGJ35088.1",
-                    "gene_startpos": 310818,
-                    "not_in_gbk": false
-                }
-            ],
-            "operon": [
-                {
-                    "evidence_operon": "Sequence-based prediction",
-                    "operon_genes": [
-                        "egj35087.1",
-                        "egj35088.1"
-                    ]
-                }
-            ]
-        },
         "loci": {
-            "accession": "GL890825.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Sequence-based prediction"
             ],
-            "end_coord": 317651,
-            "start_coord": 308353
+            "accession": "GL890825.1",
+            "start_coord": 308353,
+            "end_coord": 317651
+        },
+        "compounds": [
+            {
+                "mol_mass": 238.459,
+                "chem_struct": "CCCCCCCCCCCCCCCC=C",
+                "chem_synonyms": [
+                    "heptadec-1-ene"
+                ],
+                "pubchem_id": 23217,
+                "compound": "1-heptadecene",
+                "molecular_formula": "C17H34",
+                "chem_act": [
+                    "Unknown"
+                ]
+            }
+        ],
+        "genes": {
+            "operon": [
+                {
+                    "operon_genes": [
+                        "egj35087.1",
+                        "egj35088.1"
+                    ],
+                    "evidence_operon": "Sequence-based prediction"
+                }
+            ],
+            "gene": [
+                {
+                    "gene_function": "Activation / processing",
+                    "gene_endpos": 310794,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "EGJ35087.1",
+                    "gene_annotation": "Fatty-acyl-ACP ligase",
+                    "gene_startpos": 308353,
+                    "not_in_gbk": false,
+                    "gene_name": ""
+                },
+                {
+                    "gene_function": "Activation / processing",
+                    "gene_endpos": 317651,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "EGJ35088.1",
+                    "gene_annotation": "Polyketide synthase",
+                    "gene_startpos": 310818,
+                    "not_in_gbk": false
+                }
+            ]
         },
         "mibig_accession": "BGC0001163",
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:24475038"
+        ],
         "polyketide": {
-            "lin_cycl_pk": "Linear",
+            "pks_te_type": "Type I",
+            "pks_subclass": [
+                "Modular type I"
+            ],
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "EGJ35088.1",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "Unknown",
-                            "module_nr": "1",
+                            "pks_mod_doms": [
+                                "Unknown"
+                            ],
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -86,29 +93,25 @@
                                 "Sulfotransferase",
                                 "Thioesterase"
                             ],
-                            "pks_mod_doms": [
-                                "Unknown"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "1",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
             ],
+            "starter_unit": "Malonyl-CoA",
             "pk_subclass": "Other",
-            "pks_release_type": "Unknown",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "pks_te_type": "Type I",
-            "starter_unit": "Malonyl-CoA"
-        },
-        "publications": [
-            "pubmed:24475038"
-        ]
+            "lin_cycl_pk": "Linear",
+            "pks_release_type": "Unknown"
+        }
     },
-    "personal": {
-        "submitter_email": "rccoates@lbl.gov",
-        "submitter_institution": "DOE Joint Genome Institute",
-        "submitter_name": "R. Cameron Coates"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

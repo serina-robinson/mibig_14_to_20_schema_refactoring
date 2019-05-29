@@ -1,20 +1,32 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "rob.lavigne@biw.kuleuven.be",
+        "submitter_name": "Rob Lavigne",
+        "submitter_institution": "KU Leuven"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies"
+            ],
+            "accession": "GU479979.1"
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Antibacterial"
+                "mol_mass": 548.721,
+                "chem_struct": "CC(CC=CC=CCCC(=C)CC(C)CC(=CC(=O)O)C)CC(=O)CC(CNC(=O)C(C)C(C)OC(=O)N)O",
+                "chem_synonyms": [
+                    "batumin",
+                    "kal/bat",
+                    "Kalimantacin"
                 ],
+                "pubchem_id": 197707,
+                "chem_target": [
+                    "FabI"
+                ],
+                "compound": "Kalimantacin A",
+                "molecular_formula": "C30H48N2O7",
                 "chem_moieties": [
                     {
                         "chem_moiety": "Carbamoyl group",
@@ -23,222 +35,195 @@
                         ]
                     }
                 ],
-                "chem_synonyms": [
-                    "batumin",
-                    "kal/bat",
-                    "Kalimantacin"
-                ],
-                "chem_target": [
-                    "FabI"
-                ],
-                "compound": "Kalimantacin A",
-                "pubchem_id": 197707
+                "chem_act": [
+                    "Antibacterial"
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "mut_pheno": "Loss of kal/bat production",
+                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "ADD82939.1",
-                    "gene_name": "bat1",
-                    "mut_pheno": "Loss of kal/bat production"
+                    "gene_name": "bat1"
                 },
                 {
+                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "ADD82940.1",
                     "gene_name": "bat2"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "ADD82941.1",
-                    "gene_name": "bat3",
-                    "mut_pheno": "Loss of kal/bat production"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_function": "Tailoring",
-                    "gene_id": "ADD82942.1",
-                    "gene_name": "batA",
-                    "tailoring": "Methylation"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_function": "Tailoring",
-                    "gene_id": "ADD82943.1",
-                    "gene_name": "batB",
-                    "tailoring": "Methylation"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_function": "Tailoring",
-                    "gene_id": "ADD82944.1",
-                    "gene_name": "batC",
                     "mut_pheno": "Loss of kal/bat production",
-                    "tailoring": "Methylation"
+                    "gene_function": "Scaffold biosynthesis",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "ADD82941.1",
+                    "gene_name": "bat3"
                 },
                 {
+                    "tailoring": "Methylation",
+                    "gene_function": "Tailoring",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
+                    "gene_id": "ADD82942.1",
+                    "gene_name": "batA"
+                },
+                {
+                    "tailoring": "Methylation",
                     "gene_function": "Tailoring",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "ADD82943.1",
+                    "gene_name": "batB"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "mut_pheno": "Loss of kal/bat production",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "ADD82944.1",
+                    "tailoring": "Methylation",
+                    "gene_name": "batC"
+                },
+                {
+                    "tailoring": "Methylation",
+                    "gene_function": "Tailoring",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_id": "ADD82945.1",
-                    "gene_name": "batD",
-                    "tailoring": "Methylation"
+                    "gene_name": "batD"
                 },
                 {
+                    "tailoring": "Methylation",
+                    "gene_function": "Tailoring",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Tailoring",
                     "gene_id": "ADD82946.1",
-                    "gene_name": "batE",
-                    "tailoring": "Methylation"
+                    "gene_name": "batE"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "mut_pheno": "Production of 27-descarbamoyl kal/bat",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_function": "Tailoring",
                     "gene_id": "ADD82947.1",
-                    "gene_name": "batF",
-                    "mut_pheno": "Production of 27-descarbamoyl kal/bat",
-                    "tailoring": "Unknown"
+                    "tailoring": "Unknown",
+                    "gene_name": "batF"
                 },
                 {
+                    "mut_pheno": "Reduced kal/bat production",
+                    "gene_function": "Resistance/immunity",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Heterologous expression"
                     ],
-                    "gene_function": "Resistance/immunity",
                     "gene_id": "ADD82948.1",
-                    "gene_name": "batG",
-                    "mut_pheno": "Reduced kal/bat production"
+                    "gene_name": "batG"
                 },
                 {
+                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "ADD82949.1",
                     "gene_name": "batH"
                 },
                 {
+                    "gene_function": "Unknown",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Unknown",
                     "gene_id": "ADD82950.1",
                     "gene_name": "batI"
                 },
                 {
+                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "ADD82951.1",
                     "gene_name": "batJ"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "mut_pheno": "Loss of kal/bat production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_function": "Tailoring",
                     "gene_id": "ADD82952.1",
-                    "gene_name": "batK",
-                    "mut_pheno": "Loss of kal/bat production",
-                    "tailoring": "Reduction"
+                    "tailoring": "Reduction",
+                    "gene_name": "batK"
                 },
                 {
+                    "mut_pheno": "Production of 17-hydroxy kal/bat",
+                    "gene_function": "Activation / processing",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_function": "Activation / processing",
                     "gene_id": "ADD82954.1",
-                    "gene_name": "batM",
-                    "mut_pheno": "Production of 17-hydroxy kal/bat"
+                    "gene_name": "batM"
                 }
-            ]
-        },
-        "loci": {
-            "accession": "GU479979.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies"
             ]
         },
         "mibig_accession": "BGC0001099",
-        "nrp": {
-            "lin_cycl_nrp": "Linear",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "ADD82940.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Glycine"
-                            },
-                            "cdom_subtype": "Unknown",
-                            "module_nr": "2",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "subclass": "Unknown"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:20189105",
+            "pubmed:21035728"
+        ],
         "polyketide": {
-            "lin_cycl_pk": "Linear",
+            "pks_te_type": "Type I",
+            "pks_subclass": [
+                "Modular type I",
+                "Trans-AT type I"
+            ],
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ADD82939.1",
                     "pks_module": [
                         {
-                            "module_nr": "0",
-                            "pks_domains": [
-                                "Thiolation (ACP/PCP)"
-                            ],
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "0",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Thiolation (ACP/PCP)"
+                            ]
                         },
                         {
-                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ],
                             "module_nr": "1",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }
                     ]
                 },
@@ -246,69 +231,69 @@
                     "mod_pks_gene": "ADD82940.1",
                     "pks_module": [
                         {
-                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "module_nr": "3",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
                             "kr_stereochem": "L-OH",
-                            "module_nr": "4",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
-                            ],
+                            ]
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "5",
+                            "module_nr": "4",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
+                                "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
-                            ],
+                            ]
+                        },
+                        {
                             "pks_mod_doms": [
                                 "Beta-branching"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "5",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ]
                         },
                         {
-                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "module_nr": "6",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         },
                         {
-                            "kr_stereochem": "D-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "module_nr": "7",
+                            "kr_stereochem": "D-OH",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }
                     ]
                 },
@@ -316,75 +301,93 @@
                     "mod_pks_gene": "ADD82941.1",
                     "pks_module": [
                         {
-                            "kr_stereochem": "L-OH",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "module_nr": "8",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Ketoreductase",
                                 "Dehydratase",
                                 "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         },
                         {
+                            "pks_mod_doms": [
+                                "Beta-branching"
+                            ],
                             "module_nr": "9",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
-                            ],
+                            ]
+                        },
+                        {
                             "pks_mod_doms": [
                                 "Beta-branching"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
                             "module_nr": "10",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "Beta-branching"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         },
                         {
-                            "module_nr": "11",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Thiolation (ACP/PCP)"
-                            ],
                             "pks_mod_doms": [
                                 "Beta-branching"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "11",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ]
                         }
                     ]
                 }
             ],
-            "pk_subclass": "Other",
-            "pks_release_type": "Hydrolysis",
-            "pks_subclass": [
-                "Modular type I",
-                "Trans-AT type I"
-            ],
-            "pks_te_type": "Type I",
-            "starter_unit": "Acetyl-CoA",
             "trans_at": [
                 "ADD82949.1, ADD82951.1"
-            ]
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Linear",
+            "pks_release_type": "Hydrolysis"
         },
-        "publications": [
-            "pubmed:20189105",
-            "pubmed:21035728"
-        ]
+        "nrp": {
+            "nrps_release_type": "Unknown",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "2",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Glycine",
+                                "evidence_a_spec": "Structure-based inference",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Unknown"
+                        }
+                    ],
+                    "nrps_gene": "ADD82940.1"
+                }
+            ],
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Linear",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": []
+        }
     },
-    "personal": {
-        "submitter_email": "rob.lavigne@biw.kuleuven.be",
-        "submitter_institution": "KU Leuven",
-        "submitter_name": "Rob Lavigne"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

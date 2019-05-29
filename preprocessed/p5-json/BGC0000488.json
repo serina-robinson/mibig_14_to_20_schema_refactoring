@@ -1,53 +1,52 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "o.p.kuipers@rug.nl",
+        "submitter_name": "Oscar P. Kuipers",
+        "submitter_institution": "University of Groningen"
+    },
     "comments": "Only partial  expression data in Lactococcus or Enterococcus. No direct data on Clostridium. Same class as enterocin AS-48",
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Antibacterial"
-                ],
-                "chem_synonyms": [],
-                "chem_target": [
-                    "membrane"
-                ],
-                "compound": "circularin A",
-                "mass_ion_type": "None",
-                "mol_mass": 6771
-            }
-        ],
-        "genes": {},
         "loci": {
-            "accession": "AJ566621.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Heterologous expression",
                 "Sequence-based prediction"
-            ]
+            ],
+            "accession": "AJ566621.1"
         },
+        "compounds": [
+            {
+                "mol_mass": 6771,
+                "mass_ion_type": "None",
+                "chem_target": [
+                    "membrane"
+                ],
+                "compound": "circularin A",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Antibacterial"
+                ]
+            }
+        ],
+        "genes": {},
         "mibig_accession": "BGC0000488",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:14532033"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Head-to-tailcyclized peptide",
             "precursor_loci": [
                 {
+                    "foll_pept_len": 69,
                     "cleavage_recogn_site": [
                         ""
                     ],
                     "core_pept_aa": [
                         "VAGALGVQTAAATTIVNVILNAGTLVTVLGIIASIASGGAGTLMTIGWATFKATVQKLAKQSMARAIAY"
                     ],
-                    "foll_pept_len": 69,
                     "gene_id": [
                         "CAD97580.1"
                     ],
@@ -55,12 +54,13 @@
                     "peptidase": []
                 }
             ],
-            "ripp_subclass": "Head-to-tailcyclized peptide"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "o.p.kuipers@rug.nl",
-        "submitter_institution": "University of Groningen",
-        "submitter_name": "Oscar P. Kuipers"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

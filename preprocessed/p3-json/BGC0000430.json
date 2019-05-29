@@ -1,57 +1,52 @@
 {
-    "version": "17",
     "personal": {
+        "submitter_email": "david.fewer@helsinki.fi",
         "submitter_name": "David Fewer",
-        "submitter_institution": "University of Helsinki",
-        "submitter_email": "david.fewer@helsinki.fi"
+        "submitter_institution": "University of Helsinki"
     },
+    "version": "17",
     "general_params": {
-        "mibig_accession": "BGC0000430",
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
-        "publications": [
-            "19691450"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "CP007203",
-                    "start_coord": 4978680,
                     "end_coord": 4956680,
+                    "Accession": "CP007203",
                     "conn_comp_cluster": [
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "start_coord": 4978680
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "spumigin E",
+                "mol_mass": "610.712",
+                "chem_struct": "C[C@H]1C[C@H](N(C1)C(=O)[C@@H](CCC2=CC=C(C=C2)O)NC(=O)[C@@H](CC3=CC=C(C=C3)O)O)C(=O)NC(CCCN=C(N)N)C=O",
                 "chem_synonyms": [],
                 "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
                 "pubchem_id": 71449303,
-                "chem_act": [
-                    "Inhibitor"
-                ],
                 "chem_target": [
                     "Trypsin"
                 ],
+                "compound": "spumigin E",
+                "molecular_formula": "C31H42N6O7",
                 "chem_moieties": [
                     {
                         "chem_moiety": "Other",
-                        "other_chem_moiety": "(2S,4S)-4-methylproline",
                         "moiety_subcluster": [
                             "nsp_49220",
                             "nsp_49210",
                             "nsp_49200"
-                        ]
+                        ],
+                        "other_chem_moiety": "(2S,4S)-4-methylproline"
                     }
+                ],
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "chem_act": [
+                    "Inhibitor"
                 ]
             }
         ],
@@ -70,55 +65,60 @@
                 }
             ]
         },
+        "mibig_accession": "BGC0000430",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
         "NRP": {
-            "subclass": "Other",
-            "lin_cycl_nrp": "Linear",
-            "nrps_te_type": "Unknown",
-            "nrps_thioesterase": [],
             "nrps_release_type": "Reductive release",
             "nrps_genes": [
                 {
-                    "nrps_gene": "AHJ31215.1",
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither",
                             "module_nr": "1",
+                            "nrps_mod_doms": "None",
                             "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
                                 "nonprot_adom_spec": "Homotyrosine",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "aa_type": "Nonproteinogenic"
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "LCL"
                         },
                         {
+                            "nrps_mod_skip_iter": "Neither",
                             "module_nr": "2",
-                            "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "Proline",
-                                "evidence_a_spec": "Activity assay",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "DCL",
                             "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence_a_spec": "Activity assay",
+                                "nonprot_adom_spec": "Proline",
+                                "aa_type": "Nonproteinogenic"
+                            },
+                            "cdom_subtype": "DCL"
                         },
                         {
+                            "nrps_mod_skip_iter": "Neither",
                             "module_nr": "3",
-                            "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "Argininal",
-                                "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "LCL",
                             "nrps_mod_doms": "Other",
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "nonprot_adom_spec": "Argininal",
+                                "aa_type": "Nonproteinogenic"
+                            },
+                            "cdom_subtype": "LCL"
                         }
-                    ]
+                    ],
+                    "nrps_gene": "AHJ31215.1"
                 }
-            ]
+            ],
+            "subclass": "Other",
+            "lin_cycl_nrp": "Linear",
+            "nrps_te_type": "Unknown",
+            "nrps_thioesterase": []
         },
         "Polyketide": {
             "pks_te_type": "None",
@@ -152,6 +152,9 @@
             "pk_subclass": "Other",
             "lin_cycl_pk": "Linear",
             "pks_release_type": "Other"
-        }
+        },
+        "publications": [
+            "19691450"
+        ]
     }
 }

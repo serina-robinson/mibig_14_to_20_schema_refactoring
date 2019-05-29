@@ -1,92 +1,91 @@
 {
-    "version": "17",
     "personal": {
+        "submitter_email": "ktahlan@mun.ca",
         "submitter_name": "Kapil Tahlan",
-        "submitter_institution": "Memorial University of Newfoundland",
-        "submitter_email": "ktahlan@mun.ca"
+        "submitter_institution": "Memorial University of Newfoundland"
     },
+    "version": "17",
     "general_params": {
-        "mibig_accession": "BGC0000841",
-        "biosyn_class": [
-            "Other"
-        ],
-        "publications": [
-            "10681345",
-            "15342599",
-            "17317567",
-            "23104404",
-            "14982786",
-            "22751548",
-            "14742203",
-            "18931110"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "CM000914",
-                    "start_coord": 1152119,
                     "end_coord": 1163141,
+                    "Accession": "CM000914",
                     "conn_comp_cluster": [
                         "Knock-out studies",
                         "Heterologous expression",
                         "Gene expression correlated with compound production",
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "start_coord": 1152119
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "alanylclavam",
+                "mol_mass": "200.194",
+                "chem_struct": "C1[C@H]2N(C1=O)C[C@@H](O2)C[C@@H](C(=O)O)N",
                 "chem_synonyms": [],
                 "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
                 "pubchem_id": 194618,
+                "compound": "alanylclavam",
+                "molecular_formula": "C8H12N2O4",
+                "databases_deposited": [
+                    "PubChem"
+                ],
                 "chem_act": [
                     "Antifungal"
                 ]
             },
             {
-                "compound": "2-Hydroxymethylclavam",
+                "mol_mass": "143.142",
+                "chem_struct": "C1[C@H]2N(C1=O)C[C@@H](O2)CO",
                 "chem_synonyms": [],
                 "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
                 "pubchem_id": 3050259,
+                "compound": "2-Hydroxymethylclavam",
+                "molecular_formula": "C6H9NO3",
+                "databases_deposited": [
+                    "PubChem"
+                ],
                 "chem_act": [
                     "Antifungal"
                 ]
             },
             {
-                "compound": "2-Formyloxymethylclavam",
+                "mol_mass": "171.152",
+                "chem_struct": "C1[C@H]2N(C1=O)C[C@@H](O2)COC=O",
                 "chem_synonyms": [],
                 "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
                 "pubchem_id": 46173888,
-                "chem_act": [
-                    "Antifungal"
-                ]
-            },
-            {
-                "compound": "Clavam-2-carboxylate",
-                "chem_synonyms": [],
-                "database_deposited": true,
+                "compound": "2-Formyloxymethylclavam",
+                "molecular_formula": "C7H9NO4",
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 15573391,
                 "chem_act": [
                     "Antifungal"
                 ]
             },
             {
-                "compound": "CLAVULANIC ACID",
+                "mol_mass": "157.125",
+                "chem_struct": "C1[C@H]2N(C1=O)C[C@@H](O2)C(=O)O",
+                "chem_synonyms": [],
+                "database_deposited": true,
+                "pubchem_id": 15573391,
+                "compound": "Clavam-2-carboxylate",
+                "molecular_formula": "C6H7NO4",
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "chem_act": [
+                    "Antifungal"
+                ]
+            },
+            {
+                "mol_mass": "199.162",
+                "chem_struct": "C1[C@@H]2N(C1=O)[C@H](/C(=C/CO)/O2)C(=O)O",
                 "chem_synonyms": [
                     "antibiotic mm 14151",
                     "clavulanate",
@@ -96,10 +95,12 @@
                     "clavulansaeure"
                 ],
                 "database_deposited": true,
+                "pubchem_id": 5280980,
+                "compound": "CLAVULANIC ACID",
+                "molecular_formula": "C8H9NO5",
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 5280980,
                 "chem_act": [
                     "Inhibitor"
                 ]
@@ -121,87 +122,101 @@
             ],
             "gene": [
                 {
-                    "gene_name": "ceaS1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1152119,
+                    "gene_function": "Precursor biosynthesis",
                     "gene_endpos": 1153762,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "EFG04560.1",
                     "gene_annotation": "Carboxyethyl arginine synthase isoenzyme 1",
+                    "gene_startpos": 1152119,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Decreased clavam production",
+                    "gene_name": "ceaS1"
+                },
+                {
                     "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 1155369,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Decreased clavam production"
-                },
-                {
-                    "gene_name": "bls1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1153786,
-                    "gene_endpos": 1155369,
                     "gene_id": "EFG04561.1",
                     "gene_annotation": "Beta-lactam synthetase isoenzyme 1",
+                    "gene_startpos": 1153786,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Decreased clavam production",
+                    "gene_name": "bls1"
+                },
+                {
                     "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 1156739,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Decreased clavam production"
-                },
-                {
-                    "gene_name": "pah1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1155366,
-                    "gene_endpos": 1156739,
                     "gene_id": "EFG04562.1",
                     "gene_annotation": "Proclavaminate amidinohydrolase",
+                    "gene_startpos": 1155366,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Decreased clavam production",
+                    "gene_name": "pah1"
+                },
+                {
                     "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 1158289,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Decreased clavam production"
-                },
-                {
-                    "gene_name": "oat1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1156931,
-                    "gene_endpos": 1158289,
                     "gene_id": "EFG04563.1",
                     "gene_annotation": "Probable glutamate N-acetyltransferase 1",
-                    "gene_function": "Precursor biosynthesis",
+                    "gene_startpos": 1156931,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Decreased clavam production",
+                    "gene_name": "oat1"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 1160263,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Decreased clavam production"
-                },
-                {
-                    "gene_name": "cvm6P",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1158740,
-                    "gene_endpos": 1160263,
                     "gene_id": "EFG04564.1",
                     "gene_annotation": "Putative pyridoxal phosphate-dependent aminotransferase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Abolished clavam production"
+                    "gene_startpos": 1158740,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Abolished clavam production",
+                    "gene_name": "cvm6P"
                 },
                 {
-                    "gene_name": "cvm7P",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1160394,
-                    "gene_endpos": 1163141,
-                    "gene_id": "EFG04565.1",
-                    "gene_annotation": "Putative transcriptional regulator",
                     "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 1163141,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Abolished clavam production"
+                    "gene_id": "EFG04565.1",
+                    "gene_annotation": "Putative transcriptional regulator",
+                    "gene_startpos": 1160394,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Abolished clavam production",
+                    "gene_name": "cvm7P"
                 }
             ]
         },
+        "mibig_accession": "BGC0000841",
         "Other": {
             "other_subclass": "Non-NRP beta-lactam"
-        }
+        },
+        "biosyn_class": [
+            "Other"
+        ],
+        "publications": [
+            "10681345",
+            "15342599",
+            "17317567",
+            "23104404",
+            "14982786",
+            "22751548",
+            "14742203",
+            "18931110"
+        ]
     }
 }

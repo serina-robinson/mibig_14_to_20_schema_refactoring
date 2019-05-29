@@ -1,118 +1,121 @@
 {
-    "version": "15",
     "personal": {
+        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp",
         "submitter_name": "Yuta Tsunematsu",
-        "submitter_institution": "University of Shizuoka",
-        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp"
+        "submitter_institution": "University of Shizuoka"
     },
+    "version": "15",
     "general_params": {
-        "mibig_accession": "BGC0000959",
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
-        "publications": [
-            "17369821",
-            "20828130"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "BN001305",
-                    "start_coord": 383588,
                     "end_coord": 417319,
+                    "Accession": "BN001305",
                     "conn_comp_cluster": [
                         "Enzymatic assays",
                         "Heterologous expression",
                         "Other"
-                    ]
+                    ],
+                    "start_coord": 383588
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "aspyridone A",
+                "mol_mass": "329.396",
+                "chem_struct": "CC[C@H](C)C[C@H](C)C(=O)C1=C(C(=CNC1=O)C2=CC=C(C=C2)O)O",
                 "chem_synonyms": [],
                 "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem"
-                ],
                 "pubchem_id": 54710080,
-                "chem_act": [
-                    "Cytotoxic"
-                ],
+                "compound": "aspyridone A",
+                "molecular_formula": "C19H23NO4",
                 "chem_moieties": [
                     {
                         "moiety_subcluster": []
                     }
+                ],
+                "databases_deposited": [
+                    "PubChem"
+                ],
+                "chem_act": [
+                    "Cytotoxic"
                 ]
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "apdC",
-                    "gene_id": "ANIA_08409",
                     "gene_annotation": "enoylreductase",
                     "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Heterologous expression",
                         "Activity assay"
-                    ]
+                    ],
+                    "gene_id": "ANIA_08409",
+                    "gene_name": "apdC"
                 },
                 {
-                    "gene_name": "apdA",
-                    "gene_id": "ANIA_08411",
                     "gene_annotation": "PKS-NRPS hybrid",
                     "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Heterologous expression",
                         "Other in vivo study",
                         "Activity assay"
-                    ]
+                    ],
+                    "gene_id": "ANIA_08411",
+                    "gene_name": "apdA"
                 }
             ]
         },
+        "mibig_accession": "BGC0000959",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
         "NRP": {
-            "subclass": "Other",
-            "lin_cycl_nrp": "Linear",
+            "nrps_release_type": "Unknown",
             "nrps_genes": [
                 {
-                    "nrps_gene": "ANIA_08412",
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither",
                             "module_nr": "1",
-                            "a_substr_spec": {
-                                "aa_type": "Multiple (promiscuous)",
-                                "a_multiple_spec": "L-tyrosin; L-phenylalanine; L-tryptophan; L-4-fluorophenylalanine ",
-                                "evidence_a_spec": "Activity assay"
-                            },
-                            "cdom_subtype": "Unknown",
                             "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "evidence_a_spec": "Activity assay",
+                                "a_multiple_spec": "L-tyrosin; L-phenylalanine; L-tryptophan; L-4-fluorophenylalanine ",
+                                "aa_type": "Multiple (promiscuous)"
+                            },
+                            "cdom_subtype": "Unknown"
                         }
-                    ]
+                    ],
+                    "nrps_gene": "ANIA_08412"
                 }
             ],
+            "subclass": "Other",
+            "lin_cycl_nrp": "Linear",
             "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Unknown"
+            "nrps_thioesterase": []
         },
         "Polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
+            "nr_iterations": 3,
+            "pks_te_type": "None",
             "pks_subclass": [
                 "Iterative type I"
             ],
+            "lin_cycl_pk": "Linear",
+            "iterative_subtype": "Highly reducing",
             "starter_unit": "Acetyl-CoA",
+            "pk_subclass": "Other",
             "pks_genes": [
                 "ania_08412"
             ],
-            "nr_iterations": 3,
-            "iterative_subtype": "Highly reducing",
-            "pks_te_type": "None",
             "pks_release_type": "Unknown"
-        }
+        },
+        "publications": [
+            "17369821",
+            "20828130"
+        ]
     }
 }

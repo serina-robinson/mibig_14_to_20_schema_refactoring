@@ -1,74 +1,12 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "tmc19@163.com",
+        "submitter_name": "Mancheng Tang",
+        "submitter_institution": "UCLA"
+    },
     "comments": "This cluster is responsible for the biosynthesis of meroterpenoid macrophorins. The membrane-bound terpene cyclase, MacJ, was characterized to catalyze the cyclization of meroterpenoids via direct protonation of the terminal olefin in the linear isoprenoid chain.",
     "general_params": {
-        "biosyn_class": [
-            "Terpene"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Antibacterial"
-                ],
-                "chem_synonyms": [],
-                "compound": "macrophorin A",
-                "evidence_struct": [
-                    "NMR",
-                    "Mass spectrometry"
-                ],
-                "pubchem_id": 14526957
-            },
-            {
-                "chem_act": [
-                    "immunomodulatory activity"
-                ],
-                "chem_struct": "C=C1CC[C@@]2([H])C(C)(C)CCC[C@]2(C)[C@H]1C[C@@]34[C@H](O4)C(C(CO)=CC3=O)=O",
-                "chem_synonyms": [],
-                "compound": "4'-oxomacrophorin A",
-                "evidence_struct": [
-                    "NMR",
-                    "Mass spectrometry"
-                ],
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 359.2,
-                "molecular_formula": "C22H30O4"
-            },
-            {
-                "chem_act": [
-                    "immunomodulatory activity"
-                ],
-                "chem_synonyms": [],
-                "chemspider_id": 9180817,
-                "compound": "4'-oxomacrophorin D",
-                "evidence_struct": [
-                    "NMR",
-                    "Mass spectrometry"
-                ]
-            },
-            {
-                "chem_act": [
-                    "Unknown"
-                ],
-                "chem_struct": "C=C1CC[C@@]2([H])C(C)(C)CCC[C@]2(C)[C@H]1C[C@@]34[C@H](O4)C(C(COC(CC(O)=O)=O)=CC3=O)=O",
-                "chem_synonyms": [],
-                "compound": "4'-oxomacrophorin E",
-                "evidence_struct": [
-                    "NMR",
-                    "Mass spectrometry"
-                ],
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 445.2,
-                "molecular_formula": "C25H32O7"
-            }
-        ],
-        "genes": {},
         "loci": {
-            "accession": "MF989995.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Gene expression correlated with compound production",
@@ -76,19 +14,90 @@
                 "Heterologous expression",
                 "Knock-out studies",
                 "Enzymatic assays"
-            ]
+            ],
+            "accession": "MF989995.1"
         },
+        "compounds": [
+            {
+                "evidence_struct": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 360.494,
+                "chem_struct": "CC1(CCCC2(C1CCC(=C)C2CC34C(O3)C(C(=CC4=O)CO)O)C)C",
+                "chem_synonyms": [],
+                "pubchem_id": 14526957,
+                "compound": "macrophorin A",
+                "molecular_formula": "C22H32O4",
+                "chem_act": [
+                    "Antibacterial"
+                ]
+            },
+            {
+                "evidence_struct": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 359.2,
+                "chem_struct": "C=C1CC[C@@]2([H])C(C)(C)CCC[C@]2(C)[C@H]1C[C@@]34[C@H](O4)C(C(CO)=CC3=O)=O",
+                "mass_ion_type": "[M+H]+",
+                "compound": "4'-oxomacrophorin A",
+                "molecular_formula": "C22H30O4",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "immunomodulatory activity"
+                ]
+            },
+            {
+                "chemspider_id": 9180817,
+                "evidence_struct": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "chem_struct": "",
+                "chem_synonyms": [],
+                "compound": "4'-oxomacrophorin D",
+                "molecular_formula": "",
+                "chem_act": [
+                    "immunomodulatory activity"
+                ]
+            },
+            {
+                "evidence_struct": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 445.2,
+                "chem_struct": "C=C1CC[C@@]2([H])C(C)(C)CCC[C@]2(C)[C@H]1C[C@@]34[C@H](O4)C(C(COC(CC(O)=O)=O)=CC3=O)=O",
+                "mass_ion_type": "[M+H]+",
+                "compound": "4'-oxomacrophorin E",
+                "molecular_formula": "C25H32O7",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Unknown"
+                ]
+            }
+        ],
+        "genes": {},
         "mibig_accession": "BGC0001450",
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "publications": [
+            "doi:10.1021/acs.orglett.7b02653",
+            "doi:10.1021/np010152n",
+            "doi:10.1080/00021369.1983.10865611"
+        ],
         "polyketide": {
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AVK70100",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "None",
-                            "kr_stereochem": "Unknown",
-                            "module_nr": "1",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_evidence_skip_iter": "Sequence-based prediction",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
@@ -96,36 +105,32 @@
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "pks_evidence_skip_iter": "Sequence-based prediction",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Iterated"
+                            "module_nr": "1",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Iterated",
+                            "evidence_at_spec": "None"
                         }
                     ]
                 }
             ]
         },
-        "publications": [
-            "doi:10.1021/acs.orglett.7b02653",
-            "doi:10.1021/np010152n",
-            "doi:10.1080/00021369.1983.10865611"
-        ],
         "terpene": {
-            "prenyl_transf": [
-                "mf989998"
-            ],
-            "terpene_c_len": "Sesquiterpene",
-            "terpene_precursor": "FPP",
             "terpene_subclass": "Unknown",
             "terpene_synth_cycl": [
                 "mf990004"
+            ],
+            "terpene_precursor": "FPP",
+            "terpene_c_len": "Sesquiterpene",
+            "prenyl_transf": [
+                "mf989998"
             ]
         }
     },
-    "personal": {
-        "submitter_email": "tmc19@163.com",
-        "submitter_institution": "UCLA",
-        "submitter_name": "Mancheng Tang"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

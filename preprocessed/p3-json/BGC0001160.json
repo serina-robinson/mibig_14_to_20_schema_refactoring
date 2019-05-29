@@ -1,64 +1,61 @@
 {
-    "version": "16",
     "personal": {
+        "submitter_email": "rccoates@lbl.gov",
         "submitter_name": "R. Cameron Coates",
-        "submitter_institution": "DOE Joint Genome Institute",
-        "submitter_email": "rccoates@lbl.gov"
+        "submitter_institution": "DOE Joint Genome Institute"
     },
+    "version": "16",
+    "comments": "The thioester release mechanism of this pathway involves a release via hydrolysis and decarboxylation which was not an option for this submission.",
     "general_params": {
-        "mibig_accession": "BGC0001160",
-        "biosyn_class": [
-            "Polyketide"
-        ],
-        "publications": [
-            "24475038",
-            "21531827",
-            "25063658",
-            "22991895"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "CP000951",
-                    "start_coord": 1205897,
                     "end_coord": 1214059,
+                    "Accession": "CP000951",
                     "conn_comp_cluster": [
                         "Knock-out studies",
                         "Enzymatic assays",
                         "Heterologous expression",
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "start_coord": 1205897
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "1-nonadecene",
+                "mol_mass": "266.513",
+                "chem_struct": "CCCCCCCCCCCCCCCCCC=C",
                 "chem_synonyms": [
                     "nonadec-1-ene",
                     "nonadecene"
                 ],
                 "database_deposited": true,
+                "pubchem_id": 29075,
+                "compound": "1-nonadecene",
+                "molecular_formula": "C19H38",
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 29075,
                 "chem_act": [
                     "Unknown"
                 ]
             },
             {
-                "compound": "(14Z)-1,14-Nonadecadiene",
+                "chemspider_id": 28184646,
+                "mol_mass": "",
+                "chem_struct": "",
                 "chem_synonyms": [
                     "(14z)-nonadeca-1",
                     "14-diene"
                 ],
                 "database_deposited": true,
+                "compound": "(14Z)-1,14-Nonadecadiene",
+                "molecular_formula": "",
                 "databases_deposited": [
                     "ChemSpider"
                 ],
-                "chemspider_id": 28184646,
                 "chem_act": [
                     "Unknown"
                 ]
@@ -75,35 +72,37 @@
             ],
             "gene": [
                 {
-                    "gene_name": "6056266",
-                    "not_in_gbk": false,
-                    "gene_startpos": 1214059,
-                    "gene_endpos": 1205897,
-                    "gene_id": "ACA99172.1",
-                    "gene_annotation": "polyketide synthase",
                     "gene_function": "Activation / processing",
+                    "gene_endpos": 1205897,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Loss of production of 1-nonadecene and 1,14-nonadecadiene"
+                    "gene_id": "ACA99172.1",
+                    "gene_annotation": "polyketide synthase",
+                    "gene_startpos": 1214059,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Loss of production of 1-nonadecene and 1,14-nonadecadiene",
+                    "gene_name": "6056266"
                 }
             ]
         },
+        "mibig_accession": "BGC0001160",
+        "biosyn_class": [
+            "Polyketide"
+        ],
         "Polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
+            "pks_te_type": "Type I",
             "pks_subclass": [
                 "Modular type I"
             ],
-            "starter_unit": "Malonyl-CoA",
-            "pks_te_type": "Type I",
-            "pks_release_type": "Other",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ACA99172",
                     "pks_module": [
                         {
-                            "module_nr": "1",
+                            "pks_mod_doms": [
+                                "Other"
+                            ],
                             "pks_domains": [
                                 "FAAL",
                                 "ACP",
@@ -114,18 +113,25 @@
                                 "ST",
                                 "TE"
                             ],
+                            "module_nr": "1",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "Other"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
-            ]
-        }
-    },
-    "comments": "The thioester release mechanism of this pathway involves a release via hydrolysis and decarboxylation which was not an option for this submission."
+            ],
+            "starter_unit": "Malonyl-CoA",
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Linear",
+            "pks_release_type": "Other"
+        },
+        "publications": [
+            "24475038",
+            "21531827",
+            "25063658",
+            "22991895"
+        ]
+    }
 }

@@ -1,21 +1,39 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "r.seipke@leeds.ac.uk",
+        "submitter_name": "Ryan F. Seipke",
+        "submitter_institution": "University of Leeds"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ],
+            "accession": "NZ_FR873698.1",
+            "start_coord": 81953,
+            "end_coord": 106578
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Antifungal",
-                    "Cytotoxic"
+                "mol_mass": 548.633,
+                "chem_struct": "CCCCCC[C@@H]1[C@H]([C@@H](OC(=O)[C@H]([C@H](OC1=O)C)NC(=O)C2=C(C(=CC=C2)NC=O)O)C)OC(=O)CC(C)C",
+                "chem_synonyms": [
+                    "antipiricullin",
+                    "fintrol",
+                    "virosin"
                 ],
+                "pubchem_id": 14957,
+                "chem_target": [
+                    "Bcl-XL",
+                    "cytochrome C reductase"
+                ],
+                "compound": "Antimycin",
+                "molecular_formula": "C28H40N2O9",
                 "chem_moieties": [
                     {
                         "chem_moiety": "3-formamidosalicylate",
@@ -32,228 +50,15 @@
                         ]
                     }
                 ],
-                "chem_synonyms": [
-                    "antipiricullin",
-                    "fintrol",
-                    "virosin"
-                ],
-                "chem_target": [
-                    "Bcl-XL",
-                    "cytochromeCreductase"
-                ],
-                "compound": "Antimycin",
-                "pubchem_id": 14957
+                "chem_act": [
+                    "Antifungal",
+                    "Cytotoxic"
+                ]
             }
         ],
         "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "gene_annotation": "Extracytoplasmic function sigma factor",
-                    "gene_endpos": 522,
-                    "gene_function": "Regulation",
-                    "gene_id": "ZP_09179977.1",
-                    "gene_name": "antA",
-                    "gene_startpos": 1,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Acyltransferase",
-                    "gene_endpos": 1881,
-                    "gene_function": "Tailoring",
-                    "gene_id": "ZP_09179978.1",
-                    "gene_name": "antB",
-                    "gene_startpos": 571,
-                    "mut_pheno": "Biosynthesis of de-acylated antimycins",
-                    "not_in_gbk": false,
-                    "tailoring": "Acylation"
-                },
-                {
-                    "gene_annotation": "",
-                    "gene_endpos": 2176,
-                    "gene_function": "Unknown",
-                    "gene_id": "No protein ID",
-                    "gene_name": "No gene ID",
-                    "gene_startpos": 2036,
-                    "not_in_gbk": true
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Non-ribosomal peptide synthetase",
-                    "gene_endpos": 11142,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "ZP_09179979.1",
-                    "gene_name": "antC",
-                    "gene_startpos": 2449,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Polyketide synthase",
-                    "gene_endpos": 14956,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "ZP_09179980.1",
-                    "gene_name": "antD",
-                    "gene_startpos": 11135,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Crotonyl-CoA carboxylase/reductase",
-                    "gene_endpos": 16232,
-                    "gene_function": "Other enzymatic",
-                    "gene_id": "ZP_09179981.1",
-                    "gene_name": "antE",
-                    "gene_startpos": 15012,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Anthranilate-CoA ligase",
-                    "gene_endpos": 17799,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ZP_09179982.1",
-                    "gene_name": "antF",
-                    "gene_startpos": 16321,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Peptidylcarrier protein",
-                    "gene_endpos": 18056,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ZP_09179983.1",
-                    "gene_name": "antG",
-                    "gene_startpos": 17799,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Multicomponent oxygenase",
-                    "gene_endpos": 19409,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ZP_09179984.1",
-                    "gene_name": "antH",
-                    "gene_startpos": 18354,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Multicomponent oxygenase",
-                    "gene_endpos": 19708,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ZP_09179985.1",
-                    "gene_name": "antI",
-                    "gene_startpos": 19406,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Multicomponent oxygenase",
-                    "gene_endpos": 20489,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ZP_09179986.1",
-                    "gene_name": "antJ",
-                    "gene_startpos": 19701,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Multicomponent oxygenase",
-                    "gene_endpos": 21004,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ZP_09179987.1",
-                    "gene_name": "antK",
-                    "gene_startpos": 20486,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Multicomponent oxygenase",
-                    "gene_endpos": 22119,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ZP_09179988.1",
-                    "gene_name": "antL",
-                    "gene_startpos": 21016,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Ketoreductase",
-                    "gene_endpos": 22942,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "ZP_09179989.1",
-                    "gene_name": "antM",
-                    "gene_startpos": 22166,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Tryptophan 2,3-dioxygenase",
-                    "gene_endpos": 23836,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ZP_09179990.1",
-                    "gene_name": "antN",
-                    "gene_startpos": 22988,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "Formyltransferase",
-                    "gene_endpos": 24626,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "ZP_09179990.1",
-                    "gene_name": "antO",
-                    "gene_startpos": 23826,
-                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
-                    "not_in_gbk": false
-                }
-            ],
             "operon": [
                 {
-                    "evidence_operon": "Unknown",
                     "operon_genes": [
                         "strs4_010100010957",
                         "strs4_010100010962",
@@ -262,144 +67,228 @@
                         "strs4_010100010977",
                         "strs4_010100010987",
                         "strs4_010100010992"
-                    ]
+                    ],
+                    "evidence_operon": "Unknown"
                 },
                 {
-                    "evidence_operon": "Unknown",
                     "operon_genes": [
                         "strs4_010100010952",
                         "strs4_010100010947"
-                    ]
+                    ],
+                    "evidence_operon": "Unknown"
+                }
+            ],
+            "gene": [
+                {
+                    "gene_function": "Regulation",
+                    "gene_endpos": 522,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_id": "ZP_09179977.1",
+                    "gene_annotation": "Extracytoplasmic function sigma factor",
+                    "gene_startpos": 1,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antA"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 1881,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179978.1",
+                    "gene_annotation": "Acyltransferase",
+                    "mut_pheno": "Biosynthesis of de-acylated antimycins",
+                    "gene_startpos": 571,
+                    "not_in_gbk": false,
+                    "tailoring": "Acylation",
+                    "gene_name": "antB"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 2176,
+                    "gene_id": "No protein ID",
+                    "gene_annotation": "",
+                    "gene_startpos": 2036,
+                    "not_in_gbk": true,
+                    "gene_name": "No gene ID"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 11142,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179979.1",
+                    "gene_annotation": "Non-ribosomal peptide synthetase",
+                    "gene_startpos": 2449,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antC"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 14956,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179980.1",
+                    "gene_annotation": "Polyketide synthase",
+                    "gene_startpos": 11135,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antD"
+                },
+                {
+                    "gene_function": "Other enzymatic",
+                    "gene_endpos": 16232,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179981.1",
+                    "gene_annotation": "Crotonyl-CoA carboxylase/reductase",
+                    "gene_startpos": 15012,
+                    "not_in_gbk": false,
+                    "gene_name": "antE"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 17799,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179982.1",
+                    "gene_annotation": "Anthranilate-CoA ligase",
+                    "gene_startpos": 16321,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antF"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 18056,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179983.1",
+                    "gene_annotation": "Peptidylcarrier protein",
+                    "gene_startpos": 17799,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antG"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 19409,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179984.1",
+                    "gene_annotation": "Multicomponent oxygenase",
+                    "gene_startpos": 18354,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antH"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 19708,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179985.1",
+                    "gene_annotation": "Multicomponent oxygenase",
+                    "gene_startpos": 19406,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antI"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 20489,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179986.1",
+                    "gene_annotation": "Multicomponent oxygenase",
+                    "gene_startpos": 19701,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antJ"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 21004,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179987.1",
+                    "gene_annotation": "Multicomponent oxygenase",
+                    "gene_startpos": 20486,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antK"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 22119,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179988.1",
+                    "gene_annotation": "Multicomponent oxygenase",
+                    "gene_startpos": 21016,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antL"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 22942,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179989.1",
+                    "gene_annotation": "Ketoreductase",
+                    "gene_startpos": 22166,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antM"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 23836,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179990.1",
+                    "gene_annotation": "Tryptophan 2,3-dioxygenase",
+                    "gene_startpos": 22988,
+                    "not_in_gbk": false,
+                    "gene_name": "antN"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 24626,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ZP_09179990.1",
+                    "gene_annotation": "Formyltransferase",
+                    "gene_startpos": 23826,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Biosynthesis of antimycin is abolished.",
+                    "gene_name": "antO"
                 }
             ]
         },
-        "loci": {
-            "accession": "NZ_FR873698.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ],
-            "end_coord": 106578,
-            "start_coord": 81953
-        },
         "mibig_accession": "BGC0000958",
-        "nrp": {
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "ZP_09179982.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "Starter",
-                            "module_nr": "0",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "ZP_09179983.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "epimerized": false
-                            },
-                            "module_nr": "0",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "nrps_gene": "ZP_09179979.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Activity assay",
-                                "prot_adom_spec": "Threonine"
-                            },
-                            "cdom_subtype": "Starter",
-                            "module_nr": "1",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Activity assay",
-                                "nonprot_adom_spec": "Pyruvate"
-                            },
-                            "cdom_subtype": "LCL",
-                            "module_nr": "2",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Macrolactonization",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "subclass": "Cyclic depsipeptide"
-        },
-        "polyketide": {
-            "lin_cycl_pk": "Cyclic",
-            "mod_pks_genes": [
-                {
-                    "mod_pks_gene": "ZP_09179980.1",
-                    "pks_module": [
-                        {
-                            "at_substr_spec": "Various atypical acyl-CoAs",
-                            "evidence_at_spec": "Activity assay",
-                            "module_nr": "3",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)",
-                                "Thioesterase"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                },
-                {
-                    "mod_pks_gene": "ZP_09179989.1",
-                    "pks_module": [
-                        {
-                            "kr_stereochem": "Unknown",
-                            "module_nr": "3",
-                            "pks_domains": [
-                                "Ketoreductase"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "pk_subclass": "Other",
-            "pks_release_type": "Macrolactamization",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "pks_te_type": "None",
-            "starter_unit": "Unknown"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
         "publications": [
             "pubmed:21857911",
             "pubmed:22378565",
@@ -411,11 +300,125 @@
             "pubmed:24367419",
             "pubmed:11175751",
             "pubmed:13836892"
-        ]
+        ],
+        "polyketide": {
+            "pks_te_type": "None",
+            "pks_subclass": [
+                "Modular type I"
+            ],
+            "mod_pks_genes": [
+                {
+                    "mod_pks_gene": "ZP_09179980.1",
+                    "pks_module": [
+                        {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)",
+                                "Thioesterase"
+                            ],
+                            "module_nr": "3",
+                            "at_substr_spec": "Various atypical acyl-CoAs",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Activity assay"
+                        }
+                    ]
+                },
+                {
+                    "mod_pks_gene": "ZP_09179989.1",
+                    "pks_module": [
+                        {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "module_nr": "3",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Ketoreductase"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "starter_unit": "Unknown",
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Cyclic",
+            "pks_release_type": "Macrolactamization"
+        },
+        "nrp": {
+            "nrps_release_type": "Macrolactonization",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "0",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false
+                            },
+                            "cdom_subtype": "Starter"
+                        }
+                    ],
+                    "nrps_gene": "ZP_09179982.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "0",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false
+                            }
+                        }
+                    ],
+                    "nrps_gene": "ZP_09179983.1"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Threonine",
+                                "evidence_a_spec": "Activity assay",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Starter"
+                        },
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "2",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence_a_spec": "Activity assay",
+                                "nonprot_adom_spec": "Pyruvate",
+                                "aa_type": "Nonproteinogenic"
+                            },
+                            "cdom_subtype": "LCL"
+                        }
+                    ],
+                    "nrps_gene": "ZP_09179979.1"
+                }
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": []
+        }
     },
-    "personal": {
-        "submitter_email": "r.seipke@leeds.ac.uk",
-        "submitter_institution": "University of Leeds",
-        "submitter_name": "Ryan F. Seipke"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

@@ -1,126 +1,123 @@
 {
-    "version": "17",
     "personal": {
+        "submitter_email": "pwiemann@wisc.edu",
         "submitter_name": "Philipp Wiemann, Nancy Keller",
-        "submitter_institution": "University of Wisconsin-Madison",
-        "submitter_email": "pwiemann@wisc.edu"
+        "submitter_institution": "University of Wisconsin-Madison"
     },
+    "version": "17",
     "general_params": {
-        "mibig_accession": "BGC0001118",
-        "biosyn_class": [
-            "Polyketide"
-        ],
-        "publications": [
-            "22492455",
-            "23592999"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "CM000172",
-                    "start_coord": 55988,
                     "end_coord": 65225,
+                    "Accession": "CM000172",
                     "conn_comp_cluster": [
                         "Knock-out studies",
                         "Gene expression correlated with compound production"
-                    ]
+                    ],
+                    "start_coord": 55988
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "endocrocin",
+                "mol_mass": "314.249",
+                "other_chem_act": "inhibits neutrophil recruitment, immunosuppressive",
+                "chem_struct": "CC1=C(C(=C2C(=C1)C(=O)C3=CC(=CC(=C3C2=O)O)O)O)C(=O)O",
                 "chem_synonyms": [],
                 "database_deposited": true,
+                "pubchem_id": 160483,
+                "compound": "endocrocin",
+                "molecular_formula": "C16H10O7",
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 160483,
                 "chem_act": [
                     "Other"
-                ],
-                "other_chem_act": "inhibits neutrophil recruitment, immunosuppressive"
+                ]
             }
         ],
         "genes": {
             "operon": [],
             "gene": [
                 {
-                    "gene_name": "encA",
-                    "not_in_gbk": false,
-                    "gene_startpos": 55988,
+                    "gene_function": "Precursor biosynthesis",
                     "gene_endpos": 61485,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "EAL84397.1",
                     "gene_annotation": "polyketide synthase",
-                    "gene_function": "Precursor biosynthesis",
+                    "gene_startpos": 55988,
+                    "not_in_gbk": false,
+                    "mut_pheno": "loss of endocrocin production",
+                    "gene_name": "encA"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 62856,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "loss of endocrocin production"
-                },
-                {
-                    "gene_name": "encB",
-                    "not_in_gbk": false,
-                    "gene_startpos": 61850,
-                    "gene_endpos": 62856,
                     "gene_id": "EAL84396.1",
                     "gene_annotation": "metallo-beta-lactamase",
-                    "gene_function": "Scaffold biosynthesis",
+                    "gene_startpos": 61850,
+                    "not_in_gbk": false,
+                    "mut_pheno": "loss of endocrocin production",
+                    "gene_name": "encB"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 63795,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "loss of endocrocin production"
-                },
-                {
-                    "gene_name": "encC",
-                    "not_in_gbk": false,
-                    "gene_startpos": 63169,
-                    "gene_endpos": 63795,
                     "gene_id": "EBA27176.1",
                     "gene_annotation": "monooxygenase",
-                    "gene_function": "Tailoring",
+                    "mut_pheno": "loss of endocrocin production",
+                    "gene_startpos": 63169,
+                    "not_in_gbk": false,
                     "tailoring": "Monooxygenation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "loss of endocrocin production"
+                    "gene_name": "encC"
                 },
                 {
-                    "gene_name": "encD",
-                    "not_in_gbk": false,
-                    "gene_startpos": 64101,
-                    "gene_endpos": 65225,
-                    "gene_id": "EAL84395.2",
-                    "gene_annotation": "oxidoreductase",
                     "gene_function": "Tailoring",
-                    "tailoring": "Unknown",
+                    "gene_endpos": 65225,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "endocrocin accumulation"
+                    "gene_id": "EAL84395.2",
+                    "gene_annotation": "oxidoreductase",
+                    "mut_pheno": "endocrocin accumulation",
+                    "gene_startpos": 64101,
+                    "not_in_gbk": false,
+                    "tailoring": "Unknown",
+                    "gene_name": "encD"
                 }
             ]
         },
+        "mibig_accession": "BGC0001118",
+        "biosyn_class": [
+            "Polyketide"
+        ],
         "Polyketide": {
-            "pk_subclass": "Polyphenol",
-            "lin_cycl_pk": "Cyclic",
+            "nr_iterations": -1,
+            "pks_te_type": "None",
+            "iter_cycl_type": "C6-C11 first",
             "pks_subclass": [
                 "Iterative type I"
             ],
-            "starter_unit": "Malonyl-CoA",
-            "pks_genes": [],
-            "nr_iterations": -1,
-            "iterative_subtype": "Non-reducing",
-            "iter_cycl_type": "C6-C11 first",
-            "pks_te_type": "None",
-            "pks_release_type": "Other",
+            "lin_cycl_pk": "Cyclic",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "XP_746435.1",
                     "pks_module": [
                         {
-                            "module_nr": "1",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_evidence_skip_iter": "Sequence-based prediction",
                             "pks_domains": [
                                 "SAT",
                                 "KS",
@@ -128,17 +125,23 @@
                                 "PT",
                                 "ACP"
                             ],
+                            "module_nr": "1",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
                             "pks_mod_skip_iter": "Iterated",
-                            "pks_evidence_skip_iter": "Sequence-based prediction"
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }
-            ]
-        }
+            ],
+            "iterative_subtype": "Non-reducing",
+            "starter_unit": "Malonyl-CoA",
+            "pk_subclass": "Polyphenol",
+            "pks_genes": [],
+            "pks_release_type": "Other"
+        },
+        "publications": [
+            "22492455",
+            "23592999"
+        ]
     }
 }

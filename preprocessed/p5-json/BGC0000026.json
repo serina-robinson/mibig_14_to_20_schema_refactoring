@@ -1,28 +1,24 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "andreas.bechthold@pharmazie.uni-freiburg.de",
+        "submitter_name": "Andreas Bechthold",
+        "submitter_institution": "Albert-Ludwigs-University of Freiburg, Germany"
+    },
     "general_params": {
-        "biosyn_class": [
-            "Saccharide"
-        ],
+        "loci": {
+            "complete": "incomplete",
+            "conn_comp_cluster": [
+                "Knock-out studies"
+            ],
+            "accession": "AF333038.2",
+            "start_coord": 1590,
+            "end_coord": 39999
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Antibacterial"
-                ],
-                "chem_moieties": [
-                    {
-                        "chem_moiety": "Orsellinic acid",
-                        "moiety_subcluster": [
-                            "aak83178.1",
-                            "aak83194.1"
-                        ]
-                    }
-                ],
+                "chemspider_id": 16735687,
+                "mol_mass": 1404.243,
+                "chem_struct": "C[C@@H]1[C@H]([C@@H](C[C@@H](O1)O[C@@H]2[C@H](OC3(C[C@@H]2O)O[C@@H]4[C@H](O[C@H](C[C@]4(O3)C)O[C@@H]5[C@H]([C@@H](O[C@@H]([C@@H]5OC)C)O[C@@H]6[C@H](O[C@H]([C@H]([C@H]6O)OC)O[C@H]7[C@@H]([C@H]8[C@H](CO7)O[C@@]9(O8)C1C([C@@]([C@H](O9)C)(C(=O)C)O)OCO1)OC(=O)C(C)C)COC)O)C)C)O)OC(=O)C1=C(C(=C(C(=C1OC)Cl)O)Cl)C",
                 "chem_synonyms": [
                     "2,3-deoxy-Flambamycin",
                     "A-23575",
@@ -33,17 +29,12 @@
                     "AR-1A2994",
                     "LS-89288"
                 ],
+                "pubchem_id": 122779,
                 "chem_target": [
-                    "50Sribosomalsubunit"
+                    "50S ribosomal subunit"
                 ],
-                "chemspider_id": 16735687,
                 "compound": "Avilamycin A ",
-                "pubchem_id": 122779
-            },
-            {
-                "chem_act": [
-                    "Antibacterial"
-                ],
+                "molecular_formula": "C61H88Cl2O32",
                 "chem_moieties": [
                     {
                         "chem_moiety": "Orsellinic acid",
@@ -53,168 +44,182 @@
                         ]
                     }
                 ],
+                "chem_act": [
+                    "Antibacterial"
+                ]
+            },
+            {
+                "chemspider_id": 16736581,
+                "mol_mass": 1406.259,
+                "chem_struct": "C[C@@H]1[C@H]([C@@H](C[C@@H](O1)O[C@@H]2[C@H](OC3(C[C@H]2O)O[C@@H]4[C@H](O[C@H](C[C@]4(O3)C)O[C@@H]5[C@H]([C@@H](O[C@@H]([C@@H]5OC)C)O[C@@H]6[C@H](O[C@H]([C@H]([C@H]6O)OC)O[C@H]7[C@@H]([C@H]8[C@H](CO7)O[C@@]9(O8)[C@H]1[C@H]([C@@]([C@H](O9)C)(C(C)O)O)OCO1)OC(=O)C(C)C)COC)O)C)C)O)OC(=O)C1=C(C(=C(C(=C1OC)Cl)O)Cl)C",
                 "chem_synonyms": [
                     "SCHEMBL6753731",
                     "69787-80-0"
                 ],
+                "pubchem_id": 20055307,
                 "chem_target": [
-                    "50Sribosomalsubunit"
+                    "50S ribosomal subunit"
                 ],
-                "chemspider_id": 16736581,
                 "compound": "Avilamycin C",
-                "pubchem_id": 20055307
+                "molecular_formula": "C61H90Cl2O32",
+                "chem_moieties": [
+                    {
+                        "chem_moiety": "Orsellinic acid",
+                        "moiety_subcluster": [
+                            "aak83178.1",
+                            "aak83194.1"
+                        ]
+                    }
+                ],
+                "chem_act": [
+                    "Antibacterial"
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Halogenation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
                     "gene_annotation": "halogenase",
-                    "gene_function": "Tailoring",
-                    "gene_name": "aviH",
-                    "mut_pheno": "Production of non-chlorinated avilamycin ",
                     "not_in_gbk": true,
-                    "tailoring": "Halogenation"
+                    "mut_pheno": "Production of non-chlorinated avilamycin ",
+                    "gene_name": "aviH"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Methylation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
                     "gene_annotation": "O-methyltransferase",
-                    "gene_function": "Tailoring",
-                    "gene_name": "aviG4",
-                    "mut_pheno": "Production of avilamyicin without O-methyl group of orsellinic acid",
                     "not_in_gbk": true,
-                    "tailoring": "Methylation"
+                    "mut_pheno": "Production of avilamyicin without O-methyl group of orsellinic acid",
+                    "gene_name": "aviG4"
                 },
                 {
+                    "gene_function": "Resistance/immunity",
                     "evidence_genefunction": [
                         "Activity assay"
                     ],
-                    "gene_function": "Resistance/immunity",
                     "gene_id": "AAG32067.2",
                     "gene_name": "aviRa"
                 },
                 {
+                    "gene_function": "Resistance/immunity",
                     "evidence_genefunction": [
                         "Activity assay"
                     ],
-                    "gene_function": "Resistance/immunity",
                     "gene_id": "AAG32066.1",
                     "gene_name": "aviRb"
                 },
                 {
+                    "gene_function": "Transport",
                     "evidence_genefunction": [
                         "Heterologous expression"
                     ],
-                    "gene_function": "Transport",
                     "gene_id": "AAG32068.1, AAG32069.1",
                     "gene_name": "aviABC1, aviABC2"
                 },
                 {
+                    "mut_pheno": "No production of avilamycin ",
+                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Heterologous expression"
                     ],
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "AAK83176.1",
-                    "gene_name": "aviG1",
-                    "mut_pheno": "No production of avilamycin "
+                    "gene_name": "aviG1"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
                     "gene_function": "Tailoring",
-                    "gene_id": "AAK83184.1",
-                    "gene_name": "aviG2",
                     "mut_pheno": "Production of avilamycin without methyl groups at R4",
-                    "tailoring": "Methylation"
-                },
-                {
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
+                    "gene_id": "AAK83184.1",
+                    "tailoring": "Methylation",
+                    "gene_name": "aviG2"
+                },
+                {
                     "gene_function": "Tailoring",
-                    "gene_id": "AAK83180.1",
-                    "gene_name": "aviG5",
                     "mut_pheno": "Production of avilamycin without methyl groups at R2",
-                    "tailoring": "Methylation"
-                },
-                {
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
+                    "gene_id": "AAK83180.1",
+                    "tailoring": "Methylation",
+                    "gene_name": "aviG5"
+                },
+                {
                     "gene_function": "Tailoring",
-                    "gene_id": "AAK83186.1",
-                    "gene_name": "aviG6",
                     "mut_pheno": "Production of avilamycin without methyl groups at R3",
-                    "tailoring": "Methylation"
-                },
-                {
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "AAK83190.1",
-                    "gene_name": "aviB1",
-                    "mut_pheno": "Production of nonacetylated avilamycin"
+                    "gene_id": "AAK83186.1",
+                    "tailoring": "Methylation",
+                    "gene_name": "aviG6"
                 },
                 {
+                    "mut_pheno": "Production of nonacetylated avilamycin",
+                    "gene_function": "Precursor biosynthesis",
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_id": "AAK83190.1",
+                    "gene_name": "aviB1"
+                },
+                {
+                    "gene_annotation": "UDP-GlcA decarboxylase",
+                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Activity assay"
                     ],
-                    "gene_annotation": "UDP-GlcA decarboxylase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "AAK83183.1",
                     "gene_name": "aviE2"
                 },
                 {
+                    "gene_function": "Activation / processing",
+                    "mut_pheno": "glucose instead of a mannose is incorporated into avilamycin",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "C-epimerase",
-                    "gene_function": "Activation / processing",
                     "gene_id": "AAK83189.1",
-                    "gene_name": "aviX12",
-                    "mut_pheno": "glucose instead of a mannose is incorporated into avilamycin"
+                    "gene_annotation": "C-epimerase",
+                    "gene_name": "aviX12"
                 },
                 {
+                    "mut_pheno": "No production of avilamycin ",
+                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Heterologous expression",
                         "Unknown"
                     ],
-                    "gene_function": "Regulation",
                     "gene_id": "AAK83172.1",
-                    "gene_name": "aviC1",
-                    "mut_pheno": "No production of avilamycin "
+                    "gene_name": "aviC1"
                 },
                 {
+                    "mut_pheno": "No production of avilamycin ",
+                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Heterologous expression",
                         "Unknown"
                     ],
-                    "gene_function": "Regulation",
                     "gene_id": "AAK83173.1",
-                    "gene_name": "aviC2",
-                    "mut_pheno": "No production of avilamycin "
+                    "gene_name": "aviC2"
                 }
             ]
         },
-        "loci": {
-            "accession": "AF333038.2",
-            "complete": "incomplete",
-            "conn_comp_cluster": [
-                "Knock-out studies"
-            ],
-            "end_coord": 39999,
-            "start_coord": 1590
-        },
         "mibig_accession": "BGC0000026",
+        "biosyn_class": [
+            "Saccharide"
+        ],
         "publications": [
             "pubmed:11410376",
             "pubmed:11181344",
@@ -231,34 +236,35 @@
             "pubmed:4435163"
         ],
         "saccharide": {
+            "saccharide_subclass": "oligosaccharide",
             "gt_genes": [
                 {
-                    "evidence_gt_spec": "Unknown",
                     "gt_gene": "AAK83182.1",
-                    "gt_specificity": "Unknown"
+                    "gt_specificity": "Unknown",
+                    "evidence_gt_spec": "Unknown"
                 },
                 {
-                    "evidence_gt_spec": "Unknown",
                     "gt_gene": "AAK83170.1",
-                    "gt_specificity": "Unknown"
+                    "gt_specificity": "Unknown",
+                    "evidence_gt_spec": "Unknown"
                 },
                 {
-                    "evidence_gt_spec": "Unknown",
                     "gt_gene": "AAK83192.1",
-                    "gt_specificity": "Unknown"
+                    "gt_specificity": "Unknown",
+                    "evidence_gt_spec": "Unknown"
                 },
                 {
                     "evidence_gt_spec": "Knock-out construct",
                     "gt_gene": "AAK83193.1",
                     "gt_specificity": "eurekanate"
                 }
-            ],
-            "saccharide_subclass": "oligosaccharide"
+            ]
         }
     },
-    "personal": {
-        "submitter_email": "andreas.bechthold@pharmazie.uni-freiburg.de",
-        "submitter_institution": "Albert-Ludwigs-University of Freiburg, Germany",
-        "submitter_name": "Andreas Bechthold"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

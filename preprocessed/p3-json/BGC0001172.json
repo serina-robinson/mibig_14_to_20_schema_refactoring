@@ -1,114 +1,108 @@
 {
-    "version": "6",
     "personal": {
+        "submitter_email": "smoraesmantovani@ucsd.edu",
         "submitter_name": "Simone Moraes Mantovani",
-        "submitter_institution": "University of California San Diego",
-        "submitter_email": "smoraesmantovani@ucsd.edu"
+        "submitter_institution": "University of California San Diego"
     },
+    "version": "6",
     "general_params": {
-        "mibig_accession": "BGC0001172",
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
-        "publications": [
-            "'24246014",
-            "23405849'"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "KF585133",
-                    "start_coord": -1,
                     "end_coord": -1,
+                    "Accession": "KF585133",
                     "conn_comp_cluster": [
                         "Knock-out studies",
                         "Enzymatic assays",
                         "Heterologous expression"
-                    ]
+                    ],
+                    "start_coord": -1
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "Chlorizidine A",
-                "chem_synonyms": [],
-                "chem_struct": "ClC1=C(Cl)C=C2N1C(C3=C2C=C(O)C([C@]4([H])CCC5=CC(Cl)=C(Cl)N54)=C3O)=O",
-                "molecular_formula": "C18H10Cl4N2O3",
                 "mol_mass": 444.0956,
+                "chem_struct": "ClC1=C(Cl)C=C2N1C(C3=C2C=C(O)C([C@]4([H])CCC5=CC(Cl)=C(Cl)N54)=C3O)=O",
                 "mass_ion_type": "Molecular ion",
-                "chem_act": [
-                    "Cytotoxic"
-                ],
                 "chem_moieties": [
                     {
                         "chem_moiety": "Other",
-                        "other_chem_moiety": "pyrrolizine bicycle",
                         "moiety_subcluster": [
                             "aha12081.1"
-                        ]
+                        ],
+                        "other_chem_moiety": "pyrrolizine bicycle"
                     }
+                ],
+                "compound": "Chlorizidine A",
+                "molecular_formula": "C18H10Cl4N2O3",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Cytotoxic"
                 ]
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "Clz9",
-                    "gene_id": "AHA12081.1",
                     "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
+                    "mut_pheno": "prechlorizidine A",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Activity assay"
                     ],
-                    "mut_pheno": "prechlorizidine A"
+                    "gene_id": "AHA12081.1",
+                    "tailoring": "Oxidation",
+                    "gene_name": "Clz9"
                 }
             ]
         },
+        "mibig_accession": "BGC0001172",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
         "NRP": {
-            "subclass": "Other",
             "lin_cycl_nrp": "Cyclic",
             "nrps_te_type": "Type II",
+            "subclass": "Other",
             "nrps_release_type": "Other"
         },
         "Polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Cyclic",
+            "pks_te_type": "None",
             "pks_subclass": [
                 "Modular type I"
             ],
-            "starter_unit": "Other",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "AHA12078.1",
                     "pks_module": [
                         {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "module_nr": "1",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
-                            ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         },
                         {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "module_nr": "2",
+                            "at_substr_spec": "Methylmalonyl-CoA",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
-                            ],
-                            "at_substr_spec": "Methylmalonyl-CoA",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }
                     ]
                 },
@@ -116,23 +110,29 @@
                     "mod_pks_gene": "AHA12079.1",
                     "pks_module": [
                         {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "module_nr": "3",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "pks_mod_skip_iter": "Neither",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Thiolation (ACP/PCP)"
-                            ],
-                            "at_substr_spec": "Malonyl-CoA",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            ]
                         }
                     ]
                 }
             ],
-            "pks_te_type": "None",
+            "starter_unit": "Other",
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Cyclic",
             "pks_release_type": "Other"
-        }
+        },
+        "publications": [
+            "'24246014",
+            "23405849'"
+        ]
     }
 }

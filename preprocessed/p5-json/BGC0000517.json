@@ -1,106 +1,12 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "vddonk@illinois.edu",
+        "submitter_name": "Wilfred Van Der Donk",
+        "submitter_institution": "The University of Illinois at Urbana-Champaign"
+    },
     "comments": "The lantibiotic synthetases complete dehydration and cyclization so reaction type was marked as other. ",
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Antibacterial",
-                    "Inhibitor"
-                ],
-                "chem_synonyms": [
-                    "Hal beta"
-                ],
-                "chem_target": [
-                    "cellwall-lipidII",
-                    "poreforming"
-                ],
-                "compound": "Haloduracin beta",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 2330.05,
-                "molecular_formula": "C103H155N27O27S4"
-            },
-            {
-                "chem_act": [
-                    "Antibacterial",
-                    "Inhibitor"
-                ],
-                "chem_synonyms": [
-                    "Hal alpha"
-                ],
-                "compound": "Haloduracin alpha",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 3045.29,
-                "molecular_formula": "C130H196N36O37S6"
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Other in vivo study",
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Class II lantibiotic synthetase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "BAB04174.1",
-                    "gene_name": "HalM1",
-                    "tailoring": "Unknown"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Other in vivo study",
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Class II lantibiotic synthetase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "BAB04171.1",
-                    "gene_name": "HalM2",
-                    "tailoring": "Unknown"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "lantibiotic haloduracin precursor",
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "BAB04172.1",
-                    "gene_name": "HalA2"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "lantibiotic haloduracin precursor",
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "BAB04173.1",
-                    "gene_name": "HalA1"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "lantibiotic haloduracin protease and transporter",
-                    "gene_function": "Unknown",
-                    "gene_id": "BAB04170.1",
-                    "gene_name": "HalT"
-                }
-            ]
-        },
         "loci": {
-            "accession": "BA000004.3",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Enzymatic assays",
@@ -108,10 +14,103 @@
                 "Gene expression correlated with compound production",
                 "Sequence-based prediction"
             ],
-            "end_coord": 486037,
-            "start_coord": 476922
+            "accession": "BA000004.3",
+            "start_coord": 476922,
+            "end_coord": 486037
+        },
+        "compounds": [
+            {
+                "mol_mass": 2330.05,
+                "mass_ion_type": "[M+H]+",
+                "chem_target": [
+                    "cell wall- lipidII",
+                    "pore forming"
+                ],
+                "compound": "Haloduracin beta",
+                "molecular_formula": "C103H155N27O27S4",
+                "chem_synonyms": [
+                    "Hal beta"
+                ],
+                "chem_act": [
+                    "Antibacterial",
+                    "Inhibitor"
+                ]
+            },
+            {
+                "mol_mass": 3045.29,
+                "mass_ion_type": "[M+H]+",
+                "compound": "Haloduracin alpha",
+                "molecular_formula": "C130H196N36O37S6",
+                "chem_synonyms": [
+                    "Hal alpha"
+                ],
+                "chem_act": [
+                    "Antibacterial",
+                    "Inhibitor"
+                ]
+            }
+        ],
+        "genes": {
+            "gene": [
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "tailoring": "Unknown",
+                    "evidence_genefunction": [
+                        "Other in vivo study",
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "BAB04174.1",
+                    "gene_annotation": "Class II lantibiotic synthetase",
+                    "gene_name": "HalM1"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "tailoring": "Unknown",
+                    "evidence_genefunction": [
+                        "Other in vivo study",
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "BAB04171.1",
+                    "gene_annotation": "Class II lantibiotic synthetase",
+                    "gene_name": "HalM2"
+                },
+                {
+                    "gene_annotation": "lantibiotic haloduracin precursor",
+                    "gene_function": "Precursor biosynthesis",
+                    "evidence_genefunction": [
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "BAB04172.1",
+                    "gene_name": "HalA2"
+                },
+                {
+                    "gene_annotation": "lantibiotic haloduracin precursor",
+                    "gene_function": "Precursor biosynthesis",
+                    "evidence_genefunction": [
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "BAB04173.1",
+                    "gene_name": "HalA1"
+                },
+                {
+                    "gene_annotation": "lantibiotic haloduracin protease and transporter",
+                    "gene_function": "Unknown",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "BAB04170.1",
+                    "gene_name": "HalT"
+                }
+            ]
         },
         "mibig_accession": "BGC0000517",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:17085596",
             "pubmed:17233677",
@@ -120,33 +119,33 @@
             "pubmed:22003874"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Lanthipeptide",
             "precursor_loci": [
                 {
+                    "foll_pept_len": -1,
+                    "crosslinks": [
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 7,
+                            "AA_pos_2": 17
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 18,
+                            "AA_pos_2": 23
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 20,
+                            "AA_pos_2": 27
+                        }
+                    ],
                     "cleavage_recogn_site": [
                         "GA"
                     ],
                     "core_pept_aa": [
                         "CAWYNISCRLGNKGAYCTLTVECMPSCN"
                     ],
-                    "crosslinks": [
-                        {
-                            "AA_pos_1": 7,
-                            "AA_pos_2": 17,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 18,
-                            "AA_pos_2": 23,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 20,
-                            "AA_pos_2": 27,
-                            "crosslink_type": "Thioether"
-                        }
-                    ],
-                    "foll_pept_len": -1,
                     "gene_id": [
                         "BAB04173.1"
                     ],
@@ -156,6 +155,29 @@
                     ]
                 },
                 {
+                    "foll_pept_len": -1,
+                    "crosslinks": [
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 1,
+                            "AA_pos_2": 5
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 11,
+                            "AA_pos_2": 15
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 17,
+                            "AA_pos_2": 20
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 21,
+                            "AA_pos_2": 24
+                        }
+                    ],
                     "cleavage_recogn_site": [
                         "GS",
                         "GDVHAQ"
@@ -163,29 +185,6 @@
                     "core_pept_aa": [
                         "GDVHAQTTWPCATVGVSVALCPTTKCTSQC"
                     ],
-                    "crosslinks": [
-                        {
-                            "AA_pos_1": 1,
-                            "AA_pos_2": 5,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 11,
-                            "AA_pos_2": 15,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 17,
-                            "AA_pos_2": 20,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 21,
-                            "AA_pos_2": 24,
-                            "crosslink_type": "Thioether"
-                        }
-                    ],
-                    "foll_pept_len": -1,
                     "gene_id": [
                         "BAB04172.1"
                     ],
@@ -195,12 +194,13 @@
                     ]
                 }
             ],
-            "ripp_subclass": "Lanthipeptide"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "vddonk@illinois.edu",
-        "submitter_institution": "The University of Illinois at Urbana-Champaign",
-        "submitter_name": "Wilfred Van Der Donk"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

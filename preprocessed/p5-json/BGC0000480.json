@@ -1,36 +1,44 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "donia@princeton.edu",
+        "submitter_name": "Mohamed Donia",
+        "submitter_institution": "Princeton University"
+    },
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Sequence-based prediction"
+            ],
+            "accession": "EU290741.1"
+        },
         "compounds": [
             {
+                "mol_mass": 460.527,
+                "chem_struct": "C[C@H]1C2=NC(=C(O2)C)C(=O)NC(C3=NC(=CS3)C(=O)NC(C4=NC(=CS4)C(=O)N1)C)C",
+                "chem_synonyms": [],
+                "pubchem_id": 24762151,
+                "compound": "tenuecyclamide A",
+                "molecular_formula": "C19H20N6O4S2",
                 "chem_act": [
                     "Unknown"
-                ],
-                "chem_synonyms": [],
-                "compound": "tenuecyclamide A",
-                "pubchem_id": 24762151
+                ]
             },
             {
+                "mol_mass": 506.614,
+                "chem_struct": "C[C@H]1C2=NC(=C(O2)C)C(=O)NCC3=NC(=CS3)C(=O)N[C@H](C4=NC(=CS4)C(=O)N1)CCSC",
+                "chem_synonyms": [],
+                "pubchem_id": 10720367,
+                "compound": "tenuecyclamide C",
+                "molecular_formula": "C20H22N6O4S3",
                 "chem_act": [
                     "Unknown"
-                ],
-                "chem_synonyms": [],
-                "compound": "tenuecyclamide C",
-                "pubchem_id": 10720367
+                ]
             }
         ],
         "genes": {
             "operon": [
                 {
-                    "evidence_operon": "Sequence-based prediction",
                     "operon_genes": [
                         "aca04480.1",
                         "aca04481.1",
@@ -39,25 +47,23 @@
                         "aca04484.1",
                         "aca04485.1",
                         "aca04486.1"
-                    ]
+                    ],
+                    "evidence_operon": "Sequence-based prediction"
                 }
             ]
         },
-        "loci": {
-            "accession": "EU290741.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Sequence-based prediction"
-            ]
-        },
         "mibig_accession": "BGC0000480",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:18425112"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Cyanobactin",
             "precursor_loci": [
                 {
+                    "foll_pept_len": -1,
                     "cleavage_recogn_site": [
                         "GVGAS",
                         "AYD",
@@ -68,7 +74,6 @@
                         "ATGCMC",
                         "ATACAC"
                     ],
-                    "foll_pept_len": -1,
                     "gene_id": [
                         "aca04484.1"
                     ],
@@ -76,12 +81,13 @@
                     "peptidase": []
                 }
             ],
-            "ripp_subclass": "Cyanobactin"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "donia@princeton.edu",
-        "submitter_institution": "Princeton University",
-        "submitter_name": "Mohamed Donia"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

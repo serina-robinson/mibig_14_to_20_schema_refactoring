@@ -1,117 +1,118 @@
 {
-    "version": "17",
     "personal": {
+        "submitter_email": "b.neilan@unsw.edu.au",
         "submitter_name": "Brett Neilan",
-        "submitter_institution": "UNSW Australia",
-        "submitter_email": "b.neilan@unsw.edu.au"
+        "submitter_institution": "UNSW Australia"
     },
+    "version": "17",
     "general_params": {
+        "loci": {
+            "nucl_acc": [
+                {
+                    "end_coord": -1,
+                    "Accession": "EU140798",
+                    "conn_comp_cluster": [
+                        "Sequence-based prediction"
+                    ],
+                    "start_coord": -1
+                }
+            ],
+            "complete": "complete"
+        },
+        "compounds": [
+            {
+                "chemspider_id": 26396261,
+                "mol_mass": "415.421",
+                "other_chem_act": "Neurotoxic",
+                "chem_struct": "C[C@H]1[C@H](C[C@@H]2C[C@@H](NC3=NC[C@H]1N23)[C@@H](C4=CC(=O)NC(=O)N4)O)OS(=O)(=O)O",
+                "chem_synonyms": [],
+                "database_deposited": true,
+                "pubchem_id": 115005,
+                "compound": "cylindrospermopsin",
+                "molecular_formula": "C15H21N5O7S",
+                "chem_moieties": [
+                    {
+                        "chem_moiety": "Other",
+                        "moiety_subcluster": [
+                            "abx60154.1",
+                            "abx60158.1"
+                        ],
+                        "other_chem_moiety": "guanidino"
+                    },
+                    {
+                        "chem_moiety": "Other",
+                        "moiety_subcluster": [
+                            "abx60159.1"
+                        ],
+                        "other_chem_moiety": "sulfate"
+                    },
+                    {
+                        "chem_moiety": "Other",
+                        "moiety_subcluster": [
+                            "abx60155.1"
+                        ],
+                        "other_chem_moiety": "hydroxide"
+                    }
+                ],
+                "databases_deposited": [
+                    "PubChem",
+                    "ChemSpider"
+                ],
+                "chem_act": [
+                    "Cytotoxic",
+                    "Other"
+                ]
+            }
+        ],
+        "genes": {},
         "mibig_accession": "BGC0000978",
         "biosyn_class": [
             "NRP",
             "Polyketide",
             "Alkaloid"
         ],
-        "publications": [
-            "18065631"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "EU140798",
-                    "start_coord": -1,
-                    "end_coord": -1,
-                    "conn_comp_cluster": [
-                        "Sequence-based prediction"
-                    ]
-                }
-            ]
+        "Alkaloid": {
+            "alkaloid_subclass": "Other"
         },
-        "compounds": [
-            {
-                "compound": "cylindrospermopsin",
-                "chem_synonyms": [],
-                "database_deposited": true,
-                "databases_deposited": [
-                    "PubChem",
-                    "ChemSpider"
-                ],
-                "pubchem_id": 115005,
-                "chemspider_id": 26396261,
-                "chem_act": [
-                    "Cytotoxic",
-                    "Other"
-                ],
-                "other_chem_act": "Neurotoxic",
-                "chem_moieties": [
-                    {
-                        "chem_moiety": "Other",
-                        "other_chem_moiety": "guanidino",
-                        "moiety_subcluster": [
-                            "abx60154.1",
-                            "abx60158.1"
-                        ]
-                    },
-                    {
-                        "chem_moiety": "Other",
-                        "other_chem_moiety": "sulfate",
-                        "moiety_subcluster": [
-                            "abx60159.1"
-                        ]
-                    },
-                    {
-                        "chem_moiety": "Other",
-                        "other_chem_moiety": "hydroxide",
-                        "moiety_subcluster": [
-                            "abx60155.1"
-                        ]
-                    }
-                ]
-            }
-        ],
-        "genes": {},
         "NRP": {
-            "subclass": "Other",
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
             "nrps_release_type": "Other",
             "nrps_genes": [
                 {
-                    "nrps_gene": "ABX60161.1",
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither",
                             "module_nr": "0",
-                            "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "nonprot_adom_spec": "guanidinoacetate ",
-                                "evidence_a_spec": "Activity assay",
-                                "epimerized": false
-                            },
-                            "cdom_subtype": "N/A",
                             "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence_a_spec": "Activity assay",
+                                "nonprot_adom_spec": "guanidinoacetate ",
+                                "aa_type": "Nonproteinogenic"
+                            },
+                            "cdom_subtype": "N/A"
                         }
-                    ]
+                    ],
+                    "nrps_gene": "ABX60161.1"
                 }
-            ]
+            ],
+            "subclass": "Other",
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": []
         },
         "Polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Cyclic",
+            "pks_te_type": "None",
             "pks_subclass": [
                 "Modular type I"
             ],
-            "starter_unit": "Other",
-            "pks_te_type": "None",
-            "pks_release_type": "Other",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ABX60152.1",
                     "pks_module": [
                         {
-                            "module_nr": "1",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -119,13 +120,11 @@
                                 "KR",
                                 "T"
                             ],
+                            "module_nr": "1",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 },
@@ -133,18 +132,18 @@
                     "mod_pks_gene": "ABX60153.1",
                     "pks_module": [
                         {
-                            "module_nr": "2",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "KS",
                                 "AT",
                                 "T"
                             ],
+                            "module_nr": "2",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 },
@@ -152,7 +151,9 @@
                     "mod_pks_gene": "ABX60161.1",
                     "pks_module": [
                         {
-                            "module_nr": "3",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ],
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -160,13 +161,11 @@
                                 "KR",
                                 "T"
                             ],
+                            "module_nr": "3",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 },
@@ -174,7 +173,9 @@
                     "mod_pks_gene": "ABX60162.1",
                     "pks_module": [
                         {
-                            "module_nr": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -182,13 +183,11 @@
                                 "KR",
                                 "T"
                             ],
+                            "module_nr": "4",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 },
@@ -196,27 +195,31 @@
                     "mod_pks_gene": "ABX60163.1",
                     "pks_module": [
                         {
-                            "module_nr": "5",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "KS",
                                 "AT",
                                 "KR",
                                 "T"
                             ],
+                            "module_nr": "5",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         }
                     ]
                 }
-            ]
+            ],
+            "starter_unit": "Other",
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Cyclic",
+            "pks_release_type": "Other"
         },
-        "Alkaloid": {
-            "alkaloid_subclass": "Other"
-        }
+        "publications": [
+            "18065631"
+        ]
     }
 }

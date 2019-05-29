@@ -1,40 +1,33 @@
 {
-    "version": "17",
     "personal": {
+        "submitter_email": "fenganyu@umich.edu",
         "submitter_name": "Fengan Yu",
-        "submitter_institution": "University of Michigan",
-        "submitter_email": "fenganyu@umich.edu"
+        "submitter_institution": "University of Michigan"
     },
+    "embargo": true,
+    "version": "17",
     "general_params": {
-        "mibig_accession": "BGC0001052",
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
-        "publications": [
-            "20127927"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "GU385216",
-                    "start_coord": 1,
                     "end_coord": 55522,
+                    "Accession": "GU385216",
                     "conn_comp_cluster": [
                         "Enzymatic assays"
-                    ]
+                    ],
+                    "start_coord": 1
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "tirandamycin",
-                "chem_synonyms": [],
-                "chem_struct": "C[C@H]1[C@@H]2C(=O)[C@H]3[C@](O3)([C@@](O2)(O[C@@H]1[C@H](C)/C=C(\\\\C)/C=C/C(=O)C4=C(NCC4=O)O)C)C",
-                "molecular_formula": "C22H27NO7",
                 "mol_mass": 417.1787,
+                "chem_struct": "C[C@H]1[C@@H]2C(=O)[C@H]3[C@](O3)([C@@](O2)(O[C@@H]1[C@H](C)/C=C(\\\\C)/C=C/C(=O)C4=C(NCC4=O)O)C)C",
                 "mass_ion_type": "[M+H]+",
+                "compound": "tirandamycin",
+                "molecular_formula": "C22H27NO7",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Antibacterial"
                 ]
@@ -43,93 +36,95 @@
         "genes": {
             "operon": []
         },
+        "mibig_accession": "BGC0001052",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
         "NRP": {
-            "subclass": "Other",
             "lin_cycl_nrp": "Linear",
-            "nrps_te_type": "Type II",
-            "nrps_release_type": "Unknown",
             "nrps_genes": [
                 {
-                    "nrps_gene": "ADC79642.1",
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither",
                             "module_nr": "8",
+                            "nrps_mod_doms": "None",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
                                 "prot_adom_spec": "Glycine",
                                 "evidence_a_spec": "Sequence-based prediction",
-                                "epimerized": false
+                                "aa_type": "Proteinogenic"
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "LCL"
                         }
-                    ]
+                    ],
+                    "nrps_gene": "ADC79642.1"
                 }
-            ]
+            ],
+            "nrps_te_type": "Type II",
+            "subclass": "Other",
+            "nrps_release_type": "Unknown"
         },
         "Polyketide": {
-            "pk_subclass": "Ansamycin",
-            "lin_cycl_pk": "Cyclic",
+            "pks_te_type": "Type II",
             "pks_subclass": [
                 "Modular type I"
             ],
-            "starter_unit": "Malonyl-CoA",
-            "pks_te_type": "Type II",
-            "pks_thioesterase": [],
-            "pks_release_type": "Unknown",
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ADC79637.1",
                     "pks_module": [
                         {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "T"
+                            ],
                             "module_nr": "0",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "T"
-                            ],
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
+                            "pks_domains": [
+                                "KS",
+                                "AT",
+                                "KR",
+                                "T"
+                            ],
                             "module_nr": "1",
-                            "pks_domains": [
-                                "KS",
-                                "AT",
-                                "KR",
-                                "T"
-                            ],
                             "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "kr_stereochem": "Inactive",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "2",
                             "pks_domains": [
                                 "KS",
                                 "AT",
                                 "KR",
                                 "T"
                             ],
+                            "module_nr": "2",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "kr_stereochem": "B-group",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "3",
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -137,13 +132,11 @@
                                 "KR",
                                 "T"
                             ],
+                            "module_nr": "3",
                             "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "kr_stereochem": "B-group",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 },
@@ -151,23 +144,25 @@
                     "mod_pks_gene": "ADC79638.1",
                     "pks_module": [
                         {
-                            "module_nr": "4",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "KS",
                                 "AT",
                                 "KR",
                                 "T"
                             ],
+                            "module_nr": "4",
                             "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "kr_stereochem": "A-group",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "5",
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -175,13 +170,11 @@
                                 "KR",
                                 "T"
                             ],
+                            "module_nr": "5",
                             "at_substr_spec": "Methylmalonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "kr_stereochem": "B-group",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 },
@@ -189,7 +182,9 @@
                     "mod_pks_gene": "ADC79639.1",
                     "pks_module": [
                         {
-                            "module_nr": "6",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
                             "pks_domains": [
                                 "KS",
                                 "AT",
@@ -197,32 +192,37 @@
                                 "KR",
                                 "T"
                             ],
+                            "module_nr": "6",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
                             "kr_stereochem": "B-group",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
+                        },
+                        {
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "module_nr": "7",
                             "pks_domains": [
                                 "KS",
                                 "AT",
                                 "T"
                             ],
+                            "module_nr": "7",
                             "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 }
-            ]
-        }
-    },
-    "embargo": true
+            ],
+            "pks_thioesterase": [],
+            "starter_unit": "Malonyl-CoA",
+            "pk_subclass": "Ansamycin",
+            "lin_cycl_pk": "Cyclic",
+            "pks_release_type": "Unknown"
+        },
+        "publications": [
+            "20127927"
+        ]
+    }
 }

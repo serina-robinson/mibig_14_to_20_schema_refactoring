@@ -1,58 +1,57 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "negarg@ucsd.edu",
+        "submitter_name": "Neha Garg",
+        "submitter_institution": "University of California at San Diego"
+    },
     "comments": "There is a second propeptide with locus tag SSGG_RS13160, the production of which was not observed during extraction of solid culture. The sequence is MDIVRSWKDADYRLSLGSEAPAHPSGEGLTAITDEELTEINGAGSGVLGTLGCCSCLPWYSGWTVCGLACNPGKPCKN\\n",
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Unknown"
-                ],
-                "chem_synonyms": [],
-                "compound": "SRO15-3108",
-                "mass_ion_type": "None",
-                "mol_mass": 3108.3
-            }
-        ],
-        "genes": {},
         "loci": {
-            "accession": "NZ_DS999644.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Sequence-based prediction"
             ],
-            "end_coord": 4451653,
-            "start_coord": 4445108
+            "accession": "NZ_DS999644.1",
+            "start_coord": 4445108,
+            "end_coord": 4451653
         },
+        "compounds": [
+            {
+                "mol_mass": 3108.3,
+                "mass_ion_type": "None",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Unknown"
+                ],
+                "compound": "SRO15-3108"
+            }
+        ],
+        "genes": {},
         "mibig_accession": "BGC0000554",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:21983601"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Lanthipeptide",
             "precursor_loci": [
                 {
+                    "foll_pept_len": 0,
+                    "crosslinks": [
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": -1,
+                            "AA_pos_2": -1
+                        }
+                    ],
                     "cleavage_recogn_site": [
                         "GG"
                     ],
                     "core_pept_aa": [
                         "TTWACATVTLTVTVCSPTGTLCGSCSMGTRGCC"
                     ],
-                    "crosslinks": [
-                        {
-                            "AA_pos_1": -1,
-                            "AA_pos_2": -1,
-                            "crosslink_type": "Thioether"
-                        }
-                    ],
-                    "foll_pept_len": 0,
                     "gene_id": [
                         "ssgg_rs13165",
                         "wp_006126649.1"
@@ -64,12 +63,13 @@
                     ]
                 }
             ],
-            "ripp_subclass": "Lanthipeptide"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "negarg@ucsd.edu",
-        "submitter_institution": "University of California at San Diego",
-        "submitter_name": "Neha Garg"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

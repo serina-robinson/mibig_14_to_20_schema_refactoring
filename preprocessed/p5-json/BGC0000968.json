@@ -1,97 +1,97 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp",
+        "submitter_name": "Yuta Tsunematsu",
+        "submitter_institution": "University of Shizuoka"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ],
+            "accession": "AM779763.1"
+        },
         "compounds": [
             {
+                "mol_mass": -1,
+                "chem_struct": "CC[C@H]1[C@H]2[C@@H](NC(=O)[C@@]23[C@@H](/C=C/C[C@@H](/C=C(\\\\[C@H](C(=O)/C=C/C3=O)O)/C)C)[C@H]4[C@@]1(O4)C)[C@@H](C)C5=CNC6=CC=CC=C65",
+                "mass_ion_type": "None",
+                "compound": "chaetoglobosins",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Cytotoxic"
-                ],
-                "chem_struct": "CC[C@H]1[C@H]2[C@@H](NC(=O)[C@@]23[C@@H](/C=C/C[C@@H](/C=C(\\\\[C@H](C(=O)/C=C/C3=O)O)/C)C)[C@H]4[C@@]1(O4)C)[C@@H](C)C5=CNC6=CC=CC=C65",
-                "chem_synonyms": [],
-                "compound": "chaetoglobosins",
-                "mass_ion_type": "None",
-                "mol_mass": -1
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_annotation": "PKS-NRPS hybrid",
+                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Other in vivo study"
                     ],
-                    "gene_annotation": "PKS-NRPS hybrid",
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "CAO91861",
                     "gene_name": "cheA"
                 }
             ]
         },
-        "loci": {
-            "accession": "AM779763.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Gene expression correlated with compound production",
-                "Sequence-based prediction"
-            ]
-        },
         "mibig_accession": "BGC0000968",
-        "nrp": {
-            "lin_cycl_nrp": "Linear",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "CAO91861.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Tryptophan"
-                            },
-                            "cdom_subtype": "Unknown",
-                            "module_nr": "1",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "subclass": "Unknown"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:17636916",
+            "pubmed:3611317"
+        ],
         "polyketide": {
-            "iterative_subtype": "Highly reducing",
-            "lin_cycl_pk": "Linear",
             "nr_iterations": 8,
+            "pks_te_type": "None",
+            "pks_subclass": [
+                "Iterative type I"
+            ],
+            "lin_cycl_pk": "Linear",
+            "iterative_subtype": "Highly reducing",
+            "starter_unit": "Acetyl-CoA",
             "pk_subclass": "Other",
             "pks_genes": [
                 "cao91861.1"
             ],
-            "pks_release_type": "Unknown",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
-            "pks_te_type": "None",
-            "starter_unit": "Acetyl-CoA"
+            "pks_release_type": "Unknown"
         },
-        "publications": [
-            "pubmed:17636916",
-            "pubmed:3611317"
-        ]
+        "nrp": {
+            "nrps_release_type": "Unknown",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "prot_adom_spec": "Tryptophan",
+                                "evidence_a_spec": "Structure-based inference",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Unknown"
+                        }
+                    ],
+                    "nrps_gene": "CAO91861.1"
+                }
+            ],
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Linear",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": []
+        }
     },
-    "personal": {
-        "submitter_email": "tsunematsu@u-shizuoka-ken.ac.jp",
-        "submitter_institution": "University of Shizuoka",
-        "submitter_name": "Yuta Tsunematsu"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

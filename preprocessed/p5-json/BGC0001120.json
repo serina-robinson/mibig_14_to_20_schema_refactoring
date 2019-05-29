@@ -1,128 +1,100 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "keishi.ishida@hki-jena.de",
+        "submitter_name": "Keishi Ishida",
+        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Antibacterial",
-                    "Cytotoxic",
-                    "Siderophore",
-                    "Virulence factor"
-                ],
-                "chem_synonyms": [
-                    "malleilactone"
-                ],
-                "chemspider_id": 28536046,
-                "compound": "burkholderic acid"
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "ABC36203",
-                    "gene_name": "burA",
-                    "mut_pheno": "Loss of burkholderic acid production"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "ABC35796",
-                    "gene_name": "burF",
-                    "mut_pheno": "Loss of burkholderic acid production"
-                },
-                {
-                    "gene_annotation": "FkbH-like protein",
-                    "gene_endpos": 2573207,
-                    "gene_function": "Unknown",
-                    "gene_name": "burH",
-                    "gene_startpos": 2571843,
-                    "not_in_gbk": true
-                }
-            ]
-        },
         "loci": {
-            "accession": "CP000086.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Knock-out studies",
                 "Gene expression correlated with compound production"
             ],
-            "end_coord": 2580940,
-            "start_coord": 2543245
+            "accession": "CP000086.1",
+            "start_coord": 2543245,
+            "end_coord": 2580940
         },
-        "mibig_accession": "BGC0001120",
-        "nrp": {
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_genes": [
+        "compounds": [
+            {
+                "chemspider_id": 28536046,
+                "chem_struct": "",
+                "chem_synonyms": [
+                    "malleilactone"
+                ],
+                "compound": "burkholderic acid",
+                "molecular_formula": "",
+                "chem_act": [
+                    "Antibacterial",
+                    "Cytotoxic",
+                    "Siderophore",
+                    "Virulence factor"
+                ]
+            }
+        ],
+        "genes": {
+            "gene": [
                 {
-                    "nrps_gene": "ABC36203",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Unknown",
-                                "evidence_a_spec": "Unknown"
-                            },
-                            "module_nr": "A1",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
+                    "mut_pheno": "Loss of burkholderic acid production",
+                    "gene_function": "Scaffold biosynthesis",
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_id": "ABC36203",
+                    "gene_name": "burA"
                 },
                 {
-                    "nrps_gene": "ABC35796",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "None"
-                            },
-                            "cdom_subtype": "Unknown",
-                            "module_nr": "B3",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
+                    "mut_pheno": "Loss of burkholderic acid production",
+                    "gene_function": "Scaffold biosynthesis",
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_id": "ABC35796",
+                    "gene_name": "burF"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 2573207,
+                    "gene_annotation": "FkbH-like protein",
+                    "gene_startpos": 2571843,
+                    "not_in_gbk": true,
+                    "gene_name": "burH"
                 }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "Type II",
-            "subclass": "Unknown"
+            ]
         },
+        "mibig_accession": "BGC0001120",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:23055407",
+            "pubmed:22765305"
+        ],
         "polyketide": {
-            "lin_cycl_pk": "Cyclic",
+            "pks_te_type": "None",
+            "pks_subclass": [
+                "Modular type I"
+            ],
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "ABC36203",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Sequence-based prediction",
-                            "kr_stereochem": "Inactive",
-                            "module_nr": "A2",
+                            "pks_mod_doms": [
+                                "Hydroxylation"
+                            ],
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "pks_mod_doms": [
-                                "Hydroxylation"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "A2",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "kr_stereochem": "Inactive",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Sequence-based prediction"
                         }
                     ]
                 },
@@ -130,61 +102,91 @@
                     "mod_pks_gene": "ABC35796",
                     "pks_module": [
                         {
-                            "module_nr": "B0",
-                            "pks_domains": [
-                                "Thiolation (ACP/PCP)"
-                            ],
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "B0",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Thiolation (ACP/PCP)"
+                            ]
                         },
                         {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "evidence_at_spec": "Structure-based inference",
-                            "kr_stereochem": "L-OH",
-                            "module_nr": "B1",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ],
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "pks_mod_doms": [
-                                "Methylation"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "B1",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "kr_stereochem": "L-OH",
+                            "pks_mod_skip_iter": "Neither",
+                            "evidence_at_spec": "Structure-based inference"
                         },
                         {
-                            "module_nr": "B2",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Thiolation (ACP/PCP)"
-                            ],
                             "pks_mod_doms": [
                                 "None"
                             ],
-                            "pks_mod_skip_iter": "Neither"
+                            "module_nr": "B2",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ]
                         }
                     ]
                 }
             ],
+            "starter_unit": "Unknown",
             "pk_subclass": "Other",
-            "pks_release_type": "Reductive release",
-            "pks_subclass": [
-                "Modular type I"
-            ],
-            "pks_te_type": "None",
-            "starter_unit": "Unknown"
+            "lin_cycl_pk": "Cyclic",
+            "pks_release_type": "Reductive release"
         },
-        "publications": [
-            "pubmed:23055407",
-            "pubmed:22765305"
-        ]
+        "nrp": {
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_te_type": "Type II",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "A1",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "evidence_a_spec": "Unknown",
+                                "aa_type": "Unknown"
+                            }
+                        }
+                    ],
+                    "nrps_gene": "ABC36203"
+                },
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "B3",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "aa_type": "None"
+                            },
+                            "cdom_subtype": "Unknown"
+                        }
+                    ],
+                    "nrps_gene": "ABC35796"
+                }
+            ],
+            "subclass": "Unknown",
+            "nrps_release_type": "Unknown"
+        }
     },
-    "personal": {
-        "submitter_email": "keishi.ishida@hki-jena.de",
-        "submitter_institution": "Leipniz Institute for Natural Product Research and Infection Biology",
-        "submitter_name": "Keishi Ishida"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

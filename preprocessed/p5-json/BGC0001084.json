@@ -1,86 +1,86 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "fenganyu@umich.edu",
+        "submitter_name": "Fengan Yu",
+        "submitter_institution": "University of Michigan"
+    },
     "general_params": {
-        "alkaloid": {
-            "alkaloid_subclass": "Pyrrole/pyrrolidine"
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Gene expression correlated with compound production"
+            ],
+            "accession": "HM622670.1"
         },
-        "biosyn_class": [
-            "NRP",
-            "Terpene",
-            "Alkaloid"
-        ],
         "compounds": [
             {
+                "mol_mass": 463.2107,
+                "chem_struct": "CC1(C=CC2=C(O1)C=CC3=C2N(C(=O)[C@@]34C[C@]56[C@H](C4(C)C)C[C@@]7(CCCN7C5=O)C(=O)N6)O)C",
+                "mass_ion_type": "[M+H]+",
+                "compound": "notoamide A",
+                "molecular_formula": "C26H29N3O5",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Cytotoxic",
                     "Inhibitor"
-                ],
-                "chem_struct": "CC1(C=CC2=C(O1)C=CC3=C2N(C(=O)[C@@]34C[C@]56[C@H](C4(C)C)C[C@@]7(CCCN7C5=O)C(=O)N6)O)C",
-                "chem_synonyms": [],
-                "compound": "notoamide A",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 463.2107,
-                "molecular_formula": "C26H29N3O5"
+                ]
             }
         ],
         "genes": {
             "operon": []
         },
-        "loci": {
-            "accession": "HM622670.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Gene expression correlated with compound production"
-            ]
-        },
         "mibig_accession": "BGC0001084",
-        "nrp": {
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "ADM34138.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Proline"
-                            },
-                            "cdom_subtype": "LCL",
-                            "module_nr": "1",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Structure-based inference",
-                                "prot_adom_spec": "Tryptophan"
-                            },
-                            "cdom_subtype": "LCL",
-                            "module_nr": "2",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "subclass": "Unknown"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Terpene",
+            "Alkaloid"
+        ],
         "publications": [
             "pubmed:20722388"
         ],
+        "nrp": {
+            "nrps_release_type": "Unknown",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Proline",
+                                "evidence_a_spec": "Structure-based inference",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "LCL"
+                        },
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "2",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Tryptophan",
+                                "evidence_a_spec": "Structure-based inference",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "LCL"
+                        }
+                    ],
+                    "nrps_gene": "ADM34138.1"
+                }
+            ],
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": []
+        },
         "terpene": {
+            "terpene_subclass": "Unknown",
+            "terpene_synth_cycl": [],
+            "terpene_precursor": "DMAPP",
+            "terpene_c_len": "Hemiterpene",
             "prenyl_transf": [
                 "hm622670",
                 "adm34136.1",
@@ -88,16 +88,16 @@
                 "hm622670",
                 "adm34138.1",
                 "notf"
-            ],
-            "terpene_c_len": "Hemiterpene",
-            "terpene_precursor": "DMAPP",
-            "terpene_subclass": "Unknown",
-            "terpene_synth_cycl": []
+            ]
+        },
+        "alkaloid": {
+            "alkaloid_subclass": "Pyrrole/pyrrolidine"
         }
     },
-    "personal": {
-        "submitter_email": "fenganyu@umich.edu",
-        "submitter_institution": "University of Michigan",
-        "submitter_name": "Fengan Yu"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

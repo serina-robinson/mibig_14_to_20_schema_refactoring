@@ -1,149 +1,52 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "david.fewer@helsinki.fi",
+        "submitter_name": "David Fewer",
+        "submitter_institution": "University of Helsinki"
+    },
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Sequence-based prediction"
+            ],
+            "accession": "CAIH01000183.1"
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Unknown"
-                ],
+                "mol_mass": -1,
+                "mass_ion_type": "None",
                 "chem_moieties": [
                     {
                         "chem_moiety": "N-prenyl",
                         "moiety_subcluster": []
                     }
                 ],
-                "chem_synonyms": [],
                 "compound": "Aeruginosamide B",
-                "mass_ion_type": "None",
-                "mol_mass": -1
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Unknown"
+                ]
             },
             {
-                "chem_act": [
-                    "Unknown"
-                ],
+                "mol_mass": -1,
+                "mass_ion_type": "None",
                 "chem_moieties": [
                     {
                         "chem_moiety": "N-prenyl",
                         "moiety_subcluster": []
                     }
                 ],
-                "chem_synonyms": [],
                 "compound": "Aeruginosamide C",
-                "mass_ion_type": "None",
-                "mol_mass": -1
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Unknown"
+                ]
             }
         ],
         "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "C-terminal protease",
-                    "gene_endpos": 5223,
-                    "gene_function": "Activation / processing",
-                    "gene_id": "CCH92964.1",
-                    "gene_name": "AgeG",
-                    "gene_startpos": 1303,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Prenyltransferase",
-                    "gene_endpos": 6322,
-                    "gene_function": "Tailoring",
-                    "gene_id": "CCH92965.1",
-                    "gene_name": "AgeF2",
-                    "gene_startpos": 5348,
-                    "not_in_gbk": false,
-                    "tailoring": "Prenylation"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Methyltransferase/putative prenyl transferase",
-                    "gene_endpos": 8114,
-                    "gene_function": "Tailoring",
-                    "gene_id": "CCH92966.1",
-                    "gene_name": "AgeF1",
-                    "gene_startpos": 6399,
-                    "not_in_gbk": false,
-                    "tailoring": "Prenylation"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Heterocyclase",
-                    "gene_endpos": 11063,
-                    "gene_function": "Tailoring",
-                    "gene_id": "CCH92967.1",
-                    "gene_name": "AgeD",
-                    "gene_startpos": 8736,
-                    "not_in_gbk": false,
-                    "tailoring": "Heterocyclization"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Hypothetical",
-                    "gene_endpos": 11645,
-                    "gene_function": "Unknown",
-                    "gene_id": "CCH92968.1",
-                    "gene_name": "AgeB",
-                    "gene_startpos": 11394,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "N-terminal protease",
-                    "gene_endpos": 13724,
-                    "gene_function": "Activation / processing",
-                    "gene_id": "CCH92969.1",
-                    "gene_name": "AgeA",
-                    "gene_startpos": 11751,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Precursor peptide",
-                    "gene_endpos": 8363,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_name": "AgeE",
-                    "gene_startpos": 8599,
-                    "not_in_gbk": true
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Hypothetical",
-                    "gene_endpos": 11116,
-                    "gene_function": "Unknown",
-                    "gene_name": "AgeC",
-                    "gene_startpos": 11343,
-                    "not_in_gbk": true
-                }
-            ],
             "operon": [
                 {
-                    "evidence_operon": "Sequence-based prediction",
                     "operon_genes": [
                         "micca_2630007",
                         "micca_2630006",
@@ -151,30 +54,127 @@
                         "micca_2630004",
                         "micca_2630003",
                         "micca_2630002"
-                    ]
+                    ],
+                    "evidence_operon": "Sequence-based prediction"
+                }
+            ],
+            "gene": [
+                {
+                    "gene_function": "Activation / processing",
+                    "gene_endpos": 5223,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CCH92964.1",
+                    "gene_annotation": "C-terminal protease",
+                    "gene_startpos": 1303,
+                    "not_in_gbk": false,
+                    "gene_name": "AgeG"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 6322,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CCH92965.1",
+                    "gene_annotation": "Prenyltransferase",
+                    "gene_startpos": 5348,
+                    "not_in_gbk": false,
+                    "tailoring": "Prenylation",
+                    "gene_name": "AgeF2"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 8114,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CCH92966.1",
+                    "gene_annotation": "Methyltransferase/putative prenyl transferase",
+                    "gene_startpos": 6399,
+                    "not_in_gbk": false,
+                    "tailoring": "Prenylation",
+                    "gene_name": "AgeF1"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 11063,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CCH92967.1",
+                    "gene_annotation": "Heterocyclase",
+                    "gene_startpos": 8736,
+                    "not_in_gbk": false,
+                    "tailoring": "Heterocyclization",
+                    "gene_name": "AgeD"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 11645,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CCH92968.1",
+                    "gene_annotation": "Hypothetical",
+                    "gene_startpos": 11394,
+                    "not_in_gbk": false,
+                    "gene_name": "AgeB"
+                },
+                {
+                    "gene_function": "Activation / processing",
+                    "gene_endpos": 13724,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CCH92969.1",
+                    "gene_annotation": "N-terminal protease",
+                    "gene_startpos": 11751,
+                    "not_in_gbk": false,
+                    "gene_name": "AgeA"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 8363,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "Precursor peptide",
+                    "gene_startpos": 8599,
+                    "not_in_gbk": true,
+                    "gene_name": "AgeE"
+                },
+                {
+                    "gene_function": "Unknown",
+                    "gene_endpos": 11116,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_annotation": "Hypothetical",
+                    "gene_startpos": 11343,
+                    "not_in_gbk": true,
+                    "gene_name": "AgeC"
                 }
             ]
         },
-        "loci": {
-            "accession": "CAIH01000183.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Sequence-based prediction"
-            ]
-        },
         "mibig_accession": "BGC0000483",
-        "minimal": true,
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:23911585"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Linear",
-            "ripp_subclass": "Cyanobactin"
-        }
+            "ripp_subclass": "Cyanobactin",
+            "lin_cycl_ripp": "Linear"
+        },
+        "minimal": true
     },
-    "personal": {
-        "submitter_email": "david.fewer@helsinki.fi",
-        "submitter_institution": "University of Helsinki",
-        "submitter_name": "David Fewer"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

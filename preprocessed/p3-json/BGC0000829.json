@@ -1,15 +1,106 @@
 {
-    "version": "10",
     "personal": {
+        "submitter_email": "marcia.osburne@tufts.edu",
         "submitter_name": "Marcia S. Osburne",
-        "submitter_institution": "Tufts University",
-        "submitter_email": "marcia.osburne@tufts.edu"
+        "submitter_institution": "Tufts University"
     },
+    "version": "10",
     "general_params": {
+        "loci": {
+            "nucl_acc": [
+                {
+                    "end_coord": -1,
+                    "Accession": "AF172851",
+                    "conn_comp_cluster": [
+                        "Knock-out studies",
+                        "Sequence-based prediction"
+                    ],
+                    "start_coord": -1
+                }
+            ],
+            "complete": "complete"
+        },
+        "compounds": [
+            {
+                "chemspider_id": 8103672,
+                "mol_mass": "",
+                "other_chem_act": "antitumor",
+                "chem_struct": "",
+                "chem_synonyms": [],
+                "database_deposited": true,
+                "chem_target": [
+                    "Activates TNFr1"
+                ],
+                "compound": "violacein",
+                "molecular_formula": "",
+                "databases_deposited": [
+                    "ChemSpider"
+                ],
+                "chem_act": [
+                    "Antibacterial",
+                    "Cytotoxic",
+                    "Signalling",
+                    "Other"
+                ]
+            }
+        ],
+        "genes": {
+            "gene": [
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "mut_pheno": "No pigment production",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CV_3273",
+                    "gene_annotation": "polyketide synthase-like",
+                    "gene_name": "vioB"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Oxidation",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CV_3272",
+                    "gene_annotation": "monooxygebase",
+                    "mut_pheno": "modified pigment",
+                    "gene_name": "vioC"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Hydroxylation",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CV_3271",
+                    "gene_annotation": "hydroxylase",
+                    "mut_pheno": "modified pigment",
+                    "gene_name": "vioD"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "mut_pheno": "No pigment production",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CV_3274",
+                    "gene_annotation": "tryptophan 2-monooxygenase",
+                    "gene_name": "vioA"
+                }
+            ]
+        },
         "mibig_accession": "BGC0000829",
         "biosyn_class": [
             "Alkaloid"
         ],
+        "Alkaloid": {
+            "alkaloid_subclass": "Indole/benzopyrrole"
+        },
         "publications": [
             "21779844",
             "21253897",
@@ -26,94 +117,6 @@
             "11418029",
             "11075927",
             "10803951"
-        ],
-        "loci": {
-            "complete": "complete",
-            "nucl_acc": [
-                {
-                    "Accession": "AF172851",
-                    "start_coord": -1,
-                    "end_coord": -1,
-                    "conn_comp_cluster": [
-                        "Knock-out studies",
-                        "Sequence-based prediction"
-                    ]
-                }
-            ]
-        },
-        "compounds": [
-            {
-                "compound": "violacein",
-                "chem_synonyms": [],
-                "database_deposited": true,
-                "databases_deposited": [
-                    "ChemSpider"
-                ],
-                "chemspider_id": 8103672,
-                "chem_act": [
-                    "Antibacterial",
-                    "Cytotoxic",
-                    "Signalling",
-                    "Other"
-                ],
-                "other_chem_act": "antitumor",
-                "chem_target": [
-                    "Activates TNFr1"
-                ]
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "gene_name": "vioB",
-                    "gene_id": "CV_3273",
-                    "gene_annotation": "polyketide synthase-like",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": "No pigment production"
-                },
-                {
-                    "gene_name": "vioC",
-                    "gene_id": "CV_3272",
-                    "gene_annotation": "monooxygebase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Oxidation",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": "modified pigment"
-                },
-                {
-                    "gene_name": "vioD",
-                    "gene_id": "CV_3271",
-                    "gene_annotation": "hydroxylase",
-                    "gene_function": "Tailoring",
-                    "tailoring": "Hydroxylation",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": "modified pigment"
-                },
-                {
-                    "gene_name": "vioA",
-                    "gene_id": "CV_3274",
-                    "gene_annotation": "tryptophan 2-monooxygenase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Sequence-based prediction"
-                    ],
-                    "mut_pheno": "No pigment production"
-                }
-            ]
-        },
-        "Alkaloid": {
-            "alkaloid_subclass": "Indole/benzopyrrole"
-        }
+        ]
     }
 }

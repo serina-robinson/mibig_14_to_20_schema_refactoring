@@ -1,19 +1,25 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "fbarona@langebio.cinvestav.mx",
+        "submitter_name": "Francisco Barona-Gomez",
+        "submitter_institution": "National Laboratory of genomics for biodiversity-CINVESTAV"
+    },
     "general_params": {
-        "biosyn_class": [
-            "Other"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Sequence-based prediction"
+            ],
+            "accession": "AL645882.2",
+            "start_coord": 3033355,
+            "end_coord": 3040682
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Siderophore"
-                ],
+                "mol_mass": 560.693,
+                "chem_struct": "CC(=O)N(CCCCCNC(=O)CCC(=O)N(CCCCCNC(=O)CCC(=O)N(CCCCCN)O)O)O",
                 "chem_synonyms": [
                     "desferrioxamine",
                     "deferrioxamine b",
@@ -22,125 +28,125 @@
                     "desferin",
                     "desferal"
                 ],
+                "pubchem_id": 2973,
                 "compound": "Desferrioxamine B",
-                "pubchem_id": 2973
-            },
-            {
+                "molecular_formula": "C25H48N6O8",
                 "chem_act": [
                     "Siderophore"
-                ],
+                ]
+            },
+            {
+                "mol_mass": 600.714,
+                "chem_struct": "C1CCNC(=O)CCC(=O)N(CCCCCNC(=O)CCC(=O)N(CCCCCNC(=O)CCC(=O)N(CC1)O)O)O",
                 "chem_synonyms": [
                     "nocardamine",
                     "deferrioxamine e"
                 ],
+                "pubchem_id": 161532,
                 "compound": "Desferrioxamine E",
-                "pubchem_id": 161532
+                "molecular_formula": "C27H48N6O9",
+                "chem_act": [
+                    "Siderophore"
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_function": "Transport",
+                    "gene_endpos": 3034404,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "Ferric-siderophore lipoprotein receptor",
-                    "gene_endpos": 3034404,
-                    "gene_function": "Transport",
                     "gene_id": "CAB87217.1",
-                    "gene_name": "DesE",
+                    "gene_annotation": "Ferric-siderophore lipoprotein receptor",
                     "gene_startpos": 3033355,
+                    "not_in_gbk": false,
                     "mut_pheno": "Impaired growth and lack of sporulation",
-                    "not_in_gbk": false
+                    "gene_name": "DesE"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Ferric-siderophore hydrolase",
-                    "gene_endpos": 3035477,
                     "gene_function": "Unknown",
+                    "gene_endpos": 3035477,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_id": "CAB87218.1",
-                    "gene_name": "DesF",
+                    "gene_annotation": "Ferric-siderophore hydrolase",
                     "gene_startpos": 3034632,
-                    "not_in_gbk": false
+                    "not_in_gbk": false,
+                    "gene_name": "DesF"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "L-Lysine decarboxylase",
+                    "gene_function": "Scaffold biosynthesis",
                     "gene_endpos": 3037083,
-                    "gene_function": "Scaffold biosynthesis",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_id": "CAB87219",
-                    "gene_name": "DesA",
+                    "gene_annotation": "L-Lysine decarboxylase",
                     "gene_startpos": 3035641,
-                    "not_in_gbk": false
+                    "not_in_gbk": false,
+                    "gene_name": "DesA"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Cadaverine monooxygenase",
+                    "gene_function": "Scaffold biosynthesis",
                     "gene_endpos": 3038347,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAB87220",
-                    "gene_name": "DesB",
-                    "gene_startpos": 3037106,
-                    "not_in_gbk": false
-                },
-                {
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "Acyl CoA acyl transferase",
-                    "gene_endpos": 3038898,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "CAB87221.1",
-                    "gene_name": "DesC",
-                    "gene_startpos": 3038344,
-                    "not_in_gbk": false
+                    "gene_id": "CAB87220",
+                    "gene_annotation": "Cadaverine monooxygenase",
+                    "gene_startpos": 3037106,
+                    "not_in_gbk": false,
+                    "gene_name": "DesB"
                 },
                 {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 3038898,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAB87221.1",
+                    "gene_annotation": "Acyl CoA acyl transferase",
+                    "gene_startpos": 3038344,
+                    "not_in_gbk": false,
+                    "gene_name": "DesC"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 3040682,
                     "evidence_genefunction": [
                         "Knock-out",
                         "Activity assay"
                     ],
-                    "gene_annotation": "ATP-dependent siderophore synthetase (IucA-IucC family)",
-                    "gene_endpos": 3040682,
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "CAB87222.1",
-                    "gene_name": "DesD",
+                    "gene_annotation": "ATP-dependent siderophore synthetase (IucA-IucC family)",
                     "gene_startpos": 3038895,
+                    "not_in_gbk": false,
                     "mut_pheno": "Loss of desferrioxamides production",
-                    "not_in_gbk": false
+                    "gene_name": "DesD"
                 }
             ]
         },
-        "loci": {
-            "accession": "AL645882.2",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Sequence-based prediction"
-            ],
-            "end_coord": 3040682,
-            "start_coord": 3033355
-        },
         "mibig_accession": "BGC0000940",
-        "other": {
-            "other_subclass": "Unknown"
-        },
+        "biosyn_class": [
+            "Other"
+        ],
         "publications": [
             "pubmed:15600304",
             "pubmed:17074905",
             "pubmed:17704771",
             "pubmed:21342472"
-        ]
+        ],
+        "other": {
+            "other_subclass": "Unknown"
+        }
     },
-    "personal": {
-        "submitter_email": "fbarona@langebio.cinvestav.mx",
-        "submitter_institution": "National Laboratory of genomics for biodiversity-CINVESTAV",
-        "submitter_name": "Francisco Barona-Gomez"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

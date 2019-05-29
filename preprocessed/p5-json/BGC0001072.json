@@ -1,22 +1,31 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "andreas.bechthold@pharmazie.uni-freiburg.de",
+        "submitter_name": "Andreas Bechthold & Mark Buttner",
+        "submitter_institution": "Albert-Ludwigs-Universitaet Freiburg / John Innes Centre, Norwich"
+    },
     "general_params": {
-        "biosyn_class": [
-            "Polyketide",
-            "Saccharide",
-            "Other"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ],
+            "accession": "AF324838.2"
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Antibacterial",
-                    "Cytotoxic"
+                "chem_struct": "C[C@@H]1[C@H]([C@@H](C[C@@H](O1)C2=C(C3=C(C=C2)C(=O)[C@]45[C@]([C@@H]3O)(O4)[C@H](C[C@]6([C@@]5(C(=O)C=C(C6)C)O)O)O)O)OC(=O)/C=C/C=C/C=C/C=C/C(=O)NC7=C(C8=C(C(=C(C=C8)O)Cl)OC7=O)O)OC(=O)C",
+                "mol_mass": 932.281,
+                "chembl_id": 1235969,
+                "chem_synonyms": [],
+                "pubchem_id": 54736483,
+                "chem_target": [
+                    "bacterial DNA gyrase",
+                    "inhibitor of human topoisomerases I and II"
                 ],
+                "compound": "Simocyclinone D8",
+                "molecular_formula": "C46H42ClNO18",
                 "chem_moieties": [
                     {
                         "chem_moiety": "Coumarin group",
@@ -31,212 +40,100 @@
                         ]
                     }
                 ],
-                "chem_synonyms": [],
-                "chem_target": [
-                    "bacterialDNAgyrase",
-                    "inhibitorofhumantopoisomerasesIandII"
-                ],
-                "chembl_id": 1235969,
-                "compound": "Simocyclinone D8",
-                "pubchem_id": 54736483
+                "chem_act": [
+                    "Antibacterial",
+                    "Cytotoxic"
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "tailoring": "Dehydration",
+                    "gene_function": "Tailoring",
                     "evidence_genefunction": [
                         "Heterologous expression"
                     ],
-                    "gene_function": "Tailoring",
                     "gene_id": "AEU17892.1",
-                    "gene_name": "SimC7",
-                    "tailoring": "Dehydration"
+                    "gene_name": "SimC7"
                 },
                 {
+                    "mut_pheno": "Production of Simocyclinone A1 (only angucycline)",
+                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "AAK06810.1",
-                    "gene_name": "SimB3",
-                    "mut_pheno": "Production of Simocyclinone A1 (only angucycline)"
+                    "gene_name": "SimB3"
                 },
                 {
+                    "gene_annotation": "Tyroxyl-AMP-forming enzyme",
+                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Activity assay"
                     ],
-                    "gene_annotation": "Tyroxyl-AMP-forming enzyme",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "AAK06804.1",
                     "gene_name": "SimH"
                 },
                 {
+                    "gene_function": "Regulation",
+                    "mut_pheno": "deficient in simocyclinone production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Other in vivo study"
                     ],
-                    "gene_annotation": "regulator",
-                    "gene_function": "Regulation",
                     "gene_id": "AAK06808.1",
-                    "gene_name": "SimReg1",
-                    "mut_pheno": "deficient in simocyclinone production"
+                    "gene_annotation": "regulator",
+                    "gene_name": "SimReg1"
                 },
                 {
+                    "gene_annotation": "MbtH-like protein",
+                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Activity assay"
                     ],
-                    "gene_annotation": "MbtH-like protein",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "AAK06806.1",
                     "gene_name": "SimY"
                 },
                 {
+                    "gene_function": "Scaffold biosynthesis",
+                    "mut_pheno": "deficient in simocyclinone production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Activity assay"
                     ],
-                    "gene_annotation": "aminocoumarin ligase",
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "AAK06803.1",
-                    "gene_name": "SimL",
-                    "mut_pheno": "deficient in simocyclinone production"
+                    "gene_annotation": "aminocoumarin ligase",
+                    "gene_name": "SimL"
                 },
                 {
+                    "gene_annotation": "simocyclinone-specific efflux pump",
+                    "gene_function": "Transport",
                     "evidence_genefunction": [
                         "Other in vivo study"
                     ],
-                    "gene_annotation": "simocyclinone-specific efflux pump",
-                    "gene_function": "Transport",
                     "gene_id": "AAK06799.1",
                     "gene_name": "SimX"
                 },
                 {
+                    "gene_annotation": "transcriptional repressor of transporter SimX",
+                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Other in vivo study",
                         "Activity assay",
                         "Unknown"
                     ],
-                    "gene_annotation": "transcriptional repressor of transporter SimX",
-                    "gene_function": "Regulation",
                     "gene_id": "AAK06798.1",
                     "gene_name": "SimR"
                 }
             ]
         },
-        "loci": {
-            "accession": "AF324838.2",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ]
-        },
         "mibig_accession": "BGC0001072",
-        "other": {
-            "other_subclass": "Aminocoumarin"
-        },
-        "polyketide": {
-            "cyclases": [
-                "AAK06783.1",
-                "AAK06788.1"
-            ],
-            "ketide_length": 10,
-            "lin_cycl_pk": "Cyclic",
-            "mod_pks_genes": [
-                {
-                    "mod_pks_gene": "AEU17897.1,AEU17898.1,AEU17899.1",
-                    "pks_module": [
-                        {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "module_nr": "0",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "kr_stereochem": "Unknown",
-                            "module_nr": "1",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "kr_stereochem": "Unknown",
-                            "module_nr": "2",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "kr_stereochem": "Unknown",
-                            "module_nr": "3",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Enoylreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "module_nr": "4",
-                            "pks_domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "pks_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "pk_subclass": "Other",
-            "pks_genes": [
-                "aak06784.1",
-                "aak06785.1",
-                "aak06786.1"
-            ],
-            "pks_release_type": "Unknown",
-            "pks_subclass": [
-                "Modular type I",
-                "Type II"
-            ],
-            "pks_te_type": "Unknown",
-            "starter_unit": "Unknown"
-        },
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide",
+            "Other"
+        ],
         "publications": [
             "pubmed:24594357",
             "pubmed:22867097",
@@ -263,15 +160,117 @@
             "pubmed:15779922",
             "pubmed:25861759"
         ],
-        "saccharide": {
-            "gt_genes": [
+        "polyketide": {
+            "cyclases": [
+                "AAK06783.1",
+                "AAK06788.1"
+            ],
+            "ketide_length": 10,
+            "pks_te_type": "Unknown",
+            "pks_subclass": [
+                "Modular type I",
+                "Type II"
+            ],
+            "mod_pks_genes": [
                 {
-                    "evidence_gt_spec": "Unknown",
-                    "gt_gene": "AEU17886.1",
-                    "gt_specificity": "D-olivose "
+                    "mod_pks_gene": "AEU17897.1,AEU17898.1,AEU17899.1",
+                    "pks_module": [
+                        {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "module_nr": "0",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ]
+                        },
+                        {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "module_nr": "1",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "module_nr": "2",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "module_nr": "3",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "kr_stereochem": "Unknown",
+                            "pks_mod_skip_iter": "Neither"
+                        },
+                        {
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "module_nr": "4",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "pks_mod_skip_iter": "Neither",
+                            "pks_domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ]
+                        }
+                    ]
                 }
             ],
+            "pks_genes": [
+                "aak06784.1",
+                "aak06785.1",
+                "aak06786.1"
+            ],
+            "starter_unit": "Unknown",
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Cyclic",
+            "pks_release_type": "Unknown"
+        },
+        "saccharide": {
             "saccharide_subclass": "Unknown",
+            "gt_genes": [
+                {
+                    "gt_gene": "AEU17886.1",
+                    "gt_specificity": "D-olivose ",
+                    "evidence_gt_spec": "Unknown"
+                }
+            ],
             "sugar_subclusters": [
                 [
                     "AEU17887.1",
@@ -280,11 +279,15 @@
                     ""
                 ]
             ]
+        },
+        "other": {
+            "other_subclass": "Aminocoumarin"
         }
     },
-    "personal": {
-        "submitter_email": "andreas.bechthold@pharmazie.uni-freiburg.de",
-        "submitter_institution": "Albert-Ludwigs-Universit\u00c3\u00a4t Freiburg / John Innes Centre, Norwich",
-        "submitter_name": "Andreas Bechthold & Mark Buttner"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

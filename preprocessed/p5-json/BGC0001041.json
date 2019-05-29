@@ -1,36 +1,46 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "bsmoore@ucsd.edu",
+        "submitter_name": "Bradley S. Moore",
+        "submitter_institution": "University of California, San Diego"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Sequence-based prediction"
+            ],
+            "accession": "CP000667.1",
+            "start_coord": 1140547,
+            "end_coord": 1182556
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Cytotoxic"
-                ],
+                "mol_mass": 313.778,
+                "chem_struct": "C[C@]12[C@H](C(=O)N[C@]1(C(=O)O2)C([C@H]3CCCC=C3)O)CCCl",
                 "chem_synonyms": [],
+                "pubchem_id": 11695330,
                 "chem_target": [
-                    "20Sproteasome"
+                    "20S proteasome"
                 ],
                 "compound": "salinosporamide",
-                "pubchem_id": 11695330
+                "molecular_formula": "C15H20ClNO4",
+                "chem_act": [
+                    "Cytotoxic"
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_annotation": "Methyltransferase type 11",
+                    "gene_function": "Regulation",
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "Methyltransferase type 11",
-                    "gene_function": "Regulation",
                     "gene_id": "Strop_1012",
                     "gene_name": "salRI"
                 },
@@ -52,27 +62,27 @@
                     "gene_name": "salI"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "reduction salinosporamide A",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "dihydroxyacid dehydratase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1017",
-                    "gene_name": "salH",
-                    "mut_pheno": "reduction salinosporamide A"
+                    "gene_annotation": "dihydroxyacid dehydratase",
+                    "gene_name": "salH"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "no salinosporamides A and E",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Activity assay",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "crotonyl-CoA reductase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1018",
-                    "gene_name": "salG",
-                    "mut_pheno": "no salinosporamides A and E"
+                    "gene_annotation": "crotonyl-CoA reductase",
+                    "gene_name": "salG"
                 },
                 {
                     "gene_annotation": "type II TE",
@@ -87,47 +97,47 @@
                     "gene_name": "salE"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "cytochrome P450",
                     "gene_function": "Tailoring",
-                    "gene_id": "Strop_1021",
-                    "gene_name": "salD",
-                    "mut_pheno": "salinosporamide J formation",
-                    "tailoring": "Unknown"
-                },
-                {
+                    "tailoring": "Unknown",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "type II KS",
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "Strop_1022",
-                    "gene_name": "salC",
-                    "mut_pheno": "no salinosporamide production"
+                    "gene_id": "Strop_1021",
+                    "gene_annotation": "cytochrome P450",
+                    "mut_pheno": "salinosporamide J formation",
+                    "gene_name": "salD"
                 },
                 {
+                    "gene_function": "Scaffold biosynthesis",
+                    "mut_pheno": "no salinosporamide production",
                     "evidence_genefunction": [
+                        "Knock-out",
                         "Sequence-based prediction"
                     ],
+                    "gene_id": "Strop_1022",
+                    "gene_annotation": "type II KS",
+                    "gene_name": "salC"
+                },
+                {
                     "gene_annotation": "NRPS (ACP-P)",
                     "gene_function": "Scaffold biosynthesis",
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_id": "Strop_1023",
                     "gene_name": "salB"
                 },
                 {
+                    "gene_function": "Scaffold biosynthesis",
+                    "mut_pheno": "no salinosporamide production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "PKS (ACP-AT-AT-KS-ACP-C)",
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "Strop_1024",
-                    "gene_name": "salA",
-                    "mut_pheno": "no salinosporamide production"
+                    "gene_annotation": "PKS (ACP-AT-AT-KS-ACP-C)",
+                    "gene_name": "salA"
                 },
                 {
                     "gene_annotation": "hypothetical protein",
@@ -136,38 +146,38 @@
                     "gene_name": "salK"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "no salinosporamide A only",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "5'-CIDA synthase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1026",
-                    "gene_name": "salL",
-                    "mut_pheno": "no salinosporamide A only"
+                    "gene_annotation": "5'-CIDA synthase",
+                    "gene_name": "salL"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "reduction salinosporamide A",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Activity assay",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "5-CIR dehydrogenase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1027",
-                    "gene_name": "salM",
-                    "mut_pheno": "reduction salinosporamide A"
+                    "gene_annotation": "5-CIR dehydrogenase",
+                    "gene_name": "salM"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "reduction salinosporamide A",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "5-CIR phosphatase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1028",
-                    "gene_name": "salN",
-                    "mut_pheno": "reduction salinosporamide A"
+                    "gene_annotation": "5-CIR phosphatase",
+                    "gene_name": "salN"
                 },
                 {
                     "gene_function": "Unknown",
@@ -175,115 +185,115 @@
                     "gene_name": "salO"
                 },
                 {
+                    "gene_function": "Regulation",
+                    "mut_pheno": "reduction salinosporamide A",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Activity assay",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "regulatory protein, LuxR",
-                    "gene_function": "Regulation",
                     "gene_id": "Strop_1030",
-                    "gene_name": "salRII",
-                    "mut_pheno": "reduction salinosporamide A"
+                    "gene_annotation": "regulatory protein, LuxR",
+                    "gene_name": "salRII"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "reduction salinosporamide A",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "alpha-keto decarboxylase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1031",
-                    "gene_name": "salQ",
-                    "mut_pheno": "reduction salinosporamide A"
+                    "gene_annotation": "alpha-keto decarboxylase",
+                    "gene_name": "salQ"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "regulatory protein, LysR",
                     "gene_function": "Regulation",
+                    "mut_pheno": "no loss",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Sequence-based prediction"
+                    ],
                     "gene_id": "Strop_1032",
-                    "gene_name": "salRIII",
-                    "mut_pheno": "no loss"
+                    "gene_annotation": "regulatory protein, LysR",
+                    "gene_name": "salRIII"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "reduction salinosporamide A",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "acyl dehydratase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1034",
-                    "gene_name": "salS",
-                    "mut_pheno": "reduction salinosporamide A"
+                    "gene_annotation": "acyl dehydratase",
+                    "gene_name": "salS"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "reduction salinosporamide A",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "5'-CIDA phosphorylase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1035",
-                    "gene_name": "salT",
-                    "mut_pheno": "reduction salinosporamide A"
+                    "gene_annotation": "5'-CIDA phosphorylase",
+                    "gene_name": "salT"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "no loss",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "DAHP synthase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1036",
-                    "gene_name": "salU",
-                    "mut_pheno": "no loss"
+                    "gene_annotation": "DAHP synthase",
+                    "gene_name": "salU"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "no salinosporamide production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "acyl-CoA ligase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1038",
-                    "gene_name": "salV",
-                    "mut_pheno": "no salinosporamide production"
+                    "gene_annotation": "acyl-CoA ligase",
+                    "gene_name": "salV"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "no salinosporamide production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "aminotransferase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1039",
-                    "gene_name": "salW",
-                    "mut_pheno": "no salinosporamide production"
+                    "gene_annotation": "aminotransferase",
+                    "gene_name": "salW"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "no salinosporamide production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Activity assay"
                     ],
-                    "gene_annotation": "prephenate decarboxylase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1040",
-                    "gene_name": "salX",
-                    "mut_pheno": "no salinosporamide production"
+                    "gene_annotation": "prephenate decarboxylase",
+                    "gene_name": "salX"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "no salinosporamide production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "cyclodeaminase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1041",
-                    "gene_name": "salY",
-                    "mut_pheno": "no salinosporamide production"
+                    "gene_annotation": "cyclodeaminase",
+                    "gene_name": "salY"
                 },
                 {
                     "gene_annotation": "protein of unknown function DUF1330",
@@ -291,58 +301,51 @@
                     "gene_id": "Strop_1042"
                 },
                 {
+                    "gene_function": "Precursor biosynthesis",
+                    "mut_pheno": "Reduced salinosporamide production",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "epimerase",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "Strop_1043",
-                    "gene_name": "salZ",
-                    "mut_pheno": "Reduced salinosporamide production"
+                    "gene_annotation": "epimerase",
+                    "gene_name": "salZ"
                 }
             ]
         },
-        "loci": {
-            "accession": "CP000667.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Enzymatic assays",
-                "Heterologous expression",
-                "Sequence-based prediction"
-            ],
-            "end_coord": 1182556,
-            "start_coord": 1140547
-        },
         "mibig_accession": "BGC0001041",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:19590008"
+        ],
+        "polyketide": {
+            "pks_genes": [],
+            "starter_unit": "Acetyl-CoA",
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Cyclic",
+            "pks_subclass": [
+                "Other"
+            ]
+        },
         "nrp": {
-            "lin_cycl_nrp": "Cyclic",
+            "nrps_release_type": "Unknown",
             "nrps_genes": [
                 {
                     "nrps_gene": "ABP53497.1"
                 }
             ],
-            "nrps_release_type": "Unknown",
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Cyclic",
             "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "subclass": "Unknown"
-        },
-        "polyketide": {
-            "lin_cycl_pk": "Cyclic",
-            "pk_subclass": "Other",
-            "pks_genes": [],
-            "pks_subclass": [
-                "Other"
-            ],
-            "starter_unit": "Acetyl-CoA"
-        },
-        "publications": [
-            "pubmed:19590008"
-        ]
+            "nrps_thioesterase": []
+        }
     },
-    "personal": {
-        "submitter_email": "bsmoore@ucsd.edu",
-        "submitter_institution": "University of California, San Diego",
-        "submitter_name": "Bradley S. Moore"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

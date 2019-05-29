@@ -1,95 +1,98 @@
 {
-    "version": "11",
     "personal": {
+        "submitter_email": "cswang@sibs.ac.cn",
         "submitter_name": "Chengshu Wang",
-        "submitter_institution": "Insitute of Plant Physiology and Ecology, Shanghai Institutes for Biological Sciences, CAS",
-        "submitter_email": "cswang@sibs.ac.cn"
+        "submitter_institution": "Insitute of Plant Physiology and Ecology, Shanghai Institutes for Biological Sciences, CAS"
     },
+    "version": "11",
+    "comments": "The metabolite destruxins are used by the fungus to evade insect host immunities",
     "general_params": {
-        "mibig_accession": "BGC0000337",
-        "biosyn_class": [
-            "NRP"
-        ],
-        "publications": [
-            "22232661",
-            "3268274"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "ADNJ02000010",
-                    "start_coord": 740100,
                     "end_coord": 772150,
+                    "Accession": "ADNJ02000010",
                     "conn_comp_cluster": [
                         "Knock-out studies"
-                    ]
+                    ],
+                    "start_coord": 740100
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "destruxin",
+                "mol_mass": "577.723",
+                "other_chem_act": "insecticidal",
+                "chem_struct": "CCC(C)C1C(=O)N(C(C(=O)N(C(C(=O)NCCC(=O)OC(C(=O)N2CCCC2C(=O)N1)CC=C)C)C)C(C)C)C",
                 "chem_synonyms": [],
                 "database_deposited": true,
+                "pubchem_id": 122810,
+                "compound": "destruxin",
+                "molecular_formula": "C29H47N5O7",
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 122810,
                 "chem_act": [
                     "Other"
-                ],
-                "other_chem_act": "insecticidal"
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
-                    "gene_name": "DtxS1",
-                    "gene_id": "MAA_10043",
                     "gene_annotation": "Biosynthesis of the first NRP dtx B.",
                     "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
-                    ]
+                    ],
+                    "gene_id": "MAA_10043",
+                    "gene_name": "DtxS1"
                 },
                 {
-                    "gene_name": "DtxS2",
-                    "gene_id": "MAA_10044",
-                    "gene_annotation": "metabolite hydroxylation, desaturation, oxidation, and/or epoxidation",
                     "gene_function": "Tailoring",
                     "tailoring": "Oxidation",
                     "evidence_genefunction": [
                         "Knock-out"
-                    ]
+                    ],
+                    "gene_id": "MAA_10044",
+                    "gene_annotation": "metabolite hydroxylation, desaturation, oxidation, and/or epoxidation",
+                    "gene_name": "DtxS2"
                 },
                 {
-                    "gene_name": "DtxS3",
+                    "gene_annotation": "Conversion of alpha-ketoisocaproic acid into alpha-hydroxyisocaproic acid",
+                    "gene_function": "Precursor biosynthesis",
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "MAA_10045",
-                    "gene_annotation": "Conversion of \u00ce\u00b1-ketoisocaproic acid into \u00ce\u00b1-hydroxyisocaproic acid",
-                    "gene_function": "Precursor biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ]
+                    "gene_name": "DtxS3"
                 },
                 {
-                    "gene_name": "DtxS4",
-                    "gene_id": "MAA_10046",
-                    "gene_annotation": "Decarboxylation of aspartic acid into \u00ce\u00b2-Alanine",
+                    "gene_annotation": "Decarboxylation of aspartic acid into beta-Alanine",
                     "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
-                    ]
+                    ],
+                    "gene_id": "MAA_10046",
+                    "gene_name": "DtxS4"
                 }
             ]
         },
+        "mibig_accession": "BGC0000337",
+        "biosyn_class": [
+            "NRP"
+        ],
         "NRP": {
-            "subclass": "Other",
             "lin_cycl_nrp": "Linear",
+            "nrps_release_type": "Hydrolysis",
             "nrps_te_type": "Unknown",
-            "nrps_thioesterase": [],
-            "nrps_release_type": "Hydrolysis"
-        }
-    },
-    "comments": "The metabolite destruxins are used by the fungus to evade insect host immunities"
+            "subclass": "Other",
+            "nrps_thioesterase": []
+        },
+        "publications": [
+            "22232661",
+            "3268274"
+        ]
+    }
 }

@@ -1,59 +1,37 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "jblodgett@wustl.edu",
+        "submitter_name": "Joshua Blodgett",
+        "submitter_institution": "Washington Univeristy in St Louis"
+    },
     "comments": "The ftdB gene is present in three parts, and must be merged. A new paper includes the publication of a fragment that closed a genome sequencing gap within FtdB. Locus tags and protein ID comprising FtdB from N-C terminus: SSLG_04251, protein_id=ADJ54381.1,SSLG_04252. This is why there are two loci listed, which is technically incorrect. Only one locus but in GenBank as the sum of two accession numbers.",
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "incomplete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ],
+            "accession": "GG657742.1",
+            "start_coord": 4892742,
+            "end_coord": 4909316
+        },
         "compounds": [
             {
+                "mol_mass": 509.2662,
+                "chem_struct": "O=C(NCCC(O)C1C(O)=C(C(/C=C/2)=O)C(N1)=O)/C=C\\\\C[C@H]([C@]3([H])[C@]4([H])[C@@]5([H])[C@@](C[C@H](C=C)[C@@H]5C)([H])C3)[C@H]2CC4=O",
+                "mass_ion_type": "[M+H]+",
+                "compound": "frontalamide B",
+                "molecular_formula": "C29H36N2O6",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Antifungal"
-                ],
-                "chem_struct": "O=C(NCCC(O)C1C(O)=C(C(/C=C/2)=O)C(N1)=O)/C=C\\\\C[C@H]([C@]3([H])[C@]4([H])[C@@]5([H])[C@@](C[C@H](C=C)[C@@H]5C)([H])C3)[C@H]2CC4=O",
-                "chem_synonyms": [],
-                "compound": "frontalamide B",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 509.2662,
-                "molecular_formula": "C29H36N2O6"
+                ]
             }
         ],
         "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "SSLG_04251",
-                    "gene_name": "ftdB",
-                    "mut_pheno": "null production"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Knock-out",
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "frontalamide hydroxylase",
-                    "gene_function": "Tailoring",
-                    "gene_id": "SSLG_04250",
-                    "gene_name": "ftdA",
-                    "mut_pheno": "deoxy-frontalamide accumulation",
-                    "tailoring": "Hydroxylation"
-                }
-            ],
             "operon": [
                 {
-                    "evidence_operon": "Sequence-based prediction",
                     "operon_genes": [
                         "sslg_04250",
                         "sslg_04251",
@@ -61,95 +39,117 @@
                         "sslg_04254",
                         "sslg_04255",
                         "sslg_04256"
-                    ]
+                    ],
+                    "evidence_operon": "Sequence-based prediction"
+                }
+            ],
+            "gene": [
+                {
+                    "mut_pheno": "null production",
+                    "gene_function": "Scaffold biosynthesis",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "SSLG_04251",
+                    "gene_name": "ftdB"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Hydroxylation",
+                    "evidence_genefunction": [
+                        "Knock-out",
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "SSLG_04250",
+                    "gene_annotation": "frontalamide hydroxylase",
+                    "mut_pheno": "deoxy-frontalamide accumulation",
+                    "gene_name": "ftdA"
                 }
             ]
         },
-        "loci": {
-            "accession": "GG657742.1",
-            "complete": "incomplete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ],
-            "end_coord": 4909316,
-            "start_coord": 4892742
-        },
         "mibig_accession": "BGC0000996",
-        "nrp": {
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "EFL02193.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Nonproteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Structure-based inference",
-                                "nonprot_adom_spec": "Ornithine"
-                            },
-                            "cdom_subtype": "Unknown",
-                            "module_nr": "1",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "Type I",
-            "nrps_thioesterase": [
-                "sslg_04251"
-            ],
-            "subclass": "Unknown"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "publications": [
+            "pubmed:20547882"
+        ],
         "polyketide": {
+            "nr_iterations": 12,
+            "pks_te_type": "None",
             "iter_cycl_type": "Unknown",
-            "iterative_subtype": "Partially reducing",
-            "lin_cycl_pk": "Cyclic",
+            "pks_subclass": [
+                "Iterative type I"
+            ],
             "mod_pks_genes": [
                 {
                     "mod_pks_gene": "EFL02193.1",
                     "pks_module": [
                         {
-                            "at_substr_spec": "Malonyl-CoA",
-                            "kr_stereochem": "Unknown",
-                            "module_nr": "12",
+                            "pks_mod_doms": [
+                                "None"
+                            ],
+                            "pks_evidence_skip_iter": "Sequence-based prediction",
                             "pks_domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Dehydratase"
                             ],
-                            "pks_evidence_skip_iter": "Sequence-based prediction",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
+                            "module_nr": "12",
+                            "at_substr_spec": "Malonyl-CoA",
+                            "kr_stereochem": "Unknown",
                             "pks_mod_skip_iter": "Iterated"
                         }
                     ]
                 }
             ],
-            "nr_iterations": 12,
-            "pk_subclass": "Other",
             "pks_genes": [
                 "None"
             ],
-            "pks_release_type": "Unknown",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
-            "pks_te_type": "None",
-            "starter_unit": "Unknown"
+            "iterative_subtype": "Partially reducing",
+            "starter_unit": "Unknown",
+            "pk_subclass": "Other",
+            "lin_cycl_pk": "Cyclic",
+            "pks_release_type": "Unknown"
         },
-        "publications": [
-            "pubmed:20547882"
-        ]
+        "nrp": {
+            "nrps_release_type": "Unknown",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence_a_spec": "Structure-based inference",
+                                "nonprot_adom_spec": "Ornithine",
+                                "aa_type": "Nonproteinogenic"
+                            },
+                            "cdom_subtype": "Unknown"
+                        }
+                    ],
+                    "nrps_gene": "EFL02193.1"
+                }
+            ],
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_te_type": "Type I",
+            "nrps_thioesterase": [
+                "sslg_04251"
+            ]
+        }
     },
-    "personal": {
-        "submitter_email": "jblodgett@wustl.edu",
-        "submitter_institution": "Washington Univeristy in St Louis",
-        "submitter_name": "Joshua Blodgett"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

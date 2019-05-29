@@ -1,81 +1,86 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "alexvmelnik@gmail.com",
+        "submitter_name": "Alexey Melnik",
+        "submitter_institution": "UCSD"
+    },
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies"
+            ],
+            "accession": "AL009126.3",
+            "start_coord": 213941,
+            "end_coord": 220032
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Antibacterial"
-                ],
+                "mol_mass": 2781.3023,
+                "mass_ion_type": "M+",
                 "chem_synonyms": [
                     "skf"
                 ],
-                "compound": "sporulation killing factor",
-                "mass_ion_type": "M+",
-                "mol_mass": 2781.3023
+                "chem_act": [
+                    "Antibacterial"
+                ],
+                "compound": "sporulation killing factor"
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "CAB11984.1",
                     "gene_name": "skfA"
                 },
                 {
+                    "gene_function": "Activation / processing",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_function": "Activation / processing",
                     "gene_id": "CAB11985.2",
                     "gene_name": "skfB"
                 },
                 {
+                    "gene_function": "Activation / processing",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_function": "Activation / processing",
                     "gene_id": "CAX52541.1",
                     "gene_name": "skfC"
                 },
                 {
+                    "gene_function": "Activation / processing",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_function": "Activation / processing",
                     "gene_id": "CAB11992.2",
                     "gene_name": "skfH"
                 },
                 {
+                    "mut_pheno": "binding protein",
+                    "gene_function": "Transport",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Heterologous expression",
                         "Other in vivo study",
                         "Activity assay"
                     ],
-                    "gene_function": "Transport",
                     "gene_id": "CAB11989.1",
-                    "gene_name": "skfE",
-                    "mut_pheno": "binding protein"
+                    "gene_name": "skfE"
                 },
                 {
+                    "mut_pheno": "permease",
+                    "gene_function": "Transport",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_function": "Transport",
                     "gene_id": "CAB11990.2",
-                    "gene_name": "skfF",
-                    "mut_pheno": "permease"
+                    "gene_name": "skfF"
                 },
                 {
                     "gene_function": "Unknown",
@@ -84,41 +89,36 @@
                 }
             ]
         },
-        "loci": {
-            "accession": "AL009126.3",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies"
-            ],
-            "end_coord": 220032,
-            "start_coord": 213941
-        },
         "mibig_accession": "BGC0000601",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:20805502",
             "pubmed:12817086"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Head-to-tailcyclized peptide",
             "precursor_loci": [
                 {
+                    "lead_pept_len": 29,
                     "core_pept_aa": [
                         "cmgcwasksiamtrvcalphpamrai"
                     ],
                     "foll_pept_len": 26,
+                    "peptidase": [],
                     "gene_id": [
                         "cab11984.1"
-                    ],
-                    "lead_pept_len": 29,
-                    "peptidase": []
+                    ]
                 }
             ],
-            "ripp_subclass": "Head-to-tailcyclized peptide"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "alexvmelnik@gmail.com",
-        "submitter_institution": "UCSD",
-        "submitter_name": "Alexey Melnik"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

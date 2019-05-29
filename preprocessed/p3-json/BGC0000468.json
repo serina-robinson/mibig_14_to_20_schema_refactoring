@@ -1,11 +1,32 @@
 {
     "personal": {
-        "submitter_email": "juan-pablo.gomez-escribano@jic.ac.uk",
         "submitter_name": "Juan Pablo Gomez-Escribano",
+        "submitter_email": "juan-pablo.gomez-escribano@jic.ac.uk",
         "submitter_institution": "John Innes Centre; Norwich Research Park; Norwich; NR4 7UH; UK"
     },
     "version": "17",
     "general_params": {
+        "genes": {},
+        "compounds": [
+            {
+                "chemspider_id": 26365309,
+                "mol_mass": "",
+                "chem_struct": "C[CH]1CCN2[CH]1C(=O)N[CH](C(=O)N[CH](/C(=N/[CH](C(=O)N[CH]([CH](C)c3ccccc3)C(=O)N[CH](CC(=O)OC)c4nccs4)C(C)(C)C)/NCC2=O)C(C)(C)C)C(C)C",
+                "databases_deposited": [
+                    "ChemSpider"
+                ],
+                "database_deposited": true,
+                "chem_target": [
+                    "Bacterial ribosome"
+                ],
+                "compound": "Bottromycin A2",
+                "molecular_formula": "",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Antibacterial"
+                ]
+            }
+        ],
         "loci": {
             "nucl_acc": [
                 {
@@ -20,40 +41,13 @@
             ],
             "complete": "complete"
         },
-        "compounds": [
-            {
-                "chemspider_id": 26365309,
-                "mol_mass": "823.056 ",
-                "chem_struct": "C[CH]1CCN2[CH]1C(=O)N[CH](C(=O)N[CH](/C(=N/[CH](C(=O)N[CH]([CH](C)c3ccccc3)C(=O)N[CH](CC(=O)OC)c4nccs4)C(C)(C)C)/NCC2=O)C(C)(C)C)C(C)C",
-                "chem_synonyms": [],
-                "database_deposited": true,
-                "chem_target": [
-                    "Bacterial ribosome"
-                ],
-                "compound": "Bottromycin A2",
-                "molecular_formula": "C42H62N8O7S",
-                "databases_deposited": [
-                    "ChemSpider"
-                ],
-                "chem_act": [
-                    "Antibacterial"
-                ]
-            }
-        ],
-        "genes": {},
         "mibig_accession": "BGC0000468",
         "RiPP": {
             "ripp_subclass": "Bottromycin",
             "precursor_loci": [
                 {
                     "foll_pept_len": 35,
-                    "crosslinks": [
-                        {
-                            "crosslink_type": "Lactam",
-                            "AA_pos_1": 1,
-                            "AA_pos_2": 4
-                        }
-                    ],
+                    "lead_pept_len": 1,
                     "core_pept_aa": [
                         "GPVVVFDC"
                     ],
@@ -61,7 +55,13 @@
                         "bmbc",
                         "ccm09443.1"
                     ],
-                    "lead_pept_len": 1,
+                    "crosslinks": [
+                        {
+                            "crosslink_type": "Lactam",
+                            "AA_pos_1": 1,
+                            "AA_pos_2": 4
+                        }
+                    ],
                     "peptidase": [
                         "bmbk",
                         "ccm09452.1",

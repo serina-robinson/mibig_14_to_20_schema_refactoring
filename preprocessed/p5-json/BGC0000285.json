@@ -1,116 +1,118 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "barrie.wilkinson@jic.ac.uk",
+        "submitter_name": "Professor Barrie Wilkinson",
+        "submitter_institution": "John Innes Centre"
+    },
     "comments": "This type III PKS containing cluster is involved in the formation of red-brown pigment/melanin, and equivalent clusters have been studied in other organisms, e.g. PMID 10476972; 11723138; 15659395; 15701630; 16291687. The PKS product THN (1,3,6,8-tetrahydroxynaphthalene) of these clusters are variously oxidized/dimerized/polymerized by the action of additional enzymes in the cluster including a cytochrome P450 monooxygenase (RppB) and a monooxygenase of the cupin domain superfamily. The products of these clusters have been shown to provide resistance to UV radiation.",
     "general_params": {
-        "biosyn_class": [
-            "Polyketide",
-            "Saccharide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies"
+            ],
+            "accession": "AY078067.1"
+        },
         "compounds": [
             {
+                "mol_mass": 352.0794,
+                "chem_struct": "O=C1C=C(O)C(C2=CC(O[C@H]3O[C@H](C)[C@@H](O)[C@H](O)[C@@H]3O)=CC(O)=C21)=O",
+                "mass_ion_type": "[M+H]+",
+                "compound": "Flaviolin rhamnoside",
+                "molecular_formula": "C16H16O9",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Unknown"
-                ],
-                "chem_struct": "O=C1C=C(O)C(C2=CC(O[C@H]3O[C@H](C)[C@@H](O)[C@H](O)[C@@H]3O)=CC(O)=C21)=O",
-                "chem_synonyms": [],
-                "compound": "Flaviolin rhamnoside",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 352.0794,
-                "molecular_formula": "C16H16O9"
+                ]
             },
             {
-                "chem_act": [
-                    "Potential UV protection"
-                ],
+                "mol_mass": 410.0274,
                 "chem_struct": "O=C1C=C(O)C(C2=CC(O)=C(C3=C(O)C=C(C(C(O)=CC4=O)=O)C4=C3O)C(O)=C21)=O",
+                "mass_ion_type": "[M+H]+",
+                "compound": "3,3'-diflaviolin",
+                "molecular_formula": "C20H10O10",
                 "chem_synonyms": [
                     "flaviolin dimer"
                 ],
-                "compound": "3,3'-diflaviolin",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 410.0274,
-                "molecular_formula": "C20H10O10"
+                "chem_act": [
+                    "Potential UV protection"
+                ]
             },
             {
+                "mol_mass": 206.153,
+                "chem_struct": "C1=C(C=C2C(=C1O)C(=CC(=O)C2=O)O)O",
+                "chem_synonyms": [],
+                "pubchem_id": 160478,
+                "compound": "Flaviolin",
+                "molecular_formula": "C10H6O5",
                 "chem_act": [
                     "Unknown"
-                ],
-                "chem_synonyms": [],
-                "compound": "Flaviolin",
-                "pubchem_id": 160478
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 4214,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "Type III PKS",
-                    "gene_endpos": 4214,
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "AAL78053.1",
-                    "gene_name": "rppA",
+                    "gene_annotation": "Type III PKS",
                     "gene_startpos": 3111,
+                    "not_in_gbk": false,
                     "mut_pheno": "Loss of molecule (pigment) production",
-                    "not_in_gbk": false
+                    "gene_name": "rppA"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 5416,
                     "evidence_genefunction": [
                         "Unknown"
                     ],
-                    "gene_annotation": "Cytochrome P450 monooxygenase",
-                    "gene_endpos": 5416,
-                    "gene_function": "Tailoring",
                     "gene_id": "AAL78054.1",
-                    "gene_name": "rppB",
+                    "gene_annotation": "Cytochrome P450 monooxygenase",
                     "gene_startpos": 4211,
                     "not_in_gbk": false,
-                    "tailoring": "Oxidation"
+                    "tailoring": "Oxidation",
+                    "gene_name": "rppB"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 5991,
                     "evidence_genefunction": [
                         "Unknown"
                     ],
-                    "gene_annotation": "Quinone forming monooxygenase",
-                    "gene_endpos": 5991,
-                    "gene_function": "Tailoring",
                     "gene_id": "AAL78055.1",
-                    "gene_name": "ORF3",
+                    "gene_annotation": "Quinone forming monooxygenase",
                     "gene_startpos": 5452,
                     "not_in_gbk": false,
-                    "tailoring": "Oxidation"
+                    "tailoring": "Oxidation",
+                    "gene_name": "ORF3"
                 }
             ]
         },
-        "loci": {
-            "accession": "AY078067.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies"
-            ]
-        },
         "mibig_accession": "BGC0000285",
-        "polyketide": {
-            "ketide_length": 5,
-            "lin_cycl_pk": "Cyclic",
-            "pk_subclass": "Chalcone",
-            "pks_genes": [
-                "aal78053"
-            ],
-            "pks_subclass": [
-                "Type III"
-            ],
-            "starter_unit": "Malonyl-CoA"
-        },
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
         "publications": [
             "pubmed:12028378"
         ],
+        "polyketide": {
+            "ketide_length": 5,
+            "pks_subclass": [
+                "Type III"
+            ],
+            "lin_cycl_pk": "Cyclic",
+            "starter_unit": "Malonyl-CoA",
+            "pk_subclass": "Chalcone",
+            "pks_genes": [
+                "aal78053"
+            ]
+        },
         "saccharide": {
             "gt_genes": [
                 {
@@ -122,9 +124,10 @@
             "saccharide_subclass": "oligosaccharide"
         }
     },
-    "personal": {
-        "submitter_email": "barrie.wilkinson@jic.ac.uk",
-        "submitter_institution": "John Innes Centre",
-        "submitter_name": "Professor Barrie Wilkinson"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

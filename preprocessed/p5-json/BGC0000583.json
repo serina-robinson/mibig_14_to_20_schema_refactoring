@@ -1,58 +1,57 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "jclaesen@gmail.com",
+        "submitter_name": "Jan Claesen",
+        "submitter_institution": "University of California at San Francisco"
+    },
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Unknown"
-                ],
-                "chem_struct": "CC(C(N/C(C(N1C(CCC1)C(NC(C)C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(N/C(C(NC(C(NC(C(NC(C(NC2C(C)C)=O)CC(C)C)=O)CS/C=C\\\\NC2=O)=O)[C@H](C)CC)=O)=C/C)=O)CO)=O)[H])=O)CCC(N)=O)=O)[C@H](C)CC)=O)C(C)C)=O)CC3=CC=CC=C3)=O)CCC(N)=O)=O)C)=O)C(C)C)=O)=O)=O)=C\\\\C)=O)N(C)C",
-                "chem_synonyms": [],
-                "compound": "grisemycin",
-                "mass_ion_type": "Molecular ion",
-                "mol_mass": 1832.0019,
-                "molecular_formula": "C86H137N21O21S"
-            }
-        ],
-        "genes": {},
         "loci": {
-            "accession": "NC_010572.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Knock-out studies",
                 "Heterologous expression",
                 "Gene expression correlated with compound production"
             ],
-            "end_coord": 7576934,
-            "start_coord": 7570210
+            "accession": "NC_010572.1",
+            "start_coord": 7570210,
+            "end_coord": 7576934
         },
+        "compounds": [
+            {
+                "mol_mass": 1832.0019,
+                "chem_struct": "CC(C(N/C(C(N1C(CCC1)C(NC(C)C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(N/C(C(NC(C(NC(C(NC(C(NC2C(C)C)=O)CC(C)C)=O)CS/C=C\\\\NC2=O)=O)[C@H](C)CC)=O)=C/C)=O)CO)=O)[H])=O)CCC(N)=O)=O)[C@H](C)CC)=O)C(C)C)=O)CC3=CC=CC=C3)=O)CCC(N)=O)=O)C)=O)C(C)C)=O)=O)=O)=C\\\\C)=O)N(C)C",
+                "mass_ion_type": "Molecular ion",
+                "compound": "grisemycin",
+                "molecular_formula": "C86H137N21O21S",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Unknown"
+                ]
+            }
+        ],
+        "genes": {},
         "mibig_accession": "BGC0000583",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:21421760"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Linaridin",
             "precursor_loci": [
                 {
+                    "foll_pept_len": -1,
+                    "crosslinks": [
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 16,
+                            "AA_pos_2": 19
+                        }
+                    ],
                     "core_pept_aa": [
                         "atpavaqfviqgsticlvc"
                     ],
-                    "crosslinks": [
-                        {
-                            "AA_pos_1": 16,
-                            "AA_pos_2": 19,
-                            "crosslink_type": "Thioether"
-                        }
-                    ],
-                    "foll_pept_len": -1,
                     "gene_id": [
                         "grma"
                     ],
@@ -60,12 +59,13 @@
                     "peptidase": []
                 }
             ],
-            "ripp_subclass": "Linaridin"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "jclaesen@gmail.com",
-        "submitter_institution": "University of California at San Francisco",
-        "submitter_name": "Jan Claesen"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

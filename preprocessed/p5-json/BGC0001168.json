@@ -1,73 +1,11 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "pcruz@langebio.cinvestav.mx",
+        "submitter_name": "Pablo Cruz Morales",
+        "submitter_institution": "National Laboratory of genomics for biodiversity-CINVESTAV"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Inhibitor"
-                ],
-                "chem_synonyms": [],
-                "chem_target": [
-                    "Trypsin"
-                ],
-                "compound": "Livipeptin",
-                "mass_ion_type": "M+",
-                "mol_mass": 347.16
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "gene_annotation": "Adenylation and reductase domains containing protein",
-                    "gene_endpos": 894913,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "509516289",
-                    "gene_name": "SLI_0883",
-                    "gene_startpos": 891947,
-                    "mut_pheno": "loss of leupeptin production",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "gene_annotation": "Leucyl/Phenylalanil-tRNA-Protein transferase",
-                    "gene_endpos": 895718,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "509516290",
-                    "gene_name": "SLI_0884",
-                    "gene_startpos": 894936,
-                    "mut_pheno": "loss of leupeptin production",
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "gene_annotation": "N-Acyl transferase",
-                    "gene_endpos": 896528,
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "509516291",
-                    "gene_name": "SLI_0885",
-                    "gene_startpos": 895746,
-                    "mut_pheno": "loss of leupeptin production",
-                    "not_in_gbk": false
-                }
-            ]
-        },
         "loci": {
-            "accession": "CM001889.1",
             "complete": "Unknown",
             "conn_comp_cluster": [
                 "Knock-out studies",
@@ -75,42 +13,104 @@
                 "Gene expression correlated with compound production",
                 "Sequence-based prediction"
             ],
-            "end_coord": 896528,
-            "start_coord": 891947
+            "accession": "CM001889.1",
+            "start_coord": 891947,
+            "end_coord": 896528
+        },
+        "compounds": [
+            {
+                "mol_mass": 347.16,
+                "mass_ion_type": "M+",
+                "chem_target": [
+                    "Trypsin"
+                ],
+                "compound": "Livipeptin",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Inhibitor"
+                ]
+            }
+        ],
+        "genes": {
+            "gene": [
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 894913,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_id": "509516289",
+                    "gene_annotation": "Adenylation and reductase domains containing protein",
+                    "gene_startpos": 891947,
+                    "not_in_gbk": false,
+                    "mut_pheno": "loss of leupeptin production",
+                    "gene_name": "SLI_0883"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 895718,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_id": "509516290",
+                    "gene_annotation": "Leucyl/Phenylalanil-tRNA-Protein transferase",
+                    "gene_startpos": 894936,
+                    "not_in_gbk": false,
+                    "mut_pheno": "loss of leupeptin production",
+                    "gene_name": "SLI_0884"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 896528,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
+                    "gene_id": "509516291",
+                    "gene_annotation": "N-Acyl transferase",
+                    "gene_startpos": 895746,
+                    "not_in_gbk": false,
+                    "mut_pheno": "loss of leupeptin production",
+                    "gene_name": "SLI_0885"
+                }
+            ]
         },
         "mibig_accession": "BGC0001168",
-        "nrp": {
-            "lin_cycl_nrp": "Linear",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "509516289",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "prot_adom_spec": "Arginine"
-                            },
-                            "module_nr": "1",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Reductive release",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
-            "subclass": "Unknown"
-        },
+        "biosyn_class": [
+            "NRP"
+        ],
         "publications": [
             "pubmed:23709624"
-        ]
+        ],
+        "nrp": {
+            "nrps_release_type": "Reductive release",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Arginine",
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "aa_type": "Proteinogenic"
+                            }
+                        }
+                    ],
+                    "nrps_gene": "509516289"
+                }
+            ],
+            "subclass": "Unknown",
+            "lin_cycl_nrp": "Linear",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": []
+        }
     },
-    "personal": {
-        "submitter_email": "pcruz@langebio.cinvestav.mx",
-        "submitter_institution": "National Laboratory of genomics for biodiversity-CINVESTAV",
-        "submitter_name": "Pablo Cruz Morales"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

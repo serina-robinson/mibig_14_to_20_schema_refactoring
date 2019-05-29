@@ -1,19 +1,26 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "harald.gross@uni-tuebingen.de",
+        "submitter_name": "Harald Gross",
+        "submitter_institution": "University of Tuebingen"
+    },
     "general_params": {
-        "biosyn_class": [
-            "NRP",
-            "Saccharide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies",
+                "Sequence-based prediction"
+            ],
+            "accession": "CBLV010000330.1",
+            "start_coord": 196768,
+            "end_coord": 209553
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Antibacterial"
+                "chemspider_id": 8274723,
+                "chem_struct": "",
+                "chem_synonyms": [
+                    "sb-253514"
                 ],
                 "chem_moieties": [
                     {
@@ -21,135 +28,130 @@
                         "moiety_subcluster": []
                     }
                 ],
-                "chem_synonyms": [
-                    "sb-253514"
-                ],
-                "chemspider_id": 8274723,
-                "compound": "brabantamide A"
+                "compound": "brabantamide A",
+                "molecular_formula": "",
+                "chem_act": [
+                    "Antibacterial"
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 198081,
                     "evidence_genefunction": [
                         "Other in vivo study"
                     ],
-                    "gene_annotation": "RhlB, TDP-rhamnosyltransferase 1",
-                    "gene_endpos": 198081,
-                    "gene_function": "Tailoring",
                     "gene_id": "CDF96613.1",
-                    "gene_name": "braA",
+                    "gene_annotation": "RhlB, TDP-rhamnosyltransferase 1",
                     "gene_startpos": 196768,
                     "not_in_gbk": false,
-                    "tailoring": "Glycosylation"
+                    "tailoring": "Glycosylation",
+                    "gene_name": "braA"
                 },
                 {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 205442,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "NRPS",
-                    "gene_endpos": 205442,
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "CDF96614.1",
-                    "gene_name": "BraB",
+                    "gene_annotation": "NRPS",
                     "gene_startpos": 198177,
-                    "not_in_gbk": false
+                    "not_in_gbk": false,
+                    "gene_name": "BraB"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 206720,
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "FAD-dependent Baeyer\u2013Villiger monooxygenase",
-                    "gene_endpos": 206720,
-                    "gene_function": "Tailoring",
                     "gene_id": "CDF96615.1",
-                    "gene_name": "BraC",
+                    "gene_annotation": "FAD-dependent Baeyer\u2013Villiger monooxygenase",
                     "gene_startpos": 205557,
                     "not_in_gbk": false,
-                    "tailoring": "Oxidation"
+                    "tailoring": "Oxidation",
+                    "gene_name": "BraC"
                 },
                 {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "LuxR-type transcriptional regulator",
-                    "gene_endpos": 208044,
                     "gene_function": "Regulation",
-                    "gene_id": "CDF96616.1",
-                    "gene_name": "BraD",
-                    "gene_startpos": 207217,
-                    "not_in_gbk": false
-                },
-                {
+                    "gene_endpos": 208044,
                     "evidence_genefunction": [
                         "Sequence-based prediction"
                     ],
-                    "gene_annotation": "RND efflux system",
-                    "gene_endpos": 209553,
+                    "gene_id": "CDF96616.1",
+                    "gene_annotation": "LuxR-type transcriptional regulator",
+                    "gene_startpos": 207217,
+                    "not_in_gbk": false,
+                    "gene_name": "BraD"
+                },
+                {
                     "gene_function": "Transport",
+                    "gene_endpos": 209553,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
                     "gene_id": "CDF96617.1",
-                    "gene_name": "BraE",
+                    "gene_annotation": "RND efflux system",
                     "gene_startpos": 208129,
-                    "not_in_gbk": false
+                    "not_in_gbk": false,
+                    "gene_name": "BraE"
                 }
             ]
         },
-        "loci": {
-            "accession": "CBLV010000330.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies",
-                "Sequence-based prediction"
-            ],
-            "end_coord": 209553,
-            "start_coord": 196768
-        },
         "mibig_accession": "BGC0001149",
-        "nrp": {
-            "lin_cycl_nrp": "Cyclic",
-            "lipid_moiety": "3-OH tetradecanoic acid ",
-            "nrps_genes": [
-                {
-                    "nrps_gene": "CDF96614.1",
-                    "nrps_module": [
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Activity assay",
-                                "prot_adom_spec": "Serine"
-                            },
-                            "cdom_subtype": "Starter",
-                            "module_nr": "1",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        },
-                        {
-                            "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
-                                "epimerized": false,
-                                "evidence_a_spec": "Sequence-based prediction",
-                                "prot_adom_spec": "Proline"
-                            },
-                            "cdom_subtype": "DCL",
-                            "module_nr": "2",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
-                        }
-                    ]
-                }
-            ],
-            "nrps_release_type": "Unknown",
-            "nrps_te_type": "Unknown",
-            "nrps_thioesterase": [
-                "cdf96614.1"
-            ],
-            "subclass": "Other lipopeptide"
-        },
+        "biosyn_class": [
+            "NRP",
+            "Saccharide"
+        ],
         "publications": [
             "pubmed:24436210"
         ],
+        "nrp": {
+            "lipid_moiety": "3-OH tetradecanoic acid ",
+            "nrps_release_type": "Unknown",
+            "subclass": "Other lipopeptide",
+            "nrps_thioesterase": [
+                "cdf96614.1"
+            ],
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_genes": [
+                {
+                    "nrps_module": [
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "1",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Serine",
+                                "evidence_a_spec": "Activity assay",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "Starter"
+                        },
+                        {
+                            "nrps_mod_skip_iter": "Neither",
+                            "module_nr": "2",
+                            "nrps_mod_doms": "None",
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "prot_adom_spec": "Proline",
+                                "evidence_a_spec": "Sequence-based prediction",
+                                "aa_type": "Proteinogenic"
+                            },
+                            "cdom_subtype": "DCL"
+                        }
+                    ],
+                    "nrps_gene": "CDF96614.1"
+                }
+            ],
+            "nrps_te_type": "Unknown"
+        },
         "saccharide": {
+            "saccharide_subclass": "hybrid/tailoring",
             "gt_genes": [
                 {
                     "evidence_gt_spec": "Structure-based inference",
@@ -157,7 +159,6 @@
                     "gt_specificity": "D-rhamnose"
                 }
             ],
-            "saccharide_subclass": "hybrid/tailoring",
             "sugar_subclusters": [
                 [
                     "BN844_4693",
@@ -167,9 +168,10 @@
             ]
         }
     },
-    "personal": {
-        "submitter_email": "harald.gross@uni-tuebingen.de",
-        "submitter_institution": "University of Tuebingen",
-        "submitter_name": "Harald Gross"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

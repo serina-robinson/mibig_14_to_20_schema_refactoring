@@ -1,128 +1,127 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "vddonk@illinois.edu",
+        "submitter_name": "Wilfred Van Der Donk",
+        "submitter_institution": "The University of Illinois Urbana Champaign"
+    },
     "comments": "Locus tags have been given to the genes described. As of now the genes have been given the automatic GeneID designation as either sunA, spaB and spaC. The entered GeneID designations are as follows: geoAI, geoB, geoC respectively to match what is reported in the literature. ",
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Antibacterial"
-                ],
-                "chem_synonyms": [],
-                "chem_target": [
-                    "BindingtolipidIIandporeformation"
-                ],
-                "compound": "geobacillin I",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 3262.5,
-                "molecular_formula": "C136H220N40O37S8"
-            }
-        ],
-        "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "Lantibiotic antimicrobial precursor peptide",
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "GTNG_0265",
-                    "gene_name": "geoAI"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "cyclase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "GTNG_0268",
-                    "gene_name": "geoC"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay",
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "dehydratase",
-                    "gene_function": "Scaffold biosynthesis",
-                    "gene_id": "GTNG_0266",
-                    "gene_name": "geoB"
-                }
-            ]
-        },
         "loci": {
-            "accession": "CP000557.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Enzymatic assays",
                 "Heterologous expression",
                 "Sequence-based prediction"
             ],
-            "end_coord": 311453,
-            "start_coord": 298823
+            "accession": "CP000557.1",
+            "start_coord": 298823,
+            "end_coord": 311453
+        },
+        "compounds": [
+            {
+                "mol_mass": 3262.5,
+                "mass_ion_type": "[M+H]+",
+                "chem_target": [
+                    "Binding to lipid II and pore formation"
+                ],
+                "compound": "geobacillin I",
+                "molecular_formula": "C136H220N40O37S8",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Antibacterial"
+                ]
+            }
+        ],
+        "genes": {
+            "gene": [
+                {
+                    "gene_annotation": "Lantibiotic antimicrobial precursor peptide",
+                    "gene_function": "Scaffold biosynthesis",
+                    "evidence_genefunction": [
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "GTNG_0265",
+                    "gene_name": "geoAI"
+                },
+                {
+                    "gene_annotation": "cyclase",
+                    "gene_function": "Scaffold biosynthesis",
+                    "evidence_genefunction": [
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "GTNG_0268",
+                    "gene_name": "geoC"
+                },
+                {
+                    "gene_annotation": "dehydratase",
+                    "gene_function": "Scaffold biosynthesis",
+                    "evidence_genefunction": [
+                        "Activity assay",
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "GTNG_0266",
+                    "gene_name": "geoB"
+                }
+            ]
         },
         "mibig_accession": "BGC0000515",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:22431611",
             "pubmed:24169799"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Lanthipeptide",
             "precursor_loci": [
                 {
+                    "foll_pept_len": -1,
+                    "crosslinks": [
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 3,
+                            "AA_pos_2": 7
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 8,
+                            "AA_pos_2": 11
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 13,
+                            "AA_pos_2": 18
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 20,
+                            "AA_pos_2": 24
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 23,
+                            "AA_pos_2": 27
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 26,
+                            "AA_pos_2": 30
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 29,
+                            "AA_pos_2": 33
+                        }
+                    ],
                     "cleavage_recogn_site": [
                         ""
                     ],
                     "core_pept_aa": [
                         "VTSKSLCTPGCITGVLMCLTQNSCVSCNSCIRC"
                     ],
-                    "crosslinks": [
-                        {
-                            "AA_pos_1": 3,
-                            "AA_pos_2": 7,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 8,
-                            "AA_pos_2": 11,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 13,
-                            "AA_pos_2": 18,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 20,
-                            "AA_pos_2": 24,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 23,
-                            "AA_pos_2": 27,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 26,
-                            "AA_pos_2": 30,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 29,
-                            "AA_pos_2": 33,
-                            "crosslink_type": "Thioether"
-                        }
-                    ],
-                    "foll_pept_len": -1,
                     "gene_id": [
                         ""
                     ],
@@ -130,12 +129,13 @@
                     "peptidase": []
                 }
             ],
-            "ripp_subclass": "Lanthipeptide"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "vddonk@illinois.edu",
-        "submitter_institution": "The University of Illinois Urbana Champaign",
-        "submitter_name": "Wilfred Van Der Donk"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

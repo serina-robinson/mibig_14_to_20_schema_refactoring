@@ -1,123 +1,126 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "yhchooi@gmail.com",
+        "submitter_name": "Yit-Heng Chooi",
+        "submitter_institution": "The Australian National University"
+    },
     "general_params": {
-        "biosyn_class": [
-            "Polyketide"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "accession": "JN257714.1"
+        },
         "compounds": [
             {
+                "chemspider_id": 8063660,
+                "mol_mass": 414.366,
+                "chem_struct": "CC(=O)C1=C(C2(C(=O)C3=C(CC2(CC1=O)O)C=C4C=C(C=C(C4=C3O)O)OC)O)O",
+                "chem_synonyms": [],
+                "pubchem_id": 9887988,
+                "chem_target": [
+                    "neuropeptide Y",
+                    "neurokinin-1 receptor"
+                ],
+                "compound": "TAN-1612",
+                "molecular_formula": "C21H18O9",
                 "chem_act": [
                     "Inhibitor"
-                ],
-                "chem_synonyms": [],
-                "chem_target": [
-                    "neuropeptideY",
-                    "neurokinin-1receptor"
-                ],
-                "chemspider_id": 8063660,
-                "compound": "TAN-1612",
-                "pubchem_id": 9887988
+                ]
             },
             {
-                "chem_act": [
-                    "Unknown"
-                ],
-                "chem_struct": "O=C1C2=C(O)C3=C(O)C=C(OC)C=C3C=C2CC(CC(CC(C)=O)=O)(O)C1O",
-                "chem_synonyms": [],
-                "compound": "1-(2,3,5,10-tetrahydroxy-7-methoxy-4-oxo-1,2,3,4-tetrahydroanthracen-2-yl)pentane-2,4-dione",
-                "mass_ion_type": "[M+H]+",
                 "mol_mass": 388.12,
-                "molecular_formula": "C20H20O8"
-            },
-            {
+                "chem_struct": "O=C1C2=C(O)C3=C(O)C=C(OC)C=C3C=C2CC(CC(CC(C)=O)=O)(O)C1O",
+                "mass_ion_type": "[M+H]+",
+                "compound": "1-(2,3,5,10-tetrahydroxy-7-methoxy-4-oxo-1,2,3,4-tetrahydroanthracen-2-yl)pentane-2,4-dione",
+                "molecular_formula": "C20H20O8",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Unknown"
-                ],
-                "chem_struct": "O=C1C2=C(O)C3=C(O)C=C(O)C=C3C=C2CC4(O)C1(O)C(C(C(C)=O)=C(O)C4)=O",
-                "chem_synonyms": [],
-                "compound": "desmethyl TAN-1612",
-                "mass_ion_type": "[M+H]+",
+                ]
+            },
+            {
                 "mol_mass": 400.08,
-                "molecular_formula": "C20H16O9"
+                "chem_struct": "O=C1C2=C(O)C3=C(O)C=C(O)C=C3C=C2CC4(O)C1(O)C(C(C(C)=O)=C(O)C4)=O",
+                "mass_ion_type": "[M+H]+",
+                "compound": "desmethyl TAN-1612",
+                "molecular_formula": "C20H16O9",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Unknown"
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_function": "Scaffold biosynthesis",
+                    "mut_pheno": "loss of TAN-1612 production",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Heterologous expression",
                         "Activity assay"
                     ],
-                    "gene_annotation": "metallo-beta-lactamase-like thioesterase/Claisen cyclase",
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "AEN83888",
-                    "gene_name": "AdaB",
-                    "mut_pheno": "loss of TAN-1612 production"
+                    "gene_annotation": "metallo-beta-lactamase-like thioesterase/Claisen cyclase",
+                    "gene_name": "AdaB"
                 },
                 {
+                    "mut_pheno": "loss of TAN-1612 and accumulation of 1-(2,3,5,10-tetrahydroxy-7-methoxy-4-oxo-1,2,3,4-tetrahydroanthracen-2-yl)pentane-2,4-dione",
                     "gene_annotation": "flavin-dependent monooxygenase, promote",
                     "gene_function": "Unknown",
                     "gene_id": "AEN83887",
-                    "gene_name": "AdaC",
-                    "mut_pheno": "loss of TAN-1612 and accumulation of 1-(2,3,5,10-tetrahydroxy-7-methoxy-4-oxo-1,2,3,4-tetrahydroanthracen-2-yl)pentane-2,4-dione"
+                    "gene_name": "AdaC"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Methylation",
                     "evidence_genefunction": [
                         "Knock-out",
                         "Heterologous expression"
                     ],
-                    "gene_annotation": "O-methyltransferase",
-                    "gene_function": "Tailoring",
                     "gene_id": "AEN83886",
-                    "gene_name": "AdaD",
+                    "gene_annotation": "O-methyltransferase",
                     "mut_pheno": "loss of TAN-1612 and accumulation of desmethyl TAN-1612",
-                    "tailoring": "Methylation"
+                    "gene_name": "AdaD"
                 }
             ]
         },
-        "loci": {
-            "accession": "JN257714.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Heterologous expression",
-                "Gene expression correlated with compound production"
-            ]
-        },
         "mibig_accession": "BGC0000156",
-        "polyketide": {
-            "iter_cycl_type": "C6-C11 first",
-            "iterative_subtype": "Non-reducing",
-            "lin_cycl_pk": "Cyclic",
-            "nr_iterations": 9,
-            "pk_subclass": "Tetracycline",
-            "pks_genes": [
-                "aen83889"
-            ],
-            "pks_release_type": "Claisen condensation",
-            "pks_subclass": [
-                "Iterative type I"
-            ],
-            "pks_te_type": "Unknown",
-            "pks_thioesterase": [
-                "aen83888"
-            ],
-            "starter_unit": "Acetyl-CoA"
-        },
+        "biosyn_class": [
+            "Polyketide"
+        ],
         "publications": [
             "pubmed:21866960",
             "pubmed:7490206",
             "pubmed:7490207"
-        ]
+        ],
+        "polyketide": {
+            "nr_iterations": 9,
+            "pks_te_type": "Unknown",
+            "iter_cycl_type": "C6-C11 first",
+            "pks_subclass": [
+                "Iterative type I"
+            ],
+            "lin_cycl_pk": "Cyclic",
+            "pks_thioesterase": [
+                "aen83888"
+            ],
+            "iterative_subtype": "Non-reducing",
+            "starter_unit": "Acetyl-CoA",
+            "pk_subclass": "Tetracycline",
+            "pks_genes": [
+                "aen83889"
+            ],
+            "pks_release_type": "Claisen condensation"
+        }
     },
-    "personal": {
-        "submitter_email": "yhchooi@gmail.com",
-        "submitter_institution": "The Australian National University",
-        "submitter_name": "Yit-Heng Chooi"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

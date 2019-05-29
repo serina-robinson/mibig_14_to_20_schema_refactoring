@@ -1,66 +1,54 @@
 {
-    "version": "17",
     "personal": {
+        "submitter_email": "yiqiang.cheng@unthsc.edu",
         "submitter_name": "Yi-Qiang Cheng",
-        "submitter_institution": "University of North Texas Health Science Center",
-        "submitter_email": "yiqiang.cheng@unthsc.edu"
+        "submitter_institution": "University of North Texas Health Science Center"
     },
+    "version": "17",
     "general_params": {
-        "mibig_accession": "BGC0000993",
-        "biosyn_class": [
-            "NRP",
-            "Polyketide"
-        ],
-        "publications": [
-            "17400765",
-            "19549597",
-            "21183645",
-            "21183648",
-            "24553401"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "EF210776",
-                    "start_coord": 2513,
                     "end_coord": 39006,
+                    "Accession": "EF210776",
                     "conn_comp_cluster": [
                         "Knock-out studies",
                         "Enzymatic assays",
                         "Heterologous expression",
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "start_coord": 2513
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "FK228",
-                "chem_synonyms": [
-                    "depsipeptide",
-                    "romidepsin"
-                ],
-                "chem_struct": "CC=C1C(=O)NC(C(=O)OC2CC(=O)NC(C(=O)NC(CSSCCC=C2)C(=O)N1)C(C)C)C(C)C",
-                "molecular_formula": "C24H36N4O6S2",
                 "mol_mass": 540.2,
+                "chem_struct": "CC=C1C(=O)NC(C(=O)OC2CC(=O)NC(C(=O)NC(CSSCCC=C2)C(=O)N1)C(C)C)C(C)C",
                 "mass_ion_type": "None",
-                "chem_act": [
-                    "Antifungal",
-                    "Cytotoxic",
-                    "Inhibitor"
+                "chem_moieties": [
+                    {
+                        "chem_moiety": "Other",
+                        "moiety_subcluster": [
+                            "abp57753"
+                        ],
+                        "other_chem_moiety": "Disulfide bond"
+                    }
                 ],
                 "chem_target": [
                     "Histone deacetylases"
                 ],
-                "chem_moieties": [
-                    {
-                        "chem_moiety": "Other",
-                        "other_chem_moiety": "Disulfide bond",
-                        "moiety_subcluster": [
-                            "abp57753"
-                        ]
-                    }
+                "compound": "FK228",
+                "molecular_formula": "C24H36N4O6S2",
+                "chem_synonyms": [
+                    "depsipeptide",
+                    "romidepsin"
+                ],
+                "chem_act": [
+                    "Antifungal",
+                    "Cytotoxic",
+                    "Inhibitor"
                 ]
             }
         ],
@@ -83,24 +71,36 @@
                 }
             ]
         },
+        "mibig_accession": "BGC0000993",
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
         "NRP": {
-            "subclass": "Cyclic depsipeptide",
             "lin_cycl_nrp": "Cyclic",
             "nrps_te_type": "Type II",
+            "subclass": "Cyclic depsipeptide",
             "nrps_release_type": "Macrolactamization"
         },
         "Polyketide": {
-            "pk_subclass": "Macrolide",
-            "lin_cycl_pk": "Cyclic",
+            "pks_te_type": "Type II",
             "pks_subclass": [
                 "Modular type I"
             ],
-            "starter_unit": "Malonyl-CoA",
-            "pks_te_type": "Type II",
             "pks_thioesterase": [
                 "abp57754"
             ],
+            "starter_unit": "Malonyl-CoA",
+            "pk_subclass": "Macrolide",
+            "lin_cycl_pk": "Cyclic",
             "pks_release_type": "Macrolactamization"
-        }
+        },
+        "publications": [
+            "17400765",
+            "19549597",
+            "21183645",
+            "21183648",
+            "24553401"
+        ]
     }
 }

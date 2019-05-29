@@ -1,60 +1,59 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "negarg@ucsd.edu",
+        "submitter_name": "Neha Garg",
+        "submitter_institution": "University of California at San Diego"
+    },
     "comments": "AmfS-like classIII lanthipeptide",
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
-        "compounds": [
-            {
-                "chem_act": [
-                    "Unknown"
-                ],
-                "chem_synonyms": [],
-                "compound": "SAL-2242",
-                "mass_ion_type": "[M+H]+",
-                "mol_mass": 2242.22
-            }
-        ],
-        "genes": {},
         "loci": {
-            "accession": "NZ_DS999645.1",
             "complete": "complete",
             "conn_comp_cluster": [
                 "Sequence-based prediction"
             ],
-            "end_coord": 4120692,
-            "start_coord": 4112717
+            "accession": "NZ_DS999645.1",
+            "start_coord": 4112717,
+            "end_coord": 4120692
         },
+        "compounds": [
+            {
+                "mol_mass": 2242.22,
+                "mass_ion_type": "[M+H]+",
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Unknown"
+                ],
+                "compound": "SAL-2242"
+            }
+        ],
+        "genes": {},
         "mibig_accession": "BGC0000546",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:21983601"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Lanthipeptide",
             "precursor_loci": [
                 {
+                    "foll_pept_len": -1,
+                    "crosslinks": [
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 3,
+                            "AA_pos_2": 10
+                        },
+                        {
+                            "crosslink_type": "Thioether",
+                            "AA_pos_1": 13,
+                            "AA_pos_2": 20
+                        }
+                    ],
                     "core_pept_aa": [
                         "TGSQISLLICEYSSLSVTLCTP"
                     ],
-                    "crosslinks": [
-                        {
-                            "AA_pos_1": 3,
-                            "AA_pos_2": 10,
-                            "crosslink_type": "Thioether"
-                        },
-                        {
-                            "AA_pos_1": 13,
-                            "AA_pos_2": 20,
-                            "crosslink_type": "Thioether"
-                        }
-                    ],
-                    "foll_pept_len": -1,
                     "gene_id": [
                         "sshg_03589",
                         "wp_003950016.1"
@@ -63,12 +62,13 @@
                     "peptidase": []
                 }
             ],
-            "ripp_subclass": "Lanthipeptide"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "negarg@ucsd.edu",
-        "submitter_institution": "University of California at San Diego",
-        "submitter_name": "Neha Garg"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

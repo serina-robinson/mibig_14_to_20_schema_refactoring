@@ -1,120 +1,119 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "joanne.m.willey@hofstra.edu",
+        "submitter_name": "Joanne Willey",
+        "submitter_institution": "Hofstra University"
+    },
     "general_params": {
-        "biosyn_class": [
-            "RiPP"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Gene expression correlated with compound production"
+            ],
+            "accession": "AL645882.2",
+            "start_coord": 7419664,
+            "end_coord": 7426391
+        },
         "compounds": [
             {
-                "chem_act": [
-                    "Surfactant"
-                ],
+                "mol_mass": 2026.97,
+                "chem_struct": "CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(CSCC(C(=O)NC(C(=O)NC(C(=O)NC(=C)C(=O)N1)CC(C)C)CO)NC(=O)C(CC(=O)O)NC(=O)CNC(=O)C2CSCC(C(=O)NC(C(=O)NC(C(=O)NC(=C)C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N2)CC(C)C)CC(C)C)CC(C)C)C)CCCNC(=N)N)NC(=O)CNC(=O)C(C(C)O)N)C(=O)NC(CC(=O)N)C(=O)O)C(C)O)C(C)O",
+                "mass_ion_type": "None",
                 "chem_moieties": [
                     {
                         "chem_moiety": "lanthionine, dehydroalanine",
                         "moiety_subcluster": []
                     }
                 ],
-                "chem_struct": "CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(CSCC(C(=O)NC(C(=O)NC(C(=O)NC(=C)C(=O)N1)CC(C)C)CO)NC(=O)C(CC(=O)O)NC(=O)CNC(=O)C2CSCC(C(=O)NC(C(=O)NC(C(=O)NC(=C)C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N2)CC(C)C)CC(C)C)CC(C)C)C)CCCNC(=N)N)NC(=O)CNC(=O)C(C(C)O)N)C(=O)NC(CC(=O)N)C(=O)O)C(C)O)C(C)O",
-                "chem_synonyms": [],
                 "compound": "SapB",
-                "mass_ion_type": "None",
-                "mol_mass": 2026.97
+                "chem_synonyms": [],
+                "chem_act": [
+                    "Surfactant"
+                ]
             }
         ],
         "genes": {
-            "gene": [
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative serine/threonine protein kinase",
-                    "gene_endpos": 2793,
-                    "gene_function": "Tailoring",
-                    "gene_id": "CAA19960.1",
-                    "gene_name": "SCO6681",
-                    "gene_startpos": 1,
-                    "not_in_gbk": false,
-                    "tailoring": "Dehydration"
-                },
-                {
-                    "evidence_genefunction": [
-                        "Activity assay"
-                    ],
-                    "gene_annotation": "hypothetical protein SC5A7.32",
-                    "gene_endpos": 2959,
-                    "gene_function": "Precursor biosynthesis",
-                    "gene_id": "CAA19961.1",
-                    "gene_name": "SCO6682",
-                    "gene_startpos": 2831,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative ABC transporter",
-                    "gene_endpos": 4905,
-                    "gene_function": "Transport",
-                    "gene_id": "CAA19962.1",
-                    "gene_name": "SCO6683",
-                    "gene_startpos": 2995,
-                    "not_in_gbk": false
-                },
-                {
-                    "evidence_genefunction": [
-                        "Sequence-based prediction"
-                    ],
-                    "gene_annotation": "putative ABC transporter",
-                    "gene_endpos": 6728,
-                    "gene_function": "Transport",
-                    "gene_id": "CAA19963.1",
-                    "gene_name": "SCO6684",
-                    "gene_startpos": 4902,
-                    "not_in_gbk": false
-                }
-            ],
             "operon": [
                 {
-                    "evidence_operon": "Sequence-based prediction",
                     "operon_genes": [
                         "ramc",
                         "rams",
                         "rama",
                         "ramb"
-                    ]
+                    ],
+                    "evidence_operon": "Sequence-based prediction"
+                }
+            ],
+            "gene": [
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 2793,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAA19960.1",
+                    "gene_annotation": "putative serine/threonine protein kinase",
+                    "gene_startpos": 1,
+                    "not_in_gbk": false,
+                    "tailoring": "Dehydration",
+                    "gene_name": "SCO6681"
+                },
+                {
+                    "gene_function": "Precursor biosynthesis",
+                    "gene_endpos": 2959,
+                    "evidence_genefunction": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "CAA19961.1",
+                    "gene_annotation": "hypothetical protein SC5A7.32",
+                    "gene_startpos": 2831,
+                    "not_in_gbk": false,
+                    "gene_name": "SCO6682"
+                },
+                {
+                    "gene_function": "Transport",
+                    "gene_endpos": 4905,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAA19962.1",
+                    "gene_annotation": "putative ABC transporter",
+                    "gene_startpos": 2995,
+                    "not_in_gbk": false,
+                    "gene_name": "SCO6683"
+                },
+                {
+                    "gene_function": "Transport",
+                    "gene_endpos": 6728,
+                    "evidence_genefunction": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "CAA19963.1",
+                    "gene_annotation": "putative ABC transporter",
+                    "gene_startpos": 4902,
+                    "not_in_gbk": false,
+                    "gene_name": "SCO6684"
                 }
             ]
         },
-        "loci": {
-            "accession": "AL645882.2",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Gene expression correlated with compound production"
-            ],
-            "end_coord": 7426391,
-            "start_coord": 7419664
-        },
         "mibig_accession": "BGC0000551",
+        "biosyn_class": [
+            "RiPP"
+        ],
         "publications": [
             "pubmed:15277670"
         ],
         "ripp": {
-            "lin_cycl_ripp": "Cyclic",
+            "ripp_subclass": "Lanthipeptide",
             "precursor_loci": [
                 {
+                    "foll_pept_len": -1,
                     "cleavage_recogn_site": [
                         "DVETGS"
                     ],
                     "core_pept_aa": [
                         "TGSRASLLLCGDSSLSITTCN"
                     ],
-                    "foll_pept_len": -1,
                     "gene_id": [
                         "rams"
                     ],
@@ -122,12 +121,13 @@
                     "peptidase": []
                 }
             ],
-            "ripp_subclass": "Lanthipeptide"
+            "lin_cycl_ripp": "Cyclic"
         }
     },
-    "personal": {
-        "submitter_email": "joanne.m.willey@hofstra.edu",
-        "submitter_institution": "Hofstra University",
-        "submitter_name": "Joanne Willey"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }

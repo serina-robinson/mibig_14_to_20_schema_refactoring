@@ -1,43 +1,52 @@
 {
-    "version": "17",
     "personal": {
+        "submitter_email": "andriy.luzhetskyy@helmholtz-hzi.de",
         "submitter_name": "Andriy Luzhetskyy",
-        "submitter_institution": "Helmholtz Institute for Pharmaceutical Sciences Saarland",
-        "submitter_email": "andriy.luzhetskyy@helmholtz-hzi.de"
+        "submitter_institution": "Helmholtz Institute for Pharmaceutical Sciences Saarland"
     },
+    "version": "17",
     "general_params": {
-        "mibig_accession": "BGC0001150",
-        "biosyn_class": [
-            "Polyketide"
-        ],
-        "publications": [
-            "25537663"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "KM923741",
-                    "start_coord": -1,
                     "end_coord": 23436,
+                    "Accession": "KM923741",
                     "conn_comp_cluster": [
                         "Knock-out studies",
                         "Enzymatic assays",
                         "Heterologous expression",
                         "Gene expression correlated with compound production"
-                    ]
+                    ],
+                    "start_coord": -1
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "pamamycin",
+                "mol_mass": "607.873",
+                "other_chem_act": "insecticidal",
+                "chem_struct": "CCC[C@H]1C[C@@H]2CC[C@@H](O2)[C@@H](C(=O)O[C@H]([C@@H]([C@@H]3CC[C@@H](O3)[C@H](C(=O)O1)C)C)[C@H](C)[C@H]4CC[C@H](O4)C[C@@H](CCC)N(C)C)C",
                 "chem_synonyms": [],
                 "database_deposited": true,
+                "pubchem_id": 10100233,
+                "compound": "pamamycin",
+                "molecular_formula": "C35H61NO7",
+                "chem_moieties": [
+                    {
+                        "chem_moiety": "Other",
+                        "moiety_subcluster": [
+                            "salb_00469",
+                            "salb_00476",
+                            "salb_00477",
+                            "salb_00482"
+                        ],
+                        "other_chem_moiety": "Furane ring"
+                    }
+                ],
                 "databases_deposited": [
                     "PubChem"
                 ],
-                "pubchem_id": 10100233,
                 "chem_act": [
                     "Antibacterial",
                     "Antifungal",
@@ -48,19 +57,6 @@
                     "Signalling",
                     "Surfactant",
                     "Other"
-                ],
-                "other_chem_act": "insecticidal",
-                "chem_moieties": [
-                    {
-                        "chem_moiety": "Other",
-                        "other_chem_moiety": "Furane ring",
-                        "moiety_subcluster": [
-                            "salb_00469",
-                            "salb_00476",
-                            "salb_00477",
-                            "salb_00482"
-                        ]
-                    }
                 ]
             }
         ],
@@ -95,270 +91,275 @@
             ],
             "gene": [
                 {
-                    "gene_name": "pamR2",
-                    "not_in_gbk": false,
-                    "gene_startpos": 13,
+                    "gene_function": "",
                     "gene_endpos": 750,
+                    "evidence_genefunction": [
+                        ""
+                    ],
                     "gene_id": "SALB_00464",
                     "gene_annotation": "TetR family transcription regulator",
-                    "gene_function": "",
-                    "evidence_genefunction": [
-                        ""
-                    ]
+                    "gene_startpos": 13,
+                    "not_in_gbk": false,
+                    "gene_name": "pamR2"
                 },
                 {
-                    "gene_name": "pamW",
-                    "not_in_gbk": false,
-                    "gene_startpos": 838,
+                    "gene_function": "",
                     "gene_endpos": 2514,
+                    "evidence_genefunction": [
+                        ""
+                    ],
                     "gene_id": "SALB_00465",
                     "gene_annotation": "drug resistance transporter, EmrB/QacA family",
-                    "gene_function": "",
-                    "evidence_genefunction": [
-                        ""
-                    ]
+                    "gene_startpos": 838,
+                    "not_in_gbk": false,
+                    "gene_name": "pamW"
                 },
                 {
-                    "gene_name": "pamC",
-                    "not_in_gbk": false,
-                    "gene_startpos": 2611,
+                    "gene_function": "Precursor biosynthesis",
                     "gene_endpos": 2841,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "SALB_00466",
                     "gene_annotation": "acyl-carrier protein",
-                    "gene_function": "Precursor biosynthesis",
+                    "gene_startpos": 2611,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Production of different pamamycins",
+                    "gene_name": "pamC"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 3929,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Production of different pamamycins"
-                },
-                {
-                    "gene_name": "pamG",
-                    "not_in_gbk": false,
-                    "gene_startpos": 2895,
-                    "gene_endpos": 3929,
                     "gene_id": "SALB_00467",
                     "gene_annotation": "Ketoacyl-acyl carrier protein synthase III",
+                    "gene_startpos": 2895,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Production of hydroxyacid S",
+                    "gene_name": "pamG"
+                },
+                {
                     "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 5260,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Production of hydroxyacid S"
-                },
-                {
-                    "gene_name": "pamF",
-                    "not_in_gbk": false,
-                    "gene_startpos": 3941,
-                    "gene_endpos": 5260,
                     "gene_id": "SALB_00468",
                     "gene_annotation": "Ketoacyl-acyl carrier protein synthase II",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Production of hydroxyacid S"
+                    "gene_startpos": 3941,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Production of hydroxyacid S",
+                    "gene_name": "pamF"
                 },
                 {
-                    "gene_name": "pamA",
-                    "not_in_gbk": false,
-                    "gene_startpos": 5472,
-                    "gene_endpos": 6809,
-                    "gene_id": "SALB_00469",
-                    "gene_annotation": "Ketoacyl-acyl carrier protein synthase II",
                     "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 6809,
                     "evidence_genefunction": [
                         "Activity assay"
                     ],
-                    "mut_pheno": "Significant decrease of pamamycin production"
+                    "gene_id": "SALB_00469",
+                    "gene_annotation": "Ketoacyl-acyl carrier protein synthase II",
+                    "gene_startpos": 5472,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Significant decrease of pamamycin production",
+                    "gene_name": "pamA"
                 },
                 {
-                    "gene_name": "pamB",
-                    "not_in_gbk": false,
-                    "gene_startpos": 6806,
+                    "gene_function": "Scaffold biosynthesis",
                     "gene_endpos": 8668,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "SALB_00470",
                     "gene_annotation": "3-ketoacid (adipate/glutaconate) CoA transferase",
+                    "gene_startpos": 6806,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Loss of pamamycin production",
+                    "gene_name": "pamB"
+                },
+                {
                     "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 9665,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Loss of pamamycin production"
-                },
-                {
-                    "gene_name": "pamD",
-                    "not_in_gbk": false,
-                    "gene_startpos": 8706,
-                    "gene_endpos": 9665,
                     "gene_id": "SALB_00471",
                     "gene_annotation": "Ketoacyl-acyl carrier protein synthase III",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Loss of pamamycin production"
+                    "gene_startpos": 8706,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Loss of pamamycin production",
+                    "gene_name": "pamD"
                 },
                 {
-                    "gene_name": "pamE",
-                    "not_in_gbk": false,
-                    "gene_startpos": 9718,
+                    "gene_function": "",
                     "gene_endpos": 10752,
+                    "evidence_genefunction": [
+                        ""
+                    ],
                     "gene_id": "SALB_00472",
                     "gene_annotation": "Ketoacyl-acyl carrier protein synthase III",
-                    "gene_function": "",
-                    "evidence_genefunction": [
-                        ""
-                    ]
+                    "gene_startpos": 9718,
+                    "not_in_gbk": false,
+                    "gene_name": "pamE"
                 },
                 {
-                    "gene_name": "pamO",
-                    "not_in_gbk": false,
-                    "gene_startpos": 10806,
+                    "gene_function": "Tailoring",
                     "gene_endpos": 11600,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "SALB_00473",
                     "gene_annotation": "Ketoacyl-(acyl-carrier-protein) reductase",
-                    "gene_function": "Tailoring",
+                    "mut_pheno": "Loss of pamamycin production",
+                    "gene_startpos": 10806,
+                    "not_in_gbk": false,
                     "tailoring": "Reduction",
+                    "gene_name": "pamO"
+                },
+                {
+                    "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 12695,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Loss of pamamycin production"
-                },
-                {
-                    "gene_name": "pamK",
-                    "not_in_gbk": false,
-                    "gene_startpos": 11685,
-                    "gene_endpos": 12695,
                     "gene_id": "SALB_00474",
                     "gene_annotation": "Ketoacyl-acyl carrier protein synthase III",
+                    "gene_startpos": 11685,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Production of hydroxyacids S and L",
+                    "gene_name": "pamK"
+                },
+                {
                     "gene_function": "Scaffold biosynthesis",
+                    "gene_endpos": 14007,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Production of hydroxyacids S and L"
-                },
-                {
-                    "gene_name": "pamJ",
-                    "not_in_gbk": false,
-                    "gene_startpos": 12712,
-                    "gene_endpos": 14007,
                     "gene_id": "SALB_00475",
                     "gene_annotation": "Ketoacyl-acyl carrier protein synthase II",
-                    "gene_function": "Scaffold biosynthesis",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Production of hydroxyacids S and L"
+                    "gene_startpos": 12712,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Production of hydroxyacids S and L",
+                    "gene_name": "pamJ"
                 },
                 {
-                    "gene_name": "pamM",
-                    "not_in_gbk": false,
-                    "gene_startpos": 14000,
+                    "gene_function": "",
                     "gene_endpos": 15577,
+                    "evidence_genefunction": [
+                        ""
+                    ],
                     "gene_id": "SALB_00476",
                     "gene_annotation": "Ketoacyl-(acyl-carrier-protein) reductase",
-                    "gene_function": "",
-                    "evidence_genefunction": [
-                        ""
-                    ]
+                    "gene_startpos": 14000,
+                    "not_in_gbk": false,
+                    "gene_name": "pamM"
                 },
                 {
-                    "gene_name": "pamN",
-                    "not_in_gbk": false,
-                    "gene_startpos": 15574,
+                    "gene_function": "",
                     "gene_endpos": 16401,
+                    "evidence_genefunction": [
+                        ""
+                    ],
                     "gene_id": "SALB_00477",
                     "gene_annotation": "Ketoacyl-(acyl-carrier-protein) reductase",
-                    "gene_function": "",
-                    "evidence_genefunction": [
-                        ""
-                    ]
+                    "gene_startpos": 15574,
+                    "not_in_gbk": false,
+                    "gene_name": "pamN"
                 },
                 {
-                    "gene_name": "pamL",
-                    "not_in_gbk": false,
-                    "gene_startpos": 16398,
-                    "gene_endpos": 18101,
-                    "gene_id": "SALB_00478",
-                    "gene_annotation": "Hydroxyl acids CoA ligase",
                     "gene_function": "Activation / processing",
+                    "gene_endpos": 18101,
                     "evidence_genefunction": [
                         "Other in vivo study"
-                    ]
+                    ],
+                    "gene_id": "SALB_00478",
+                    "gene_annotation": "Hydroxyl acids CoA ligase",
+                    "gene_startpos": 16398,
+                    "not_in_gbk": false,
+                    "gene_name": "pamL"
                 },
                 {
-                    "gene_name": "pamH",
-                    "not_in_gbk": false,
-                    "gene_startpos": 18085,
+                    "gene_function": "",
                     "gene_endpos": 19068,
+                    "evidence_genefunction": [
+                        ""
+                    ],
                     "gene_id": "SALB_00479",
                     "gene_annotation": "Metal-dependent hydrolase (resistance)",
-                    "gene_function": "",
-                    "evidence_genefunction": [
-                        ""
-                    ]
+                    "gene_startpos": 18085,
+                    "not_in_gbk": false,
+                    "gene_name": "pamH"
                 },
                 {
-                    "gene_name": "pamX",
-                    "not_in_gbk": false,
-                    "gene_startpos": 19165,
+                    "gene_function": "Tailoring",
                     "gene_endpos": 20511,
+                    "evidence_genefunction": [
+                        "Knock-out"
+                    ],
                     "gene_id": "SALB_00480",
                     "gene_annotation": "Aminotransferase",
-                    "gene_function": "Tailoring",
+                    "mut_pheno": "Production of hydroxyacids S and K",
+                    "gene_startpos": 19165,
+                    "not_in_gbk": false,
                     "tailoring": "Amination",
+                    "gene_name": "pamX"
+                },
+                {
+                    "gene_function": "Tailoring",
+                    "gene_endpos": 21381,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Production of hydroxyacids S and K"
-                },
-                {
-                    "gene_name": "pamY",
-                    "not_in_gbk": false,
-                    "gene_startpos": 20560,
-                    "gene_endpos": 21381,
                     "gene_id": "SALB_00481",
                     "gene_annotation": "Methyltransferase",
-                    "gene_function": "Tailoring",
+                    "mut_pheno": "Production of hydroxyacids S and K",
+                    "gene_startpos": 20560,
+                    "not_in_gbk": false,
                     "tailoring": "Methylation",
-                    "evidence_genefunction": [
-                        "Knock-out"
-                    ],
-                    "mut_pheno": "Production of hydroxyacids S and K"
+                    "gene_name": "pamY"
                 },
                 {
-                    "gene_name": "pamS",
-                    "not_in_gbk": false,
-                    "gene_startpos": 21599,
-                    "gene_endpos": 22405,
-                    "gene_id": "SALB_00482",
-                    "gene_annotation": "Enoyl-CoA hydratase",
                     "gene_function": "",
+                    "gene_endpos": 22405,
                     "evidence_genefunction": [
                         ""
-                    ]
+                    ],
+                    "gene_id": "SALB_00482",
+                    "gene_annotation": "Enoyl-CoA hydratase",
+                    "gene_startpos": 21599,
+                    "not_in_gbk": false,
+                    "gene_name": "pamS"
                 },
                 {
-                    "gene_name": "pamR1",
-                    "not_in_gbk": false,
-                    "gene_startpos": 22430,
-                    "gene_endpos": 23077,
-                    "gene_id": "SALB_00483",
-                    "gene_annotation": "Response regulator LuxR family",
                     "gene_function": "Regulation",
+                    "gene_endpos": 23077,
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "mut_pheno": "Loss of pamamycin production"
+                    "gene_id": "SALB_00483",
+                    "gene_annotation": "Response regulator LuxR family",
+                    "gene_startpos": 22430,
+                    "not_in_gbk": false,
+                    "mut_pheno": "Loss of pamamycin production",
+                    "gene_name": "pamR1"
                 }
             ]
         },
+        "mibig_accession": "BGC0001150",
+        "biosyn_class": [
+            "Polyketide"
+        ],
         "Polyketide": {
-            "pk_subclass": "Other",
-            "lin_cycl_pk": "Linear",
+            "ketide_length": 26,
             "pks_subclass": [
                 "Type II",
                 "Type III"
             ],
+            "lin_cycl_pk": "Linear",
             "starter_unit": "Other",
+            "pk_subclass": "Other",
             "pks_genes": [
                 "salb_00467",
                 "salb_00468",
@@ -367,8 +368,10 @@
                 "salb_00472",
                 "salb_00474",
                 "salb_00475"
-            ],
-            "ketide_length": 26
-        }
+            ]
+        },
+        "publications": [
+            "25537663"
+        ]
     }
 }

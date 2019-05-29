@@ -1,39 +1,33 @@
 {
-    "version": "17",
     "personal": {
+        "submitter_email": "fenganyu@umich.edu",
         "submitter_name": "Fengan Yu",
-        "submitter_institution": "University of Michigan",
-        "submitter_email": "fenganyu@umich.edu"
+        "submitter_institution": "University of Michigan"
     },
+    "embargo": true,
+    "version": "17",
     "general_params": {
-        "mibig_accession": "BGC0000818",
-        "biosyn_class": [
-            "NRP"
-        ],
-        "publications": [
-            "23213353"
-        ],
         "loci": {
-            "complete": "complete",
             "nucl_acc": [
                 {
-                    "Accession": "JQ708194",
-                    "start_coord": 1,
                     "end_coord": 43815,
+                    "Accession": "JQ708194",
                     "conn_comp_cluster": [
                         "Sequence-based prediction"
-                    ]
+                    ],
+                    "start_coord": 1
                 }
-            ]
+            ],
+            "complete": "complete"
         },
         "compounds": [
             {
-                "compound": "Notoamide A",
-                "chem_synonyms": [],
-                "chem_struct": "CC1(C=CC2=C(O1)C=CC3=C2N(C(=O)[C@@]34C[C@]56[C@H](C4(C)C)C[C@@]7(CCCN7C5=O)C(=O)N6)O)C",
-                "molecular_formula": "C26H29N3O5",
                 "mol_mass": 463.2107,
+                "chem_struct": "CC1(C=CC2=C(O1)C=CC3=C2N(C(=O)[C@@]34C[C@]56[C@H](C4(C)C)C[C@@]7(CCCN7C5=O)C(=O)N6)O)C",
                 "mass_ion_type": "[M+H]+",
+                "compound": "Notoamide A",
+                "molecular_formula": "C26H29N3O5",
+                "chem_synonyms": [],
                 "chem_act": [
                     "Cytotoxic"
                 ]
@@ -42,44 +36,50 @@
         "genes": {
             "operon": []
         },
+        "mibig_accession": "BGC0000818",
+        "biosyn_class": [
+            "NRP"
+        ],
         "NRP": {
-            "subclass": "Other",
-            "lin_cycl_nrp": "Cyclic",
-            "nrps_te_type": "None",
-            "nrps_thioesterase": [],
             "nrps_release_type": "Other",
             "nrps_genes": [
                 {
-                    "nrps_gene": "AGC83576.1",
                     "nrps_module": [
                         {
+                            "nrps_mod_skip_iter": "Neither",
                             "module_nr": "1",
+                            "nrps_mod_doms": "None",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
                                 "prot_adom_spec": "Proline",
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "aa_type": "Proteinogenic"
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "LCL"
                         },
                         {
+                            "nrps_mod_skip_iter": "Neither",
                             "module_nr": "2",
+                            "nrps_mod_doms": "None",
                             "a_substr_spec": {
-                                "aa_type": "Proteinogenic",
+                                "epimerized": false,
                                 "prot_adom_spec": "Tryptophan",
                                 "evidence_a_spec": "Structure-based inference",
-                                "epimerized": false
+                                "aa_type": "Proteinogenic"
                             },
-                            "cdom_subtype": "LCL",
-                            "nrps_mod_doms": "None",
-                            "nrps_mod_skip_iter": "Neither"
+                            "cdom_subtype": "LCL"
                         }
-                    ]
+                    ],
+                    "nrps_gene": "AGC83576.1"
                 }
-            ]
-        }
-    },
-    "embargo": true
+            ],
+            "subclass": "Other",
+            "lin_cycl_nrp": "Cyclic",
+            "nrps_te_type": "None",
+            "nrps_thioesterase": []
+        },
+        "publications": [
+            "23213353"
+        ]
+    }
 }

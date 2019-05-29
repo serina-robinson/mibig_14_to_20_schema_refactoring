@@ -1,89 +1,92 @@
 {
-    "changelogs": [
-        {
-            "comment": "Submitted",
-            "version": "2.0"
-        }
-    ],
+    "personal": {
+        "submitter_email": "cswang@sibs.ac.cn",
+        "submitter_name": "Chengshu Wang",
+        "submitter_institution": "Insitute of Plant Physiology and Ecology, Shanghai Institutes for Biological Sciences, CAS"
+    },
     "comments": "The metabolite destruxins are used by the fungus to evade insect host immunities",
     "general_params": {
-        "biosyn_class": [
-            "NRP"
-        ],
+        "loci": {
+            "complete": "complete",
+            "conn_comp_cluster": [
+                "Knock-out studies"
+            ],
+            "accession": "GL698760.1"
+        },
         "compounds": [
             {
+                "mol_mass": 577.723,
+                "chem_struct": "CCC(C)C1C(=O)N(C(C(=O)N(C(C(=O)NCCC(=O)OC(C(=O)N2CCCC2C(=O)N1)CC=C)C)C)C(C)C)C",
+                "chem_synonyms": [],
+                "pubchem_id": 122810,
+                "compound": "destruxin",
+                "molecular_formula": "C29H47N5O7",
                 "chem_act": [
                     "insecticidal"
-                ],
-                "chem_synonyms": [],
-                "compound": "destruxin",
-                "pubchem_id": 122810
+                ]
             }
         ],
         "genes": {
             "gene": [
                 {
+                    "gene_annotation": "Biosynthesis of the first NRP dtx B.",
+                    "gene_function": "Scaffold biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "Biosynthesis of the first NRP dtx B.",
-                    "gene_function": "Scaffold biosynthesis",
                     "gene_id": "MAA_10043",
                     "gene_name": "DtxS1"
                 },
                 {
+                    "gene_function": "Tailoring",
+                    "tailoring": "Oxidation",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "metabolite hydroxylation, desaturation, oxidation, and/or epoxidation",
-                    "gene_function": "Tailoring",
                     "gene_id": "MAA_10044",
-                    "gene_name": "DtxS2",
-                    "tailoring": "Oxidation"
+                    "gene_annotation": "metabolite hydroxylation, desaturation, oxidation, and/or epoxidation",
+                    "gene_name": "DtxS2"
                 },
                 {
+                    "gene_annotation": "Conversion of alpha-ketoisocaproic acid into alpha-hydroxyisocaproic acid",
+                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "Conversion of \u00ce\u00b1-ketoisocaproic acid into \u00ce\u00b1-hydroxyisocaproic acid",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "MAA_10045",
                     "gene_name": "DtxS3"
                 },
                 {
+                    "gene_annotation": "Decarboxylation of aspartic acid into beta-Alanine",
+                    "gene_function": "Precursor biosynthesis",
                     "evidence_genefunction": [
                         "Knock-out"
                     ],
-                    "gene_annotation": "Decarboxylation of aspartic acid into \u00ce\u00b2-Alanine",
-                    "gene_function": "Precursor biosynthesis",
                     "gene_id": "MAA_10046",
                     "gene_name": "DtxS4"
                 }
             ]
         },
-        "loci": {
-            "accession": "GL698760.1",
-            "complete": "complete",
-            "conn_comp_cluster": [
-                "Knock-out studies"
-            ]
-        },
         "mibig_accession": "BGC0000337",
+        "biosyn_class": [
+            "NRP"
+        ],
+        "publications": [
+            "pubmed:22232661",
+            "pubmed:3268274"
+        ],
         "nrp": {
             "lin_cycl_nrp": "Linear",
             "nrps_release_type": "Hydrolysis",
             "nrps_te_type": "Unknown",
-            "nrps_thioesterase": [],
-            "subclass": "Unknown"
-        },
-        "publications": [
-            "pubmed:22232661",
-            "pubmed:3268274"
-        ]
+            "subclass": "Unknown",
+            "nrps_thioesterase": []
+        }
     },
-    "personal": {
-        "submitter_email": "cswang@sibs.ac.cn",
-        "submitter_institution": "Insitute of Plant Physiology and Ecology, Shanghai Institutes for Biological Sciences, CAS",
-        "submitter_name": "Chengshu Wang"
-    }
+    "changelogs": [
+        {
+            "version": "2.0",
+            "comment": "Submitted"
+        }
+    ]
 }
