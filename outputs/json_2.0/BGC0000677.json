@@ -1,26 +1,98 @@
 {
-    "submitter": {
-        "name": "Tomohisa Kuzuyama",
-        "institution": "The University of Tokyo",
-        "email": "utkuz@mail.ecc.u-tokyo.ac.jp"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000677",
         "biosyn_class": [
             "Terpene"
         ],
-        "publications": [
-            "pubmed:19635410",
-            "pubmed:1474002",
-            "pubmed:1335449",
-            "pubmed:25689152"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_struct": "CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "lysophospholipase"
+                    }
+                ],
+                "compound": "cyclooctatin",
+                "database_id": [
+                    "pubchem:5467942"
+                ],
+                "mol_mass": 322.489,
+                "molecular_formula": "C20H34O3"
+            }
         ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "BAI44337.1",
+                    "name": "cotB1"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "BAI44338.1",
+                    "name": "cotB2"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "BAI44339.1",
+                    "name": "cotB3",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "BAI44340.1",
+                    "name": "cotB4",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                }
+            ]
+        },
         "loci": {
             "accession": "AB448947.1",
             "completeness": "complete",
@@ -31,95 +103,28 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "cyclooctatin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:5467942",
-                "chem_acts": [
-                    "Inhibitor"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "lysophospholipase",
-                        "publications": []
-                    }
-                ]
-            }
+        "mibig_accession": "BGC0000677",
+        "publications": [
+            "pubmed:19635410",
+            "pubmed:1474002",
+            "pubmed:1335449",
+            "pubmed:25689152"
         ],
-        "genes": {
-            "annotations": [
-                {
-                    "name": "cotB1",
-                    "id": "BAI44337.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Other in vivo study",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "cotB2",
-                    "id": "BAI44338.1",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Other in vivo study",
-                                "Activity assay",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "cotB3",
-                    "id": "BAI44339.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Other in vivo study",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "tailoring": [
-                        "Hydroxylation"
-                    ]
-                },
-                {
-                    "name": "cotB4",
-                    "id": "BAI44340.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Other in vivo study",
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "tailoring": [
-                        "Hydroxylation"
-                    ]
-                }
-            ]
-        },
         "terpene": {
-            "terpene_precursor": "GGPP",
-            "terpene_synth_cycl": [
-                "bai44338.1"
-            ],
-            "structural_subclass": "Unknown",
             "carbon_count_subclass": "Diterpene",
             "prenyltransferases": [
                 "bai44337.1"
+            ],
+            "structural_subclass": "Unknown",
+            "terpene_precursor": "GGPP",
+            "terpene_synth_cycl": [
+                "bai44338.1"
             ]
         }
+    },
+    "submitter": {
+        "email": "utkuz@mail.ecc.u-tokyo.ac.jp",
+        "institution": "The University of Tokyo",
+        "name": "Tomohisa Kuzuyama"
     }
 }

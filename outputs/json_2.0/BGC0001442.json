@@ -1,25 +1,44 @@
 {
-    "submitter": {
-        "name": "Leonard Kaysser",
-        "institution": "University of Tuebingen",
-        "email": "leonard.kaysser@pharm.uni-tuebingen.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001442",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:13900478",
-            "pubmed:27616570",
-            "pubmed:27428963"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_struct": "CCCCC[C@H](CC(=O)NO)C(=O)N[C@@H](C(C)C)C(=O)N1CCC[C@H]1CO",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "metalloproteinase"
+                    },
+                    {
+                        "publications": [],
+                        "target": "bacterial peptide deformylase"
+                    }
+                ],
+                "compound": "actinonin",
+                "database_id": [
+                    "pubchem:443600"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 385.505,
+                "molecular_formula": "C19H35N3O5"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "KY906183.1",
             "completeness": "complete",
@@ -27,53 +46,26 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "actinonin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:443600",
-                "evidence": [
-                    "NMR",
-                    "Mass spectrometry"
-                ],
-                "chem_acts": [
-                    "Inhibitor"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "metalloproteinase",
-                        "publications": []
-                    },
-                    {
-                        "target": "bacterialpeptidedeformylase",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {},
+        "mibig_accession": "BGC0001442",
         "nrp": {
-            "subclass": "None",
+            "cyclic": false,
             "nrps_genes": [
                 {
                     "gene_id": "ATJ34005.1",
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Threonine"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Threonine"
+                                ]
                             },
-                            "module_number": "1",
                             "active": false,
-                            "modification_domains": [
-                                "None"
-                            ]
+                            "module_number": "1"
                         }
                     ]
                 },
@@ -81,12 +73,9 @@
                     "gene_id": "ATJ34004.1",
                     "modules": [
                         {
-                            "module_number": "0",
                             "active": false,
                             "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
+                            "module_number": "0"
                         }
                     ]
                 },
@@ -95,30 +84,36 @@
                     "modules": [
                         {
                             "a_substr_spec": {
-                                "proteinogenic": [
-                                    "Proline"
-                                ],
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "evidence": [
                                     "Sequence-based prediction"
                                 ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                "proteinogenic": [
+                                    "Proline"
+                                ]
                             },
-                            "module_number": "2",
                             "active": false,
                             "c_dom_subtype": "LCL",
-                            "modification_domains": [
-                                "None"
-                            ]
+                            "module_number": "2"
                         }
                     ]
                 }
             ],
-            "cyclic": false,
-            "thioesterases": [],
             "release_type": [
                 "Unknown"
-            ]
-        }
+            ],
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:13900478",
+            "pubmed:27616570",
+            "pubmed:27428963"
+        ]
+    },
+    "submitter": {
+        "email": "leonard.kaysser@pharm.uni-tuebingen.de",
+        "institution": "University of Tuebingen",
+        "name": "Leonard Kaysser"
     }
 }

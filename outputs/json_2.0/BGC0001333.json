@@ -1,39 +1,21 @@
 {
-    "submitter": {
-        "name": "Fang-Yuan Chang",
-        "institution": "MIT",
-        "email": "fangyuanchang@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001333",
+        "alkaloid": {
+            "subclass": "Indole/benzopyrrole"
+        },
         "biosyn_class": [
             "Alkaloid"
         ],
-        "publications": [
-            "pubmed:21542592"
-        ],
-        "loci": {
-            "accession": "JF439215.1",
-            "start_coord": 2570,
-            "end_coord": 22587,
-            "completeness": "complete",
-            "evidence": [
-                "Heterologous expression",
-                "Gene expression correlated with compound production"
-            ]
-        },
         "compounds": [
             {
-                "compound": "BE-54017",
-                "chem_synonyms": [
-                    "unii-t7972epw8p",
-                    "t7972epw8p"
+                "chem_acts": [
+                    "Cytotoxic"
                 ],
                 "chem_moieties": [
                     {
@@ -43,25 +25,48 @@
                         ]
                     }
                 ],
-                "database_id": "pubchem:66575233",
+                "chem_struct": "CN1C2=C(C=C(C=C2)Cl)C3=C1C4=C(C5=CC=CC=C5N4[C@]6([C@@]3(C(=O)N(C6=O)C)O)O)OC",
+                "chem_synonyms": [
+                    "unii-t7972epw8p",
+                    "t7972epw8p"
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "V-ATPase"
+                    }
+                ],
+                "compound": "BE-54017",
+                "database_id": [
+                    "pubchem:66575233"
+                ],
                 "evidence": [
                     "NMR",
                     "Mass spectrometry"
                 ],
-                "chem_acts": [
-                    "Cytotoxic"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "V-ATPase",
-                        "publications": []
-                    }
-                ]
+                "mol_mass": 451.863,
+                "molecular_formula": "C23H18ClN3O5"
             }
         ],
         "genes": {},
-        "alkaloid": {
-            "subclass": "Indole/benzopyrrole"
-        }
+        "loci": {
+            "accession": "JF439215.1",
+            "completeness": "complete",
+            "end_coord": 22587,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 2570
+        },
+        "mibig_accession": "BGC0001333",
+        "publications": [
+            "pubmed:21542592"
+        ]
+    },
+    "submitter": {
+        "email": "fangyuanchang@gmail.com",
+        "institution": "MIT",
+        "name": "Fang-Yuan Chang"
     }
 }

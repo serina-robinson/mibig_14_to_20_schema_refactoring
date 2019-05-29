@@ -1,52 +1,38 @@
 {
-    "submitter": {
-        "name": "Xiaohui Yan",
-        "institution": "The Scripps Research Institute",
-        "email": "xyan@scripps.edu"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000175",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24815182",
-            "pubmed:21139626"
-        ],
-        "loci": {
-            "accession": "JX014302.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "cycloheximide",
-                "chem_synonyms": [],
-                "database_id": "pubchem:6197",
                 "chem_acts": [
                     "Inhibitor"
                 ],
+                "chem_struct": "C[C@H]1C[C@@H](C(=O)[C@@H](C1)[C@@H](CC2CC(=O)NC(=O)C2)O)C",
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "ribosomeEsite",
-                        "publications": []
+                        "publications": [],
+                        "target": "ribosome E site"
                     }
-                ]
+                ],
+                "compound": "cycloheximide",
+                "database_id": [
+                    "pubchem:6197"
+                ],
+                "mol_mass": 281.352,
+                "molecular_formula": "C15H23NO4"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "ChxA",
-                    "id": "AFO59862.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -54,11 +40,11 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AFO59862.1",
+                    "name": "ChxA"
                 },
                 {
-                    "name": "ChxB",
-                    "id": "AFO59863.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -66,23 +52,11 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AFO59863.1",
+                    "name": "ChxB"
                 },
                 {
-                    "name": "ChxC",
-                    "id": "AFO59864.1",
-                    "functions": [
-                        {
-                            "category": "Precursor biosynthesis",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "ChxD",
-                    "id": "AFO59865.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -91,11 +65,23 @@
                             ]
                         }
                     ],
+                    "id": "AFO59864.1",
+                    "name": "ChxC"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFO59865.1",
+                    "name": "ChxD",
                     "product": "amidotransferase"
                 },
                 {
-                    "name": "ChxE",
-                    "id": "AFO59866.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -103,11 +89,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AFO59866.1",
+                    "name": "ChxE"
                 },
                 {
-                    "name": "ChxF",
-                    "id": "AFO59867.1",
                     "functions": [
                         {
                             "category": "Regulation",
@@ -115,11 +101,11 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "AFO59867.1",
+                    "name": "ChxF"
                 },
                 {
-                    "name": "ChxG",
-                    "id": "AFO59868.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -128,14 +114,14 @@
                             ]
                         }
                     ],
+                    "id": "AFO59868.1",
+                    "name": "ChxG",
                     "product": "the OYE family of flavoprotein oxidoreductase",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "ChxH",
-                    "id": "AFO59869.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -144,28 +130,28 @@
                             ]
                         }
                     ],
+                    "id": "AFO59869.1",
+                    "name": "ChxH",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "ChxI",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
                     "id": "AFO59870.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
+                    "name": "ChxI",
                     "tailoring": [
                         "Unknown"
                     ]
                 },
                 {
-                    "name": "ChxJ",
-                    "id": "AFO59871.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -174,6 +160,8 @@
                             ]
                         }
                     ],
+                    "id": "AFO59871.1",
+                    "name": "ChxJ",
                     "product": "three-domain carboxylic acid reductase",
                     "tailoring": [
                         "Reduction"
@@ -181,12 +169,20 @@
                 }
             ]
         },
+        "loci": {
+            "accession": "JX014302.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000175",
         "polyketide": {
+            "cyclic": false,
             "starter_unit": "Malonyl-CoA",
             "subclasses": [
                 "Other"
             ],
-            "cyclic": false,
             "synthases": [
                 {
                     "genes": [
@@ -202,6 +198,15 @@
                     }
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:24815182",
+            "pubmed:21139626"
+        ]
+    },
+    "submitter": {
+        "email": "xyan@scripps.edu",
+        "institution": "The Scripps Research Institute",
+        "name": "Xiaohui Yan"
     }
 }

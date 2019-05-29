@@ -1,38 +1,21 @@
 {
-    "submitter": {
-        "name": "Andreas Bechthold",
-        "institution": "Albert-Ludwigs-University of Freiburg, Germany",
-        "email": "andreas.bechthold@pharmazie.uni-freiburg.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001061",
         "biosyn_class": [
             "Polyketide",
             "Saccharide"
         ],
-        "publications": [
-            "pubmed:9531983",
-            "pubmed:9531984",
-            "pubmed:10344562",
-            "pubmed:19266534"
-        ],
-        "loci": {
-            "accession": "FJ483966.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Polyketomycin",
-                "chem_synonyms": [],
+                "chem_acts": [
+                    "Antibacterial",
+                    "Cytotoxic"
+                ],
                 "chem_moieties": [
                     {
                         "moiety": "6-methylsalicylic acid",
@@ -44,18 +27,34 @@
                         ]
                     }
                 ],
-                "database_id": "chebi:66771",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Cytotoxic"
-                ]
+                "chem_struct": "[H][C@@]1(CC[C@]([H])(O[C@H]2C[C@@](C)(O)[C@H](OC(=O)c3c(C)ccc(C)c3O)[C@H](C)O2)[C@@H](C)O1)O[C@@H]1C(=O)\\C(=C(\\C)O)C(=O)[C@@]2(O)C(=O)c3c(O)c4C(=O)C=C(OC)C(=O)c4c(C)c3C[C@@]12O",
+                "chem_synonyms": [],
+                "compound": "Polyketomycin",
+                "database_id": [
+                    "chebi:66771"
+                ],
+                "mol_mass": 864.8411,
+                "molecular_formula": "C44H48O18"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "pokO1",
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
                     "id": "ACN64845.1",
+                    "name": "pokO1",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -64,28 +63,13 @@
                             ]
                         }
                     ],
-                    "tailoring": [
-                        "Hydroxylation"
-                    ]
-                },
-                {
-                    "name": "pokO2",
                     "id": "ACN64853.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
+                    "name": "pokO2",
                     "tailoring": [
                         "Hydroxylation"
                     ]
                 },
                 {
-                    "name": "pokO4",
-                    "id": "ACN64854.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -93,11 +77,11 @@
                                 "Knock-out"
                             ]
                         }
-                    ]
+                    ],
+                    "id": "ACN64854.1",
+                    "name": "pokO4"
                 },
                 {
-                    "name": "pokMT1",
-                    "id": "ACN64833.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -106,13 +90,13 @@
                             ]
                         }
                     ],
+                    "id": "ACN64833.1",
+                    "name": "pokMT1",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "pokMT2",
-                    "id": "ACN64843.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -121,73 +105,92 @@
                             ]
                         }
                     ],
+                    "id": "ACN64843.1",
+                    "name": "pokMT2",
                     "tailoring": [
                         "Methylation"
                     ]
                 }
             ]
         },
+        "loci": {
+            "accession": "FJ483966.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0001061",
         "polyketide": {
-            "starter_unit": "Malonyl-CoA",
-            "ketide_length": 10,
             "cyclases": [
                 "ACN64848.1",
                 "ACN64846.1",
                 "ACN64851.1"
             ],
-            "subclasses": [
-                "Other"
-            ],
             "cyclic": true,
+            "ketide_length": 10,
             "release_type": [
                 "Unknown"
+            ],
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
                     "genes": [
-                        "ACN64851.1",
-                        "ACN64848.1",
-                        "acn64834.1",
                         "ACN64831.1",
+                        "ACN64848.1",
+                        "ACN64851.1",
+                        "acn64834.1",
                         "ACN64846.1",
                         "acn64836.1"
                     ],
-                    "subclass": [
-                        "Iterative type I",
-                        "Type II"
-                    ],
                     "iterative": {
+                        "cyclization_type": "Unknown",
                         "nr_iterations": 9,
-                        "subtype": "Partially reducing",
-                        "cyclization_type": "Unknown"
+                        "subtype": "Partially reducing"
                     },
                     "modules": [
                         {
-                            "genes": [
-                                "ACN64831.1"
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
                             ],
-                            "module_number": "1",
+                            "comments": "",
                             "domains": [
                                 "Ketosynthase",
                                 "Acyltransferase",
                                 "Ketoreductase",
                                 "Thiolation (ACP/PCP)"
                             ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
+                            "genes": [
+                                "ACN64831.1"
                             ],
                             "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
+                            "module_number": "1",
+                            "pks_mod_doms": []
                         }
+                    ],
+                    "subclass": [
+                        "Iterative type I",
+                        "Type II"
                     ]
                 }
             ]
         },
+        "publications": [
+            "pubmed:9531983",
+            "pubmed:9531984",
+            "pubmed:10344562",
+            "pubmed:19266534"
+        ],
         "saccharide": {
             "subclass": "hybrid/tailoring"
         }
+    },
+    "submitter": {
+        "email": "andreas.bechthold@pharmazie.uni-freiburg.de",
+        "institution": "Albert-Ludwigs-University of Freiburg, Germany",
+        "name": "Andreas Bechthold"
     }
 }

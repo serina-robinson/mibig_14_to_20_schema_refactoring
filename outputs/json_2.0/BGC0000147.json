@@ -1,55 +1,49 @@
 {
-    "submitter": {
-        "name": "Daniel Krug",
-        "institution": "HIPS",
-        "email": "daniel.krug@helmholtz-hzi.de"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000147",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:12039053"
-        ],
-        "loci": {
-            "accession": "U24241.2",
-            "completeness": "complete",
-            "evidence": [
-                "Heterologous expression"
-            ]
-        },
         "compounds": [
             {
-                "compound": "Soraphen",
-                "chem_synonyms": [],
-                "chem_struct": "C1CC[C@@H](C2=CC=CC=C2)OC(=O)[C@@H](C)[C@@]2(O)[C@H]([*])[C@@H](O)[C@H](C)[C@@H](O2)C(C)C=C[C@@H]([*])[C@@H]([*])C1",
-                "molecular_formula": "C29H44O8",
-                "mol_mass": 521.3109,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
                 "chem_acts": [
                     "Antifungal"
                 ],
+                "chem_struct": "C1CC[C@@H](C2=CC=CC=C2)OC(=O)[C@@H](C)[C@@]2(O)[C@H]([*])[C@@H](O)[C@H](C)[C@@H](O2)C(C)C=C[C@@H]([*])[C@@H]([*])C1",
+                "chem_synonyms": [],
                 "chem_targets": [
                     {
-                        "target": "fungalacetyl-CoAcarboxylaseinhibitor",
-                        "publications": []
+                        "publications": [],
+                        "target": "fungal acetyl-CoA carboxylase inhibitor"
                     }
-                ]
+                ],
+                "compound": "Soraphen",
+                "database_id": [],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 521.3109,
+                "molecular_formula": "C29H44O8"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "sorA",
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
                     "id": "AAK19883.1",
+                    "name": "sorA"
+                },
+                {
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -57,35 +51,11 @@
                                 "Sequence-based prediction"
                             ]
                         }
-                    ]
-                },
-                {
-                    "name": "sorB",
+                    ],
                     "id": "AAA79984.2",
-                    "functions": [
-                        {
-                            "category": "Scaffold biosynthesis",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
+                    "name": "sorB"
                 },
                 {
-                    "name": "sorC ",
-                    "id": "AAK19884.1",
-                    "functions": [
-                        {
-                            "category": "Precursor biosynthesis",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "sorD ",
-                    "id": "AAK19885.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -94,11 +64,23 @@
                             ]
                         }
                     ],
+                    "id": "AAK19884.1",
+                    "name": "sorC "
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AAK19885.1",
+                    "name": "sorD ",
                     "product": "dehydrogenase"
                 },
                 {
-                    "name": "sorE ",
-                    "id": "AAK19892.1",
                     "functions": [
                         {
                             "category": "Precursor biosynthesis",
@@ -107,11 +89,11 @@
                             ]
                         }
                     ],
+                    "id": "AAK19892.1",
+                    "name": "sorE ",
                     "product": "acyl-CoA dehydrogenase"
                 },
                 {
-                    "name": "sorM",
-                    "id": "AAK19894.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -120,13 +102,13 @@
                             ]
                         }
                     ],
+                    "id": "AAK19894.1",
+                    "name": "sorM",
                     "tailoring": [
                         "Methylation"
                     ]
                 },
                 {
-                    "name": "sorR ",
-                    "id": "AAK19893.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -135,6 +117,8 @@
                             ]
                         }
                     ],
+                    "id": "AAK19893.1",
+                    "name": "sorR ",
                     "product": "reductase",
                     "tailoring": [
                         "Reduction"
@@ -142,200 +126,200 @@
                 }
             ]
         },
+        "loci": {
+            "accession": "U24241.2",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000147",
         "polyketide": {
-            "starter_unit": "Benzoyl-CoA",
             "cyclic": true,
             "release_type": [
                 "Macrolactonization"
             ],
+            "starter_unit": "Benzoyl-CoA",
             "synthases": [
                 {
                     "genes": [
                         "AAA79984.2",
                         "AAK19883.1"
                     ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAK19883.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "1",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAK19883.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "2",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Glycolate"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAK19883.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "3",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAA79984.2"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "4",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAA79984.2"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "5",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAA79984.2"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "6",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Glycolate"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAA79984.2"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "7",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AAA79984.2"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "8",
+                            "pks_mod_doms": []
+                        }
+                    ],
                     "subclass": [
                         "Modular type I"
                     ],
-                    "thioesterases": [],
-                    "modules": [
-                        {
-                            "genes": [
-                                "AAK19883.1"
-                            ],
-                            "module_number": "1",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "D-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAK19883.1"
-                            ],
-                            "module_number": "2",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Enoylreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "L-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAK19883.1"
-                            ],
-                            "module_number": "3",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Enoylreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Glycolate"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "L-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAA79984.2"
-                            ],
-                            "module_number": "4",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "D-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAA79984.2"
-                            ],
-                            "module_number": "5",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Enoylreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "L-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAA79984.2"
-                            ],
-                            "module_number": "6",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "D-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAA79984.2"
-                            ],
-                            "module_number": "7",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Glycolate"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "D-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "AAA79984.2"
-                            ],
-                            "module_number": "8",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "kr_stereochem": "D-OH",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        }
-                    ]
+                    "thioesterases": []
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:12039053"
+        ]
+    },
+    "submitter": {
+        "email": "daniel.krug@helmholtz-hzi.de",
+        "institution": "HIPS",
+        "name": "Daniel Krug"
     }
 }

@@ -1,25 +1,75 @@
 {
-    "submitter": {
-        "name": "Jose A. Salas",
-        "institution": "University of Oviedo",
-        "email": "jasalas@uniovi.es"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000031",
         "biosyn_class": [
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:15112998",
-            "pubmed:14651102",
-            "pubmed:15186422"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial",
+                    "Cytotoxic"
+                ],
+                "chem_struct": "C[C@H]1C[C@H](C[C@@H]([C@H](/C(=C\\\\C=C\\\\C[C@H](OC(=O)C[C@@H]([C@H](C1)C)O)[C@@H]2CCC[C@H]2C(=O)O)/C#N)O)C)C",
+                "chem_synonyms": [
+                    "Treponemycin"
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "Threonyl-tRNA synthetase"
+                    }
+                ],
+                "compound": "Borrelidin",
+                "database_id": [],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 490.64,
+                "molecular_formula": "C28H43NO6"
+            }
         ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAE45673.1",
+                    "name": "borI",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "id": "CAE45679.1",
+                    "name": "borO"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAE45674.1",
+                    "name": "borJ",
+                    "tailoring": [
+                        "Amination"
+                    ]
+                }
+            ]
+        },
         "loci": {
             "accession": "AJ580915.1",
             "completeness": "complete",
@@ -28,87 +78,162 @@
                 "Sequence-based prediction"
             ]
         },
-        "compounds": [
-            {
-                "compound": "Borrelidin",
-                "chem_synonyms": [
-                    "Treponemycin"
-                ],
-                "chem_struct": "C[C@H]1C[C@H](C[C@@H]([C@H](/C(=C\\\\C=C\\\\C[C@H](OC(=O)C[C@@H]([C@H](C1)C)O)[C@@H]2CCC[C@H]2C(=O)O)/C#N)O)C)C",
-                "molecular_formula": "C28H43NO6",
-                "mol_mass": 490.64,
-                "database_id": "",
-                "mass_spec_ion_type": "[M+H]+",
-                "chem_acts": [
-                    "Antibacterial",
-                    "Cytotoxic"
-                ],
-                "chem_targets": [
-                    {
-                        "target": "Threonyl-tRNAsynthetase",
-                        "publications": []
-                    }
-                ]
-            }
-        ],
-        "genes": {
-            "annotations": [
-                {
-                    "name": "borI",
-                    "id": "CAE45673.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
-                    "tailoring": [
-                        "Hydroxylation"
-                    ]
-                },
-                {
-                    "name": "borO",
-                    "id": "CAE45679.1"
-                },
-                {
-                    "name": "borJ",
-                    "id": "CAE45674.1",
-                    "functions": [
-                        {
-                            "category": "Tailoring",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
-                    "tailoring": [
-                        "Amination"
-                    ]
-                }
-            ]
-        },
+        "mibig_accession": "BGC0000031",
         "polyketide": {
-            "starter_unit": "Trans-cyclopentane-(1R,2R)-dicarboxylic acid",
-            "subclasses": [
-                "Macrolide"
-            ],
             "cyclic": true,
             "release_type": [
                 "Macrolactonization"
             ],
+            "starter_unit": "Trans-cyclopentane-(1R,2R)-dicarboxylic acid",
+            "subclasses": [
+                "Macrolide"
+            ],
             "synthases": [
                 {
                     "genes": [
-                        "CAE45671.1 ",
-                        "CAE45672.1 ",
+                        "CAE45670.1 ",
+                        "CAE45669.1",
                         "CAE45668.1",
                         "CAE45667.1 ",
-                        "CAE45669.1",
                         "cae45660.1",
-                        "CAE45670.1 ",
+                        "CAE45671.1 ",
+                        "CAE45672.1 ",
                         "cae45672.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Trans-cyclopentane-(1R, 2R)-dicarboxylic acid"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CAE45667.1 "
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "A0",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CAE45668.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CAE45669.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "2",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CAE45669.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "3",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CAE45670.1 "
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "4",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CAE45671.1 "
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "5",
+                            "non_canonical": {
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            },
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CAE45672.1 "
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "6",
+                            "pks_mod_doms": []
+                        }
                     ],
                     "subclass": [
                         "Modular type I"
@@ -122,158 +247,19 @@
                             "gene": "cae45672.1",
                             "thioesterase_type": "Unknown"
                         }
-                    ],
-                    "modules": [
-                        {
-                            "genes": [
-                                "CAE45667.1 "
-                            ],
-                            "module_number": "A0",
-                            "domains": [
-                                "Acyltransferase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Trans-cyclopentane-(1R, 2R)-dicarboxylic acid"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "CAE45668.1"
-                            ],
-                            "module_number": "1",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "CAE45669.1"
-                            ],
-                            "module_number": "2",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "CAE45669.1"
-                            ],
-                            "module_number": "3",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "CAE45670.1 "
-                            ],
-                            "module_number": "4",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        },
-                        {
-                            "genes": [
-                                "CAE45671.1 "
-                            ],
-                            "module_number": "5",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Dehydratase",
-                                "Enoylreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Methylmalonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": "",
-                            "non_canonical": {
-                                "skipped": false,
-                                "non_elongating": false,
-                                "iterated": true
-                            }
-                        },
-                        {
-                            "genes": [
-                                "CAE45672.1 "
-                            ],
-                            "module_number": "6",
-                            "domains": [
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "at_specificities": [
-                                "Malonyl-CoA"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "pks_mod_doms": [
-                                "None"
-                            ],
-                            "comments": ""
-                        }
                     ]
                 }
             ]
-        }
+        },
+        "publications": [
+            "pubmed:15112998",
+            "pubmed:14651102",
+            "pubmed:15186422"
+        ]
+    },
+    "submitter": {
+        "email": "jasalas@uniovi.es",
+        "institution": "University of Oviedo",
+        "name": "Jose A. Salas"
     }
 }

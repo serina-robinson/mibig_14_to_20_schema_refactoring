@@ -1,26 +1,35 @@
 {
-    "comments": "Please note that I was  not involved in the studies on the mechanism and genes involved in the biosynthesis of Ikarugamycin, I am submitting this entry as part of study on the evolution of polycyclic tetramate macromalctams.",
-    "submitter": {
-        "name": "Pablo Cruz Morales",
-        "institution": "University of Queensland/Langebio-CINVESTAV",
-        "email": "cruzmoralesp@gmail.com"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0001435",
         "biosyn_class": [
             "NRP",
             "Polyketide"
         ],
-        "publications": [
-            "pubmed:24519911",
-            "pubmed:24706593"
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Antibacterial",
+                    "Antifungal"
+                ],
+                "chem_struct": "CC[C@@H]1[C@@H](C[C@H]2[C@H]1C=C[C@H]3[C@@H]2C[C@@H]\\4[C@@H]3C/C=C/C(=O)NCCC[C@H]5C(=O)C(=C(/C=C4)O)C(=O)N5)C",
+                "chem_synonyms": [],
+                "compound": "ikarugamycin",
+                "database_id": [
+                    "pubchem:101647494"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 478.633,
+                "molecular_formula": "C29H38N2O4"
+            }
         ],
+        "genes": {},
         "loci": {
             "accession": "KF954512.1",
             "completeness": "complete",
@@ -28,58 +37,54 @@
                 "Heterologous expression"
             ]
         },
-        "compounds": [
-            {
-                "compound": "ikarugamycin",
-                "chem_synonyms": [],
-                "database_id": "pubchem:101647494",
-                "evidence": [
-                    "Mass spectrometry"
-                ],
-                "chem_acts": [
-                    "Antibacterial",
-                    "Antifungal"
-                ]
-            }
-        ],
-        "genes": {},
-        "polyketide": {
-            "starter_unit": "Malonyl-CoA",
-            "subclasses": [
-                "Other"
+        "mibig_accession": "BGC0001435",
+        "nrp": {
+            "cyclic": false,
+            "release_type": [
+                "Hydrolysis"
             ],
+            "subclass": "Unknown",
+            "thioesterases": [
+                {
+                    "gene": "ajd77023.1",
+                    "thioesterase_type": "Type I"
+                }
+            ]
+        },
+        "polyketide": {
             "cyclic": true,
             "release_type": [
                 "Hydrolysis"
+            ],
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Other"
             ],
             "synthases": [
                 {
                     "genes": [
                         "ajd77023.1"
                     ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 6,
+                        "subtype": "Partially reducing"
+                    },
                     "subclass": [
                         "Iterative type I"
-                    ],
-                    "iterative": {
-                        "nr_iterations": 6,
-                        "subtype": "Partially reducing",
-                        "cyclization_type": "Unknown"
-                    }
+                    ]
                 }
             ]
         },
-        "nrp": {
-            "subclass": "Unknown",
-            "cyclic": false,
-            "thioesterases": [
-                {
-                    "gene": "ajd77023.1",
-                    "thioesterase_type": "Type I"
-                }
-            ],
-            "release_type": [
-                "Hydrolysis"
-            ]
-        }
+        "publications": [
+            "pubmed:24519911",
+            "pubmed:24706593"
+        ]
+    },
+    "comments": "Please note that I was  not involved in the studies on the mechanism and genes involved in the biosynthesis of Ikarugamycin, I am submitting this entry as part of study on the evolution of polycyclic tetramate macromalctams.",
+    "submitter": {
+        "email": "cruzmoralesp@gmail.com",
+        "institution": "University of Queensland/Langebio-CINVESTAV",
+        "name": "Pablo Cruz Morales"
     }
 }

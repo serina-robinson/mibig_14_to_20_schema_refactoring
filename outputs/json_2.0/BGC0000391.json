@@ -1,63 +1,45 @@
 {
-    "submitter": {
-        "name": "Jianhua Ju",
-        "institution": "South China Sea Institute of Oceanology, Chinese Academy of Sciences (CAS)",
-        "email": "jju@scsio.ac.cn"
-    },
     "changelog": [
         {
-            "version": "2.0",
-            "comment": "Submitted"
+            "comment": "Submitted",
+            "version": "2.0"
         }
     ],
     "cluster": {
-        "mibig_accession": "BGC0000391",
         "biosyn_class": [
             "NRP"
         ],
-        "publications": [
-            "pubmed:22362652"
-        ],
-        "loci": {
-            "accession": "JN634585.1",
-            "completeness": "complete",
-            "evidence": [
-                "Knock-out studies"
-            ]
-        },
         "compounds": [
             {
-                "compound": "methylpendolmycin",
-                "chem_synonyms": [],
-                "chem_struct": "CC[C@H](C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)C(C)(C)C=C)CO",
-                "molecular_formula": "C23H33N3O2",
-                "mol_mass": 383.26,
-                "database_id": "",
-                "mass_spec_ion_type": "M+",
                 "chem_acts": [
                     "Cytotoxic",
                     "Signalling"
-                ]
+                ],
+                "chem_struct": "CC[C@H](C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)C(C)(C)C=C)CO",
+                "chem_synonyms": [],
+                "compound": "methylpendolmycin",
+                "database_id": [],
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 383.26,
+                "molecular_formula": "C23H33N3O2"
             },
             {
-                "compound": "pendolmycin",
-                "chem_synonyms": [],
-                "chem_struct": " CC(C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)C(C)(C)C=C)CO",
-                "molecular_formula": "C22H31N3O2",
-                "mol_mass": 369.24,
-                "database_id": "",
-                "mass_spec_ion_type": "M+",
                 "chem_acts": [
                     "Antibacterial",
                     "Signalling"
-                ]
+                ],
+                "chem_struct": " CC(C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)C(C)(C)C=C)CO",
+                "chem_synonyms": [],
+                "compound": "pendolmycin",
+                "database_id": [],
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 369.24,
+                "molecular_formula": "C22H31N3O2"
             }
         ],
         "genes": {
             "annotations": [
                 {
-                    "name": "mpnC",
-                    "id": "AFO85454.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -66,14 +48,14 @@
                             ]
                         }
                     ],
+                    "id": "AFO85454.1",
+                    "name": "mpnC",
                     "product": "P450-like monoxygenase",
                     "tailoring": [
                         "Heterocyclization"
                     ]
                 },
                 {
-                    "name": "mpnB",
-                    "id": "AFO85453.1",
                     "functions": [
                         {
                             "category": "Scaffold biosynthesis",
@@ -82,11 +64,11 @@
                             ]
                         }
                     ],
+                    "id": "AFO85453.1",
+                    "name": "mpnB",
                     "product": "non-ribosomal peptide synthetase"
                 },
                 {
-                    "name": "mpnD",
-                    "id": "AFO85455.1",
                     "functions": [
                         {
                             "category": "Tailoring",
@@ -95,6 +77,8 @@
                             ]
                         }
                     ],
+                    "id": "AFO85455.1",
+                    "name": "mpnD",
                     "product": "aromatic prenyltransferase",
                     "tailoring": [
                         "Prenylation"
@@ -102,35 +86,51 @@
                 }
             ]
         },
+        "loci": {
+            "accession": "JN634585.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000391",
         "nrp": {
-            "subclass": "Unknown",
+            "cyclic": true,
             "nrps_genes": [
                 {
                     "gene_id": "AFO85453.1",
                     "modules": [
                         {
                             "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
                                 "proteinogenic": [
                                     "Isoleucine"
-                                ],
-                                "epimerized": false,
-                                "aa_subcluster": []
+                                ]
                             },
-                            "module_number": "1",
                             "active": true,
                             "c_dom_subtype": "LCL",
                             "modification_domains": [
                                 "Methylation"
-                            ]
+                            ],
+                            "module_number": "1"
                         }
                     ]
                 }
             ],
-            "cyclic": true,
-            "thioesterases": [],
             "release_type": [
                 "Reductive release"
-            ]
-        }
+            ],
+            "subclass": "Unknown",
+            "thioesterases": []
+        },
+        "publications": [
+            "pubmed:22362652"
+        ]
+    },
+    "submitter": {
+        "email": "jju@scsio.ac.cn",
+        "institution": "South China Sea Institute of Oceanology, Chinese Academy of Sciences (CAS)",
+        "name": "Jianhua Ju"
     }
 }
