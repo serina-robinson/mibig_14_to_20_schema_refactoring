@@ -1116,12 +1116,38 @@
                         "type": "string",
                         "pattern": "^\\d+(\\.\\d+)*$"
                     },
-                    "comment": {
-                        "type": "string"
+                    "comments": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
                     }
                 }
             },
             "minItems": 1
+        },
+        "cached": {
+            "type": "object",
+            "properties": {
+                "publication": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "bibtex": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "code",
+                            "bibtex"
+                        ]
+                    }
+                }
+            }
         }
     },
     "required": [

@@ -3,11 +3,37 @@
     "$schema_created": "2019-04-12T15:40:24+02:00",
     "$schema_version": "2.0",
     "properties": {
+        "cached": {
+            "properties": {
+                "publication": {
+                    "items": {
+                        "properties": {
+                            "bibtex": {
+                                "type": "string"
+                            },
+                            "code": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "code",
+                            "bibtex"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
         "changelog": {
             "items": {
                 "properties": {
-                    "comment": {
-                        "type": "string"
+                    "comments": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
                     },
                     "version": {
                         "pattern": "^\\d+(\\.\\d+)*$",
