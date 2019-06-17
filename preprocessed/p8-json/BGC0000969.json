@@ -1,0 +1,313 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Cytotoxic"
+                ],
+                "chem_struct": "C1(=O)NC(C2C=CC(O)=CC=2)C(OC)C(OC(C(C)C=C(C)CC(C)C(=O)NC(C)C(=O)N(C)C1CC1C2C=CC=CC=2NC=1)C)=O",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "actin"
+                    }
+                ],
+                "compound": "Chondramid A",
+                "database_id": [],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 647.344,
+                "molecular_formula": "C36H46N4O7"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAJ46689.1",
+                    "name": "cmdA",
+                    "product": "polyketide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAJ46690.1",
+                    "name": "cmdB",
+                    "product": "polyketide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAJ46691.1",
+                    "name": "cmdC",
+                    "product": "non-ribosomal peptide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAJ46692.1",
+                    "name": "cmdD",
+                    "product": "non-ribosomal peptide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAJ46693.1",
+                    "name": "cmdE",
+                    "product": "tryptophan halogenase",
+                    "tailoring": [
+                        "Halogenation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAJ46694.1",
+                    "name": "cmdF",
+                    "product": "tyrosine aminomutase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "AM179409.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000969",
+        "ncbi_tax_id": "52",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "CAJ46691.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Alanine"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "4"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CAJ46692.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "proteinogenic": [
+                                    "Tryptophan"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [
+                                    "CAJ46694.1"
+                                ],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "nonproteinogenic": [
+                                    "(R)-bTyr"
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "6"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "thioesterases": [
+                {
+                    "gene": "CAJ46692.1",
+                    "thioesterase_type": "Unknown"
+                }
+            ]
+        },
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "CAJ46690.1",
+                        "CAJ46689.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Acetyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "CAJ46689.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "0",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "CAJ46689.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "1",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "CAJ46689.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "2",
+                            "pks_mod_doms": []
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "CAJ46690.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "3",
+                            "pks_mod_doms": []
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:16793524"
+        ]
+    },
+    "submitter": {
+        "email": "daniel.krug@helmholtz-hzi.de",
+        "institution": "Helmholtz Institute for Pharmaceutical Research Saarland",
+        "name": "Daniel Krug"
+    }
+}
