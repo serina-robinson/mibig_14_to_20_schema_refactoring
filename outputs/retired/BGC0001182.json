@@ -1,7 +1,9 @@
 {
     "changelog": [
         {
-            "comment": "Submitted",
+            "comments": [
+                "Migrated from v1.4"
+            ],
             "version": "2.0"
         }
     ],
@@ -22,7 +24,40 @@
                 "mol_mass": -1
             }
         ],
-        "genes": {},
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "XP_001220461",
+                    "name": "CHGG_01240",
+                    "product": "enoyl reducctase "
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out",
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "id": "XP_001220464",
+                    "name": "CHGG_01243",
+                    "product": "cytochrome P450 oxidoreductase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                }
+            ]
+        },
         "loci": {
             "accession": "NT_165976.1",
             "completeness": "complete",
@@ -31,22 +66,10 @@
                 "Knock-out studies",
                 "Heterologous expression"
             ],
-            "organism": "Chaetomium globosum CBS 148.51",
-            "start_coord": 3830915,
-            "taxonomy": [
-                "Eukaryota",
-                "Fungi",
-                "Dikarya",
-                "Ascomycota",
-                "Pezizomycotina",
-                "Sordariomycetes",
-                "Sordariomycetidae",
-                "Sordariales",
-                "Chaetomiaceae",
-                "Chaetomium"
-            ]
+            "start_coord": 3830915
         },
         "mibig_accession": "BGC0001182",
+        "ncbi_tax_id": "306901",
         "nrp": {
             "cyclic": false,
             "nrps_genes": [

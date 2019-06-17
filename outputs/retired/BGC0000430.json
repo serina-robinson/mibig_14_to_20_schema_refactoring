@@ -1,7 +1,9 @@
 {
     "changelog": [
         {
-            "comment": "Submitted",
+            "comments": [
+                "Migrated from v1.4"
+            ],
             "version": "2.0"
         }
     ],
@@ -19,9 +21,9 @@
                     {
                         "moiety": "(2S,4S)-4-methylproline",
                         "subcluster": [
-                            "nsp_49220",
-                            "nsp_49210",
-                            "nsp_49200"
+                            "NSP_49220",
+                            "NSP_49210",
+                            "NSP_49200"
                         ]
                     }
                 ],
@@ -41,7 +43,23 @@
                 "molecular_formula": "C31H42N6O7"
             }
         ],
-        "genes": {},
+        "genes": {
+            "operons": [
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "genes": [
+                        "NSP_49250",
+                        "NSP_49190",
+                        "NSP_49220",
+                        "NSP_49230",
+                        "NSP_49200",
+                        "NSP_49210"
+                    ]
+                }
+            ]
+        },
         "loci": {
             "accession": "CP007203.2",
             "completeness": "complete",
@@ -49,17 +67,10 @@
             "evidence": [
                 "Sequence-based prediction"
             ],
-            "organism": "Nodularia spumigena CCY9414",
-            "start_coord": 4953880,
-            "taxonomy": [
-                "Bacteria",
-                "Cyanobacteria",
-                "Nostocales",
-                "Nostocaceae",
-                "Nodularia"
-            ]
+            "start_coord": 4953880
         },
         "mibig_accession": "BGC0000430",
+        "ncbi_tax_id": "313624",
         "nrp": {
             "cyclic": false,
             "nrps_genes": [
