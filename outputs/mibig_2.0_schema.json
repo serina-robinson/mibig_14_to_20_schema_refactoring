@@ -2,32 +2,11 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$schema_created": "2019-04-12T15:40:24+02:00",
     "$schema_version": "2.0",
+    "additionalProperties": false,
     "properties": {
-        "cached": {
-            "properties": {
-                "publication": {
-                    "items": {
-                        "properties": {
-                            "bibtex": {
-                                "type": "string"
-                            },
-                            "code": {
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "code",
-                            "bibtex"
-                        ],
-                        "type": "object"
-                    },
-                    "type": "array"
-                }
-            },
-            "type": "object"
-        },
         "changelog": {
             "items": {
+                "additionalProperties": false,
                 "properties": {
                     "comments": {
                         "items": {
@@ -46,6 +25,7 @@
             "type": "array"
         },
         "cluster": {
+            "additionalProperties": false,
             "allOf": [
                 {
                     "if": {
@@ -78,6 +58,7 @@
             ],
             "properties": {
                 "alkaloid": {
+                    "additionalProperties": false,
                     "properties": {
                         "subclass": {
                             "title": "Alkaloid subclass",
@@ -106,6 +87,7 @@
                 },
                 "compounds": {
                     "items": {
+                        "additionalProperties": false,
                         "properties": {
                             "chem_acts": {
                                 "items": {
@@ -116,6 +98,7 @@
                             },
                             "chem_moieties": {
                                 "items": {
+                                    "additionalProperties": false,
                                     "properties": {
                                         "moiety": {
                                             "title": "Chemical moiety",
@@ -152,6 +135,7 @@
                             },
                             "chem_targets": {
                                 "items": {
+                                    "additionalProperties": false,
                                     "properties": {
                                         "publications": {
                                             "items": {
@@ -223,9 +207,11 @@
                     "type": "array"
                 },
                 "genes": {
+                    "additionalProperties": false,
                     "properties": {
                         "annotations": {
                             "items": {
+                                "additionalProperties": false,
                                 "properties": {
                                     "comments": {
                                         "title": "Comments on this gene",
@@ -233,6 +219,7 @@
                                     },
                                     "functions": {
                                         "items": {
+                                            "additionalProperties": false,
                                             "properties": {
                                                 "category": {
                                                     "title": "Gene function category",
@@ -304,15 +291,18 @@
                         },
                         "extra_genes": {
                             "items": {
+                                "additionalProperties": false,
                                 "properties": {
                                     "id": {
                                         "title": "Gene ID",
                                         "type": "string"
                                     },
                                     "location": {
+                                        "additionalProperties": false,
                                         "properties": {
                                             "exons": {
                                                 "items": {
+                                                    "additionalProperties": false,
                                                     "properties": {
                                                         "end": {
                                                             "minimum": 2,
@@ -364,6 +354,7 @@
                         },
                         "operons": {
                             "items": {
+                                "additionalProperties": false,
                                 "properties": {
                                     "evidence": {
                                         "items": {
@@ -402,6 +393,7 @@
                     "type": "object"
                 },
                 "loci": {
+                    "additionalProperties": false,
                     "properties": {
                         "accession": {
                             "pattern": "^([A-Za-z0-9\\._]{3,}){1}|(MIBIG:BGC\\d{7}){1}$",
@@ -465,6 +457,7 @@
                     "type": "string"
                 },
                 "nrp": {
+                    "additionalProperties": false,
                     "properties": {
                         "cyclic": {
                             "title": "is the NRP cyclic (otherwise linear)",
@@ -476,6 +469,7 @@
                         },
                         "nrps_genes": {
                             "items": {
+                                "additionalProperties": false,
                                 "properties": {
                                     "gene_id": {
                                         "title": "NRPS-encoding gene",
@@ -483,8 +477,10 @@
                                     },
                                     "modules": {
                                         "items": {
+                                            "additionalProperties": false,
                                             "properties": {
                                                 "a_substr_spec": {
+                                                    "additionalProperties": false,
                                                     "properties": {
                                                         "aa_subcluster": {
                                                             "items": {
@@ -579,6 +575,7 @@
                                                     "type": "string"
                                                 },
                                                 "non_canonical": {
+                                                    "additionalProperties": false,
                                                     "properties": {
                                                         "evidence": {
                                                             "items": {
@@ -631,6 +628,7 @@
                         },
                         "thioesterases": {
                             "items": {
+                                "additionalProperties": false,
                                 "properties": {
                                     "gene": {
                                         "title": "Thioesterase-encoding gene id",
@@ -655,6 +653,7 @@
                     "type": "object"
                 },
                 "other": {
+                    "additionalProperties": false,
                     "properties": {
                         "subclass": {
                             "title": "Other biosynthetic class",
@@ -665,6 +664,7 @@
                     "type": "object"
                 },
                 "polyketide": {
+                    "additionalProperties": false,
                     "properties": {
                         "cyclases": {
                             "items": {
@@ -701,6 +701,7 @@
                         },
                         "synthases": {
                             "items": {
+                                "additionalProperties": false,
                                 "properties": {
                                     "genes": {
                                         "items": {
@@ -711,6 +712,7 @@
                                         "type": "array"
                                     },
                                     "iterative": {
+                                        "additionalProperties": false,
                                         "properties": {
                                             "cyclization_type": {
                                                 "title": "Iterative PKS cyclization type",
@@ -757,6 +759,7 @@
                                     },
                                     "modules": {
                                         "items": {
+                                            "additionalProperties": false,
                                             "properties": {
                                                 "at_specificities": {
                                                     "items": {
@@ -808,6 +811,7 @@
                                                     "type": "string"
                                                 },
                                                 "non_canonical": {
+                                                    "additionalProperties": false,
                                                     "properties": {
                                                         "evidence": {
                                                             "items": {
@@ -863,6 +867,7 @@
                                     },
                                     "thioesterases": {
                                         "items": {
+                                            "additionalProperties": false,
                                             "properties": {
                                                 "gene": {
                                                     "title": "Thioesterase-encoding gene id",
@@ -883,6 +888,7 @@
                                         "type": "array"
                                     },
                                     "trans_at": {
+                                        "additionalProperties": false,
                                         "properties": {
                                             "genes": {
                                                 "items": {
@@ -931,6 +937,7 @@
                     "type": "array"
                 },
                 "ripp": {
+                    "additionalProperties": false,
                     "properties": {
                         "cyclic": {
                             "title": "is the RiPP cyclic (otherwise linear)",
@@ -945,6 +952,7 @@
                         },
                         "precursor_genes": {
                             "items": {
+                                "additionalProperties": false,
                                 "properties": {
                                     "cleavage_recogn_site": {
                                         "items": {
@@ -962,6 +970,7 @@
                                     },
                                     "crosslinks": {
                                         "items": {
+                                            "additionalProperties": false,
                                             "properties": {
                                                 "crosslink_type": {
                                                     "title": "Type of crosslink",
@@ -1022,9 +1031,11 @@
                     "type": "object"
                 },
                 "saccharide": {
+                    "additionalProperties": false,
                     "properties": {
                         "glycosyltransferases": {
                             "items": {
+                                "additionalProperties": false,
                                 "properties": {
                                     "evidence": {
                                         "items": {
@@ -1080,6 +1091,7 @@
                     "type": "object"
                 },
                 "terpene": {
+                    "additionalProperties": false,
                     "properties": {
                         "carbon_count_subclass": {
                             "title": "Terpene subclass by number of carbon units",
@@ -1126,6 +1138,7 @@
             "type": "string"
         },
         "submitter": {
+            "additionalProperties": false,
             "properties": {
                 "email": {
                     "format": "email",
