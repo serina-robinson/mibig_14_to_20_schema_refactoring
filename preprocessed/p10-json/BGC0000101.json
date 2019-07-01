@@ -1,0 +1,182 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_struct": "CC1=CC(=C2C(=C1)C(=O)C3=CC(=CC(=C3C2=O)O)O)O",
+                "chem_synonyms": [
+                    "frangula emodin",
+                    "emodol",
+                    "rheum emodin",
+                    "schuttgelb"
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "STAT3"
+                    }
+                ],
+                "compound": "emodin",
+                "database_id": [
+                    "pubchem:3220"
+                ],
+                "mol_mass": 270.24,
+                "molecular_formula": "C15H10O5"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CC1=CC(=C(C(=C1)C(=O)O)C(=O)C2=C(C=CC=C2O)O)O",
+                "chem_synonyms": [],
+                "compound": "monodictyphenone ",
+                "database_id": [
+                    "pubchem:16114922"
+                ],
+                "mol_mass": 288.255,
+                "molecular_formula": "C15H12O6"
+            },
+            {
+                "chem_acts": [
+                    "Inhibitor"
+                ],
+                "chem_struct": "CC1=CC2=C(C3=C1OC[C@@H]([C@H]3O)C(=C)C)C(=O)C4=C(C=CC(=C4O2)CC=C(C)C)O",
+                "chem_synonyms": [],
+                "chem_targets": [
+                    {
+                        "publications": [],
+                        "target": "calmodulin"
+                    }
+                ],
+                "compound": "shamixanthone",
+                "database_id": [
+                    "pubchem:15596091"
+                ],
+                "mol_mass": 406.478,
+                "molecular_formula": "C25H26O5"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CBF73676.1",
+                    "name": "xptC",
+                    "product": "oxidoreductase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "BN001302.1",
+            "completeness": "complete",
+            "end_coord": 446753,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Gene expression correlated with compound production",
+                "Sequence-based prediction"
+            ],
+            "start_coord": 441042
+        },
+        "mibig_accession": "BGC0000101",
+        "minimal": false,
+        "ncbi_tax_id": "227321",
+        "organism_name": "Aspergillus nidulans FGSC A4",
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Polyphenol"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "CBF90097.1",
+                        "xm_652661"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "C6-C11 first",
+                        "nr_iterations": 7,
+                        "subtype": "Non-reducing"
+                    },
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "comments": "",
+                            "domains": [
+                                "ACP transacylase",
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Product Template domain",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "CBF90097.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            },
+                            "pks_mod_doms": []
+                        }
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "xm_652661",
+                            "thioesterase_type": "Unknown"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:19448638",
+            "pubmed:20139316",
+            "pubmed:21351751",
+            "pubmed:22730213",
+            "pubmed:22909031",
+            "pubmed:23848338"
+        ]
+    },
+    "submitter": {
+        "email": "pwiemann@wisc.edu",
+        "institution": "University of Wisconsin-Madison",
+        "name": "Philipp Wiemann"
+    }
+}
